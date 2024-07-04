@@ -64,7 +64,6 @@ import com.anggrayudi.storage.file.extension
 import com.google.android.material.appbar.AppBarLayout
 import eu.kanade.tachiyomi.animesource.ConfigurableAnimeSource
 import eu.kanade.tachiyomi.extension.anime.model.AnimeExtension
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -189,12 +188,10 @@ class AnimeWatchFragment : Fragment() {
                     if (PrefManager.getVal(PrefName.SearchSources)
                         && !model.watchSources?.list.isNullOrEmpty()) {
                         model.watchSources = object: WatchSources() {
-                            override val list = (model.watchSources as WatchSources).list.filter {
+                            override val list = (model.watchSources as WatchSources).list.sortedByDescending {
                                 runBlocking(Dispatchers.IO) { it.get.value?.autoSearch(media) != null }
                             }
                         }
-                        if (model.watchSources?.list.isNullOrEmpty())
-                            model.watchSources = if (media.isAdult) HAnimeSources else AnimeSources
                     }
 
                     val offlineMode =

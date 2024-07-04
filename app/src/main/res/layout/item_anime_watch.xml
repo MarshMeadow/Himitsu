@@ -18,11 +18,41 @@
         android:orientation="vertical"
         android:padding="32dp">
 
-        <include
+        <LinearLayout
             android:id="@+id/streamContainer"
-            layout="@layout/item_stream_sources"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/streamingButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <ani.dantotsu.view.FadingEdgeRecyclerView
+                android:id="@+id/episodeRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="-8dp"
+                android:layout_marginBottom="8dp"
+                android:nestedScrollingEnabled="true"
+                android:requiresFadingEdge="vertical"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="12"
+                tools:orientation="vertical" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/animeSourceTitle"

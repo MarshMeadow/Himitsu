@@ -49,6 +49,7 @@ class NotificationItem(
         val userHeight = 90.toPx
         when {
             user -> {
+                binding.notificationLogo.visibility = View.GONE
                 binding.notificationCover.visibility = View.GONE
                 binding.notificationCoverUserContainer.visibility = View.VISIBLE
                 binding.notificationTitle.visibility = View.GONE

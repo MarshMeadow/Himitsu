@@ -87,8 +87,6 @@ class MangaReadAdapter(
         }
         val offline = !isOnline(binding.root.context) || PrefManager.getVal(PrefName.OfflineMode)
 
-        binding.streamContainer.root.isVisible = false
-
         binding.animeSourceNameContainer.isGone = offline
         binding.animeSourceSettings.isGone = offline
         binding.animeSourceSearch.isGone = offline

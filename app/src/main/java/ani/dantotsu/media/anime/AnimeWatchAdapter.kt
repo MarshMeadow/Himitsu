@@ -12,7 +12,6 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
-import androidx.core.widget.ImageViewCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
 import ani.dantotsu.FileUrl
@@ -105,47 +104,50 @@ class AnimeWatchAdapter(
         }
         val offline = !isOnline(binding.root.context) || PrefManager.getVal(PrefName.OfflineMode)
 
-        binding.streamContainer.root.isVisible = false
         if (PrefManager.getVal(PrefName.ShowYtButton)) {
+            val buttons = binding.streamingButtons
             media.externalLinks.youtube?.let { url ->
-                binding.streamContainer.root.isVisible = true
-                getStreamIcon(binding.streamContainer.animeSourceYT, R.string.icon_yt, url)
-                binding.streamContainer.animeSourceYT.setOnClickListener { openLinkInYouTube(url) }
+                val youtube = getStreamIcon(buttons, R.color.yt_red, R.string.icon_yt, url)
+                youtube.setOnClickListener { openLinkInYouTube(url) }
+                buttons.addView(youtube)
             }
             media.externalLinks.hulu?.let { url ->
-                binding.streamContainer.root.isVisible = true
-                getStreamIcon(binding.streamContainer.animeSourceHulu, R.string.icon_hulu, url)
+                val hulu = getStreamIcon(buttons, R.color.hulu_green, R.string.icon_hulu, url)
+                buttons.addView(hulu)
             }
             media.externalLinks.disney?.let { url ->
-                binding.streamContainer.root.isVisible = true
-                getStreamIcon(binding.streamContainer.animeSourceDisney, R.string.icon_dp, url)
+                val disney = getStreamIcon(buttons, R.color.dp_teal, R.string.icon_dp, url)
+                buttons.addView(disney)
             }
             media.externalLinks.netflix?.let { url ->
-                binding.streamContainer.root.isVisible = true
-                getStreamIcon(binding.streamContainer.animeSourceNetflix, R.string.icon_nf, url)
+                val netflix = getStreamIcon(buttons, R.color.nf_red, R.string.icon_nf, url)
+                buttons.addView(netflix)
             }
             media.externalLinks.max?.let { url ->
-                binding.streamContainer.root.isVisible = true
-                getStreamIcon(binding.streamContainer.animeSourceMax, R.string.icon_max, url)
+                val max = getStreamIcon(buttons, R.color.max_blue, R.string.icon_max, url)
+                buttons.addView(max)
             }
             media.externalLinks.crunchyroll != null
             if (media.streamingEpisodes.isNotEmpty()) {
-                binding.streamContainer.episodeRecyclerView.adapter =
+                binding.episodeRecyclerView.adapter =
                     StreamingAdapter(media.streamingEpisodes)
             }
             media.externalLinks.crunchyroll?.let { url ->
-                binding.streamContainer.root.isVisible = true
-                getStreamIcon(binding.streamContainer.animeSourceCR, R.string.icon_cr, url)
-                binding.streamContainer.animeSourceCR.setOnClickListener(null)
-                binding.streamContainer.animeSourceCR.setOnClickListener {
+                val crunchyroll = getStreamIcon(buttons, R.color.cr_orange, R.string.icon_cr, url)
+                crunchyroll.setOnClickListener(null)
+                crunchyroll.setOnClickListener {
                     if (media.streamingEpisodes.isEmpty()) {
                         ChromeIntegration.openStreamDialog(fragment.requireContext(), url)
                         return@setOnClickListener
                     } else {
-                        binding.streamContainer.episodeRecyclerView.isVisible =
-                            !binding.streamContainer.episodeRecyclerView.isVisible
+                        binding.episodeRecyclerView.isVisible =
+                            !binding.episodeRecyclerView.isVisible
                     }
                 }
+                buttons.addView(crunchyroll)
+            }
+            if (buttons.childCount > 0) {
+                binding.streamContainer.isVisible = true
             }
         }
 
@@ -349,10 +351,16 @@ class AnimeWatchAdapter(
         handleEpisodes()
     }
 
-    private fun getStreamIcon(icon: ImageButton, imageRes: Int, url: String?) {
+    private fun getStreamIcon(
+        parent: LinearLayout, background: Int, imageRes: Int, url: String?
+    ): ImageButton {
+        val icon = LayoutInflater.from(fragment.context)
+            .inflate(R.layout.streaming_button, parent, false) as ImageButton
         icon.isVisible = true
+        icon.setBackgroundResource(background)
         icon.loadImage(getString(imageRes), 48.toPx)
         icon.setWebClickListeners(url)
+        return icon
     }
 
     fun subscribeButton(enabled: Boolean) {
