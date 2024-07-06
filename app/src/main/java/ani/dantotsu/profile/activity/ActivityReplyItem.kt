@@ -34,7 +34,7 @@ class ActivityReplyItem(
         binding.activityUserName.text = reply.user.name
         binding.activityTime.text = ActivityItemBuilder.getDateTime(reply.createdAt)
         binding.activityLikeCount.text = reply.likeCount.toString()
-        val likeColor = ContextCompat.getColor(binding.root.context, R.color.yt_red)
+        val likeColor = ContextCompat.getColor(binding.root.context, R.color.youtube)
         val notLikeColor = ContextCompat.getColor(binding.root.context, R.color.bg_opp)
         binding.activityLike.setColorFilter(if (reply.isLiked) likeColor else notLikeColor)
         val markwon = buildMarkwon(binding.root.context)

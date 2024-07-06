@@ -32,7 +32,6 @@ import ani.dantotsu.profile.User
 import ani.dantotsu.settings.saving.PrefManager
 import ani.dantotsu.settings.saving.PrefName
 import ani.dantotsu.snackString
-import ani.dantotsu.toast
 import ani.dantotsu.util.Logger
 import bit.himitsu.collections.Collections.mix
 import bit.himitsu.collections.Collections.toArrayList
@@ -323,13 +322,16 @@ class AnilistQueries {
 
                             fetchedMedia.externalLinks?.forEach { i ->
                                 when (i.site.lowercase()) {
-                                    "youtube" -> media.externalLinks.youtube = i.url
-                                    "crunchyroll" -> media.externalLinks.crunchyroll = i.url
-                                    "hulu" -> media.externalLinks.hulu = i.url
-                                    "vrv" -> media.externalLinks.vrv = i.url
+                                    "amazon prime video"-> media.externalLinks.amazon = i.url
+                                    "crunchyroll" -> media.externalLinks.crunchy = i.url
                                     "disney plus" -> media.externalLinks.disney = i.url
-                                    "netflix" -> media.externalLinks.netflix = i.url
+                                    "hidive" -> media.externalLinks.hidive = i.url
+                                    "hulu" -> media.externalLinks.hulu = i.url
                                     "max" -> media.externalLinks.max = i.url
+                                    "netflix" -> media.externalLinks.netflix = i.url
+                                    "tubi tv" -> media.externalLinks.tubi = i.url
+                                    "vrv" -> media.externalLinks.vrv = i.url
+                                    "youtube" -> media.externalLinks.youtube = i.url
                                     else -> Logger.log("${media.name} Link: ${i.site}")
                                 }
                             }

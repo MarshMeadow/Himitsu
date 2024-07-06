@@ -107,33 +107,38 @@ class AnimeWatchAdapter(
         if (PrefManager.getVal(PrefName.ShowYtButton)) {
             val buttons = binding.streamingButtons
             media.externalLinks.youtube?.let { url ->
-                val youtube = getStreamIcon(buttons, R.color.yt_red, R.string.icon_yt, url)
+                val youtube = getStreamIcon(buttons, R.color.youtube, R.string.icon_youtube, url)
                 youtube.setOnClickListener { openLinkInYouTube(url) }
                 buttons.addView(youtube)
             }
             media.externalLinks.hulu?.let { url ->
-                val hulu = getStreamIcon(buttons, R.color.hulu_green, R.string.icon_hulu, url)
-                buttons.addView(hulu)
-            }
-            media.externalLinks.disney?.let { url ->
-                val disney = getStreamIcon(buttons, R.color.dp_teal, R.string.icon_dp, url)
-                buttons.addView(disney)
+                buttons.addView(getStreamIcon(buttons, R.color.stream_hulu, R.string.icon_hulu, url))
             }
             media.externalLinks.netflix?.let { url ->
-                val netflix = getStreamIcon(buttons, R.color.nf_red, R.string.icon_nf, url)
-                buttons.addView(netflix)
+                buttons.addView(getStreamIcon(buttons, R.color.stream_netflix, R.string.icon_netflix, url))
+            }
+            media.externalLinks.amazon?.let { url ->
+                buttons.addView(getStreamIcon(buttons, R.color.stream_amazon, R.string.icon_amazon, url))
+            }
+            media.externalLinks.disney?.let { url ->
+                buttons.addView(getStreamIcon(buttons, R.color.stream_disneyplus, R.string.icon_disney, url))
             }
             media.externalLinks.max?.let { url ->
-                val max = getStreamIcon(buttons, R.color.max_blue, R.string.icon_max, url)
-                buttons.addView(max)
+                buttons.addView( getStreamIcon(buttons, R.color.stream_max, R.string.icon_max, url))
             }
-            media.externalLinks.crunchyroll != null
+            media.externalLinks.tubi?.let { url ->
+                buttons.addView(getStreamIcon(buttons, R.color.stream_tubi, R.string.icon_tubi, url))
+            }
+            media.externalLinks.hidive?.let { url ->
+                buttons.addView(getStreamIcon(buttons, R.color.stream_hidive, R.string.icon_hidive, url))
+            }
+            media.externalLinks.crunchy != null
             if (media.streamingEpisodes.isNotEmpty()) {
                 binding.episodeRecyclerView.adapter =
                     StreamingAdapter(media.streamingEpisodes)
             }
-            media.externalLinks.crunchyroll?.let { url ->
-                val crunchyroll = getStreamIcon(buttons, R.color.cr_orange, R.string.icon_cr, url)
+            media.externalLinks.crunchy?.let { url ->
+                val crunchyroll = getStreamIcon(buttons, R.color.stream_crunchyroll, R.string.icon_crunchyroll, url)
                 crunchyroll.setOnClickListener(null)
                 crunchyroll.setOnClickListener {
                     if (media.streamingEpisodes.isEmpty()) {
@@ -219,8 +224,6 @@ class AnimeWatchAdapter(
                 fragment.openSettings(ext.extension)
             }
         }
-
-        //Icons
 
         //subscribe
         subscribe = MediaDetailsActivity.PopImageButton(
