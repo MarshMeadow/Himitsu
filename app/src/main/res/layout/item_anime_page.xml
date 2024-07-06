@@ -117,7 +117,7 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center" />
 
-            <ani.dantotsu.view.FadingEdgeRecyclerView
+            <ani.himitsu.view.FadingEdgeRecyclerView
                 android:id="@+id/animeUpdatedRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="242dp"
@@ -178,7 +178,7 @@
             android:layout_height="48dp"
             android:layout_gravity="center" />
 
-        <ani.dantotsu.view.FadingEdgeRecyclerView
+        <ani.himitsu.view.FadingEdgeRecyclerView
             android:id="@+id/animeMoviesRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="242dp"
@@ -238,7 +238,7 @@
             android:layout_height="48dp"
             android:layout_gravity="center" />
 
-        <ani.dantotsu.view.FadingEdgeRecyclerView
+        <ani.himitsu.view.FadingEdgeRecyclerView
             android:id="@+id/animeTopRatedRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="242dp"
@@ -297,7 +297,7 @@
             android:layout_height="48dp"
             android:layout_gravity="center" />
 
-        <ani.dantotsu.view.FadingEdgeRecyclerView
+        <ani.himitsu.view.FadingEdgeRecyclerView
             android:id="@+id/animeMostFavRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="242dp"

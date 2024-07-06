@@ -1,7 +1,7 @@
 package ani.dantotsu.addons
 
 import android.content.Context
-import ani.dantotsu.media.AddonType
+import ani.himitsu.media.AddonType
 import eu.kanade.tachiyomi.extension.InstallStep
 import eu.kanade.tachiyomi.extension.util.ExtensionInstaller
 import rx.Observable

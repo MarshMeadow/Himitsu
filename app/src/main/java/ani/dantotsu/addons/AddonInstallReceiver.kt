@@ -7,7 +7,7 @@ import android.content.IntentFilter
 import androidx.core.content.ContextCompat
 import ani.dantotsu.addons.download.DownloadAddonManager
 import ani.dantotsu.addons.torrent.TorrentAddonManager
-import ani.dantotsu.media.AddonType
+import ani.himitsu.media.AddonType
 import eu.kanade.tachiyomi.extension.util.ExtensionInstallReceiver
 import eu.kanade.tachiyomi.extension.util.ExtensionInstallReceiver.Companion.getPackageNameFromIntent
 import kotlinx.coroutines.DelicateCoroutinesApi

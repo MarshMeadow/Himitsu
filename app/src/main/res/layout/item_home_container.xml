@@ -89,7 +89,7 @@
             android:layout_gravity="center"
             android:layout_margin="90dp" />
 
-        <ani.dantotsu.view.FadingEdgeRecyclerView
+        <ani.himitsu.view.FadingEdgeRecyclerView
             android:id="@+id/homeItemRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

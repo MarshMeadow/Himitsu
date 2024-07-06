@@ -1,11 +1,11 @@
 package eu.kanade.tachiyomi.extension.api
 
-import ani.dantotsu.others.LanguageMapper
-import ani.dantotsu.parsers.novel.AvailableNovelSources
-import ani.dantotsu.parsers.novel.NovelExtension
-import ani.dantotsu.settings.saving.PrefManager
-import ani.dantotsu.settings.saving.PrefName
-import ani.dantotsu.util.Logger
+import ani.himitsu.others.LanguageMapper
+import ani.himitsu.parsers.novel.AvailableNovelSources
+import ani.himitsu.parsers.novel.NovelExtension
+import ani.himitsu.settings.saving.PrefManager
+import ani.himitsu.settings.saving.PrefName
+import ani.himitsu.util.Logger
 import eu.kanade.tachiyomi.extension.anime.model.AnimeExtension
 import eu.kanade.tachiyomi.extension.anime.model.AvailableAnimeSources
 import eu.kanade.tachiyomi.extension.manga.model.AvailableMangaSources

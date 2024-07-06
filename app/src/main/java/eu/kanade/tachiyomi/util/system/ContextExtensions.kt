@@ -1,16 +1,13 @@
 package eu.kanade.tachiyomi.util.system
 
-import android.app.ActivityManager
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
-import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Color
 import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.os.Build
-import android.os.PowerManager
 import android.util.TypedValue
 import androidx.annotation.AttrRes
 import androidx.annotation.ColorInt
@@ -21,11 +18,9 @@ import androidx.core.graphics.alpha
 import androidx.core.graphics.blue
 import androidx.core.graphics.green
 import androidx.core.graphics.red
-import androidx.core.net.toUri
-import ani.dantotsu.util.Logger
+import ani.himitsu.util.Logger
 import com.hippo.unifile.UniFile
 import eu.kanade.tachiyomi.util.lang.truncateCenter
-import java.io.File
 import kotlin.math.roundToInt
 
 /**

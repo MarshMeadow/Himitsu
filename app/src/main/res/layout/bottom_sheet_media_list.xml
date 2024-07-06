@@ -254,7 +254,7 @@
 
             </LinearLayout>
 
-            <ani.dantotsu.view.Xpandable
+            <ani.himitsu.view.Xpandable
                 android:id="@+id/mediaListExpandable"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -371,7 +371,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical" />
 
-            </ani.dantotsu.view.Xpandable>
+            </ani.himitsu.view.Xpandable>
 
             <LinearLayout
                 android:layout_width="match_parent"

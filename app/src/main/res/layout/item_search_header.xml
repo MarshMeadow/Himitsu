@@ -145,7 +145,7 @@
                 app:drawableTint="?attr/colorPrimary" />
         </androidx.cardview.widget.CardView>
 
-        <ani.dantotsu.view.FadingEdgeRecyclerView
+        <ani.himitsu.view.FadingEdgeRecyclerView
             android:id="@+id/searchChipRecycler"
             android:layout_width="0dp"
             android:layout_height="match_parent"

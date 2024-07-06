@@ -74,7 +74,7 @@
             android:clipToPadding="false"
             android:orientation="vertical">
 
-            <ani.dantotsu.view.Xpandable
+            <ani.himitsu.view.Xpandable
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -178,9 +178,9 @@
                     android:text="@string/exceed_cap_desc"
                     android:textSize="14sp" />
 
-            </ani.dantotsu.view.Xpandable>
+            </ani.himitsu.view.Xpandable>
 
-            <ani.dantotsu.view.Xpandable
+            <ani.himitsu.view.Xpandable
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -196,7 +196,7 @@
                     app:drawableEndCompat="@drawable/ic_round_arrow_drop_down_24"
                     tools:ignore="TextContrastCheck" />
 
-                <ani.dantotsu.view.Xpandable
+                <ani.himitsu.view.Xpandable
                     android:id="@+id/subtitleTest"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -219,7 +219,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <ani.dantotsu.view.StrokedTextView
+                        <ani.himitsu.view.StrokedTextView
                             android:id="@+id/subtitleTestText"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -232,7 +232,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="8dp" />
-                </ani.dantotsu.view.Xpandable>
+                </ani.himitsu.view.Xpandable>
 
                 <com.google.android.material.materialswitch.MaterialSwitch
                     android:id="@+id/subSwitch"
@@ -499,9 +499,9 @@
 
                 </LinearLayout>
 
-            </ani.dantotsu.view.Xpandable>
+            </ani.himitsu.view.Xpandable>
 
-            <ani.dantotsu.view.Xpandable
+            <ani.himitsu.view.Xpandable
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -750,9 +750,9 @@
                     android:text="@string/auto_skip_fillers_info"
                     android:textSize="14sp" />
 
-            </ani.dantotsu.view.Xpandable>
+            </ani.himitsu.view.Xpandable>
 
-            <ani.dantotsu.view.Xpandable
+            <ani.himitsu.view.Xpandable
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -893,9 +893,9 @@
                     android:text="@string/watch_complete_percentage_info"
                     android:textSize="14sp" />
 
-            </ani.dantotsu.view.Xpandable>
+            </ani.himitsu.view.Xpandable>
 
-            <ani.dantotsu.view.Xpandable
+            <ani.himitsu.view.Xpandable
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -1158,7 +1158,7 @@
                     android:text="@string/skip_time_info"
                     android:textSize="14sp" />
 
-            </ani.dantotsu.view.Xpandable>
+            </ani.himitsu.view.Xpandable>
 
 
             <TextView

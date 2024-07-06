@@ -1,0 +1,122 @@
+package ani.himitsu.media
+
+import android.content.Context
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
+import androidx.core.math.MathUtils.clamp
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.GridLayoutManager
+import ani.himitsu.databinding.BottomSheetSourceSearchBinding
+import ani.himitsu.media.anime.AnimeSourceAdapter
+import ani.himitsu.media.cereal.Media
+import ani.himitsu.media.manga.MangaSourceAdapter
+import ani.himitsu.parsers.AnimeSources
+import ani.himitsu.parsers.HAnimeSources
+import ani.himitsu.parsers.HMangaSources
+import ani.himitsu.parsers.MangaSources
+import ani.himitsu.toPx
+import ani.himitsu.tryWithSuspend
+import ani.himitsu.view.dialog.BottomSheetDialogFragment
+import bit.himitsu.onCompletedAction
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+
+class SourceSearchDialogFragment : BottomSheetDialogFragment() {
+
+    private var _binding: BottomSheetSourceSearchBinding? = null
+    private val binding by lazy { _binding!! }
+    val model: MediaDetailsViewModel by activityViewModels()
+    private var searched = false
+    var anime = true
+    var i: Int? = null
+    var id: Int? = null
+    var media: Media? = null
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = BottomSheetSourceSearchBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        val scope = requireActivity().lifecycleScope
+        val imm =
+            requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        model.getMedia().observe(viewLifecycleOwner) {
+            media = it
+            if (media != null) {
+                binding.mediaListProgressBar.visibility = View.GONE
+                binding.mediaListLayout.visibility = View.VISIBLE
+
+                binding.searchRecyclerView.visibility = View.GONE
+                binding.searchProgress.visibility = View.VISIBLE
+
+                i = media!!.selected!!.sourceIndex
+
+                val source = if (media!!.anime != null) {
+                    (if (media!!.isAdult) HAnimeSources else AnimeSources)[i!!]
+                } else {
+                    anime = false
+                    (if (media!!.isAdult) HMangaSources else MangaSources)[i!!]
+                }
+
+                fun search() {
+                    binding.searchBarText.clearFocus()
+                    imm.hideSoftInputFromWindow(binding.searchBarText.windowToken, 0)
+                    scope.launch {
+                        model.responses.postValue(
+                            withContext(Dispatchers.IO) {
+                                tryWithSuspend {
+                                    source.search(binding.searchBarText.text.toString())
+                                }
+                            }
+                        )
+                    }
+                }
+                binding.searchSourceTitle.text = source.name
+                binding.searchBarText.setText(media!!.mangaName())
+                binding.searchBarText.setOnEditorActionListener(onCompletedAction { search() })
+                binding.searchBar.setEndIconOnClickListener { search() }
+                if (!searched) search()
+                searched = true
+                model.responses.observe(viewLifecycleOwner) { results ->
+                    results?.let { result ->
+                        binding.searchRecyclerView.visibility = View.VISIBLE
+                        binding.searchProgress.visibility = View.GONE
+                        binding.searchRecyclerView.adapter =
+                            if (anime)
+                                AnimeSourceAdapter(result, model, i!!, media!!.id, this, scope)
+                            else
+                                MangaSourceAdapter(result, model, i!!, media!!.id, this, scope)
+                        binding.searchRecyclerView.layoutManager = GridLayoutManager(
+                            requireActivity(),
+                            clamp(
+                                requireActivity().resources.displayMetrics.widthPixels / 124.toPx,
+                                1,
+                                4
+                            )
+                        )
+                    }
+                }
+            }
+        }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
+    override fun dismiss() {
+        model.responses.value = null
+        super.dismiss()
+    }
+}

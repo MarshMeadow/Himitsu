@@ -10,7 +10,7 @@
 # If your project uses WebView with JS, uncomment the following
 # and specify the fully qualified class name to the JavaScript interface
 # class:
--keepclassmembers class ani.dantotsu.others.webview.* {
+-keepclassmembers class ani.himitsu.others.webview.* {
    public *;
 }
 
@@ -49,6 +49,7 @@
 }
 
 -keep,allowoptimization class ani.dantotsu.**
+-keep,allowoptimization class ani.himitsu.**
 -keep,allowoptimization class bit.himitsu.**
 -keep,allowoptimization class eu.kanade.**
 -keep,allowoptimization class tachiyomi.**
@@ -56,7 +57,8 @@
 ##---------------Begin: proguard configuration for aniyomi  ----------
 # Keep common dependencies used in extensions
 -keep,allowoptimization class androidx.preference.** { public protected *; }
--keep,allowoptimization class android.content.** { *; }
+-keep,allowoptimization class
+ android.content.** { *; }
 -keep,allowoptimization class uy.kohesive.injekt.** { public protected *; }
 -keep,allowoptimization class android.test.base.** { *; }
 -keep,allowoptimization class kotlin.** { public protected *; }
@@ -82,6 +84,7 @@
 ##---------------End: proguard configuration for aniyomi  ----------
 
 -keep,allowoptimization class ani.dantotsu.parsers.** { public protected *; }
+-keep,allowoptimization class ani.himitsu.parsers.** { public protected *; }
 -keep,allowoptimization class eu.kanade.tachiyomi.animesource.** { public protected *; }
 -keep,allowoptimization class eu.kanade.tachiyomi.source.** { public protected *; }
 
@@ -132,6 +135,14 @@
     kotlinx.serialization.KSerializer serializer(...);
 }
 
+-keep,includedescriptorclasses class ani.himitsu.**$$serializer { *; }
+-keepclassmembers class ani.himitsu.** {
+    *** Companion;
+}
+-keepclasseswithmembers class ani.himitsu.** {
+    kotlinx.serialization.KSerializer serializer(...);
+}
+
 -keep,includedescriptorclasses class bit.himitsu.**$$serializer { *; }
 -keepclassmembers class bit.himitsu.** {
     *** Companion;
@@ -169,6 +180,7 @@
 # Application classes that will be serialized/deserialized over Gson
 -keep class eu.kanade.** { <fields>; }
 -keep class ani.dantotsu.** { <fields>; }
+-keep class ani.himitsu.** { <fields>; }
 -keep class bit.himitsu.** { <fields>; }
 -keep class tachiyomi.** { <fields>; }
 

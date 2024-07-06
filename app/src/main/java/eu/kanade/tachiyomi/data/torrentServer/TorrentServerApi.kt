@@ -1,6 +1,6 @@
 package eu.kanade.tachiyomi.data.torrentServer
 
-import ani.dantotsu.BuildConfig
+import ani.himitsu.BuildConfig
 import eu.kanade.tachiyomi.data.torrentServer.model.Torrent
 import eu.kanade.tachiyomi.data.torrentServer.model.TorrentRequest
 import eu.kanade.tachiyomi.network.GET

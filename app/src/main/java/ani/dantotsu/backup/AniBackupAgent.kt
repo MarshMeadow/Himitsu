@@ -3,7 +3,7 @@ package ani.dantotsu.backup
 import android.app.backup.BackupAgentHelper
 import android.app.backup.SharedPreferencesBackupHelper
 import android.content.Context
-import ani.dantotsu.settings.saving.PrefName
+import ani.himitsu.settings.saving.PrefName
 
 class AniBackupAgent : BackupAgentHelper() {
 

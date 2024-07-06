@@ -13,8 +13,8 @@ import ani.dantotsu.addons.torrent.TorrentAddon
 import ani.dantotsu.addons.torrent.TorrentAddonApi
 import ani.dantotsu.addons.torrent.TorrentAddonManager
 import ani.dantotsu.addons.torrent.TorrentLoadResult
-import ani.dantotsu.media.AddonType
-import ani.dantotsu.util.Logger
+import ani.himitsu.media.AddonType
+import ani.himitsu.util.Logger
 import dalvik.system.PathClassLoader
 import eu.kanade.tachiyomi.extension.util.ExtensionLoader
 import eu.kanade.tachiyomi.util.system.getApplicationIcon

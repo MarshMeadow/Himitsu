@@ -1,12 +1,9 @@
 package eu.kanade.tachiyomi.util.storage
 
 import android.content.Context
-import android.media.MediaScannerConnection
-import android.net.Uri
 import android.os.Environment
 import android.os.StatFs
 import androidx.core.content.ContextCompat
-import ani.dantotsu.download.DownloadsManager
 import com.hippo.unifile.UniFile
 import eu.kanade.tachiyomi.util.lang.Hash
 import java.io.File

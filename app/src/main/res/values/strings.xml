@@ -630,6 +630,7 @@
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="ok">OK</string>
+    <string name="uninstall">Uninstall</string>
     <string name="reset">Reset</string>
     <string name="close">Close</string>
     <string name="deny">Deny</string>

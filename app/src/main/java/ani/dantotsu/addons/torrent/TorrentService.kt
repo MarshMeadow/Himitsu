@@ -9,8 +9,8 @@ import android.content.Intent
 import android.content.pm.ServiceInfo
 import android.os.Build
 import android.os.IBinder
-import ani.dantotsu.R
-import ani.dantotsu.util.Logger
+import ani.himitsu.R
+import ani.himitsu.util.Logger
 import eu.kanade.tachiyomi.data.notification.Notifications.CHANNEL_TORRENT_SERVER
 import eu.kanade.tachiyomi.data.notification.Notifications.ID_TORRENT_SERVER
 import eu.kanade.tachiyomi.util.system.cancelNotification

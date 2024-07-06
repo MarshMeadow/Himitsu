@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:visibility="gone"/>
 
-    <ani.dantotsu.media.manga.mangareader.Swipy
+    <ani.himitsu.media.manga.mangareader.Swipy
         android:id="@+id/mangaReaderSwipy"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -43,7 +43,7 @@
                 tools:listitem="@layout/item_dual_page" />
 
         </com.alexvasilkov.gestures.views.GestureFrameLayout>
-    </ani.dantotsu.media.manga.mangareader.Swipy>
+    </ani.himitsu.media.manga.mangareader.Swipy>
 
     <FrameLayout
         android:id="@+id/edgeSwipeFramework"
@@ -263,7 +263,7 @@
                         android:gravity="center_vertical"
                         android:orientation="vertical">
 
-                        <ani.dantotsu.view.SpinnerNoSwipe
+                        <ani.himitsu.view.SpinnerNoSwipe
                             android:id="@+id/mangaReaderChapterSelect"
                             android:layout_width="match_parent"
                             android:layout_height="48dp"
@@ -500,7 +500,7 @@
 
     </LinearLayout>
 
-    <ani.dantotsu.view.OutlineTextView
+    <ani.himitsu.view.OutlineTextView
         android:id="@+id/mangaReaderPageNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

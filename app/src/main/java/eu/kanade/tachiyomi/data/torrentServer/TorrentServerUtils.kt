@@ -1,7 +1,7 @@
 package eu.kanade.tachiyomi.data.torrentServer
 
-import ani.dantotsu.settings.saving.PrefManager
-import ani.dantotsu.settings.saving.PrefName
+import ani.himitsu.settings.saving.PrefManager
+import ani.himitsu.settings.saving.PrefName
 import bit.himitsu.nio.utf8
 import eu.kanade.tachiyomi.data.torrentServer.model.FileStat
 import eu.kanade.tachiyomi.data.torrentServer.model.Torrent

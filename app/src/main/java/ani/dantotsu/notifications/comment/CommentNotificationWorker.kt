@@ -3,7 +3,7 @@ package ani.dantotsu.notifications.comment
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import ani.dantotsu.util.Logger
+import ani.himitsu.util.Logger
 import eu.kanade.tachiyomi.data.notification.Notifications
 
 

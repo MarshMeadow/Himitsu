@@ -1,13 +1,13 @@
 package ani.dantotsu.connections.comments
 
 import android.content.Context
-import ani.dantotsu.connections.anilist.Anilist
-import ani.dantotsu.isOnline
-import ani.dantotsu.settings.saving.PrefManager
-import ani.dantotsu.settings.saving.PrefName
-import ani.dantotsu.snackString
-import ani.dantotsu.toast
-import ani.dantotsu.util.Logger
+import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.isOnline
+import ani.himitsu.settings.saving.PrefManager
+import ani.himitsu.settings.saving.PrefName
+import ani.himitsu.snackString
+import ani.himitsu.toast
+import ani.himitsu.util.Logger
 import com.lagradost.nicehttp.NiceResponse
 import com.lagradost.nicehttp.Requests
 import eu.kanade.tachiyomi.network.NetworkHelper

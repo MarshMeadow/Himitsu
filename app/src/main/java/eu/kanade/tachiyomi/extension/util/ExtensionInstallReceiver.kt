@@ -5,10 +5,10 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import androidx.core.content.ContextCompat
-import ani.dantotsu.media.MediaType
-import ani.dantotsu.parsers.novel.NovelExtension
-import ani.dantotsu.parsers.novel.NovelLoadResult
-import ani.dantotsu.util.Logger
+import ani.himitsu.media.MediaType
+import ani.himitsu.parsers.novel.NovelExtension
+import ani.himitsu.parsers.novel.NovelLoadResult
+import ani.himitsu.util.Logger
 import eu.kanade.tachiyomi.extension.anime.model.AnimeExtension
 import eu.kanade.tachiyomi.extension.anime.model.AnimeLoadResult
 import eu.kanade.tachiyomi.extension.manga.model.MangaExtension

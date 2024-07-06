@@ -57,7 +57,7 @@
             android:layout_height="48dp"
             android:layout_gravity="center" />
 
-        <ani.dantotsu.view.FadingEdgeRecyclerView
+        <ani.himitsu.view.FadingEdgeRecyclerView
             android:id="@+id/mangaTrendingMangaRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="242dp"
@@ -115,7 +115,7 @@
             android:layout_height="48dp"
             android:layout_gravity="center" />
 
-        <ani.dantotsu.view.FadingEdgeRecyclerView
+        <ani.himitsu.view.FadingEdgeRecyclerView
             android:id="@+id/mangaTrendingManhwaRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="242dp"
@@ -173,7 +173,7 @@
             android:layout_height="48dp"
             android:layout_gravity="center" />
 
-        <ani.dantotsu.view.FadingEdgeRecyclerView
+        <ani.himitsu.view.FadingEdgeRecyclerView
             android:id="@+id/mangaNovelRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="242dp"
@@ -231,7 +231,7 @@
             android:layout_height="48dp"
             android:layout_gravity="center" />
 
-        <ani.dantotsu.view.FadingEdgeRecyclerView
+        <ani.himitsu.view.FadingEdgeRecyclerView
             android:id="@+id/mangaTopRatedRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="242dp"
@@ -289,7 +289,7 @@
             android:layout_height="48dp"
             android:layout_gravity="center" />
 
-        <ani.dantotsu.view.FadingEdgeRecyclerView
+        <ani.himitsu.view.FadingEdgeRecyclerView
             android:id="@+id/mangaMostFavRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="242dp"

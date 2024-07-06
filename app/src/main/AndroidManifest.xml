@@ -57,7 +57,7 @@
     <application
         android:name=".Himitsu"
         android:allowBackup="true"
-        android:backupAgent=".backup.AniBackupAgent"
+        android:backupAgent="ani.dantotsu.backup.AniBackupAgent"
         android:banner="@mipmap/ic_banner"
         android:dataExtractionRules="@xml/extraction_content"
         android:enableOnBackInvokedCallback="true"
@@ -418,7 +418,7 @@
             </intent-filter>
         </receiver>
         <receiver android:name=".notifications.anilist.AnilistNotificationReceiver" />
-        <receiver android:name=".notifications.comment.CommentNotificationReceiver" />
+        <receiver android:name="ani.dantotsu.notifications.comment.CommentNotificationReceiver" />
         <receiver android:name=".notifications.subscription.SubscriptionNotificationReceiver" />
 
         <meta-data
@@ -472,7 +472,7 @@
             android:name="eu.kanade.tachiyomi.data.torrentServer.service.TorrentServerService"
             android:foregroundServiceType="dataSync" />
         <service
-            android:name=".addons.torrent.TorrentServerService"
+            android:name="ani.dantotsu.addons.torrent.TorrentServerService"
             android:exported="false"
             android:foregroundServiceType="dataSync"
             android:stopWithTask="true" />

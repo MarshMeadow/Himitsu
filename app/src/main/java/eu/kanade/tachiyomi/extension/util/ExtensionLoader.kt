@@ -5,11 +5,11 @@ import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
 import android.os.Build
 import androidx.core.content.pm.PackageInfoCompat
-import ani.dantotsu.media.MediaType
-import ani.dantotsu.parsers.NovelInterface
-import ani.dantotsu.parsers.novel.NovelExtension
-import ani.dantotsu.parsers.novel.NovelLoadResult
-import ani.dantotsu.util.Logger
+import ani.himitsu.media.MediaType
+import ani.himitsu.parsers.NovelInterface
+import ani.himitsu.parsers.novel.NovelExtension
+import ani.himitsu.parsers.novel.NovelLoadResult
+import ani.himitsu.util.Logger
 import dalvik.system.PathClassLoader
 import eu.kanade.domain.source.service.SourcePreferences
 import eu.kanade.tachiyomi.animesource.AnimeCatalogueSource

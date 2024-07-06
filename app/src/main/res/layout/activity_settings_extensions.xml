@@ -69,7 +69,7 @@
 
         <!-- beginning of layout contents -->
 
-        <ani.dantotsu.view.FadingEdgeRecyclerView
+        <ani.himitsu.view.FadingEdgeRecyclerView
             android:id="@+id/settingsRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

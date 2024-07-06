@@ -10,9 +10,9 @@ import android.content.pm.ServiceInfo
 import android.os.Build
 import android.os.IBinder
 import android.util.Log
-import ani.dantotsu.BuildConfig
-import ani.dantotsu.R
-import ani.dantotsu.util.Logger
+import ani.himitsu.BuildConfig
+import ani.himitsu.R
+import ani.himitsu.util.Logger
 import eu.kanade.tachiyomi.data.notification.Notifications
 import eu.kanade.tachiyomi.data.torrentServer.TorrentServerApi
 import eu.kanade.tachiyomi.data.torrentServer.TorrentServerUtils

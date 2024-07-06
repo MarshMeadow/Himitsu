@@ -10,10 +10,10 @@ import androidx.annotation.CallSuper
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import ani.dantotsu.addons.download.DownloadAddonManager
 import ani.dantotsu.addons.torrent.TorrentAddonManager
-import ani.dantotsu.media.AddonType
-import ani.dantotsu.media.MediaType
-import ani.dantotsu.media.Type
-import ani.dantotsu.parsers.novel.NovelExtensionManager
+import ani.himitsu.media.AddonType
+import ani.himitsu.media.MediaType
+import ani.himitsu.media.Type
+import ani.himitsu.parsers.novel.NovelExtensionManager
 import eu.kanade.tachiyomi.extension.InstallStep
 import eu.kanade.tachiyomi.extension.anime.AnimeExtensionManager
 import eu.kanade.tachiyomi.extension.manga.MangaExtensionManager

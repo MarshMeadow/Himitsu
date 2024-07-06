@@ -1,6 +1,6 @@
 package ani.dantotsu.notifications.comment
 
-import ani.dantotsu.client
+import ani.himitsu.client
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.Dispatchers

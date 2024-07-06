@@ -2,10 +2,10 @@
 <data-extraction-rules>
     <cloud-backup disableIfNoEncryptionCapabilities="false">
         <include domain="sharedpref" path="."/>
-        <exclude domain="sharedpref" path="ani.dantotsu.widgets.*.xml"/>
+        <exclude domain="sharedpref" path="ani.himitsu.widgets.*.xml"/>
     </cloud-backup>
     <device-transfer>
         <include domain="sharedpref" path="."/>
-        <exclude domain="sharedpref" path="ani.dantotsu.widgets.*.xml"/>
+        <exclude domain="sharedpref" path="ani.himitsu.widgets.*.xml"/>
     </device-transfer>
 </data-extraction-rules>
