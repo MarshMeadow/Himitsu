@@ -70,7 +70,6 @@ class AddonLoader {
             val extName =
                 pkgManager.getApplicationLabel(appInfo).toString()
                     .substringAfter("Dantotsu: ")
-                    .substringAfter("Himitsu: ")
             val versionName = pkgInfo.versionName
             val versionCode = PackageInfoCompat.getLongVersionCode(pkgInfo)
 

@@ -438,16 +438,15 @@
     <string name="install_step">Stap: %1$s</string>
     <string name="review">Oorsig</string>
     <string name="select_source">Kies \'n Bron</string>
-    <string name="update_notice">Dantotsu opdatering %1$s</string>
     <string name="install_update">Installeer opdatering %1$s?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Opdatering Beskikbaar</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Vertoon slegs die eerste knoppie</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Vertoon eerder jou AniList-profiel</string>
     <string name="discord_rich_presence">Discord Ryk Teenwoordigheid</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">VERDOEM! JY IS WERKLIK WERKLOOS\nJY HET DIE EINDE BEREIK</string>
     <string name="file_manager_not_found">Kon nie \'n Lêerbestuurder vind om SD-kaart oop te maak</string>
     <string name="error_loading_data">Fout met die laai van data %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Besig om vir Opdatering te kyk</string>
     <string name="dont_show_again">Moenie weer kennis gee vir weergawe %1$s nie</string>
     <string name="no_update_found">Geen Opdatering Gevind Nie</string>
-    <string name="downloading_update">Dantotsu %1$s aan die aflaai</string>
     <string name="permission_required">Gee asseblief toestemming om Toegang tot Lêers &amp; Vouers te kry van Instellings, &amp; Probeer weer.</string>
     <string name="started_downloading">Begin Aflaai\n%1$s</string>
     <string name="install_1dm">Installeer asseblief 1DM</string>
@@ -547,7 +545,7 @@
     <string name="type_other">ANDER</string>
     <string name="type_source">BRON</string>
     <string name="type_contains">BEVAT</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Gaan voort: Aflewering %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Vuller</string>
     <string name="continue_chapter">Gaan voort: %1$s\n%2$s</string>

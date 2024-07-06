@@ -438,16 +438,15 @@
     <string name="install_step">Step: %1$s</string>
     <string name="review">Review</string>
     <string name="select_source">Select a Source</string>
-    <string name="update_notice">Dantotsu update %1$s</string>
     <string name="install_update">Install update %1$s?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Update Available</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Display only the first button</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Display your AniList profile instead</string>
     <string name="discord_rich_presence">Discord Rich Presence</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">DAMN! YOU TRULY ARE JOBLESS\nYOU REACHED THE END</string>
     <string name="file_manager_not_found">Couldn\'t find a File Manager to open SD card</string>
     <string name="error_loading_data">Error loading data %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Checking for Update</string>
     <string name="dont_show_again">Don\'t notify again for version %1$s</string>
     <string name="no_update_found">No Update Found</string>
-    <string name="downloading_update">Downloading Dantotsu %1$s</string>
     <string name="permission_required">Please give permission to access Files &amp; Folders from Settings, &amp; Try again.</string>
     <string name="started_downloading">Started Downloading\n%1$s</string>
     <string name="install_1dm">Please install 1DM</string>
@@ -547,7 +545,7 @@
     <string name="type_other">OTHER</string>
     <string name="type_source">SOURCE</string>
     <string name="type_contains">CONTAINS</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Continue : Episode %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Filler</string>
     <string name="continue_chapter">Continue : %1$s\n%2$s</string>

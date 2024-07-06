@@ -438,16 +438,15 @@
     <string name="install_step">Lépés: %1$s</string>
     <string name="review">Felülvizsgálat</string>
     <string name="select_source">Válasszon forrást</string>
-    <string name="update_notice">Dantotsu frissítése %1$s</string>
     <string name="install_update">Telepítse a frissítést %1$s?</string>
     <string name="beta_update">Béta </string>
     <string name="update_available">Frissítés elérhető</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Csak az első gomb megjelenítése</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Az AniList profiljának megjelenítése helyett</string>
     <string name="discord_rich_presence">Discord Gazdag Jelenlét</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">AZ ISTENIT! VALÓBAN MUNKANÉLKÜLI VAGY\nELÉRTED A VÉGET</string>
     <string name="file_manager_not_found">Nem található fájlkezelő az SD-kártya megnyitásához</string>
     <string name="error_loading_data">Adatok betöltési hibája %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Frissítések keresése</string>
     <string name="dont_show_again">Ne értesítsen újra a %1$s verzió esetén</string>
     <string name="no_update_found">Nincs frissítés</string>
-    <string name="downloading_update">Dantotsu %1$s letöltése</string>
     <string name="permission_required">Engedélyt kell adni a Fájlokhoz és Mappákhoz a Beállításokban, majd próbáld újra.</string>
     <string name="started_downloading">Letöltés elkezdve\n%1$s</string>
     <string name="install_1dm">Kérjük, telepítse az 1DM-et</string>
@@ -547,7 +545,7 @@
     <string name="type_other">EGYÉB</string>
     <string name="type_source">FORRÁS</string>
     <string name="type_contains">TARTALMAZ</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Folytatás: Epizód %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Filler</string>
     <string name="continue_chapter">Folytatás: %1$s\n%2$s</string>

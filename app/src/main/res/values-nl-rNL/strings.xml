@@ -438,16 +438,15 @@
     <string name="install_step">Stap: %1$s</string>
     <string name="review">Beoordelen</string>
     <string name="select_source">Selecteer een bron</string>
-    <string name="update_notice">Dantotsu update %1$s</string>
     <string name="install_update">Installeer update %1$s?</string>
     <string name="beta_update">Bèta </string>
     <string name="update_available">Update beschikbaar</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Alleen de eerste knop weergeven</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Toon in plaats daarvan je AniList profiel</string>
     <string name="discord_rich_presence">Discord Rich Presence</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">VERDOMME! JE BENT ECHT WERKLOOS\nJE BENT AAN HET EINDE GEKOMEN</string>
     <string name="file_manager_not_found">Kon geen bestandsmanager vinden om de SD-kaart te openen</string>
     <string name="error_loading_data">Fout bij het laden van gegevens %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Controleren op update</string>
     <string name="dont_show_again">Don\'t show again for version %1$s</string>
     <string name="no_update_found">Geen update gevonden</string>
-    <string name="downloading_update">Downloading Update %1$s</string>
     <string name="permission_required">Geef a.u.b. toestemming voor toegang tot bestanden &amp; Mappen via Instellingen, &amp; Probeer het opnieuw.</string>
     <string name="started_downloading">Downloaden gestart\n%1$s</string>
     <string name="install_1dm">Installeer 1DM</string>
@@ -547,7 +545,7 @@
     <string name="type_other">ANDERE</string>
     <string name="type_source">ZUID</string>
     <string name="type_contains">DOORGAAN</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Doorgaan: Aflevering %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - vuller</string>
     <string name="continue_chapter">Doorgaan: %1$s\n%2$s</string>

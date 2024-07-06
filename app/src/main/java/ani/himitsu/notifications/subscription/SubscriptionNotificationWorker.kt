@@ -26,7 +26,7 @@ class SubscriptionNotificationWorker(appContext: Context, workerParams: WorkerPa
     companion object {
         val checkIntervals = arrayOf(0L, 480, 720, 1440)
         const val WORK_NAME =
-            "ani.dantotsu.notifications.subscription.SubscriptionNotificationWorker"
+            "ani.himitsu.notifications.subscription.SubscriptionNotificationWorker"
         private var lastCheck = 0L
     }
 }

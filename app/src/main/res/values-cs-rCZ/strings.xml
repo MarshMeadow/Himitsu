@@ -438,16 +438,15 @@
     <string name="install_step">Krok: %1$s</string>
     <string name="review">Přezkum</string>
     <string name="select_source">Vyberte zdroj</string>
-    <string name="update_notice">Dantotsu update %1$s</string>
     <string name="install_update">Instalovat aktualizaci %1$s?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Dostupná aktualizace</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Zobrazit pouze první tlačítko</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Místo toho zobrazit váš AniList profil</string>
     <string name="discord_rich_presence">Discord Rich Presence</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">VZDÁLENO! JSTE OBLASTI\nVÁŠ SE VÁM</string>
     <string name="file_manager_not_found">Nelze najít správce souborů pro otevření SD karty</string>
     <string name="error_loading_data">Chyba při načítání dat %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Kontrola aktualizací</string>
     <string name="dont_show_again">Znovu neupozorňovat na verzi %1$s</string>
     <string name="no_update_found">Nebyla nalezena žádná aktualizace</string>
-    <string name="downloading_update">Stahování Dantotsu %1$s</string>
     <string name="permission_required">Prosím povolte přístup k souborům &amp; Složkám z nastavení, &amp; Zkuste to znovu.</string>
     <string name="started_downloading">Stahování\n%1$s začalo</string>
     <string name="install_1dm">Nainstalujte prosím 1DM</string>
@@ -547,7 +545,7 @@
     <string name="type_other">OSTATNÍ</string>
     <string name="type_source">ZDROJE</string>
     <string name="type_contains">OBSAH</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Pokračovat : Epizoda %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Vyplňování</string>
     <string name="continue_chapter">Pokračovat : %1$s\n%2$s</string>

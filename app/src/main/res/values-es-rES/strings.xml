@@ -418,16 +418,15 @@
     <string name="install_step">Pasó: %1$s</string>
     <string name="review">Revisar</string>
     <string name="select_source">Seleccione una fuente</string>
-    <string name="update_notice">Himitsu update %1$s</string>
     <string name="install_update">¿Instalar actualización %1$s?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Actualización disponible</string>
     <string name="reviews">Reseñas</string>
     <string name="discord_nothing_button">Mostrar solo el primer botón</string>
-    <string name="discord_dantotsu_button">Mostrar Himitsu en el segundo botón</string>
+    <string name="discord_himitsu_button">Mostrar Himitsu en el segundo botón</string>
     <string name="discord_anilist_button">Muestra tu perfil de AniList en su lugar</string>
     <string name="discord_rich_presence">Presencia en Discord</string>
-    <string name="stream_on_dantotsu">Transmitir en Himitsu</string>
+    <string name="stream_on_himitsu">Transmitir en Himitsu</string>
     <string name="jobless_message">¡Maldición! REALMENTE ESTÁS SIN TRABAJO\nHAS LLEGADO AL FINAL</string>
     <string name="file_manager_not_found">No se pudo encontrar ningún administrador de archivos para abrir la tarjeta SD</string>
     <string name="error_loading_data">Error al cargar datos %1$s</string>
@@ -480,7 +479,6 @@
     <string name="checking_for_update">Buscando actualización</string>
     <string name="dont_show_again">No mostrar de nuevo para la versión %1$s</string>
     <string name="no_update_found">No se encontró ninguna actualización</string>
-    <string name="downloading_update">Descargando actualización %1$s</string>
     <string name="permission_required">Por favor, otorga permiso para acceder a archivos &amp; carpetas desde Configuración, e inténtalo de nuevo.</string>
     <string name="started_downloading">Comenzó a descargar\n%1$s</string>
     <string name="install_1dm">Por favor, instala 1DM</string>
@@ -527,7 +525,7 @@
     <string name="type_other">OTRO</string>
     <string name="type_source">FUENTE</string>
     <string name="type_contains">CONTIENE</string>
-    <string name="view_profile_in_dantotsu">Ver perfil en Himitsu</string>
+    <string name="view_profile_in_himitsu">Ver perfil en Himitsu</string>
     <string name="continue_episode">Continuar : Episodio %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Relleno</string>
     <string name="continue_chapter">Continuar : %1$s\n%2$s</string>

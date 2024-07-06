@@ -438,16 +438,15 @@
     <string name="install_step">Vaihe: %1$s</string>
     <string name="review">Arvostelu</string>
     <string name="select_source">Valitse lähde</string>
-    <string name="update_notice">Dantotsu update %1$s</string>
     <string name="install_update">Asenna päivitys %1$s?</string>
     <string name="beta_update">Beeta </string>
     <string name="update_available">Päivitys Saatavilla</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Näytä vain ensimmäinen painike</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Näytä AniList-profiilisi sen sijaan</string>
     <string name="discord_rich_presence">Discord Rich Presence</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">HITTO! OLET OIKEASTI TYÖTÖN\nSAVOTTA LOPPU</string>
     <string name="file_manager_not_found">Ei löytynyt tiedostonhallintaohjelmaa SD-kortin avaamiseen</string>
     <string name="error_loading_data">Virhe ladattaessa tietoja %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Tarkistetaan päivitystä</string>
     <string name="dont_show_again">Älä ilmoita uudelleen versiolle %1$s</string>
     <string name="no_update_found">Päivityksiä Ei Löytynyt</string>
-    <string name="downloading_update">Ladataan Dantotsu %1$s</string>
     <string name="permission_required">Anna käyttöoikeus tiedostoihin &amp; Kansiot Asetuksista, &amp; Yritä uudelleen.</string>
     <string name="started_downloading">Aloitettu\n%1$s</string>
     <string name="install_1dm">Asenna 1DM</string>
@@ -547,7 +545,7 @@
     <string name="type_other">MUUT</string>
     <string name="type_source">LÄHETÄ</string>
     <string name="type_contains">SISÄLTÄÄ</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Jatka : Jakso %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Filler</string>
     <string name="continue_chapter">Jatka : %1$s\n%2$s</string>

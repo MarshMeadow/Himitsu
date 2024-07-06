@@ -438,16 +438,15 @@
     <string name="install_step">Schritt: %1$s</string>
     <string name="review">Überprüfung</string>
     <string name="select_source">Quelle auswählen</string>
-    <string name="update_notice">Dantotsu update %1$s</string>
     <string name="install_update">Update %1$s installieren?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Update verfügbar</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Nur die erste Schaltfläche anzeigen</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Zeigen Sie stattdessen Ihr AniList Profil an</string>
     <string name="discord_rich_presence">Diskursreiche Präsenz</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">VERDAMMT! DU BIST WIRKLICH HOBBYLOS\nDU HAST DAS ENDE ERREICHT</string>
     <string name="file_manager_not_found">Konnte keinen Dateimanager finden, um die SD-Karte zu öffnen</string>
     <string name="error_loading_data">Fehler beim Laden der Daten %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Auf Update wird überprüft</string>
     <string name="dont_show_again">Für Version %1$s nicht erneut anzeigen</string>
     <string name="no_update_found">Kein Update gefunden</string>
-    <string name="downloading_update">Update %1$s wird heruntergeladen</string>
     <string name="permission_required">Bitte geben Sie die Berechtigung zum Zugriff auf Dateien &amp; Ordner über die Einstellungen und versuchen Sie es erneut.</string>
     <string name="started_downloading">Herunterladen gestartet\n%1$s</string>
     <string name="install_1dm">Bitte installieren Sie 1DM</string>
@@ -547,7 +545,7 @@
     <string name="type_other">ANDERE</string>
     <string name="type_source">QUELLE</string>
     <string name="type_contains">ENTHÄLT</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Fortsetzen: Episode </string>
     <string name="filler_tag"> - Füller</string>
     <string name="continue_chapter">Fortsetzen: </string>

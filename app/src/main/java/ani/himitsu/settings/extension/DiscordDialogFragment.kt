@@ -29,7 +29,7 @@ class DiscordDialogFragment : BottomSheetDialogFragment() {
 
         when (PrefManager.getCustomVal("discord_mode", Discord.MODE.HIMITSU.name)) {
             Discord.MODE.NOTHING.name -> binding.radioNothing.isChecked = true
-            Discord.MODE.HIMITSU.name -> binding.radioDantotsu.isChecked = true
+            Discord.MODE.HIMITSU.name -> binding.radioHimitsu.isChecked = true
             Discord.MODE.ANILIST.name -> binding.radioAnilist.isChecked = true
             else -> binding.radioAnilist.isChecked = true
         }
@@ -43,7 +43,7 @@ class DiscordDialogFragment : BottomSheetDialogFragment() {
         binding.radioGroup.setOnCheckedChangeListener { _, checkedId ->
             val mode = when (checkedId) {
                 binding.radioNothing.id -> Discord.MODE.NOTHING.name
-                binding.radioDantotsu.id -> Discord.MODE.HIMITSU.name
+                binding.radioHimitsu.id -> Discord.MODE.HIMITSU.name
                 binding.radioAnilist.id -> Discord.MODE.ANILIST.name
                 else -> Discord.MODE.HIMITSU.name
             }

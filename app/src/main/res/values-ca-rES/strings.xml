@@ -438,16 +438,15 @@
     <string name="install_step">Pas: %1$s</string>
     <string name="review">Revisió</string>
     <string name="select_source">Selecciona una Font</string>
-    <string name="update_notice">Actualització de Dantotsu %1$s</string>
     <string name="install_update">Instal·lar actualització %1$s?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Actualització Disponible</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Mostra només el primer botó</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Mostra el teu perfil d\'AniList en lloc</string>
     <string name="discord_rich_presence">Presència Rica de Discord</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">MARE MEVA! ETS REALMENT DESOCUPAT\nHAS ARIBAT A LA FI</string>
     <string name="file_manager_not_found">No s\'ha trobat cap gestor de fitxers per obrir la targeta SD</string>
     <string name="error_loading_data">Error en carregar les dades %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Comprovant actualització</string>
     <string name="dont_show_again">No tornis a notificar per la versió %1$s</string>
     <string name="no_update_found">No s\'ha trobat cap actualització</string>
-    <string name="downloading_update">Descarregant Dantotsu %1$s</string>
     <string name="permission_required">Si us plau, doneu permís per accedir a Fitxers i Carpetes des de Configuració, i torneu-ho a provar.</string>
     <string name="started_downloading">Iniciant la descàrrega\n%1$s</string>
     <string name="install_1dm">Si us plau, instal·la 1DM</string>
@@ -547,7 +545,7 @@
     <string name="type_other">ALTRE</string>
     <string name="type_source">FONT</string>
     <string name="type_contains">CONTÉ</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Continuar: Episodi %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Filler</string>
     <string name="continue_chapter">Continuar: %1$s\n%2$s</string>

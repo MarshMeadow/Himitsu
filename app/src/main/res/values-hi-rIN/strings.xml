@@ -438,16 +438,15 @@
     <string name="install_step">चरण: %1$s</string>
     <string name="review">समीक्षा</string>
     <string name="select_source">Select a Source</string>
-    <string name="update_notice">Dantotsu update %1$s</string>
     <string name="install_update">Install update %1$s?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Update Available</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">केवल पहला बटन प्रदर्शित करें</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">इसके बजाय अपनी एनिलिस्ट प्रोफ़ाइल प्रदर्शित करें</string>
     <string name="discord_rich_presence">डिस्कॉर्ड रिच प्रेजेंस</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">अरे भाई! आप वाकई बेरोजगार हैं\nआप अंत तक पहुँच गए</string>
     <string name="file_manager_not_found">SD कार्ड खोलने के लिए कोई फ़ाइल प्रबंधक नहीं मिला</string>
     <string name="error_loading_data">डेटा लोड करने में त्रुटि %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">अपडेट की जाँच हो रही है</string>
     <string name="dont_show_again">संस्करण %1$s के लिए पुनः प्रदर्शित न करें</string>
     <string name="no_update_found">कोई अपडेट नहीं मिला</string>
-    <string name="downloading_update">अपडेट डाउनलोड हो रहा है %1$s</string>
     <string name="permission_required">कृपया सेटिंग्स से फ़ाइलों और फ़ोल्डरों तक पहुँच की अनुमति दें, और पुनः प्रयास करें।</string>
     <string name="started_downloading">डाउनलोडिंग शुरू की गई\n%1$s</string>
     <string name="install_1dm">कृपया 1DM इंस्टॉल करें</string>
@@ -547,7 +545,7 @@
     <string name="type_other">अन्य</string>
     <string name="type_source">स्रोत</string>
     <string name="type_contains">शामिल है</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">जारी रखें: एपिसोड </string>
     <string name="filler_tag"> - Filler</string>
     <string name="continue_chapter">जारी रखें: </string>

@@ -438,16 +438,15 @@
     <string name="install_step">الخطوة: %1$s</string>
     <string name="review">مراجعة</string>
     <string name="select_source">حدد مصدر</string>
-    <string name="update_notice">Dantotsu update %1$s</string>
     <string name="install_update">تثبيت تحديث %1$s؟</string>
     <string name="beta_update">بيتا </string>
     <string name="update_available">تحديث متوفر</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">عرض الزر الأول فقط</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">عرض ملفك الشخصي AniList بدلاً من ذلك</string>
     <string name="discord_rich_presence">وجود ديسكورد الغني</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">سحقًا! أنت حقا عاطل\nلقد وصلت إلى النهاية</string>
     <string name="file_manager_not_found">تعذر العثور على مدير ملفات لفتح بطاقة SD</string>
     <string name="error_loading_data">خطأ في تحميل البيانات %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">التحقق من التحديث</string>
     <string name="dont_show_again">لا تعرض هذه النسخة مرة أخرى %1$s</string>
     <string name="no_update_found">لا يوجد تحديث</string>
-    <string name="downloading_update">جارٍ تنزيل التحديث %1$s</string>
     <string name="permission_required">الرجاء إعطاء الإذن للوصول إلى الملفات &amp; المجلدات من الإعدادات، &amp; حاول مرة أخرى.</string>
     <string name="started_downloading">جاري التحميل\n%1$s</string>
     <string name="install_1dm">رجاء تزيل 1DM</string>
@@ -547,7 +545,7 @@
     <string name="type_other">أخري</string>
     <string name="type_source">مصدر</string>
     <string name="type_contains">الإتصالات</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">الإستمرار: الحلقة %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - تصفية</string>
     <string name="continue_chapter">الإستمرار: %1$s\n%2$s</string>

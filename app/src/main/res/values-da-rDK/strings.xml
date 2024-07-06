@@ -438,16 +438,15 @@
     <string name="install_step">Trin: %1$s</string>
     <string name="review">Revision</string>
     <string name="select_source">Vælg en kilde</string>
-    <string name="update_notice">Dantotsu update %1$s</string>
     <string name="install_update">Installer opdatering %1$s?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Opdatering Tilgængelig</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Vis kun den første knap</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Vis din AniList profil i stedet</string>
     <string name="discord_rich_presence">Discord Rig Tilstedeværelse</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">DAMN! DU SKULE ER JOBLESS\nDU REACHED END</string>
     <string name="file_manager_not_found">Kunne ikke finde en filhåndtering til at åbne SD-kort</string>
     <string name="error_loading_data">Fejl under indlæsning af data %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Søger efter opdatering</string>
     <string name="dont_show_again">Giv ikke besked igen for version %1$s</string>
     <string name="no_update_found">Ingen Opdatering Fundet</string>
-    <string name="downloading_update">Downloader Dantotsu %1$s</string>
     <string name="permission_required">Giv venligst tilladelse til at få adgang til filer &amp; Mapper fra Indstillinger, &amp; Prøv igen.</string>
     <string name="started_downloading">Startede Downloading\n%1$s</string>
     <string name="install_1dm">Installér venligst 1DM</string>
@@ -547,7 +545,7 @@
     <string name="type_other">ANDET</string>
     <string name="type_source">KILDE</string>
     <string name="type_contains">KONTAINER</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Fortsæt : Episode %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Fyldstof</string>
     <string name="continue_chapter">Fortsæt : %1$s\n%2$s</string>

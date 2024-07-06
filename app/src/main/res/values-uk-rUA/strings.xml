@@ -438,16 +438,15 @@
     <string name="install_step">Крок: %1$s</string>
     <string name="review">Рецензія</string>
     <string name="select_source">Виберіть джерело</string>
-    <string name="update_notice">Dantotsu update %1$s</string>
     <string name="install_update">Встановити оновлення %1$s?</string>
     <string name="beta_update">Бета </string>
     <string name="update_available">Доступне оновлення</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Показувати лише першу кнопку</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Замість цього показувати ваш профіль AniList</string>
     <string name="discord_rich_presence">Rich Presence Discord</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">ЧОРТ! ТИ СПРАВДІ ТРУДОВИЙ\nТИ ДОСЯГНУВ КІНЦЯ</string>
     <string name="file_manager_not_found">Не вдалося знайти файловий менеджер для відкриття SD карти</string>
     <string name="error_loading_data">Помилка завантаження даних %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Перевірка наявності оновлень</string>
     <string name="dont_show_again">Не повідомляти знову для версії %1$s</string>
     <string name="no_update_found">Оновлення не знайдено</string>
-    <string name="downloading_update">Завантаження Dantotsu %1$s</string>
     <string name="permission_required">Будь ласка, дайте дозвіл на доступ до файлів та папок у налаштуваннях, та спробуйте ще раз.</string>
     <string name="started_downloading">Почалося завантаження\n%1$s</string>
     <string name="install_1dm">Будь ласка, встановіть 1ДМ</string>
@@ -547,7 +545,7 @@
     <string name="type_other">ІНШІ</string>
     <string name="type_source">СУРЦІЯ</string>
     <string name="type_contains">КОНТЕЙНИ</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Продовжити: Епізод %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Філер</string>
     <string name="continue_chapter">Продовжити : %1$s\n%2$s</string>

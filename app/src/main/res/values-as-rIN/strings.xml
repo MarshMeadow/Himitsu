@@ -438,16 +438,15 @@
     <string name="install_step">পদক্ষেপ %1$s</string>
     <string name="review">সমীক্ষা</string>
     <string name="select_source">Select a Source</string>
-    <string name="update_notice">Dantotsu update %1$s</string>
     <string name="install_update">Install update %1$s?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Update Available</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">কেৱল প্ৰথম বুটামটো প্ৰদৰ্শন কৰক</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">তাৰ পৰিৱৰ্তে আপোনাৰ এনিলিষ্ট প্ৰ\'ফাইল প্ৰদৰ্শন কৰক</string>
     <string name="discord_rich_presence">ডিসকৰ্ড সমৃদ্ধ উপস্থিতি</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">ওহ বিচাৰিছো নেকি! তুমি সত্যিই কাৰি নেই\nতুমি সমাপ্তি পোৱা হ\'ল</string>
     <string name="file_manager_not_found">SD কাৰ্ড খোলিবলৈ কোনো ফাইল মেনেজাৰ পোৱা নহয়</string>
     <string name="error_loading_data">%1$s ডাটা লোড কৰাৰ সময়ত ত্ৰুটি হৈছে</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">আপডেট পৰীক্ষা কৰা হৈছে</string>
     <string name="dont_show_again">%1$s ভাৰ্সনৰ বাবে আৰম্ভিক না দেখা দিব নোৱাৰিব</string>
     <string name="no_update_found">কোনো আপডেট পোৱা নাই</string>
-    <string name="downloading_update">%1$s আপডেট ডাউনল\'ড হৈছে</string>
     <string name="permission_required">সেটিংছত ফাইল আৰু ফোল্ডাৰ অনুমতি দিবলৈ অনুমতি দিব আৰু পুনঃ চেষ্টা কৰক।</string>
     <string name="started_downloading">ডাউনল\'ড আৰম্ভ হৈছে\n%1$s</string>
     <string name="install_1dm">অনুগ্ৰহ কৰি 1DM ইনষ্টল কৰক</string>
@@ -547,7 +545,7 @@
     <string name="type_other">অন্যান্য</string>
     <string name="type_source">উৎস</string>
     <string name="type_contains">অন্তৰ্ভুক্ত</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">চালিব : প্ৰকৰণ </string>
     <string name="filler_tag">- ফিলাৰ</string>
     <string name="continue_chapter">চালিব : </string>

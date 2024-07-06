@@ -145,7 +145,7 @@ class SettingsAboutFragment : Fragment() {
                 openLinkInBrowser(getString(R.string.gitlab, getString(R.string.repo_gl)))
             }
             binding.loginHimitsu.setOnClickListener {
-                openLinkInBrowser(getString(R.string.dantotsu))
+                openLinkInBrowser(getString(R.string.himitsu_url))
             }
 
             settingsVersion.apply {

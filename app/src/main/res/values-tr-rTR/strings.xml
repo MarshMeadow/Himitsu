@@ -438,16 +438,15 @@
     <string name="install_step">Adım: %1$s</string>
     <string name="review">İncele</string>
     <string name="select_source">Bir Kaynak Seç</string>
-    <string name="update_notice">Dantotsu %1$s güncellemesi</string>
     <string name="install_update">%1$s güncellemesini yüklemek istiyor musunuz?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Güncelleme Mevcut</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Sadece ilk düğmeyi göster</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">AniList profilinizi göster</string>
     <string name="discord_rich_presence">Discord Zengin Varlık</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">LANET OLSUN! GERÇEKTEN İŞSİZSİN\nSONA ULAŞTIN</string>
     <string name="file_manager_not_found">SD kartı açmak için bir Dosya Yöneticisi bulunamadı</string>
     <string name="error_loading_data">Veri yüklenirken hata oluştu %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Güncelleme Kontrol Ediliyor</string>
     <string name="dont_show_again">%1$s sürümü için tekrar gösterme</string>
     <string name="no_update_found">Güncelleme Bulunamadı</string>
-    <string name="downloading_update">Dantotsu %1$s İndiriliyor</string>
     <string name="permission_required">Dosyalara ve Klasörlere erişim izni verin ve Ayarlardan tekrar deneyin.</string>
     <string name="started_downloading">İndirilmeye Başlandı\n%1$s</string>
     <string name="install_1dm">Lütfen 1DM\'i yükleyin</string>
@@ -547,7 +545,7 @@
     <string name="type_other">DİĞER</string>
     <string name="type_source">KAYNAK</string>
     <string name="type_contains">İÇERİR</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Devam Et : Bölüm %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Dolgu</string>
     <string name="continue_chapter">Devam Et : %1$s\n%2$s</string>

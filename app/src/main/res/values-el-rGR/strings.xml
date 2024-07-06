@@ -438,16 +438,15 @@
     <string name="install_step">Βήμα: %1$s</string>
     <string name="review">Ανασκόπηση</string>
     <string name="select_source">Επιλέξτε μια πηγή</string>
-    <string name="update_notice">Dantotsu update %1$s</string>
     <string name="install_update">Εγκατάσταση ενημέρωσης %1$s?</string>
     <string name="beta_update">Βήτα </string>
     <string name="update_available">Διαθέσιμη Ενημέρωση</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Εμφάνισε μόνο το πρώτο κουμπί</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Εμφανίστε το προφίλ σας στο AniList</string>
     <string name="discord_rich_presence">Discord Πλούσια Παρουσία</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">ΓΑΜΩΤΟ! ΠΡΑΓΜΑΤΙΚΑ ΕΙΣΑΙ ΑΝΕΡΓΟΣ\nΦΤΑΣΕΣ ΣΤΟ ΤΕΛΟΣ</string>
     <string name="file_manager_not_found">Δεν ήταν δυνατή η εύρεση διαχείρισης αρχείων για άνοιγμα της κάρτας SD</string>
     <string name="error_loading_data">Σφάλμα φόρτωσης δεδομένων %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Έλεγχος για ενημέρωση</string>
     <string name="dont_show_again">Μη ρωτήσετε ξανά για έκδοση %1$s</string>
     <string name="no_update_found">Δεν βρέθηκε ενημέρωση</string>
-    <string name="downloading_update">Λήψη της ενημέρωσης %1$s</string>
     <string name="permission_required">Δώστε άδεια πρόσβασης στα Αρχεία &amp; Φάκελοι από τις Ρυθμίσεις, &amp; Προσπάθησε ξανά.</string>
     <string name="started_downloading">Ξεκίνησε η λήψη\n%1$s</string>
     <string name="install_1dm">Εγκαταστήστε το 1DM</string>
@@ -547,7 +545,7 @@
     <string name="type_other">Άλλα</string>
     <string name="type_source">Πηγή</string>
     <string name="type_contains">Περιεχόμενα</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Συνέχεια : Επεισόδιο %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Γεμιστικό</string>
     <string name="continue_chapter">Συνέχεια : %1$s\n%2$s</string>

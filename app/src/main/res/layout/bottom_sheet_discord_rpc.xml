@@ -65,11 +65,11 @@
                 android:text="@string/discord_nothing_button" />
 
             <RadioButton
-                android:id="@+id/radio_dantotsu"
+                android:id="@+id/radio_himitsu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:text="@string/discord_dantotsu_button" />
+                android:text="@string/discord_himitsu_button" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -95,7 +95,7 @@
                         android:layout_gravity="center"
                         android:drawablePadding="4dp"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="@string/stream_on_dantotsu"
+                        android:text="@string/stream_on_himitsu"
                         android:textColor="?attr/colorPrimary"
                         app:drawableTint="?attr/colorPrimary" />
                 </androidx.cardview.widget.CardView>
@@ -106,7 +106,7 @@
                     android:layout_gravity="center"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="@string/dantotsu"
+                    android:text="@string/himitsu_url"
                     android:textColor="?attr/colorPrimary"
                     app:drawableTint="?attr/colorPrimary" />
             </LinearLayout>

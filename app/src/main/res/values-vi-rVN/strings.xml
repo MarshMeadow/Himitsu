@@ -438,16 +438,15 @@
     <string name="install_step">Bước: %1$s</string>
     <string name="review">Đánh giá</string>
     <string name="select_source">Chọn một Nguồn</string>
-    <string name="update_notice">Dantotsu cập nhật %1$s</string>
     <string name="install_update">Cài đặt cập nhật %1$s?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Cập nhật Có sẵn</string>
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Chỉ hiển thị nút đầu tiên</string>
-    <string name="discord_dantotsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
     <string name="discord_anilist_button">Hiển thị hồ sơ AniList của bạn thay vì</string>
     <string name="discord_rich_presence">Hiển thị Trạng thái Phong phú Discord</string>
-    <string name="stream_on_dantotsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on Himitsu</string>
     <string name="jobless_message">ĐỒ CHƠI! BẠN THỰC SỰ LÀ THẤT NGHIỆP\nBẠN ĐÃ ĐẾN CUỐI CÙNG</string>
     <string name="file_manager_not_found">Không thể tìm thấy Trình quản lý Tập tin để mở thẻ SD</string>
     <string name="error_loading_data">Lỗi tải dữ liệu %1$s</string>
@@ -500,7 +499,6 @@
     <string name="checking_for_update">Kiểm tra cập nhật</string>
     <string name="dont_show_again">Không thông báo lại cho phiên bản %1$s</string>
     <string name="no_update_found">Không tìm thấy cập nhật</string>
-    <string name="downloading_update">Đang tải Dantotsu %1$s</string>
     <string name="permission_required">Vui lòng cấp quyền truy cập vào Tệp &amp; Thư mục từ Cài đặt, &amp; Thử lại.</string>
     <string name="started_downloading">Bắt đầu Tải về\n%1$s</string>
     <string name="install_1dm">Vui lòng cài đặt 1DM</string>
@@ -547,7 +545,7 @@
     <string name="type_other">KHÁC</string>
     <string name="type_source">NGUỒN</string>
     <string name="type_contains">CHỨA</string>
-    <string name="view_profile_in_dantotsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
     <string name="continue_episode">Tiếp tục : Tập %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Độc chiếm</string>
     <string name="continue_chapter">Tiếp tục : %1$s\n%2$s</string>

@@ -45,7 +45,7 @@ class Query {
 //        val data : Data?
 //    ){
 //        data class Data(
-//            val AiringSchedule: ani.dantotsu.connections.anilist.api.AiringSchedule?
+//            val AiringSchedule: ani.himitsu.connections.anilist.api.AiringSchedule?
 //        )
 //    }
 
@@ -89,7 +89,7 @@ class Query {
 //        val data: Data?
 //    ){
 //        data class Data(
-//            val MediaList: ani.dantotsu.connections.anilist.api.MediaList?
+//            val MediaList: ani.himitsu.connections.anilist.api.MediaList?
 //        )
 //    }
 

@@ -363,7 +363,7 @@
                 <data android:host="myanimelist.net" />
                 <data android:pathPrefix="/anime" />
             </intent-filter>
-            <intent-filter android:label="@string/view_profile_in_dantotsu">
+            <intent-filter android:label="@string/view_profile_in_himitsu">
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
