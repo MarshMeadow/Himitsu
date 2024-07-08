@@ -357,8 +357,7 @@ class OfflineAnimeFragment : Fragment(), OfflineAnimeSearchListener {
             val title = mediaModel.mainName()
             val score = ((if (mediaModel.userScore == 0) (mediaModel.meanScore
                 ?: 0) else mediaModel.userScore) / 10.0).toString()
-            val isOngoing =
-                mediaModel.status == currActivity()!!.getString(R.string.status_releasing)
+            val isOngoing = mediaModel.status == getString(R.string.status_releasing)
             val isUserScored = mediaModel.userScore != 0
             val watchedEpisodes = (mediaModel.userProgress ?: "~").toString()
             val totalEpisode = "${if (mediaModel.anime?.nextAiringEpisode != null) "(${mediaModel.anime.nextAiringEpisode}) | " else ""}${mediaModel.anime?.totalEpisodes

@@ -349,8 +349,7 @@ class OfflineMangaFragment : Fragment(), OfflineMangaSearchListener {
             val title = mediaModel.mainName()
             val score = ((if (mediaModel.userScore == 0) (mediaModel.meanScore
                 ?: 0) else mediaModel.userScore) / 10.0).toString()
-            val isOngoing =
-                mediaModel.status == currActivity()!!.getString(R.string.status_releasing)
+            val isOngoing = mediaModel.status == getString(R.string.status_releasing)
             val isUserScored = mediaModel.userScore != 0
             val readChapter = (mediaModel.userProgress ?: "~").toString()
             val totalChapter = "${mediaModel.manga?.totalChapters ?: "??"}"

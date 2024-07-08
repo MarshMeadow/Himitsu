@@ -28,7 +28,7 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_dantotsu_round"
+            android:src="@drawable/ic_himitsu_icon"
             tools:ignore="ContentDescription" />
 
         <TextView

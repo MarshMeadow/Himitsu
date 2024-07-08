@@ -18,6 +18,7 @@ import ani.himitsu.parsers.MangaImage
 import ani.himitsu.parsers.Subtitle
 import ani.himitsu.parsers.SubtitleType
 import ani.himitsu.util.Logger
+import bit.himitsu.nio.Strings.getString
 import com.google.gson.GsonBuilder
 import com.google.gson.InstanceCreator
 import eu.kanade.tachiyomi.animesource.model.SAnime
@@ -85,8 +86,7 @@ object DownloadCompat {
             val title = mediaModel.mainName()
             val score = ((if (mediaModel.userScore == 0) (mediaModel.meanScore
                 ?: 0) else mediaModel.userScore) / 10.0).toString()
-            val isOngoing =
-                mediaModel.status == currActivity()!!.getString(R.string.status_releasing)
+            val isOngoing = mediaModel.status == getString(R.string.status_releasing)
             val isUserScored = mediaModel.userScore != 0
             val watchedEpisodes = (mediaModel.userProgress ?: "~").toString()
             val totalEpisode =
@@ -146,8 +146,7 @@ object DownloadCompat {
             val title = mediaModel.mainName()
             val score = ((if (mediaModel.userScore == 0) (mediaModel.meanScore
                 ?: 0) else mediaModel.userScore) / 10.0).toString()
-            val isOngoing =
-                mediaModel.status == currActivity()!!.getString(R.string.status_releasing)
+            val isOngoing = mediaModel.status == getString(R.string.status_releasing)
             val isUserScored = mediaModel.userScore != 0
             val readchapter = (mediaModel.userProgress ?: "~").toString()
             val totalchapter = "${mediaModel.manga?.totalChapters ?: "??"}"
