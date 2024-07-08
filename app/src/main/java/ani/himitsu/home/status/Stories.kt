@@ -455,7 +455,7 @@ class Stories @JvmOverloads constructor(
         story.likes?.forEach { i ->
             userList.add(User(i.id, i.name.toString(), i.avatar?.medium, i.bannerImage))
         }
-        val likeColor = ContextCompat.getColor(context, R.color.youtube)
+        val likeColor = ContextCompat.getColor(context, R.color.youtube_red)
         val notLikeColor = ContextCompat.getColor(context, R.color.bg_opp)
         binding.activityRepliesContainer.setOnClickListener {
             RepliesBottomDialog.newInstance(story.id)
@@ -482,7 +482,7 @@ class Stories @JvmOverloads constructor(
 
     fun like() {
         val story = activityList[storyIndex - 1]
-        val likeColor = ContextCompat.getColor(context, R.color.youtube)
+        val likeColor = ContextCompat.getColor(context, R.color.youtube_red)
         val notLikeColor = ContextCompat.getColor(context, R.color.bg_opp)
         val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
         scope.launch {

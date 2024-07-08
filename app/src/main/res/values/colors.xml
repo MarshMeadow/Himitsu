@@ -27,15 +27,6 @@
     <color name="grey_20">#444444</color>
     <color name="grey_60">#999999</color>
     <color name="darkest_Black">#000000</color>
-    <color name="stream_amazon">#FF9900</color>
-    <color name="stream_crunchyroll">#f47521</color>
-    <color name="stream_disneyplus">#006E99</color>
-    <color name="stream_hidive">#00AEEF</color>
-    <color name="stream_hulu">#1CE783</color>
-    <color name="stream_max">#0033FF</color>
-    <color name="stream_netflix">#E50914</color>
-    <color name="stream_tubi">#45009D</color>
-    <color name="youtube">#FF0000</color>
     <color name="chip">#a3a2a2</color>
     <color name="grey_nav">#F9EDEDED</color>
     <color name="CustomColor1">#93DB00</color>
@@ -47,8 +38,6 @@
     <color name="light_blue_600">#FF039BE5</color>
     <color name="light_blue_900">#FF01579B</color>
     <color name="tags">#5E057E</color>
-
-    <color name="anilist_banner">#242538</color>
 
     <!-- theme 1 -->
     <color name="seed_1">#00658e</color>

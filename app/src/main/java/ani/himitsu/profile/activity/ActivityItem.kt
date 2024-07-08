@@ -53,7 +53,7 @@ class ActivityItem(
             activity.user?.avatar?.medium ?: activity.messenger?.avatar?.medium
         )
         binding.activityTime.text = ActivityItemBuilder.getDateTime(activity.createdAt)
-        val likeColor = ContextCompat.getColor(binding.root.context, R.color.youtube)
+        val likeColor = ContextCompat.getColor(binding.root.context, R.color.youtube_red)
         val notLikeColor = ContextCompat.getColor(binding.root.context, R.color.bg_opp)
         binding.activityLike.setColorFilter(if (activity.isLiked == true) likeColor else notLikeColor)
         binding.commentTotalReplies.isVisible = activity.replyCount > 0
