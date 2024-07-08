@@ -187,7 +187,7 @@ class MediaListDialogFragment : BottomSheetDialogFragment() {
                         val progressText = "${init + 1}"
                         binding.mediaListProgress.setText(progressText)
                     }
-                    if (init + 1 == (total ?: 5000)) {
+                    if (init + 1 == (total ?: 5000) && media?.anime?.nextAiringEpisode == null) {
                         binding.mediaListStatus.setText(statusStrings[2], false)
                         onComplete()
                     }

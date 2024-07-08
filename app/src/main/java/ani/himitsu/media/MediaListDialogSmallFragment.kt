@@ -102,9 +102,10 @@ class MediaListDialogSmallFragment : BottomSheetDialogFragment() {
         binding.mediaListLayout.visibility = View.VISIBLE
         val statuses: Array<String> = resources.getStringArray(R.array.status)
         val statusStrings =
-            if (media.manga == null) resources.getStringArray(R.array.status_anime) else resources.getStringArray(
-                R.array.status_manga
-            )
+            if (media.manga == null)
+                resources.getStringArray(R.array.status_anime)
+            else
+                resources.getStringArray(R.array.status_manga)
         val userStatus =
             if (media.userStatus != null) statusStrings[statuses.indexOf(media.userStatus)] else statusStrings[0]
 
@@ -168,7 +169,7 @@ class MediaListDialogSmallFragment : BottomSheetDialogFragment() {
                 val progressText = "${init + 1}"
                 binding.mediaListProgress.setText(progressText)
             }
-            if (init + 1 == (total ?: 5000)) {
+            if (init + 1 == (total ?: 5000) && media.anime?.nextAiringEpisode == null) {
                 binding.mediaListStatus.setText(statusStrings[2], false)
             }
         }
