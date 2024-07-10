@@ -175,13 +175,13 @@ class MediaListDialogFragment : BottomSheetDialogFragment() {
                 }
 
                 binding.mediaListIncrement.setOnClickListener {
-                    if (binding.mediaListStatus.text.toString() == statusStrings[0]) binding.mediaListStatus.setText(
-                        statusStrings[1],
-                        false
-                    )
+                    if (binding.mediaListStatus.text.toString() == statusStrings[0])
+                        binding.mediaListStatus.setText(statusStrings[1], false)
                     val init =
-                        if (binding.mediaListProgress.text.toString() != "") binding.mediaListProgress.text.toString()
-                            .toInt() else 0
+                        if (binding.mediaListProgress.text.toString() != "")
+                            binding.mediaListProgress.text.toString().toInt()
+                        else
+                            0
                     if (init < (total ?: 5000)) {
                         val progressText = "${init + 1}"
                         binding.mediaListProgress.setText(progressText)

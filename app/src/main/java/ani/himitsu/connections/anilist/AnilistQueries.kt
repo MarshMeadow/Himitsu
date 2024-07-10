@@ -317,9 +317,10 @@ class AnilistQueries {
                                 )
                             }
 
-                            media.anime.nextAiringEpisode = fetchedMedia.nextAiringEpisode?.episode
-                            media.anime.nextAiringEpisodeTime =
-                                fetchedMedia.nextAiringEpisode?.airingAt?.toLong()
+                            fetchedMedia.nextAiringEpisode?.let {
+                                media.anime.nextAiringEpisode = it.episode
+                                media.anime.nextAiringEpisodeTime = it.airingAt?.toLong()
+                            }
 
                             fetchedMedia.externalLinks?.forEach { i ->
                                 when (i.site.lowercase()) {

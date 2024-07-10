@@ -48,7 +48,7 @@ import ani.himitsu.media.anime.AnimeWatchFragment
 import ani.himitsu.media.cereal.Media
 import ani.himitsu.media.cereal.MediaSingleton
 import ani.himitsu.media.cereal.emptyMedia
-import ani.himitsu.media.comments.CommentsFragment
+import ani.dantotsu.media.comments.CommentsFragment
 import ani.himitsu.media.manga.MangaReadFragment
 import ani.himitsu.media.novel.NovelReadFragment
 import ani.himitsu.media.reviews.ReviewFragment

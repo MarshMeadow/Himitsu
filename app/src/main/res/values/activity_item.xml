@@ -7,7 +7,7 @@
     <string name="notification_mention_forum">%1$s mentioned you in a forum comment</string>
     <string name="notification_forum_comment">%1$s commented in one of your subscribed forum threads</string>
     <string name="notification_reply_forum">%1$s replied to your forum comment</string>
-    <string name="notification_episode_aired">Episode %1$s of %1$s aired</string>
+    <string name="notification_episode_aired">Episode %1$s of %2$s aired</string>
     <string name="notification_like">%1$s liked your activity</string>
     <string name="notification_reply_like">%1$s liked your reply</string>
     <string name="notification_like_thread">%1$s liked your forum thread</string>

@@ -1,4 +1,4 @@
-package ani.himitsu.media.comments
+package ani.dantotsu.media.comments
 
 import android.annotation.SuppressLint
 import android.content.Intent
