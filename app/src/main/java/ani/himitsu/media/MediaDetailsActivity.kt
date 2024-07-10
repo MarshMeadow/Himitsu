@@ -38,7 +38,6 @@ import androidx.lifecycle.lifecycleScope
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import ani.himitsu.R
 import ani.himitsu.Refresh
-import ani.himitsu.view.ZoomOutPageTransformer
 import ani.himitsu.blurImage
 import ani.himitsu.connections.anilist.Anilist
 import ani.himitsu.copyToClipboard
@@ -66,6 +65,7 @@ import ani.himitsu.themes.ThemeManager
 import ani.himitsu.toPx
 import ani.himitsu.util.LauncherWrapper
 import ani.himitsu.view.GestureSlider
+import ani.himitsu.view.ZoomOutPageTransformer
 import ani.himitsu.view.dialog.ImageViewDialog
 import bit.himitsu.setBaseline
 import bit.himitsu.torrServerStart

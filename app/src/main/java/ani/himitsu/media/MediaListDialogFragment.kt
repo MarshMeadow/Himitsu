@@ -16,7 +16,6 @@ import ani.himitsu.R
 import ani.himitsu.Refresh
 import ani.himitsu.connections.anilist.Anilist
 import ani.himitsu.connections.anilist.api.FuzzyDate
-import ani.himitsu.connections.anilist.api.MediaStatus
 import ani.himitsu.connections.mal.MAL
 import ani.himitsu.databinding.BottomSheetMediaListBinding
 import ani.himitsu.media.cereal.Media
@@ -73,7 +72,6 @@ class MediaListDialogFragment : BottomSheetDialogFragment() {
                         statusStrings
                     )
                 )
-
 
                 binding.mediaListProgress.setText(if (media!!.userProgress != null) media!!.userProgress.toString() else "")
                 val total: Int? = media!!.anime?.let { anime ->
@@ -188,7 +186,7 @@ class MediaListDialogFragment : BottomSheetDialogFragment() {
                         val progressText = "${init + 1}"
                         binding.mediaListProgress.setText(progressText)
                     }
-                    if (media?.status == MediaStatus.RELEASING.toString()) return@setOnClickListener
+                    if (media?.anime?.nextAiringEpisode != total) return@setOnClickListener
                     if (init + 1 == (total ?: 5000)) {
                         binding.mediaListStatus.setText(statusStrings[2], false)
                         onComplete()

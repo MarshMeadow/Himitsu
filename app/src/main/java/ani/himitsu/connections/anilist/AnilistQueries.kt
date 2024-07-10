@@ -317,6 +317,7 @@ class AnilistQueries {
                                 )
                             }
 
+                            media.anime.nextAiringEpisode = fetchedMedia.nextAiringEpisode?.episode
                             media.anime.nextAiringEpisodeTime =
                                 fetchedMedia.nextAiringEpisode?.airingAt?.toLong()
 
