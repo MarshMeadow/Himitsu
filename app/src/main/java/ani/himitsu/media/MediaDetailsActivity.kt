@@ -6,6 +6,7 @@ import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.Configuration
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -97,6 +98,7 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
     lateinit var navBar: AnimatedBottomBar
     var anime = true
     private var adult = false
+    private var themeImage: Bitmap? = null
     private var tubePlayer: YouTubePlayer? = null
 
     @SuppressLint("ClickableViewAccessibility")
@@ -120,8 +122,9 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
         launcher = LauncherWrapper(this, contract)
 
         mediaSingleton = null
-        ThemeManager(this).applyTheme(MediaSingleton.bitmap)
+        themeImage = MediaSingleton.bitmap
         MediaSingleton.bitmap = null
+        ThemeManager(this).applyTheme(themeImage)
 
         binding = ActivityMediaBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -576,6 +579,7 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
 
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
+        ThemeManager(this).applyTheme(themeImage)
         navBar.apply { withFlexibleMargin(newConfig) }
         binding.mediaViewPager.setBaseline(
             navBar, resources.configuration, if (binding.commentInputLayout.isVisible)
@@ -595,6 +599,7 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
     }
 
     override fun onDestroy() {
+        themeImage?.recycle()
         binding.youTubeBanner.release()
         tubePlayer = null
         super.onDestroy()
