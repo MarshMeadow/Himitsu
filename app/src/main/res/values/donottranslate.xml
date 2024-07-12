@@ -61,7 +61,7 @@
     <string name="tubi">Tubi</string>
     <string name="icon_tubi">https://play-lh.googleusercontent.com/5bxwMbIpnkfAc9Buc38uJeu_5ibdD0OspwTUALCTW2qnNGewNqyZFaWJtIxu6Yit5q8</string>
     <string name="youtube">Youtube</string>
-    <string name="icon_youtube">https://play-lh.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc</string>
+    <string name="icon_youtube" tools:ignore="Typos">https://play-lh.googleusercontent.com/gk-WYYED1OJNr0G28ucBPUTPric5QCLwW2q_rNcYg-XTQCbPkhcp3CqVJ-1dHiBql10</string>
 
     <string name="memory_byte">Byte</string>
     <string name="memory_kilobyte">KB</string>
