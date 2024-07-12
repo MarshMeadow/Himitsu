@@ -114,17 +114,17 @@ class AnimeWatchAdapter(
             media.externalLinks.hulu?.let { url ->
                 buttons.addView(getStreamIcon(buttons, R.drawable.gradient_hulu, R.string.icon_hulu, url))
             }
-            media.externalLinks.netflix?.let { url ->
-                buttons.addView(getStreamIcon(buttons, R.color.netflix_red, R.string.icon_netflix, url))
-            }
             media.externalLinks.amazon?.let { url ->
                 buttons.addView(getStreamIcon(buttons, R.color.prime_blue, R.string.icon_prime, url))
+            }
+            media.externalLinks.netflix?.let { url ->
+                buttons.addView(getStreamIcon(buttons, R.color.netflix_black, R.string.icon_netflix, url))
             }
             media.externalLinks.disney?.let { url ->
                 buttons.addView(getStreamIcon(buttons, R.color.disney_teal, R.string.icon_disney, url))
             }
             media.externalLinks.max?.let { url ->
-                buttons.addView( getStreamIcon(buttons, R.color.max_dark, R.string.icon_max, url))
+                buttons.addView( getStreamIcon(buttons, R.color.max_dark_blue, R.string.icon_max, url))
             }
             media.externalLinks.tubi?.let { url ->
                 buttons.addView(getStreamIcon(buttons, R.drawable.gradient_tubi, R.string.icon_tubi, url))
