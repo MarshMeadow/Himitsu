@@ -66,6 +66,7 @@ class NotificationActivity : AppCompatActivity() {
         binding.listToolbar.updateLayoutParams<ViewGroup.MarginLayoutParams> {
             topMargin = statusBarHeight
         }
+        adapter.setHasStableIds(true)
         binding.listRecyclerView.adapter = adapter
         binding.listRecyclerView.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
