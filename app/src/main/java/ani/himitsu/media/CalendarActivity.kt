@@ -71,6 +71,7 @@ class CalendarActivity : AppCompatActivity() {
         binding.listSort.visibility = View.GONE
         binding.random.visibility = View.GONE
         binding.search.visibility = View.GONE
+        binding.filter.visibility = View.GONE
         binding.listTabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 this@CalendarActivity.selectedTabIdx = tab?.position ?: 1
