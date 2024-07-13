@@ -105,7 +105,6 @@ import androidx.media3.ui.CaptionStyleCompat.EDGE_TYPE_DEPRESSED
 import androidx.media3.ui.CaptionStyleCompat.EDGE_TYPE_DROP_SHADOW
 import androidx.media3.ui.CaptionStyleCompat.EDGE_TYPE_NONE
 import androidx.media3.ui.CaptionStyleCompat.EDGE_TYPE_OUTLINE
-import androidx.media3.ui.DefaultTimeBar
 import androidx.media3.ui.PlayerView
 import androidx.media3.ui.SubtitleView
 import androidx.window.layout.FoldingFeature
@@ -166,6 +165,7 @@ import bit.himitsu.TorrManager.removeTorrent
 import bit.himitsu.os.Version
 import com.anggrayudi.storage.file.extension
 import com.bumptech.glide.Glide
+import com.github.rubensousa.previewseekbar.media3.PreviewTimeBar
 import com.google.android.gms.cast.framework.CastButtonFactory
 import com.google.android.gms.cast.framework.CastContext
 import com.google.android.gms.common.ConnectionResult
@@ -2532,7 +2532,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
     class ExtendedTimeBar(
         context: Context,
         attrs: AttributeSet?
-    ) : DefaultTimeBar(context, attrs) {
+    ) : PreviewTimeBar(context, attrs) {
         private var enabled = false
         private var forceDisabled = false
         override fun setEnabled(enabled: Boolean) {

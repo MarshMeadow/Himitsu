@@ -490,6 +490,18 @@
 
             </LinearLayout>
 
+            <FrameLayout
+                android:id="@+id/previewFrameLayout"
+                android:layout_width="176dp"
+                android:layout_height="96dp">
+
+                <ImageView
+                    android:id="@+id/previewImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/preview" />
+            </FrameLayout>
+
             <view
                 android:id="@id/exo_progress"
                 class="ani.himitsu.media.anime.ExoplayerView$ExtendedTimeBar"
@@ -499,6 +511,8 @@
                 app:bar_height="2dp"
                 app:played_color="?attr/colorPrimary"
                 app:scrubber_color="?attr/colorPrimary"
+                app:previewAnimationEnabled="true"
+                app:previewFrameLayout="@id/previewFrameLayout"
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>

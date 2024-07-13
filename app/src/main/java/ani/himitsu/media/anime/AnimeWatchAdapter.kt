@@ -106,6 +106,7 @@ class AnimeWatchAdapter(
 
         if (PrefManager.getVal(PrefName.ShowYtButton)) {
             val buttons = binding.streamingButtons
+            buttons.removeAllViews()
             media.externalLinks.youtube?.let { url ->
                 val youtube = getStreamIcon(buttons, R.color.youtube_red, R.string.icon_youtube, url)
                 youtube.setOnClickListener { openLinkInYouTube(url) }
