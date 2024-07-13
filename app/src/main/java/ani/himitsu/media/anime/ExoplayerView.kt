@@ -24,6 +24,7 @@ import android.media.AudioManager.AUDIOFOCUS_GAIN
 import android.media.AudioManager.AUDIOFOCUS_LOSS
 import android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT
 import android.media.AudioManager.STREAM_MUSIC
+import android.media.MediaMetadataRetriever
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -165,6 +166,8 @@ import bit.himitsu.TorrManager.removeTorrent
 import bit.himitsu.os.Version
 import com.anggrayudi.storage.file.extension
 import com.bumptech.glide.Glide
+import com.github.rubensousa.previewseekbar.PreviewBar
+import com.github.rubensousa.previewseekbar.PreviewBar.OnScrubListener
 import com.github.rubensousa.previewseekbar.media3.PreviewTimeBar
 import com.google.android.gms.cast.framework.CastButtonFactory
 import com.google.android.gms.cast.framework.CastContext
@@ -647,6 +650,23 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         val lockButton = playerView.findViewById<ImageButton>(R.id.exo_unlock)
         val timeline =
             playerView.findViewById<ExtendedTimeBar>(androidx.media3.ui.R.id.exo_progress)
+        val previewImage = findViewById<ImageView>(R.id.previewImage)
+        timeline.setPreviewLoader { currentPosition, _ ->
+            MediaMetadataRetriever().use {
+                it.setDataSource(video?.file?.url, video?.file?.headers)
+                previewImage.setImageBitmap(it.getFrameAtTime(currentPosition))
+            }
+        }
+        timeline.addOnScrubListener(object : OnScrubListener {
+            override fun onScrubStart(previewBar: PreviewBar?) {
+                exoPlayer.playWhenReady = false
+            }
+
+            override fun onScrubMove(previewBar: PreviewBar?, progress: Int, fromUser: Boolean) { }
+
+            override fun onScrubStop(previewBar: PreviewBar?) { }
+
+        })
         lockButton.setOnClickListener {
             val button = it as ImageButton
             locked = !locked

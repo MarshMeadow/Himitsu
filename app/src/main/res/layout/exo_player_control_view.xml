@@ -493,7 +493,8 @@
             <FrameLayout
                 android:id="@+id/previewFrameLayout"
                 android:layout_width="176dp"
-                android:layout_height="96dp">
+                android:layout_height="96dp"
+                android:background="@drawable/video_frame">
 
                 <ImageView
                     android:id="@+id/previewImage"
