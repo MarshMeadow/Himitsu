@@ -129,6 +129,7 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     Gestures(Pref(Location.Player, Boolean::class, true)),
     DoubleTap(Pref(Location.Player, Boolean::class, true)),
     FastForward(Pref(Location.Player, Boolean::class, true)),
+    ScrubPreview(Pref(Location.Player, Boolean::class, false)),
     SeekTime(Pref(Location.Player, Int::class, 10)),
     SkipTime(Pref(Location.Player, Int::class, 85)),
     Cast(Pref(Location.Player, Boolean::class, true)),

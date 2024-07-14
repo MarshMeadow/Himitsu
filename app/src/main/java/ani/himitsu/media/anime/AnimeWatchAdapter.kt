@@ -104,9 +104,8 @@ class AnimeWatchAdapter(
         }
         val offline = !isOnline(binding.root.context) || PrefManager.getVal(PrefName.OfflineMode)
 
-        if (PrefManager.getVal(PrefName.ShowYtButton)) {
-            val buttons = binding.streamingButtons
-            buttons.removeAllViews()
+        val buttons = binding.streamingButtons
+        if (PrefManager.getVal(PrefName.ShowYtButton) && buttons.childCount == 0) {
             media.externalLinks.youtube?.let { url ->
                 val youtube = getStreamIcon(buttons, R.color.youtube_red, R.string.icon_youtube, url)
                 youtube.setOnClickListener { openLinkInYouTube(url) }

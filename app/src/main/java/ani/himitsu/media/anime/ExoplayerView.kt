@@ -650,6 +650,9 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         val lockButton = playerView.findViewById<ImageButton>(R.id.exo_unlock)
         val timeline =
             playerView.findViewById<ExtendedTimeBar>(androidx.media3.ui.R.id.exo_progress)
+        val previews = PrefManager.getVal<Boolean>(PrefName.ScrubPreview)
+        timeline.isPreviewEnabled = previews
+        if (previews) {
         val previewImage = findViewById<ImageView>(R.id.previewImage)
         timeline.setPreviewLoader { currentPosition, _ ->
             MediaMetadataRetriever().use {
@@ -667,6 +670,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
             override fun onScrubStop(previewBar: PreviewBar?) { }
 
         })
+            }
         lockButton.setOnClickListener {
             val button = it as ImageButton
             locked = !locked

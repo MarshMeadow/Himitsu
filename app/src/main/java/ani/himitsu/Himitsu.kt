@@ -19,6 +19,7 @@ import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.util.Logger
 import bit.himitsu.io.Debug
+import bit.himitsu.webkit.ChromeIntegration
 import com.google.android.material.color.DynamicColors
 import eu.kanade.tachiyomi.data.notification.Notifications
 import eu.kanade.tachiyomi.extension.anime.AnimeExtensionManager
@@ -117,6 +118,10 @@ class Himitsu : MultiDexApplication() {
                 Logger.log("Failed to schedule tasks")
                 Logger.log(e)
             }
+        }
+
+        CoroutineScope(Dispatchers.IO).launch {
+            ChromeIntegration.bindCustomTabService(this@Himitsu)
         }
     }
 
