@@ -234,6 +234,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
     private lateinit var exoVolumeCont: View
     private lateinit var exoSkip: View
     private lateinit var timeline: ExtendedTimeBar
+    private lateinit var previewFrame: FrameLayout
     private lateinit var timeStampText: TextView
     private lateinit var animeTitle: TextView
     private lateinit var videoInfo: TextView
@@ -510,6 +511,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         exoSkipOpEd = playerView.findViewById(R.id.exo_skip_op_ed)
         exoSkip = playerView.findViewById(R.id.exo_skip)
         timeline = playerView.findViewById(androidx.media3.ui.R.id.exo_progress)
+        previewFrame = playerView.findViewById(R.id.previewFrameLayout)
         timeStampText = playerView.findViewById(R.id.exo_time_stamp_text)
 
         animeTitle = playerView.findViewById(R.id.exo_anime_title)
@@ -669,7 +671,9 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
             override fun onScrubStop(previewBar: PreviewBar?) { }
 
         })
-        timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
+        val isPreviewEnabled = PrefManager.getVal<Boolean>(PrefName.ScrubPreview)
+        timeline.isPreviewEnabled = isPreviewEnabled
+        previewFrame.isVisible = isPreviewEnabled
         lockButton.setOnClickListener {
             val button = it as ImageButton
             locked = !locked
@@ -2255,7 +2259,9 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
                 }
             }
         }
-        timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
+        val isPreviewEnabled = PrefManager.getVal<Boolean>(PrefName.ScrubPreview)
+        timeline.isPreviewEnabled = isPreviewEnabled
+        previewFrame.isVisible = isPreviewEnabled
         if (isInitialized) exoPlayer.play()
     }
 
