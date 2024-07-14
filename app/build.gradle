@@ -195,6 +195,8 @@ dependencies {
     implementation "androidx.media3:media3-session:$exo_version"
 
     /* Media3 Preview */
+    // implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-core:1.0.19'
+    // implementation 'com.github.wseemann:FFmpegMediaMetadataRetriever-native:1.0.19'
     implementation 'com.github.rubensousa:previewseekbar-media3:1.1.1.0'
 
     /* Media3 Casting */

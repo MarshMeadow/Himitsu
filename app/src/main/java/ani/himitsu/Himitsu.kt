@@ -140,8 +140,8 @@ class Himitsu : MultiDexApplication() {
     private suspend fun loadNovelExtensions() {
         novelExtensionManager = Injekt.get()
         novelExtensionManager.findAvailableExtensions()
-        NovelSources.init(novelExtensionManager.installedExtensionsFlow)
         novelExtensionManager.findAvailablePlugins()
+        NovelSources.init(novelExtensionManager.installedExtensionsFlow)
     }
 
     private fun setupNotificationChannels() {

@@ -7,6 +7,7 @@ import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.RectF
 import android.graphics.Shader
+import android.media.MediaMetadataRetriever
 import androidx.collection.LruCache
 import ani.himitsu.toPx
 import bit.himitsu.io.Memory
@@ -76,6 +77,15 @@ object BitmapUtil {
             bitmap?.let { bitmapCache.put(cacheName, it) }
         }
         return bitmap?.let { roundCorners(it) }
+    }
+
+    fun MediaMetadataRetriever.getFrame(key: String, timestamp: Long) : Bitmap? {
+        var bitmap = bitmapCache[key]
+        if (bitmap != null) {
+            bitmap = getFrameAtTime(timestamp)
+            bitmap?.let { bitmapCache.put(key, it) }
+        }
+        return bitmap
     }
 
     fun Bitmap.toSquare(): Bitmap {

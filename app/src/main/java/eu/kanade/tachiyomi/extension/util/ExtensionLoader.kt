@@ -262,17 +262,14 @@ internal object ExtensionLoader {
         if (signatureHash == null) {
             Logger.log("Package $pkgName isn't signed")
             return AnimeLoadResult.Error
+            /*  temporarily disabling signature check TODO: Refactor
         } else if (signatureHash !in trustedSignaturesAnime) {
             val extension = AnimeExtension.Untrusted(
-                extName,
-                pkgName,
-                versionName,
-                versionCode,
-                libVersion,
-                signatureHash
+                extName, pkgName, versionName, versionCode, libVersion, signatureHash
             )
             Logger.log("Extension $pkgName isn't trusted")
             return AnimeLoadResult.Untrusted(extension)
+        */
         }
 
         val isNsfw = appInfo.metaData.getInt("$ANIME_PACKAGE$XX_METADATA_NSFW") == 1
@@ -375,16 +372,18 @@ internal object ExtensionLoader {
 
         val signatureHash = getSignatureHash(pkgInfo)
 
-        /*  temporarily disabling signature check TODO: remove?
         if (signatureHash == null) {
             Logger.log("Package $pkgName isn't signed")
             return MangaLoadResult.Error
+            /*  temporarily disabling signature check TODO: Refactor
         } else if (signatureHash !in trustedSignatures) {
-            val extension = MangaExtension.Untrusted(extName, pkgName, versionName, versionCode, libVersion, signatureHash)
+            val extension = MangaExtension.Untrusted(
+                extName, pkgName, versionName, versionCode, libVersion, signatureHash
+            )
             Logger.log("Extension $pkgName isn't trusted")
             return MangaLoadResult.Untrusted(extension)
-        }
         */
+        }
 
         val isNsfw = appInfo.metaData.getInt("$MANGA_PACKAGE$XX_METADATA_NSFW") == 1
         if (!loadNsfwSource && isNsfw) {

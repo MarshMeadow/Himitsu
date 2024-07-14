@@ -158,6 +158,7 @@ import ani.himitsu.toDp
 import ani.himitsu.toPx
 import ani.himitsu.toast
 import ani.himitsu.tryWithSuspend
+import ani.himitsu.util.BitmapUtil.getFrame
 import ani.himitsu.util.Logger
 import ani.himitsu.view.CustomCastButton
 import ani.himitsu.view.GestureSlider
@@ -654,7 +655,8 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         timeline.setPreviewLoader { currentPosition, _ ->
             MediaMetadataRetriever().use {
                 it.setDataSource(video?.file?.url, video?.file?.headers)
-                previewImage.setImageBitmap(it.getFrameAtTime(currentPosition))
+                val key = "${media.id}_${episode.number}_${currentPosition}"
+                previewImage.setImageBitmap(it.getFrame(key, currentPosition))
             }
         }
         timeline.addOnScrubListener(object : OnScrubListener {
