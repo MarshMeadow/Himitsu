@@ -132,7 +132,6 @@ class PlayerSettingsActivity : AppCompatActivity() {
                 )
         }
 
-
         // Time Stamp
         binding.playerSettingsTimeStamps.isChecked = PrefManager.getVal(PrefName.TimeStampsEnabled)
         binding.playerSettingsTimeStamps.setOnCheckedChangeListener { _, isChecked ->
@@ -224,6 +223,11 @@ class PlayerSettingsActivity : AppCompatActivity() {
         binding.playerSettingsVerticalGestures.isChecked = PrefManager.getVal(PrefName.Gestures)
         binding.playerSettingsVerticalGestures.setOnCheckedChangeListener { _, isChecked ->
             PrefManager.setVal(PrefName.Gestures, isChecked)
+        }
+
+        binding.playerSettingsScrubPreview.isChecked = PrefManager.getVal(PrefName.ScrubPreview)
+        binding.playerSettingsScrubPreview.setOnCheckedChangeListener { _, isChecked ->
+            PrefManager.setVal(PrefName.ScrubPreview, isChecked)
         }
 
         binding.playerSettingsDoubleTap.isChecked = PrefManager.getVal(PrefName.DoubleTap)
