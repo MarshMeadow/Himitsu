@@ -234,7 +234,6 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
     private lateinit var exoVolumeCont: View
     private lateinit var exoSkip: View
     private lateinit var timeline: ExtendedTimeBar
-    private lateinit var previewFrame: FrameLayout
     private lateinit var timeStampText: TextView
     private lateinit var animeTitle: TextView
     private lateinit var videoInfo: TextView
@@ -511,7 +510,6 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         exoSkipOpEd = playerView.findViewById(R.id.exo_skip_op_ed)
         exoSkip = playerView.findViewById(R.id.exo_skip)
         timeline = playerView.findViewById(androidx.media3.ui.R.id.exo_progress)
-        previewFrame = playerView.findViewById(R.id.previewFrameLayout)
         timeStampText = playerView.findViewById(R.id.exo_time_stamp_text)
 
         animeTitle = playerView.findViewById(R.id.exo_anime_title)
@@ -654,26 +652,28 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         val screen = playerView.findViewById<View>(R.id.exo_black_screen)
         val lockButton = playerView.findViewById<ImageButton>(R.id.exo_unlock)
         val previewImage = findViewById<ImageView>(R.id.previewImage)
-        timeline.setPreviewLoader { currentPosition, _ ->
-            MediaMetadataRetriever().use {
-                it.setDataSource(video?.file?.url, video?.file?.headers)
-                val key = "${media.id}_${episode.number}_${currentPosition}"
-                previewImage.setImageBitmap(it.getFrame(key, currentPosition))
-            }
-        }
         timeline.addOnScrubListener(object : OnScrubListener {
             override fun onScrubStart(previewBar: PreviewBar?) {
                 exoPlayer.playWhenReady = false
             }
 
-            override fun onScrubMove(previewBar: PreviewBar?, progress: Int, fromUser: Boolean) { }
+            override fun onScrubMove(previewBar: PreviewBar?, progress: Int, fromUser: Boolean) {
+
+            }
 
             override fun onScrubStop(previewBar: PreviewBar?) { }
 
         })
-        val isPreviewEnabled = PrefManager.getVal<Boolean>(PrefName.ScrubPreview)
-        timeline.isPreviewEnabled = isPreviewEnabled
-        previewFrame.isVisible = isPreviewEnabled
+        timeline.setPreviewLoader { currentPosition, _ ->
+            val keyFrame = (currentPosition / 10000) - 1
+            val currentFrame = keyFrame * 10000
+            MediaMetadataRetriever().use {
+                it.setDataSource(video?.file?.url, video?.file?.headers)
+                val key = "${media.id}_${episode.number}_${keyFrame}"
+                previewImage.setImageBitmap(it.getFrame(key, currentFrame))
+            }
+        }
+        timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
         lockButton.setOnClickListener {
             val button = it as ImageButton
             locked = !locked
@@ -2259,9 +2259,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
                 }
             }
         }
-        val isPreviewEnabled = PrefManager.getVal<Boolean>(PrefName.ScrubPreview)
-        timeline.isPreviewEnabled = isPreviewEnabled
-        previewFrame.isVisible = isPreviewEnabled
+        timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
         if (isInitialized) exoPlayer.play()
     }
 

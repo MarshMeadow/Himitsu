@@ -490,19 +490,6 @@
 
             </LinearLayout>
 
-            <FrameLayout
-                android:id="@+id/previewFrameLayout"
-                android:layout_width="176dp"
-                android:layout_height="96dp"
-                android:background="@drawable/video_frame">
-
-                <ImageView
-                    android:id="@+id/previewImage"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/preview" />
-            </FrameLayout>
-
             <view
                 android:id="@id/exo_progress"
                 class="ani.himitsu.media.anime.ExoplayerView$ExtendedTimeBar"
@@ -537,6 +524,21 @@
                 app:tint="@android:color/white"
                 tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
         </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:id="@+id/previewFrameLayout"
+            android:layout_width="176dp"
+            android:layout_height="96dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/video_frame">
+
+            <ImageView
+                android:id="@+id/previewImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/preview" />
+        </FrameLayout>
 
     </FrameLayout>
 
