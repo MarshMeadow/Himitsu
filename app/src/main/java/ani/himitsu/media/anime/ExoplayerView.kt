@@ -13,6 +13,7 @@ import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
 import android.content.res.ColorStateList
 import android.content.res.Configuration
+import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.Animatable
 import android.hardware.Sensor
@@ -197,7 +198,7 @@ import kotlin.math.roundToInt
 
 @UnstableApi
 @SuppressLint("ClickableViewAccessibility")
-class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityListener, SensorEventListener {
+class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityListener {
 
     private val resumeWindow = "resumeWindow"
     private val resumePosition = "resumePosition"
@@ -293,8 +294,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
     private val isTorrent: Boolean get() = torrent != null
     private val subsEmbedded: Boolean get() = isTorrent || !hasExtSubtitles
 
-    private var sensorManager: SensorManager? = null
-    private var proximity: Sensor? = null
+    private val scrubPreviews = arrayListOf<Bitmap?>()
 
     override fun onAttachedToWindow() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
@@ -469,9 +469,6 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         ThemeManager(this).applyTheme()
         binding = ActivityExoplayerBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        sensorManager = getSystemService(SENSOR_SERVICE) as SensorManager
-        proximity = sensorManager?.getDefaultSensor(Sensor.TYPE_PROXIMITY)
 
         //Initialize
         isCastApiAvailable = GoogleApiAvailability.getInstance()
@@ -664,13 +661,11 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
             override fun onScrubStop(previewBar: PreviewBar?) { }
 
         })
+
         timeline.setPreviewLoader { currentPosition, _ ->
             val keyFrame = (currentPosition / 10000) - 1
-            val currentFrame = keyFrame * 10000
-            MediaMetadataRetriever().use {
-                it.setDataSource(video?.file?.url, video?.file?.headers)
-                val key = "${media.id}_${episode.number}_${keyFrame}"
-                previewImage.setImageBitmap(it.getFrame(key, currentFrame))
+            scrubPreviews.getOrNull(keyFrame.toInt())?.let {
+                previewImage.setImageBitmap(it)
             }
         }
         timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
@@ -1773,6 +1768,20 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
             toast(e.toString())
         }
 
+        val totalFrames = exoPlayer.duration / 10000
+        CoroutineScope(Dispatchers.IO).launch {
+            scrubPreviews.clear()
+            try {
+                MediaMetadataRetriever().use {
+                    it.setDataSource(video?.file?.url, video?.file?.headers)
+                    for (frame in 0..<totalFrames) {
+                        val key = "${media.id}_${episode.number}_${frame}"
+                        scrubPreviews.add(it.getFrame(key, (frame * 10000)))
+                    }
+                }
+            } catch (ignored: Exception) {}
+        }
+
         exoPlayer.addListener(this)
         exoPlayer.addAnalyticsListener(EventLogger())
         isInitialized = true
@@ -1819,7 +1828,6 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
 
     override fun onPause() {
         super.onPause()
-        sensorManager?.unregisterListener(this)
         orientationListener?.disable()
         if (isInitialized) {
             if (castPlayer?.isPlaying == false) {
@@ -1836,7 +1844,6 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
 
     override fun onResume() {
         super.onResume()
-        sensorManager?.registerListener(this, proximity, SensorManager.SENSOR_DELAY_NORMAL)
         orientationListener?.enable()
         hideSystemBars()
         if (isInitialized) {
@@ -2573,13 +2580,4 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
             isEnabled = enabled
         }
     }
-
-    override fun onSensorChanged(event: SensorEvent) {
-        proximity?.let {
-            if (event.sensor.type == Sensor.TYPE_PROXIMITY && event.values[0] < it.maximumRange)
-                playerView.keepScreenOn = exoPlayer.isPlaying
-        }
-    }
-
-    override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {}
 }

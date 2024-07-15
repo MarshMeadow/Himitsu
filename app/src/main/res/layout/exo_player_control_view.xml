@@ -427,6 +427,21 @@
             android:layout_marginBottom="36dp"
             android:orientation="vertical">
 
+            <FrameLayout
+                android:id="@+id/previewFrameLayout"
+                android:layout_width="176dp"
+                android:layout_height="96dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/video_frame">
+
+                <ImageView
+                    android:id="@+id/previewImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/preview" />
+            </FrameLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -524,21 +539,6 @@
                 app:tint="@android:color/white"
                 tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
         </androidx.cardview.widget.CardView>
-
-        <FrameLayout
-            android:id="@+id/previewFrameLayout"
-            android:layout_width="176dp"
-            android:layout_height="96dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="80dp"
-            android:background="@drawable/video_frame">
-
-            <ImageView
-                android:id="@+id/previewImage"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/preview" />
-        </FrameLayout>
 
     </FrameLayout>
 

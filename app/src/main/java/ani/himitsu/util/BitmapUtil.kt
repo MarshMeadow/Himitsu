@@ -82,7 +82,7 @@ object BitmapUtil {
     fun MediaMetadataRetriever.getFrame(key: String, timestamp: Long) : Bitmap? {
         var bitmap = bitmapCache[key]
         if (bitmap != null) {
-            bitmap = getFrameAtTime(timestamp)
+            bitmap = getFrameAtTime(timestamp, MediaMetadataRetriever.OPTION_CLOSEST)
             bitmap?.let { bitmapCache.put(key, it) }
         }
         return bitmap
