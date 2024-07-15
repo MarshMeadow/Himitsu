@@ -35,6 +35,7 @@ import ani.himitsu.toPx
 import ani.himitsu.toast
 import ani.himitsu.view.Xpandable
 import bit.himitsu.onCompletedAction
+import bit.himitsu.os.Version
 import com.google.android.material.slider.Slider.OnChangeListener
 import kotlin.math.roundToInt
 
@@ -229,6 +230,7 @@ class PlayerSettingsActivity : AppCompatActivity() {
         binding.playerSettingsScrubPreview.setOnCheckedChangeListener { _, isChecked ->
             PrefManager.setVal(PrefName.ScrubPreview, isChecked)
         }
+        binding.playerSettingsScrubPreview.isVisible = Version.isNougat
 
         binding.playerSettingsDoubleTap.isChecked = PrefManager.getVal(PrefName.DoubleTap)
         binding.playerSettingsDoubleTap.setOnCheckedChangeListener { _, isChecked ->

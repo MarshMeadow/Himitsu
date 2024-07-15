@@ -79,15 +79,6 @@ object BitmapUtil {
         return bitmap?.let { roundCorners(it) }
     }
 
-    fun MediaMetadataRetriever.getFrame(key: String, timestamp: Long) : Bitmap? {
-        var bitmap = bitmapCache[key]
-        if (bitmap != null) {
-            bitmap = getFrameAtTime(timestamp, MediaMetadataRetriever.OPTION_CLOSEST)
-            bitmap?.let { bitmapCache.put(key, it) }
-        }
-        return bitmap
-    }
-
     fun Bitmap.toSquare(): Bitmap {
         val side = min(width, height)
         val xOffset = (width - side) / 2

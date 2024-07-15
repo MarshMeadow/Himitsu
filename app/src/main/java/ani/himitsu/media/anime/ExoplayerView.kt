@@ -16,16 +16,12 @@ import android.content.res.Configuration
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.Animatable
-import android.hardware.Sensor
-import android.hardware.SensorEvent
-import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.media.AudioManager
 import android.media.AudioManager.AUDIOFOCUS_GAIN
 import android.media.AudioManager.AUDIOFOCUS_LOSS
 import android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT
 import android.media.AudioManager.STREAM_MUSIC
-import android.media.MediaMetadataRetriever
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -46,6 +42,9 @@ import android.view.KeyEvent.KEYCODE_N
 import android.view.KeyEvent.KEYCODE_SPACE
 import android.view.MotionEvent
 import android.view.OrientationEventListener
+import android.view.PixelCopy
+import android.view.PixelCopy.OnPixelCopyFinishedListener
+import android.view.SurfaceView
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
@@ -159,7 +158,6 @@ import ani.himitsu.toDp
 import ani.himitsu.toPx
 import ani.himitsu.toast
 import ani.himitsu.tryWithSuspend
-import ani.himitsu.util.BitmapUtil.getFrame
 import ani.himitsu.util.Logger
 import ani.himitsu.view.CustomCastButton
 import ani.himitsu.view.GestureSlider
@@ -293,8 +291,6 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
 
     private val isTorrent: Boolean get() = torrent != null
     private val subsEmbedded: Boolean get() = isTorrent || !hasExtSubtitles
-
-    private val scrubPreviews = arrayListOf<Bitmap?>()
 
     override fun onAttachedToWindow() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
@@ -651,7 +647,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         val previewImage = findViewById<ImageView>(R.id.previewImage)
         timeline.addOnScrubListener(object : OnScrubListener {
             override fun onScrubStart(previewBar: PreviewBar?) {
-                exoPlayer.playWhenReady = false
+                // exoPlayer.playWhenReady = false
             }
 
             override fun onScrubMove(previewBar: PreviewBar?, progress: Int, fromUser: Boolean) {
@@ -663,9 +659,18 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         })
 
         timeline.setPreviewLoader { currentPosition, _ ->
-            val keyFrame = (currentPosition / 10000) - 1
-            scrubPreviews.getOrNull(keyFrame.toInt())?.let {
-                previewImage.setImageBitmap(it)
+            if (Version.isNougat) {
+                val surfaceBitmap = Bitmap.createBitmap(176.toPx, 96.toPx, Bitmap.Config.ARGB_8888)
+                val listener = OnPixelCopyFinishedListener { copyResult: Int -> }
+
+                PixelCopy.request(
+                    playerView.videoSurfaceView as SurfaceView,
+                    surfaceBitmap,
+                    listener,
+                    Handler(Looper.getMainLooper())
+                )
+
+                previewImage.setImageBitmap(surfaceBitmap)
             }
         }
         timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
@@ -1766,20 +1771,6 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
                 .build()
         } catch (e: Exception) {
             toast(e.toString())
-        }
-
-        val totalFrames = exoPlayer.duration / 10000
-        CoroutineScope(Dispatchers.IO).launch {
-            scrubPreviews.clear()
-            try {
-                MediaMetadataRetriever().use {
-                    it.setDataSource(video?.file?.url, video?.file?.headers)
-                    for (frame in 0..<totalFrames) {
-                        val key = "${media.id}_${episode.number}_${frame}"
-                        scrubPreviews.add(it.getFrame(key, (frame * 10000)))
-                    }
-                }
-            } catch (ignored: Exception) {}
         }
 
         exoPlayer.addListener(this)
