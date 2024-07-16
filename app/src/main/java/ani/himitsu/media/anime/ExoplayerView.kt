@@ -673,7 +673,6 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
                 bitmap.recycle()
             }
         }
-        timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
         lockButton.setOnClickListener {
             val button = it as ImageButton
             locked = !locked
@@ -1773,9 +1772,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
             toast(e.toString())
         }
 
-        retriever = MediaMetadataRetriever().apply {
-            setDataSource(video?.file?.url, video?.file?.headers)
-        }
+        onSetScrubPreviews()
 
         exoPlayer.addListener(this)
         exoPlayer.addAnalyticsListener(EventLogger())
@@ -1784,6 +1781,17 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
 
         if (!PrefManager.getVal<Boolean>(PrefName.Subtitles)) {
             onSetTrackGroupOverride(dummyTrack, TRACK_TYPE_TEXT)
+        }
+    }
+
+    private fun onSetScrubPreviews() {
+        timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
+        try {
+            retriever = MediaMetadataRetriever().apply {
+                setDataSource(video?.file?.url, video?.file?.headers)
+            }
+        } catch(ignored: Exception) {
+            timeline.isPreviewEnabled = false
         }
     }
 
@@ -2262,7 +2270,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
                 }
             }
         }
-        timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
+        onSetScrubPreviews()
         if (isInitialized) exoPlayer.play()
     }
 
