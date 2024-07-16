@@ -282,6 +282,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
 
     private val handler = Handler(Looper.getMainLooper())
     val model: MediaDetailsViewModel by viewModels()
+    var retriever: MediaMetadataRetriever? = null
 
     private var isTimeStampsLoaded = false
     private var isSeeking = false
@@ -645,32 +646,25 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         val screen = playerView.findViewById<View>(R.id.exo_black_screen)
         val lockButton = playerView.findViewById<ImageButton>(R.id.exo_unlock)
         val previewImage = findViewById<ImageView>(R.id.previewImage)
-        var retriever: MediaMetadataRetriever? = null
-        var currentFrame = 0L
         timeline.addOnScrubListener(object : OnScrubListener {
             override fun onScrubStart(previewBar: PreviewBar?) {
                 exoPlayer.playWhenReady = false
-                retriever = MediaMetadataRetriever().apply {
-                    setDataSource(video?.file?.url, video?.file?.headers)
-                }
-                currentFrame = exoPlayer.currentPosition
+                timeline.currentFrame = exoPlayer.currentPosition
             }
 
             override fun onScrubMove(previewBar: PreviewBar?, progress: Int, fromUser: Boolean) {
                 exoPlayer.playWhenReady = false
             }
 
-            override fun onScrubStop(previewBar: PreviewBar?) {
-                retriever?.close()
-            }
+            override fun onScrubStop(previewBar: PreviewBar?) { }
 
         })
 
         timeline.setPreviewLoader { currentPosition, _ ->
             val keyFrame = currentPosition.toDuration(DurationUnit.MILLISECONDS)
-            if (keyFrame.inWholeMilliseconds < currentFrame + 5000
-                && keyFrame.inWholeMilliseconds > currentFrame - 5000) return@setPreviewLoader
-            currentFrame = keyFrame.inWholeMilliseconds
+            if (keyFrame.inWholeMilliseconds < timeline.currentFrame + 5000
+                && keyFrame.inWholeMilliseconds > timeline.currentFrame - 5000) return@setPreviewLoader
+            timeline.currentFrame = keyFrame.inWholeMilliseconds
             retriever?.getFrameAtTime(keyFrame.inWholeMicroseconds)?.let { bitmap ->
                 previewImage.setImageBitmap(
                     Bitmap.createScaledBitmap(bitmap, 176.toPx, 96.toPx, false)
@@ -1777,6 +1771,10 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
             toast(e.toString())
         }
 
+        retriever = MediaMetadataRetriever().apply {
+            setDataSource(video?.file?.url, video?.file?.headers)
+        }
+
         exoPlayer.addListener(this)
         exoPlayer.addAnalyticsListener(EventLogger())
         isInitialized = true
@@ -1794,6 +1792,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         disappeared = false
         functionstarted = false
         exoPlayer.release()
+        retriever?.close()
         VideoCache.release()
         mediaSession?.release()
         stopDiscordService()
@@ -2565,6 +2564,8 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
     ) : PreviewTimeBar(context, attrs) {
         private var enabled = false
         private var forceDisabled = false
+        var currentFrame = 0L
+
         override fun setEnabled(enabled: Boolean) {
             this.enabled = enabled
             super.setEnabled(!forceDisabled && this.enabled)
