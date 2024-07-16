@@ -108,6 +108,10 @@ android {
         abortOnError false
     }
     namespace 'ani.himitsu'
+    androidResources {
+        generateLocaleConfig true
+    }
+
 
     applicationVariants.configureEach { variant ->
         variant.outputs.each { output ->
@@ -179,7 +183,7 @@ dependencies {
     implementation 'jp.wasabeef:glide-transformations:4.3.0'
 
     /* Firebase */
-    implementation platform('com.google.firebase:firebase-bom:33.1.1')
+    implementation platform('com.google.firebase:firebase-bom:33.1.2')
 
     /* YouTube */
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.0'
