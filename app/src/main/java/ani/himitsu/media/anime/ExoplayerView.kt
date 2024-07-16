@@ -663,12 +663,14 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         timeline.setPreviewLoader { currentPosition, _ ->
             val keyFrame = currentPosition.toDuration(DurationUnit.MILLISECONDS)
             if (keyFrame.inWholeMilliseconds < timeline.currentFrame + 5000
-                && keyFrame.inWholeMilliseconds > timeline.currentFrame - 5000) return@setPreviewLoader
+                && keyFrame.inWholeMilliseconds > timeline.currentFrame - 5000)
+                return@setPreviewLoader
             timeline.currentFrame = keyFrame.inWholeMilliseconds
             retriever?.getFrameAtTime(keyFrame.inWholeMicroseconds)?.let { bitmap ->
                 previewImage.setImageBitmap(
                     Bitmap.createScaledBitmap(bitmap, 176.toPx, 96.toPx, false)
                 )
+                bitmap.recycle()
             }
         }
         timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
