@@ -16,6 +16,7 @@ import kotlinx.coroutines.runBlocking
 import java.net.HttpURLConnection
 import java.net.URL
 import kotlin.math.min
+import kotlin.time.Duration
 
 object BitmapUtil {
     private fun roundCorners(bitmap: Bitmap, cornerRadius: Int = 16): Bitmap {

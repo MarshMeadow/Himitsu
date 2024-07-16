@@ -22,6 +22,7 @@ import android.media.AudioManager.AUDIOFOCUS_GAIN
 import android.media.AudioManager.AUDIOFOCUS_LOSS
 import android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT
 import android.media.AudioManager.STREAM_MUSIC
+import android.media.MediaMetadataRetriever
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -42,9 +43,6 @@ import android.view.KeyEvent.KEYCODE_N
 import android.view.KeyEvent.KEYCODE_SPACE
 import android.view.MotionEvent
 import android.view.OrientationEventListener
-import android.view.PixelCopy
-import android.view.PixelCopy.OnPixelCopyFinishedListener
-import android.view.SurfaceView
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
@@ -192,6 +190,8 @@ import kotlin.collections.set
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.roundToInt
+import kotlin.time.DurationUnit
+import kotlin.time.toDuration
 
 
 @UnstableApi
@@ -645,32 +645,36 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         val screen = playerView.findViewById<View>(R.id.exo_black_screen)
         val lockButton = playerView.findViewById<ImageButton>(R.id.exo_unlock)
         val previewImage = findViewById<ImageView>(R.id.previewImage)
+        var retriever: MediaMetadataRetriever? = null
+        var currentFrame = 0L
         timeline.addOnScrubListener(object : OnScrubListener {
             override fun onScrubStart(previewBar: PreviewBar?) {
-                // exoPlayer.playWhenReady = false
+                exoPlayer.playWhenReady = false
+                retriever = MediaMetadataRetriever().apply {
+                    setDataSource(video?.file?.url, video?.file?.headers)
+                }
+                currentFrame = exoPlayer.currentPosition
             }
 
             override fun onScrubMove(previewBar: PreviewBar?, progress: Int, fromUser: Boolean) {
-
+                exoPlayer.playWhenReady = false
             }
 
-            override fun onScrubStop(previewBar: PreviewBar?) { }
+            override fun onScrubStop(previewBar: PreviewBar?) {
+                retriever?.close()
+            }
 
         })
 
         timeline.setPreviewLoader { currentPosition, _ ->
-            if (Version.isNougat) {
-                val surfaceBitmap = Bitmap.createBitmap(176.toPx, 96.toPx, Bitmap.Config.ARGB_8888)
-                val listener = OnPixelCopyFinishedListener { copyResult: Int -> }
-
-                PixelCopy.request(
-                    playerView.videoSurfaceView as SurfaceView,
-                    surfaceBitmap,
-                    listener,
-                    Handler(Looper.getMainLooper())
+            val keyFrame = currentPosition.toDuration(DurationUnit.MILLISECONDS)
+            if (keyFrame.inWholeMilliseconds < currentFrame + 5000
+                && keyFrame.inWholeMilliseconds > currentFrame - 5000) return@setPreviewLoader
+            currentFrame = keyFrame.inWholeMilliseconds
+            retriever?.getFrameAtTime(keyFrame.inWholeMicroseconds)?.let { bitmap ->
+                previewImage.setImageBitmap(
+                    Bitmap.createScaledBitmap(bitmap, 176.toPx, 96.toPx, false)
                 )
-
-                previewImage.setImageBitmap(surfaceBitmap)
             }
         }
         timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
