@@ -256,7 +256,7 @@
     <string name="default_quality_info">Automatically uses the closest quality provided by default, ONLY applied for \"Multi Quality\" Servers. Auto changes upon playing a video.</string>
     <string name="default_playback_speed">Default Playback Speed : %1$s</string>
     <string name="cursed_speeds">Cursed Speeds</string>
-    <string name="scrub_preview">Scrub Previews</string>
+    <string name="scrub_preview">Video Seek Previews</string>
     <string name="resize_mode_button">Default Resize Mode</string>
     <string name="exceed_cap">Bypass Capabilities</string>
     <string name="exceed_cap_desc">Allows overriding detected player limitations</string>
