@@ -1782,13 +1782,13 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
     }
 
     private fun onSetScrubPreviews() {
-        timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview)
-        try {
+        timeline.isPreviewEnabled = PrefManager.getVal(PrefName.ScrubPreview) && !isTorrent && try {
             retriever = MediaMetadataRetriever().apply {
                 setDataSource(video?.file?.url, video?.file?.headers)
             }
-        } catch(ignored: Exception) {
-            timeline.isPreviewEnabled = false
+            true
+        } catch (ignored: Exception) {
+            false
         }
     }
 
