@@ -667,10 +667,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
                 return@setPreviewLoader
             timeline.currentFrame = keyFrame.inWholeMilliseconds
             retriever?.getFrameAtTime(keyFrame.inWholeMicroseconds)?.let { bitmap ->
-                previewImage.setImageBitmap(
-                    Bitmap.createScaledBitmap(bitmap, 176.toPx, 96.toPx, false)
-                )
-                bitmap.recycle()
+                Glide.with(previewImage).load(bitmap).override(176.toPx, 96.toPx).into(previewImage)
             }
         }
         lockButton.setOnClickListener {
