@@ -24,6 +24,7 @@ import ani.himitsu.parsers.novel.NovelExtensionManager
 import ani.himitsu.settings.SearchQueryHandler
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
+import ani.himitsu.toPx
 import bit.himitsu.ShellActivity
 import com.bumptech.glide.Glide
 import kotlinx.coroutines.launch
@@ -116,7 +117,7 @@ class NovelPluginsFragment : Fragment(), SearchQueryHandler {
                 holder.extensionVersionTextView.text = text
                 if (!skipIcons) {
                     Glide.with(holder.itemView.context)
-                        .load(plugin.iconUrl)
+                        .load(plugin.iconUrl).override(48.toPx)
                         .into(holder.extensionIconImageView)
                 }
                 holder.closeTextView.setOnClickListener {

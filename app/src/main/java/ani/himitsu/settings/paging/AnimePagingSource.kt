@@ -21,6 +21,7 @@ import ani.himitsu.databinding.ItemExtensionBinding
 import ani.himitsu.others.LanguageMapper
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
+import ani.himitsu.toPx
 import com.bumptech.glide.Glide
 import eu.kanade.tachiyomi.extension.anime.AnimeExtensionManager
 import eu.kanade.tachiyomi.extension.anime.model.AnimeExtension
@@ -199,7 +200,7 @@ class AnimeExtensionAdapter(private val clickListener: OnAnimeInstallClickListen
             if (extension == null) return
             if (!skipIcons) {
                 Glide.with(binding.extensionIconImageView)
-                    .load(extension.iconUrl)
+                    .load(extension.iconUrl).override(48.toPx)
                     .into(binding.extensionIconImageView)
             }
             val nsfw = if (extension.isNsfw) "(18+)" else ""

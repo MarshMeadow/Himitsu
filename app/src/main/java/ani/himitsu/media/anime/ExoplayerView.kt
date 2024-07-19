@@ -59,6 +59,7 @@ import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
+import androidx.core.graphics.scale
 import androidx.core.math.MathUtils.clamp
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
@@ -668,12 +669,10 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
             timeline.currentFrame = keyFrame.inWholeMilliseconds
             retriever?.getFrameAtTime(keyFrame.inWholeMicroseconds)?.let { bitmap ->
                 previewImage.setImageBitmap(
-                    Bitmap.createScaledBitmap(bitmap, 176.toPx, 96.toPx, false)
+                    bitmap.scale(176.toPx, 96.toPx, false)
                 )
                 bitmap.recycle()
-                /* Initial load times are not offset by a performance gain over time
-                Glide.with(previewImage).load(bitmap).override(176.toPx, 96.toPx).into(previewImage)
-                 */
+                // Glide.with(previewImage).load(bitmap).override(176.toPx, 96.toPx).into(previewImage)
             }
         }
         lockButton.setOnClickListener {
