@@ -1814,7 +1814,9 @@ Page(page:$page,perPage:$ITEMS_PER_PAGE_L) {
                             val title = if (status != "CANCELLED") year else status
                             if (!yearMedia.containsKey(title))
                                 yearMedia[title] = arrayListOf()
-                            yearMedia[title]?.add(Media(this))
+                            if (yearMedia[title]?.none { item -> item.id == this.id } == true) {
+                                yearMedia[title]?.add(Media(this))
+                            }
                         }
                     }
                     it.pageInfo?.hasNextPage == true

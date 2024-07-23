@@ -1,11 +1,16 @@
 package ani.himitsu.profile.activity
 
+import android.R.attr.button
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -21,10 +26,12 @@ import bit.himitsu.setBaseline
 import bit.himitsu.withFlexibleMargin
 import nl.joery.animatedbottombar.AnimatedBottomBar
 
+
 class FeedActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFeedBinding
     private var selected: Int = 0
     lateinit var navBar: AnimatedBottomBar
+    private val fabHandler = Handler(Looper.getMainLooper())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -74,6 +81,15 @@ class FeedActivity : AppCompatActivity() {
             withFlexibleMargin(newConfig)
         }
         binding.feedViewPager.setBaseline(navBar, newConfig)
+    }
+
+    override fun onUserInteraction() {
+        super.onUserInteraction()
+        fabHandler.removeCallbacksAndMessages(null)
+        binding.activityFAB.visibility = View.VISIBLE
+        fabHandler.postDelayed({
+            if (binding.activityFAB.isVisible) binding.activityFAB.visibility = View.GONE
+        }, 5000)
     }
 
     override fun onRestart() {
