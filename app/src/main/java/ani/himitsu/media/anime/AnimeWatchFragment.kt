@@ -171,7 +171,9 @@ class AnimeWatchFragment : Fragment() {
         model.getMedia().observe(viewLifecycleOwner) {
             if (it != null) {
                 media = it
-                media.selected = model.loadSelected(media)
+                media.selected = model.loadSelected(media).apply {
+                    recyclerReversed = PrefManager.getVal(PrefName.DescendingItems)
+                }
 
                 subscribed =
                     SubscriptionHelper.getSubscriptions().containsKey(media.id)

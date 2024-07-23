@@ -16,6 +16,7 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     NSFWExtension(Pref(Location.General, Boolean::class, true)),
     ContinueMedia(Pref(Location.General, Boolean::class, true)),
     SearchSources(Pref(Location.General, Boolean::class, false)),
+    DescendingItems(Pref(Location.General, Boolean::class, false)),
     RecentlyListOnly(Pref(Location.General, Boolean::class, false)),
     SocialInMedia(Pref(Location.General, Boolean::class, true)),
     UseFoldable(Pref(Location.General, Boolean::class, true)),

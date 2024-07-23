@@ -170,7 +170,9 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                 binding.mediaInfoProgressBar.visibility = progress
 
                 if (media.format == "MANGA" || media.format == "ONE SHOT") {
-                    media.selected = model.loadSelected(media)
+                    media.selected = model.loadSelected(media).apply {
+                        recyclerReversed = PrefManager.getVal(PrefName.DescendingItems)
+                    }
 
                     subscribed =
                         SubscriptionHelper.getSubscriptions().containsKey(media.id)

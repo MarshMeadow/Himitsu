@@ -122,6 +122,13 @@ class SettingsCommonFragment : Fragment() {
                     ),
                     Settings(
                         type = ViewType.SWITCH,
+                        name = getString(R.string.descending_items),
+                        desc = getString(R.string.descending_items_desc),
+                        icon = R.drawable.ic_round_search_sources_24,
+                        pref = PrefName.DescendingItems
+                    ),
+                    Settings(
+                        type = ViewType.SWITCH,
                         name = getString(R.string.search_source_list),
                         desc = getString(R.string.search_source_list_desc),
                         icon = R.drawable.ic_round_search_sources_24,
