@@ -2,6 +2,7 @@ package ani.himitsu.profile.activity
 
 import android.content.Intent
 import android.view.View
+import android.view.View.OnClickListener
 import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentActivity
@@ -58,28 +59,46 @@ class ActivityItem(
         binding.activityLike.setColorFilter(if (activity.isLiked == true) likeColor else notLikeColor)
         binding.commentTotalReplies.isVisible = activity.replyCount > 0
         binding.dot.isVisible = activity.replyCount > 0
-        binding.commentTotalReplies.setOnClickListener {
-            when (binding.activityReplies.visibility) {
-                View.GONE -> {
-                    val replyItems = activity.replies?.map {
-                        ActivityReplyItem(it, fragActivity) { id, type ->
-                            clickCallback(
-                                id,
-                                type
-                            )
-                        }
-                    } ?: emptyList()
-                    repliesAdapter.addAll(replyItems)
-                    binding.activityReplies.visibility = View.VISIBLE
-                    binding.commentTotalReplies.setText(R.string.hide_replies)
+        if (!activity.replies.isNullOrEmpty()) {
+            val replies = activity.replies.map {
+                ActivityReplyItem(it, fragActivity) { id, type ->
+                    clickCallback(
+                        id,
+                        type
+                    )
                 }
+            }
+            val onReplyClickListener = OnClickListener {
+                when (binding.activityReplies.visibility) {
+                    View.GONE -> {
+                        repliesAdapter.addAll(replies)
+                        binding.activityReplies.visibility = View.VISIBLE
+                        binding.commentTotalReplies.setText(R.string.hide_replies)
+                    }
 
-                else -> {
+                    else -> {
+                        repliesAdapter.clear()
+                        binding.activityReplies.visibility = View.GONE
+                        binding.commentTotalReplies.setText(R.string.view_replies)
+                    }
+                }
+            }
+            repliesAdapter.add(ActivityReplyItem(activity.replies.first(), fragActivity) { id, type ->
+                clickCallback(
+                    id,
+                    type
+                )
+            })
+            binding.activityReplies.visibility = View.VISIBLE
+            if (repliesAdapter.itemCount > 1) {
+                binding.commentTotalReplies.setOnClickListener {
                     repliesAdapter.clear()
-                    binding.activityReplies.visibility = View.GONE
-                    binding.commentTotalReplies.setText(R.string.view_replies)
-
+                    repliesAdapter.addAll(replies)
+                    binding.commentTotalReplies.setText(R.string.hide_replies)
+                    binding.commentTotalReplies.setOnClickListener(onReplyClickListener)
                 }
+            } else {
+                binding.commentTotalReplies.setOnClickListener(onReplyClickListener)
             }
         }
         if (activity.isLocked != true) {
