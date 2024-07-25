@@ -90,7 +90,7 @@ class ActivityItem(
                 )
             })
             binding.activityReplies.visibility = View.VISIBLE
-            if (repliesAdapter.itemCount > 1) {
+            if (activity.replies.size > 1) {
                 binding.commentTotalReplies.setOnClickListener {
                     repliesAdapter.clear()
                     repliesAdapter.addAll(replies)
