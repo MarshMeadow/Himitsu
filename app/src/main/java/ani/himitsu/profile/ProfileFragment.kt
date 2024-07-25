@@ -61,7 +61,6 @@ class ProfileFragment : Fragment() {
         }
         binding.profileUserBio.settings.loadWithOverviewMode = true
         binding.profileUserBio.settings.useWideViewPort = true
-        binding.profileUserBio.setInitialScale(1)
         val styledHtml = getFullAniHTML(
             user.about ?: "",
             ContextCompat.getColor(activity, R.color.bg_opp)

@@ -98,6 +98,7 @@ class ActivityItem(
                     binding.commentTotalReplies.setOnClickListener(onReplyClickListener)
                 }
             } else {
+                binding.commentTotalReplies.setText(R.string.hide_replies)
                 binding.commentTotalReplies.setOnClickListener(onReplyClickListener)
             }
         }

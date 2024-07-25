@@ -52,12 +52,22 @@ class AniMarkdown {
                 .replace("(?s)\\s+_([^_]+)_\\s+".toRegex(), "<em>$1</em>")
         }
 
+        private fun boldToHtml(html: String): String {
+            return html.replace("(?s)\\*\\*(.*?)\\*\\*".toRegex(), "<strong>$1</strong>")
+        }
+
         fun getBasicAniHTML(html: String): String {
-            val step0 = convertNestedImageToHtml(html)
-            val step1 = convertImageToHtml(step0)
-            val step2 = convertLinkToHtml(step1)
-            val step3 = replaceLeftovers(step2)
-            return underlineToHtml(step3)
+            return boldToHtml(
+                underlineToHtml(
+                    replaceLeftovers(
+                        convertLinkToHtml(
+                            convertImageToHtml(
+                                convertNestedImageToHtml(html)
+                            )
+                        )
+                    )
+                )
+            )
         }
 
         fun getFullAniHTML(html: String, textColor: Int): String {
