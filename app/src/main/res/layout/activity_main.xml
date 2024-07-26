@@ -58,6 +58,6 @@
         android:id="@+id/biometricShield"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/bg_black"
+        android:background="@color/black_overlay"
         android:visibility="gone"/>
 </FrameLayout>
