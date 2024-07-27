@@ -36,6 +36,7 @@ import ani.himitsu.statusBarHeight
 import ani.himitsu.themes.ThemeManager
 import ani.himitsu.util.LauncherWrapper
 import bit.himitsu.setBaseline
+import bit.himitsu.viewpager.FidgetSpinTransformer
 
 
 class SettingsActivity : AppCompatActivity() {
@@ -74,6 +75,7 @@ class SettingsActivity : AppCompatActivity() {
                 supportFragmentManager,
                 lifecycle
             )
+            binding.settingsViewPager.setPageTransformer(FidgetSpinTransformer())
 
             intent?.getStringExtra("fragment")?.let {
                 silentExit = true

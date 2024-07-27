@@ -59,5 +59,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black_overlay"
-        android:visibility="gone"/>
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_himitsu_logo" />
+    </FrameLayout>
 </FrameLayout>

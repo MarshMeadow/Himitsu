@@ -67,6 +67,7 @@ import ani.himitsu.themes.ThemeManager
 import ani.himitsu.util.Logger
 import ani.himitsu.view.ZoomOutPageTransformer
 import ani.himitsu.view.dialog.CustomBottomDialog
+import bit.himitsu.os.Version
 import bit.himitsu.torrServerKill
 import bit.himitsu.update.MatagiUpdater
 import bit.himitsu.withFlexibleMargin
@@ -249,7 +250,21 @@ class MainActivity : AppCompatActivity() {
         binding.root.isMotionEventSplittingEnabled = false
 
         lifecycleScope.launch {
-            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+            if (Version.isSnowCone) {
+                splashScreen.setOnExitAnimationListener { splashScreenView ->
+                    ObjectAnimator.ofFloat(
+                        splashScreenView,
+                        View.TRANSLATION_Y,
+                        0f,
+                        -splashScreenView.height.toFloat()
+                    ).apply {
+                        interpolator = AnticipateInterpolator()
+                        duration = 200L
+                        doOnEnd { splashScreenView.remove() }
+                        start()
+                    }
+                }
+            } else {
                 val splash = SplashScreenBinding.inflate(layoutInflater)
                 binding.root.addView(splash.root)
                 (splash.splashImage.drawable as Animatable).start()
@@ -265,22 +280,6 @@ class MainActivity : AppCompatActivity() {
                     interpolator = AnticipateInterpolator()
                     duration = 200L
                     doOnEnd { binding.root.removeView(splash.root) }
-                    start()
-                }
-            }
-        }
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            splashScreen.setOnExitAnimationListener { splashScreenView ->
-                ObjectAnimator.ofFloat(
-                    splashScreenView,
-                    View.TRANSLATION_Y,
-                    0f,
-                    -splashScreenView.height.toFloat()
-                ).apply {
-                    interpolator = AnticipateInterpolator()
-                    duration = 200L
-                    doOnEnd { splashScreenView.remove() }
                     start()
                 }
             }
