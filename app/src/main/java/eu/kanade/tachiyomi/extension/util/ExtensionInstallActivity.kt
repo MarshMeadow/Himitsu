@@ -6,7 +6,6 @@ import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import ani.dantotsu.addons.download.DownloadAddonManager
-import ani.dantotsu.addons.torrent.TorrentAddonManager
 import ani.himitsu.media.AddonType
 import ani.himitsu.media.MediaType
 import ani.himitsu.media.Type
@@ -101,10 +100,6 @@ class ExtensionInstallActivity : AppCompatActivity() {
 
             MediaType.NOVEL -> {
                 Injekt.get<NovelExtensionManager>().updateInstallStep(downloadId, newStep)
-            }
-
-            AddonType.TORRENT -> {
-                Injekt.get<TorrentAddonManager>().updateInstallStep(downloadId, newStep)
             }
 
             AddonType.DOWNLOAD -> {

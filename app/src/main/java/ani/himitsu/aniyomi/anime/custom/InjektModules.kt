@@ -7,7 +7,6 @@ import androidx.core.content.ContextCompat
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.database.StandaloneDatabaseProvider
 import ani.dantotsu.addons.download.DownloadAddonManager
-import ani.dantotsu.addons.torrent.TorrentAddonManager
 import ani.himitsu.download.DownloadsManager
 import ani.himitsu.media.manga.MangaCache
 import ani.himitsu.parsers.novel.NovelExtensionManager
@@ -45,7 +44,6 @@ class AppModule(val app: Application) : InjektModule {
         addSingletonFactory { AnimeExtensionManager(app) }
         addSingletonFactory { MangaExtensionManager(app) }
         addSingletonFactory { NovelExtensionManager(app) }
-        addSingletonFactory { TorrentAddonManager(app) }
         addSingletonFactory { DownloadAddonManager(app) }
 
         addSingletonFactory<AnimeSourceManager> { AndroidAnimeSourceManager(app, get()) }

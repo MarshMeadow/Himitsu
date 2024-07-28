@@ -9,7 +9,6 @@ interface Type {
                 "anime" -> MediaType.ANIME
                 "manga" -> MediaType.MANGA
                 "novel" -> MediaType.NOVEL
-                "torrent" -> AddonType.TORRENT
                 "download" -> AddonType.DOWNLOAD
                 else -> { null }
             }
@@ -34,12 +33,10 @@ enum class MediaType : Type {
 }
 
 enum class AddonType : Type {
-    TORRENT,
     DOWNLOAD;
 
     override fun asText(): String {
         return when (this) {
-            TORRENT -> "Torrent"
             DOWNLOAD -> "Download"
         }
     }

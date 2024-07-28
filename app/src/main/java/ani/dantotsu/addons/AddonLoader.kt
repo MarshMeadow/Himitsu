@@ -9,10 +9,6 @@ import ani.dantotsu.addons.download.DownloadAddon
 import ani.dantotsu.addons.download.DownloadAddonApiV2
 import ani.dantotsu.addons.download.DownloadAddonManager
 import ani.dantotsu.addons.download.DownloadLoadResult
-import ani.dantotsu.addons.torrent.TorrentAddon
-import ani.dantotsu.addons.torrent.TorrentAddonApi
-import ani.dantotsu.addons.torrent.TorrentAddonManager
-import ani.dantotsu.addons.torrent.TorrentLoadResult
 import ani.himitsu.media.AddonType
 import ani.himitsu.util.Logger
 import dalvik.system.PathClassLoader
@@ -88,21 +84,6 @@ class AddonLoader {
             val instance = loadedClass.getDeclaredConstructor().newInstance()
 
             return when (type) {
-                AddonType.TORRENT -> {
-                    val extension = instance as? TorrentAddonApi
-                        ?: throw IllegalStateException("Addon is not a TorrentAddonApi")
-                    TorrentLoadResult.Success(
-                        TorrentAddon.Installed(
-                            name = extName,
-                            pkgName = pkgName,
-                            versionName = versionName,
-                            versionCode = versionCode,
-                            extension = extension,
-                            icon = context.getApplicationIcon(pkgName),
-                        )
-                    )
-                }
-
                 AddonType.DOWNLOAD -> {
                     val extension = instance as? DownloadAddonApiV2
                         ?: throw IllegalStateException("Addon is not a DownloadAddonApiV2")
@@ -130,13 +111,6 @@ class AddonLoader {
         fun loadFromPkgName(context: Context, packageName: String, type: AddonType): LoadResult? {
             return try {
                 when (type) {
-                    AddonType.TORRENT -> loadExtension(
-                        context,
-                        packageName,
-                        TorrentAddonManager.TORRENT_CLASS,
-                        type
-                    )
-
                     AddonType.DOWNLOAD -> loadExtension(
                         context,
                         packageName,

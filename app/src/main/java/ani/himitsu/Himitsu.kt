@@ -6,10 +6,9 @@ import android.os.Bundle
 import androidx.multidex.MultiDex
 import androidx.multidex.MultiDexApplication
 import ani.dantotsu.addons.download.DownloadAddonManager
-import ani.dantotsu.addons.torrent.TorrentAddonManager
+import ani.dantotsu.connections.comments.CommentsAPI
 import ani.himitsu.aniyomi.anime.custom.AppModule
 import ani.himitsu.aniyomi.anime.custom.PreferenceModule
-import ani.dantotsu.connections.comments.CommentsAPI
 import ani.himitsu.notifications.TaskScheduler
 import ani.himitsu.parsers.AnimeSources
 import ani.himitsu.parsers.MangaSources
@@ -42,7 +41,6 @@ class Himitsu : MultiDexApplication() {
     private lateinit var animeExtensionManager: AnimeExtensionManager
     private lateinit var mangaExtensionManager: MangaExtensionManager
     private lateinit var novelExtensionManager: NovelExtensionManager
-    private lateinit var torrentAddonManager: TorrentAddonManager
     private lateinit var downloadAddonManager: DownloadAddonManager
 
     override fun attachBaseContext(base: Context?) {
@@ -102,8 +100,6 @@ class Himitsu : MultiDexApplication() {
         CoroutineScope(Dispatchers.IO).launch {
             downloadAddonManager = Injekt.get()
             downloadAddonManager.init()
-            torrentAddonManager = Injekt.get()
-            torrentAddonManager.init()
         }
         if (PrefManager.getVal(PrefName.CommentsOptIn)) {
             CoroutineScope(Dispatchers.IO).launch { CommentsAPI.fetchAuthToken(this@Himitsu) }

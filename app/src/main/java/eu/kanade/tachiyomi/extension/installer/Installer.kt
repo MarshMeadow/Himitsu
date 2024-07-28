@@ -9,7 +9,6 @@ import android.net.Uri
 import androidx.annotation.CallSuper
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import ani.dantotsu.addons.download.DownloadAddonManager
-import ani.dantotsu.addons.torrent.TorrentAddonManager
 import ani.himitsu.media.AddonType
 import ani.himitsu.media.MediaType
 import ani.himitsu.media.Type
@@ -29,7 +28,6 @@ abstract class Installer(private val service: Service) {
     private val animeExtensionManager: AnimeExtensionManager by injectLazy()
     private val mangaExtensionManager: MangaExtensionManager by injectLazy()
     private val novelExtensionManager: NovelExtensionManager by injectLazy()
-    private val torrentAddonManager: TorrentAddonManager by injectLazy()
     private val downloadAddonManager: DownloadAddonManager by injectLazy()
 
     private var waitingInstall = AtomicReference<Entry>(null)
@@ -73,7 +71,6 @@ abstract class Installer(private val service: Service) {
             MediaType.ANIME -> animeExtensionManager.setInstalling(entry.downloadId)
             MediaType.MANGA -> mangaExtensionManager.setInstalling(entry.downloadId)
             MediaType.NOVEL -> novelExtensionManager.setInstalling(entry.downloadId)
-            AddonType.TORRENT -> torrentAddonManager.setInstalling(entry.downloadId)
             AddonType.DOWNLOAD -> downloadAddonManager.setInstalling(entry.downloadId)
         }
     }
@@ -109,10 +106,6 @@ abstract class Installer(private val service: Service) {
 
                 MediaType.NOVEL -> {
                     novelExtensionManager.updateInstallStep(completedEntry.downloadId, resultStep)
-                }
-
-                AddonType.TORRENT -> {
-                    torrentAddonManager.updateInstallStep(completedEntry.downloadId, resultStep)
                 }
 
                 AddonType.DOWNLOAD -> {
@@ -162,10 +155,6 @@ abstract class Installer(private val service: Service) {
 
                 MediaType.NOVEL -> {
                     novelExtensionManager.updateInstallStep(it.downloadId, InstallStep.Error)
-                }
-
-                AddonType.TORRENT -> {
-                    torrentAddonManager.updateInstallStep(it.downloadId, InstallStep.Error)
                 }
 
                 AddonType.DOWNLOAD -> {

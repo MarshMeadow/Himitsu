@@ -471,11 +471,6 @@
         <service
             android:name="eu.kanade.tachiyomi.data.torrentServer.service.TorrentServerService"
             android:foregroundServiceType="dataSync" />
-        <service
-            android:name="ani.dantotsu.addons.torrent.TorrentServerService"
-            android:exported="false"
-            android:foregroundServiceType="dataSync"
-            android:stopWithTask="true" />
 
         <meta-data
             android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"

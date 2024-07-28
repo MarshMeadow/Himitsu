@@ -6,7 +6,6 @@ import android.content.Intent
 import android.content.IntentFilter
 import androidx.core.content.ContextCompat
 import ani.dantotsu.addons.download.DownloadAddonManager
-import ani.dantotsu.addons.torrent.TorrentAddonManager
 import ani.himitsu.media.AddonType
 import eu.kanade.tachiyomi.extension.util.ExtensionInstallReceiver
 import eu.kanade.tachiyomi.extension.util.ExtensionInstallReceiver.Companion.getPackageNameFromIntent
@@ -68,19 +67,6 @@ internal class AddonInstallReceiver : BroadcastReceiver() {
                             }
                         }
 
-                        AddonType.TORRENT -> {
-                            getPackageNameFromIntent(intent)?.let { packageName ->
-                                if (packageName != TorrentAddonManager.TORRENT_PACKAGE) return@launchNow
-                                listener?.onAddonInstalled(
-                                    AddonLoader.loadFromPkgName(
-                                        context,
-                                        packageName,
-                                        AddonType.TORRENT
-                                    )
-                                )
-                            }
-                        }
-
                         else -> {}
                     }
                 }
@@ -102,19 +88,6 @@ internal class AddonInstallReceiver : BroadcastReceiver() {
                             }
                         }
 
-                        AddonType.TORRENT -> {
-                            getPackageNameFromIntent(intent)?.let { packageName ->
-                                if (packageName != TorrentAddonManager.TORRENT_PACKAGE) return@launchNow
-                                listener?.onAddonUpdated(
-                                    AddonLoader.loadFromPkgName(
-                                        context,
-                                        packageName,
-                                        AddonType.TORRENT
-                                    )
-                                )
-                            }
-                        }
-
                         else -> {}
                     }
                 }
@@ -126,11 +99,6 @@ internal class AddonInstallReceiver : BroadcastReceiver() {
                     when (type) {
                         AddonType.DOWNLOAD -> {
                             if (packageName != DownloadAddonManager.DOWNLOAD_PACKAGE) return
-                            listener?.onAddonUninstalled(packageName)
-                        }
-
-                        AddonType.TORRENT -> {
-                            if (packageName != TorrentAddonManager.TORRENT_PACKAGE) return
                             listener?.onAddonUninstalled(packageName)
                         }
 
