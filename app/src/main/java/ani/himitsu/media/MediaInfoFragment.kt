@@ -14,6 +14,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.text.HtmlCompat
+import androidx.core.view.drawToBitmap
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.core.view.updatePadding
@@ -37,6 +38,7 @@ import ani.himitsu.databinding.ItemTitleTextBinding
 import ani.himitsu.displayTimer
 import ani.himitsu.isOnline
 import ani.himitsu.loadImage
+import ani.himitsu.media.cereal.MediaSingleton
 import ani.himitsu.profile.User
 import ani.himitsu.setSafeOnClickListener
 import ani.himitsu.settings.saving.PrefManager
@@ -308,6 +310,7 @@ class MediaInfoFragment : Fragment() {
                                 media.sequel!!.banner ?: media.sequel!!.cover
                             )
                             mediaInfoSequel.setSafeOnClickListener {
+                                MediaSingleton.bitmap = mediaInfoSequelImage.drawToBitmap()
                                 ContextCompat.startActivity(
                                     requireContext(),
                                     Intent(
@@ -326,6 +329,7 @@ class MediaInfoFragment : Fragment() {
                                 media.prequel!!.banner ?: media.prequel!!.cover
                             )
                             mediaInfoPrequel.setSafeOnClickListener {
+                                MediaSingleton.bitmap = mediaInfoPrequelImage.drawToBitmap()
                                 ContextCompat.startActivity(
                                     requireContext(),
                                     Intent(
