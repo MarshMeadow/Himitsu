@@ -116,7 +116,7 @@ class MangaExtensionManager(
      */
     suspend fun findAvailableExtensions() {
         val extensions: List<MangaExtension.Available> = try {
-            api.findMangaExtensions()
+            api.findMangaExtensions().sortedBy { it.name.lowercase() }
         } catch (e: Exception) {
             Logger.log(e)
             withUIContext { snackString("Failed to get manga extensions") }

@@ -119,7 +119,7 @@ class AnimeExtensionManager(
      */
     suspend fun findAvailableExtensions() {
         val extensions: List<AnimeExtension.Available> = try {
-            api.findAnimeExtensions()
+            api.findAnimeExtensions().sortedBy { it.name.lowercase() }
         } catch (e: Exception) {
             Logger.log(e)
             withUIContext { snackString("Failed to get extensions list") }

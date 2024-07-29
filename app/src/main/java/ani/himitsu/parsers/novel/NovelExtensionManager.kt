@@ -84,7 +84,7 @@ class NovelExtensionManager(private val context: Context) {
      */
     suspend fun findAvailableExtensions() {
         val extensions: List<NovelExtension.Available> = try {
-            api.findNovelExtensions()
+            api.findNovelExtensions().sortedBy { it.name.lowercase() }
         } catch (e: Exception) {
             Logger.log("Error finding extensions: ${e.message}")
             withUIContext { snackString("Failed to get Novel extensions list") }

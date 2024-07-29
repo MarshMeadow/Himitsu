@@ -248,23 +248,22 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.root.isMotionEventSplittingEnabled = false
-
-        lifecycleScope.launch {
-            if (Version.isSnowCone) {
-                splashScreen.setOnExitAnimationListener { splashScreenView ->
-                    ObjectAnimator.ofFloat(
-                        splashScreenView,
-                        View.TRANSLATION_Y,
-                        0f,
-                        -splashScreenView.height.toFloat()
-                    ).apply {
-                        interpolator = AnticipateInterpolator()
-                        duration = 200L
-                        doOnEnd { splashScreenView.remove() }
-                        start()
-                    }
+        if (Version.isSnowCone) {
+            splashScreen.setOnExitAnimationListener { splashScreenView ->
+                ObjectAnimator.ofFloat(
+                    splashScreenView,
+                    View.TRANSLATION_Y,
+                    0f,
+                    -splashScreenView.height.toFloat()
+                ).apply {
+                    interpolator = AnticipateInterpolator()
+                    duration = 200L
+                    doOnEnd { splashScreenView.remove() }
+                    start()
                 }
-            } else {
+            }
+        } else {
+            lifecycleScope.launch {
                 val splash = SplashScreenBinding.inflate(layoutInflater)
                 binding.root.addView(splash.root)
                 (splash.splashImage.drawable as Animatable).start()
