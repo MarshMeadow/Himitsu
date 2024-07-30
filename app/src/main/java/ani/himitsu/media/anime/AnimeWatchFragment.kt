@@ -230,7 +230,9 @@ class AnimeWatchFragment : Fragment() {
                             model.watchSources = object : WatchSources() {
                                 override val list =
                                     (model.watchSources as WatchSources).list.sortedByDescending {
-                                        runBlocking(Dispatchers.IO) { it.get.value?.autoSearch(media) != null }
+                                        try {
+                                            runBlocking(Dispatchers.IO) { it.get.value?.autoSearch(media) != null }
+                                        } catch (ignored:Exception) { false }
                                     }
                             }
                         }
