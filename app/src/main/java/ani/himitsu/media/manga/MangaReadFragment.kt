@@ -230,7 +230,9 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                                 && !model.mangaReadSources?.list.isNullOrEmpty()) {
                                 model.mangaReadSources = object: MangaReadSources() {
                                     override val list = (model.mangaReadSources as MangaReadSources).list.sortedByDescending {
-                                        runBlocking(Dispatchers.IO) { it.get.value?.autoSearch(media) != null }
+                                        try {
+                                            runBlocking(Dispatchers.IO) { it.get.value?.autoSearch(media) != null }
+                                        } catch (ignored: Exception) { false }
                                     }
                                 }
                             }
