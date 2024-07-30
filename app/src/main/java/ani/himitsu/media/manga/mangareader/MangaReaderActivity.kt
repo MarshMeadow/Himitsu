@@ -270,6 +270,7 @@ class MangaReaderActivity : AppCompatActivity() {
             mangaReaderSlider.stepSize = 1.0f
             mangaReaderSlider.valueFrom = 1.0f
             mangaReaderSlider.valueTo = 100.0f
+            mangaReaderSlider.value = 1.0f
         }
         setContentView(binding.root)
 
@@ -561,7 +562,7 @@ class MangaReaderActivity : AppCompatActivity() {
                 binding.mangaReaderSlider.apply {
                     visibility = View.VISIBLE
                     valueTo = maxChapterPage.toFloat()
-                    value = clamp(currentChapterPage.toFloat(), 1f, valueTo)
+                    value = currentChapterPage.toFloat().coerceIn(valueFrom, valueTo)
                 }
             } else {
                 binding.mangaReaderSlider.visibility = View.GONE
