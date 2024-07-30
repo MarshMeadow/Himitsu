@@ -63,6 +63,7 @@ import ani.himitsu.snackString
 import ani.himitsu.statusBarHeight
 import ani.himitsu.themes.ThemeManager
 import ani.himitsu.toPx
+import ani.himitsu.util.BitmapUtil
 import ani.himitsu.util.LauncherWrapper
 import ani.himitsu.view.GestureSlider
 import ani.himitsu.view.ZoomOutPageTransformer
@@ -122,7 +123,9 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
         launcher = LauncherWrapper(this, contract)
 
         mediaSingleton = null
-        themeImage = MediaSingleton.bitmap
+        themeImage = MediaSingleton.bitmap ?: media.banner?.let {
+            BitmapUtil.downloadImageAsBitmap(it)
+        }
         MediaSingleton.bitmap = null
         ThemeManager(this).applyTheme(themeImage)
 

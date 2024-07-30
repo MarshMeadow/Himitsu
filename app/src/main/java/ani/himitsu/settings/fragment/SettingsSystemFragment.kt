@@ -262,7 +262,7 @@ class SettingsSystemFragment : Fragment() {
                         switch = { isChecked, _ ->
                             PrefManager.setVal(PrefName.LogToFile, isChecked)
                             Logger.clearLog()
-                            settings.restart(component)
+                            if (isChecked) Logger.init(settings)
                         }
 
                     ),
