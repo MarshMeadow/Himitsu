@@ -681,6 +681,7 @@ Due to negligence on behalf of Dantotsu, commit history has been destroyed
 Copyright © 2015 Javier Tomás
 Copyright © 2024 The Mihon Open Source Project
 Copyright © 2024 The Aniyomi Open Source Project
+Copyright © 2024 AbandonedCart
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

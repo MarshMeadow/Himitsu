@@ -27,9 +27,9 @@ import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
+import ani.dantotsu.addons.download.DownloadAddonManager
 import ani.himitsu.FileUrl
 import ani.himitsu.R
-import ani.dantotsu.addons.download.DownloadAddonManager
 import ani.himitsu.databinding.FragmentAnimeWatchBinding
 import ani.himitsu.download.DownloadedType
 import ani.himitsu.download.DownloadsManager
@@ -70,6 +70,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.withContext
 import tachiyomi.core.util.lang.launchIO
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
@@ -175,8 +176,7 @@ class AnimeWatchFragment : Fragment() {
                     recyclerReversed = PrefManager.getVal(PrefName.DescendingItems)
                 }
 
-                subscribed =
-                    SubscriptionHelper.getSubscriptions().containsKey(media.id)
+                subscribed = SubscriptionHelper.getSubscriptions().containsKey(media.id)
 
                 style = media.selected!!.recyclerStyle
                 reverse = media.selected!!.recyclerReversed
@@ -185,51 +185,83 @@ class AnimeWatchFragment : Fragment() {
                 binding.mediaInfoProgressBar.visibility = progress
 
                 if (!loaded) {
-                    model.watchSources = if (media.isAdult) HAnimeSources else AnimeSources
+                    lifecycleScope.launch(Dispatchers.IO) {
+                        model.watchSources = if (media.isAdult) HAnimeSources else AnimeSources
 
-                    if (PrefManager.getVal(PrefName.SearchSources)
-                        && !model.watchSources?.list.isNullOrEmpty()) {
-                        model.watchSources = object: WatchSources() {
-                            override val list = (model.watchSources as WatchSources).list.sortedByDescending {
-                                runBlocking(Dispatchers.IO) { it.get.value?.autoSearch(media) != null }
+                        val isOffline = !isOnline(binding.root.context)
+                                || PrefManager.getVal(PrefName.OfflineMode)
+
+                        withContext(Dispatchers.Main) {
+                            headerAdapter = AnimeWatchAdapter(
+                                it, this@AnimeWatchFragment, object : WatchSources() {
+                                    override val list = listOf(
+                                        (model.watchSources as WatchSources).list.last()
+                                    )
+                                }
+                            )
+                            episodeAdapter = EpisodeAdapter(
+                                style ?: PrefManager.getVal(PrefName.AnimeDefaultView),
+                                media,
+                                this@AnimeWatchFragment
+                            )
+
+                            binding.animeSourceRecycler.adapter = ConcatAdapter(headerAdapter, episodeAdapter)
+
+                            if (isOffline) {
+                                withContext(Dispatchers.IO) {
+                                    media.selected!!.sourceIndex =
+                                        model.watchSources!!.list.lastIndex
+                                    model.loadEpisodes(media, media.selected!!.sourceIndex)
+                                }
                             }
                         }
-                    }
+                        if (isOffline) {
+                            arguments?.getString("extension")?.let { name ->
+                                onSourceChange(model.watchSources!!.names.indexOf(name))
+                            }
 
-                    val offlineMode =
-                        model.watchSources!!.isDownloadedSource(media.selected!!.sourceIndex)
-
-                    headerAdapter = AnimeWatchAdapter(
-                        it, this@AnimeWatchFragment, model.watchSources!!
-                    )
-                    episodeAdapter = EpisodeAdapter(
-                        style ?: PrefManager.getVal(PrefName.AnimeDefaultView),
-                        media,
-                        this@AnimeWatchFragment,
-                        offlineMode = offlineMode
-                    )
-
-                    binding.animeSourceRecycler.adapter =
-                        ConcatAdapter(headerAdapter, episodeAdapter)
-
-                    lifecycleScope.launch(Dispatchers.IO) {
-                        val offline =
-                            !isOnline(binding.root.context) || PrefManager.getVal(PrefName.OfflineMode)
-                        if (offline) {
-                            media.selected!!.sourceIndex = model.watchSources!!.list.lastIndex
-                        } else {
-                            awaitAll(
-                                async { model.loadKitsuEpisodes(media) },
-                                async { model.loadFillerEpisodes(media) }
-                            )
+                            loaded = true
+                            return@launch
                         }
-                        model.loadEpisodes(media, media.selected!!.sourceIndex)
-                    }
 
-                    arguments?.getString("extension")?.let { name ->
-                        onSourceChange(model.watchSources!!.names.indexOf(name))
+                        if (PrefManager.getVal(PrefName.SearchSources)
+                            && !model.watchSources?.list.isNullOrEmpty()
+                        ) {
+                            model.watchSources = object : WatchSources() {
+                                override val list =
+                                    (model.watchSources as WatchSources).list.sortedByDescending {
+                                        runBlocking(Dispatchers.IO) { it.get.value?.autoSearch(media) != null }
+                                    }
+                            }
+                        }
+
+                        withContext(Dispatchers.Main) {
+                            headerAdapter = AnimeWatchAdapter(
+                                it, this@AnimeWatchFragment, model.watchSources!!
+                            )
+                            episodeAdapter = EpisodeAdapter(
+                                style ?: PrefManager.getVal(PrefName.AnimeDefaultView),
+                                media,
+                                this@AnimeWatchFragment
+                            )
+
+                            binding.animeSourceRecycler.adapter =
+                                ConcatAdapter(headerAdapter, episodeAdapter)
+
+                            lifecycleScope.launch(Dispatchers.IO) {
+                                awaitAll(
+                                    async { model.loadKitsuEpisodes(media) },
+                                    async { model.loadFillerEpisodes(media) }
+                                )
+                                model.loadEpisodes(media, media.selected!!.sourceIndex)
+                            }
+
+                            arguments?.getString("extension")?.let { name ->
+                                onSourceChange(model.watchSources!!.names.indexOf(name))
+                            }
+                            loaded = true
+                        }
                     }
-                    loaded = true
                 } else {
                     reload()
                 }
@@ -636,8 +668,6 @@ class AnimeWatchFragment : Fragment() {
 
         model.saveSelected(media.id, selected)
         headerAdapter.handleEpisodes()
-        val isDownloaded = model.watchSources!!.isDownloadedSource(media.selected!!.sourceIndex)
-        episodeAdapter.offlineMode = isDownloaded
         episodeAdapter.notifyItemRangeRemoved(0, episodeAdapter.arr.size)
         var arr: ArrayList<Episode> = arrayListOf()
         if (media.anime!!.episodes != null) {

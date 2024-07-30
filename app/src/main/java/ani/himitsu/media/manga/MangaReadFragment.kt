@@ -174,55 +174,91 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                         recyclerReversed = PrefManager.getVal(PrefName.DescendingItems)
                     }
 
-                    subscribed =
-                        SubscriptionHelper.getSubscriptions().containsKey(media.id)
+                    subscribed = SubscriptionHelper.getSubscriptions().containsKey(media.id)
 
                     style = media.selected!!.recyclerStyle
                     reverse = media.selected!!.recyclerReversed
 
                     if (!loaded) {
-                        model.mangaReadSources = if (media.isAdult) HMangaSources else MangaSources
+                        lifecycleScope.launch(Dispatchers.IO) {
+                            model.mangaReadSources = if (media.isAdult) HMangaSources else MangaSources
 
-                        if (PrefManager.getVal(PrefName.SearchSources)
-                            && !model.mangaReadSources?.list.isNullOrEmpty()) {
-                            model.mangaReadSources = object: MangaReadSources() {
-                                override val list = (model.mangaReadSources as MangaReadSources).list.sortedByDescending {
-                                    runBlocking(Dispatchers.IO) { it.get.value?.autoSearch(media) != null }
+                            val isOffline = !isOnline(binding.root.context)
+                                    || PrefManager.getVal(PrefName.OfflineMode)
+
+                            withContext(Dispatchers.Main) {
+                                headerAdapter = MangaReadAdapter(
+                                    it, this@MangaReadFragment, object: MangaReadSources() {
+                                        override val list = listOf(
+                                            (model.mangaReadSources as MangaReadSources).list.last()
+                                        )
+                                    }
+                                )
+                                headerAdapter.scanlatorSelectionListener = this@MangaReadFragment
+                                chapterAdapter = MangaChapterAdapter(
+                                    style ?: PrefManager.getVal(PrefName.MangaDefaultView),
+                                    media,
+                                    this@MangaReadFragment
+                                )
+
+                                for (download in downloadManager.mangaDownloadedTypes) {
+                                    if (media.compareName(download.titleName)) {
+                                        chapterAdapter.stopDownload(download.chapterName)
+                                    }
+                                }
+
+                                binding.animeSourceRecycler.adapter = ConcatAdapter(headerAdapter, chapterAdapter)
+
+                                if (isOffline) {
+                                    withContext(Dispatchers.IO) {
+                                        media.selected!!.sourceIndex = model.mangaReadSources!!.list.lastIndex
+                                        model.loadMangaChapters(media, media.selected!!.sourceIndex)
+                                    }
                                 }
                             }
-                        }
 
-                        headerAdapter = MangaReadAdapter(
-                            it, this@MangaReadFragment, model.mangaReadSources!!
-                        )
-                        headerAdapter.scanlatorSelectionListener = this@MangaReadFragment
-                        chapterAdapter = MangaChapterAdapter(
-                            style ?: PrefManager.getVal(PrefName.MangaDefaultView),
-                            media,
-                            this@MangaReadFragment
-                        )
+                            if (isOffline) {
+                                arguments?.getString("extension")?.let { name ->
+                                    onSourceChange(model.mangaReadSources!!.names.indexOf(name))
+                                }
 
-                        for (download in downloadManager.mangaDownloadedTypes) {
-                            if (media.compareName(download.titleName)) {
-                                chapterAdapter.stopDownload(download.chapterName)
+                                loaded = true
+                                return@launch
+                            }
+
+                            if (PrefManager.getVal(PrefName.SearchSources)
+                                && !model.mangaReadSources?.list.isNullOrEmpty()) {
+                                model.mangaReadSources = object: MangaReadSources() {
+                                    override val list = (model.mangaReadSources as MangaReadSources).list.sortedByDescending {
+                                        runBlocking(Dispatchers.IO) { it.get.value?.autoSearch(media) != null }
+                                    }
+                                }
+                            }
+
+                            withContext(Dispatchers.Main) {
+                                headerAdapter = MangaReadAdapter(
+                                    it, this@MangaReadFragment, model.mangaReadSources!!
+                                )
+                                headerAdapter.scanlatorSelectionListener = this@MangaReadFragment
+                                chapterAdapter = MangaChapterAdapter(
+                                    style ?: PrefManager.getVal(PrefName.MangaDefaultView),
+                                    media,
+                                    this@MangaReadFragment
+                                )
+
+                                binding.animeSourceRecycler.adapter =
+                                    ConcatAdapter(headerAdapter, chapterAdapter)
+
+                                lifecycleScope.launch(Dispatchers.IO) {
+                                    model.loadMangaChapters(media, media.selected!!.sourceIndex)
+                                }
+
+                                arguments?.getString("extension")?.let { name ->
+                                    onSourceChange(model.mangaReadSources!!.names.indexOf(name))
+                                }
+                                loaded = true
                             }
                         }
-
-                        binding.animeSourceRecycler.adapter =
-                            ConcatAdapter(headerAdapter, chapterAdapter)
-
-                        lifecycleScope.launch(Dispatchers.IO) {
-                            val offline =
-                                !isOnline(binding.root.context) || PrefManager.getVal(PrefName.OfflineMode)
-                            if (offline) media.selected!!.sourceIndex =
-                                model.mangaReadSources!!.list.lastIndex
-                            model.loadMangaChapters(media, media.selected!!.sourceIndex)
-                        }
-
-                        arguments?.getString("extension")?.let { name ->
-                            onSourceChange(model.mangaReadSources!!.names.indexOf(name))
-                        }
-                        loaded = true
                     } else {
                         reload()
                     }

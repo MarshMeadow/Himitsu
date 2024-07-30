@@ -20,9 +20,9 @@ import ani.himitsu.databinding.ItemEpisodeCompactBinding
 import ani.himitsu.databinding.ItemEpisodeGridBinding
 import ani.himitsu.databinding.ItemEpisodeListBinding
 import ani.himitsu.download.DownloadsManager.Companion.getDirSize
-import ani.himitsu.media.cereal.Media
 import ani.himitsu.media.MediaNameAdapter
 import ani.himitsu.media.MediaType
+import ani.himitsu.media.cereal.Media
 import ani.himitsu.setAnimation
 import ani.himitsu.settings.saving.PrefManager
 import com.bumptech.glide.Glide
@@ -54,8 +54,7 @@ class EpisodeAdapter(
     private var type: Int,
     private val media: Media,
     private val fragment: AnimeWatchFragment,
-    var arr: List<Episode> = arrayListOf(),
-    var offlineMode: Boolean
+    var arr: List<Episode> = arrayListOf()
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     val context = fragment.requireContext()
 

@@ -94,7 +94,7 @@ abstract class MangaReadSources : BaseSources() {
                 }
             }
         }
-        //must be downloaded
+        // must be downloaded
         if (show.sManga == null) {
             Logger.log("sManga is null")
         }
