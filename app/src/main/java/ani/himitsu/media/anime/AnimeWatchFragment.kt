@@ -224,7 +224,8 @@ class AnimeWatchFragment : Fragment() {
                             return@launch
                         }
 
-                        if (PrefManager.getVal(PrefName.SearchSources)
+                        if (arguments?.getString("extension") == null
+                            && PrefManager.getVal(PrefName.SearchSources)
                             && !model.watchSources?.list.isNullOrEmpty()
                         ) {
                             model.watchSources = object : WatchSources() {

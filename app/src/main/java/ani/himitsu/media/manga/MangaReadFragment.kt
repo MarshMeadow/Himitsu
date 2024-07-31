@@ -226,7 +226,8 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                                 return@launch
                             }
 
-                            if (PrefManager.getVal(PrefName.SearchSources)
+                            if (arguments?.getString("extension") == null
+                                && PrefManager.getVal(PrefName.SearchSources)
                                 && !model.mangaReadSources?.list.isNullOrEmpty()) {
                                 model.mangaReadSources = object: MangaReadSources() {
                                     override val list = (model.mangaReadSources as MangaReadSources).list.sortedByDescending {
