@@ -191,10 +191,16 @@ class AnimeWatchFragment : Fragment() {
                         val isOffline = !isOnline(binding.root.context)
                                 || PrefManager.getVal(PrefName.OfflineMode)
 
+                        val targetSources = arguments?.getString("extension")?.let { name ->
+                            model.watchSources?.let { sources ->
+                                sources.list.filter { source -> source.name == name }
+                            }
+                        }
+
                         withContext(Dispatchers.Main) {
                             headerAdapter = AnimeWatchAdapter(
                                 it, this@AnimeWatchFragment, object : WatchSources() {
-                                    override val list = listOf(
+                                    override val list = targetSources ?: listOf(
                                         (model.watchSources as WatchSources).list.last()
                                     )
                                 }
@@ -209,23 +215,26 @@ class AnimeWatchFragment : Fragment() {
 
                             if (isOffline) {
                                 withContext(Dispatchers.IO) {
-                                    media.selected!!.sourceIndex =
-                                        model.watchSources!!.list.lastIndex
+                                    media.selected!!.sourceIndex = model.watchSources!!.list.lastIndex
                                     model.loadEpisodes(media, media.selected!!.sourceIndex)
                                 }
                             }
                         }
-                        if (isOffline) {
-                            arguments?.getString("extension")?.let { name ->
-                                onSourceChange(model.watchSources!!.names.indexOf(name))
+                        if (!targetSources.isNullOrEmpty() || isOffline) {
+                            targetSources?.let {
+                                withContext(Dispatchers.IO) {
+                                    awaitAll(
+                                        async { model.loadKitsuEpisodes(media) },
+                                        async { model.loadFillerEpisodes(media) }
+                                    )
+                                    model.loadEpisodes(media, media.selected!!.sourceIndex)
+                                }
                             }
-
                             loaded = true
                             return@launch
                         }
 
-                        if (arguments?.getString("extension") == null
-                            && PrefManager.getVal(PrefName.SearchSources)
+                        if (PrefManager.getVal(PrefName.SearchSources)
                             && !model.watchSources?.list.isNullOrEmpty()
                         ) {
                             model.watchSources = object : WatchSources() {
@@ -246,7 +255,7 @@ class AnimeWatchFragment : Fragment() {
                             binding.animeSourceRecycler.adapter =
                                 ConcatAdapter(headerAdapter, episodeAdapter)
 
-                            lifecycleScope.launch(Dispatchers.IO) {
+                            withContext(Dispatchers.IO) {
                                 awaitAll(
                                     async { model.loadKitsuEpisodes(media) },
                                     async { model.loadFillerEpisodes(media) }
@@ -254,9 +263,6 @@ class AnimeWatchFragment : Fragment() {
                                 model.loadEpisodes(media, media.selected!!.sourceIndex)
                             }
 
-                            arguments?.getString("extension")?.let { name ->
-                                onSourceChange(model.watchSources!!.names.indexOf(name))
-                            }
                             loaded = true
                         }
                     }

@@ -186,10 +186,16 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                             val isOffline = !isOnline(binding.root.context)
                                     || PrefManager.getVal(PrefName.OfflineMode)
 
+                            val targetSources = arguments?.getString("extension")?.let { name ->
+                                model.mangaReadSources?.let { sources ->
+                                    sources.list.filter { source -> source.name == name }
+                                }
+                            }
+
                             withContext(Dispatchers.Main) {
                                 headerAdapter = MangaReadAdapter(
                                     it, this@MangaReadFragment, object: MangaReadSources() {
-                                        override val list = listOf(
+                                        override val list = targetSources ?: listOf(
                                             (model.mangaReadSources as MangaReadSources).list.last()
                                         )
                                     }
@@ -217,17 +223,17 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                                 }
                             }
 
-                            if (isOffline) {
-                                arguments?.getString("extension")?.let { name ->
-                                    onSourceChange(model.mangaReadSources!!.names.indexOf(name))
+                            if (!targetSources.isNullOrEmpty() || isOffline) {
+                                targetSources?.let {
+                                    withContext(Dispatchers.IO) {
+                                        model.loadMangaChapters(media, media.selected!!.sourceIndex)
+                                    }
                                 }
-
                                 loaded = true
                                 return@launch
                             }
 
-                            if (arguments?.getString("extension") == null
-                                && PrefManager.getVal(PrefName.SearchSources)
+                            if (PrefManager.getVal(PrefName.SearchSources)
                                 && !model.mangaReadSources?.list.isNullOrEmpty()) {
                                 model.mangaReadSources = object: MangaReadSources() {
                                     override val list = (model.mangaReadSources as MangaReadSources).list.sortedByDescending {
@@ -246,13 +252,10 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                                 binding.animeSourceRecycler.adapter =
                                     ConcatAdapter(headerAdapter, chapterAdapter)
 
-                                lifecycleScope.launch(Dispatchers.IO) {
+                                withContext(Dispatchers.IO) {
                                     model.loadMangaChapters(media, media.selected!!.sourceIndex)
                                 }
 
-                                arguments?.getString("extension")?.let { name ->
-                                    onSourceChange(model.mangaReadSources!!.names.indexOf(name))
-                                }
                                 loaded = true
                             }
                         }
