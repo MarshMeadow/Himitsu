@@ -241,11 +241,6 @@ class AnimeWatchFragment : Fragment() {
                             headerAdapter = AnimeWatchAdapter(
                                 it, this@AnimeWatchFragment, model.watchSources!!
                             )
-                            episodeAdapter = EpisodeAdapter(
-                                style ?: PrefManager.getVal(PrefName.AnimeDefaultView),
-                                media,
-                                this@AnimeWatchFragment
-                            )
 
                             binding.animeSourceRecycler.adapter =
                                 ConcatAdapter(headerAdapter, episodeAdapter)
