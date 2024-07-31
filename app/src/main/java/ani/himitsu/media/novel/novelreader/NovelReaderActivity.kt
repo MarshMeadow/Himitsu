@@ -65,7 +65,6 @@ import java.util.TimerTask
 import kotlin.math.min
 import kotlin.properties.Delegates
 
-
 class NovelReaderActivity : AppCompatActivity(), EbookReaderEventListener {
     private lateinit var binding: ActivityMangaReaderBinding
     private val scope = lifecycleScope
