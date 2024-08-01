@@ -161,7 +161,7 @@ class SettingsAboutFragment : Fragment() {
                 }
             }
 
-            settingsBandwidth.isVisible = Bandwidth.isLimited
+            settingsBandwidth.text = getString(R.string.bandwidth_down, Bandwidth.downstream())
         }
     }
 }

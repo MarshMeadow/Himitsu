@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="no">
-    <string name="slogan">A secret so good that even the name is banned.</string>
     <string name="login">Logg inn</string>
     <string name="logout">Logg</string>
     <string name="anilist_login">AniList Login for Himitsu</string>

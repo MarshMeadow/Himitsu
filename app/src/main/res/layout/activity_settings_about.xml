@@ -177,10 +177,8 @@
                 android:alpha="0.58"
                 android:ellipsize="end"
                 android:maxLines="3"
-                android:text="@string/low_bandwidth"
+                android:text="@string/bandwidth_down"
                 android:textAlignment="center"
-                android:visibility="gone"
-                tools:visibility="visible"
                 tools:ignore="TextContrastCheck" />
 
         </LinearLayout>

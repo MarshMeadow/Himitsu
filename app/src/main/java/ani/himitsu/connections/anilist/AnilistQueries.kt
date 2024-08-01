@@ -2098,8 +2098,8 @@ Page(page:$page,perPage:$ITEMS_PER_PAGE_L) {
     }
 
     companion object {
-        val ITEMS_PER_PAGE_S = if (Bandwidth.isLimited) 5 else 10
-        val ITEMS_PER_PAGE_M = if (Bandwidth.isLimited) 10 else 25
-        val ITEMS_PER_PAGE_L = if (Bandwidth.isLimited) 25 else 50
+        const val ITEMS_PER_PAGE_S = 10
+        val ITEMS_PER_PAGE_M = if (Bandwidth.isLimited) 15 else 25
+        val ITEMS_PER_PAGE_L = if (Bandwidth.isLimited) 30 else 50
     }
 }

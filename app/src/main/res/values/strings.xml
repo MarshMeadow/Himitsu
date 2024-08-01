@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en-rUS">
 
-    <string name="slogan">A secret so good that even the name is banned.</string>
+    <string name="slogan">We who shall not be named.</string>
 
     <string name="login">Sign In</string>
     <string name="logout">Logout</string>
@@ -1202,5 +1202,5 @@
     <string name="up_to_down">Up to Down</string>
     <string name="anilist_notification">New Anilist Notification</string>
 
-    <string name="low_bandwidth">Low Bandwidth Mode</string>
+    <string name="bandwidth_down">%1$d Mbps</string>
 </resources>
