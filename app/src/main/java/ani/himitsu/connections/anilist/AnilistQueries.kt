@@ -35,6 +35,7 @@ import ani.himitsu.snackString
 import ani.himitsu.util.Logger
 import bit.himitsu.collections.Collections.mix
 import bit.himitsu.collections.Collections.toArrayList
+import bit.himitsu.net.Bandwidth
 import bit.himitsu.nio.Strings.getString
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -2097,8 +2098,8 @@ Page(page:$page,perPage:$ITEMS_PER_PAGE_L) {
     }
 
     companion object {
-        const val ITEMS_PER_PAGE_S = 10
-        const val ITEMS_PER_PAGE_M = 25
-        const val ITEMS_PER_PAGE_L = 50
+        val ITEMS_PER_PAGE_S = if (Bandwidth.isLimited) 5 else 10
+        val ITEMS_PER_PAGE_M = if (Bandwidth.isLimited) 10 else 25
+        val ITEMS_PER_PAGE_L = if (Bandwidth.isLimited) 25 else 50
     }
 }

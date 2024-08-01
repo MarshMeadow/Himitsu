@@ -403,7 +403,6 @@
     <string name="total_repeats">TOTAL REPEATS</string>
     <string name="custom_lists">Custom Lists</string>
     <string name="donate_desc">Want to support Himitsu?\nConsider Donating</string>
-    <string name="donate_goal">No donation goal atm</string>
     <string name="filter">Filter</string>
     <string name="year">Year</string>
     <string name="apply">Apply</string>
@@ -1202,4 +1201,6 @@
     <string name="down_to_up">Down to Up</string>
     <string name="up_to_down">Up to Down</string>
     <string name="anilist_notification">New Anilist Notification</string>
+
+    <string name="low_bandwidth">Low Bandwidth Mode</string>
 </resources>

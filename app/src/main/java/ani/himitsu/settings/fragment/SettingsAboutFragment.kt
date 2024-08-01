@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -26,6 +27,7 @@ import ani.himitsu.settings.extension.DevelopersDialogFragment
 import ani.himitsu.settings.extension.ForksDialogFragment
 import ani.himitsu.toast
 import ani.himitsu.view.dialog.CustomBottomDialog
+import bit.himitsu.net.Bandwidth
 import io.noties.markwon.Markwon
 import io.noties.markwon.SoftBreakAddsNewLinePlugin
 import kotlinx.coroutines.launch
@@ -158,6 +160,8 @@ class SettingsAboutFragment : Fragment() {
                     return@setOnLongClickListener true
                 }
             }
+
+            settingsBandwidth.isVisible = Bandwidth.isLimited
         }
     }
 }

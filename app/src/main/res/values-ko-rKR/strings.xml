@@ -361,7 +361,6 @@
     <string name="total_repeats">총 반복</string>
     <string name="custom_lists">사용자 지정 목록</string>
     <string name="donate_desc">Dantotsu의 유지 보수를 지원하고 싶으신가요?\n기부 고려해보세요</string>
-    <string name="donate_goal">현재 기부 목표 없음</string>
     <string name="filter">필터</string>
     <string name="year">년</string>
     <string name="apply">적용</string>

@@ -361,7 +361,6 @@
     <string name="total_repeats">ВСЕГО ПОВТОРОВ</string>
     <string name="custom_lists">Пользовательские списки</string>
     <string name="donate_desc">Хотите поддержать разработчика Dantotsu?\nРассмотрите вопрос о пожертвовании</string>
-    <string name="donate_goal">На данный момент нет цели сбора пожертвований</string>
     <string name="filter">Фильтр</string>
     <string name="year">Год</string>
     <string name="apply">Применить</string>
