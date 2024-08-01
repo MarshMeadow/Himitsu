@@ -305,6 +305,9 @@ class NotificationActivity : AppCompatActivity() {
                     newNotifications.sortByDescending { it.createdAt }
                 }
 
+                notificationList.forEach {
+                    if (newNotifications.contains(it)) newNotifications.remove(it)
+                }
                 notificationList += newNotifications
                 enableTabByContent(R.id.notificationsMedia, media)
                 enableTabByContent(R.id.notificationsPosts, posts)
