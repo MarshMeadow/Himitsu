@@ -229,19 +229,15 @@ class SettingsSystemFragment : Fragment() {
                         pref = PrefName.CommentsOptIn
                     ),
                     Settings(
-                        type = ViewType.SWITCH,
+                        type = ViewType.BUTTON,
                         name = getString(R.string.disable_mitm),
                         desc = getString(R.string.disable_mitm_desc),
                         icon = R.drawable.ic_round_coronavirus_24,
-                        pref = PrefName.DisableMitM,
-                        switch = { isChecked, _ ->
-                            if (isChecked) {
-                                PrefManager.removeVal(PrefName.ImageUrl)
+                        onClick = {
                                     CoroutineScope(Dispatchers.IO).launch {
                                         Glide.get(Himitsu.instance).clearDiskCache()
                                     }
                                     Glide.get(Himitsu.instance).clearMemory()
-                            }
                             Refresh.all()
                         }
                     ),

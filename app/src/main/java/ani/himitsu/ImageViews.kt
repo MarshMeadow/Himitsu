@@ -20,8 +20,7 @@ import jp.wasabeef.glide.transformations.BlurTransformation
 import java.io.File
 
 fun geUrlOrTrolled(url: String?): String {
-    return if (PrefManager.getVal(PrefName.DisableMitM)) url ?: "" else
-        PrefManager.getVal<String>(PrefName.ImageUrl).ifEmpty { url ?: "" }
+    return url ?: ""
 }
 
 fun ImageView.toRoundImage(url: String?, size: Int) {
