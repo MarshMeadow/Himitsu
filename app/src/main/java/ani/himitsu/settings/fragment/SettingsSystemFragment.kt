@@ -222,13 +222,6 @@ class SettingsSystemFragment : Fragment() {
                         }
                     ),
                     Settings(
-                        type = ViewType.SWITCH,
-                        name = getString(R.string.comments_api),
-                        desc = getString(R.string.comments_api_desc),
-                        icon = R.drawable.ic_round_comment_24,
-                        pref = PrefName.CommentsOptIn
-                    ),
-                    Settings(
                         type = ViewType.BUTTON,
                         name = getString(R.string.disable_mitm),
                         desc = getString(R.string.disable_mitm_desc),

@@ -207,13 +207,19 @@ class SettingsCommonFragment : Fragment() {
                     ),
                     Settings(
                         type = ViewType.SWITCH,
+                        name = getString(R.string.comments_api),
+                        desc = getString(R.string.comments_api_desc),
+                        icon = R.drawable.ic_round_comment_24,
+                        pref = PrefName.CommentsOptIn
+                    ),
+                    Settings(
+                        type = ViewType.SWITCH,
                         name = getString(R.string.adult_only_content),
                         desc = getString(R.string.adult_only_content_desc),
                         icon = R.drawable.ic_round_nsfw_24,
                         isChecked = PrefManager.getVal(PrefName.AdultOnly),
                         switch = { isChecked, _ ->
                             PrefManager.setVal(PrefName.AdultOnly, isChecked)
-                            // settings.restartApp()
                             Refresh.all()
                         }
                     )
