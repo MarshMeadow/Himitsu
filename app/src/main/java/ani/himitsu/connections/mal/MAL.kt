@@ -30,7 +30,7 @@ object MAL {
             .replace("\n", "")
 
         PrefManager.setVal(PrefName.MALCodeChallenge, codeChallenge)
-        ChromeIntegration.openCustomTab(
+        ChromeIntegration.openStreamTab(
             context,
             "https://myanimelist.net/v1/oauth2/authorize?response_type=code&client_id=$clientId&code_challenge=$codeChallenge"
         )

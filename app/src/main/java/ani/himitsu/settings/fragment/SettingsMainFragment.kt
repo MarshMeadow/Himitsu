@@ -66,7 +66,7 @@ class SettingsMainFragment : Fragment() {
                         desc = getString(R.string.ani_setting_desc),
                         icon = R.drawable.ic_anilist,
                         onClick = {
-                            ChromeIntegration.openCustomTab(
+                            ChromeIntegration.openStreamTab(
                                 requireContext(), "https://anilist.co/settings"
                             )
                         },

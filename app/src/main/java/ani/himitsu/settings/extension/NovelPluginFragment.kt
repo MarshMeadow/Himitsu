@@ -26,6 +26,7 @@ import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.toPx
 import bit.himitsu.ShellActivity
+import bit.himitsu.webkit.ChromeIntegration
 import com.bumptech.glide.Glide
 import kotlinx.coroutines.launch
 import uy.kohesive.injekt.Injekt
@@ -41,10 +42,9 @@ class NovelPluginsFragment : Fragment(), SearchQueryHandler {
         { plugin ->
             if (isAdded) {  // Check if the fragment is currently added to its activity
                 if (plugin.pkgName.startsWith("plugin:")) {
-                    ContextCompat.startActivity(pluginsRecyclerView.context, Intent(
-                        pluginsRecyclerView.context,
-                        ShellActivity::class.java).putExtra("pluginUrl", plugin.sources[0].baseUrl
-                    ), null)
+                    ChromeIntegration.openPluginTab(
+                        pluginsRecyclerView.context, plugin.sources[0].baseUrl
+                    )
                 }
             }
         },

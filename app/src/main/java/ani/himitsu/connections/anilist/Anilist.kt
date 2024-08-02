@@ -124,7 +124,7 @@ object Anilist {
 
     fun loginIntent(context: Context) {
         val clientID = 19006 // 14959
-        ChromeIntegration.openCustomTab(
+        ChromeIntegration.openStreamTab(
             context,
             "https://anilist.co/api/v2/oauth/authorize?client_id=$clientID&response_type=token"
         )
