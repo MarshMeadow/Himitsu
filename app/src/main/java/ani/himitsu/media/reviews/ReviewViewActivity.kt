@@ -51,6 +51,7 @@ class ReviewViewActivity : AppCompatActivity() {
         binding.reviewMediaCover.blurCover(review.media?.coverImage)
         binding.profileUserBanner.loadImage(review.user?.bannerImage)
         binding.profileUserAvatar.loadImage(review.user?.avatar?.medium)
+        binding.notificationText.text = review.summary
         binding.reviewBodyContent.settings.loadWithOverviewMode = true
         binding.reviewBodyContent.settings.useWideViewPort = true
         binding.reviewBodyContent.setInitialScale(1)

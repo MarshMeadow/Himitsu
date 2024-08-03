@@ -137,6 +137,7 @@ class ReviewAdapter(val parentActivity: ReviewPopupActivity, var reviews: List<R
                 dialogView.reviewMediaCover.blurImage(review.media?.cover)
                 dialogView.profileUserBanner.loadImage(review.user?.banner)
                 dialogView.profileUserAvatar.loadImage(review.user?.pfp)
+                dialogView.notificationText.text = review.summary
                 dialogView.reviewBodyContent.settings.loadWithOverviewMode = true
                 dialogView.reviewBodyContent.settings.useWideViewPort = true
                 dialogView.reviewBodyContent.setInitialScale(1)
