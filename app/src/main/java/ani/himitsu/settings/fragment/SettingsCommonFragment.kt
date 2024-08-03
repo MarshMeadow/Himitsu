@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import ani.dantotsu.connections.comments.CommentsAPI
 import ani.himitsu.R
 import ani.himitsu.Refresh
 import ani.himitsu.databinding.ActivitySettingsCommonBinding
@@ -26,6 +27,7 @@ import ani.himitsu.settings.ViewType
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.toast
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import uy.kohesive.injekt.Injekt
@@ -63,6 +65,7 @@ class SettingsCommonFragment : Fragment() {
     @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val settings = requireActivity() as SettingsActivity
+        val component = ComponentName(settings.packageName, settings::class.qualifiedName!!)
 
         val managers = resources.getStringArray(R.array.downloadManagers)
         val downloadManagerDialog =
@@ -210,7 +213,17 @@ class SettingsCommonFragment : Fragment() {
                         name = getString(R.string.comments_api),
                         desc = getString(R.string.comments_api_desc),
                         icon = R.drawable.ic_round_comment_24,
-                        pref = PrefName.CommentsOptIn
+                        isChecked = PrefManager.getVal(PrefName.CommentsOptIn),
+                        switch = { isChecked, _ ->
+                            PrefManager.setVal(PrefName.CommentsOptIn, isChecked)
+                            CoroutineScope(Dispatchers.IO).launch {
+                                if (isChecked) {
+                                    CommentsAPI.fetchAuthToken(settings)
+                                } else {
+                                    CommentsAPI.logout()
+                                }
+                            }
+                        }
                     ),
                     Settings(
                         type = ViewType.SWITCH,

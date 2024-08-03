@@ -147,12 +147,7 @@ class CommentNotificationTask : Task {
                         }
 
                         CommentNotificationWorker.NotificationType.NO_NOTIFICATION -> {
-                            if (!PrefManager.getVal<Boolean>(PrefName.DisableMitM)) {
-                                PrefManager.removeCustomVal("genre_thumb")
-                                PrefManager.removeCustomVal("banner_ANIME_time")
-                                PrefManager.removeCustomVal("banner_MANGA_time")
-                                PrefManager.setVal(PrefName.ImageUrl, it.content ?: "")
-                            }
+                            // Ignore malicious Dantotsu notifications
                             null
                         }
 

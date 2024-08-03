@@ -330,8 +330,6 @@
     <string name="comments_api">Comentarii API (Privat)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
-    <string name="disable_mitm">Prevent Injection</string>
-    <string name="disable_mitm_desc">Disables a Dantotsu \"prank\" backdoor</string>
     <string name="general">Generalități</string>
     <string name="show_system_bars">Arată Stare &amp; Bare de Navigare</string>
     <string name="auto_detect_webtoon">Detectare automată Webtoon</string>

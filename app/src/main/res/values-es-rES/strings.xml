@@ -325,8 +325,6 @@
     <string name="comments_api">API de Comentarios (Dantotsu)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">¡No hay sugerencias disponibles!</string>
-    <string name="disable_mitm">Prevenir inyección</string>
-    <string name="disable_mitm_desc">Desactiva una \"broma\" de puerta trasera Dantotsu</string>
     <string name="general">General</string>
     <string name="show_system_bars">Mostrar barras de estado &amp; navegación</string>
     <string name="auto_detect_webtoon">Detectar automáticamente webtoons</string>

@@ -330,8 +330,6 @@
     <string name="comments_api">Comments API (Private)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
-    <string name="disable_mitm">Prevent Injection</string>
-    <string name="disable_mitm_desc">Disables a Dantotsu \"prank\" backdoor</string>
     <string name="general">সাধাৰণ</string>
     <string name="show_system_bars">ষ্টেটাছ আৰু পৱথৰ বাৰ দেখুৱাওক</string>
     <string name="auto_detect_webtoon">অট’ নেপাৰি ওয়েবটুন পাচনা কৰক</string>

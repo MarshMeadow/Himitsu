@@ -330,8 +330,6 @@
     <string name="comments_api">Kommentit API (Private)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
-    <string name="disable_mitm">Prevent Injection</string>
-    <string name="disable_mitm_desc">Disables a Dantotsu \"prank\" backdoor</string>
     <string name="general">Yleiset</string>
     <string name="show_system_bars">Näytä Tila &amp; Navigointipalkit</string>
     <string name="auto_detect_webtoon">Tunnista Webtoon Automaattisesti</string>

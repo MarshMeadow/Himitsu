@@ -49,7 +49,6 @@ class AniBackupAgent : BackupAgentHelper() {
                     it != PrefName.DiscordStatus.name &&
                     it != PrefName.DownloadsKeys.name &&
                     it != PrefName.NovelLastExtCheck.name &&
-                    it != PrefName.ImageUrl.name &&
                     it != PrefName.AllowOpeningLinks.name &&
                     it != PrefName.HasUpdatedPrefs.name &&
                     it != PrefName.MakeDefault.name &&

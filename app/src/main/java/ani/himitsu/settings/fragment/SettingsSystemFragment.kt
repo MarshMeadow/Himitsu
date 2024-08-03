@@ -223,14 +223,14 @@ class SettingsSystemFragment : Fragment() {
                     ),
                     Settings(
                         type = ViewType.BUTTON,
-                        name = getString(R.string.disable_mitm),
-                        desc = getString(R.string.disable_mitm_desc),
+                        name = getString(R.string.clear_glide),
+                        desc = getString(R.string.clear_glide_desc),
                         icon = R.drawable.ic_round_coronavirus_24,
                         onClick = {
-                                    CoroutineScope(Dispatchers.IO).launch {
-                                        Glide.get(Himitsu.instance).clearDiskCache()
-                                    }
-                                    Glide.get(Himitsu.instance).clearMemory()
+                            CoroutineScope(Dispatchers.IO).launch {
+                                Glide.get(Himitsu.instance).clearDiskCache()
+                            }
+                            Glide.get(Himitsu.instance).clearMemory()
                             Refresh.all()
                         }
                     ),

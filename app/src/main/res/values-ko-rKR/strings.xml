@@ -330,8 +330,6 @@
     <string name="comments_api">댓글 API (비공개)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
-    <string name="disable_mitm">Prevent Injection</string>
-    <string name="disable_mitm_desc">Disables a Dantotsu \"prank\" backdoor</string>
     <string name="general">일반</string>
     <string name="show_system_bars">상태 및 탐색 바 표시</string>
     <string name="auto_detect_webtoon">웹툰 자동 감지</string>

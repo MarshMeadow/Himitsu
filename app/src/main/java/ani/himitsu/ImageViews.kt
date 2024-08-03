@@ -19,9 +19,7 @@ import com.bumptech.glide.request.transition.Transition
 import jp.wasabeef.glide.transformations.BlurTransformation
 import java.io.File
 
-fun geUrlOrTrolled(url: String?): String {
-    return url ?: ""
-}
+fun getNonNullUrl(url: String?): String { return url ?: "" }
 
 fun ImageView.toRoundImage(url: String?, size: Int) {
     Glide.with(this.context).asBitmap().load(url).override(size)
@@ -45,7 +43,7 @@ fun ImageView.loadLocalImage(file: File?, size: Int = 0) {
 }
 
 fun ImageView.loadImage(file: FileUrl?, width: Int = 0, height: Int = 0) {
-    file?.url = geUrlOrTrolled(file?.url)
+    file?.url = getNonNullUrl(file?.url)
     if (file?.url?.isNotEmpty() == true) {
         tryWith {
             if (file.url.startsWith("content://")) {
@@ -80,7 +78,7 @@ fun ImageView.loadCover(coverImage: MediaCoverImage?) {
 fun ImageView.blurImage(banner: String?) {
     if (banner != null) {
         if ((this.context as Activity).isDestroyed) return
-        val url = geUrlOrTrolled(banner)
+        val url = getNonNullUrl(banner)
         val radius = PrefManager.getVal<Float>(PrefName.BlurRadius).toInt()
         val sampling = PrefManager.getVal<Float>(PrefName.BlurSampling).toInt()
         if (PrefManager.getVal(PrefName.BlurBanners)) {

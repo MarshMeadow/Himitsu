@@ -330,8 +330,6 @@
     <string name="comments_api">API комментариев (приватный)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
-    <string name="disable_mitm">Prevent Injection</string>
-    <string name="disable_mitm_desc">Disables a Dantotsu \"prank\" backdoor</string>
     <string name="general">Общее</string>
     <string name="show_system_bars">Показать строку состояния и навигационные панели</string>
     <string name="auto_detect_webtoon">Автоопределение вебтунов</string>
