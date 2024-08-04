@@ -50,6 +50,5 @@ class InstallerSteps(
             .setContentText(context.getString(R.string.extension_has_been_installed))
             .setPriority(NotificationCompat.PRIORITY_LOW)
         notificationManager.notify(1, builder.build())
-        snackString(context.getString(R.string.extension_installed))
     }
 }

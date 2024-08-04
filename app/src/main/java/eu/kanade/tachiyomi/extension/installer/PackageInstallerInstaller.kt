@@ -53,12 +53,15 @@ class PackageInstallerInstaller(private val service: Service) : Installer(servic
                 }
 
                 PackageInstaller.STATUS_FAILURE_ABORTED -> {
+                    toast(context.getString(R.string.installation_cancelled))
                     continueQueue(InstallStep.Idle)
                 }
 
-                PackageInstaller.STATUS_SUCCESS -> continueQueue(InstallStep.Installed)
+                PackageInstaller.STATUS_SUCCESS -> {
+                    toast(context.getString(R.string.extension_installed))
+                    continueQueue(InstallStep.Installed)
+                }
                 PackageInstaller.STATUS_FAILURE_CONFLICT -> {
-                    Logger.log("Failed to install extension due to conflict")
                     toast(context.getString(R.string.failed_ext_install_conflict))
                     continueQueue(InstallStep.Error)
                 }
