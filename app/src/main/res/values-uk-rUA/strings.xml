@@ -428,8 +428,7 @@
     <string name="installing_extension">Встановлення розширення</string>
     <string name="installation_failed">Помилка встановлення: %1$s</string>
     <string name="installation_complete">Встановлення завершено</string>
-    <string name="extension_has_been_installed">Розширення успішно встановлено.</string>
-    <string name="extension_installed">Розширення встановлено</string>
+    <string name="extension_installed">Розширення успішно встановлено.</string>
     <string name="error_message">Помилка: %1$s</string>
     <string name="install_step">Крок: %1$s</string>
     <string name="review">Рецензія</string>

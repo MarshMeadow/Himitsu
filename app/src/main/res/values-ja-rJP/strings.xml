@@ -428,8 +428,7 @@
     <string name="installing_extension">エクステンションのインストール</string>
     <string name="installation_failed">インストール失敗: %1$s</string>
     <string name="installation_complete">インストール完了</string>
-    <string name="extension_has_been_installed">エクステンションが正常にインストールされました。</string>
-    <string name="extension_installed">エクステンションがインストールされました</string>
+    <string name="extension_installed">エクステンションが正常にインストールされました。</string>
     <string name="error_message">エラー: %1$s</string>
     <string name="install_step">歩数： %1$s</string>
     <string name="review">レビュー</string>

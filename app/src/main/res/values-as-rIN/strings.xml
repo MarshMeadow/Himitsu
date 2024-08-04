@@ -428,8 +428,7 @@
     <string name="installing_extension">সম্প্ৰসাৰণ স্থাপন কৰা হৈছে</string>
     <string name="installation_failed">স্থাপন ব্যৰ্থ: %1$s</string>
     <string name="installation_complete">স্থাপন সম্পূৰ্ণ </string>
-    <string name="extension_has_been_installed">সম্প্ৰসাৰণ সফলতাৰে ইনষ্টল কৰা হৈছে</string>
-    <string name="extension_installed">এক্সটেনশন ইনস্টল কৰা</string>
+    <string name="extension_installed">সম্প্ৰসাৰণ সফলতাৰে ইনষ্টল কৰা হৈছে</string>
     <string name="error_message">ভুল %1$s</string>
     <string name="install_step">পদক্ষেপ %1$s</string>
     <string name="review">সমীক্ষা</string>

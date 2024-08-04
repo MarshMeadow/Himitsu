@@ -428,8 +428,7 @@
     <string name="installing_extension">Installation des extensions</string>
     <string name="installation_failed">Échec de l\'installation: %1$s</string>
     <string name="installation_complete">Installation terminée</string>
-    <string name="extension_has_been_installed">L\'extension a été installée avec succès.</string>
-    <string name="extension_installed">Extension installée</string>
+    <string name="extension_installed">L\'extension a été installée avec succès.</string>
     <string name="error_message">Erreur: %1$s</string>
     <string name="install_step">Étape: %1$s</string>
     <string name="review">Avis</string>

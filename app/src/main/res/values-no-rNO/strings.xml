@@ -428,8 +428,7 @@
     <string name="installing_extension">Installerer utvidelse</string>
     <string name="installation_failed">Installasjonen mislyktes: %1$s</string>
     <string name="installation_complete">Installasjon fullført</string>
-    <string name="extension_has_been_installed">Utvidelsen ble vellykket installert.</string>
-    <string name="extension_installed">Utvidelse installert</string>
+    <string name="extension_installed">Utvidelsen ble vellykket installert.</string>
     <string name="error_message">Feil: %1$s</string>
     <string name="install_step">Steg: %1$s</string>
     <string name="review">Anmeldelse</string>

@@ -428,8 +428,7 @@
     <string name="installing_extension">安装扩展</string>
     <string name="installation_failed">安装失败: %1$s</string>
     <string name="installation_complete">安装完成</string>
-    <string name="extension_has_been_installed">扩展已成功安装。</string>
-    <string name="extension_installed">已安装扩展</string>
+    <string name="extension_installed">扩展已成功安装。</string>
     <string name="error_message">错误: %1$s</string>
     <string name="install_step">步骤: %1$s</string>
     <string name="review">审查</string>

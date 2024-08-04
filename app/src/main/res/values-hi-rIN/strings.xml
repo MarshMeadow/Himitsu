@@ -428,8 +428,7 @@
     <string name="installing_extension">एक्सटेंशन स्थापित</string>
     <string name="installation_failed">स्थापना विफल हुई: %1$s</string>
     <string name="installation_complete">स्थापना पूर्ण</string>
-    <string name="extension_has_been_installed">एक्सटेंशन सफलतापूर्वक स्थापित किया गया है|</string>
-    <string name="extension_installed">एक्सटेंशन स्थापित</string>
+    <string name="extension_installed">एक्सटेंशन सफलतापूर्वक स्थापित किया गया है|</string>
     <string name="error_message">त्रुटि: %1$s</string>
     <string name="install_step">चरण: %1$s</string>
     <string name="review">समीक्षा</string>

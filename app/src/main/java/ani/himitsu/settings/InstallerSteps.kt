@@ -47,7 +47,7 @@ class InstallerSteps(
         )
             .setSmallIcon(R.drawable.ic_download_24)
             .setContentTitle(context.getString(R.string.installation_complete))
-            .setContentText(context.getString(R.string.extension_has_been_installed))
+            .setContentText(context.getString(R.string.installation_finished))
             .setPriority(NotificationCompat.PRIORITY_LOW)
         notificationManager.notify(1, builder.build())
     }

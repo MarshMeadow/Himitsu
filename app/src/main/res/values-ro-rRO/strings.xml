@@ -428,8 +428,7 @@
     <string name="installing_extension">Instalare extensie</string>
     <string name="installation_failed">Instalare esuata: %1$s</string>
     <string name="installation_complete">Instalare completă</string>
-    <string name="extension_has_been_installed">Extensia a fost instalată cu succes.</string>
-    <string name="extension_installed">Extensie instalată</string>
+    <string name="extension_installed">Extensia a fost instalată cu succes.</string>
     <string name="error_message">Eroare: %1$s</string>
     <string name="install_step">Pas: %1$s</string>
     <string name="review">Revizuire</string>

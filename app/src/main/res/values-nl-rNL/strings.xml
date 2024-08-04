@@ -428,8 +428,7 @@
     <string name="installing_extension">Extensie installeren</string>
     <string name="installation_failed">Installatie mislukt: %1$s</string>
     <string name="installation_complete">Installatie voltooid</string>
-    <string name="extension_has_been_installed">De extensie is succesvol geïnstalleerd.</string>
-    <string name="extension_installed">Extensie geïnstalleerd</string>
+    <string name="extension_installed">De extensie is succesvol geïnstalleerd.</string>
     <string name="error_message">Fout: %1$s</string>
     <string name="install_step">Stap: %1$s</string>
     <string name="review">Beoordelen</string>

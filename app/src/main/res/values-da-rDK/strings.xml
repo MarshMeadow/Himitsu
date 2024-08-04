@@ -428,8 +428,7 @@
     <string name="installing_extension">Installerer udvidelse</string>
     <string name="installation_failed">Installation fejlede: %1$s</string>
     <string name="installation_complete">Installation fuldført</string>
-    <string name="extension_has_been_installed">Udvidelsen er blevet installeret.</string>
-    <string name="extension_installed">Udvidelse installeret</string>
+    <string name="extension_installed">Udvidelsen er blevet installeret.</string>
     <string name="error_message">Fejl: %1$s</string>
     <string name="install_step">Trin: %1$s</string>
     <string name="review">Revision</string>

@@ -428,8 +428,7 @@
     <string name="installing_extension">Instalace rozšíření</string>
     <string name="installation_failed">Instalace se nezdařila: %1$s</string>
     <string name="installation_complete">Instalace dokončena</string>
-    <string name="extension_has_been_installed">Rozšíření bylo úspěšně nainstalováno.</string>
-    <string name="extension_installed">Rozšíření nainstalováno</string>
+    <string name="extension_installed">Rozšíření bylo úspěšně nainstalováno.</string>
     <string name="error_message">Chyba: %1$s</string>
     <string name="install_step">Krok: %1$s</string>
     <string name="review">Přezkum</string>

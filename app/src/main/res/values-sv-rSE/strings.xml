@@ -428,8 +428,7 @@
     <string name="installing_extension">Installerar tillägg</string>
     <string name="installation_failed">Installationen misslyckades: %1$s</string>
     <string name="installation_complete">Installationen slutförd</string>
-    <string name="extension_has_been_installed">Tillägget har installerats.</string>
-    <string name="extension_installed">Tillägg installerat</string>
+    <string name="extension_installed">Tillägget har installerats.</string>
     <string name="error_message">Fel: %1$s</string>
     <string name="install_step">Steg: %1$s</string>
     <string name="review">Granska</string>

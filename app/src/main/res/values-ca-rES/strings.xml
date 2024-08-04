@@ -428,8 +428,7 @@
     <string name="installing_extension">Instal·lant extensió</string>
     <string name="installation_failed">La instal·lació ha fallat: %1$s</string>
     <string name="installation_complete">Instal·lació completada</string>
-    <string name="extension_has_been_installed">L\'extensió s\'ha instal·lat correctament.</string>
-    <string name="extension_installed">Extensió instal·lada</string>
+    <string name="extension_installed">L\'extensió s\'ha instal·lat correctament.</string>
     <string name="error_message">Error: %1$s</string>
     <string name="install_step">Pas: %1$s</string>
     <string name="review">Revisió</string>

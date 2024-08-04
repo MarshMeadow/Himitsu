@@ -428,8 +428,7 @@
     <string name="installing_extension">Asennetaan lisäosaa</string>
     <string name="installation_failed">Asennus epäonnistui: %1$s</string>
     <string name="installation_complete">Asennus valmis</string>
-    <string name="extension_has_been_installed">Lisäosa on asennettu onnistuneesti.</string>
-    <string name="extension_installed">Laajennus asennettu</string>
+    <string name="extension_installed">Lisäosa on asennettu onnistuneesti.</string>
     <string name="error_message">Virhe: %1$s</string>
     <string name="install_step">Vaihe: %1$s</string>
     <string name="review">Arvostelu</string>

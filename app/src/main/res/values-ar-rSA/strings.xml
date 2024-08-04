@@ -428,8 +428,7 @@
     <string name="installing_extension">تثبيت الإضافة</string>
     <string name="installation_failed">فشل تثبيت: %1$s</string>
     <string name="installation_complete">تم التثبيت</string>
-    <string name="extension_has_been_installed">تم تثبيت الإضافة بنجاح.</string>
-    <string name="extension_installed">تم تثبيت الإضافة</string>
+    <string name="extension_installed">تم تثبيت الإضافة بنجاح.</string>
     <string name="error_message">خطأ: %1$s</string>
     <string name="install_step">الخطوة: %1$s</string>
     <string name="review">مراجعة</string>

@@ -428,8 +428,7 @@
     <string name="installing_extension">Uzantı Yükleme</string>
     <string name="installation_failed">Yükleme başarısız oldu: %1$s</string>
     <string name="installation_complete">Yükleme tamamlandı</string>
-    <string name="extension_has_been_installed">Uzantı başarıyla yüklendi.</string>
-    <string name="extension_installed">Uzantı yüklendi</string>
+    <string name="extension_installed">Uzantı başarıyla yüklendi.</string>
     <string name="error_message">Hata: %1$s</string>
     <string name="install_step">Adım: %1$s</string>
     <string name="review">İncele</string>

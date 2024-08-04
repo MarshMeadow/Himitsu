@@ -428,8 +428,7 @@
     <string name="installing_extension">Instalacja rozszerzenia</string>
     <string name="installation_failed">Instalacja nie powiodła się: %1$s</string>
     <string name="installation_complete">Instalacja zakończona</string>
-    <string name="extension_has_been_installed">Rozszerzenie zostało pomyślnie zainstalowane.</string>
-    <string name="extension_installed">Rozszerzenie zainstalowane</string>
+    <string name="extension_installed">Rozszerzenie zostało pomyślnie zainstalowane.</string>
     <string name="error_message">Błąd: %1$s</string>
     <string name="install_step">Krok %1$s</string>
     <string name="review">Artykuł 3</string>

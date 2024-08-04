@@ -428,8 +428,7 @@
     <string name="installing_extension">Installation der Erweiterung</string>
     <string name="installation_failed">Installation fehlgeschlagen: %1$s</string>
     <string name="installation_complete">Einbau abgeschlossen</string>
-    <string name="extension_has_been_installed">Die Erweiterung wurde erfolgreich installiert.</string>
-    <string name="extension_installed">Erweiterung installiert</string>
+    <string name="extension_installed">Die Erweiterung wurde erfolgreich installiert.</string>
     <string name="error_message">Fehler: %1$s</string>
     <string name="install_step">Schritt: %1$s</string>
     <string name="review">Überprüfung</string>

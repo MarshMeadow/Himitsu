@@ -428,8 +428,7 @@
     <string name="installing_extension">Установка расширения</string>
     <string name="installation_failed">Установка не удалась: %1$s</string>
     <string name="installation_complete">Установка завершена</string>
-    <string name="extension_has_been_installed">Расширение успешно установлено.</string>
-    <string name="extension_installed">Расширение установлено</string>
+    <string name="extension_installed">Расширение успешно установлено.</string>
     <string name="error_message">Ошибка: %1$s</string>
     <string name="install_step">Шаг: %1$s</string>
     <string name="review">Обзор</string>
