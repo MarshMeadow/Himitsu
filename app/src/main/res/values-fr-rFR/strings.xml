@@ -430,7 +430,7 @@
     <string name="installation_complete">Installation terminée</string>
     <string name="extension_installed">L\'extension a été installée avec succès.</string>
     <string name="error_message">Erreur: %1$s</string>
-    <string name="install_step">Étape: %1$s</string>
+    <string name="installer_step">Étape: %1$s</string>
     <string name="review">Avis</string>
     <string name="select_source">Sélectionner une source</string>
     <string name="install_update">Installer la mise à jour %1$s?</string>

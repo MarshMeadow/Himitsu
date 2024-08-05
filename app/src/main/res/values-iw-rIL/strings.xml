@@ -430,7 +430,7 @@
     <string name="installation_complete">Installation complete</string>
     <string name="extension_installed">The extension has been successfully installed.</string>
     <string name="error_message">שגיאה: %1$s</string>
-    <string name="install_step">Step: %1$s</string>
+    <string name="installer_step">Step: %1$s</string>
     <string name="review">Review</string>
     <string name="select_source">Select a Source</string>
     <string name="install_update">Install update %1$s?</string>

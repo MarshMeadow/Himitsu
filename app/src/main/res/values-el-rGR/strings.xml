@@ -430,7 +430,7 @@
     <string name="installation_complete">Εγκατάσταση Ολοκληρώθηκε</string>
     <string name="extension_installed">Η επέκταση εγκαταστάθηκε με επιτυχία.</string>
     <string name="error_message">Σφάλμα: %1$s</string>
-    <string name="install_step">Βήμα: %1$s</string>
+    <string name="installer_step">Βήμα: %1$s</string>
     <string name="review">Ανασκόπηση</string>
     <string name="select_source">Επιλέξτε μια πηγή</string>
     <string name="install_update">Εγκατάσταση ενημέρωσης %1$s?</string>

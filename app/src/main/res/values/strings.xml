@@ -477,11 +477,16 @@
     <string name="installing_extension">Installing extension</string>
     <string name="installation_failed">Installation failed: %1$s</string>
     <string name="installation_complete">Installation complete</string>
-    <string name="installation_finished">The installation process has been completed.</string>
-    <string name="extension_installed">The extension has been successfully installed.</string>
+    <string name="installation_finished">Extension installation(s) completed.</string>
+    <string name="extension_installed">Extension successfully installed.</string>
     <string name="installation_cancelled">User cancelled extension installation.</string>
+    <string name="updating_extension">Updating extension</string>
+    <string name="update_failed">Update failed: %1$s</string>
+    <string name="update_complete">Update complete</string>
+    <string name="extension_updated">Extension successfully updated.</string>
+    <string name="extension_removed">Extension uninstalled</string>
     <string name="error_message">Error: %1$s</string>
-    <string name="install_step">Step: %1$s</string>
+    <string name="installer_step">Step: %1$s</string>
     <string name="review">Review</string>
 
     <string name="select_source">Select a Source</string>

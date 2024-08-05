@@ -430,7 +430,7 @@
     <string name="installation_complete">Встановлення завершено</string>
     <string name="extension_installed">Розширення успішно встановлено.</string>
     <string name="error_message">Помилка: %1$s</string>
-    <string name="install_step">Крок: %1$s</string>
+    <string name="installer_step">Крок: %1$s</string>
     <string name="review">Рецензія</string>
     <string name="select_source">Виберіть джерело</string>
     <string name="install_update">Встановити оновлення %1$s?</string>

@@ -430,7 +430,7 @@
     <string name="installation_complete">تم التثبيت</string>
     <string name="extension_installed">تم تثبيت الإضافة بنجاح.</string>
     <string name="error_message">خطأ: %1$s</string>
-    <string name="install_step">الخطوة: %1$s</string>
+    <string name="installer_step">الخطوة: %1$s</string>
     <string name="review">مراجعة</string>
     <string name="select_source">حدد مصدر</string>
     <string name="install_update">تثبيت تحديث %1$s؟</string>

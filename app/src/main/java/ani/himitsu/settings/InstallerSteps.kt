@@ -21,7 +21,7 @@ class InstallerSteps(
         )
             .setSmallIcon(R.drawable.ic_round_sync_24)
             .setContentTitle(context.getString(R.string.installing_extension))
-            .setContentText(context.getString(R.string.install_step, installStep))
+            .setContentText(context.getString(R.string.installer_step, installStep))
             .setPriority(NotificationCompat.PRIORITY_LOW)
         notificationManager.notify(1, builder.build())
     }

@@ -72,8 +72,8 @@ class InstalledNovelExtensionsFragment : Fragment(), SearchQueryHandler {
                                     Notifications.CHANNEL_DOWNLOADER_PROGRESS
                                 )
                                     .setSmallIcon(R.drawable.ic_round_sync_24)
-                                    .setContentTitle("Updating extension")
-                                    .setContentText("Step: $installStep")
+                                    .setContentTitle(getString(R.string.updating_extension))
+                                    .setContentText(getString(R.string.installer_step, installStep))
                                     .setPriority(NotificationCompat.PRIORITY_LOW)
                                 notificationManager.notify(1, builder.build())
                             },
@@ -84,11 +84,11 @@ class InstalledNovelExtensionsFragment : Fragment(), SearchQueryHandler {
                                     Notifications.CHANNEL_DOWNLOADER_ERROR
                                 )
                                     .setSmallIcon(R.drawable.ic_round_info_24)
-                                    .setContentTitle("Update failed: ${error.message}")
-                                    .setContentText("Error: ${error.message}")
+                                    .setContentTitle(getString(R.string.update_failed, error.message))
+                                    .setContentText(getString(R.string.error_message, error.message))
                                     .setPriority(NotificationCompat.PRIORITY_HIGH)
                                 notificationManager.notify(1, builder.build())
-                                snackString("Update failed: ${error.message}")
+                                snackString(getString(R.string.update_failed, error.message))
                             },
                             {
                                 val builder = NotificationCompat.Builder(
@@ -96,16 +96,16 @@ class InstalledNovelExtensionsFragment : Fragment(), SearchQueryHandler {
                                     Notifications.CHANNEL_DOWNLOADER_PROGRESS
                                 )
                                     .setSmallIcon(R.drawable.ic_check)
-                                    .setContentTitle("Update complete")
-                                    .setContentText("The extension has been successfully updated.")
+                                    .setContentTitle(getString(R.string.update_complete))
+                                    .setContentText(getString(R.string.extension_updated))
                                     .setPriority(NotificationCompat.PRIORITY_LOW)
                                 notificationManager.notify(1, builder.build())
-                                snackString("Extension updated")
+                                snackString(getString(R.string.update_complete))
                             }
                         )
                 } else {
                     novelExtensionManager.uninstallExtension(pkg.pkgName)
-                    snackString("Extension uninstalled")
+                    // snackString(getString(R.string.extension_removed))
                 }
             }
         },

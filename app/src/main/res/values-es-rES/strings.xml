@@ -411,7 +411,7 @@
     <string name="installation_complete">Instalación Completada</string>
     <string name="extension_installed">La extensión se ha instalado correctamente.</string>
     <string name="error_message">Error: %1$s</string>
-    <string name="install_step">Pasó: %1$s</string>
+    <string name="installer_step">Pasó: %1$s</string>
     <string name="review">Revisar</string>
     <string name="select_source">Seleccione una fuente</string>
     <string name="install_update">¿Instalar actualización %1$s?</string>

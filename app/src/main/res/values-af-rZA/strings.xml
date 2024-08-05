@@ -430,7 +430,7 @@
     <string name="installation_complete">Installering voltooi</string>
     <string name="extension_installed">Die uitbreiding is suksesvol geïnstalleer.</string>
     <string name="error_message">Fout: %1$s</string>
-    <string name="install_step">Stap: %1$s</string>
+    <string name="installer_step">Stap: %1$s</string>
     <string name="review">Oorsig</string>
     <string name="select_source">Kies \'n Bron</string>
     <string name="install_update">Installeer opdatering %1$s?</string>

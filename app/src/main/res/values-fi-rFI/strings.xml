@@ -430,7 +430,7 @@
     <string name="installation_complete">Asennus valmis</string>
     <string name="extension_installed">Lisäosa on asennettu onnistuneesti.</string>
     <string name="error_message">Virhe: %1$s</string>
-    <string name="install_step">Vaihe: %1$s</string>
+    <string name="installer_step">Vaihe: %1$s</string>
     <string name="review">Arvostelu</string>
     <string name="select_source">Valitse lähde</string>
     <string name="install_update">Asenna päivitys %1$s?</string>
