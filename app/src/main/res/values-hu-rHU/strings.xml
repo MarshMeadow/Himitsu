@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="hu">
+    <string name="slogan">We who shall not be named.</string>
     <string name="login">Bejelentkezés</string>
     <string name="logout">Kijelentkezés</string>
     <string name="anilist_login">AniList Login for Himitsu</string>
     <string name="mal_login">MyAnimeList Login for Himitsu</string>
     <string name="discord_login">Discord Login for Himitsu</string>
+    <string name="extension_notice">Himitsu is a BYOR Service</string>
+    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Üdvözöljük újra!</string>
     <string name="conversion_message">Úgy tűnik, hogy régebbi csomagot telepített.\nKérjük, válassza az „Ismételt mentés” lehetőséget a régebbi verzió megnyitásához és egy biztonsági mentés végrehajtásához. Ezután visszatérhet ehhez az alkalmazáshoz, és használhatja a „Beállítások visszaállítása” lehetőséget.</string>
     <string name="backup">Ismételt mentés</string>
@@ -183,7 +186,7 @@
     <string name="about">Névjegy</string>
     <string name="devs">Hozzájárulók</string>
     <string name="disclaimer">Figyelemfelhívás</string>
-    <string name="full_disclaimer">         - Himitsu is a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
+    <string name="full_disclaimer">         - Himitsu was a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
         \n\n - Himitsu and any Himitsu contributors do not host any of the content found inside Himitsu. Any and all images or information found in the app are taken from various public APIs (AniList, MyAnimeList, Kitsu).
         \n\n - Furthermore, all of the anime/manga links found in Himitsu are provided by various 3rd party plugins supplied by the user and have no affiliation with Himitsu or its staff.
         \n\n - Himitsu and it\'s contributors aren\'t liable for any misuse of any of the contents found inside or outside of the app and cannot be held accountable for the distribution of any of the contents found inside the app.
@@ -222,6 +225,7 @@
     <string name="default_quality_info">Alapértelmezett módon a legközelebbi minőséget használja, CSAK alkalmazva a \"Több Minőségű\" szerverek esetén. Automatikusan változik a videó lejátszásakor.</string>
     <string name="default_playback_speed">Alapértelmezett lejátszási sebesség: %1$s</string>
     <string name="cursed_speeds">Átkozott sebességek</string>
+    <string name="scrub_preview">Video Seek Previews</string>
     <string name="resize_mode_button">Alapértelmezett átméretezési mód</string>
     <string name="exceed_cap">Bypass Capabilities</string>
     <string name="exceed_cap_desc">Allows overriding detected player limitations</string>
@@ -330,6 +334,8 @@
     <string name="comments_api">Hozzászólások API (Privát)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
+    <string name="clear_glide">Wipe Glide Cache</string>
+    <string name="clear_glide_desc">Performs a full reset of image cache</string>
     <string name="general">Általános</string>
     <string name="show_system_bars">Állapot- és Navigációs sávok megjelenítése</string>
     <string name="auto_detect_webtoon">Webtoon automatikus észlelése</string>
@@ -375,6 +381,7 @@
     <string name="planned_manga">Tervezett Manga</string>
     <string name="image_long_clicking">Hosszú kattintás az kép megnyitásához</string>
     <string name="always_continue_content">Continue previous media</string>
+    <string name="descending_items">List in descending order</string>
     <string name="search_source_list">Filter sources by selection</string>
     <string name="timestamp_proxy_desc">Hasznos, ha Handshake Fails üzenetet kap</string>
     <string name="timestamp_proxy">Proxy használata időbélyegekhez</string>
@@ -428,9 +435,16 @@
     <string name="installing_extension">Bővítmény telepítése</string>
     <string name="installation_failed">A telepítés sikertelen: %1$s</string>
     <string name="installation_complete">Telepítés befejezve</string>
-    <string name="extension_installed">A bővítmény sikeresen telepítve lett.</string>
+    <string name="installation_finished">Extension installation(s) completed.</string>
+    <string name="extension_installed">Extension successfully installed.</string>
+    <string name="installation_cancelled">User cancelled extension installation.</string>
+    <string name="updating_extension">Updating extension</string>
+    <string name="update_failed">Update failed: %1$s</string>
+    <string name="update_complete">Update complete</string>
+    <string name="extension_updated">Extension successfully updated.</string>
+    <string name="extension_removed">Extension uninstalled</string>
     <string name="error_message">Hiba: %1$s</string>
-    <string name="installer_step">Lépés: %1$s</string>
+    <string name="installer_step">Step: %1$s</string>
     <string name="review">Felülvizsgálat</string>
     <string name="select_source">Válasszon forrást</string>
     <string name="install_update">Telepítse a frissítést %1$s?</string>
@@ -442,6 +456,7 @@
     <string name="discord_anilist_button">Az AniList profiljának megjelenítése helyett</string>
     <string name="discord_rich_presence">Discord Gazdag Jelenlét</string>
     <string name="stream_on_himitsu">Stream on Himitsu</string>
+    <string name="discord_rpc">Show Discord Rich Presence</string>
     <string name="jobless_message">AZ ISTENIT! VALÓBAN MUNKANÉLKÜLI VAGY\nELÉRTED A VÉGET</string>
     <string name="file_manager_not_found">Nem található fájlkezelő az SD-kártya megnyitásához</string>
     <string name="error_loading_data">Adatok betöltési hibája %1$s</string>
@@ -458,7 +473,7 @@
     <string name="auto_skip">Automatikus OP &amp; ED Átugrás</string>
     <string name="show_skip_time_stamp_button">Mutasd az Átugrási [Szegmens] Gombokat</string>
     <string name="always_load_time_stamps">Mindig Töltse be az Időbélyegeket</string>
-    <string name="auto_hide_time_stamps">&gt;Automatikusan Elrejt Szegmens Átugrás Gombokat</string>
+    <string name="auto_hide_time_stamps">Auto Hide Skip [Segment] Buttons</string>
     <string name="timestamps">Szegmensek</string>
     <string name="auto_skip_op_ed">Automatikus Átugrás OP / ED</string>
     <string name="requires_time_stamps_to_be_enabled">Az Időbélyegek Engedélyezve kell legyenek</string>
@@ -563,11 +578,15 @@
     <string name="outline_sub_color">Körvonal Alszín</string>
     <string name="outline_type">Körvonal Típus</string>
     <string name="subtitle_font">Felirat betűtípusa</string>
+    <string name="launch_application">Page is attempting to launch %1$s. Allow?</string>
     <string name="yes">Igen</string>
     <string name="no">Nem</string>
     <string name="ok">Rendben</string>
+    <string name="uninstall">Uninstall</string>
     <string name="reset">Visszaállítás</string>
     <string name="close">Bezárás</string>
+    <string name="deny">Deny</string>
+    <string name="deny_all">Deny All</string>
     <string name="no_chapter">Nincs Fejezet</string>
     <string name="content_18">Kapcsold be a 18+ tartalmat az Anilist beállításaiból</string>
     <string name="available">Elérhető</string>
@@ -915,6 +934,7 @@
     <string name="backup_restore_desc">Választott beállítások biztonsági mentése és visszaállítása</string>
     <string name="change_download_location_desc">A letöltések helyének megváltoztatása</string>
     <string name="always_continue_content_desc">Continue media where you left off</string>
+    <string name="descending_items_desc">Sort lists from highest value to lowest</string>
     <string name="search_source_list_desc">Filter source list by selected item availability</string>
     <string name="recentlyListOnly_desc">Csak a listaelemeket jelenítse meg a legutóbbi fülön</string>
     <string name="adult_only_content_desc">Csak felnőtt tartalmak jelenjenek meg az felfedező oldalon</string>
@@ -1055,4 +1075,8 @@
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
+    <string name="down_to_up">Down to Up</string>
+    <string name="up_to_down">Up to Down</string>
+    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

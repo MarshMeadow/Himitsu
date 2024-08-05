@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="pt-rBR">
+    <string name="slogan">We who shall not be named.</string>
     <string name="login">Iniciar sessão</string>
     <string name="logout">Desconectar</string>
     <string name="anilist_login">AniList Login for Himitsu</string>
     <string name="mal_login">MyAnimeList Login for Himitsu</string>
     <string name="discord_login">Discord Login for Himitsu</string>
+    <string name="extension_notice">Himitsu is a BYOR Service</string>
+    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Bem-vindo de volta!</string>
     <string name="conversion_message">Parece que você tem uma versão anterior instalada.\nPor favor, selecione \"Backup\" para abrir a versão anterior e fazer um backup. Você pode então voltar para este aplicativo e usar \"Restaurar Configurações\".</string>
     <string name="backup">Backup</string>
@@ -183,7 +186,7 @@
     <string name="about">SOBRE</string>
     <string name="devs">Colaboradores</string>
     <string name="disclaimer">Renúncia</string>
-    <string name="full_disclaimer">         - Himitsu is a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
+    <string name="full_disclaimer">         - Himitsu was a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
         \n\n - Himitsu and any Himitsu contributors do not host any of the content found inside Himitsu. Any and all images or information found in the app are taken from various public APIs (AniList, MyAnimeList, Kitsu).
         \n\n - Furthermore, all of the anime/manga links found in Himitsu are provided by various 3rd party plugins supplied by the user and have no affiliation with Himitsu or its staff.
         \n\n - Himitsu and it\'s contributors aren\'t liable for any misuse of any of the contents found inside or outside of the app and cannot be held accountable for the distribution of any of the contents found inside the app.
@@ -222,6 +225,7 @@
     <string name="default_quality_info">Usa automaticamente a qualidade mais próxima fornecida por padrão, APENAS aplicadas para Servidores de \"Qualidade Múltipla\". Mudanças automáticas ao reproduzir um vídeo.</string>
     <string name="default_playback_speed">Velocidade padrão de reprodução: %1$s</string>
     <string name="cursed_speeds">Velocidades Amaldiçoadas</string>
+    <string name="scrub_preview">Video Seek Previews</string>
     <string name="resize_mode_button">Modo padrão de redimensionamento</string>
     <string name="exceed_cap">Bypass Capabilities</string>
     <string name="exceed_cap_desc">Allows overriding detected player limitations</string>
@@ -330,6 +334,8 @@
     <string name="comments_api">Comentários API (particular)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
+    <string name="clear_glide">Wipe Glide Cache</string>
+    <string name="clear_glide_desc">Performs a full reset of image cache</string>
     <string name="general">Gerais</string>
     <string name="show_system_bars">Mostrar Barras de Status e Navegação</string>
     <string name="auto_detect_webtoon">Auto detectar Webtoon</string>
@@ -375,6 +381,7 @@
     <string name="planned_manga">Manga Planejada</string>
     <string name="image_long_clicking">Toque longo para abrir a imagem</string>
     <string name="always_continue_content">Continue previous media</string>
+    <string name="descending_items">List in descending order</string>
     <string name="search_source_list">Filter sources by selection</string>
     <string name="timestamp_proxy_desc">Útil se você estiver obtendo Falhas de Handshake</string>
     <string name="timestamp_proxy">Usar Proxy para Timestamps</string>
@@ -428,9 +435,16 @@
     <string name="installing_extension">Instalando extensão</string>
     <string name="installation_failed">Falha na instalação: %1$s</string>
     <string name="installation_complete">Instalação concluída</string>
-    <string name="extension_installed">A extensão foi instalada com sucesso.</string>
+    <string name="installation_finished">Extension installation(s) completed.</string>
+    <string name="extension_installed">Extension successfully installed.</string>
+    <string name="installation_cancelled">User cancelled extension installation.</string>
+    <string name="updating_extension">Updating extension</string>
+    <string name="update_failed">Update failed: %1$s</string>
+    <string name="update_complete">Update complete</string>
+    <string name="extension_updated">Extension successfully updated.</string>
+    <string name="extension_removed">Extension uninstalled</string>
     <string name="error_message">Erro: %1$s</string>
-    <string name="installer_step">Passo: %1$s</string>
+    <string name="installer_step">Step: %1$s</string>
     <string name="review">Avaliar</string>
     <string name="select_source">Selecione uma fonte</string>
     <string name="install_update">Instalar atualização %1$s?</string>
@@ -442,6 +456,7 @@
     <string name="discord_anilist_button">Em vez disso, mostre seu perfil AniList</string>
     <string name="discord_rich_presence">Rich Presence do Discord</string>
     <string name="stream_on_himitsu">Stream on Himitsu</string>
+    <string name="discord_rpc">Show Discord Rich Presence</string>
     <string name="jobless_message">CAVALO! VOCÊ REALMENTE ESTÁ DESEMPREGADO\nVOCÊ CHEGOU AO FIM</string>
     <string name="file_manager_not_found">Não foi possível encontrar um Gerenciador de Arquivos para abrir o cartão SD</string>
     <string name="error_loading_data">Erro ao carregar dados %1$s</string>
@@ -458,7 +473,7 @@
     <string name="auto_skip">Auto Skipping OP &amp; ED</string>
     <string name="show_skip_time_stamp_button">Mostrar Botões de Pular [Segmento]</string>
     <string name="always_load_time_stamps">Sempre carregar cargas no tempo</string>
-    <string name="auto_hide_time_stamps">&gt;Auto Ocultar Ignorar botão [Segment]</string>
+    <string name="auto_hide_time_stamps">Auto Hide Skip [Segment] Buttons</string>
     <string name="timestamps">Segmentos</string>
     <string name="auto_skip_op_ed">Auto Skip OP / ED</string>
     <string name="requires_time_stamps_to_be_enabled">Requer carimbos de Tempo para ser habilitado</string>
@@ -563,11 +578,15 @@
     <string name="outline_sub_color">Sub cor do contorno</string>
     <string name="outline_type">Tipo de Contorno</string>
     <string name="subtitle_font">Fonte da legenda</string>
+    <string name="launch_application">Page is attempting to launch %1$s. Allow?</string>
     <string name="yes">sim</string>
     <string name="no">Não</string>
     <string name="ok">Certo</string>
+    <string name="uninstall">Uninstall</string>
     <string name="reset">Reset</string>
     <string name="close">FECHAR</string>
+    <string name="deny">Deny</string>
+    <string name="deny_all">Deny All</string>
     <string name="no_chapter">Sem Capítulo</string>
     <string name="content_18">Ativar mais de 18 conteúdos das suas configurações Anilist</string>
     <string name="available">Disponível</string>
@@ -915,6 +934,7 @@
     <string name="backup_restore_desc">Criar e restaurar backups das configurações selecionadas</string>
     <string name="change_download_location_desc">Alterar o local onde os downloads são mantidos</string>
     <string name="always_continue_content_desc">Continue media where you left off</string>
+    <string name="descending_items_desc">Sort lists from highest value to lowest</string>
     <string name="search_source_list_desc">Filter source list by selected item availability</string>
     <string name="recentlyListOnly_desc">Mostrar apenas os itens da sua lista na aba recente</string>
     <string name="adult_only_content_desc">Mostrar apenas conteúdo adulto na página de exploração</string>
@@ -1055,4 +1075,8 @@
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
+    <string name="down_to_up">Down to Up</string>
+    <string name="up_to_down">Up to Down</string>
+    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

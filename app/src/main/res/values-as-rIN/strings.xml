@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="as">
+    <string name="slogan">We who shall not be named.</string>
     <string name="login">লগইন</string>
     <string name="logout">লগআউট</string>
     <string name="anilist_login">AniList Login for Himitsu</string>
     <string name="mal_login">MyAnimeList Login for Himitsu</string>
     <string name="discord_login">Discord Login for Himitsu</string>
+    <string name="extension_notice">Himitsu is a BYOR Service</string>
+    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Welcome back!</string>
     <string name="conversion_message">It appears you have an older package installed.\nPlease select \"Backup\" to open the older version and perform a backup. You can then return to this app and use \"Restore Settings\".</string>
     <string name="backup">Backup</string>
@@ -183,7 +186,7 @@
     <string name="about">বিষয়ে</string>
     <string name="devs">ডেভেলপাৰ/সহায়কসমূহ</string>
     <string name="disclaimer">বিবেচনা</string>
-    <string name="full_disclaimer">         - Himitsu is a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
+    <string name="full_disclaimer">         - Himitsu was a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
         \n\n - Himitsu and any Himitsu contributors do not host any of the content found inside Himitsu. Any and all images or information found in the app are taken from various public APIs (AniList, MyAnimeList, Kitsu).
         \n\n - Furthermore, all of the anime/manga links found in Himitsu are provided by various 3rd party plugins supplied by the user and have no affiliation with Himitsu or its staff.
         \n\n - Himitsu and it\'s contributors aren\'t liable for any misuse of any of the contents found inside or outside of the app and cannot be held accountable for the distribution of any of the contents found inside the app.
@@ -222,6 +225,7 @@
     <string name="default_quality_info">ডিফ\'ল্ট যোগাযোগ কৰে প্ৰায় প্ৰায়ে সম়তৰ গুণাত্মক, \"বহু গুণাত্মক\" সাৰ্ভাৰৰ বাবে মাত্ৰ লাৰ্চন লাইভ খেলিৰ সময়ত। নেকি বদলি সাময়ত.</string>
     <string name="default_playback_speed">ডিফ\'ল্ট প্ৰতিধ্বনি দ্ৰুতি: %1$s</string>
     <string name="cursed_speeds">প্ৰতিধ্বনি দ্ৰুতি</string>
+    <string name="scrub_preview">Video Seek Previews</string>
     <string name="resize_mode_button">ডিফ\'ল্ট পুনঃ আকাৰ মোড</string>
     <string name="exceed_cap">Bypass Capabilities</string>
     <string name="exceed_cap_desc">Allows overriding detected player limitations</string>
@@ -330,6 +334,8 @@
     <string name="comments_api">Comments API (Private)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
+    <string name="clear_glide">Wipe Glide Cache</string>
+    <string name="clear_glide_desc">Performs a full reset of image cache</string>
     <string name="general">সাধাৰণ</string>
     <string name="show_system_bars">ষ্টেটাছ আৰু পৱথৰ বাৰ দেখুৱাওক</string>
     <string name="auto_detect_webtoon">অট’ নেপাৰি ওয়েবটুন পাচনা কৰক</string>
@@ -375,6 +381,7 @@
     <string name="planned_manga">পূৰ্বধাৰিত কলা</string>
     <string name="image_long_clicking">দীৰ্ঘ টিপি কৰিবলৈ ছবি খোলক</string>
     <string name="always_continue_content">Continue previous media</string>
+    <string name="descending_items">List in descending order</string>
     <string name="search_source_list">Filter sources by selection</string>
     <string name="timestamp_proxy_desc">যদি আপুনি হেণ্ডশেক ফেইল পায়</string>
     <string name="timestamp_proxy">সময় চিহ্নসমূহ সুৱিদ্ধত ব্যৱহাৰ কৰা</string>
@@ -428,9 +435,16 @@
     <string name="installing_extension">সম্প্ৰসাৰণ স্থাপন কৰা হৈছে</string>
     <string name="installation_failed">স্থাপন ব্যৰ্থ: %1$s</string>
     <string name="installation_complete">স্থাপন সম্পূৰ্ণ </string>
-    <string name="extension_installed">সম্প্ৰসাৰণ সফলতাৰে ইনষ্টল কৰা হৈছে</string>
+    <string name="installation_finished">Extension installation(s) completed.</string>
+    <string name="extension_installed">Extension successfully installed.</string>
+    <string name="installation_cancelled">User cancelled extension installation.</string>
+    <string name="updating_extension">Updating extension</string>
+    <string name="update_failed">Update failed: %1$s</string>
+    <string name="update_complete">Update complete</string>
+    <string name="extension_updated">Extension successfully updated.</string>
+    <string name="extension_removed">Extension uninstalled</string>
     <string name="error_message">ভুল %1$s</string>
-    <string name="installer_step">পদক্ষেপ %1$s</string>
+    <string name="installer_step">Step: %1$s</string>
     <string name="review">সমীক্ষা</string>
     <string name="select_source">Select a Source</string>
     <string name="install_update">Install update %1$s?</string>
@@ -442,6 +456,7 @@
     <string name="discord_anilist_button">তাৰ পৰিৱৰ্তে আপোনাৰ এনিলিষ্ট প্ৰ\'ফাইল প্ৰদৰ্শন কৰক</string>
     <string name="discord_rich_presence">ডিসকৰ্ড সমৃদ্ধ উপস্থিতি</string>
     <string name="stream_on_himitsu">Stream on Himitsu</string>
+    <string name="discord_rpc">Show Discord Rich Presence</string>
     <string name="jobless_message">ওহ বিচাৰিছো নেকি! তুমি সত্যিই কাৰি নেই\nতুমি সমাপ্তি পোৱা হ\'ল</string>
     <string name="file_manager_not_found">SD কাৰ্ড খোলিবলৈ কোনো ফাইল মেনেজাৰ পোৱা নহয়</string>
     <string name="error_loading_data">%1$s ডাটা লোড কৰাৰ সময়ত ত্ৰুটি হৈছে</string>
@@ -458,7 +473,7 @@
     <string name="auto_skip">অটো অপ আৰু ইডি স্কিপিং</string>
     <string name="show_skip_time_stamp_button">সময় হোৱা বুটাম দেখুৱাওক</string>
     <string name="always_load_time_stamps">সদা সময় হোৱা লুকাওক</string>
-    <string name="auto_hide_time_stamps">স্বয়ং লুকুৱাওক টাইমষ্টাম্পসমূহ</string>
+    <string name="auto_hide_time_stamps">Auto Hide Skip [Segment] Buttons</string>
     <string name="timestamps">সময় চিহ্নসমূহ</string>
     <string name="auto_skip_op_ed">অট’ নেপাৰি ওপেনিং / এণ্ডিং এডাল</string>
     <string name="requires_time_stamps_to_be_enabled">সময় চিহ্নসমূহ সক্ৰিয় কৰিবলৈ প্ৰয়োজনীয়</string>
@@ -563,11 +578,15 @@
     <string name="outline_sub_color">আউটলাইন সাব ৰঙ</string>
     <string name="outline_type">আউটলাইন ধৰণ</string>
     <string name="subtitle_font">সাবটাইটেল ফন্ট</string>
+    <string name="launch_application">Page is attempting to launch %1$s. Allow?</string>
     <string name="yes">হয়</string>
     <string name="no">নহয়</string>
     <string name="ok">হ\'ব</string>
+    <string name="uninstall">Uninstall</string>
     <string name="reset">ৰিছেট</string>
     <string name="close">বন্ধ কৰক</string>
+    <string name="deny">Deny</string>
+    <string name="deny_all">Deny All</string>
     <string name="no_chapter">কোনো চাপ্তেৰ নাই</string>
     <string name="content_18">আপোনাৰ Anilist ছেটিংছত ১৮+ বিষয়ৰ সমল অন কৰক</string>
     <string name="available">উপলব্ধ</string>
@@ -915,6 +934,7 @@
     <string name="backup_restore_desc">আপোনাৰ পছন্দৰ ছেটিংছ সকলোতে</string>
     <string name="change_download_location_desc">সকলো ডাউনলোড কৰা সামগ্ৰী য\'লৈ যায় সেই অৱস্থান সলনি কৰক</string>
     <string name="always_continue_content_desc">Continue media where you left off</string>
+    <string name="descending_items_desc">Sort lists from highest value to lowest</string>
     <string name="search_source_list_desc">Filter source list by selected item availability</string>
     <string name="recentlyListOnly_desc">শেহতীয়া টেবত কেৱল আপোনাৰ তালিকাৰ আইটেমসমূহ দেখুৱাওক</string>
     <string name="adult_only_content_desc">এক্সপলৰ পেজত মাত্ৰ এদালট কণ্টেনত হে দেখুৱাওক</string>
@@ -1055,4 +1075,8 @@
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
+    <string name="down_to_up">Down to Up</string>
+    <string name="up_to_down">Up to Down</string>
+    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="bandwidth_down">%1$d Mbps</string>
 </resources>
