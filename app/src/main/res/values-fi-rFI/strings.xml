@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fi">
+    <string name="slogan">We who shall not be named.</string>
     <string name="login">Kirjaudu Sisään</string>
     <string name="logout">Kirjaudu Ulos</string>
     <string name="anilist_login">AniList Login for Himitsu</string>
     <string name="mal_login">MyAnimeList Login for Himitsu</string>
     <string name="discord_login">Discord Login for Himitsu</string>
+    <string name="extension_notice">Himitsu is a BYOR Service</string>
+    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Tervetuloa takaisin!</string>
     <string name="conversion_message">Näyttää siltä, että sinulla on vanhempi paketti.\nValitse \"Varmuuskopio\" avataksesi vanhemman version ja suorittaaksesi varmuuskopion. Tämän jälkeen voit palata tähän sovellukseen ja käyttää \"Palauta asetukset\".</string>
     <string name="backup">Varmuuskopio</string>
@@ -183,7 +186,7 @@
     <string name="about">Tietoja</string>
     <string name="devs">Avustajat</string>
     <string name="disclaimer">Vastuuvapauslauseke</string>
-    <string name="full_disclaimer">         - Himitsu is a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
+    <string name="full_disclaimer">         - Himitsu was a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
         \n\n - Himitsu and any Himitsu contributors do not host any of the content found inside Himitsu. Any and all images or information found in the app are taken from various public APIs (AniList, MyAnimeList, Kitsu).
         \n\n - Furthermore, all of the anime/manga links found in Himitsu are provided by various 3rd party plugins supplied by the user and have no affiliation with Himitsu or its staff.
         \n\n - Himitsu and it\'s contributors aren\'t liable for any misuse of any of the contents found inside or outside of the app and cannot be held accountable for the distribution of any of the contents found inside the app.
@@ -222,6 +225,7 @@
     <string name="default_quality_info">Käytä automaattisesti oletuksena tarjottavaa lähintä laatua, VAIN \"Multi Quality\" Servereille. Automaattinen muutos kun toistetaan video.</string>
     <string name="default_playback_speed">Toiston Oletusnopeus: %1$s</string>
     <string name="cursed_speeds">Kierretyt Nopeudet</string>
+    <string name="scrub_preview">Video Seek Previews</string>
     <string name="resize_mode_button">Oletus Muuta Kokoa</string>
     <string name="exceed_cap">Bypass Capabilities</string>
     <string name="exceed_cap_desc">Allows overriding detected player limitations</string>
@@ -330,6 +334,8 @@
     <string name="comments_api">Kommentit API (Private)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
+    <string name="clear_glide">Wipe Glide Cache</string>
+    <string name="clear_glide_desc">Performs a full reset of image cache</string>
     <string name="general">Yleiset</string>
     <string name="show_system_bars">Näytä Tila &amp; Navigointipalkit</string>
     <string name="auto_detect_webtoon">Tunnista Webtoon Automaattisesti</string>
@@ -375,6 +381,7 @@
     <string name="planned_manga">Suunniteltu Manga</string>
     <string name="image_long_clicking">Avaa kuva pitkällä painikkeella</string>
     <string name="always_continue_content">Continue previous media</string>
+    <string name="descending_items">List in descending order</string>
     <string name="search_source_list">Filter sources by selection</string>
     <string name="timestamp_proxy_desc">Hyödyllinen, jos saat Handshake Fails</string>
     <string name="timestamp_proxy">Käytä välityspalvelinta Timestampeille</string>
@@ -428,9 +435,16 @@
     <string name="installing_extension">Asennetaan lisäosaa</string>
     <string name="installation_failed">Asennus epäonnistui: %1$s</string>
     <string name="installation_complete">Asennus valmis</string>
-    <string name="extension_installed">Lisäosa on asennettu onnistuneesti.</string>
+    <string name="installation_finished">Extension installation(s) completed.</string>
+    <string name="extension_installed">Extension successfully installed.</string>
+    <string name="installation_cancelled">User cancelled extension installation.</string>
+    <string name="updating_extension">Updating extension</string>
+    <string name="update_failed">Update failed: %1$s</string>
+    <string name="update_complete">Update complete</string>
+    <string name="extension_updated">Extension successfully updated.</string>
+    <string name="extension_removed">Extension uninstalled</string>
     <string name="error_message">Virhe: %1$s</string>
-    <string name="installer_step">Vaihe: %1$s</string>
+    <string name="installer_step">Step: %1$s</string>
     <string name="review">Arvostelu</string>
     <string name="select_source">Valitse lähde</string>
     <string name="install_update">Asenna päivitys %1$s?</string>
@@ -442,6 +456,7 @@
     <string name="discord_anilist_button">Näytä AniList-profiilisi sen sijaan</string>
     <string name="discord_rich_presence">Discord Rich Presence</string>
     <string name="stream_on_himitsu">Stream on Himitsu</string>
+    <string name="discord_rpc">Show Discord Rich Presence</string>
     <string name="jobless_message">HITTO! OLET OIKEASTI TYÖTÖN\nSAVOTTA LOPPU</string>
     <string name="file_manager_not_found">Ei löytynyt tiedostonhallintaohjelmaa SD-kortin avaamiseen</string>
     <string name="error_loading_data">Virhe ladattaessa tietoja %1$s</string>
@@ -458,7 +473,7 @@
     <string name="auto_skip">Auto Skipping OP &amp; ED</string>
     <string name="show_skip_time_stamp_button">Näytä Ohita [Segment] -painikkeet</string>
     <string name="always_load_time_stamps">Lataa Aina Postimerkit</string>
-    <string name="auto_hide_time_stamps">&gt;Piilota Ohita [Segment] Painikkeet Automaattisesti</string>
+    <string name="auto_hide_time_stamps">Auto Hide Skip [Segment] Buttons</string>
     <string name="timestamps">Segmentit</string>
     <string name="auto_skip_op_ed">Auto Skip OP / ED</string>
     <string name="requires_time_stamps_to_be_enabled">Edellyttää aikaleimoja jotka on otettava käyttöön</string>
@@ -563,11 +578,15 @@
     <string name="outline_sub_color">Ääriviivan Alaväri</string>
     <string name="outline_type">Ääriviivan Tyyppi</string>
     <string name="subtitle_font">Tekstityksen Kirjasin</string>
+    <string name="launch_application">Page is attempting to launch %1$s. Allow?</string>
     <string name="yes">Kyllä</string>
     <string name="no">Ei</string>
     <string name="ok">Ok</string>
+    <string name="uninstall">Uninstall</string>
     <string name="reset">Reset</string>
     <string name="close">Sulje</string>
+    <string name="deny">Deny</string>
+    <string name="deny_all">Deny All</string>
     <string name="no_chapter">Ei Lukua</string>
     <string name="content_18">Ota käyttöön 18+ sisältö Anilisti-asetuksistasi</string>
     <string name="available">Saatavilla</string>
@@ -915,6 +934,7 @@
     <string name="backup_restore_desc">Luo ja palauta varmuuskopiot valituista asetuksista</string>
     <string name="change_download_location_desc">Muuta sijaintia, jossa lataukset pidetään</string>
     <string name="always_continue_content_desc">Continue media where you left off</string>
+    <string name="descending_items_desc">Sort lists from highest value to lowest</string>
     <string name="search_source_list_desc">Filter source list by selected item availability</string>
     <string name="recentlyListOnly_desc">Näytä vain luettelosi kohteet viimeisessä välilehdessä</string>
     <string name="adult_only_content_desc">Näytä vain aikuisen sisältö tutkimussivulla</string>
@@ -1055,4 +1075,8 @@
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
+    <string name="down_to_up">Down to Up</string>
+    <string name="up_to_down">Up to Down</string>
+    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

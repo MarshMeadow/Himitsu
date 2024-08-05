@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="ko">
+    <string name="slogan">We who shall not be named.</string>
     <string name="login">로그인</string>
     <string name="logout">로그아웃</string>
     <string name="anilist_login">AniList Login for Himitsu</string>
     <string name="mal_login">MyAnimeList Login for Himitsu</string>
     <string name="discord_login">Discord Login for Himitsu</string>
+    <string name="extension_notice">Himitsu is a BYOR Service</string>
+    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">다시 오신 것을 환영합니다!</string>
     <string name="conversion_message">이전 버전이 설치되어 있는 것으로 보입니다.\n이전 버전을 열고 백업을 수행하려면 \"백업\"을 선택하십시오. 그런 다음이 앱으로 돌아와서 \"설정 복원\"을 사용할 수 있습니다.</string>
     <string name="backup">백업</string>
@@ -183,7 +186,7 @@
     <string name="about">정보</string>
     <string name="devs">개발자/도움말</string>
     <string name="disclaimer">면책 조항</string>
-    <string name="full_disclaimer">         - Himitsu is a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
+    <string name="full_disclaimer">         - Himitsu was a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
         \n\n - Himitsu and any Himitsu contributors do not host any of the content found inside Himitsu. Any and all images or information found in the app are taken from various public APIs (AniList, MyAnimeList, Kitsu).
         \n\n - Furthermore, all of the anime/manga links found in Himitsu are provided by various 3rd party plugins supplied by the user and have no affiliation with Himitsu or its staff.
         \n\n - Himitsu and it\'s contributors aren\'t liable for any misuse of any of the contents found inside or outside of the app and cannot be held accountable for the distribution of any of the contents found inside the app.
@@ -222,6 +225,7 @@
     <string name="default_quality_info">기본적으로 제공된 가장 가까운 퀄리티를 자동으로 사용하며, \"멀티 퀄리티\" 서버에만 적용됩니다. 비디오를 재생할 때마다 자동으로 변경됩니다.</string>
     <string name="default_playback_speed">기본 재생 속도: %1$s</string>
     <string name="cursed_speeds">저주받은 속도</string>
+    <string name="scrub_preview">Video Seek Previews</string>
     <string name="resize_mode_button">기본 크기 조정 모드</string>
     <string name="exceed_cap">Bypass Capabilities</string>
     <string name="exceed_cap_desc">Allows overriding detected player limitations</string>
@@ -330,6 +334,8 @@
     <string name="comments_api">댓글 API (비공개)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
+    <string name="clear_glide">Wipe Glide Cache</string>
+    <string name="clear_glide_desc">Performs a full reset of image cache</string>
     <string name="general">일반</string>
     <string name="show_system_bars">상태 및 탐색 바 표시</string>
     <string name="auto_detect_webtoon">웹툰 자동 감지</string>
@@ -375,6 +381,7 @@
     <string name="planned_manga">계획된 만화</string>
     <string name="image_long_clicking">이미지를 길게 클릭하여 열기</string>
     <string name="always_continue_content">Continue previous media</string>
+    <string name="descending_items">List in descending order</string>
     <string name="search_source_list">Filter sources by selection</string>
     <string name="timestamp_proxy_desc">핸드셰이크 실패가 발생하는 경우 유용합니다</string>
     <string name="timestamp_proxy">타임 스탬프에 프록시 사용</string>
@@ -428,9 +435,16 @@
     <string name="installing_extension">확장 프로그램 설치 중</string>
     <string name="installation_failed">설치 실패: %1$s</string>
     <string name="installation_complete">설치 완료</string>
-    <string name="extension_installed">확장 프로그램이 성공적으로 설치되었습니다.</string>
+    <string name="installation_finished">Extension installation(s) completed.</string>
+    <string name="extension_installed">Extension successfully installed.</string>
+    <string name="installation_cancelled">User cancelled extension installation.</string>
+    <string name="updating_extension">Updating extension</string>
+    <string name="update_failed">Update failed: %1$s</string>
+    <string name="update_complete">Update complete</string>
+    <string name="extension_updated">Extension successfully updated.</string>
+    <string name="extension_removed">Extension uninstalled</string>
     <string name="error_message">오류: %1$s</string>
-    <string name="installer_step">단계: %1$s</string>
+    <string name="installer_step">Step: %1$s</string>
     <string name="review">리뷰</string>
     <string name="select_source">소스 선택</string>
     <string name="install_update">%1$s 업데이트 설치하시겠습니까?</string>
@@ -442,6 +456,7 @@
     <string name="discord_anilist_button">대신 AniList 프로필 표시</string>
     <string name="discord_rich_presence">Discord 리치 프레즌스</string>
     <string name="stream_on_himitsu">Stream on Himitsu</string>
+    <string name="discord_rpc">Show Discord Rich Presence</string>
     <string name="jobless_message">젠장! 정말로 일을 찾지 못하셨군요\n끝까지 도달했습니다</string>
     <string name="file_manager_not_found">SD 카드를 열 파일 관리자를 찾을 수 없습니다</string>
     <string name="error_loading_data">%1$s 데이터 로드 중 오류 발생</string>
@@ -458,7 +473,7 @@
     <string name="auto_skip">오프닝 및 엔딩 자동 건너뛰기</string>
     <string name="show_skip_time_stamp_button">시간 스탬프 건너뛰기 버튼 표시</string>
     <string name="always_load_time_stamps">항상 시간 스탬프 로드</string>
-    <string name="auto_hide_time_stamps">Auto Hide Time Stamps</string>
+    <string name="auto_hide_time_stamps">Auto Hide Skip [Segment] Buttons</string>
     <string name="timestamps">시간 스탬프</string>
     <string name="auto_skip_op_ed">자동으로 오프닝/엔딩 건너뛰기</string>
     <string name="requires_time_stamps_to_be_enabled">시간 스탬프 활성화 필요</string>
@@ -563,11 +578,15 @@
     <string name="outline_sub_color">외곽선 하위 색상</string>
     <string name="outline_type">외곽선 유형</string>
     <string name="subtitle_font">자막 글꼴</string>
+    <string name="launch_application">Page is attempting to launch %1$s. Allow?</string>
     <string name="yes">예</string>
     <string name="no">아니오</string>
     <string name="ok">확인</string>
+    <string name="uninstall">Uninstall</string>
     <string name="reset">초기화</string>
     <string name="close">닫기</string>
+    <string name="deny">Deny</string>
+    <string name="deny_all">Deny All</string>
     <string name="no_chapter">챕터 없음</string>
     <string name="content_18">Anilist 설정에서 18+ 콘텐츠를 켜세요</string>
     <string name="available">사용 가능</string>
@@ -915,6 +934,7 @@
     <string name="backup_restore_desc">Your preferred settings everywhere</string>
     <string name="change_download_location_desc">Change the location where all the downloaded stuff goes</string>
     <string name="always_continue_content_desc">Continue media where you left off</string>
+    <string name="descending_items_desc">Sort lists from highest value to lowest</string>
     <string name="search_source_list_desc">Filter source list by selected item availability</string>
     <string name="recentlyListOnly_desc">최근 탭에서 나만의 목록 항목만 표시</string>
     <string name="adult_only_content_desc">탐색 페이지에서 성인 콘텐츠만 표시</string>
@@ -1055,4 +1075,8 @@
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
+    <string name="down_to_up">Down to Up</string>
+    <string name="up_to_down">Up to Down</string>
+    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

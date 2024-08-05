@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="uk">
+    <string name="slogan">We who shall not be named.</string>
     <string name="login">Увійти</string>
     <string name="logout">Вихід із системи</string>
     <string name="anilist_login">AniList Login for Himitsu</string>
     <string name="mal_login">MyAnimeList Login for Himitsu</string>
     <string name="discord_login">Discord Login for Himitsu</string>
+    <string name="extension_notice">Himitsu is a BYOR Service</string>
+    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">З поверненням!</string>
     <string name="conversion_message">Здається, встановлено стару версію пакета.\nБудь ласка, виберіть \"Резервне копіювання\", щоб відкрити попередню версію та виконати резервне копіювання. Після цього ви можете повернутися до цього додатка та використовувати \"Відновлення налаштувань\".</string>
     <string name="backup">Резервне копіювання</string>
@@ -183,7 +186,7 @@
     <string name="about">Про програму</string>
     <string name="devs">Учасники проекту</string>
     <string name="disclaimer">Умови обмеженої відповідальності</string>
-    <string name="full_disclaimer">         - Himitsu is a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
+    <string name="full_disclaimer">         - Himitsu was a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
         \n\n - Himitsu and any Himitsu contributors do not host any of the content found inside Himitsu. Any and all images or information found in the app are taken from various public APIs (AniList, MyAnimeList, Kitsu).
         \n\n - Furthermore, all of the anime/manga links found in Himitsu are provided by various 3rd party plugins supplied by the user and have no affiliation with Himitsu or its staff.
         \n\n - Himitsu and it\'s contributors aren\'t liable for any misuse of any of the contents found inside or outside of the app and cannot be held accountable for the distribution of any of the contents found inside the app.
@@ -222,6 +225,7 @@
     <string name="default_quality_info">Автоматично використовує найближчу якість, надану за замовчуванням, тільки LY застосовується до \"Багатоякість\" серверів. Автоматично змінює зміни при відтворенні відео.</string>
     <string name="default_playback_speed">Швидкість відтворення за замовчуванням: %1$s</string>
     <string name="cursed_speeds">Прокляті швидкості</string>
+    <string name="scrub_preview">Video Seek Previews</string>
     <string name="resize_mode_button">Типовий режим зміни розміру</string>
     <string name="exceed_cap">Bypass Capabilities</string>
     <string name="exceed_cap_desc">Allows overriding detected player limitations</string>
@@ -330,6 +334,8 @@
     <string name="comments_api">Коментарі API (приватний)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
+    <string name="clear_glide">Wipe Glide Cache</string>
+    <string name="clear_glide_desc">Performs a full reset of image cache</string>
     <string name="general">Загальні налаштування</string>
     <string name="show_system_bars">Показати статус: &amp; Панель навігації</string>
     <string name="auto_detect_webtoon">Автоматично визначати Webtoon</string>
@@ -375,6 +381,7 @@
     <string name="planned_manga">Планова манга</string>
     <string name="image_long_clicking">Тривале натискання відкриє зображення</string>
     <string name="always_continue_content">Continue previous media</string>
+    <string name="descending_items">List in descending order</string>
     <string name="search_source_list">Filter sources by selection</string>
     <string name="timestamp_proxy_desc">Корисно, якщо ви отримуєте помилки рукостискання</string>
     <string name="timestamp_proxy">Використовувати проксі для часових міток</string>
@@ -428,9 +435,16 @@
     <string name="installing_extension">Встановлення розширення</string>
     <string name="installation_failed">Помилка встановлення: %1$s</string>
     <string name="installation_complete">Встановлення завершено</string>
-    <string name="extension_installed">Розширення успішно встановлено.</string>
+    <string name="installation_finished">Extension installation(s) completed.</string>
+    <string name="extension_installed">Extension successfully installed.</string>
+    <string name="installation_cancelled">User cancelled extension installation.</string>
+    <string name="updating_extension">Updating extension</string>
+    <string name="update_failed">Update failed: %1$s</string>
+    <string name="update_complete">Update complete</string>
+    <string name="extension_updated">Extension successfully updated.</string>
+    <string name="extension_removed">Extension uninstalled</string>
     <string name="error_message">Помилка: %1$s</string>
-    <string name="installer_step">Крок: %1$s</string>
+    <string name="installer_step">Step: %1$s</string>
     <string name="review">Рецензія</string>
     <string name="select_source">Виберіть джерело</string>
     <string name="install_update">Встановити оновлення %1$s?</string>
@@ -442,6 +456,7 @@
     <string name="discord_anilist_button">Замість цього показувати ваш профіль AniList</string>
     <string name="discord_rich_presence">Rich Presence Discord</string>
     <string name="stream_on_himitsu">Stream on Himitsu</string>
+    <string name="discord_rpc">Show Discord Rich Presence</string>
     <string name="jobless_message">ЧОРТ! ТИ СПРАВДІ ТРУДОВИЙ\nТИ ДОСЯГНУВ КІНЦЯ</string>
     <string name="file_manager_not_found">Не вдалося знайти файловий менеджер для відкриття SD карти</string>
     <string name="error_loading_data">Помилка завантаження даних %1$s</string>
@@ -458,7 +473,7 @@
     <string name="auto_skip">Auto Skipping OP &amp; ED</string>
     <string name="show_skip_time_stamp_button">Показати кнопки пропуску [сегменту]</string>
     <string name="always_load_time_stamps">Завжди завантажувати часові мітки</string>
-    <string name="auto_hide_time_stamps">&gt;Автоматично приховувати кнопки пропуску [сегменту]</string>
+    <string name="auto_hide_time_stamps">Auto Hide Skip [Segment] Buttons</string>
     <string name="timestamps">Стрічки</string>
     <string name="auto_skip_op_ed">Auto Skip OP / ED</string>
     <string name="requires_time_stamps_to_be_enabled">Вимагає увімкнених позначок часу</string>
@@ -563,11 +578,15 @@
     <string name="outline_sub_color">Колір вкладеного обрису</string>
     <string name="outline_type">Тип обрису</string>
     <string name="subtitle_font">Шрифт субтитрів</string>
+    <string name="launch_application">Page is attempting to launch %1$s. Allow?</string>
     <string name="yes">Так</string>
     <string name="no">Ні</string>
     <string name="ok">Гаразд</string>
+    <string name="uninstall">Uninstall</string>
     <string name="reset">Reset</string>
     <string name="close">Закрити</string>
+    <string name="deny">Deny</string>
+    <string name="deny_all">Deny All</string>
     <string name="no_chapter">Без розділу</string>
     <string name="content_18">Увімкніть 18+ контент від налаштувань анілістів</string>
     <string name="available">Доступно</string>
@@ -915,6 +934,7 @@
     <string name="backup_restore_desc">Створити та відновити резервні копії вибраних налаштувань</string>
     <string name="change_download_location_desc">Змінювати місцезнаходження при збереженні завантажень</string>
     <string name="always_continue_content_desc">Continue media where you left off</string>
+    <string name="descending_items_desc">Sort lists from highest value to lowest</string>
     <string name="search_source_list_desc">Filter source list by selected item availability</string>
     <string name="recentlyListOnly_desc">Показувати лише елементи списку в останній вкладці</string>
     <string name="adult_only_content_desc">Показувати лише матеріали для дорослих на сторінці вивчення</string>
@@ -1055,4 +1075,8 @@
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
+    <string name="down_to_up">Down to Up</string>
+    <string name="up_to_down">Up to Down</string>
+    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="bandwidth_down">%1$d Mbps</string>
 </resources>
