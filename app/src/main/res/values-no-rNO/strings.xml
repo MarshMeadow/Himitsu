@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Ikke last utvidelses ikoner i administreringen</string>
     <string name="NSFWExtention_desc">Deaktiverer blokker som helst utvidelse med hvilket som helst 18+ innhold</string>
     <string name="reader_settings_desc">Alle leserrelatert innstillinger</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Slett alle nedlastede manga</string>
     <string name="purge_novel_downloads_desc">Slett alle nedlastede Novels</string>
     <string name="include_list_desc">Inkluder listeelementer i manga utforskingssiden</string>

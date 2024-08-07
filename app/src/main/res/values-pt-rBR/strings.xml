@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Não carregar ícones de extensão no Gerenciador</string>
     <string name="NSFWExtention_desc">Desabilitando qualquer extensão com mais de 18 conteúdos</string>
     <string name="reader_settings_desc">Todas as configurações relacionadas ao Leitor</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Excluir todos os Manga baixados</string>
     <string name="purge_novel_downloads_desc">Excluir todos os romances baixados</string>
     <string name="include_list_desc">Incluir itens da lista na página de exploração Manga</string>

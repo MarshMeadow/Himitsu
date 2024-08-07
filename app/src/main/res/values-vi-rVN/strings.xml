@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Không tải biểu tượng tiện ích mở rộng trong trình quản lý</string>
     <string name="NSFWExtention_desc">Vô hiệu hóa chặn bất kỳ tiện ích mở rộng nào chứa nội dung 18+</string>
     <string name="reader_settings_desc">Tất cả các cài đặt liên quan đến Người đọc</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Xóa tất cả Manga đã tải về</string>
     <string name="purge_novel_downloads_desc">Xóa tất cả tiểu thuyết đã tải về</string>
     <string name="include_list_desc">Bao gồm các mục trong danh sách trên trang khám phá Manga</string>

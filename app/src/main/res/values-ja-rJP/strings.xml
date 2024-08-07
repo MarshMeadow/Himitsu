@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">マネージャーに拡張機能アイコンを読み込まないでください</string>
     <string name="NSFWExtention_desc">任意の 18+ コンテンツで任意の拡張機能を無効にする</string>
     <string name="reader_settings_desc">すべてのリーダー関連の設定</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">ダウンロードしたマンガを全て削除</string>
     <string name="purge_novel_downloads_desc">ダウンロードしたすべての小説を削除</string>
     <string name="include_list_desc">マンガ探索ページにリスト項目を含める</string>

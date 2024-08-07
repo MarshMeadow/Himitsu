@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Älä lataa lisäosien kuvakkeita managerissa</string>
     <string name="NSFWExtention_desc">Poista lohkot käytöstä kaikki laajennukset millä tahansa 18+ sisällöllä</string>
     <string name="reader_settings_desc">Kaikki lukijaan liittyvät asetukset</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Poista kaikki ladatut Manga</string>
     <string name="purge_novel_downloads_desc">Poista kaikki ladatut romaanit</string>
     <string name="include_list_desc">Sisällytä listan kohteet Manga -tutkimussivulle</string>

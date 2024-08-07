@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Moet nie uitbreidingsikone in bestuurder laai nie</string>
     <string name="NSFWExtention_desc">Deaktivering blokkeer enige uitbreiding met enige 18+ inhoud</string>
     <string name="reader_settings_desc">Alle leesverwante instellings</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Verwyder alle afgelaai Manga</string>
     <string name="purge_novel_downloads_desc">Verwyder alle afgelaai Novels</string>
     <string name="include_list_desc">Sluit lysitems in Manga-verkenbladsy in</string>

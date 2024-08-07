@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">不要在管理器中加载扩展图标</string>
     <string name="NSFWExtention_desc">禁用任意18+内容的任何扩展</string>
     <string name="reader_settings_desc">所有与阅读器相关的设置</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">删除所有已下载的 Manga</string>
     <string name="purge_novel_downloads_desc">删除所有已下载的Novels</string>
     <string name="include_list_desc">在 Manga 探索页面中包含列表项目</string>

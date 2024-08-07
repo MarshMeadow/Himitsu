@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Ladda inte tilläggsikoner i hanteraren</string>
     <string name="NSFWExtention_desc">Inaktivera blockerar alla tillägg med 18 + innehåll</string>
     <string name="reader_settings_desc">Alla läsarrelaterade inställningar</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Ta bort alla hämtade Manga</string>
     <string name="purge_novel_downloads_desc">Ta bort alla nedladdade romaner</string>
     <string name="include_list_desc">Inkludera listobjekt i Manga utforska sidan</string>
