@@ -44,6 +44,7 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     MangaSourcesOrder(Pref(Location.General, List::class, listOf<String>())),
     MangaSearchHistory(Pref(Location.General, Set::class, setOf<String>())),
     NovelSourcesOrder(Pref(Location.General, List::class, listOf<String>())),
+    ComicBookFormat(Pref(Location.General, Boolean::class, false)),
     CommentNotificationInterval(Pref(Location.General, Int::class, 0)),
     AnilistNotificationInterval(Pref(Location.General, Int::class, 3)),
     SubscriptionNotificationInterval(Pref(Location.General, Int::class, 2)),

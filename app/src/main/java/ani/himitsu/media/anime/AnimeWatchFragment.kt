@@ -310,6 +310,14 @@ class AnimeWatchFragment : Fragment() {
                         (divisions < 50) -> 50
                         else -> 100
                     }
+                    if (!this::headerAdapter.isInitialized) {
+                        headerAdapter = AnimeWatchAdapter(
+                            media, this@AnimeWatchFragment, model.watchSources!!
+                        )
+
+                        binding.animeSourceRecycler.adapter =
+                            ConcatAdapter(headerAdapter, episodeAdapter)
+                    }
                     headerAdapter.clearChips()
                     if (total > limit) {
                         val arr = media.anime!!.episodes!!.keys.toTypedArray()

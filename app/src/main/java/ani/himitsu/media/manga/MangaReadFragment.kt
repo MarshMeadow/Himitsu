@@ -325,6 +325,14 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                     (divisions < 50) -> 50
                     else -> 100
                 }
+                if (!this::headerAdapter.isInitialized) {
+                    headerAdapter = MangaReadAdapter(
+                        media, this@MangaReadFragment, model.mangaReadSources!!
+                    )
+
+                    binding.animeSourceRecycler.adapter =
+                        ConcatAdapter(headerAdapter, chapterAdapter)
+                }
                 headerAdapter.clearChips()
                 if (total > limit) {
                     val arr = filteredChapters.keys.toTypedArray()
@@ -608,6 +616,9 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                 ACTION_DOWNLOAD_FINISHED -> {
                     val chapterNumber = intent.getStringExtra(EXTRA_CHAPTER_NUMBER)
                     chapterNumber?.let { chapterAdapter.stopDownload(it) }
+                    if (PrefManager.getVal(PrefName.ComicBookFormat)) {
+                        /* TODO: Archive as CBZ */
+                    }
                 }
 
                 ACTION_DOWNLOAD_FAILED -> {
