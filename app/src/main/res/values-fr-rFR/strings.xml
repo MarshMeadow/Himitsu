@@ -946,6 +946,8 @@ Genre : "</string>
     <string name="skip_loading_extension_icons_desc">Ne pas charger les icônes d\'extensions sur la page d\'extension</string>
     <string name="NSFWExtention_desc">Supprimer les extensions 18+ de la recherche (peut supprimer certaines extensions utiles)</string>
     <string name="reader_settings_desc">Toutes les configurations liées au lecteur de livre</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Supprimer tous les manga téléchargés</string>
     <string name="purge_novel_downloads_desc">Supprimer tous les romans téléchargés</string>
     <string name="include_list_desc">Inclure les éléments de votre liste dans la page de découverte de manga</string>

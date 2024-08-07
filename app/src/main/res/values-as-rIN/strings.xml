@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">এক্সটেনছনৰ পৃষ্ঠাৰ উপৰত চিত্ৰসমূহ ল\'ড নকৰিব</string>
     <string name="NSFWExtention_desc">অনুসন্ধানৰ পৰা 18+ এক্সটেনছনসমূহ সরাওক (কিছুমান কামিত এক্সটেনছনসমূহ সোমোৱা হ\'ব পাৰে)</string>
     <string name="reader_settings_desc">সকলো পঠনকাৰীৰ সম্পৰ্কীয় ছেটিংসমূহ</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">সকলো ডাউনল\'ড কৰা মাঙ্গা মচি পাবলৈ</string>
     <string name="purge_novel_downloads_desc">সকলো ডাউনল\'ড কৰা উপন্যাস মচি পাবলৈ</string>
     <string name="include_list_desc">মাঙ্গা অনুসন্ধান পৃষ্ঠাত তালিকাৰ আইটেমসমূহ সম্মিলিত কৰক</string>

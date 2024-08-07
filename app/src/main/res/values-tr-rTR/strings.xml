@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Yöneticide uzantı simgelerini yükleme</string>
     <string name="NSFWExtention_desc">Yetişkin içeriğe sahip herhangi bir uzantıyı devre dışı bırakma</string>
     <string name="reader_settings_desc">Tüm Okuyucu ile ilgili ayarlar</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Tüm indirilen Manga\'ları sil</string>
     <string name="purge_novel_downloads_desc">Tüm indirilen Romanları sil</string>
     <string name="include_list_desc">Manga keşfetme sayfasında liste öğelerini dahil et</string>

@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Nie wczytuj ikon rozszerzenia w menedżerze</string>
     <string name="NSFWExtention_desc">Wyłączenie blokowania wszelkich rozszerzeń z dowolną zawartością 18+</string>
     <string name="reader_settings_desc">Wszystkie ustawienia związane z czytnikiem</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Usuń wszystkie pobrane Manga</string>
     <string name="purge_novel_downloads_desc">Usuń wszystkie pobrane Novels</string>
     <string name="include_list_desc">Dołącz elementy listy na stronie eksploracji Manga</string>

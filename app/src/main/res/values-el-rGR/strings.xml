@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Μην φορτώνετε εικονίδια επεκτάσεων στη σελίδα επέκτασης</string>
     <string name="NSFWExtention_desc">Κατάργηση 18+ επεκτάσεων από την αναζήτηση (Μπορεί να αφαιρεθούν ορισμένες χρήσιμες επεκτάσεις)</string>
     <string name="reader_settings_desc">Όλες οι ρυθμίσεις που σχετίζονται με τον Αναγνώστη</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Διαγραφή όλων των ληφθέντων Manga</string>
     <string name="purge_novel_downloads_desc">Διαγραφή όλων των ληφθέντων Μυθιστορημάτων</string>
     <string name="include_list_desc">Συμπεριλάβετε στοιχεία λίστας στη σελίδα εξερεύνησης Manga</string>

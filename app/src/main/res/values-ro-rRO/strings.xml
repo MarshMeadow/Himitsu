@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Nu încărca pictogramele extensiei în manager</string>
     <string name="NSFWExtention_desc">Dezactivarea blochează orice extensie cu orice conținut 18+</string>
     <string name="reader_settings_desc">Toate setările legate de cititor</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Şterge toate descărcările de manga</string>
     <string name="purge_novel_downloads_desc">Șterge toate Notițele descărcate</string>
     <string name="include_list_desc">Include elemente de listă în pagina de explorare Manga</string>

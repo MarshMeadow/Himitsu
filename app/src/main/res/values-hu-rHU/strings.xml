@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Ne töltse be a kiterjesztés ikonjait az üzemeltetőben</string>
     <string name="NSFWExtention_desc">A letiltás megakadályozza az összes 18+ tartalmú kiterjesztés betöltését</string>
     <string name="reader_settings_desc">Az összes Olvasóhoz kapcsolódó beállítás</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Az összes letöltött Manga törlése</string>
     <string name="purge_novel_downloads_desc">Az összes letöltött Novella törlése</string>
     <string name="include_list_desc">Listaelemek belefoglalása a Manga felfedező oldalba</string>

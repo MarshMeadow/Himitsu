@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Don\'t load icons of extensions on the extension page</string>
     <string name="NSFWExtention_desc">Remove 18+ extensions from search (May remove some useful extensions)</string>
     <string name="reader_settings_desc">모든 Reader 관련 설정</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">다운로드된 모든 만화 삭제</string>
     <string name="purge_novel_downloads_desc">다운로드된 모든 소설 삭제</string>
     <string name="include_list_desc">만화 탐색 페이지에 목록 항목 포함</string>

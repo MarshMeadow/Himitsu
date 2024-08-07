@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">Extensiepictogrammen niet laden in manager</string>
     <string name="NSFWExtention_desc">Blokkeert elke uitbreiding met 18+ inhoud</string>
     <string name="reader_settings_desc">Alle instellingen voor de Reader</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Verwijder alle gedownloade Manga</string>
     <string name="purge_novel_downloads_desc">Alle gedownloade Novels verwijderen</string>
     <string name="include_list_desc">Lijstitems opnemen in Manga verkenner pagina</string>

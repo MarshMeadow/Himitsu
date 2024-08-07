@@ -944,6 +944,8 @@
     <string name="skip_loading_extension_icons_desc">No carreguis icones d\'extensió al gestor</string>
     <string name="NSFWExtention_desc">La desactivació bloqueja qualsevol extensió amb contingut per adults</string>
     <string name="reader_settings_desc">Tots els ajustos relacionats amb el Lector</string>
+    <string name="comic_format">Download Manga as CBZ</string>
+    <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="purge_manga_downloads_desc">Esborra tot el Manga descarregat</string>
     <string name="purge_novel_downloads_desc">Esborra tots els Novel·les descarregats</string>
     <string name="include_list_desc">Inclou elements de llista a la pàgina d\'exploració de Manga</string>
