@@ -172,7 +172,6 @@ class NovelReaderActivity : AppCompatActivity(), EbookReaderEventListener {
             return
         }
 
-
         ThemeManager(this).applyTheme()
         binding = ActivityMangaReaderBinding.inflate(layoutInflater).apply {
             bookReader.isVisible = true
@@ -180,6 +179,8 @@ class NovelReaderActivity : AppCompatActivity(), EbookReaderEventListener {
             edgeSwipeFramework.isGone = true
             mangaReaderPageNumber.isGone = true
             progress.isVisible = true
+            mangaReaderSlider.valueFrom = 0.0f
+            mangaReaderSlider.valueTo = 1.0f
         }
         setContentView(binding.root)
 
