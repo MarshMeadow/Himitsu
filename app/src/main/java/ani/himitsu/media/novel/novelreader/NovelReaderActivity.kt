@@ -179,8 +179,10 @@ class NovelReaderActivity : AppCompatActivity(), EbookReaderEventListener {
             edgeSwipeFramework.isGone = true
             mangaReaderPageNumber.isGone = true
             progress.isVisible = true
-            mangaReaderSlider.valueFrom = 0.0f
-            mangaReaderSlider.valueTo = 1.0f
+            mangaReaderSlider.run {
+                valueFrom = 0.0f
+                valueTo = 1.0f
+            }
         }
         setContentView(binding.root)
 
