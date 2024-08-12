@@ -72,7 +72,6 @@ class MangaReadAdapter(
         _binding = binding
         binding.sourceTitle.setText(R.string.chaps)
 
-        //Fuck u launch
         binding.faqbutton.setOnClickListener {
             val intent = Intent(fragment.requireContext(), FAQActivity::class.java)
             startActivity(fragment.requireContext(), intent, null)
