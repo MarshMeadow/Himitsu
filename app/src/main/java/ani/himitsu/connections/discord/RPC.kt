@@ -1,3 +1,18 @@
+/*
+ *   Copyright (c) 2023 Kizzy. All rights reserved.
+ *
+ *   Licensed under the Apache License, Version 2.0 (the "License");
+ *   you may not use this file except in compliance with the License.
+ *   You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *   Unless required by applicable law or agreed to in writing, software
+ *   distributed under the License is distributed on an "AS IS" BASIS,
+ *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *   See the License for the specific language governing permissions and
+ *   limitations under the License.
+ */
 package ani.himitsu.connections.discord
 
 import ani.himitsu.R
@@ -6,20 +21,19 @@ import ani.himitsu.connections.discord.serializers.Presence
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
 import bit.himitsu.nio.Strings.getString
+import eu.kanade.tachiyomi.network.awaitResume
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
-import kotlin.coroutines.CoroutineContext
-import ani.himitsu.client as app
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.OkHttpClient
+import okhttp3.Request
+import okhttp3.RequestBody.Companion.toRequestBody
+import java.util.concurrent.TimeUnit
 
 @Suppress("MemberVisibilityCanBePrivate")
-open class RPC(val token: String, val coroutineContext: CoroutineContext) {
-
-    private val json = Json {
-        encodeDefaults = true
-        allowStructuredMapKeys = true
-        ignoreUnknownKeys = true
-    }
+open class RPC(val token: String) {
 
     enum class Type {
         PLAYING, STREAMING, LISTENING, WATCHING, COMPETING
@@ -27,9 +41,17 @@ open class RPC(val token: String, val coroutineContext: CoroutineContext) {
 
     data class Link(val label: String, val url: String)
 
+    @Serializable
+    data class Asset(
+        @SerialName("external_asset_path")
+        val externalAssetPath: String? = null
+    )
+
     companion object {
+        private const val TIMEOUT = 15L
+
         data class RPCData(
-            val applicationId: String? = null,
+            val applicationId: String = Discord.application_Id,
             val type: Type? = null,
             val activityName: String? = null,
             val details: String? = null,
@@ -42,14 +64,24 @@ open class RPC(val token: String, val coroutineContext: CoroutineContext) {
             val buttons: MutableList<Link> = mutableListOf()
         )
 
-        @Serializable
-        data class KizzyApi(val id: String)
-
-        val api = "https://kizzy-api.vercel.app/image?url="
-        private suspend fun String.discordUrl(): String? {
-            if (startsWith("mp:")) return this
-            val json = app.get("$api$this").parsedSafe<KizzyApi>()
-            return json?.id
+        private suspend fun getDiscordImage(
+            token: String, data: RPCData, json: Json, imageUrl: String
+        ): String? {
+            if (imageUrl.startsWith("mp:")) return imageUrl
+            val request = Request.Builder()
+                .url("https://discord.com/api/v9/applications/${data.applicationId}/external-assets")
+                .header("Authorization", token)
+                .post("{\"urls\":[\"$imageUrl\"]}".toRequestBody("application/json".toMediaType()))
+                .build()
+            return runCatching {
+                val res = OkHttpClient.Builder()
+                    .connectTimeout(TIMEOUT, TimeUnit.SECONDS)
+                    .readTimeout(TIMEOUT, TimeUnit.SECONDS)
+                    .writeTimeout(TIMEOUT, TimeUnit.SECONDS)
+                    .build().newCall(request).awaitResume()
+                json.decodeFromString<List<Asset>>(res.body.string())
+                    .firstOrNull()?.externalAssetPath?.let { "mp:$it" }
+            }.getOrNull()
         }
 
         suspend fun createPresence(data: RPCData): String {
@@ -58,6 +90,11 @@ open class RPC(val token: String, val coroutineContext: CoroutineContext) {
                 allowStructuredMapKeys = true
                 ignoreUnknownKeys = true
             }
+
+            suspend fun String.discordUrl() = Discord.token?.let {
+                getDiscordImage(it, data, json, this)
+            }
+
             return json.encodeToString(Presence.Response(
                 3,
                 Presence(
@@ -96,7 +133,6 @@ open class RPC(val token: String, val coroutineContext: CoroutineContext) {
             ))
         }
     }
-
 }
 
 

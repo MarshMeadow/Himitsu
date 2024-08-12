@@ -18,7 +18,9 @@ import rx.Producer
 import rx.Subscription
 import java.io.IOException
 import java.util.concurrent.atomic.AtomicBoolean
+import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
+import kotlin.coroutines.suspendCoroutine
 
 val jsonMime = "application/json; charset=utf-8".toMediaType()
 
@@ -88,6 +90,20 @@ private suspend fun Call.await(callStack: Array<StackTraceElement>): Response {
                 // Ignore cancel exception
             }
         }
+    }
+}
+
+suspend fun Call.awaitResume(): Response {
+    return suspendCoroutine {
+        enqueue(object : Callback {
+            override fun onFailure(call: Call, ex: IOException) {
+                it.resumeWithException(ex)
+            }
+
+            override fun onResponse(call: Call, response: Response) {
+                it.resume(response)
+            }
+        })
     }
 }
 

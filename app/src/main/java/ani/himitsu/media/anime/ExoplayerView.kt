@@ -1429,7 +1429,6 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
                 }
                 val presence = RPC.createPresence(
                     RPC.Companion.RPCData(
-                        applicationId = Discord.application_Id,
                         type = RPC.Type.WATCHING,
                         activityName = media.userPreferredName,
                         details = episode.title?.takeIf { it.isNotEmpty() } ?: getString(

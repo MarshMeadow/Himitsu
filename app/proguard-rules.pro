@@ -176,6 +176,7 @@
 # Gson specific classes
 -dontwarn sun.misc.**
 #-keep class com.google.gson.stream.** { *; }
+-keep class com.google.gson.internal.LinkedTreeMap { *; } 
 
 # Application classes that will be serialized/deserialized over Gson
 -keep class eu.kanade.** { <fields>; }

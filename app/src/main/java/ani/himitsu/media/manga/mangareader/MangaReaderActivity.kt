@@ -217,7 +217,6 @@ class MangaReaderActivity : AppCompatActivity() {
                 }
                 val presence = RPC.createPresence(
                     RPC.Companion.RPCData(
-                        applicationId = Discord.application_Id,
                         type = RPC.Type.WATCHING,
                         activityName = media.userPreferredName,
                         details = chapter.title?.takeIf { it.isNotEmpty() }
