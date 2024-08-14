@@ -276,20 +276,20 @@
     <string name="home_layout_show">Afficher/Masquer les mises en page sur l\'accueil</string>
     <string-array name="home_layouts">
         <item>Subscriptions</item>
-        <item>Continue Watching</item>
-        <item>Favourite Anime</item>
-        <item>Planned Anime</item>
-        <item>Continue Reading</item>
-        <item>Favourite Manga</item>
-        <item>Planned Manga</item>
-        <item>Recommended</item>
+        <item>Continuer le visionnage</item>
+        <item>Anime favoris</item>
+        <item>Anime prévus</item>
+        <item>Continuer la lecture</item>
+        <item>Manga favoris</item>
+        <item>Manga prévus</item>
+        <item>Recommandé</item>
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
     <string-array name="notification_type">
-        <item>All</item>
-        <item>Media</item>
-        <item>Social</item>
+        <item>Tous</item>
+        <item>Média</item>
+        <item>Réseaux sociaux</item>
         <item>User</item>
     </string-array>
     <string name="startUpTab">Onglet de démarrage par défaut</string>
@@ -1007,8 +1007,8 @@ Genre : "</string>
     <string name="download_audio_tracks">Download Audio Tracks</string>
     <string name="no_video_selected">No video selected</string>
     <string name="no_subtitles_available">No subtitles available</string>
-    <string name="all">All</string>
-    <string name="activity">Activity</string>
+    <string name="all">Tous</string>
+    <string name="activity">Activité</string>
     <string name="threads">Threads</string>
     <string name="contributor">Contributor</string>
     <string name="comment_mod">Comment Moderator</string>
@@ -1016,7 +1016,7 @@ Genre : "</string>
     <string name="biometric_summary">Require authentication to access HImitsu</string>
     <string name="biometric_details">Biometric authentication is required</string>
     <string name="biometric_error">Biometric Error: %1$s</string>
-    <string name="biometric_success">Welcome back!</string>
+    <string name="biometric_success">Bienvenue!</string>
     <string name="biometric_failed">Biometric Verification Failed!</string>
     <string name="reviews_empty">No %1$s Reviews</string>
     <string name="vote_out_of_total">(%1$s out of %2$s liked this review)</string>

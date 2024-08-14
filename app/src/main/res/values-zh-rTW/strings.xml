@@ -277,11 +277,11 @@
     <string-array name="home_layouts">
         <item>Subscriptions</item>
         <item>Continue Watching</item>
-        <item>Favourite Anime</item>
-        <item>Planned Anime</item>
+        <item>喜愛的動畫</item>
+        <item>計畫中的動畫</item>
         <item>Continue Reading</item>
-        <item>Favourite Manga</item>
-        <item>Planned Manga</item>
+        <item>喜愛的漫畫</item>
+        <item>計畫中的漫畫</item>
         <item>Recommended</item>
         <item>Social Feeds</item>
     </string-array>

@@ -277,11 +277,11 @@
     <string-array name="home_layouts">
         <item>Subscriptions</item>
         <item>Continue Watching</item>
-        <item>Favourite Anime</item>
-        <item>Planned Anime</item>
+        <item>Омиљени аниме</item>
+        <item>Планирано аниме</item>
         <item>Continue Reading</item>
-        <item>Favourite Manga</item>
-        <item>Planned Manga</item>
+        <item>Омиљени манга</item>
+        <item>Планирано манга</item>
         <item>Recommended</item>
         <item>Social Feeds</item>
     </string-array>

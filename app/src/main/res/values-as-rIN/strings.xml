@@ -276,20 +276,20 @@
     <string name="home_layout_show">হোমত লে’আ’উটসমূহ দেখুৱাওক/লুকুৱাওক</string>
     <string-array name="home_layouts">
         <item>Subscriptions</item>
-        <item>Continue Watching</item>
-        <item>Favourite Anime</item>
-        <item>Planned Anime</item>
-        <item>Continue Reading</item>
-        <item>Favourite Manga</item>
-        <item>Planned Manga</item>
-        <item>Recommended</item>
+        <item>দেখা অব্যাহত হোৱাটো</item>
+        <item>প্ৰিয়া অনুষ্ঠান</item>
+        <item>পূৰ্বধাৰিত অনুষ্ঠান</item>
+        <item>পঢ়া অব্যাহত হোৱাটো</item>
+        <item>প্ৰিয়া কলা</item>
+        <item>পূৰ্বধাৰিত কলা</item>
+        <item>পৰামৰ্শিত</item>
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
     <string-array name="notification_type">
-        <item>All</item>
-        <item>Media</item>
-        <item>Social</item>
+        <item>সকল</item>
+        <item>মিডিয়া</item>
+        <item>সামাজিক</item>
         <item>User</item>
     </string-array>
     <string name="startUpTab">ডিফ’ল্ট আৰম্ভ কৰা টেব</string>
@@ -897,12 +897,12 @@
     <string name="japan">Japan</string>
     <string name="taiwan">Taiwan</string>
     <string name="something">Something</string>
-    <string name="sort_score">Score</string>
-    <string name="popular">Popular</string>
-    <string name="trending">Trending</string>
-    <string name="new_releases">New Releases</string>
-    <string name="a_z">A-Z</string>
-    <string name="z_a">Z-A</string>
+    <string name="sort_score">শ্ৰেণী</string>
+    <string name="popular">জনপ্ৰিয়</string>
+    <string name="trending">প্ৰচলিত</string>
+    <string name="new_releases">এ-জে</string>
+    <string name="a_z">জে-এ</string>
+    <string name="z_a">সতনিৰ্ভুত কষ্ট</string>
     <string name="pure_pain">Pure Pain</string>
     <string name="add_a_comment">Add a comment…</string>
     <string name="type">Type</string>
@@ -1005,7 +1005,7 @@
     <string name="download_audio_tracks">Download Audio Tracks</string>
     <string name="no_video_selected">No video selected</string>
     <string name="no_subtitles_available">No subtitles available</string>
-    <string name="all">All</string>
+    <string name="all">সকল</string>
     <string name="activity">Activity</string>
     <string name="threads">Threads</string>
     <string name="contributor">Contributor</string>
