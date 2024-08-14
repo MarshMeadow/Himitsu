@@ -276,20 +276,20 @@
     <string name="home_layout_show">Vis/Skjul oppsett på startsiden</string>
     <string-array name="home_layouts">
         <item>Subscriptions</item>
-        <item>Continue Watching</item>
-        <item>Favourite Anime</item>
-        <item>Planned Anime</item>
-        <item>Continue Reading</item>
-        <item>Favourite Manga</item>
-        <item>Planned Manga</item>
-        <item>Recommended</item>
+        <item>Fortsett å se</item>
+        <item>Favoritt Anime</item>
+        <item>Planlagt Anime</item>
+        <item>Fortsett å lese</item>
+        <item>Favoritt Manga</item>
+        <item>Planlagt manga</item>
+        <item>Anbefalt</item>
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
     <string-array name="notification_type">
-        <item>All</item>
-        <item>Media</item>
-        <item>Social</item>
+        <item>Alle</item>
+        <item>Medier</item>
+        <item>Sosial</item>
         <item>User</item>
     </string-array>
     <string name="startUpTab">Standard start-opp fane</string>
@@ -1005,8 +1005,8 @@
     <string name="download_audio_tracks">Download Audio Tracks</string>
     <string name="no_video_selected">No video selected</string>
     <string name="no_subtitles_available">No subtitles available</string>
-    <string name="all">All</string>
-    <string name="activity">Activity</string>
+    <string name="all">Alle</string>
+    <string name="activity">Aktivitet</string>
     <string name="threads">Threads</string>
     <string name="contributor">Contributor</string>
     <string name="comment_mod">Comment Moderator</string>
@@ -1014,7 +1014,7 @@
     <string name="biometric_summary">Require authentication to access HImitsu</string>
     <string name="biometric_details">Biometric authentication is required</string>
     <string name="biometric_error">Biometric Error: %1$s</string>
-    <string name="biometric_success">Welcome back!</string>
+    <string name="biometric_success">Velkommen tilbake!</string>
     <string name="biometric_failed">Biometric Verification Failed!</string>
     <string name="reviews_empty">No %1$s Reviews</string>
     <string name="vote_out_of_total">(%1$s out of %2$s liked this review)</string>

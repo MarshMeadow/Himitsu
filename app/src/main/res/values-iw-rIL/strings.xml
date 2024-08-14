@@ -276,13 +276,13 @@
     <string name="home_layout_show">Show/Hide Layouts on Home</string>
     <string-array name="home_layouts">
         <item>Subscriptions</item>
-        <item>Continue Watching</item>
-        <item>Favourite Anime</item>
-        <item>Planned Anime</item>
-        <item>Continue Reading</item>
-        <item>Favourite Manga</item>
-        <item>Planned Manga</item>
-        <item>Recommended</item>
+        <item>המשך צפייה</item>
+        <item>אנימה מועדפת</item>
+        <item>אנימה מתוכננת</item>
+        <item>המשך קריאה</item>
+        <item>מנגה מועדפת</item>
+        <item>מנגה מתוכננת</item>
+        <item>מומלצים</item>
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
