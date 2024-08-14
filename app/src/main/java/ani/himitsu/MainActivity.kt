@@ -450,7 +450,7 @@ class MainActivity : AppCompatActivity() {
                     if (!(PrefManager.getVal<Boolean>(PrefName.AllowOpeningLinks))) {
                         CustomBottomDialog.newInstance().apply {
                             title = this@MainActivity.getString(R.string.auto_open_links)
-                            val md = "Open settings & click +Add Links & select Anilist & Mal urls"
+                            val md = this@MainActivity.getString(R.string.auto_open_links_desc)
                             addView(TextView(this@MainActivity).apply {
                                 val markWon =
                                     Markwon.builder(this@MainActivity)
