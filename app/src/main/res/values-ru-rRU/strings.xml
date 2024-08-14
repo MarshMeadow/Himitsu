@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="ru">
-    <string name="slogan">We who shall not be named.</string>
     <string name="login">Вход</string>
     <string name="logout">Выход</string>
-    <string name="anilist_login">AniList Login for Himitsu</string>
-    <string name="mal_login">MyAnimeList Login for Himitsu</string>
-    <string name="discord_login">Discord Login for Himitsu</string>
-    <string name="extension_notice">Himitsu is a BYOR Service</string>
-    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">С возвращением!</string>
     <string name="conversion_message">Похоже, у вас установлен более старый пакет.\nПожалуйста, выберите \"Резервное копирование\", чтобы открыть старую версию и выполнить резервное копирование. Затем вы сможете вернуться к этому приложению и использовать \"Восстановление настроек\".</string>
     <string name="backup">Резервное копирование</string>
@@ -174,7 +168,6 @@
     <string name="noSdFound">SD-карта не найдена.</string>
     <string name="reader_settings">Настройки чтения</string>
     <string name="default_source">Источник по умолчанию</string>
-    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">Интерфейс меню эпизода по умолчанию</string>
     <string name="default_chp_view">Интерфейс меню главы по умолчанию</string>
     <string name="ui">Пользовательский интерфейс</string>
@@ -293,7 +286,6 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
-    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>All</item>
         <item>Media</item>
@@ -303,9 +295,6 @@
     <string name="startUpTab">Вкладка при запуске по умолчанию</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
-    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
-    <string name="random_recommended">Hide Home Random</string>
-    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">Маленькая секция популярных шоу</string>
     <string name="trailer_banners">Используйте трейлер как баннер</string>
     <string name="animations">Анимации</string>
@@ -313,8 +302,6 @@
     <string name="layout_animations">Анимации макета</string>
     <string name="trending_scroller">Популярный прокрутка</string>
     <string name="animation_speed">Общая скорость</string>
-    <string name="empty_fav">Try adding something to keep it here.</string>
-    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">Любимое аниме</string>
     <string name="fav_manga">Любимая манга</string>
     <string name="restart_app">Перезапустить приложение?</string>

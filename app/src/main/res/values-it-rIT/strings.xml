@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="it">
-    <string name="slogan">We who shall not be named.</string>
     <string name="login">Login</string>
     <string name="logout">Esci</string>
-    <string name="anilist_login">AniList Login for Himitsu</string>
-    <string name="mal_login">MyAnimeList Login for Himitsu</string>
-    <string name="discord_login">Discord Login for Himitsu</string>
-    <string name="extension_notice">Himitsu is a BYOR Service</string>
-    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Bentornato!</string>
     <string name="conversion_message">Sembra che tu abbia un vecchio pacchetto installato.\nSeleziona \"Backup\" per aprire la versione precedente ed eseguire un backup. È quindi possibile tornare a questa app e utilizzare \"Ripristina impostazioni\".</string>
     <string name="backup">Backup</string>
@@ -174,7 +168,6 @@
     <string name="noSdFound">Non è stata trovata alcuna scheda SD.</string>
     <string name="reader_settings">Impostazioni del Lettore</string>
     <string name="default_source">Fonte Predefinita</string>
-    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">Layout Predefinito dell\'Episodio</string>
     <string name="default_chp_view">Impostazioni Predefinite dei Capitoli</string>
     <string name="ui">Interfaccia Utente</string>
@@ -293,7 +286,6 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
-    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>All</item>
         <item>Media</item>
@@ -303,9 +295,6 @@
     <string name="startUpTab">Scheda Di Avvio Predefinita</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
-    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
-    <string name="random_recommended">Hide Home Random</string>
-    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">Piccola vista negli spettacoli di tendenza</string>
     <string name="trailer_banners">Usa Trailer come Banner</string>
     <string name="animations">Animazioni</string>
@@ -313,8 +302,6 @@
     <string name="layout_animations">Animazioni Di Layout</string>
     <string name="trending_scroller">Scorrimento Di Tendenza</string>
     <string name="animation_speed">Velocità Globale</string>
-    <string name="empty_fav">Try adding something to keep it here.</string>
-    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">Anime Preferito</string>
     <string name="fav_manga">Manga Preferita</string>
     <string name="restart_app">Riavviare l\'app?</string>

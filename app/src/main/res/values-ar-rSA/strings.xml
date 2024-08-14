@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="ar">
-    <string name="slogan">We who shall not be named.</string>
     <string name="login">تسجيل الدخول</string>
     <string name="logout">تسجيل الخروج</string>
-    <string name="anilist_login">AniList Login for Himitsu</string>
-    <string name="mal_login">MyAnimeList Login for Himitsu</string>
-    <string name="discord_login">Discord Login for Himitsu</string>
-    <string name="extension_notice">Himitsu is a BYOR Service</string>
-    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">مرحبا بعودتك!</string>
     <string name="conversion_message">يبدو أن لديك حزمة قديمة مثبتة.\nيرجى تحديد \"النسخ الاحتياطي\" لفتح الإصدار القديم وإجراء نسخة احتياطية. يمكنك بعد ذلك العودة إلى هذا التطبيق واستخدام \"استعادة الإعدادات\".</string>
     <string name="backup">النسخ الاحتياطي</string>
@@ -174,7 +168,6 @@
     <string name="noSdFound">لم يتم العثور علي SD Card.</string>
     <string name="reader_settings">إعدادات القراءة</string>
     <string name="default_source">المصدر الافتراضي</string>
-    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">الشكل الافتراضي للحلقة</string>
     <string name="default_chp_view">الشكل الافتراضي للفصل</string>
     <string name="ui">واجهة المستخدم</string>
@@ -293,7 +286,6 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
-    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>All</item>
         <item>Media</item>
@@ -303,9 +295,6 @@
     <string name="startUpTab">الصفحة الافتراضية عند التشغيل</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
-    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
-    <string name="random_recommended">Hide Home Random</string>
-    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">عرض صغير في العروض الشائعة</string>
     <string name="trailer_banners">استخدم المقطورة كشعار</string>
     <string name="animations">الحركة (الانيميشن)</string>
@@ -313,8 +302,6 @@
     <string name="layout_animations">حركة واجهة الاستخدام</string>
     <string name="trending_scroller">العرض التلقائي للعناصر الشائعة</string>
     <string name="animation_speed">سرعة الحركة</string>
-    <string name="empty_fav">Try adding something to keep it here.</string>
-    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">الانمي المفضل</string>
     <string name="fav_manga">المانجا المفضلة</string>
     <string name="restart_app">تعيد تشغيل التطبيق؟</string>

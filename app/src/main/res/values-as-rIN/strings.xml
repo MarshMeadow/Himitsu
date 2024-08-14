@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="as">
-    <string name="slogan">We who shall not be named.</string>
     <string name="login">লগইন</string>
     <string name="logout">লগআউট</string>
-    <string name="anilist_login">AniList Login for Himitsu</string>
-    <string name="mal_login">MyAnimeList Login for Himitsu</string>
-    <string name="discord_login">Discord Login for Himitsu</string>
-    <string name="extension_notice">Himitsu is a BYOR Service</string>
-    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Welcome back!</string>
     <string name="conversion_message">It appears you have an older package installed.\nPlease select \"Backup\" to open the older version and perform a backup. You can then return to this app and use \"Restore Settings\".</string>
     <string name="backup">Backup</string>
@@ -174,7 +168,6 @@
     <string name="noSdFound">কোনো SD কাৰ্ড পোৱা নাই।</string>
     <string name="reader_settings">পঠন চেটিংসমূহ</string>
     <string name="default_source">ডিফল্ট উৎস</string>
-    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">ডিফল্ট এপিষদ বিন্যাস</string>
     <string name="default_chp_view">ডিফল্ট চাপ্তেৰ বিন্যাস</string>
     <string name="ui">ইউজাৰ ইন্টাৰফেচ</string>
@@ -293,7 +286,6 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
-    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>All</item>
         <item>Media</item>
@@ -303,9 +295,6 @@
     <string name="startUpTab">ডিফ’ল্ট আৰম্ভ কৰা টেব</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
-    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
-    <string name="random_recommended">Hide Home Random</string>
-    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">সৰ্বাধিক সাধাৰণ অনুষ্ঠানত ছোট দৃশ্য</string>
     <string name="trailer_banners">Use Trailer as Banner</string>
     <string name="animations">এনিমেছনসমূহ</string>
@@ -313,8 +302,6 @@
     <string name="layout_animations">লে’আ’উট এনিমেছন</string>
     <string name="trending_scroller">ট্ৰেণ্ডিং স্ক্ৰোলাৰ</string>
     <string name="animation_speed">সামগ্ৰিক গতি</string>
-    <string name="empty_fav">Try adding something to keep it here.</string>
-    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">প্ৰিয়া অনুষ্ঠান</string>
     <string name="fav_manga">প্ৰিয়া কলা</string>
     <string name="restart_app">এপ পুনঃআৰম্ভ কৰিব?</string>

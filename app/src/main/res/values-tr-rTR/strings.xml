@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="tr">
-    <string name="slogan">We who shall not be named.</string>
     <string name="login">Oturum Aç</string>
     <string name="logout">Çıkış Yap</string>
     <string name="anilist_login">AniList Login for Himitsu</string>
     <string name="mal_login">MyAnimeList Login for Himitsu</string>
     <string name="discord_login">Discord Login for Himitsu</string>
-    <string name="extension_notice">Himitsu is a BYOR Service</string>
-    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Tekrar Hoş Geldiniz!</string>
     <string name="conversion_message">Eski bir paketiniz olduğu görünüyor.\nLütfen \"Yedekle\" seçeneğini seçerek eski sürümü açın ve yedekleme işlemi yapın. Daha sonra bu uygulamaya geri dönüp \"Ayarları Geri Yükle\" seçeneğini kullanabilirsiniz.</string>
     <string name="backup">Yedekle</string>
@@ -174,7 +171,6 @@
     <string name="noSdFound">SD kart bulunamadı.</string>
     <string name="reader_settings">Okuyucu Ayarları</string>
     <string name="default_source">Varsayılan Kaynak</string>
-    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">Varsayılan Bölüm Düzeni</string>
     <string name="default_chp_view">Varsayılan Bölüm Düzeni</string>
     <string name="ui">Kullanıcı Arayüzü</string>
@@ -293,7 +289,6 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
-    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>All</item>
         <item>Media</item>
@@ -303,9 +298,6 @@
     <string name="startUpTab">Varsayılan Başlangıç Sekmesi</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
-    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
-    <string name="random_recommended">Hide Home Random</string>
-    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">Trend Olan Gösterilerde Küçük Görünüm</string>
     <string name="trailer_banners">Banner Olarak Römork Kullan</string>
     <string name="animations">Animasyonlar</string>
@@ -313,8 +305,6 @@
     <string name="layout_animations">Düzen Animasyonları</string>
     <string name="trending_scroller">Trend Olan Kaydırıcı</string>
     <string name="animation_speed">Genel Hız</string>
-    <string name="empty_fav">Try adding something to keep it here.</string>
-    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">Favori Anime</string>
     <string name="fav_manga">Favori Manga</string>
     <string name="restart_app">Uygulamayı yeniden başlatmak mı?</string>

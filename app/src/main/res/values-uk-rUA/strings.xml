@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="uk">
-    <string name="slogan">We who shall not be named.</string>
     <string name="login">Увійти</string>
     <string name="logout">Вихід із системи</string>
-    <string name="anilist_login">AniList Login for Himitsu</string>
-    <string name="mal_login">MyAnimeList Login for Himitsu</string>
     <string name="discord_login">Discord Login for Himitsu</string>
-    <string name="extension_notice">Himitsu is a BYOR Service</string>
-    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">З поверненням!</string>
     <string name="conversion_message">Здається, встановлено стару версію пакета.\nБудь ласка, виберіть \"Резервне копіювання\", щоб відкрити попередню версію та виконати резервне копіювання. Після цього ви можете повернутися до цього додатка та використовувати \"Відновлення налаштувань\".</string>
     <string name="backup">Резервне копіювання</string>
@@ -174,7 +169,6 @@
     <string name="noSdFound">SD карта не була знайдена.</string>
     <string name="reader_settings">Параметри читання</string>
     <string name="default_source">Джерело за промовчанням</string>
-    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">Типовий макет епізоду</string>
     <string name="default_chp_view">Стандартний макет Глави</string>
     <string name="ui">Інтерфейс користувача</string>
@@ -293,7 +287,6 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
-    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>All</item>
         <item>Media</item>
@@ -303,9 +296,6 @@
     <string name="startUpTab">За промовчанням Початкова Вкладка</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
-    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
-    <string name="random_recommended">Hide Home Random</string>
-    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">Вид у актуальних повідомленнях</string>
     <string name="trailer_banners">Використовуйте трейлер як банер</string>
     <string name="animations">Анімація</string>
@@ -313,8 +303,6 @@
     <string name="layout_animations">Анімація макету</string>
     <string name="trending_scroller">Популярна прокрутка</string>
     <string name="animation_speed">Загальна швидкість</string>
-    <string name="empty_fav">Try adding something to keep it here.</string>
-    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">Вибраний аніме</string>
     <string name="fav_manga">Улюблена манга</string>
     <string name="restart_app">Перезавантажити програму?</string>

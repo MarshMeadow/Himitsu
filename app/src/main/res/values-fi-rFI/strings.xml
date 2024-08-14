@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fi">
-    <string name="slogan">We who shall not be named.</string>
     <string name="login">Kirjaudu Sisään</string>
     <string name="logout">Kirjaudu Ulos</string>
-    <string name="anilist_login">AniList Login for Himitsu</string>
-    <string name="mal_login">MyAnimeList Login for Himitsu</string>
-    <string name="discord_login">Discord Login for Himitsu</string>
-    <string name="extension_notice">Himitsu is a BYOR Service</string>
-    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Tervetuloa takaisin!</string>
     <string name="conversion_message">Näyttää siltä, että sinulla on vanhempi paketti.\nValitse \"Varmuuskopio\" avataksesi vanhemman version ja suorittaaksesi varmuuskopion. Tämän jälkeen voit palata tähän sovellukseen ja käyttää \"Palauta asetukset\".</string>
     <string name="backup">Varmuuskopio</string>
@@ -174,7 +168,6 @@
     <string name="noSdFound">SD-korttia ei löytynyt.</string>
     <string name="reader_settings">Lukijan Asetukset</string>
     <string name="default_source">Oletus Lähde</string>
-    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">Jakson Oletusasettelu</string>
     <string name="default_chp_view">Oletus Kappaleen Asettelu</string>
     <string name="ui">Käyttöliittymä</string>
@@ -293,7 +286,6 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
-    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>All</item>
         <item>Media</item>
@@ -303,9 +295,6 @@
     <string name="startUpTab">Oletus Käynnistysvälilehti</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
-    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
-    <string name="random_recommended">Hide Home Random</string>
-    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">Pieni näkymä trendissä</string>
     <string name="trailer_banners">Käytä Traileria Bannerina</string>
     <string name="animations">Animaatiot</string>
@@ -313,8 +302,6 @@
     <string name="layout_animations">Asettelun Animaatiot</string>
     <string name="trending_scroller">Nousussa Vieritä</string>
     <string name="animation_speed">Yleinen Nopeus</string>
-    <string name="empty_fav">Try adding something to keep it here.</string>
-    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">Suosikki Anime</string>
     <string name="fav_manga">Suosikki Manga</string>
     <string name="restart_app">Käynnistä sovellus uudelleen?</string>

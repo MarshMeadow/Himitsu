@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="af">
-    <string name="slogan">We who shall not be named.</string>
     <string name="login">Teken In</string>
     <string name="logout">Teken Uit</string>
-    <string name="anilist_login">AniList Login for Himitsu</string>
-    <string name="mal_login">MyAnimeList Login for Himitsu</string>
-    <string name="discord_login">Discord Login for Himitsu</string>
-    <string name="extension_notice">Himitsu is a BYOR Service</string>
-    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Welkom terug!</string>
     <string name="conversion_message">Dit lyk asof jy \'n ouer pakket geïnstalleer het.\nKies asseblief \"Rugsteun\" om die oudere weergawe te open en \'n rugsteun uit te voer. Jy kan dan terugkeer na hierdie program en \"Herstel Instellings\" gebruik.</string>
     <string name="backup">Rugsteun</string>
@@ -174,7 +168,6 @@
     <string name="noSdFound">Geen SD-kaart gevind nie.</string>
     <string name="reader_settings">Leeserinstellings</string>
     <string name="default_source">Standaard Bron</string>
-    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">Standaard Aflevering Uitleg</string>
     <string name="default_chp_view">Standaard Hoofstuk Uitleg</string>
     <string name="ui">Gebruikerskoppelvlak</string>
@@ -293,7 +286,6 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
-    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>All</item>
         <item>Media</item>
@@ -303,9 +295,6 @@
     <string name="startUpTab">Standaard Aanvangsblad</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
-    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
-    <string name="random_recommended">Hide Home Random</string>
-    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">Klein aansig in Tendensvertonings</string>
     <string name="trailer_banners">Gebruik Trailer as Banier</string>
     <string name="animations">Animasies</string>
@@ -313,8 +302,6 @@
     <string name="layout_animations">Uitleganimasies</string>
     <string name="trending_scroller">Tendensskuifbalk</string>
     <string name="animation_speed">Algehele Spoed</string>
-    <string name="empty_fav">Try adding something to keep it here.</string>
-    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">Gunsteling-anime</string>
     <string name="fav_manga">Gunsteling-manga</string>
     <string name="restart_app">Herlaai die toep?</string>

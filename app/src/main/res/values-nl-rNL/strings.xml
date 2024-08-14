@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="nl">
-    <string name="slogan">We who shall not be named.</string>
     <string name="login">Login</string>
     <string name="logout">Afmelden</string>
-    <string name="anilist_login">AniList Login for Himitsu</string>
-    <string name="mal_login">MyAnimeList Login for Himitsu</string>
-    <string name="discord_login">Discord Login for Himitsu</string>
-    <string name="extension_notice">Himitsu is a BYOR Service</string>
-    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Welkom terug!</string>
     <string name="conversion_message">Het lijkt erop dat je een ouder pakket hebt geïnstalleerd.\nSelecteer \"Backup\" om de oudere versie te openen en een back-up te maken. U kunt dan terugkeren naar deze app en \"Herstel Instellingen\" gebruiken.</string>
     <string name="backup">Back-up</string>
@@ -174,7 +168,6 @@
     <string name="noSdFound">Er was geen SD-kaart gevonden.</string>
     <string name="reader_settings">Lezer Instellingen</string>
     <string name="default_source">Standaard bron</string>
-    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">Standaard aflevering lay-out</string>
     <string name="default_chp_view">Standaard hoofdstuk lay-out</string>
     <string name="ui">Gebruikers Interface</string>
@@ -293,7 +286,6 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
-    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>All</item>
         <item>Media</item>
@@ -303,9 +295,6 @@
     <string name="startUpTab">Standaard Start Tab</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
-    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
-    <string name="random_recommended">Hide Home Random</string>
-    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">Kleine weergave in populaire TV-series</string>
     <string name="trailer_banners">Gebruik Trailer als Banner</string>
     <string name="animations">Animaties</string>
@@ -313,8 +302,6 @@
     <string name="layout_animations">Lay-out animaties</string>
     <string name="trending_scroller">Populaire Scroller</string>
     <string name="animation_speed">Totale snelheid</string>
-    <string name="empty_fav">Try adding something to keep it here.</string>
-    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">Favoriete Anime</string>
     <string name="fav_manga">Favoriete Manga</string>
     <string name="restart_app">De app herstarten?</string>

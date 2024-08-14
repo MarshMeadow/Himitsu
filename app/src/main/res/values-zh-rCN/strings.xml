@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="zh-rCN">
-    <string name="slogan">We who shall not be named.</string>
     <string name="login">登录</string>
     <string name="logout">登出</string>
-    <string name="anilist_login">AniList Login for Himitsu</string>
-    <string name="mal_login">MyAnimeList Login for Himitsu</string>
-    <string name="discord_login">Discord Login for Himitsu</string>
-    <string name="extension_notice">Himitsu is a BYOR Service</string>
-    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">欢迎回来！</string>
     <string name="conversion_message">看起来您安装了一个旧版本的软件包。\n请选择“备份”以打开旧版本并执行备份。然后您可以返回此应用程序并使用“恢复设置”。</string>
     <string name="backup">备份</string>
@@ -174,7 +168,6 @@
     <string name="noSdFound">未找到 SD 卡。</string>
     <string name="reader_settings">阅读器设置</string>
     <string name="default_source">默认来源</string>
-    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">默认集数布局</string>
     <string name="default_chp_view">默认章节布局</string>
     <string name="ui">用户界面</string>
@@ -293,7 +286,6 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
-    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>All</item>
         <item>Media</item>
@@ -303,9 +295,6 @@
     <string name="startUpTab">默认启动选项卡</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
-    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
-    <string name="random_recommended">Hide Home Random</string>
-    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">在热门节目中显示小视图</string>
     <string name="trailer_banners">将预告片用作横幅</string>
     <string name="animations">动画</string>
@@ -313,8 +302,6 @@
     <string name="layout_animations">布局动画</string>
     <string name="trending_scroller">热门滚动</string>
     <string name="animation_speed">整体速度</string>
-    <string name="empty_fav">Try adding something to keep it here.</string>
-    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">喜欢的动画</string>
     <string name="fav_manga">喜欢的漫画</string>
     <string name="restart_app">重新启动应用程序？</string>
