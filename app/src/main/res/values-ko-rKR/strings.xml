@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="ko">
+    <string name="slogan">We who shall not be named.</string>
     <string name="login">로그인</string>
     <string name="logout">로그아웃</string>
+    <string name="anilist_login">AniList Login for Himitsu</string>
+    <string name="mal_login">MyAnimeList Login for Himitsu</string>
+    <string name="discord_login">Discord Login for Himitsu</string>
+    <string name="extension_notice">Himitsu is a BYOR Service</string>
+    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">다시 오신 것을 환영합니다!</string>
     <string name="conversion_message">이전 버전이 설치되어 있는 것으로 보입니다.\n이전 버전을 열고 백업을 수행하려면 \"백업\"을 선택하십시오. 그런 다음이 앱으로 돌아와서 \"설정 복원\"을 사용할 수 있습니다.</string>
     <string name="backup">백업</string>
@@ -168,6 +174,7 @@
     <string name="noSdFound">SD 카드를 찾을 수 없습니다.</string>
     <string name="reader_settings">리더 설정</string>
     <string name="default_source">기본 소스</string>
+    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">기본 에피소드 레이아웃</string>
     <string name="default_chp_view">기본 챕터 레이아웃</string>
     <string name="ui">사용자 인터페이스</string>
@@ -286,6 +293,7 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
+    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>모두</item>
         <item>미디어</item>
@@ -295,6 +303,9 @@
     <string name="startUpTab">기본 시작 탭</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
+    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
+    <string name="random_recommended">Hide Home Random</string>
+    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">인기 있는 쇼에서 작은 보기</string>
     <string name="trailer_banners">배너로 사용할 트레일러</string>
     <string name="animations">애니메이션</string>
@@ -302,6 +313,8 @@
     <string name="layout_animations">레이아웃 애니메이션</string>
     <string name="trending_scroller">인기 있는 스크롤러</string>
     <string name="animation_speed">전체 속도</string>
+    <string name="empty_fav">Try adding something to keep it here.</string>
+    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">좋아하는 애니메이션</string>
     <string name="fav_manga">좋아하는 만화</string>
     <string name="restart_app">앱을 다시 시작하시겠습니까?</string>

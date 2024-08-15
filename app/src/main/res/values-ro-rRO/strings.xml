@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="ro">
+    <string name="slogan">We who shall not be named.</string>
     <string name="login">Conectare în cont</string>
     <string name="logout">Deconectare</string>
+    <string name="anilist_login">AniList Login for Himitsu</string>
+    <string name="mal_login">MyAnimeList Login for Himitsu</string>
+    <string name="discord_login">Discord Login for Himitsu</string>
+    <string name="extension_notice">Himitsu is a BYOR Service</string>
+    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Bine ai revenit!</string>
     <string name="conversion_message">Se pare că aveți un pachet mai vechi instalat.\nSelectați \"Backup\" pentru a deschide versiunea mai veche și a efectua o copie de rezervă. Poți apoi să te întorci la această aplicație și să folosești \"Restaurează Setările\".</string>
     <string name="backup">Backup</string>
@@ -168,6 +174,7 @@
     <string name="noSdFound">Nu a fost găsit niciun card SD.</string>
     <string name="reader_settings">Setări cititor</string>
     <string name="default_source">Sursa Implicită</string>
+    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">Aspect Episod implicit</string>
     <string name="default_chp_view">Structura implicita a capitolului</string>
     <string name="ui">Interfață utilizator</string>
@@ -286,6 +293,7 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
+    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>Toate</item>
         <item>Media</item>
@@ -295,6 +303,9 @@
     <string name="startUpTab">Fila de pornire implicită</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
+    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
+    <string name="random_recommended">Hide Home Random</string>
+    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">Vizualizare mică în emisiuni populare</string>
     <string name="trailer_banners">Folosiți Trailerul ca Banner</string>
     <string name="animations">Animații</string>
@@ -302,6 +313,8 @@
     <string name="layout_animations">Animații aspect</string>
     <string name="trending_scroller">Papirus popular</string>
     <string name="animation_speed">Viteza Globală</string>
+    <string name="empty_fav">Try adding something to keep it here.</string>
+    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">Anime preferate</string>
     <string name="fav_manga">Manga favorită</string>
     <string name="restart_app">Reporniți aplicația?</string>

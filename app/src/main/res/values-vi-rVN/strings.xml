@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="vi">
+    <string name="slogan">We who shall not be named.</string>
     <string name="login">Đăng nhập</string>
     <string name="logout">Đăng xuất</string>
+    <string name="anilist_login">AniList Login for Himitsu</string>
+    <string name="mal_login">MyAnimeList Login for Himitsu</string>
+    <string name="discord_login">Discord Login for Himitsu</string>
+    <string name="extension_notice">Himitsu is a BYOR Service</string>
+    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
     <string name="conversion_title">Chào mừng trở lại!</string>
     <string name="conversion_message">Có vẻ như bạn đã cài đặt một phiên bản cũ hơn.\nVui lòng chọn \"Sao lưu\" để mở phiên bản cũ hơn và thực hiện sao lưu. Sau đó, bạn có thể quay lại ứng dụng này và sử dụng \"Khôi phục cài đặt\".</string>
     <string name="backup">Sao lưu</string>
@@ -168,6 +174,7 @@
     <string name="noSdFound">Không tìm thấy thẻ SD.</string>
     <string name="reader_settings">Cài đặt Đọc giả</string>
     <string name="default_source">Nguồn Mặc Định</string>
+    <string name="show_yt">Show Streaming Links</string>
     <string name="default_ep_view">Bố Cục Tập Mặc Định</string>
     <string name="default_chp_view">Bố Cục Chương Mặc Định</string>
     <string name="ui">Giao Diện Người Dùng</string>
@@ -286,6 +293,7 @@
         <item>Social Feeds</item>
     </string-array>
     <string name="notification_page">Default Notification Tab</string>
+    <string name="notification_page_desc">Select the start tab for notifications</string>
     <string-array name="notification_type">
         <item>Tất cả</item>
         <item>Phương tiện truyền thông</item>
@@ -295,6 +303,9 @@
     <string name="startUpTab">Tab Khởi đầu Mặc định</string>
     <string name="floating_avatar">Floating Avatar Button</string>
     <string name="hide_home_main">Acute OCD Home</string>
+    <string name="hide_home_main_desc">All layouts are uniformly positioned</string>
+    <string name="random_recommended">Hide Home Random</string>
+    <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">Xem Nhỏ trong Các chương trình đang thịnh hành</string>
     <string name="trailer_banners">Sử dụng Trailer làm Banner</string>
     <string name="animations">Hoạt hình</string>
@@ -302,6 +313,8 @@
     <string name="layout_animations">Hoạt hình Bố cục</string>
     <string name="trending_scroller">Cuộn Thịnh hành</string>
     <string name="animation_speed">Tốc độ Tổng thể</string>
+    <string name="empty_fav">Try adding something to keep it here.</string>
+    <string name="no_suggestions">We\'re still getting to know you.</string>
     <string name="fav_anime">Anime Yêu thích</string>
     <string name="fav_manga">Manga Yêu thích</string>
     <string name="restart_app">Khởi động lại ứng dụng?</string>
