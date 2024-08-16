@@ -199,8 +199,7 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                                             (model.mangaReadSources as MangaReadSources).list.last()
                                         )
                                     }
-                                )
-                                headerAdapter.scanlatorSelectionListener = this@MangaReadFragment
+                                ).apply { scanlatorSelectionListener = this@MangaReadFragment }
                                 chapterAdapter = MangaChapterAdapter(
                                     style ?: PrefManager.getVal(PrefName.MangaDefaultView),
                                     media,
@@ -247,7 +246,7 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                             withContext(Dispatchers.Main) {
                                 headerAdapter = MangaReadAdapter(
                                     it, this@MangaReadFragment, model.mangaReadSources!!
-                                )
+                                ).apply { scanlatorSelectionListener = this@MangaReadFragment }
 
                                 binding.animeSourceRecycler.adapter =
                                     ConcatAdapter(headerAdapter, chapterAdapter)
