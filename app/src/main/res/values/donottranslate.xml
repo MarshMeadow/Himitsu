@@ -38,9 +38,9 @@
 
     <string name="himitsu">㊙️</string>
 
-    <string name="rpc_anilist">View on AniList</string>
-    <string name="rpc_anime">View Anime</string>
-    <string name="rpc_manga">View Manga</string>
+    <string name="rpc_anilist">AniList Profile</string>
+    <string name="rpc_anime">View Anime Info</string>
+    <string name="rpc_manga">View Manga Info</string>
     <string name="rpc_read">Read on Himitsu</string>
     <string name="rpc_watch">Watch on Himitsu</string>
 
