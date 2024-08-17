@@ -160,7 +160,7 @@
     <string name="server_enabled">TorrServer 시작 중</string>
     <string name="enable_server_temp">일시적으로 TorrServer를 활성화 하시겠습니까 (앱 종료 시 비활성화됨)?</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">Anilist 설정</string>
+    <string name="anilist_settings">AniList 설정</string>
     <string name="extension_settings">확장</string>
     <string name="downloads">다운로드</string>
     <string name="offline_mode">오프라인 모드</string>
@@ -254,12 +254,12 @@
     <string name="ask_update_progress_info_ep">끝난 에피소드를 시청하면 항상 자동으로 진행 상황을 업데이트합니다.</string>
     <string name="ask_update_progress_info_chap">챕터를 읽으면 항상 자동으로 진행 상황을 업데이트합니다.</string>
     <string name="ask_update_progress_chapter_zero">챕터 0의 진행 상황 업데이트</string>
-    <string name="ask_update_progress_info_zero">켜면 새로 시작된 항목을 Anilist에 챕터 0으로 설정하여 추가합니다.</string>
+    <string name="ask_update_progress_info_zero">켜기하면 시작된 새 항목이 AniList에 추가되고 진행이 0장으로 설정됩니다.</string>
     <string name="ask_update_progress_hentai">헨타이의 진행 상황 업데이트</string>
     <string name="ask_update_progress_doujin">도진의 진행 상황 업데이트</string>
     <string name="very_bold">당신이 매우 용감하군요</string>
     <string name="watch_complete_percentage">시청 완료 백분율</string>
-    <string name="watch_complete_percentage_info">에피소드를 시청한 후 Anilist 진행 상황을 업데이트해야 할 백분율입니다. \n다음 에피소드를 미리 로드할 때에도 사용됩니다.</string>
+    <string name="watch_complete_percentage_info">에피소드를 시청한 후 AniList 진행률이 업데이트되어야 하는 백분율. \n다음 에피소드에 대한 링크를 미리 로드할 백분율도 설정됩니다.</string>
     <string name="behaviour">동작</string>
     <string name="always_continue">항상 마지막으로부터 계속하기</string>
     <string name="pause_video_focus">화면이 초점을 잃으면 일시 중지</string>
@@ -393,7 +393,7 @@
     <string name="addons">애드온</string>
     <string name="addons_desc">Addons are extensions that provide additional functionality.</string>
     <string name="myanimelist">내 애니메이션 리스트</string>
-    <string name="login_with_anilist">Anilist로 로그인!</string>
+    <string name="login_with_anilist">AniList로 로그인</string>
     <string name="anilist">Anilist</string>
     <string name="account_help">이것이 어떻게 작동하는지 궁금하세요?</string>
     <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
@@ -494,11 +494,12 @@
     <string name="first_chapter">이것은 1화입니다!</string>
     <string name="adult_stuff">성인 콘텐츠?&#40; &#865;&#176; &#860;&#662; &#865;&#176; &#41;</string>
     <string name="what_did_you_open">무엇을 열었는지요?</string>
-    <string name="error_getting_data">Anilist에서 데이터를 가져오는 중 오류 발생</string>
+    <string name="error_getting_data">AniList에서 데이터를 가져오는 중 오류가 발생했습니다.</string>
+    <string name="anilist_data_error">AniList 데이터를 가져오는 중 오류 발생: %1$s</string>
     <string name="empty_response">빈 응답, 인터넷이 어떤가요?</string>
     <string name="error_loading_mal_user_data">MAL 사용자 데이터 로드 중 오류 발생</string>
     <string name="error_loading_mal_data">MAL에서 데이터 로드 실패</string>
-    <string name="error_loading_anilist_user_data">Anilist 사용자 데이터 로드 중 오류 발생</string>
+    <string name="error_loading_anilist_user_data">MAL 사용자 데이터 로드 중 오류 발생</string>
     <string name="episode_not_found">에피소드를 찾을 수 없음: %1$s</string>
     <string name="list_updated">목록이 업데이트되었습니다</string>
     <string name="deleted_from_list">목록에서 삭제되었습니다</string>
@@ -516,7 +517,7 @@
     <string name="error_getting_image_data">이미지 데이터 가져오기 오류</string>
     <string name="loading_image_failed">이미지 로드 실패</string>
     <string name="copied_device_info">장치 정보 복사됨</string>
-    <string name="anilist_down">Anilist가 다운된 것 같습니다. VPN을 사용하거나 다시 돌아올 때까지 기다리세요.</string>
+    <string name="anilist_down">Seems like AniList is down, maybe try using a VPN or you can wait for it to come back.</string>
     <string name="failed_to_load_data">%1$d의 저장된 데이터 로드 실패</string>
     <string name="access_not_available">액세스할 수 없음</string>
     <string name="mal_login_uri_not_found">Mal 로그인: URI를 찾을 수 없음</string>
@@ -588,7 +589,7 @@
     <string name="deny">Deny</string>
     <string name="deny_all">Deny All</string>
     <string name="no_chapter">챕터 없음</string>
-    <string name="content_18">Anilist 설정에서 18+ 콘텐츠를 켜세요</string>
+    <string name="content_18">Turn on 18+ content from your AniList settings</string>
     <string name="available">사용 가능</string>
     <string name="lets_go">시작합시다</string>
     <string name="cope">대처하세요</string>
@@ -616,7 +617,7 @@
     <string name="male">남성</string>
     <string name="female">여성</string>
     <string name="question_1">What is Himitsu?</string>
-    <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. It is (mostly) an Anilist only client, which also supports extensions. \n&gt;Himitsu (秘密; Him-itsu) means \"secret\" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
+    <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. It is (mostly) an AniList only client, which also supports extensions. \n&gt;Himitsu (秘密; Him-itsu) means \"secret\" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
     <string name="question_2">What are some features of Himitsu?</string>
     <string name="answer_2">This would be a pretty big paragraph if we listed everything Dantotsu attempts to accomplish, let alone everything Himitsu has added onto that. Your best bet would be to drop by the [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) and look over the README.</string>
     <string name="question_3">안정 버전, 베타 버전 및 알파 버전의 차이는 무엇인가요?</string>
@@ -628,17 +629,17 @@
     <string name="question_src">Doesn\'t Himitsu violate Dantotsu licensing?</string>
     <string name="answer_src">The short answer is no, but a detailed explanation is available in the [Himitsu README](https://github.com/RepoDevil/Himitsu?tab=readme-ov-file#himitsu-%EF%B8%8F)</string>
     <string name="question_6">왜 내 통계가 업데이트되지 않나요?</string>
-    <string name="answer_6">이는 48시간마다 자동으로 업데이트되기 때문입니다 (Anilist에 의해). 통계를 업데이트하려면 진정으로 필요한 경우 [이 링크](https://anilist.co/settings/lists)로 이동하여 통계를 강제로 업데이트할 수 있습니다.</string>
+    <string name="answer_6">This is because it updates every 48 hours automatically (by AniList). If you really need to update your stats, you can force update your stats after going to this [link](https://anilist.co/settings/lists).</string>
     <string name="question_7">애니메이션을 다운로드하는 방법은 무엇인가요?</string>
     <string name="answer_7">A third-party download Add-on is developed and distributed by Dantotsu. Compatibility is based on Dantotsu and may cease to function at any time. It can be found by accessing the \"Add-ons\" page in the app settings.</string>
     <string name="question_9">성인 콘텐츠를 활성화하는 방법은 무엇인가요?</string>
     <string name="answer_9">이를 위해 [이 링크](https://anilist.co/settings/media)에서 18+ 콘텐츠를 활성화할 수 있습니다. 또한 \`설정 &gt; 확장 &gt; 성인 콘텐츠 확장\`에서 성인 콘텐츠를 활성화해야 합니다.</string>
-    <string name="question_10">How to import my MAL / Kitsu lists to Anilist?</string>
+    <string name="question_10">How to import my MAL / Kitsu lists to AniList?</string>
     <string name="answer_10">다음은 그 방법입니다.\n\n내보내기:\n\n1. [링크](https://malscraper.azurewebsites.net)로 이동합니다.\n2. Kitsu/MAL 사용자 이름을 입력하고 애니메이션 및 만화 목록을 모두 다운로드합니다. (XML 형식으로 제공됩니다)\n참고: 선택한 추적기의 사용자 이름을 작성해야 합니다\n\n가져오기:\n\n1. Kitsu/MAL에서 애니메이션 및 만화 목록을 내보낸 후, [여기](https://anilist.co/settings/import)로 이동합니다.\n2. 위의 상자에 애니메이션 XML 파일을 선택/놓습니다.\n↓ 만화 XML 파일을 아래 상자에 선택/놓습니다.</string>
-    <string name="question_11">How to import my Anilist / Kitsu lists to MAL?</string>
-    <string name="answer_11">다음은 그 방법입니다.\n\n내보내기:\n\n1. [링크](https://malscraper.azurewebsites.net/)로 이동합니다.\n2. \'사용자 이름/Kitsu 사용자 ID\' 상자에 Anilist 사용자 이름/Kitsu ID를 입력합니다.\n3. 목록 유형을 선택하고 \'가져온 후 업데이트\'를 활성화합니다.\n4. 파일을 다운로드하고 .xml 형식으로 제공됩니다. 애니메이션 및 만화 목록을 모두 다운로드했는지 확인합니다.\n\n가져오기:\n\n1. MAL 계정에 가져오려면 [링크](https://myanimelist.net/import.php)로 이동하고 가져오기 유형으로 \'MyAnimeList 가져오기\'를 선택합니다.\n2. \'파일 선택\'을 누르고 다운로드한 애니메이션/만화 목록 XML 파일을 선택합니다.\n3. \'데이터 가져오기\'를 누릅니다.\n축하합니다, 당신은 선택한 목록을 MAL 계정으로 가져왔습니다.</string>
+    <string name="question_11">How to import my AniList / Kitsu lists to MAL?</string>
+    <string name="answer_11">Here is how you do it,\n\nExport:\n\n1. Go to this [link](https://malscraper.azurewebsites.net/). \n2. Give your AniList username/Kitsu ID in the \'Username/Kitsu User ID\' box. \n3. Select list type and enable \'update_on_import\'. \n4. Download the file; it will be in .xml format. Be sure to download both Anime and Manga lists.\n\nImport:\n1. To import it in your MAL account, go to this [link](https://myanimelist.net/import.php) and choose \'MyAnimeList Import\' as import type. \n2. Press on \'Choose File\'and select the downloaded anime/manga list XML file. \n3. Press on \'Import Data\'. \nCongratulations, you just imported the selected list to your MAL account.</string>
     <string name="question_12">Why can\'t I find a specific anime / manga title?</string>
-    <string name="answer_12">Let\'s say you are looking for Castlevania, but Anilist doesn\'t have it. This means Himitsu doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
+    <string name="answer_12">Let\'s say you are looking for Castlevania, but AniList doesn\'t have it. This means Himitsu doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
     <string name="question_13">소스가 완전히 잘못된 제목을 선택하는 것을 수정하는 방법은 무엇인가요?</string>
     <string name="answer_13">Himitsu itself doesn\'t host anything but relies on other sources. When showing the episodes, it chooses the 1st result given by the source after searching for the title. Himitsu has no way of detecting if that\'s legit or not. So, for this, we have the \'Wrong Title?\' just below the source name(above layouts). You can choose the correct result/title by pressing on it and enjoy its episodes.</string>
     <string name="question_14">컬러 만화를 읽는 방법은 무엇인가요?</string>
@@ -666,7 +667,7 @@
     <string name="similarity_text">유사도: %1$s %%</string>
     <string name="time_range">%1$s부터 %2$s까지</string>
     <string name="invalid_url">잘못된 URL</string>
-    <string name="no_anilist_id_found">Anilist ID를 찾을 수 없음</string>
+    <string name="no_anilist_id_found">No AniList ID found</string>
     <string name="error_loading_image">이미지 로드 오류</string>
     <string name="discord_logout_success">로그아웃 성공</string>
     <string name="discord_try_again">다시 로그인 시도</string>
@@ -781,7 +782,7 @@
     <string name="hide_scroll_bar">스크롤 막대 숨기기</string>
     <string name="view_on_anilist">AniList에서 보기</string>
     <string name="anilist_notification_filters">알림 필터링</string>
-    <string name="anilist_notifications_checking_time">AniList 알림 업데이트 주기: %1$s</string>
+    <string name="anilist_notifications_checking_time">AniList notifications update frequency : %1$s</string>
     <string name="comment_notification_checking_time">댓글 알림 업데이트 주기: %1$s</string>
     <string name="activities">활동</string>
     <string name="incorrect_password">잘못된 암호</string>
@@ -886,7 +887,7 @@
     <string name="exo_source_exception">소스 예외: %1$s</string>
     <string name="exo_decoding_failed">디코딩 실패: %1$s</string>
     <string name="exo_player_error">플레이어 오류: %1$d %2$s: %3$s</string>
-    <string name="accounts_desc">Anilist, MAL 및 Discord.\n더 필요한 게 뭐가 있을까요?</string>
+    <string name="accounts_desc">AniList, MAL and Discord.\nWhat more could you need?</string>
     <string name="theme_desc">앱의 분위기 변경</string>
     <string name="extensions_desc">Manage your reliable repositories</string>
     <string name="common_desc">UI and other mischievous stuff</string>
@@ -947,7 +948,7 @@
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="include_list_desc">만화 탐색 페이지에 목록 항목 포함</string>
     <string name="anilist_notification_filters_desc">무시할 카테고리 선택</string>
-    <string name="anilist_notifications_checking_time_desc">Anilist 알림을 확인할 앱의 빈도 설정</string>
+    <string name="anilist_notifications_checking_time_desc">Set the frequency you want the app to check for AniList notifications</string>
     <string name="comment_notification_checking_time_desc">댓글 알림을 확인할 앱의 빈도 설정</string>
     <string name="notification_for_checking_subscriptions_desc">구독 확인을 위한 알림 표시</string>
     <string name="use_alarm_manager_reliable_desc">전화의 배터리 최적화기 우회에 사용</string>
@@ -1070,13 +1071,13 @@
     <string name="running_fixes">Running Fixes…</string>
     <string name="test_search">Test Search</string>
     <string name="subtitle_langauge">Subtitle Langauge</string>
-    <string name="auto_open_links">Allow Himitsu to automatically open Anilist &amp; MAL Links?</string>
-    <string name="auto_open_links_desc">Select Anilist &amp; MAL in the supported links section</string>
+    <string name="auto_open_links">Allow Himitsu to automatically open AniList &amp; MAL Links?</string>
+    <string name="auto_open_links_desc">Select AniList &amp; MAL in the supported links section</string>
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
     <string name="down_to_up">Down to Up</string>
     <string name="up_to_down">Up to Down</string>
-    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="anilist_notification">New AniList Notification</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

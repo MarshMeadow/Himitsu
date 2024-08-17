@@ -160,7 +160,7 @@
     <string name="server_enabled">TorrServer indítása</string>
     <string name="enable_server_temp">Szeretné ideiglenesen engedélyezni a TorrServert (alkalmazás bezárásakor kikapcsolva)?</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">Anilist Beállítások</string>
+    <string name="anilist_settings">AniList Beállítások</string>
     <string name="extension_settings">Kiterjesztések</string>
     <string name="downloads">Letöltések</string>
     <string name="offline_mode">Offline Mód</string>
@@ -254,12 +254,12 @@
     <string name="ask_update_progress_info_ep">A kikapcsolás mindig automatikusan frissíti a folyamatot, amikor az epizódot megnézik.</string>
     <string name="ask_update_progress_info_chap">A kikapcsolás mindig automatikusan frissíti a folyamatot, amikor a fejezetet elolvassák.</string>
     <string name="ask_update_progress_chapter_zero">Folyamat frissítése 0. fejezethez</string>
-    <string name="ask_update_progress_info_zero">A bekapcsolás újra elindított elemeket ad hozzá az Anilisthez, a folyamatot 0. fejezetre állítva.</string>
+    <string name="ask_update_progress_info_zero">A bekapcsolás azt eredményezi, hogy az újonnan kezdett elemeket hozzáadjuk az AniList-hez, az előrehaladás beállítása a 0. fejezetre.</string>
     <string name="ask_update_progress_hentai">Folyamat frissítése Hentai-hez</string>
     <string name="ask_update_progress_doujin">Folyamat frissítése Doujinshoz</string>
     <string name="very_bold">nagyon bátor tőled sar</string>
     <string name="watch_complete_percentage">Nézés frissítési százalék</string>
-    <string name="watch_complete_percentage_info">Az a százalék, amely után az Anilist folyamata frissül, miután megnéztél egy epizódot. \nEz meghatározza azt is, hogy mikor töltse be a linkeket a következő epizódhoz.</string>
+    <string name="watch_complete_percentage_info">A százalék, amely után az AniList előrehaladása frissítve lesz egy epizód megtekintése után. \nEz meghatározza a \%-ot is a következő epizódhoz való link előre betöltéséről.</string>
     <string name="behaviour">Viselkedés</string>
     <string name="always_continue">Mindig folytassa az időbélyegből</string>
     <string name="pause_video_focus">Szünet, ha nincs fókuszban</string>
@@ -393,7 +393,7 @@
     <string name="addons">Kiegészítők</string>
     <string name="addons_desc">A kiegészítők Dantotsu extra funkciómódulok.</string>
     <string name="myanimelist">MyAnimeList</string>
-    <string name="login_with_anilist">Bejelentkezés Anilisttel</string>
+    <string name="login_with_anilist">Bejelentkezés az AniList-re</string>
     <string name="anilist">Anilist</string>
     <string name="account_help">Hogyan működik ez\?</string>
     <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
@@ -494,11 +494,12 @@
     <string name="first_chapter">Ez az 1. fejezet!</string>
     <string name="adult_stuff">Felnőtt tartalom?( ͡° ͜ʖ ͡° )</string>
     <string name="what_did_you_open">Mit is nyitottál meg?</string>
-    <string name="error_getting_data">Hiba az adatok lekérésekor az Anilisttől.</string>
+    <string name="error_getting_data">Hiba az adatok lekérdezésekor az AniList-ről.</string>
+    <string name="anilist_data_error">Hiba az AniList adatok lekérésekor: %1$s</string>
     <string name="empty_response">Üres válasz! Talán rossz az interneted?</string>
     <string name="error_loading_mal_user_data">Hiba a MAL felhasználói adatok betöltésekor</string>
     <string name="error_loading_mal_data">Nem sikerült betölteni az adatokat a MAL-ból</string>
-    <string name="error_loading_anilist_user_data">Hiba az Anilist felhasználói adatok betöltésekor</string>
+    <string name="error_loading_anilist_user_data">Hiba a MAL felhasználói adatok betöltésekor</string>
     <string name="episode_not_found">Nem található epizód: %1$s</string>
     <string name="list_updated">Lista frissítve</string>
     <string name="deleted_from_list">Törölve a listáról</string>
@@ -516,7 +517,7 @@
     <string name="error_getting_image_data">Hiba az kép adatok lekérésekor</string>
     <string name="loading_image_failed">Kép betöltése sikertelen</string>
     <string name="copied_device_info">Másolt eszköz információ</string>
-    <string name="anilist_down">Úgy tűnik, hogy az Anilist nem elérhető, esetleg próbálja meg VPN használatával vagy várjon, amíg visszatér.</string>
+    <string name="anilist_down">Seems like AniList is down, maybe try using a VPN or you can wait for it to come back.</string>
     <string name="failed_to_load_data">Nem sikerült betölteni a(z) %1$d mentett adatot</string>
     <string name="access_not_available">Nem sikerült hozzáférést szerezni</string>
     <string name="mal_login_uri_not_found">Mal Bejelentkezés: Uri nem található</string>
@@ -588,7 +589,7 @@
     <string name="deny">Deny</string>
     <string name="deny_all">Deny All</string>
     <string name="no_chapter">Nincs Fejezet</string>
-    <string name="content_18">Kapcsold be a 18+ tartalmat az Anilist beállításaiból</string>
+    <string name="content_18">Turn on 18+ content from your AniList settings</string>
     <string name="available">Elérhető</string>
     <string name="lets_go">Gyerünk</string>
     <string name="cope">Megküzd</string>
@@ -616,7 +617,7 @@
     <string name="male">Férfi</string>
     <string name="female">Nő</string>
     <string name="question_1">What is Himitsu?</string>
-    <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. It is (mostly) an Anilist only client, which also supports extensions. \n&gt;Himitsu (秘密; Him-itsu) means \"secret\" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
+    <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. It is (mostly) an AniList only client, which also supports extensions. \n&gt;Himitsu (秘密; Him-itsu) means \"secret\" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
     <string name="question_2">What are some features of Himitsu?</string>
     <string name="answer_2">This would be a pretty big paragraph if we listed everything Dantotsu attempts to accomplish, let alone everything Himitsu has added onto that. Your best bet would be to drop by the [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) and look over the README.</string>
     <string name="question_3">Mi a különbség a Stabil, Béta &amp; Alfa verziók között?</string>
@@ -628,17 +629,17 @@
     <string name="question_src">Doesn\'t Himitsu violate Dantotsu licensing?</string>
     <string name="answer_src">The short answer is no, but a detailed explanation is available in the [Himitsu README](https://github.com/RepoDevil/Himitsu?tab=readme-ov-file#himitsu-%EF%B8%8F)</string>
     <string name="question_6">Miért nem frissülnek az adataim?</string>
-    <string name="answer_6">Azért, mert automatikusan minden 48 órában frissül (az Anilist által). Ha valóban frissíteni szeretnéd az adataidat, kényszerítheted a statisztikáid frissítését a következő [link](https://anilist.co/settings/lists) megnyitása után.</string>
+    <string name="answer_6">This is because it updates every 48 hours automatically (by AniList). If you really need to update your stats, you can force update your stats after going to this [link](https://anilist.co/settings/lists).</string>
     <string name="question_7">Hogyan lehet letölteni az Anime-t?</string>
     <string name="answer_7">A third-party download Add-on is developed and distributed by Dantotsu. Compatibility is based on Dantotsu and may cease to function at any time. It can be found by accessing the \"Add-ons\" page in the app settings.</string>
     <string name="question_9">Hogyan lehet engedélyezni a 18+ tartalmakat?</string>
     <string name="answer_9">Engedélyezheted a 18+ tartalmakat a 18+ tartalmak engedélyezésével ezen a [link](https://anilist.co/settings/media) címen. A NSFW bővítményeket is engedélyezned kell a \`Beállítások &gt; Bővítmények &gt; NSFW bővítmények\` részen.</string>
-    <string name="question_10">How to import my MAL / Kitsu lists to Anilist?</string>
+    <string name="question_10">How to import my MAL / Kitsu lists to AniList?</string>
     <string name="answer_10">Így teheted meg:\n\nExportálás:\n\n1. Menj erre a [link](https://malscraper.azurewebsites.net) címre.\n2. Add meg a Kitsu/MAL felhasználóneved és töltsd le mindkét anime és manga listát. (XML formátumban lesznek)\nMegjegyzés: A kiválasztott nyomkövető felhasználónevének megadása szükséges\n\nImportálás:\n\n1. Miután exportáltad az anime és manga listádat a Kitsu/MAL-ról, most menj [ide](https://anilist.co/settings/import) \n2. Válaszd ki/dobd le az anime XML fájlt a fenti dobozba.\n|→Válaszd ki/dobd le az manga XML fájlt az alábbi dobozba.</string>
-    <string name="question_11">How to import my Anilist / Kitsu lists to MAL?</string>
-    <string name="answer_11">Így teheted meg:\n\nExportálás:\n\n1. Menj erre a [link](https://malscraper.azurewebsites.net/). \n2. Add meg az Anilist felhasználóneved/Kitsu ID-jét a \'Felhasználónév/Kitsu Felhasználói ID\' mezőben. \n3. Válaszd ki a lista típusát és engedélyezd az \'update_on_import\' lehetőséget. \n4. Töltsd le a fájlt; .xml formátumban lesz. Győződj meg róla, hogy mind az Anime, mind a Manga listát letöltötted.\n\nImportálás:\n1. Hogy importáld a MAL fiókodba, menj erre a [link](https://myanimelist.net/import.php) és válaszd az \'MyAnimeList Import\' import típust. \n2. Nyomj a \'Fájl Kiválasztása\' gombra és válaszd ki a letöltött anime/manga lista XML fájlt. \n3. Nyomj az \'Adatok Importálása\' gombra. \nGratulálok, éppen importáltad az kiválasztott listát a MAL fiókodba.</string>
+    <string name="question_11">How to import my AniList / Kitsu lists to MAL?</string>
+    <string name="answer_11">Here is how you do it,\n\nExport:\n\n1. Go to this [link](https://malscraper.azurewebsites.net/). \n2. Give your AniList username/Kitsu ID in the \'Username/Kitsu User ID\' box. \n3. Select list type and enable \'update_on_import\'. \n4. Download the file; it will be in .xml format. Be sure to download both Anime and Manga lists.\n\nImport:\n1. To import it in your MAL account, go to this [link](https://myanimelist.net/import.php) and choose \'MyAnimeList Import\' as import type. \n2. Press on \'Choose File\'and select the downloaded anime/manga list XML file. \n3. Press on \'Import Data\'. \nCongratulations, you just imported the selected list to your MAL account.</string>
     <string name="question_12">Why can\'t I find a specific anime / manga title?</string>
-    <string name="answer_12">Let\'s say you are looking for Castlevania, but Anilist doesn\'t have it. This means Himitsu doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
+    <string name="answer_12">Let\'s say you are looking for Castlevania, but AniList doesn\'t have it. This means Himitsu doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
     <string name="question_13">Hogyan lehet helyes címet kiválasztani, ha a forrás teljesen rossz címet ad meg?</string>
     <string name="answer_13">Himitsu itself doesn\'t host anything but relies on other sources. When showing the episodes, it chooses the 1st result given by the source after searching for the title. Himitsu has no way of detecting if that\'s legit or not. So, for this, we have the \'Wrong Title?\' just below the source name(above layouts). You can choose the correct result/title by pressing on it and enjoy its episodes.</string>
     <string name="question_14">Hogyan lehet színes mangákat olvasni?</string>
@@ -666,7 +667,7 @@
     <string name="similarity_text">Hasonlóság: %1$s %%</string>
     <string name="time_range">%1$s-tól %2$s-ig</string>
     <string name="invalid_url">Érvénytelen URL</string>
-    <string name="no_anilist_id_found">Nincs Anilist azonosító</string>
+    <string name="no_anilist_id_found">No AniList ID found</string>
     <string name="error_loading_image">Hiba a kép betöltésekor</string>
     <string name="discord_logout_success">Sikeres kijelentkezés</string>
     <string name="discord_try_again">Próbálja újra bejelentkezni</string>
@@ -781,7 +782,7 @@
     <string name="hide_scroll_bar">Gördítősáv elrejtése</string>
     <string name="view_on_anilist">Megtekintés az AniList-en</string>
     <string name="anilist_notification_filters">Válassza ki az ignorálandó kategóriát</string>
-    <string name="anilist_notifications_checking_time">Az Anilist értesítések frissítési gyakorisága: %1$s</string>
+    <string name="anilist_notifications_checking_time">AniList notifications update frequency : %1$s</string>
     <string name="comment_notification_checking_time">Megjegyzés értesítések frissítési gyakorisága: %1$s</string>
     <string name="activities">Tevékenységek</string>
     <string name="incorrect_password">Helytelen jelszó</string>
@@ -886,7 +887,7 @@
     <string name="exo_source_exception">Forrás Kivétel: %1$s</string>
     <string name="exo_decoding_failed">Dekódolás sikertelen: %1$s</string>
     <string name="exo_player_error">Lejátszó Hiba: %1$d %2$s: %3$s</string>
-    <string name="accounts_desc">AniList, MAL és Discord.\nMire lenne még szükséged?</string>
+    <string name="accounts_desc">AniList, MAL and Discord.\nWhat more could you need?</string>
     <string name="theme_desc">Változtasd meg az alkalmazásod hangulatát</string>
     <string name="extensions_desc">Kezeld a repó gyűjteményedet</string>
     <string name="common_desc">Letöltések, DNS és alapértelmezések</string>
@@ -947,7 +948,7 @@
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="include_list_desc">Listaelemek belefoglalása a Manga felfedező oldalba</string>
     <string name="anilist_notification_filters_desc">Válassza ki az ignorálandó kategóriát</string>
-    <string name="anilist_notifications_checking_time_desc">Állítsa be az időközöt, amikor az alkalmazás ellenőrizze az Anilist értesítéseket</string>
+    <string name="anilist_notifications_checking_time_desc">Set the frequency you want the app to check for AniList notifications</string>
     <string name="comment_notification_checking_time_desc">Állítsa be az időközöt, amikor az alkalmazás ellenőrizze a Megjegyzés értesítéseket</string>
     <string name="notification_for_checking_subscriptions_desc">Értesítés megjelenítése az Előfizetések ellenőrzésére</string>
     <string name="use_alarm_manager_reliable_desc">Használja az akkumulátor optimalizálásának kikerülésére</string>
@@ -1070,13 +1071,13 @@
     <string name="running_fixes">Running Fixes…</string>
     <string name="test_search">Test Search</string>
     <string name="subtitle_langauge">Subtitle Langauge</string>
-    <string name="auto_open_links">Allow Himitsu to automatically open Anilist &amp; MAL Links?</string>
-    <string name="auto_open_links_desc">Select Anilist &amp; MAL in the supported links section</string>
+    <string name="auto_open_links">Allow Himitsu to automatically open AniList &amp; MAL Links?</string>
+    <string name="auto_open_links_desc">Select AniList &amp; MAL in the supported links section</string>
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
     <string name="down_to_up">Down to Up</string>
     <string name="up_to_down">Up to Down</string>
-    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="anilist_notification">New AniList Notification</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

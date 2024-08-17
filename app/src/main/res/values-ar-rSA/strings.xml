@@ -160,7 +160,7 @@
     <string name="server_enabled">بدء تشغيل تورسيرفر</string>
     <string name="enable_server_temp">هل ترغب في تمكين TorrServer مؤقتاً (معطل عند إغلاق التطبيق)؟</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">إعدادات AniList</string>
+    <string name="anilist_settings">إعدادات قائمة الإنجيل</string>
     <string name="extension_settings">الإضافات</string>
     <string name="downloads">التحميلات</string>
     <string name="offline_mode">وضع بدون انترنت</string>
@@ -254,12 +254,12 @@
     <string name="ask_update_progress_info_ep">سيؤدي إيقاف التشغيل إلى تحديث التقدم تلقائيًا عند مشاهدة الحلقة.</string>
     <string name="ask_update_progress_info_chap">سيؤدي إيقاف التشغيل إلى تحديث التقدم تلقائيًا عند قراءة فصل.</string>
     <string name="ask_update_progress_chapter_zero">تحديث التقدم للفصل 0</string>
-    <string name="ask_update_progress_info_zero">سيؤدي التشغيل إلى إضافة العناصر التي بدأت حديثًا إلى AniList مع تعيين التقدم على الفصل 0.</string>
+    <string name="ask_update_progress_info_zero">سيؤدي الانتقال إلى إضافة العناصر التي بدأت حديثاً إلى قائمة الأنشياء مع تعيين التقدم إلى الفصل 0.</string>
     <string name="ask_update_progress_hentai">تحديث التقدم للهنتاي</string>
     <string name="ask_update_progress_doujin">تحديث التقدم لDoujins</string>
     <string name="very_bold">جريئة جدا منك</string>
     <string name="watch_complete_percentage">نسبة المشاهدة للتحديث</string>
-    <string name="watch_complete_percentage_info">النسبة التي يجب أن يتم عندها تحديث تقدم AniList الخاص بك بعد مشاهدة حلقة. \nيقوم هذا أيضًا بتعيين \% لموعد تحميل الروابط مسبقًا للحلقة التالية.</string>
+    <string name="watch_complete_percentage_info">النسبة المئوية لتقدم AniList الخاص بك يجب تحديثها بعد مشاهدة الحلقة. \nهذا أيضا يعين \% لمتى يتم تحميل الروابط مسبقاً للحلقة التالية.</string>
     <string name="behaviour">السلوك</string>
     <string name="always_continue">تابع دائمًا من حيث توقفت</string>
     <string name="pause_video_focus">إيقاف الفيديو عندما يخرج من رؤيتك</string>
@@ -393,23 +393,23 @@
     <string name="addons">Addons</string>
     <string name="addons_desc">الإضافات هي امتدادات توفر وظائف إضافية.</string>
     <string name="myanimelist">MyAnimeList</string>
-    <string name="login_with_anilist">تسجيل دخول AniList!</string>
+    <string name="login_with_anilist">تسجيل الدخول باستخدام AniList</string>
     <string name="anilist">أنيليا</string>
     <string name="account_help">كيف يعمل هذا؟</string>
-    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
-        \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
+    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
+        \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
         \n- Delete a Media
 
-        \n\nNote: The app will not sync old Media\'s from AniList to MAL, It\'s recommended to sync them.
+        \n\nNote: The app will not sync old Media\'s from Anilist to MAL, It\'s recommended to sync them.
         \n- Check __FAQs__ for _Easy Method_
 
         \n\nAnd for _Intermediates_ :
-        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
-        \n- [How to sync MAL data with AniList](https://anilist.co/forum/thread/3393)
+        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
 
-        \n\n_It is not required to sync both MAL and AniList accounts._
+        \n\n_It is not required to sync both MAL and Anilist accounts._
     </string>
     <string name="frequency">Frequency</string>
     <string name="notification_for_checking_subscriptions">جاري التحقق من الاشتراكات</string>
@@ -494,7 +494,8 @@
     <string name="first_chapter">هذا هو الفصل الأول!</string>
     <string name="adult_stuff">أشياء للكبار؟&#40; &#865;&#176; &#860;&#662; &#865;&#176; &#41;</string>
     <string name="what_did_you_open">انت فتحت ايه اصلا؟</string>
-    <string name="error_getting_data">خطأ في الحصول على البيانات من AniList.</string>
+    <string name="error_getting_data">خطأ في الحصول على البيانات من قائمة أنيليت.</string>
+    <string name="anilist_data_error">خطأ في جلب بيانات قائمة الأنعية: %1$s</string>
     <string name="empty_response">إجابة فارغة! هل إنترنت، ربما؟</string>
     <string name="error_loading_mal_user_data">خطأ في تحميل بيانات المستخدم</string>
     <string name="error_loading_mal_data">فشل تحميل البيانات من MAL</string>
@@ -516,7 +517,7 @@
     <string name="error_getting_image_data">خطأ في الحصول على بيانات الصورة</string>
     <string name="loading_image_failed">لم يتم تحميل الصورة</string>
     <string name="copied_device_info">تم نسخ معلومات الجهاز</string>
-    <string name="anilist_down">يبدو أن أنيليز معطل، ربما حاول استخدام VPN أو يمكنك الانتظار للعودة إليه.</string>
+    <string name="anilist_down">يبدو أن AniList معطل، ربما حاول استخدام VPN أو يمكنك الانتظار للعودة.</string>
     <string name="failed_to_load_data">فشل تحميل البيانات المحفوظة من %1$d</string>
     <string name="access_not_available">لم يتمكن من الوصول</string>
     <string name="mal_login_uri_not_found">مِل تسجيل الدخول: أوري غير موجود</string>
@@ -588,7 +589,7 @@
     <string name="deny">Deny</string>
     <string name="deny_all">Deny All</string>
     <string name="no_chapter">لا يوجد فصل</string>
-    <string name="content_18">تفعيل محتوي 18+ من إعدادات AniList</string>
+    <string name="content_18">قم بتشغيل 18 + محتوى من إعدادات AniList</string>
     <string name="available">متوفر</string>
     <string name="lets_go">هيا بنا</string>
     <string name="cope">البابا</string>
@@ -616,7 +617,7 @@
     <string name="male">ذكر</string>
     <string name="female">أنثى</string>
     <string name="question_1">What is Himitsu?</string>
-    <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. It is (mostly) an Anilist only client, which also supports extensions. \n&gt;Himitsu (秘密; Him-itsu) means \"secret\" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
+    <string name="answer_1">ودمج دانتوتسو عناصر من أنيومي في الشفرة الأساسية لسايكو، ولكن هيميتسو بعد ذلك اشترى دانتوتسو وبدأ في تحسينه. إنه (معظمه) عميل AniList فقط، والذي يدعم أيضا الإضافات. \n&gt;Himitsu (&lt;unk&gt; ; Him-itsu) يعني \"سري\" باللغة اليابانية. شه. إنه سر جيد لدرجة أن الاسم محظور.</string>
     <string name="question_2">What are some features of Himitsu?</string>
     <string name="answer_2">This would be a pretty big paragraph if we listed everything Dantotsu attempts to accomplish, let alone everything Himitsu has added onto that. Your best bet would be to drop by the [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) and look over the README.</string>
     <string name="question_3">ما هو الفرق بين Stable, Beta &amp; Alpha؟</string>
@@ -628,17 +629,17 @@
     <string name="question_src">Doesn\'t Himitsu violate Dantotsu licensing?</string>
     <string name="answer_src">The short answer is no, but a detailed explanation is available in the [Himitsu README](https://github.com/RepoDevil/Himitsu?tab=readme-ov-file#himitsu-%EF%B8%8F)</string>
     <string name="question_6">لماذا لا تقوم إحصائياتي بتحديث؟</string>
-    <string name="answer_6">هذا لأنه يقوم بتحديث كل 48 ساعة تلقائياً (بواسطة Anilist). إذا كنت تحتاج حقاً إلى تحديث إحصائياتك، يمكنك فرض تحديث إحصائياتك بعد الذهاب إلى هذا [link](https://anilist.co/settings/lists).</string>
+    <string name="answer_6">هذا لأنه يقوم بتحديث كل 48 ساعة تلقائياً (بواسطة قائمة أنيليت). إذا كنت تحتاج حقاً إلى تحديث إحصائياتك، يمكنك فرض تحديث إحصائياتك بعد الذهاب إلى هذا [link](https://anilist.co/settings/lists).</string>
     <string name="question_7">كيفية تحميل الأنمي؟</string>
     <string name="answer_7">A third-party download Add-on is developed and distributed by Dantotsu. Compatibility is based on Dantotsu and may cease to function at any time. It can be found by accessing the \"Add-ons\" page in the app settings.</string>
     <string name="question_9">كيفية تفعيل المحتوى NSFW؟</string>
     <string name="answer_9">يمكنك تمكين محتوى NSFW عن طريق تمكين 18 محتوى + من هذا [link](https://anilist.co/settings/media). يجب عليك أيضا تمكين ملحقات NSFW في \`إعدادات &gt; ملحقات &gt; ملحقات NSFW\` </string>
-    <string name="question_10">How to import my MAL / Kitsu lists to Anilist?</string>
+    <string name="question_10">كيفية استيراد قوائم MAL / Kitsu الخاصة بي إلى قائمة أنيلي؟</string>
     <string name="answer_10">إليك كيفية القيام بذلك،\n\nExport:\n\n1. انتقل إلى هذا [link](https://malscraper). zurewebsites.net).\n2. اعط اسم المستخدم الخاص بك Kitsu/MAL وقم بتنزيل قائمة Anime و manga على حد سواء. (سوف تكون بتنسيق XML)\nملاحظة: يجب عليك كتابة اسم المستخدم للمتعقب الذي اخترته\n\nالاستيراد:\n\n1. بعد تصدير قائمة الأنمي والمانجا الخاصة بك من Kitsu/MAL ، انتقل الآن إلى [here](https://anilist.co/settings/import) \n. حدد / أسقط ملف XML على المربع أعلاه.\n&lt;unk&gt; اختر / أسقط ملف Manga XML في المربع أدناه.</string>
-    <string name="question_11">How to import my Anilist / Kitsu lists to MAL?</string>
-    <string name="answer_11">إليك كيفية القيام بذلك،\n\nExport:\n\n1. انتقل إلى هذا [link](https://malscraper). zurewebsites.net/). \n2. اعطي اسم المستخدم الأنيلي/معرف كيتسو في صندوق \'اسم المستخدم/معرف المستخدم كيتسو\'. \n3. حدد نوع القائمة وتمكين \'update_on_import\'. \n4. تحميل الملف؛ سيكون في صيغة .xml. تأكد من تحميل قائمتي أنيمي ومانغا.\n\nالاستيراد:\n1. لاستيراده في حساب MAL الخاص بك، انتقل إلى هذا [link](https://myanimelist. et/import.php) واختر \'استيراد MyAnimeList Export\' كنوع استيراد. \n2. اضغط على \'اختر ملف\'، وحدد ملف XML للنسخة المتحملة / قائمة المانغا. \n3. اضغط على \'استيراد البيانات\'. \nتهانينا، لقد قمت فقط باستيراد القائمة المحددة إلى حساب MAL الخاص بك.</string>
+    <string name="question_11">كيف تستورد قائمتي AniList / Kitsu إلى MAL؟</string>
+    <string name="answer_11">إليك كيفية القيام بذلك،\n\nExport:\n\n1. انتقل إلى هذا [link](https://malscraper). zurewebsites.net/). \n2. أعط اسم المستخدم AniList الخاص بك/معرف Kitsu في صندوق \'اسم المستخدم/معرف المستخدم Kitsu\'. \n3. حدد نوع القائمة وتمكين \'update_on_import\'. \n4. تحميل الملف؛ سيكون في صيغة .xml. تأكد من تحميل قائمتي أنيمي ومانغا.\n\nالاستيراد:\n1. لاستيراده في حساب MAL الخاص بك، انتقل إلى هذا [link](https://myanimelist. et/import.php) واختر \'استيراد MyAnimeList Export\' كنوع استيراد. \n2. اضغط على \'اختر ملف\'، وحدد ملف XML للنسخة المتحملة / قائمة المانغا. \n3. اضغط على \'استيراد البيانات\'. \nتهانينا، لقد قمت فقط باستيراد القائمة المحددة إلى حساب MAL الخاص بك.</string>
     <string name="question_12">Why can\'t I find a specific anime / manga title?</string>
-    <string name="answer_12">Let\'s say you are looking for Castlevania, but Anilist doesn\'t have it. This means Himitsu doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
+    <string name="answer_12">Let\'s say you are looking for Castlevania, but AniList doesn\'t have it. This means Himitsu doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
     <string name="question_13">كيفية إصلاح المصادر التي تختار عنوانا خاطئا تماما؟</string>
     <string name="answer_13">Himitsu itself doesn\'t host anything but relies on other sources. When showing the episodes, it chooses the 1st result given by the source after searching for the title. Himitsu has no way of detecting if that\'s legit or not. So, for this, we have the \'Wrong Title?\' just below the source name(above layouts). You can choose the correct result/title by pressing on it and enjoy its episodes.</string>
     <string name="question_14">كيف تقرأ مانجا ملونة؟</string>
@@ -666,7 +667,7 @@
     <string name="similarity_text">الشبهة: %1$s %%</string>
     <string name="time_range">من %1$s إلى %2$s</string>
     <string name="invalid_url">رابط غير صالح</string>
-    <string name="no_anilist_id_found">لا يوجد معرف للأنيليين</string>
+    <string name="no_anilist_id_found">لم يتم العثور على معرف AniList</string>
     <string name="error_loading_image">خطأ في تحميل الصورة</string>
     <string name="discord_logout_success">تم تسجيل الخروج بنجاح</string>
     <string name="discord_try_again">حاول تسجيل الدخول مرة أخرى</string>
@@ -781,7 +782,7 @@
     <string name="hide_scroll_bar">إخفاء شريط التمرير</string>
     <string name="view_on_anilist">عرض على AniList</string>
     <string name="anilist_notification_filters">تصفية الإشعارات</string>
-    <string name="anilist_notifications_checking_time">تردد تحديث الإشعارات الأنهيلية: %1$s</string>
+    <string name="anilist_notifications_checking_time">تردد تحديث الإشعارات على قائمة الأنعية: %1$s</string>
     <string name="comment_notification_checking_time">تردد تحديث إشعارات التعليق: %1$s</string>
     <string name="activities">الأنشطة</string>
     <string name="incorrect_password">كلمة السر غير صحيح</string>
@@ -886,7 +887,7 @@
     <string name="exo_source_exception">استثناء المصدر: %1$s</string>
     <string name="exo_decoding_failed">فشل فك الترميز: %1$s</string>
     <string name="exo_player_error">خطأ في اللاعب: %1$d %2$s: %3$s</string>
-    <string name="accounts_desc">Anilist و MAL و Discord معانا.\nعايز ايه تاني؟</string>
+    <string name="accounts_desc">AniList, MAL and Discord.\nWhat more could you need?</string>
     <string name="theme_desc">تغيير فيب التطبيق الخاص بك</string>
     <string name="extensions_desc">Manage your reliable repositories</string>
     <string name="common_desc">UI and other mischievous stuff</string>
@@ -947,7 +948,7 @@
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="include_list_desc">تضمين قائمة العناصر في صفحة استكشاف المنجا</string>
     <string name="anilist_notification_filters_desc">اختر فئة لتجاهل</string>
-    <string name="anilist_notifications_checking_time_desc">تعيين التردد الذي تريد التطبيق التحقق منه للحصول على إشعارات Anilist</string>
+    <string name="anilist_notifications_checking_time_desc">تعيين التردد الذي تريد التطبيق التحقق منه للحصول على إشعارات AniList</string>
     <string name="comment_notification_checking_time_desc">تعيين التردد الذي تريد التطبيق التحقق منه للحصول على إشعارات التعليق</string>
     <string name="notification_for_checking_subscriptions_desc">إظهار إشعار للتحقق من الاشتراكات</string>
     <string name="use_alarm_manager_reliable_desc">استخدم لتجاوز تحسين بطارية الهاتف</string>
@@ -1070,13 +1071,13 @@
     <string name="running_fixes">Running Fixes…</string>
     <string name="test_search">Test Search</string>
     <string name="subtitle_langauge">Subtitle Langauge</string>
-    <string name="auto_open_links">Allow Himitsu to automatically open Anilist &amp; MAL Links?</string>
-    <string name="auto_open_links_desc">حدد Anilist &amp; MAL في قسم الروابط المدعومة</string>
+    <string name="auto_open_links">السماح لـ Himitsu بفتح قائمة الأنانية &amp; روابط MAL تلقائياً؟</string>
+    <string name="auto_open_links_desc">حدد قائمة الأنعية &amp; MAL في قسم الروابط المدعومة</string>
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
     <string name="down_to_up">Down to Up</string>
     <string name="up_to_down">Up to Down</string>
-    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="anilist_notification">اشعار جديد للقائمة</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>
