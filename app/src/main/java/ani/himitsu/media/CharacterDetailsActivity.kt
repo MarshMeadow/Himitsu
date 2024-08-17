@@ -17,8 +17,8 @@ import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.GridLayoutManager
 import ani.himitsu.R
 import ani.himitsu.Refresh
-import ani.himitsu.connections.anilist.Anilist
-import ani.himitsu.connections.anilist.AnilistMutations
+import ani.himitsu.connections.anilist.AniList
+import ani.himitsu.connections.anilist.AniListMutations
 import ani.himitsu.databinding.ActivityCharacterBinding
 import ani.himitsu.initActivity
 import ani.himitsu.loadImage
@@ -98,7 +98,7 @@ class CharacterDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChang
         lifecycleScope.launch {
             withContext(Dispatchers.IO) {
                 character.isFav =
-                    Anilist.query.isUserFav(AnilistMutations.FavType.CHARACTER, character.id)
+                    AniList.query.isUserFav(AniListMutations.FavType.CHARACTER, character.id)
             }
             withContext(Dispatchers.Main) {
                 binding.characterFav.setImageResource(
@@ -108,7 +108,7 @@ class CharacterDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChang
         }
         binding.characterFav.setOnClickListener {
             lifecycleScope.launch {
-                if (Anilist.mutation.toggleFav(AnilistMutations.FavType.CHARACTER, character.id)) {
+                if (AniList.mutation.toggleFav(AniListMutations.FavType.CHARACTER, character.id)) {
                     character.isFav = !character.isFav
                     binding.characterFav.setImageResource(
                         if (character.isFav) R.drawable.ic_round_favorite_24 else R.drawable.ic_round_favorite_border_24

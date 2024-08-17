@@ -10,7 +10,7 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import ani.himitsu.MainActivity
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.notifications.Task
 import ani.himitsu.profile.activity.ActivityItemBuilder
 import ani.himitsu.settings.saving.PrefManager
@@ -27,8 +27,8 @@ class AnilistNotificationTask : Task {
                 PrefManager.init(context) //make sure prefs are initialized
                 val userId = PrefManager.getVal<String>(PrefName.AnilistUserId)
                 if (userId.isNotEmpty()) {
-                    Anilist.getSavedToken()
-                    val res = Anilist.query.getNotifications(
+                    AniList.getSavedToken()
+                    val res = AniList.query.getNotifications(
                         userId.toInt(),
                         resetNotification = false
                     )

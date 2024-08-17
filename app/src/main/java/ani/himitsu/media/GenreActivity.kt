@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.GenresViewModel
 import ani.himitsu.databinding.ActivityGenreBinding
 import ani.himitsu.initActivity
@@ -63,7 +63,7 @@ class GenreActivity : AppCompatActivity() {
 
             lifecycleScope.launch(Dispatchers.IO) {
                 model.loadGenres(
-                    Anilist.genres ?: loadLocalGenres() ?: arrayListOf()
+                    AniList.genres ?: loadLocalGenres() ?: arrayListOf()
                 ) {
                     MainScope().launch {
                         adapter.addGenre(it)

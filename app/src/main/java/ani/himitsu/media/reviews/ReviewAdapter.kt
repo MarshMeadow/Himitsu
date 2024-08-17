@@ -10,7 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.RecyclerView
 import ani.himitsu.R
 import ani.himitsu.blurImage
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.databinding.ActivityReviewViewBinding
 import ani.himitsu.databinding.ItemReviewBinding
 import ani.himitsu.loadImage
@@ -60,7 +60,7 @@ class ReviewAdapter(val parentActivity: ReviewPopupActivity, var reviews: List<R
     private fun rateReview(binding: ActivityReviewViewBinding, review: Review, rating: String ) {
         disableVote(binding)
         parentActivity.lifecycleScope.launch {
-            val result = Anilist.mutation.rateReview(review.id, rating)
+            val result = AniList.mutation.rateReview(review.id, rating)
             if (result != null) {
                 withContext(Dispatchers.Main) {
                     val res = result.data.rateReview

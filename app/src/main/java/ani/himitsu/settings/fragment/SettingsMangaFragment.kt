@@ -67,7 +67,6 @@ class SettingsMangaFragment : Fragment() {
                     Settings(
                         type = ViewType.BUTTON,
                         name = getString(R.string.purge_manga_downloads),
-                        desc = getString(R.string.purge_manga_downloads_desc),
                         icon = R.drawable.ic_round_delete_24,
                         onClick = {
                             settings.customAlertDialog().apply {
@@ -86,7 +85,6 @@ class SettingsMangaFragment : Fragment() {
                     Settings(
                         type = ViewType.BUTTON,
                         name = getString(R.string.purge_novel_downloads),
-                        desc = getString(R.string.purge_novel_downloads_desc),
                         icon = R.drawable.ic_round_delete_24,
                         onClick = {
                             settings.customAlertDialog().apply {

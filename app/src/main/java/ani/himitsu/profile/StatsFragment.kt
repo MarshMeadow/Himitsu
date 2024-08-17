@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.api.Query
 import ani.himitsu.databinding.FragmentStatisticsBinding
 import ani.himitsu.profile.ChartBuilder.Companion.ChartPacket
@@ -59,7 +59,7 @@ class StatsFragment :
         binding.statisticList.layoutManager =
             LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
         binding.statisticProgressBar.visibility = View.VISIBLE
-        binding.compare.visibility = if (user.id == Anilist.userid) View.GONE else View.VISIBLE
+        binding.compare.visibility = if (user.id == AniList.userid) View.GONE else View.VISIBLE
         binding.filterContainer.updateLayoutParams<ViewGroup.MarginLayoutParams> {
             topMargin = statusBarHeight
         }
@@ -82,13 +82,13 @@ class StatsFragment :
         binding.compare.setOnCheckedChangeListener { _, isChecked ->
             if (isChecked) {
                 activity.lifecycleScope.launch {
-                    if (Anilist.userid != null) {
+                    if (AniList.userid != null) {
                         withContext(Dispatchers.Main) {
                             binding.statisticProgressBar.visibility = View.VISIBLE
                             binding.statisticList.visibility = View.GONE
                         }
                         val userStats =
-                            Anilist.query.getUserStatistics(Anilist.userid!!)?.data?.user
+                            AniList.query.getUserStatistics(AniList.userid!!)?.data?.user
                         if (userStats != null) {
                             stats.add(userStats)
                             withContext(Dispatchers.Main) {
@@ -101,10 +101,10 @@ class StatsFragment :
                 }
             } else {
                 if (Version.isNougat) {
-                    stats.removeIf { it?.id == Anilist.userid }
+                    stats.removeIf { it?.id == AniList.userid }
                 } else {
                     stats.removeAll(
-                        stats.filter { it?.id == Anilist.userid }.toSet()
+                        stats.filter { it?.id == AniList.userid }.toSet()
                     )
                 }
                 loadStats(type == MediaType.ANIME)
@@ -127,7 +127,7 @@ class StatsFragment :
             if (!loadedFirstTime) {
                 activity.lifecycleScope.launch {
                     stats.clear()
-                    stats.add(Anilist.query.getUserStatistics(user.id)?.data?.user)
+                    stats.add(AniList.query.getUserStatistics(user.id)?.data?.user)
                     withContext(Dispatchers.Main) {
                         binding.filterContainer.visibility = View.VISIBLE
                         binding.sourceType.setOnItemClickListener { _, _, i, _ ->

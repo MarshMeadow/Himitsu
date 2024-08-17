@@ -40,7 +40,7 @@ import ani.dantotsu.media.comments.CommentsFragment
 import ani.himitsu.R
 import ani.himitsu.Refresh
 import ani.himitsu.blurImage
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.copyToClipboard
 import ani.himitsu.databinding.ActivityMediaBinding
 import ani.himitsu.initActivity
@@ -110,7 +110,7 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
         if (id != -1) {
             runBlocking {
                 withContext(Dispatchers.IO) {
-                    media = Anilist.query.getMedia(id, false) ?: emptyMedia()
+                    media = AniList.query.getMedia(id, false) ?: emptyMedia()
                 }
             }
         }
@@ -240,7 +240,7 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
         binding.mediaStatus.text = media.status ?: ""
 
         //Fav Button
-        val favButton = if (Anilist.userid != null) {
+        val favButton = if (AniList.userid != null) {
             if (media.isFav) binding.mediaFav.setImageDrawable(
                 AppCompatResources.getDrawable(
                     this,
@@ -258,7 +258,7 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
                 media.isFav
             ) {
                 media.isFav = it
-                Anilist.mutation.toggleFav(media.anime != null, media.id)
+                AniList.mutation.toggleFav(media.anime != null, media.id)
                 Refresh.all()
             }
         } else {
@@ -310,7 +310,7 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
             }
             total()
             binding.mediaAddToList.setOnClickListener {
-                if (Anilist.userid != null) {
+                if (AniList.userid != null) {
                     if (supportFragmentManager.findFragmentByTag("dialog") == null)
                         MediaListDialogFragment().show(supportFragmentManager, "dialog")
                 } else snackString(getString(R.string.please_login_anilist))

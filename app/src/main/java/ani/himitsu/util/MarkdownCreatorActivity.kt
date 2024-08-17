@@ -8,7 +8,7 @@ import androidx.core.view.updateLayoutParams
 import androidx.core.widget.addTextChangedListener
 import ani.himitsu.R
 import ani.himitsu.buildMarkwon
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.databinding.ActivityMarkdownCreatorBinding
 import ani.himitsu.initActivity
 import ani.himitsu.navBarHeight
@@ -100,7 +100,7 @@ class MarkdownCreatorActivity : AppCompatActivity() {
                 setPosButton(R.string.ok) {
                     launchIO {
                         val success = when (type) {
-                            "activity" -> Anilist.mutation.postActivity(text)
+                            "activity" -> AniList.mutation.postActivity(text)
                             "review" -> {
                                 val summary = binding.summaryText.text?.toString()
                                 val score = binding.scoreText.text?.toString()?.toIntOrNull()
@@ -108,9 +108,9 @@ class MarkdownCreatorActivity : AppCompatActivity() {
                                     toast(getString(R.string.cannot_be_empty))
                                     return@launchIO
                                 }
-                                Anilist.mutation.postReview(summary, text, mediaId, score)
+                                AniList.mutation.postReview(summary, text, mediaId, score)
                             }
-                            "replyActivity" -> Anilist.mutation.postReply(parentId, text)
+                            "replyActivity" -> AniList.mutation.postReply(parentId, text)
                             else -> "Error: Unknown type"
                         }
                         toast(success)

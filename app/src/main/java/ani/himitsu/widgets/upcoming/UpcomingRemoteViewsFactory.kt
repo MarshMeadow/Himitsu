@@ -6,7 +6,7 @@ import android.graphics.Color
 import android.widget.RemoteViews
 import android.widget.RemoteViewsService
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.media.cereal.Media
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
@@ -69,7 +69,7 @@ class UpcomingRemoteViewsFactory(private val context: Context, appWidgetId: Int)
         runBlocking(Dispatchers.IO) {
             val upcoming = mediaList.ifEmpty {
                 prefs.edit().putLong(UpcomingWidget.LAST_UPDATE, System.currentTimeMillis()).apply()
-                Anilist.query.getUpcomingAnime(userId)
+                AniList.query.getUpcomingAnime(userId)
             }
             upcoming.map {
                 async(Dispatchers.IO) {

@@ -160,7 +160,7 @@
     <string name="server_enabled">Démarrage de TorrServer</string>
     <string name="enable_server_temp">Voulez-vous activer TorrServer temporairement (désactivé à la fermeture de l\'application)?</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">Paramètres Anilist</string>
+    <string name="anilist_settings">Paramètres AniList</string>
     <string name="extension_settings">Extensions</string>
     <string name="downloads">Téléchargements</string>
     <string name="offline_mode">Mode hors-ligne</string>
@@ -255,12 +255,12 @@
     <string name="ask_update_progress_info_ep">Désactiver mettra toujours automatiquement à jour la progression lorsque l\'épisode est regardé.</string>
     <string name="ask_update_progress_info_chap">Désactiver mettra toujours automatiquement à jour la progression lorsque le chapitre est lu.</string>
     <string name="ask_update_progress_chapter_zero">Mettre à jour la progression pour le Chapitre 0</string>
-    <string name="ask_update_progress_info_zero">Activer ajoutera les éléments nouvellement démarrés à Anilist avec une progression définie sur le chapitre 0.</string>
+    <string name="ask_update_progress_info_zero">Activer ajoutera les éléments nouvellement démarrés à AniList avec une progression définie sur le chapitre 0.</string>
     <string name="ask_update_progress_hentai">Mettre à jour la progression pour les Hentai</string>
     <string name="ask_update_progress_doujin">Mettre à jour la progression pour les Doujins</string>
     <string name="very_bold">très audacieux de ta part</string>
     <string name="watch_complete_percentage">Pourcentage de mise à jour de visionnage</string>
-    <string name="watch_complete_percentage_info">Le pourcentage auquel votre progression Anilist doit être mise à jour après avoir regardé un épisode.\nCela définit également le \% pour le préchargement des liens vers l\'épisode suivant.</string>
+    <string name="watch_complete_percentage_info">Le pourcentage auquel votre progression AniList doit être mise à jour après avoir regardé un épisode.\nCela définit également le \% pour le préchargement des liens vers l\'épisode suivant.</string>
     <string name="behaviour">Comportement</string>
     <string name="always_continue">Continuer toujours là où vous vous êtes arrêté</string>
     <string name="pause_video_focus">Mettre en pause lorsque le focus est perdu</string>
@@ -394,23 +394,23 @@
     <string name="addons">Add-ons</string>
     <string name="addons_desc">Les add-ons sont des extensions qui offrent des fonctionnalités supplémentaires.</string>
     <string name="myanimelist">Ma liste d\'animés</string>
-    <string name="login_with_anilist">Connectez-vous avec Anilist !</string>
-    <string name="anilist">Anilist</string>
+    <string name="login_with_anilist">Connectez-vous avec AniList !</string>
+    <string name="anilist">AniList</string>
     <string name="account_help">Comment cela fonctionne-t-il\?</string>
-    <string name="full_account_help">Himitsu est une application basée sur Anilist, donc pour la synchronisation avec votre compte MAL, un compte Anilist doit être connecté.
-        \nUne fois connecté avec les comptes Anilist et MAL, l\'application mettra automatiquement à jour votre compte MAL chaque fois que vous:
+    <string name="full_account_help">Himitsu est une application basée sur AniList, donc pour la synchronisation avec votre compte MAL, un compte AniList doit être connecté.
+        \nUne fois connecté avec les comptes AniList et MAL, l\'application mettra automatiquement à jour votre compte MAL chaque fois que vous:
         \n- Ajoutez un nouveau média
         \n- Modifiez un média
         \n- Supprimez un média
 
-        \n\nRemarque: l\'application ne synchronisera pas les anciens médias d\'Anilist vers MAL. Il est recommandé de les synchroniser manuellement avant.
+        \n\nRemarque: l\'application ne synchronisera pas les anciens médias d\'AniList vers MAL. Il est recommandé de les synchroniser manuellement avant.
         \n- Consultez la __FAQ__ pour une méthode _simple_
 
         \n\nEt pour les _Intermédiaires_ :
-        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
-        \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
+        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync MAL data with AniList](https://anilist.co/forum/thread/3393)
 
-        \n\n_Il n\'est pas nécessaire de synchroniser les comptes MAL et Anilist._
+        \n\n_Il n\'est pas nécessaire de synchroniser les comptes MAL et AniList._
     </string>
     <string name="frequency">Fréquence</string>
     <string name="notification_for_checking_subscriptions">Notofier lors de la vérification des abonnements</string>
@@ -463,13 +463,13 @@
     <string name="error_loading_data">Erreur lors du chargement des données %1$s</string>
     <string name="long_click_to_check_update">Veuillez appuyer longuement sur le bouton pour vérifier les mises à jour de l\'application</string>
     <string name="saved_to_path">Sauvegardé dans :\n%s</string>
-    <string name="login_anilist_account">Veuillez vous connecter à votre compte Anilist !</string>
+    <string name="login_anilist_account">Veuillez vous connecter à votre compte AniList !</string>
     <string name="congrats_vro">Félicitations frère</string>
     <string name="please_reload">Veuillez recharger.</string>
     <string name="copied_text">Texte copié \"%1$s\"</string>
     <string name="back_to_exit">Veuillez appuyer de nouveau sur RETOUR pour quitter</string>
     <string name="back_button">Bouton Retour</string>
-    <string name="anilist_not_found">Il semble que cela n\'ait pas été trouvé sur Anilist.</string>
+    <string name="anilist_not_found">Il semble que cela n\'ait pas été trouvé sur AniList.</string>
     <string name="disabled_auto_skip">Ignorer automatiquement les génériques d\'ouverture et de fin désactivé</string>
     <string name="auto_skip">Ignorer automatiquement les génériques d\'ouverture et de fin</string>
     <string name="show_skip_time_stamp_button">Afficher le bouton de saut temporel</string>

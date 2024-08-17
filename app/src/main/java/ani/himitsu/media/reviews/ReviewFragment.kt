@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.api.Query
 import ani.himitsu.databinding.ActivityFollowBinding
 import ani.himitsu.util.MarkdownCreatorActivity
@@ -86,7 +86,7 @@ class ReviewFragment : Fragment() {
         }
 
         lifecycleScope.launch(Dispatchers.IO) {
-            val response = Anilist.query.getReviews(mediaId)?.data?.page
+            val response = AniList.query.getReviews(mediaId)?.data?.page
             withContext(Dispatchers.Main) {
                 binding.listProgressBar.visibility = View.GONE
                 binding.listRecyclerView.setOnTouchListener { _, event ->
@@ -119,7 +119,7 @@ class ReviewFragment : Fragment() {
 
     private fun loadPage(page: Int, callback: () -> Unit) {
         lifecycleScope.launch(Dispatchers.IO) {
-            val response = Anilist.query.getReviews(mediaId, page)?.data?.page
+            val response = AniList.query.getReviews(mediaId, page)?.data?.page
             currentPage = response?.pageInfo?.currentPage ?: 1
             hasNextPage = response?.pageInfo?.hasNextPage ?: false
             response?.reviews?.let {

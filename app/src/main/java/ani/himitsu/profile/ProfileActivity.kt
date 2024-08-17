@@ -18,7 +18,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import ani.himitsu.R
 import ani.himitsu.blurImage
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.api.Query
 import ani.himitsu.databinding.ActivityProfileBinding
 import ani.himitsu.databinding.ProfileAppBarBinding
@@ -68,8 +68,8 @@ class ProfileActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListene
             val userid = intent.getIntExtra("userId", -1)
             val username = intent.getStringExtra("username") ?: ""
             val respond =
-                if (userid != -1) Anilist.query.getUserProfile(userid) else
-                    Anilist.query.getUserProfile(username)
+                if (userid != -1) AniList.query.getUserProfile(userid) else
+                    AniList.query.getUserProfile(username)
             val user = respond?.data?.user
             if (user == null) {
                 toast("User not found")
@@ -91,7 +91,7 @@ class ProfileActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListene
                 bindingProfileAppBar = ProfileAppBarBinding.bind(binding.root).apply {
                     binding.profileProgressBar.visibility = View.GONE
                     followButton.isGone =
-                        user.id == Anilist.userid || Anilist.userid == null
+                        user.id == AniList.userid || AniList.userid == null
 
                     fun followText(): String {
                         return getString(
@@ -108,7 +108,7 @@ class ProfileActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedListene
 
                     followButton.setOnClickListener {
                         lifecycleScope.launch(Dispatchers.IO) {
-                            val res = Anilist.mutation.toggleFollow(user.id)
+                            val res = AniList.mutation.toggleFollow(user.id)
                             if (res?.data?.toggleFollow != null) {
                                 withContext(Dispatchers.Main) {
                                     snackString(R.string.success)

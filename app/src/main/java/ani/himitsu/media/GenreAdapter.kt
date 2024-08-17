@@ -8,7 +8,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.updateLayoutParams
 import androidx.recyclerview.widget.RecyclerView
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.currActivity
 import ani.himitsu.databinding.ItemGenreBinding
 import ani.himitsu.loadImage
@@ -46,11 +46,11 @@ class GenreAdapter(
                     Intent(itemView.context, SearchActivity::class.java)
                         .putExtra("type", type)
                         .putExtra("genre", pos[bindingAdapterPosition])
-                        .putExtra("sortBy", Anilist.sortBy[2])
+                        .putExtra("sortBy", AniList.sortBy[2])
                         .putExtra("hideKeyboard", true)
                         .also {
                             if (pos[bindingAdapterPosition].lowercase() == "hentai") {
-                                if (!Anilist.adult) Toast.makeText(
+                                if (!AniList.adult) Toast.makeText(
                                     itemView.context,
                                     currActivity()?.getString(R.string.content_18),
                                     Toast.LENGTH_SHORT

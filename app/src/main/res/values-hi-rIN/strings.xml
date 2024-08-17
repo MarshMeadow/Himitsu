@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Time</string>
     <string name="player_settings_desc">सभी प्लेयर संबंधित सेटिंग्स</string>
-    <string name="purge_anime_downloads_desc">सभी डाउनलोड किए गए एनिमे को हटाएं</string>
     <string name="prefer_dub_desc">डिफ़ॉल्ट रूप से डब मीडिया का चयन करें</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">एनिमे अन्वेषण पेज में सूची आइटम शामिल करें</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">सभी पाठक संबंधित सेटिंग्स</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">सभी डाउनलोड किए गए मंगा को हटाएं</string>
-    <string name="purge_novel_downloads_desc">सभी डाउनलोड किए गए उपन्यास को हटाएं</string>
     <string name="include_list_desc">मंगा अन्वेषण पेज में सूची आइटम्स शामिल करें</string>
     <string name="anilist_notification_filters_desc">नजरअंदाज करने के लिए श्रेणी चुनें</string>
     <string name="anilist_notifications_checking_time_desc">ऐप को Anilist अधिसूचनाओं की जांच के लिए आपकी इच्छित अक्षमता सेट करें</string>

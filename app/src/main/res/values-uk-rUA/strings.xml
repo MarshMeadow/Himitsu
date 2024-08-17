@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Час</string>
     <string name="player_settings_desc">Всі налаштування пов\'язані з гравцем</string>
-    <string name="purge_anime_downloads_desc">Видалити всі завантажені аніме</string>
     <string name="prefer_dub_desc">Виберіть медіа, що отримала назву за замовчуванням</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Внести елементи списку у програму вивчення аніме</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Всі налаштування, пов\'язані з Читачем</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Видалити всі завантажені манги</string>
-    <string name="purge_novel_downloads_desc">Видалити всі завантажені Новелі</string>
     <string name="include_list_desc">Включити елементи списку у Manga перегляд</string>
     <string name="anilist_notification_filters_desc">Виберіть категорію для ігнорування</string>
     <string name="anilist_notifications_checking_time_desc">Встановити частоту для перевірки повідомлень Anilist</string>

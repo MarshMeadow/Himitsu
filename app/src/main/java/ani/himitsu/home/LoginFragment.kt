@@ -16,7 +16,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.documentfile.provider.DocumentFile
 import androidx.fragment.app.Fragment
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.databinding.FragmentLoginBinding
 import ani.himitsu.openLinkInBrowser
 import ani.himitsu.restart
@@ -44,7 +44,7 @@ class LoginFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding.loginButton.setOnClickListener { Anilist.loginIntent(requireActivity()) }
+        binding.loginButton.setOnClickListener { AniList.loginIntent(requireActivity()) }
         binding.loginDiscord.setOnClickListener { openLinkInBrowser(getString(R.string.discord_url)) }
         binding.loginGitlab.setOnClickListener { openLinkInBrowser(getString(R.string.gitlab, getString(R.string.repo_gl))) }
         binding.loginHimitsu.setOnClickListener { openLinkInBrowser(getString(R.string.himitsu_url)) }

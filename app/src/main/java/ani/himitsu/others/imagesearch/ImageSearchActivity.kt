@@ -13,7 +13,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.currContext
 import ani.himitsu.databinding.ActivityImageSearchBinding
 import ani.himitsu.initActivity
@@ -86,7 +86,7 @@ class ImageSearchActivity : AppCompatActivity() {
                         toast(getString(R.string.no_anilist_id_found))
                         return@launch
                     }
-                    val media = Anilist.query.getMedia(id, false)
+                    val media = AniList.query.getMedia(id, false)
 
                     withContext(Dispatchers.Main) {
                         media?.let {

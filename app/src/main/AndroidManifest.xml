@@ -415,7 +415,7 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".notifications.anilist.AnilistNotificationReceiver" />
+        <receiver android:name=".notifications.anilist.AniListNotificationReceiver" />
         <receiver android:name="ani.dantotsu.notifications.comment.CommentNotificationReceiver" />
         <receiver android:name=".notifications.subscription.SubscriptionNotificationReceiver" />
 

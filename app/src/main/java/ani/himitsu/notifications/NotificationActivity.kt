@@ -17,7 +17,7 @@ import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.api.Notification
 import ani.himitsu.connections.anilist.api.NotificationType
 import ani.himitsu.connections.anilist.api.NotificationType.Companion.fromFormattedString
@@ -249,8 +249,8 @@ class NotificationActivity : AppCompatActivity() {
     private fun loadPage(activityId: Int, onFinish: () -> Unit = {}) {
         lifecycleScope.launch(Dispatchers.IO) {
             val resetNotification = activityId == -1
-            val res = Anilist.query.getNotifications(
-                Anilist.userid ?: PrefManager.getVal<String>(PrefName.AnilistUserId).toIntOrNull()
+            val res = AniList.query.getNotifications(
+                AniList.userid ?: PrefManager.getVal<String>(PrefName.AnilistUserId).toIntOrNull()
                 ?: 0, currentPage, resetNotification = resetNotification
             )
             withContext(Dispatchers.Main) {

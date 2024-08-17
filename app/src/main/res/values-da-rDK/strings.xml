@@ -254,12 +254,12 @@
     <string name="ask_update_progress_info_ep">Slår fra vil altid automatisk opdatere fremskridt, når episoden overvåges.</string>
     <string name="ask_update_progress_info_chap">At slå fra vil altid automatisk opdatere fremskridt, når kapitlet er læst.</string>
     <string name="ask_update_progress_chapter_zero">Opdater fremskridt for kapitel 0</string>
-    <string name="ask_update_progress_info_zero">Slår til vil tilføje nystartede elementer til Anilist med fremskridt sat til kapitel 0.</string>
+    <string name="ask_update_progress_info_zero">Slår til vil tilføje nystartede elementer til AniList med fremskridt sat til kapitel 0.</string>
     <string name="ask_update_progress_hentai">Opdater fremskridt for Hentai</string>
     <string name="ask_update_progress_doujin">Opdater fremskridt for Doujins</string>
     <string name="very_bold">meget fed af jer sar</string>
     <string name="watch_complete_percentage">Se Opdatering Procentdel</string>
-    <string name="watch_complete_percentage_info">Den procentdel, hvor din Anilist fremskridt skal opdateres efter at have set en episode. \nDette indstiller også \% for hvornår links skal forhåndsindlæses til den næste episode.</string>
+    <string name="watch_complete_percentage_info">Den procentdel, hvor din AniList fremskridt skal opdateres efter at have set en episode. \nDette indstiller også \% for hvornår links skal forhåndsindlæses til den næste episode.</string>
     <string name="behaviour">Opførsel</string>
     <string name="always_continue">Genoptag altid fra tidsstempel</string>
     <string name="pause_video_focus">Pause når der ikke er fokus</string>
@@ -393,23 +393,23 @@
     <string name="addons">Addons</string>
     <string name="addons_desc">Tilføjelser er Dantotsu ekstra feature moduler.</string>
     <string name="myanimelist">MyanimeList</string>
-    <string name="login_with_anilist">Log ind med Anilist</string>
+    <string name="login_with_anilist">Log ind med AniList</string>
     <string name="anilist">Annonceliste</string>
     <string name="account_help">Hvordan virker dette\?</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
-        \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
+        \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
         \n- Delete a Media
 
-        \n\nNote: The app will not sync old Media\'s from Anilist to MAL, It\'s recommended to sync them.
+        \n\nNote: The app will not sync old Media\'s from AniList to MAL, It\'s recommended to sync them.
         \n- Check __FAQs__ for _Easy Method_
 
         \n\nAnd for _Intermediates_ :
-        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
-        \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
+        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync MAL data with AniList](https://anilist.co/forum/thread/3393)
 
-        \n\n_It is not required to sync both MAL and Anilist accounts._
+        \n\n_It is not required to sync both MAL and AniList accounts._
     </string>
     <string name="frequency">Frequency</string>
     <string name="notification_for_checking_subscriptions">Vis notifikation til kontrol af abonnementer</string>
@@ -468,7 +468,7 @@
     <string name="copied_text">Kopieret \"%1$s\"</string>
     <string name="back_to_exit">Tryk TILBAGE igen for at afslutte</string>
     <string name="back_button">Knappen Tilbage</string>
-    <string name="anilist_not_found">Det ser ud til at det ikke blev fundet på Anilist.</string>
+    <string name="anilist_not_found">Det ser ud til at det ikke blev fundet på AniList.</string>
     <string name="disabled_auto_skip">Deaktiveret Automatisk Spring OP &amp; ED</string>
     <string name="auto_skip">Auto Skipping OP &amp; ED</string>
     <string name="show_skip_time_stamp_button">Vis Spring Over [Segment] Knapper</string>
@@ -486,7 +486,7 @@
     <string name="logging_in_mal">Logger ind på MAL</string>
     <string name="no_next_episode">Ingen næste episode fundet!</string>
     <string name="enable_banner_animations">Prøv at aktivere \"Banner Animations\" i indstillinger</string>
-    <string name="please_login_anilist">Log ind med Anilist!</string>
+    <string name="please_login_anilist">Log ind med AniList!</string>
     <string name="auto_update_reset">Auto-opdaterings fremskridt er nu blevet nulstillet</string>
     <string name="cant_wait">Kan ikke vente, huh? fine X (</string>
     <string name="downloading">Downloader…</string>
@@ -494,11 +494,11 @@
     <string name="first_chapter">Dette er det første kapitel!</string>
     <string name="adult_stuff">Voksne Stuff?&#40; &#865;&#176; &#860;&#662; &#865;&#176; &#41;</string>
     <string name="what_did_you_open">Hvad åbnede du så?</string>
-    <string name="error_getting_data">Fejl ved hentning af data fra Anilist.</string>
+    <string name="error_getting_data">Fejl ved hentning af data fra AniList.</string>
     <string name="empty_response">Tøm svar! Suger din internet måske?</string>
     <string name="error_loading_mal_user_data">Fejl ved indlæsning af MAL brugerdata</string>
     <string name="error_loading_mal_data">Kunne ikke indlæse data fra MAL</string>
-    <string name="error_loading_anilist_user_data">Fejl ved indlæsning af Anilist brugerdata</string>
+    <string name="error_loading_anilist_user_data">Fejl ved indlæsning af AniList brugerdata</string>
     <string name="episode_not_found">Episoden kunne ikke findes: %1$s</string>
     <string name="list_updated">Liste Opdateret</string>
     <string name="deleted_from_list">Slettet fra liste</string>
@@ -516,7 +516,7 @@
     <string name="error_getting_image_data">Fejl ved hentning af billeddata</string>
     <string name="loading_image_failed">Indlæsning Af Billede Mislykkedes</string>
     <string name="copied_device_info">Kopierede enhedsoplysninger</string>
-    <string name="anilist_down">Synes at Anilist er nede, måske prøve at bruge en VPN eller du kan vente på, at den kommer tilbage.</string>
+    <string name="anilist_down">Synes at AniList er nede, måske prøve at bruge en VPN eller du kan vente på, at den kommer tilbage.</string>
     <string name="failed_to_load_data">Kunne ikke indlæse gemte data fra %1$d</string>
     <string name="access_not_available">Kunne ikke få adgang</string>
     <string name="mal_login_uri_not_found">Mal Login : Uri ikke fundet</string>
@@ -588,7 +588,7 @@
     <string name="deny">Deny</string>
     <string name="deny_all">Deny All</string>
     <string name="no_chapter">Intet Kapitel</string>
-    <string name="content_18">Slå 18+ indhold fra dine Anilist indstillinger til</string>
+    <string name="content_18">Slå 18+ indhold fra dine AniList indstillinger til</string>
     <string name="available">Tilgængelig</string>
     <string name="lets_go">Lad Os Kør</string>
     <string name="cope">Hope</string>
@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Tid</string>
     <string name="player_settings_desc">Alle spillerrelaterede indstillinger</string>
-    <string name="purge_anime_downloads_desc">Slet alle downloadede anime</string>
     <string name="prefer_dub_desc">Vælg som standard døbt medie</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Inkluder liste elementer i Anime udforske siden</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Alle læserrelaterede indstillinger</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Slet alle downloadede Manga</string>
-    <string name="purge_novel_downloads_desc">Slet alle downloadede romaner</string>
     <string name="include_list_desc">Inkludér liste elementer i Manga udforsknings siden</string>
     <string name="anilist_notification_filters_desc">Vælg kategori at ignorere</string>
     <string name="anilist_notifications_checking_time_desc">Angiv den frekvens, du vil have appen til at tjekke for Anilist notifikationer</string>

@@ -160,7 +160,7 @@
     <string name="server_enabled">Spouštění TorrServer</string>
     <string name="enable_server_temp">Chcete dočasně povolit TorrServer (zakázáno při uzavření aplikace)?</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">Nastavení Anilistu</string>
+    <string name="anilist_settings">Nastavení AniListu</string>
     <string name="extension_settings">Rozšíření</string>
     <string name="downloads">Stahování</string>
     <string name="offline_mode">Offline režim</string>
@@ -254,7 +254,7 @@
     <string name="ask_update_progress_info_ep">Vypnutí vždy automaticky aktualizuje průběh epizody.</string>
     <string name="ask_update_progress_info_chap">Vypnutí automaticky aktualizuje průběh při čtení kapitoly.</string>
     <string name="ask_update_progress_chapter_zero">Průběh aktualizace pro kapitolu 0</string>
-    <string name="ask_update_progress_info_zero">Zapnutí přidá nově zahájené položky do Anilisty s postupem nastaveným v kapitole 0.</string>
+    <string name="ask_update_progress_info_zero">Zapnutí přidá nově zahájené položky do AniListy s postupem nastaveným v kapitole 0.</string>
     <string name="ask_update_progress_hentai">Průběh aktualizace pro Hentai</string>
     <string name="ask_update_progress_doujin">Průběh aktualizace pro Dougjins</string>
     <string name="very_bold">velmi tučné od vás</string>
@@ -393,10 +393,10 @@
     <string name="addons">Addons</string>
     <string name="addons_desc">Addons jsou moduly funkce Dantotsu.</string>
     <string name="myanimelist">MyAnimeList</string>
-    <string name="login_with_anilist">Přihlásit se pomocí Anilist</string>
-    <string name="anilist">Anilista</string>
+    <string name="login_with_anilist">Přihlásit se pomocí AniList</string>
+    <string name="anilist">AniLista</string>
     <string name="account_help">Jak to funguje\?</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
         \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Čas</string>
     <string name="player_settings_desc">Nastavení týkající se všech hráčů</string>
-    <string name="purge_anime_downloads_desc">Odstranit všechny stažené Anime</string>
     <string name="prefer_dub_desc">Vybrat přezdívaná média ve výchozím nastavení</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Zahrnout položky seznamu ve stránce Anime</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Všechna nastavení související s čtečkou</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Odstranit všechny stažené Manga</string>
-    <string name="purge_novel_downloads_desc">Odstranit všechny stažené Novely</string>
     <string name="include_list_desc">Zahrnout položky seznamu v Manga průzkumné stránce</string>
     <string name="anilist_notification_filters_desc">Vyberte kategorii, kterou chcete ignorovat</string>
     <string name="anilist_notifications_checking_time_desc">Nastavte frekvenci, kterou chcete, aby aplikace kontrolovala oznámení o Anilistech</string>

@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">时间</string>
     <string name="player_settings_desc">所有与玩家相关的设置</string>
-    <string name="purge_anime_downloads_desc">删除所有已下载的 Anime</string>
     <string name="prefer_dub_desc">默认选择被指定的媒体</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">在 Anime 探索页面中包含列表项</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">所有与阅读器相关的设置</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">删除所有已下载的 Manga</string>
-    <string name="purge_novel_downloads_desc">删除所有已下载的Novels</string>
     <string name="include_list_desc">在 Manga 探索页面中包含列表项目</string>
     <string name="anilist_notification_filters_desc">选择要忽略的类别</string>
     <string name="anilist_notifications_checking_time_desc">设置您想要应用程序检查Anilist 通知的频率</string>

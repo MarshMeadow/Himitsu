@@ -3,7 +3,7 @@ package ani.himitsu.media.user
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.media.cereal.Media
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
@@ -17,7 +17,7 @@ class ListViewModel : ViewModel() {
     fun getLists(): LiveData<MutableMap<String, ArrayList<Media>>> = lists
     suspend fun loadLists(anime: Boolean, userId: Int, sortOrder: String? = null) {
         tryWithSuspend {
-            val res = Anilist.query.getMediaLists(anime, userId, sortOrder)
+            val res = AniList.query.getMediaLists(anime, userId, sortOrder)
             lists.postValue(res)
             unfilteredLists.postValue(res)
         }

@@ -12,8 +12,7 @@ import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import ani.himitsu.connections.anilist.Anilist
-import ani.himitsu.connections.anilist.AnilistQueries
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.api.Activity
 import ani.himitsu.databinding.FragmentFeedBinding
 import ani.himitsu.media.MediaDetailsActivity
@@ -72,13 +71,13 @@ class FeedFragment : Fragment() {
             if (!loadedFirstTime) {
                 activity.lifecycleScope.launch(Dispatchers.IO) {
                     val nulledId = if (activityId == -1) null else activityId
-                    val res = Anilist.query.getFeed(userId, global, activityId = nulledId)
+                    val res = AniList.query.getFeed(userId, global, activityId = nulledId)
                     withContext(Dispatchers.Main) {
                         res?.data?.page?.activities?.let { activities ->
                             activityList = activities
                             val filtered =
                                 activityList.filterNot {  // filter out messages that are not directed to the user
-                                    it.recipient?.id != null && it.recipient.id != Anilist.userid
+                                    it.recipient?.id != null && it.recipient.id != AniList.userid
                                 }
                             adapter.update(filtered.map {
                                 ActivityItem(
@@ -93,7 +92,7 @@ class FeedFragment : Fragment() {
 
                         binding.listRecyclerView.setOnTouchListener { _, event ->
                             if (event?.action == MotionEvent.ACTION_UP) {
-                                if (activityList.size % AnilistQueries.ITEMS_PER_PAGE_M != 0 && !global) {
+                                if (activityList.size % AniList.ITEMS_PER_PAGE_M != 0 && !global) {
                                     //snackString("No more activities") fix spam?
                                     Logger.log("No more activities")
                                 } else if (!scrollView.canScrollVertically(1)
@@ -127,12 +126,12 @@ class FeedFragment : Fragment() {
 
     private fun loadPage(onFinish: () -> Unit = {}) {
         activity.lifecycleScope.launch(Dispatchers.IO) {
-            val newRes = Anilist.query.getFeed(userId, global, page)
+            val newRes = AniList.query.getFeed(userId, global, page)
             withContext(Dispatchers.Main) {
                 newRes?.data?.page?.activities?.let { activities ->
                     activityList += activities
                     val filtered = activities.filterNot {
-                        it.recipient?.id != null && it.recipient.id != Anilist.userid
+                        it.recipient?.id != null && it.recipient.id != AniList.userid
                     }
                     adapter.addAll(filtered.map {
                         ActivityItem(

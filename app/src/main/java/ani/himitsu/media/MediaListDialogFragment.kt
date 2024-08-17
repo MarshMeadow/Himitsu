@@ -14,7 +14,7 @@ import ani.himitsu.view.dialog.DatePickerFragment
 import ani.himitsu.util.InputFilterMinMax
 import ani.himitsu.R
 import ani.himitsu.Refresh
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.api.FuzzyDate
 import ani.himitsu.connections.mal.MAL
 import ani.himitsu.databinding.BottomSheetMediaListBinding
@@ -243,7 +243,7 @@ class MediaListDialogFragment : BottomSheetDialogFragment() {
                                 val notes = _binding?.mediaListNotes?.text?.toString()
                                 val startD = start.date
                                 val endD = end.date
-                                Anilist.mutation.editList(
+                                AniList.mutation.editList(
                                     media!!.id,
                                     progress,
                                     score,
@@ -287,13 +287,13 @@ class MediaListDialogFragment : BottomSheetDialogFragment() {
                     scope.launch {
                         withContext(Dispatchers.IO) {
                             if (id != null) {
-                                Anilist.mutation.deleteList(id!!)
+                                AniList.mutation.deleteList(id!!)
                                 MAL.query.deleteList(media?.anime != null, media?.idMAL)
                             } else {
-                                val profile = Anilist.query.userMediaDetails(media!!)
+                                val profile = AniList.query.userMediaDetails(media!!)
                                 profile.userListId?.let { listId ->
                                     id = listId
-                                    Anilist.mutation.deleteList(listId)
+                                    AniList.mutation.deleteList(listId)
                                     MAL.query.deleteList(media?.anime != null, media?.idMAL)
                                 }
                             }

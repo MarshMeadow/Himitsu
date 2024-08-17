@@ -13,7 +13,7 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.toBitmap
 import ani.himitsu.MainActivity
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.profile.ProfileActivity
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
@@ -86,7 +86,7 @@ class ProfileStatsWidget : AppWidgetProvider() {
             launchIO {
                 val userPref = PrefManager.getVal(PrefName.AnilistUserId, "")
                 if (userPref.isNotEmpty()) {
-                    val respond = Anilist.query.getUserProfile(userPref.toInt())
+                    val respond = AniList.query.getUserProfile(userPref.toInt())
                     respond?.data?.user?.let { user ->
                         withContext(Dispatchers.Main) {
                             val views =

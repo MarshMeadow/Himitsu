@@ -12,7 +12,7 @@ import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.api.User
 import ani.himitsu.databinding.ActivityFollowBinding
 import ani.himitsu.initActivity
@@ -63,8 +63,8 @@ class FollowActivity : AppCompatActivity() {
 
         lifecycleScope.launch(Dispatchers.IO) {
             val respond = when (title) {
-                "Following" -> Anilist.query.userFollowing(userID)?.data?.page?.following
-                "Followers" -> Anilist.query.userFollowers(userID)?.data?.page?.followers
+                "Following" -> AniList.query.userFollowing(userID)?.data?.page?.following
+                "Followers" -> AniList.query.userFollowers(userID)?.data?.page?.followers
                 else -> null
             }
             users = respond

@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import ani.himitsu.view.MediaPageTransformer
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.currContext
 import ani.himitsu.databinding.ItemListContainerBinding
 import ani.himitsu.databinding.ItemMangaPageBinding
@@ -139,7 +139,7 @@ class MangaPageAdapter(val parent: MangaFragment): RecyclerView.Adapter<MangaPag
                     it.context,
                     Intent(it.context, SearchActivity::class.java)
                         .putExtra("type", "MANGA")
-                        .putExtra("sortBy", Anilist.sortBy[0])
+                        .putExtra("sortBy", AniList.sortBy[0])
                         .putExtra("hideKeyboard", true),
                     null
                 )
@@ -155,7 +155,7 @@ class MangaPageAdapter(val parent: MangaFragment): RecyclerView.Adapter<MangaPag
             //reviewButtonImage.loadImage()
         }
 
-        binding.mangaIncludeList.isVisible = Anilist.userid != null
+        binding.mangaIncludeList.isVisible = AniList.userid != null
 
         binding.mangaIncludeList.isChecked = PrefManager.getVal(PrefName.PopularMangaList)
 
@@ -316,8 +316,8 @@ class MangaPageAdapter(val parent: MangaFragment): RecyclerView.Adapter<MangaPag
     }
 
     fun updateAvatar() {
-        if (Anilist.avatar != null && ready.value == true) {
-            trendingBinding.userAvatar.loadImage(Anilist.avatar, 52.toPx)
+        if (AniList.avatar != null && ready.value == true) {
+            trendingBinding.userAvatar.loadImage(AniList.avatar, 52.toPx)
             trendingBinding.userAvatar.imageTintList = null
         }
     }

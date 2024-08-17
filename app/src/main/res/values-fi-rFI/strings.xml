@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Aika</string>
     <string name="player_settings_desc">Kaikki soittimeen liittyvät asetukset</string>
-    <string name="purge_anime_downloads_desc">Poista kaikki ladatut Anime</string>
     <string name="prefer_dub_desc">Valitse oletusarvoisesti duboitu media</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Sisällytä listan kohteita Anime Tapa sivulle</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Kaikki lukijaan liittyvät asetukset</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Poista kaikki ladatut Manga</string>
-    <string name="purge_novel_downloads_desc">Poista kaikki ladatut romaanit</string>
     <string name="include_list_desc">Sisällytä listan kohteet Manga -tutkimussivulle</string>
     <string name="anilist_notification_filters_desc">Valitse kategoria joka jätetään huomiotta</string>
     <string name="anilist_notifications_checking_time_desc">Määritä taajuus, jonka haluat sovelluksen tarkistavan Anilistin ilmoitukset</string>

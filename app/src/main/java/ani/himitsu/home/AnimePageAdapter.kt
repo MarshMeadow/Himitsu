@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import ani.himitsu.view.MediaPageTransformer
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.currContext
 import ani.himitsu.databinding.ItemAnimePageBinding
 import ani.himitsu.databinding.ItemListContainerBinding
@@ -161,7 +161,7 @@ class AnimePageAdapter(val parent: AnimeFragment) : RecyclerView.Adapter<AnimePa
             //reviewButtonImage.loadImage()
         }
 
-        binding.animeIncludeList.isVisible = Anilist.userid != null
+        binding.animeIncludeList.isVisible = AniList.userid != null
 
         binding.animeIncludeList.isChecked = PrefManager.getVal(PrefName.PopularAnimeList)
 
@@ -308,8 +308,8 @@ class AnimePageAdapter(val parent: AnimeFragment) : RecyclerView.Adapter<AnimePa
     }
 
     fun updateAvatar() {
-        if (Anilist.avatar != null && ready.value == true) {
-            trendingBinding.userAvatar.loadImage(Anilist.avatar, 52.toPx)
+        if (AniList.avatar != null && ready.value == true) {
+            trendingBinding.userAvatar.loadImage(AniList.avatar, 52.toPx)
             trendingBinding.userAvatar.imageTintList = null
         }
     }

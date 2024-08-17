@@ -10,7 +10,7 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.api.ActivityReply
 import ani.himitsu.databinding.BottomSheetRecyclerBinding
 import ani.himitsu.profile.ProfileActivity
@@ -59,7 +59,7 @@ class RepliesBottomDialog : BottomSheetDialogFragment() {
         activityId = requireArguments().getInt("activityId")
         loading(true)
         lifecycleScope.launch(Dispatchers.IO) {
-            val response = Anilist.query.getReplies(activityId)
+            val response = AniList.query.getReplies(activityId)
             withContext(Dispatchers.Main) {
                 loading(false)
                 if (response != null) {

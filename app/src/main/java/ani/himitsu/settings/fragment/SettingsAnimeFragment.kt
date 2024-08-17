@@ -65,7 +65,6 @@ class SettingsAnimeFragment : Fragment() {
                     Settings(
                         type = ViewType.BUTTON,
                         name = getString(R.string.purge_anime_downloads),
-                        desc = getString(R.string.purge_anime_downloads_desc),
                         icon = R.drawable.ic_round_delete_24,
                         onClick = {
                             val dialog = AlertDialog.Builder(settings, R.style.MyPopup)

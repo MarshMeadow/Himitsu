@@ -7,7 +7,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.media.anime.Episode
 import ani.himitsu.media.anime.SelectorDialogFragment
 import ani.himitsu.media.cereal.Media
@@ -79,7 +79,7 @@ class MediaDetailsViewModel : ViewModel() {
     fun loadMedia(m: Media) {
         if (!loading) {
             loading = true
-            media.postValue(Anilist.query.mediaDetails(m))
+            media.postValue(AniList.query.mediaDetails(m))
         }
         loading = false
     }

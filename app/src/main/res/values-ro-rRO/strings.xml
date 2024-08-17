@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Timp</string>
     <string name="player_settings_desc">Toate setările legate de jucător</string>
-    <string name="purge_anime_downloads_desc">Ștergeți toate descărcările de pe ecran</string>
     <string name="prefer_dub_desc">Selectaţi implicit duplicat media</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Includeți elemente de listă în pagina de explorare Anime</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Toate setările legate de cititor</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Şterge toate descărcările de manga</string>
-    <string name="purge_novel_downloads_desc">Șterge toate Notițele descărcate</string>
     <string name="include_list_desc">Include elemente de listă în pagina de explorare Manga</string>
     <string name="anilist_notification_filters_desc">Alege categoria de Ignorat</string>
     <string name="anilist_notifications_checking_time_desc">Setați frecvența pe care doriți ca aplicația să o verifice pentru notificări Anilist</string>

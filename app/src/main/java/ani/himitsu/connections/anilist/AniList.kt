@@ -1,9 +1,9 @@
 package ani.himitsu.connections.anilist
 
 import android.content.Context
+import ani.dantotsu.connections.comments.CommentsAPI
 import ani.himitsu.R
 import ani.himitsu.client
-import ani.dantotsu.connections.comments.CommentsAPI
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.snackString
@@ -13,9 +13,13 @@ import bit.himitsu.nio.Strings.getString
 import bit.himitsu.webkit.ChromeIntegration
 import java.util.Calendar
 
-object Anilist {
-    val query: AnilistQueries = AnilistQueries()
-    val mutation: AnilistMutations = AnilistMutations()
+object AniList {
+    const val ITEMS_PER_PAGE_S = 10
+    const val ITEMS_PER_PAGE_M = 25
+    const val ITEMS_PER_PAGE_L = 50
+
+    val query: AniListQueries = AniListQueries()
+    val mutation: AniListMutations = AniListMutations()
 
     var token: String? = null
     var username: String? = null
@@ -200,7 +204,7 @@ object Anilist {
                 json.parsed()
             } else null
         } catch (e: Exception) {
-            if (show) snackString("Error fetching Anilist data: ${e.message}")
+            if (show) snackString(getString(R.string.anilist_data_error, e.message))
             Logger.log("Anilist Query Error: ${e.message}")
             null
         }

@@ -20,7 +20,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.HORIZONTAL
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.currContext
 import ani.himitsu.databinding.ItemChipBinding
 import ani.himitsu.databinding.ItemSearchHeaderBinding
@@ -49,13 +49,13 @@ class SearchAdapter(private val activity: SearchActivity, private val type: Stri
 
     private fun updateFilterTextViewDrawable() {
         val filterDrawable = when (activity.result.sort) {
-            Anilist.sortBy[0] -> R.drawable.ic_round_area_chart_24
-            Anilist.sortBy[1] -> R.drawable.ic_round_filter_peak_24
-            Anilist.sortBy[2] -> R.drawable.ic_round_star_graph_24
-            Anilist.sortBy[3] -> R.drawable.ic_round_new_releases_24
-            Anilist.sortBy[4] -> R.drawable.ic_round_filter_list_24
-            Anilist.sortBy[5] -> R.drawable.ic_round_filter_list_24_reverse
-            Anilist.sortBy[6] -> R.drawable.ic_round_assist_walker_24
+            AniList.sortBy[0] -> R.drawable.ic_round_area_chart_24
+            AniList.sortBy[1] -> R.drawable.ic_round_filter_peak_24
+            AniList.sortBy[2] -> R.drawable.ic_round_star_graph_24
+            AniList.sortBy[3] -> R.drawable.ic_round_new_releases_24
+            AniList.sortBy[4] -> R.drawable.ic_round_filter_list_24
+            AniList.sortBy[5] -> R.drawable.ic_round_filter_list_24_reverse
+            AniList.sortBy[6] -> R.drawable.ic_round_assist_walker_24
             else -> R.drawable.ic_round_filter_alt_24
         }
         binding.filterTextView.setCompoundDrawablesWithIntrinsicBounds(filterDrawable, 0, 0, 0)
@@ -125,49 +125,49 @@ class SearchAdapter(private val activity: SearchActivity, private val type: Stri
             popupMenu.setOnMenuItemClickListener { item ->
                 when (item.itemId) {
                     R.id.sort_by_score -> {
-                        activity.result.sort = Anilist.sortBy[0]
+                        activity.result.sort = AniList.sortBy[0]
                         activity.updateChips.invoke()
                         activity.search()
                         updateFilterTextViewDrawable()
                     }
 
                     R.id.sort_by_popular -> {
-                        activity.result.sort = Anilist.sortBy[1]
+                        activity.result.sort = AniList.sortBy[1]
                         activity.updateChips.invoke()
                         activity.search()
                         updateFilterTextViewDrawable()
                     }
 
                     R.id.sort_by_trending -> {
-                        activity.result.sort = Anilist.sortBy[2]
+                        activity.result.sort = AniList.sortBy[2]
                         activity.updateChips.invoke()
                         activity.search()
                         updateFilterTextViewDrawable()
                     }
 
                     R.id.sort_by_recent -> {
-                        activity.result.sort = Anilist.sortBy[3]
+                        activity.result.sort = AniList.sortBy[3]
                         activity.updateChips.invoke()
                         activity.search()
                         updateFilterTextViewDrawable()
                     }
 
                     R.id.sort_by_a_z -> {
-                        activity.result.sort = Anilist.sortBy[4]
+                        activity.result.sort = AniList.sortBy[4]
                         activity.updateChips.invoke()
                         activity.search()
                         updateFilterTextViewDrawable()
                     }
 
                     R.id.sort_by_z_a -> {
-                        activity.result.sort = Anilist.sortBy[5]
+                        activity.result.sort = AniList.sortBy[5]
                         activity.updateChips.invoke()
                         activity.search()
                         updateFilterTextViewDrawable()
                     }
 
                     R.id.sort_by_pure_pain -> {
-                        activity.result.sort = Anilist.sortBy[6]
+                        activity.result.sort = AniList.sortBy[6]
                         activity.updateChips.invoke()
                         activity.search()
                         updateFilterTextViewDrawable()
@@ -240,7 +240,7 @@ class SearchAdapter(private val activity: SearchActivity, private val type: Stri
             activity.recycler()
         }
 
-        if (Anilist.adult) {
+        if (AniList.adult) {
             binding.searchAdultCheck.visibility = View.VISIBLE
             binding.searchAdultCheck.isChecked = adult
             binding.searchAdultCheck.setOnCheckedChangeListener { _, b ->
@@ -249,7 +249,7 @@ class SearchAdapter(private val activity: SearchActivity, private val type: Stri
             }
         } else binding.searchAdultCheck.visibility = View.GONE
         binding.searchList.apply {
-            if (Anilist.userid != null) {
+            if (AniList.userid != null) {
                 visibility = View.VISIBLE
                 checkedState = when (listOnly) {
                     null -> STATE_UNCHECKED

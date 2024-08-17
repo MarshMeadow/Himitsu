@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Czas</string>
     <string name="player_settings_desc">Ustawienia wszystkich graczy</string>
-    <string name="purge_anime_downloads_desc">Usuń wszystkie pobrane anime</string>
     <string name="prefer_dub_desc">Wybierz domyślnie zaoszczędzone media</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Dołącz elementy listy na stronie eksploracji Anime</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Wszystkie ustawienia związane z czytnikiem</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Usuń wszystkie pobrane Manga</string>
-    <string name="purge_novel_downloads_desc">Usuń wszystkie pobrane Novels</string>
     <string name="include_list_desc">Dołącz elementy listy na stronie eksploracji Manga</string>
     <string name="anilist_notification_filters_desc">Wybierz kategorię do ignorowania</string>
     <string name="anilist_notifications_checking_time_desc">Ustaw częstotliwość sprawdzania powiadomień o anilicie</string>

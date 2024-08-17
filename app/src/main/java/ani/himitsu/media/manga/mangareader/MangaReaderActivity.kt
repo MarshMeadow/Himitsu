@@ -45,7 +45,7 @@ import androidx.window.layout.FoldingFeature
 import androidx.window.layout.WindowInfoTracker
 import androidx.window.layout.WindowLayoutInfo
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.discord.Discord
 import ani.himitsu.connections.discord.DiscordService
 import ani.himitsu.connections.discord.DiscordServiceSingleton
@@ -1043,7 +1043,7 @@ class MangaReaderActivity : AppCompatActivity() {
     }
 
     private fun progress(runnable: Runnable) {
-        if (maxChapterPage - currentChapterPage <= 1 && Anilist.userid != null) {
+        if (maxChapterPage - currentChapterPage <= 1 && AniList.userid != null) {
             showProgressDialog =
                 if (PrefManager.getVal(PrefName.AskIndividualReader)) PrefManager.getCustomVal(
                     "${media.id}_progressDialog",

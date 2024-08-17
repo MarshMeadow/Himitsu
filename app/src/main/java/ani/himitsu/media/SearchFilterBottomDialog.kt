@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.HORIZONTAL
 import androidx.recyclerview.widget.RecyclerView.VERTICAL
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.databinding.BottomSheetSearchFilterBinding
 import ani.himitsu.databinding.ItemChipBinding
 import ani.himitsu.view.dialog.BottomSheetDialogFragment
@@ -58,13 +58,13 @@ class SearchFilterBottomDialog : BottomSheetDialogFragment() {
 
     private fun setSortByFilterImage() {
         val filterDrawable = when (activity.result.sort) {
-            Anilist.sortBy[0] -> R.drawable.ic_round_area_chart_24
-            Anilist.sortBy[1] -> R.drawable.ic_round_filter_peak_24
-            Anilist.sortBy[2] -> R.drawable.ic_round_star_graph_24
-            Anilist.sortBy[3] -> R.drawable.ic_round_new_releases_24
-            Anilist.sortBy[4] -> R.drawable.ic_round_filter_list_24
-            Anilist.sortBy[5] -> R.drawable.ic_round_filter_list_24_reverse
-            Anilist.sortBy[6] -> R.drawable.ic_round_assist_walker_24
+            AniList.sortBy[0] -> R.drawable.ic_round_area_chart_24
+            AniList.sortBy[1] -> R.drawable.ic_round_filter_peak_24
+            AniList.sortBy[2] -> R.drawable.ic_round_star_graph_24
+            AniList.sortBy[3] -> R.drawable.ic_round_new_releases_24
+            AniList.sortBy[4] -> R.drawable.ic_round_filter_list_24
+            AniList.sortBy[5] -> R.drawable.ic_round_filter_list_24_reverse
+            AniList.sortBy[6] -> R.drawable.ic_round_assist_walker_24
             else -> R.drawable.ic_round_filter_alt_24
         }
         binding.sortByFilter.setImageResource(filterDrawable)
@@ -155,43 +155,43 @@ class SearchFilterBottomDialog : BottomSheetDialogFragment() {
             popupMenu.setOnMenuItemClickListener { menuItem ->
                 when (menuItem.itemId) {
                     R.id.sort_by_score -> {
-                        activity.result.sort = Anilist.sortBy[0]
+                        activity.result.sort = AniList.sortBy[0]
                         binding.sortByFilter.setImageResource(R.drawable.ic_round_area_chart_24)
                         startBounceZoomAnimation()
                     }
 
                     R.id.sort_by_popular -> {
-                        activity.result.sort = Anilist.sortBy[1]
+                        activity.result.sort = AniList.sortBy[1]
                         binding.sortByFilter.setImageResource(R.drawable.ic_round_filter_peak_24)
                         startBounceZoomAnimation()
                     }
 
                     R.id.sort_by_trending -> {
-                        activity.result.sort = Anilist.sortBy[2]
+                        activity.result.sort = AniList.sortBy[2]
                         binding.sortByFilter.setImageResource(R.drawable.ic_round_star_graph_24)
                         startBounceZoomAnimation()
                     }
 
                     R.id.sort_by_recent -> {
-                        activity.result.sort = Anilist.sortBy[3]
+                        activity.result.sort = AniList.sortBy[3]
                         binding.sortByFilter.setImageResource(R.drawable.ic_round_new_releases_24)
                         startBounceZoomAnimation()
                     }
 
                     R.id.sort_by_a_z -> {
-                        activity.result.sort = Anilist.sortBy[4]
+                        activity.result.sort = AniList.sortBy[4]
                         binding.sortByFilter.setImageResource(R.drawable.ic_round_filter_list_24)
                         startBounceZoomAnimation()
                     }
 
                     R.id.sort_by_z_a -> {
-                        activity.result.sort = Anilist.sortBy[5]
+                        activity.result.sort = AniList.sortBy[5]
                         binding.sortByFilter.setImageResource(R.drawable.ic_round_filter_list_24_reverse)
                         startBounceZoomAnimation()
                     }
 
                     R.id.sort_by_pure_pain -> {
-                        activity.result.sort = Anilist.sortBy[6]
+                        activity.result.sort = AniList.sortBy[6]
                         binding.sortByFilter.setImageResource(R.drawable.ic_round_assist_walker_24)
                         startBounceZoomAnimation()
                     }
@@ -266,7 +266,7 @@ class SearchFilterBottomDialog : BottomSheetDialogFragment() {
             dismiss()
         }
         val format =
-            if (activity.result.type == "ANIME") Anilist.animeStatus else Anilist.mangaStatus
+            if (activity.result.type == "ANIME") AniList.animeStatus else AniList.mangaStatus
         binding.searchStatus.setText(activity.result.status?.replace("_", " "))
         binding.searchStatus.setAdapter(
             ArrayAdapter(
@@ -281,7 +281,7 @@ class SearchFilterBottomDialog : BottomSheetDialogFragment() {
             ArrayAdapter(
                 binding.root.context,
                 R.layout.item_dropdown,
-                Anilist.source.toTypedArray()
+                AniList.source.toTypedArray()
             )
         )
 
@@ -290,7 +290,7 @@ class SearchFilterBottomDialog : BottomSheetDialogFragment() {
             ArrayAdapter(
                 binding.root.context,
                 R.layout.item_dropdown,
-                (if (activity.result.type == "ANIME") Anilist.animeFormats else Anilist.mangaFormats).toTypedArray()
+                (if (activity.result.type == "ANIME") AniList.animeFormats else AniList.mangaFormats).toTypedArray()
             )
         )
 
@@ -315,12 +315,12 @@ class SearchFilterBottomDialog : BottomSheetDialogFragment() {
                 ArrayAdapter(
                     binding.root.context,
                     R.layout.item_dropdown,
-                    Anilist.seasons.toTypedArray()
+                    AniList.seasons.toTypedArray()
                 )
             )
         }
 
-        binding.searchFilterGenres.adapter = FilterChipAdapter(Anilist.genres ?: listOf()) { chip ->
+        binding.searchFilterGenres.adapter = FilterChipAdapter(AniList.genres ?: listOf()) { chip ->
             val genre = chip.text.toString()
             chip.isChecked = selectedGenres.contains(genre)
             chip.isCloseIconVisible = exGenres.contains(genre)
@@ -346,7 +346,7 @@ class SearchFilterBottomDialog : BottomSheetDialogFragment() {
         binding.searchGenresGrid.isChecked = false
 
         binding.searchFilterTags.adapter =
-            FilterChipAdapter(Anilist.tags?.get(activity.result.isAdult) ?: listOf()) { chip ->
+            FilterChipAdapter(AniList.tags?.get(activity.result.isAdult) ?: listOf()) { chip ->
                 val tag = chip.text.toString()
                 chip.isChecked = selectedTags.contains(tag)
                 chip.isCloseIconVisible = exTags.contains(tag)

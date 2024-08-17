@@ -12,7 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import ani.himitsu.util.InputFilterMinMax
 import ani.himitsu.R
 import ani.himitsu.Refresh
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.mal.MAL
 import ani.himitsu.databinding.BottomSheetMediaListSmallBinding
 import ani.himitsu.media.cereal.Media
@@ -69,7 +69,7 @@ class MediaListDialogSmallFragment : BottomSheetDialogFragment() {
                 withContext(Dispatchers.IO) {
                     if (id != null) {
                         try {
-                            Anilist.mutation.deleteList(id!!)
+                            AniList.mutation.deleteList(id!!)
                             MAL.query.deleteList(media.anime != null, media.idMAL)
                         } catch (e: Exception) {
                             withContext(Dispatchers.Main) {
@@ -78,10 +78,10 @@ class MediaListDialogSmallFragment : BottomSheetDialogFragment() {
                             return@withContext
                         }
                     } else {
-                        val profile = Anilist.query.userMediaDetails(media)
+                        val profile = AniList.query.userMediaDetails(media)
                         profile.userListId?.let { listId ->
                             id = listId
-                            Anilist.mutation.deleteList(listId)
+                            AniList.mutation.deleteList(listId)
                             MAL.query.deleteList(media.anime != null, media.idMAL)
                         }
                     }
@@ -194,7 +194,7 @@ class MediaListDialogSmallFragment : BottomSheetDialogFragment() {
                             ?.times(10))?.toInt()
                         val status =
                             statuses[statusStrings.indexOf(_binding?.mediaListStatus?.text.toString())]
-                        Anilist.mutation.editList(
+                        AniList.mutation.editList(
                             media.id,
                             progress,
                             score,

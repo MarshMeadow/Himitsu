@@ -160,7 +160,7 @@
     <string name="server_enabled">Iniciant TorrServer</string>
     <string name="enable_server_temp">Voleu activar temporalment TorrServer (desactivat en tancar l\'aplicació)?</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">Configuració d\'Anilist</string>
+    <string name="anilist_settings">Configuració d\'AniList</string>
     <string name="extension_settings">Extensions</string>
     <string name="downloads">Descàrregues</string>
     <string name="offline_mode">Mode fora de línia</string>
@@ -254,12 +254,12 @@
     <string name="ask_update_progress_info_ep">Desactivar-ho actualitzarà sempre automàticament el progrés quan s\'hagi vist l\'episodi.</string>
     <string name="ask_update_progress_info_chap">Desactivar-ho actualitzarà sempre automàticament el progrés quan s\'hagi llegit el capítol.</string>
     <string name="ask_update_progress_chapter_zero">Actualitza el progrés per al Capítol 0</string>
-    <string name="ask_update_progress_info_zero">Activar-ho afegirà elements nous començats a Anilist amb el progrés establert al capítol 0.</string>
+    <string name="ask_update_progress_info_zero">Activar-ho afegirà elements nous començats a AniList amb el progrés establert al capítol 0.</string>
     <string name="ask_update_progress_hentai">Actualitza el progrés per a Hentai</string>
     <string name="ask_update_progress_doujin">Actualitza el progrés per a Doujins</string>
     <string name="very_bold">Molt valent de part teva sar</string>
     <string name="watch_complete_percentage">Observa el percentatge d\'actualització</string>
-    <string name="watch_complete_percentage_info">El percentatge al qual s\'hauria d\'actualitzar el teu progrés a Anilist després de veure un episodi. \nAixò també estableix el \% per saber quan pre-carregar enllaços per a l\'episodi següent.</string>
+    <string name="watch_complete_percentage_info">El percentatge al qual s\'hauria d\'actualitzar el teu progrés a AniList després de veure un episodi. \nAixò també estableix el \% per saber quan pre-carregar enllaços per a l\'episodi següent.</string>
     <string name="behaviour">Comportament</string>
     <string name="always_continue">Sempre reprendre des del marcador de temps</string>
     <string name="pause_video_focus">Pausa quan no estigui en focus</string>
@@ -393,20 +393,20 @@
     <string name="addons">Complements</string>
     <string name="addons_desc">Els complements són mòduls d\'extra funcionalitats Dantotsu.</string>
     <string name="myanimelist">MyAnimeList</string>
-    <string name="login_with_anilist">Inicia la sessió amb Anilist</string>
-    <string name="anilist">Anilist</string>
+    <string name="login_with_anilist">Inicia la sessió amb AniList</string>
+    <string name="anilist">AniList</string>
     <string name="account_help">Com funciona això\?</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
-        \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
+        \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
         \n- Delete a Media
 
-        \n\nNote: The app will not sync old Media\'s from Anilist to MAL, It\'s recommended to sync them.
+        \n\nNote: The app will not sync old Media\'s from AniList to MAL, It\'s recommended to sync them.
         \n- Check __FAQs__ for _Easy Method_
 
         \n\nAnd for _Intermediates_ :
-        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
         \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
 
         \n\n_It is not required to sync both MAL and Anilist accounts._
@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Temps</string>
     <string name="player_settings_desc">Tots els paràmetres relacionats amb el jugador</string>
-    <string name="purge_anime_downloads_desc">Eliminar tots els animes descarregats</string>
     <string name="prefer_dub_desc">Seleccionar mitjans doblats per defecte</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Incloure elements de llista a la pàgina d\'exploració d\'anime</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Tots els ajustos relacionats amb el Lector</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Esborra tot el Manga descarregat</string>
-    <string name="purge_novel_downloads_desc">Esborra tots els Novel·les descarregats</string>
     <string name="include_list_desc">Inclou elements de llista a la pàgina d\'exploració de Manga</string>
     <string name="anilist_notification_filters_desc">Selecciona la categoria a ignorar</string>
     <string name="anilist_notifications_checking_time_desc">Estableix la freqüència amb la qual vols que l\'aplicació comprovi les notificacions d\'Anilist</string>

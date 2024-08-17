@@ -21,7 +21,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import ani.himitsu.R
 import ani.himitsu.buildMarkwon
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.dantotsu.connections.comments.Comment
 import ani.dantotsu.connections.comments.CommentResponse
 import ani.dantotsu.connections.comments.CommentsAPI
@@ -85,7 +85,7 @@ class CommentsFragment : Fragment() {
 
         val markwon = buildMarkwon(activity, fragment = this@CommentsFragment)
 
-        activity.binding.commentUserAvatar.loadImage(Anilist.avatar)
+        activity.binding.commentUserAvatar.loadImage(AniList.avatar)
         val markwonEditor = MarkwonEditor.create(markwon)
         activity.binding.commentInput.addTextChangedListener(
             MarkwonEditorTextWatcher.withProcess(

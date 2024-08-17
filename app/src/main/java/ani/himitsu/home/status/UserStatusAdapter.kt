@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.databinding.ItemUserStatusBinding
 import ani.himitsu.loadImage
 import ani.himitsu.profile.ProfileActivity
@@ -61,11 +61,11 @@ class UserStatusAdapter(private val user: ArrayList<User>) :
         setAnimation(b.root.context, b.root)
         val user = user[position]
         b.profileUserAvatar.loadImage(user.pfp)
-        b.profileUserName.text = if (Anilist.userid == user.id) getString(R.string.your_story) else user.name
+        b.profileUserName.text = if (AniList.userid == user.id) getString(R.string.your_story) else user.name
 
         val watchedActivity = PrefManager.getCustomVal<Set<Int>>("activities", setOf())
         val booleanList = user.activity.map { watchedActivity.contains(it.id) }
-        b.profileUserStatusIndicator.setParts(user.activity.size, booleanList, user.id == Anilist.userid)
+        b.profileUserStatusIndicator.setParts(user.activity.size, booleanList, user.id == AniList.userid)
     }
 
     override fun getItemCount(): Int = user.size

@@ -1,6 +1,6 @@
 package ani.himitsu.connections.anilist
 
-import ani.himitsu.connections.anilist.Anilist.executeQuery
+import ani.himitsu.connections.anilist.AniList.executeQuery
 import ani.himitsu.connections.anilist.api.FuzzyDate
 import ani.himitsu.connections.anilist.api.Query
 import ani.himitsu.connections.anilist.api.ToggleLike
@@ -8,7 +8,7 @@ import bit.himitsu.nio.Strings.getString
 import com.google.gson.Gson
 import kotlinx.serialization.json.JsonObject
 
-class AnilistMutations {
+class AniListMutations {
 
     suspend fun editList(
         mediaID: Int,

@@ -13,7 +13,6 @@ import android.content.pm.ActivityInfo
 import android.content.pm.PackageManager
 import android.content.res.ColorStateList
 import android.content.res.Configuration
-import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.Animatable
 import android.hardware.SensorManager
@@ -113,7 +112,7 @@ import androidx.window.layout.WindowLayoutInfo
 import ani.himitsu.R
 import ani.himitsu.brightnessConverter
 import ani.himitsu.circularReveal
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.discord.Discord
 import ani.himitsu.connections.discord.DiscordService
 import ani.himitsu.connections.discord.DiscordServiceSingleton
@@ -1350,7 +1349,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
                 "${media.id}_ProgressDialog",
                 true
             ) else false
-        if (!incognito && showProgressDialog && Anilist.userid != null && if (media.isAdult) PrefManager.getVal(
+        if (!incognito && showProgressDialog && AniList.userid != null && if (media.isAdult) PrefManager.getVal(
                 PrefName.UpdateForHPlayer
             ) else true
         ) {
@@ -2325,7 +2324,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
             PrefName.WatchPercentage
         )
         val episode0 = currentEpisodeIndex == 0 && PrefManager.getVal(PrefName.ChapterZeroPlayer)
-        if (!incognito && (episodeEnd || episode0) && Anilist.userid != null
+        if (!incognito && (episodeEnd || episode0) && AniList.userid != null
         )
             if (PrefManager.getCustomVal(
                     "${media.id}_save_progress",

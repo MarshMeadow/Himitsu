@@ -24,7 +24,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.GenresViewModel
 import ani.himitsu.copyToClipboard
 import ani.himitsu.currActivity
@@ -491,12 +491,12 @@ class MediaInfoFragment : Fragment() {
                                 chip.context,
                                 Intent(chip.context, SearchActivity::class.java)
                                     .putExtra("type", type)
-                                    .putExtra("sortBy", Anilist.sortBy[2])
+                                    .putExtra("sortBy", AniList.sortBy[2])
                                     .putExtra("tag", media.tags[position].substringBefore(" :"))
                                     .putExtra("hideKeyboard", true)
                                     .also {
                                         if (media.isAdult) {
-                                            if (!Anilist.adult) Toast.makeText(
+                                            if (!AniList.adult) Toast.makeText(
                                                 chip.context,
                                                 currActivity()?.getString(R.string.content_18),
                                                 Toast.LENGTH_SHORT
@@ -520,13 +520,13 @@ class MediaInfoFragment : Fragment() {
                 if (PrefManager.getVal(PrefName.SocialInMedia)) {
                     if (!media.users.isNullOrEmpty() && !offline) {
                         val users: ArrayList<User> = media.users ?: arrayListOf()
-                        if (Anilist.token != null && media.userStatus != null) {
+                        if (AniList.token != null && media.userStatus != null) {
                             users.add(
                                 0,
                                 User(
-                                    id = Anilist.userid!!,
+                                    id = AniList.userid!!,
                                     name = getString(R.string.you),
-                                    pfp = Anilist.avatar,
+                                    pfp = AniList.avatar,
                                     banner = "",
                                     status = media.userStatus,
                                     score = media.userScore.toFloat(),

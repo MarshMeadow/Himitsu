@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Horário</string>
     <string name="player_settings_desc">Todas as configurações relacionadas ao reprodutor</string>
-    <string name="purge_anime_downloads_desc">Excluir todos os downloads Anime</string>
     <string name="prefer_dub_desc">Selecionar mídia com base em duBbed por padrão</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Incluir itens da lista na página de exploração Anime</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Todas as configurações relacionadas ao Leitor</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Excluir todos os Manga baixados</string>
-    <string name="purge_novel_downloads_desc">Excluir todos os romances baixados</string>
     <string name="include_list_desc">Incluir itens da lista na página de exploração Manga</string>
     <string name="anilist_notification_filters_desc">Escolher categoria a ignorar</string>
     <string name="anilist_notifications_checking_time_desc">Defina a frequência que você deseja que o app verifique por notificações anilistas</string>

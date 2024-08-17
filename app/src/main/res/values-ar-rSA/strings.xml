@@ -160,7 +160,7 @@
     <string name="server_enabled">بدء تشغيل تورسيرفر</string>
     <string name="enable_server_temp">هل ترغب في تمكين TorrServer مؤقتاً (معطل عند إغلاق التطبيق)؟</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">إعدادات Anilist</string>
+    <string name="anilist_settings">إعدادات AniList</string>
     <string name="extension_settings">الإضافات</string>
     <string name="downloads">التحميلات</string>
     <string name="offline_mode">وضع بدون انترنت</string>
@@ -254,12 +254,12 @@
     <string name="ask_update_progress_info_ep">سيؤدي إيقاف التشغيل إلى تحديث التقدم تلقائيًا عند مشاهدة الحلقة.</string>
     <string name="ask_update_progress_info_chap">سيؤدي إيقاف التشغيل إلى تحديث التقدم تلقائيًا عند قراءة فصل.</string>
     <string name="ask_update_progress_chapter_zero">تحديث التقدم للفصل 0</string>
-    <string name="ask_update_progress_info_zero">سيؤدي التشغيل إلى إضافة العناصر التي بدأت حديثًا إلى Anilist مع تعيين التقدم على الفصل 0.</string>
+    <string name="ask_update_progress_info_zero">سيؤدي التشغيل إلى إضافة العناصر التي بدأت حديثًا إلى AniList مع تعيين التقدم على الفصل 0.</string>
     <string name="ask_update_progress_hentai">تحديث التقدم للهنتاي</string>
     <string name="ask_update_progress_doujin">تحديث التقدم لDoujins</string>
     <string name="very_bold">جريئة جدا منك</string>
     <string name="watch_complete_percentage">نسبة المشاهدة للتحديث</string>
-    <string name="watch_complete_percentage_info">النسبة التي يجب أن يتم عندها تحديث تقدم Anilist الخاص بك بعد مشاهدة حلقة. \nيقوم هذا أيضًا بتعيين \% لموعد تحميل الروابط مسبقًا للحلقة التالية.</string>
+    <string name="watch_complete_percentage_info">النسبة التي يجب أن يتم عندها تحديث تقدم AniList الخاص بك بعد مشاهدة حلقة. \nيقوم هذا أيضًا بتعيين \% لموعد تحميل الروابط مسبقًا للحلقة التالية.</string>
     <string name="behaviour">السلوك</string>
     <string name="always_continue">تابع دائمًا من حيث توقفت</string>
     <string name="pause_video_focus">إيقاف الفيديو عندما يخرج من رؤيتك</string>
@@ -393,23 +393,23 @@
     <string name="addons">Addons</string>
     <string name="addons_desc">الإضافات هي امتدادات توفر وظائف إضافية.</string>
     <string name="myanimelist">MyAnimeList</string>
-    <string name="login_with_anilist">تسجيل دخول Anilist!</string>
+    <string name="login_with_anilist">تسجيل دخول AniList!</string>
     <string name="anilist">أنيليا</string>
     <string name="account_help">كيف يعمل هذا؟</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
-        \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
+        \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
         \n- Delete a Media
 
-        \n\nNote: The app will not sync old Media\'s from Anilist to MAL, It\'s recommended to sync them.
+        \n\nNote: The app will not sync old Media\'s from AniList to MAL, It\'s recommended to sync them.
         \n- Check __FAQs__ for _Easy Method_
 
         \n\nAnd for _Intermediates_ :
-        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
-        \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
+        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync MAL data with AniList](https://anilist.co/forum/thread/3393)
 
-        \n\n_It is not required to sync both MAL and Anilist accounts._
+        \n\n_It is not required to sync both MAL and AniList accounts._
     </string>
     <string name="frequency">Frequency</string>
     <string name="notification_for_checking_subscriptions">جاري التحقق من الاشتراكات</string>
@@ -494,11 +494,11 @@
     <string name="first_chapter">هذا هو الفصل الأول!</string>
     <string name="adult_stuff">أشياء للكبار؟&#40; &#865;&#176; &#860;&#662; &#865;&#176; &#41;</string>
     <string name="what_did_you_open">انت فتحت ايه اصلا؟</string>
-    <string name="error_getting_data">خطأ في الحصول على البيانات من Anilist.</string>
+    <string name="error_getting_data">خطأ في الحصول على البيانات من AniList.</string>
     <string name="empty_response">إجابة فارغة! هل إنترنت، ربما؟</string>
     <string name="error_loading_mal_user_data">خطأ في تحميل بيانات المستخدم</string>
     <string name="error_loading_mal_data">فشل تحميل البيانات من MAL</string>
-    <string name="error_loading_anilist_user_data">خطأ في تحميل بيانات المستخدم Anilist</string>
+    <string name="error_loading_anilist_user_data">خطأ في تحميل بيانات المستخدم AniList</string>
     <string name="episode_not_found">تعذر العثور على الحلقة: %1$s</string>
     <string name="list_updated">تم تحديث القائمة</string>
     <string name="deleted_from_list">تم مسح من القائمة</string>
@@ -588,7 +588,7 @@
     <string name="deny">Deny</string>
     <string name="deny_all">Deny All</string>
     <string name="no_chapter">لا يوجد فصل</string>
-    <string name="content_18">تفعيل محتوي 18+ من إعدادات Anilist</string>
+    <string name="content_18">تفعيل محتوي 18+ من إعدادات AniList</string>
     <string name="available">متوفر</string>
     <string name="lets_go">هيا بنا</string>
     <string name="cope">البابا</string>
@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">الوقت</string>
     <string name="player_settings_desc">جميع الإعدادات ذات الصلة باللاعب</string>
-    <string name="purge_anime_downloads_desc">حذف جميع الأنمي المحمّلة</string>
     <string name="prefer_dub_desc">Select Dub media by default</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">تضمين قائمة العناصر في صفحة استكشاف أنيمي</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">جميع الإعدادات ذات الصلة بالقارئ</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">حذف جميع مانغا المحمّلة</string>
-    <string name="purge_novel_downloads_desc">حذف جميع الروايات التي تم تنزيلها</string>
     <string name="include_list_desc">تضمين قائمة العناصر في صفحة استكشاف المنجا</string>
     <string name="anilist_notification_filters_desc">اختر فئة لتجاهل</string>
     <string name="anilist_notifications_checking_time_desc">تعيين التردد الذي تريد التطبيق التحقق منه للحصول على إشعارات Anilist</string>

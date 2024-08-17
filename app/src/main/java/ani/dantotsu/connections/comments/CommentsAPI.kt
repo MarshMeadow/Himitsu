@@ -1,7 +1,7 @@
 package ani.dantotsu.connections.comments
 
 import android.content.Context
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.isOnline
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
@@ -177,8 +177,8 @@ object CommentsAPI {
             0,
             0,
             null,
-            Anilist.username ?: "",
-            Anilist.avatar,
+            AniList.username ?: "",
+            AniList.avatar,
             totalVotes = totalVotes
         )
     }
@@ -247,7 +247,7 @@ object CommentsAPI {
         val body = FormBody.Builder()
             .add("username", username)
             .add("mediaName", mediaTitle)
-            .add("reporter", Anilist.username ?: "unknown")
+            .add("reporter", AniList.username ?: "unknown")
             .add("reportedId", reportedId)
             .build()
         val request = requestBuilder()

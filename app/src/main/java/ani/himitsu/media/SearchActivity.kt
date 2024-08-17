@@ -16,7 +16,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.AnilistSearch
 import ani.himitsu.media.cereal.SearchResults
 import ani.himitsu.databinding.ActivitySearchBinding
@@ -75,7 +75,7 @@ class SearchActivity : AppCompatActivity() {
             model.notSet = false
             model.searchResults = SearchResults(
                 type = intent.getStringExtra("type") ?: "ANIME",
-                isAdult = if (Anilist.adult) intent.getBooleanExtra("hentai", false) else false,
+                isAdult = if (AniList.adult) intent.getBooleanExtra("hentai", false) else false,
                 onList = listOnly,
                 search = intent.getStringExtra("query"),
                 genres = intent.getStringExtra("genre")?.let { mutableListOf(it) },
@@ -200,9 +200,9 @@ class SearchActivity : AppCompatActivity() {
         val allResults = ArrayList<Any>()
         scope.launch {
             withContext(Dispatchers.IO) {
-                allResults.addAll(Anilist.query.searchCharacter(query))
-                allResults.addAll(Anilist.query.searchStudio(query))
-                allResults.addAll(Anilist.query.searchStaff(query))
+                allResults.addAll(AniList.query.searchCharacter(query))
+                allResults.addAll(AniList.query.searchStudio(query))
+                allResults.addAll(AniList.query.searchStaff(query))
                 withContext(scope.coroutineContext) {
                     model.allResults.postValue(allResults)
                 }

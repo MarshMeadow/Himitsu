@@ -16,13 +16,13 @@ class Login : AppCompatActivity() {
         ThemeManager(this).applyTheme()
         val data: Uri? = intent?.data
         try {
-            Anilist.token =
+            AniList.token =
                 Regex("""(?<=access_token=).+(?=&token_type)""").find(data.toString())!!.value
-            PrefManager.setVal(PrefName.AnilistToken, Anilist.token ?: "")
+            PrefManager.setVal(PrefName.AnilistToken, AniList.token ?: "")
         } catch (e: Exception) {
             logError(e)
         }
         restart()
-        Anilist.initialized = false
+        AniList.initialized = false
     }
 }

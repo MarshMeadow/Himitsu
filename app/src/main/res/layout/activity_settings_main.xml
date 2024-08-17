@@ -70,7 +70,7 @@
             android:paddingVertical="8dp">
 
             <LinearLayout
-                android:id="@+id/settingsAnilistLoginContainer"
+                android:id="@+id/settingsAniListLoginContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="12dp"
@@ -95,7 +95,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/settingsAnilistUsername"
+                        android:id="@+id/settingsAniListUsername"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="-4dp"
@@ -106,7 +106,7 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/settingsAnilistLogin"
+                        android:id="@+id/settingsAniListLogin"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
@@ -121,7 +121,7 @@
                 </LinearLayout>
 
                 <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/settingsAnilistAvatarContainer"
+                    android:id="@+id/settingsAniListAvatarContainer"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="4dp"
@@ -129,7 +129,7 @@
                     app:cardCornerRadius="26dp">
 
                     <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/settingsAnilistAvatar"
+                        android:id="@+id/settingsAniListAvatar"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:scaleType="center"

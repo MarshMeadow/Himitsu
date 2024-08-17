@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Tid</string>
     <string name="player_settings_desc">Alle spiller relaterte innstillinger</string>
-    <string name="purge_anime_downloads_desc">Slett alle nedlastede Anime</string>
     <string name="prefer_dub_desc">Velg dubbed media som standard</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Inkluder listeelementer i anime utforskingssiden</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Alle leserrelatert innstillinger</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Slett alle nedlastede manga</string>
-    <string name="purge_novel_downloads_desc">Slett alle nedlastede Novels</string>
     <string name="include_list_desc">Inkluder listeelementer i manga utforskingssiden</string>
     <string name="anilist_notification_filters_desc">Velg kategori for å ignorere</string>
     <string name="anilist_notifications_checking_time_desc">Velg frekvensen du vil at appen skal sjekke for Anilist varsler</string>

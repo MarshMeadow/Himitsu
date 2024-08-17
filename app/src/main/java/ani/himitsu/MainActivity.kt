@@ -39,8 +39,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.media3.common.util.UnstableApi
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import ani.himitsu.connections.anilist.Anilist
-import ani.himitsu.connections.anilist.AnilistHomeViewModel
+import ani.himitsu.connections.anilist.AniList
+import ani.himitsu.connections.anilist.AniListHomeViewModel
 import ani.himitsu.databinding.ActivityMainBinding
 import ani.himitsu.databinding.DialogUserAgentBinding
 import ani.himitsu.databinding.SplashScreenBinding
@@ -360,7 +360,7 @@ class MainActivity : AppCompatActivity() {
                 snackString(this@MainActivity.getString(R.string.no_internet))
                 startActivity(Intent(this, NoInternet::class.java))
             } else {
-                val model: AnilistHomeViewModel by viewModels()
+                val model: AniListHomeViewModel by viewModels()
                 binding.mainProgressBar.visibility = View.GONE
                 val mainViewPager = binding.viewpager
                 mainViewPager.isUserInputEnabled = false
@@ -415,7 +415,7 @@ class MainActivity : AppCompatActivity() {
                         val cont = intent.extras?.getBoolean("continue") ?: false
                         if (id != null && id != 0) {
                             val media = withContext(Dispatchers.IO) {
-                                Anilist.query.getMedia(id, isMAL)
+                                AniList.query.getMedia(id, isMAL)
                             }
                             if (media != null) {
                                 startActivity(Intent(
@@ -632,10 +632,10 @@ class MainActivity : AppCompatActivity() {
         override fun createFragment(position: Int): Fragment {
             when (position) {
                 0 -> return AnimeFragment()
-                1 -> return if (Anilist.token != null) HomeFragment() else LoginFragment()
+                1 -> return if (AniList.token != null) HomeFragment() else LoginFragment()
                 2 -> return MangaFragment()
             }
-            return if (Anilist.token != null) HomeFragment() else LoginFragment()
+            return if (AniList.token != null) HomeFragment() else LoginFragment()
         }
     }
 }

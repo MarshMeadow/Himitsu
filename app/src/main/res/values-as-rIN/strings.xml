@@ -160,7 +160,7 @@
     <string name="server_enabled">Starting TorrServer</string>
     <string name="enable_server_temp">Would you like to temporarily enable TorrServer (disabled on app close)?</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">Anilist চেটিংছ</string>
+    <string name="anilist_settings">AniList চেটিংছ</string>
     <string name="extension_settings">এক্সটেনচনসমূহ</string>
     <string name="downloads">ডাউনলোডছ</string>
     <string name="offline_mode">অফলাইন মোড</string>
@@ -396,20 +396,20 @@
     <string name="login_with_anilist">অনিলিস্টৰ সৈতে লগিন কৰক!</string>
     <string name="anilist">অনিলিস্ট</string>
     <string name="account_help">এইটো কেনেকৈ কাম কৰে?</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
-        \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
+        \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
         \n- Delete a Media
 
-        \n\nNote: The app will not sync old Media\'s from Anilist to MAL, It\'s recommended to sync them.
+        \n\nNote: The app will not sync old Media\'s from AniList to MAL, It\'s recommended to sync them.
         \n- Check __FAQs__ for _Easy Method_
 
         \n\nAnd for _Intermediates_ :
-        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
-        \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
+        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync MAL data with AniList](https://anilist.co/forum/thread/3393)
 
-        \n\n_It is not required to sync both MAL and Anilist accounts._
+        \n\n_It is not required to sync both MAL and AniList accounts._
     </string>
     <string name="frequency">Frequency</string>
     <string name="notification_for_checking_subscriptions">চেক কৰী আছো জাননীসমূহ</string>
@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Time</string>
     <string name="player_settings_desc">সকলো প্লেয়াৰ সম্পৰ্কীয় ছেটিংছ</string>
-    <string name="purge_anime_downloads_desc">সকলো ডাউনলোড কৰা এনিম ডিলিট কৰক</string>
     <string name="prefer_dub_desc">ডিফল্ট ভাৱে ডাব মিডিয়াক চিলেক্ট কৰক</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">এনিমে এক্সপলৰ পেজৰ বাবে তালিকাৰ আইটেমসমূহ অন্তৰ্ভুক্ত কৰক</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">সকলো পঠনকাৰীৰ সম্পৰ্কীয় ছেটিংসমূহ</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">সকলো ডাউনল\'ড কৰা মাঙ্গা মচি পাবলৈ</string>
-    <string name="purge_novel_downloads_desc">সকলো ডাউনল\'ড কৰা উপন্যাস মচি পাবলৈ</string>
     <string name="include_list_desc">মাঙ্গা অনুসন্ধান পৃষ্ঠাত তালিকাৰ আইটেমসমূহ সম্মিলিত কৰক</string>
     <string name="anilist_notification_filters_desc">অগ্ৰাহ্য কেটাগৰীৰ বাছনি কৰক</string>
     <string name="anilist_notifications_checking_time_desc">আপুনি যেনে আপ্‌টো Anilist নোটিফিকেশন পৰীক্ষা কৰিব মেহনত বাৰ্তাৰ অনুপাত সঠিক কৰক</string>

@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import ani.himitsu.R
 import ani.himitsu.blurImage
 import ani.himitsu.buildMarkwon
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.api.Activity
 import ani.himitsu.databinding.ItemActivityBinding
 import ani.himitsu.loadImage
@@ -132,7 +132,7 @@ class ActivityItem(
         binding.activityLikeContainer.setOnClickListener {
             val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
             scope.launch {
-                val res = Anilist.mutation.toggleLike(activity.id, "ACTIVITY")
+                val res = AniList.mutation.toggleLike(activity.id, "ACTIVITY")
                 withContext(Dispatchers.Main) {
                     if (res != null) {
                         if (activity.isLiked == true) {
@@ -238,7 +238,7 @@ class ActivityItem(
             builder.setTitle(R.string.activity_delete)
             builder.setPositiveButton(R.string.yes) { _, _ ->
                 CoroutineScope(Dispatchers.IO).launch {
-                    Anilist.mutation.deleteActivity(activity.id)
+                    AniList.mutation.deleteActivity(activity.id)
                     withContext(Dispatchers.Main) {
                         fragActivity.recreate()
                     }
@@ -250,7 +250,7 @@ class ActivityItem(
             val dialog = builder.show()
             dialog.window?.setDimAmount(0.8f)
         }
-        binding.activityDelete.isVisible = activity.userId == Anilist.userid
+        binding.activityDelete.isVisible = activity.userId == AniList.userid
     }
 
     override fun getLayout(): Int {

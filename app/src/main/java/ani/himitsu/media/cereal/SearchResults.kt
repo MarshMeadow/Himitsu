@@ -1,7 +1,7 @@
 package ani.himitsu.media.cereal
 
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.currContext
 import bit.himitsu.nio.Strings.getString
 import java.io.Serializable
@@ -37,7 +37,7 @@ data class SearchResults(
                     "SORT",
                     c.getString(
                         R.string.filter_sort,
-                        c.resources.getStringArray(R.array.sort_by)[Anilist.sortBy.indexOf(it)]
+                        c.resources.getStringArray(R.array.sort_by)[AniList.sortBy.indexOf(it)]
                     )
                 )
             )

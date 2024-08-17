@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Idő</string>
     <string name="player_settings_desc">Minden játékossal kapcsolatos beállítás</string>
-    <string name="purge_anime_downloads_desc">Az összes letöltött Anime törlése</string>
     <string name="prefer_dub_desc">Alapértelmezett módon szinkronizált média kiválasztása</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Listaelemek beillesztése az Anime felfedező oldalra</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Az összes Olvasóhoz kapcsolódó beállítás</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Az összes letöltött Manga törlése</string>
-    <string name="purge_novel_downloads_desc">Az összes letöltött Novella törlése</string>
     <string name="include_list_desc">Listaelemek belefoglalása a Manga felfedező oldalba</string>
     <string name="anilist_notification_filters_desc">Válassza ki az ignorálandó kategóriát</string>
     <string name="anilist_notifications_checking_time_desc">Állítsa be az időközöt, amikor az alkalmazás ellenőrizze az Anilist értesítéseket</string>

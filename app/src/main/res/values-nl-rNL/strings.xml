@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Tijd</string>
     <string name="player_settings_desc">Alle instellingen voor de speler</string>
-    <string name="purge_anime_downloads_desc">Verwijder alle gedownloade Anime</string>
     <string name="prefer_dub_desc">Selecteer standaard gedubde media</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Lijstitems opnemen in Anime exploratie pagina</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Alle instellingen voor de Reader</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Verwijder alle gedownloade Manga</string>
-    <string name="purge_novel_downloads_desc">Alle gedownloade Novels verwijderen</string>
     <string name="include_list_desc">Lijstitems opnemen in Manga verkenner pagina</string>
     <string name="anilist_notification_filters_desc">Kies categorie om te negeren</string>
     <string name="anilist_notifications_checking_time_desc">Stel de frequentie in die u wilt dat de app controleert op Anilist meldingen</string>

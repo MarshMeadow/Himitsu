@@ -25,7 +25,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ani.himitsu.R
 import ani.himitsu.Refresh
 import ani.himitsu.bottomBar
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.AnilistAnimeViewModel
 import ani.himitsu.media.cereal.SearchResults
 import ani.himitsu.databinding.FragmentAnimeBinding
@@ -113,7 +113,7 @@ class AnimeFragment : Fragment() {
                 onList = false,
                 results = mutableListOf(),
                 hasNextPage = true,
-                sort = Anilist.sortBy[1]
+                sort = AniList.sortBy[1]
             )
         }
         val popularAdaptor = MediaAdaptor(ViewType.LARGE, model.searchResults.results, requireActivity())
@@ -152,7 +152,7 @@ class AnimeFragment : Fragment() {
             model.searchResults.results.clear()
             popularAdaptor.notifyDataSetChanged()
             scope.launch(Dispatchers.IO) {
-                model.loadPopular("ANIME", sort = Anilist.sortBy[1], onList = checked)
+                model.loadPopular("ANIME", sort = AniList.sortBy[1], onList = checked)
             }
         }
 
@@ -216,14 +216,14 @@ class AnimeFragment : Fragment() {
                     isVisible = PrefManager.getVal(PrefName.FloatingAvatar)
                     if (isVisible) {
                         setAnchor(animePageAdapter.trendingBinding.userAvatar)
-                        toRoundImage(Anilist.avatar, 52.toPx)
+                        toRoundImage(AniList.avatar, 52.toPx)
                         (behavior as FloatingActionButton.Behavior).isAutoHideEnabled = false
 
                         setDefaultPosition()
 
                         if (binding.avatarFabulous.isOverlapping(animePageAdapter.trendingBinding.userAvatar)) {
                             setBadgeDrawable(
-                                Anilist.unreadNotificationCount + MatagiUpdater.hasUpdate
+                                AniList.unreadNotificationCount + MatagiUpdater.hasUpdate
                             )
                         }
 
@@ -314,7 +314,7 @@ class AnimeFragment : Fragment() {
         }
 
         animePageAdapter.onSeasonLongClick = { i ->
-            val (season, year) = Anilist.currentSeasons[i]
+            val (season, year) = AniList.currentSeasons[i]
             ContextCompat.startActivity(
                 requireContext(),
                 Intent(requireContext(), SearchActivity::class.java)
@@ -336,7 +336,7 @@ class AnimeFragment : Fragment() {
                     model.loadTrending(1)
                     model.loadAll()
                     model.loadPopular(
-                        "ANIME", sort = Anilist.sortBy[1], onList = PrefManager.getVal(
+                        "ANIME", sort = AniList.sortBy[1], onList = PrefManager.getVal(
                             PrefName.PopularAnimeList
                         )
                     )
@@ -348,7 +348,7 @@ class AnimeFragment : Fragment() {
     }
 
     fun setActiveNotificationCount() {
-        val count = Anilist.unreadNotificationCount + MatagiUpdater.hasUpdate
+        val count = AniList.unreadNotificationCount + MatagiUpdater.hasUpdate
         if (binding.avatarFabulous.isOverlapping(animePageAdapter.trendingBinding.userAvatar)) {
             animePageAdapter.trendingBinding.notificationCount.isVisible = false
             binding.avatarFabulous.setBadgeDrawable(count)

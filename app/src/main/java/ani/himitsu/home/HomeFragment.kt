@@ -42,8 +42,8 @@ import ani.himitsu.R
 import ani.himitsu.Refresh
 import ani.himitsu.blurImage
 import ani.himitsu.bottomBar
-import ani.himitsu.connections.anilist.Anilist
-import ani.himitsu.connections.anilist.AnilistHomeViewModel
+import ani.himitsu.connections.anilist.AniList
+import ani.himitsu.connections.anilist.AniListHomeViewModel
 import ani.himitsu.databinding.FragmentHomeBinding
 import ani.himitsu.databinding.HomeListContainerBinding
 import ani.himitsu.home.status.UserStatusAdapter
@@ -111,21 +111,21 @@ class HomeFragment : Fragment() {
         _binding = null
     }
 
-    val model: AnilistHomeViewModel by activityViewModels()
+    val model: AniListHomeViewModel by activityViewModels()
 
     fun load() {
         if (activity != null && _binding != null) {
             lifecycleScope.launch(Dispatchers.Main) {
-                binding.homeUserName.text = Anilist.username
-                binding.homeUserEpisodesWatched.text = Anilist.episodesWatched.toString()
-                binding.homeUserChaptersRead.text = Anilist.chapterRead.toString()
-                binding.homeUserAvatar.loadImage(Anilist.avatar, 52.toPx)
-                binding.avatarFabulous.toRoundImage(Anilist.avatar, 52.toPx)
+                binding.homeUserName.text = AniList.username
+                binding.homeUserEpisodesWatched.text = AniList.episodesWatched.toString()
+                binding.homeUserChaptersRead.text = AniList.chapterRead.toString()
+                binding.homeUserAvatar.loadImage(AniList.avatar, 52.toPx)
+                binding.avatarFabulous.toRoundImage(AniList.avatar, 52.toPx)
                 val banner = if (PrefManager.getVal(PrefName.BannerAnimations))
                     binding.homeUserBg
                 else
                     binding.homeUserBgNoKen
-                banner.blurImage(Anilist.bg)
+                banner.blurImage(AniList.bg)
                 binding.homeUserDataProgressBar.visibility = View.GONE
                 setActiveNotificationCount()
 
@@ -141,16 +141,16 @@ class HomeFragment : Fragment() {
                         ContextCompat.startActivity(
                             requireActivity(), Intent(requireActivity(), ListActivity::class.java)
                                 .putExtra("anime", true)
-                                .putExtra("userId", Anilist.userid)
-                                .putExtra("username", Anilist.username), null
+                                .putExtra("userId", AniList.userid)
+                                .putExtra("username", AniList.username), null
                         )
                     }
                     homeMangaList.setOnClickListener {
                         ContextCompat.startActivity(
                             requireActivity(), Intent(requireActivity(), ListActivity::class.java)
                                 .putExtra("anime", false)
-                                .putExtra("userId", Anilist.userid)
-                                .putExtra("username", Anilist.username), null
+                                .putExtra("userId", AniList.userid)
+                                .putExtra("username", AniList.username), null
                         )
                     }
                     homeAnimeList.visibility = View.VISIBLE
@@ -764,7 +764,7 @@ class HomeFragment : Fragment() {
     }
 
     fun setActiveNotificationCount() {
-        val count = Anilist.unreadNotificationCount + MatagiUpdater.hasUpdate
+        val count = AniList.unreadNotificationCount + MatagiUpdater.hasUpdate
         if (binding.avatarFabulous.isOverlapping(binding.homeUserAvatarContainer)) {
             binding.homeNotificationCount.isVisible = false
             binding.avatarFabulous.setBadgeDrawable(count)

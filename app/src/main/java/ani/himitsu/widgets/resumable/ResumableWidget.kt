@@ -18,7 +18,7 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.toBitmap
 import ani.himitsu.MainActivity
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.media.cereal.Media
 import ani.himitsu.media.MediaType
 import ani.himitsu.util.BitmapUtil
@@ -195,13 +195,13 @@ class ResumableWidget : AppWidgetProvider() {
             val resumableAnime = if (type == null || type == MediaType.ANIME)
                 continueAnime.ifEmpty {
                     prefs.edit().putLong(LAST_UPDATE, System.currentTimeMillis()).apply()
-                    Anilist.query.initResumable(MediaType.ANIME)
+                    AniList.query.initResumable(MediaType.ANIME)
                 }
             else listOf()
             val resumableManga = if (type == null || type == MediaType.MANGA)
                 continueManga.ifEmpty {
                     prefs.edit().putLong(LAST_UPDATE, System.currentTimeMillis()).apply()
-                    Anilist.query.initResumable(MediaType.MANGA)
+                    AniList.query.initResumable(MediaType.MANGA)
                 }
             else listOf()
             val resumable = when (type) {

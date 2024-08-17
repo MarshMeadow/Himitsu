@@ -10,7 +10,7 @@ import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.lifecycleScope
 import ani.himitsu.R
 import ani.himitsu.blurCover
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.api.Query
 import ani.himitsu.databinding.ActivityReviewViewBinding
 import ani.himitsu.hideSystemBarsExtendView
@@ -115,7 +115,7 @@ class ReviewViewActivity : AppCompatActivity() {
     private fun rateReview(rating: String) {
         disableVote()
         lifecycleScope.launch {
-            val result = Anilist.mutation.rateReview(review.id, rating)
+            val result = AniList.mutation.rateReview(review.id, rating)
             if (result != null) {
                 withContext(Dispatchers.Main) {
                     val res = result.data.rateReview

@@ -2,7 +2,7 @@ package ani.himitsu.connections
 
 import ani.himitsu.R
 import ani.himitsu.Refresh
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.mal.MAL
 import ani.himitsu.media.cereal.Media
 import ani.himitsu.settings.saving.PrefManager
@@ -16,11 +16,11 @@ import kotlinx.coroutines.launch
 fun updateProgress(media: Media, number: String) {
     val incognito: Boolean = PrefManager.getVal(PrefName.Incognito)
     if (!incognito) {
-        if (Anilist.userid != null) {
+        if (AniList.userid != null) {
             val a = number.toFloatOrNull()?.toInt() ?: 0
             if (a > (media.userProgress ?: -1)) {
                 CoroutineScope(Dispatchers.IO).launch {
-                    Anilist.mutation.editList(
+                    AniList.mutation.editList(
                         media.id,
                         a,
                         status = if (media.userStatus == "REPEATING") media.userStatus else "CURRENT"

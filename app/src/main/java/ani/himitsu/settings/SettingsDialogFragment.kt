@@ -12,7 +12,7 @@ import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import ani.himitsu.MainActivity
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.databinding.BottomSheetSettingsBinding
 import ani.himitsu.download.anime.OfflineAnimeFragment
 import ani.himitsu.download.manga.OfflineMangaFragment
@@ -66,21 +66,21 @@ class SettingsDialogFragment : BottomSheetDialogFragment() {
         val window = dialog?.window
         window?.statusBarColor = Color.CYAN
         window?.setNavigationTheme(requireContext())
-        val notificationIcon = if (Anilist.unreadNotificationCount > 0) {
+        val notificationIcon = if (AniList.unreadNotificationCount > 0) {
             R.drawable.ic_round_notifications_active_24
         } else {
             R.drawable.ic_round_notifications_none_24
         }
         binding.settingsNotification.setImageResource(notificationIcon)
 
-        if (Anilist.token != null) {
+        if (AniList.token != null) {
             binding.settingsLogin.setText(R.string.logout)
             binding.settingsLogin.setOnClickListener {
                 requireContext().customAlertDialog().apply{
                     setTitle(R.string.logout)
                     setMessage(R.string.logout_confirm)
                     setPosButton(R.string.yes) {
-                        Anilist.removeSavedToken()
+                        AniList.removeSavedToken()
                         dismiss()
                        requireActivity().refresh()
                     }
@@ -88,24 +88,24 @@ class SettingsDialogFragment : BottomSheetDialogFragment() {
                     show()
                 }
             }
-            binding.settingsUsername.text = Anilist.username
-            binding.settingsUserAvatar.loadImage(Anilist.avatar)
+            binding.settingsUsername.text = AniList.username
+            binding.settingsUserAvatar.loadImage(AniList.avatar)
         } else {
             binding.settingsUsername.visibility = View.GONE
             binding.settingsLogin.setText(R.string.login)
             binding.settingsLogin.setOnClickListener {
                 dismiss()
-                Anilist.loginIntent(requireActivity())
+                AniList.loginIntent(requireActivity())
             }
         }
 
-        val count = Anilist.unreadNotificationCount + MatagiUpdater.hasUpdate
+        val count = AniList.unreadNotificationCount + MatagiUpdater.hasUpdate
         binding.settingsNotificationCount.isVisible = count > 0
         binding.settingsNotificationCount.text = count.toString()
         binding.settingsUserAvatar.setOnClickListener {
             ContextCompat.startActivity(
                 requireContext(), Intent(requireContext(), ProfileActivity::class.java)
-                    .putExtra("userId", Anilist.userid), null
+                    .putExtra("userId", AniList.userid), null
             )
         }
 
@@ -209,7 +209,7 @@ class SettingsDialogFragment : BottomSheetDialogFragment() {
                         val intent = Intent(activity, MainActivity::class.java)
                         intent.putExtra(
                             "FRAGMENT_CLASS_NAME",
-                            if (Anilist.token != null) HomeFragment::class.java.name else LoginFragment::class.java.name
+                            if (AniList.token != null) HomeFragment::class.java.name else LoginFragment::class.java.name
                         )
                         startActivity(intent)
                     }

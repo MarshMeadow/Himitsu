@@ -15,8 +15,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
-import ani.himitsu.connections.anilist.AnilistHomeViewModel
+import ani.himitsu.connections.anilist.AniList
+import ani.himitsu.connections.anilist.AniListHomeViewModel
 import ani.himitsu.connections.anilist.api.NotificationType
 import ani.himitsu.databinding.ActivitySettingsNotificationsBinding
 import ani.himitsu.media.cereal.Media
@@ -334,12 +334,12 @@ class SettingsNotificationFragment : Fragment() {
         }
     }
 
-    val model: AnilistHomeViewModel by viewModels()
+    val model: AniListHomeViewModel by viewModels()
 
     private fun subscribeCurrentLists() {
         CoroutineScope(Dispatchers.IO).launch {
             val userList = arrayListOf<Any>().apply {
-                Anilist.query.initHomePage().let { list ->
+                AniList.query.initHomePage().let { list ->
                     list["currentAnime"]?.let { addAll(it) }
                     list["plannedAnime"]?.let { addAll(it) }
                     list["currentManga"]?.let { addAll(it) }

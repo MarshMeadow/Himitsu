@@ -5,7 +5,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
 import ani.himitsu.R
 import ani.himitsu.buildMarkwon
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.anilist.api.ActivityReply
 import ani.himitsu.databinding.ItemActivityReplyBinding
 import ani.himitsu.loadImage
@@ -53,7 +53,7 @@ class ActivityReplyItem(
         binding.activityLikeContainer.setOnClickListener {
             val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())
             scope.launch {
-                val res = Anilist.mutation.toggleLike(reply.id, "ACTIVITY_REPLY")
+                val res = AniList.mutation.toggleLike(reply.id, "ACTIVITY_REPLY")
                 withContext(Dispatchers.Main) {
                     if (res != null) {
                         if (reply.isLiked) {

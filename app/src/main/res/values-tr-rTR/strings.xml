@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Zaman</string>
     <string name="player_settings_desc">Tüm oyuncu ile ilgili ayarlar</string>
-    <string name="purge_anime_downloads_desc">İndirilen Tüm Anime\'leri Sil</string>
     <string name="prefer_dub_desc">Varsayılan olarak dublajlı medyayı seç</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Anime keşfetme sayfasında liste öğelerini dahil et</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Tüm Okuyucu ile ilgili ayarlar</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Tüm indirilen Manga\'ları sil</string>
-    <string name="purge_novel_downloads_desc">Tüm indirilen Romanları sil</string>
     <string name="include_list_desc">Manga keşfetme sayfasında liste öğelerini dahil et</string>
     <string name="anilist_notification_filters_desc">Yoksayılacak kategoriyi seçin</string>
     <string name="anilist_notifications_checking_time_desc">Uygulamanın Anilist bildirimlerini kontrol etmek istediğiniz sıklığı ayarlayın</string>

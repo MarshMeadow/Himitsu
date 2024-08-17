@@ -254,12 +254,12 @@
     <string name="ask_update_progress_info_ep">Afskakel sal altyd outomaties vordering opdateer wanneer die episode gekyk is.</string>
     <string name="ask_update_progress_info_chap">Afskakel sal altyd outomaties vordering opdateer wanneer die hoofstuk gelees is.</string>
     <string name="ask_update_progress_chapter_zero">Werk By Vordering vir Hoofstuk 0</string>
-    <string name="ask_update_progress_info_zero">Aanskakel sal nuut begin items by Anilist voeg met vordering ingestel op hoofstuk 0.</string>
+    <string name="ask_update_progress_info_zero">Aanskakel sal nuut begin items by AniList voeg met vordering ingestel op hoofstuk 0.</string>
     <string name="ask_update_progress_hentai">Werk By Vordering vir Hentai</string>
     <string name="ask_update_progress_doujin">Werk By Vordering vir Doujins</string>
     <string name="very_bold">baie dapper van jou sar</string>
     <string name="watch_complete_percentage">Kyk Opdateer Persentasie</string>
-    <string name="watch_complete_percentage_info">Die persentasie waarteen jou Anilist vordering opgedateer moet word na die kyk van \'n episode. \nDit stel ook die \% in vir wanneer om skakels vir die volgende episode voor te laai.</string>
+    <string name="watch_complete_percentage_info">Die persentasie waarteen jou AniList vordering opgedateer moet word na die kyk van \'n episode. \nDit stel ook die \% in vir wanneer om skakels vir die volgende episode voor te laai.</string>
     <string name="behaviour">Gedrag</string>
     <string name="always_continue">Altyd hervat van tydstempel</string>
     <string name="pause_video_focus">Pouseer wanneer nie in Fokus nie</string>
@@ -396,20 +396,20 @@
     <string name="login_with_anilist">Teken in met Anilis</string>
     <string name="anilist">Anilis</string>
     <string name="account_help">Hoe werk dit\?</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
-        \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
+        \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
         \n- Delete a Media
 
-        \n\nNote: The app will not sync old Media\'s from Anilist to MAL, It\'s recommended to sync them.
+        \n\nNote: The app will not sync old Media\'s from AniList to MAL, It\'s recommended to sync them.
         \n- Check __FAQs__ for _Easy Method_
 
         \n\nAnd for _Intermediates_ :
-        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
-        \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
+        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync MAL data with AniList](https://anilist.co/forum/thread/3393)
 
-        \n\n_It is not required to sync both MAL and Anilist accounts._
+        \n\n_It is not required to sync both MAL and AniList accounts._
     </string>
     <string name="frequency">Frequency</string>
     <string name="notification_for_checking_subscriptions">Wys kennisgewing vir die nagaan van intekening</string>
@@ -468,7 +468,7 @@
     <string name="copied_text">Gekopieer \"%1$s\"</string>
     <string name="back_to_exit">Druk WEER terug om uit te gaan</string>
     <string name="back_button">Terugknoppie</string>
-    <string name="anilist_not_found">Lyk dit asof dit nie op Anilist gevind is nie.</string>
+    <string name="anilist_not_found">Lyk dit asof dit nie op AniList gevind is nie.</string>
     <string name="disabled_auto_skip">Gedeaktiveerde Outomatiese Oorslaan OP &amp; ED</string>
     <string name="auto_skip">Outomatiese Oorslaan OP &amp; ED</string>
     <string name="show_skip_time_stamp_button">Wys Oorslaan [Segment] Knoppies</string>
@@ -486,7 +486,7 @@
     <string name="logging_in_mal">Teken in by MAL</string>
     <string name="no_next_episode">Geen volgende episode gevind nie!</string>
     <string name="enable_banner_animations">Probeer om \"Banner Animations\" in te skakel in instellings</string>
-    <string name="please_login_anilist">Maak asseblief aan met Anilist!</string>
+    <string name="please_login_anilist">Maak asseblief aan met AniList!</string>
     <string name="auto_update_reset">Auto Update vordering is nou herstel</string>
     <string name="cant_wait">Kan nie wag nie, huh? goed X(</string>
     <string name="downloading">Aflaai…</string>
@@ -494,11 +494,11 @@
     <string name="first_chapter">Dit is die 1ste hoofstuk!</string>
     <string name="adult_stuff">Volwasse Stof?( ͡° ͜ʖ ͡° )</string>
     <string name="what_did_you_open">Wat het jy selfs oopgemaak?</string>
-    <string name="error_getting_data">Fout met die kry van data van Anilist.</string>
+    <string name="error_getting_data">Fout met die kry van data van AniList.</string>
     <string name="empty_response">Leë respons! Dalk sukkel jou internet, dalk?</string>
     <string name="error_loading_mal_user_data">Fout met die laai van MAL gebruikersdata</string>
     <string name="error_loading_mal_data">Kon nie data van MAL laai nie</string>
-    <string name="error_loading_anilist_user_data">Fout met die laai van Anilist gebruikersdata</string>
+    <string name="error_loading_anilist_user_data">Fout met die laai van AniList gebruikersdata</string>
     <string name="episode_not_found">Kon nie episode vind nie : %1$s</string>
     <string name="list_updated">Lys Opgedateer</string>
     <string name="deleted_from_list">Verwyder van Lys</string>
@@ -925,7 +925,6 @@
     <string name="hentai">HENTAI?????</string>
     <string name="time">Tyd</string>
     <string name="player_settings_desc">Al die speler verwante instellings</string>
-    <string name="purge_anime_downloads_desc">Verwyder alle afgelaaide Anime</string>
     <string name="prefer_dub_desc">Kies nagesinkroniseerde media standaard</string>
     <string name="show_yt_desc">Show streaming platform links when available</string>
     <string name="include_list_anime_desc">Sluit lysitems in Anime verkenbladsy in</string>
@@ -946,8 +945,6 @@
     <string name="reader_settings_desc">Alle leesverwante instellings</string>
     <string name="comic_format">Download Manga as CBZ</string>
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
-    <string name="purge_manga_downloads_desc">Verwyder alle afgelaai Manga</string>
-    <string name="purge_novel_downloads_desc">Verwyder alle afgelaai Novels</string>
     <string name="include_list_desc">Sluit lysitems in Manga-verkenbladsy in</string>
     <string name="anilist_notification_filters_desc">Kies kategorie om te ignoreer</string>
     <string name="anilist_notifications_checking_time_desc">Stel die frekwensie in wat jy wil hê die program moet vir Anilist kennisgewings nagaan</string>

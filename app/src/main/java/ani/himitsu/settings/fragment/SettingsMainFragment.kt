@@ -13,7 +13,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import ani.himitsu.BuildConfig
 import ani.himitsu.R
-import ani.himitsu.connections.anilist.Anilist
+import ani.himitsu.connections.anilist.AniList
 import ani.himitsu.connections.discord.Discord
 import ani.himitsu.connections.mal.MAL
 import ani.himitsu.databinding.ActivitySettingsMainBinding
@@ -182,17 +182,17 @@ class SettingsMainFragment : Fragment() {
 
             binding.apply {
                 fun reload() {
-                    if (Anilist.token != null) {
-                        settingsAnilistLogin.setText(R.string.logout)
-                        settingsAnilistLogin.setOnClickListener {
-                            Anilist.removeSavedToken()
+                    if (AniList.token != null) {
+                        settingsAniListLogin.setText(R.string.logout)
+                        settingsAniListLogin.setOnClickListener {
+                            AniList.removeSavedToken()
                             settings.recreate()
                             reload()
                         }
-                        settingsAnilistUsername.visibility = View.VISIBLE
-                        settingsAnilistUsername.text = Anilist.username
-                        settingsAnilistAvatar.loadImage(Anilist.avatar)
-                        settingsAnilistAvatar.setOnClickListener {
+                        settingsAniListUsername.visibility = View.VISIBLE
+                        settingsAniListUsername.text = AniList.username
+                        settingsAniListAvatar.loadImage(AniList.avatar)
+                        settingsAniListAvatar.setOnClickListener {
                             it.performHapticFeedback(HapticFeedbackConstants.LONG_PRESS)
                             val anilistLink = getString(
                                 R.string.anilist_link,
@@ -228,11 +228,11 @@ class SettingsMainFragment : Fragment() {
                             }
                         }
                     } else {
-                        settingsAnilistAvatar.setImageResource(R.drawable.ic_round_person_32)
-                        settingsAnilistUsername.visibility = View.GONE
-                        settingsAnilistLogin.setText(R.string.login)
-                        settingsAnilistLogin.setOnClickListener {
-                            Anilist.loginIntent(settings)
+                        settingsAniListAvatar.setImageResource(R.drawable.ic_round_person_32)
+                        settingsAniListUsername.visibility = View.GONE
+                        settingsAniListLogin.setText(R.string.login)
+                        settingsAniListLogin.setOnClickListener {
+                            AniList.loginIntent(settings)
                         }
                         settingsMALLoginRequired.visibility = View.VISIBLE
                         settingsMALLogin.visibility = View.GONE
