@@ -601,7 +601,7 @@
     <string name="male">Masculino</string>
     <string name="female">Femenino</string>
     <string name="question_1">¿Qué es Himitsu?</string>
-    <string name="answer_1">Dantotsu fusionó componentes de Aniyomi en el código principal de Saikou, pero luego Himitsu bifurcó Dantotsu y comenzó a mejorarlo. Es (en su mayoría) un cliente exclusivo de AniList, que también admite extensiones. \n>Himitsu (秘密; Him-itsu) significa \"secreto\" en japonés. Shhh. Es un secreto tan bueno que incluso el nombre está prohibido.</string>
+    <string name="answer_1">Dantotsu fusionó componentes de Aniyomi en el código principal de Saikou, pero luego Himitsu bifurcó Dantotsu y comenzó a mejorarlo. Es (en su mayoría) un cliente exclusivo de AniList, que también admite extensiones. \n&gt;Himitsu (秘密; Him-itsu) significa \"secreto\" en japonés. Shhh. Es un secreto tan bueno que incluso el nombre está prohibido.</string>
     <string name="question_2">¿Cuáles son algunas características de Himitsu?</string>
     <string name="answer_2">Este sería un párrafo bastante extenso si enumeráramos todo lo que Dantotsu intenta lograr, y mucho menos todo lo que Himitsu ha añadido a eso. Tu mejor opción sería pasar por el [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) y revisar el README.</string>
     <string name="question_3">¿Cuál es la diferencia entre las versiones Estable, Beta &amp; Alfa?</string>

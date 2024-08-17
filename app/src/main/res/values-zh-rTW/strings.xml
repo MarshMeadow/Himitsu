@@ -72,20 +72,20 @@
     <string name="social_in_media_desc">Display friend ratings and progress</string>
     <string name="status">STATUS</string>
     <string-array name="status_anime">
-        <item>規劃</item>
+        <item>PLANNING</item>
         <item>WATCHING</item>
-        <item>已完成</item>
+        <item>COMPLETED</item>
         <item>RE-WATCHING</item>
-        <item>已暫停</item>
-        <item>已放棄</item>
+        <item>PAUSED</item>
+        <item>DROPPED</item>
     </string-array>
     <string-array name="status_manga">
-        <item>規劃</item>
+        <item>PLANNING</item>
         <item>READING</item>
-        <item>已完成</item>
+        <item>COMPLETED</item>
         <item>RE-READING</item>
-        <item>已暫停</item>
-        <item>已放棄</item>
+        <item>PAUSED</item>
+        <item>DROPPED</item>
     </string-array>
     <string name="progress">PROGRESS</string>
     <string name="score">SCORE</string>
@@ -116,7 +116,7 @@
     <string name="characters">Characters</string>
     <string name="relations">Relations</string>
     <string name="staff">Staff</string>
-    <string name="favourites">收藏</string>
+    <string name="favourites">Favourites</string>
     <string name="popularity">Popularity</string>
     <string name="roles">Roles</string>
     <string name="details">Details</string>
@@ -160,12 +160,12 @@
     <string name="server_enabled">Starting TorrServer</string>
     <string name="enable_server_temp">Would you like to temporarily enable TorrServer (disabled on app close)?</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">AniList 設置</string>
+    <string name="anilist_settings">AniList Settings</string>
     <string name="extension_settings">Extensions</string>
     <string name="downloads">Downloads</string>
     <string name="offline_mode">Offline Mode</string>
-    <string name="settings">設定</string>
-    <string name="extensions">擴展</string>
+    <string name="settings">Settings</string>
+    <string name="extensions">Extensions</string>
     <string name="extension_updates_available">Extension updates available</string>
     <string name="player_settings">Player Settings</string>
     <string name="recentlyListOnly">Only my content in \"Recently Updated\"</string>
@@ -230,7 +230,7 @@
     <string name="exceed_cap">Bypass Capabilities</string>
     <string name="exceed_cap_desc">Allows overriding detected player limitations</string>
     <string name="subtitles">Subtitles</string>
-    <string name="subtitle_toggle">字幕</string>
+    <string name="subtitle_toggle">Subtitles</string>
     <string name="primary_sub_color_select">Subtitle Color</string>
     <string name="secondary_sub_color_select">Subtitle Outline Color</string>
     <string name="secondary_sub_outline_type_select">Subtitle Outline Type</string>
@@ -254,13 +254,12 @@
     <string name="ask_update_progress_info_ep">Turning off will always automatically update progress when the episode is watched.</string>
     <string name="ask_update_progress_info_chap">Turning off will always automatically update progress when the chapter is read.</string>
     <string name="ask_update_progress_chapter_zero">Update Progress for Chapter 0</string>
-    <string name="ask_update_progress_info_zero">啟用將新增的項目添加到 AniList，並將進度設置為第 0 章。</string>
+    <string name="ask_update_progress_info_zero">Turning on will add newly started items to AniList with progress set to chapter 0.</string>
     <string name="ask_update_progress_hentai">Update Progress for Hentai</string>
     <string name="ask_update_progress_doujin">Update Progress for Doujins</string>
     <string name="very_bold">very bold of you sar</string>
     <string name="watch_complete_percentage">Watch Update Percentage</string>
-    <string name="watch_complete_percentage_info">觀看一集後應更新的 AniList 進度百分比。
-這也設置了下一集在什麼百分比時預加載鏈接的％數。</string>
+    <string name="watch_complete_percentage_info">The percentage at which your AniList progress should be updated after watching an episode. \nThis also sets the \% for when to preload links for the next episode.</string>
     <string name="behaviour">Behaviour</string>
     <string name="always_continue">Always resume from timestamp</string>
     <string name="pause_video_focus">Pause when not in Focus</string>
@@ -285,11 +284,11 @@
     <string-array name="home_layouts">
         <item>Subscriptions</item>
         <item>Continue Watching</item>
-        <item>喜愛的動畫</item>
-        <item>計畫中的動畫</item>
+        <item>Favourite Anime</item>
+        <item>Planned Anime</item>
         <item>Continue Reading</item>
-        <item>喜愛的漫畫</item>
-        <item>計畫中的漫畫</item>
+        <item>Favourite Manga</item>
+        <item>Planned Manga</item>
         <item>Recommended</item>
         <item>Social Feeds</item>
     </string-array>
@@ -308,7 +307,7 @@
     <string name="random_recommended">Hide Home Random</string>
     <string name="random_recommended_desc">Hide random recommendation items</string>
     <string name="small_view">Small View in Trending Shows</string>
-    <string name="trailer_banners">將預告片用作橫幅</string>
+    <string name="trailer_banners">Use Trailer as Banner</string>
     <string name="animations">Animations</string>
     <string name="banner_animations">Banner Animations</string>
     <string name="layout_animations">Layout Animations</string>
@@ -316,8 +315,8 @@
     <string name="animation_speed">Overall Speed</string>
     <string name="empty_fav">Try adding something to keep it here.</string>
     <string name="no_suggestions">We\'re still getting to know you.</string>
-    <string name="fav_anime">喜愛的動畫</string>
-    <string name="fav_manga">喜愛的漫畫</string>
+    <string name="fav_anime">Favourite Anime</string>
+    <string name="fav_manga">Favourite Manga</string>
     <string name="restart_app">Restart the app?</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
@@ -332,7 +331,7 @@
     <string name="layout">Layout</string>
     <string name="spaced_pages">Spaced Pages</string>
     <string name="direction">Direction</string>
-    <string name="comments_api">Comments API (Private)</string>
+    <string name="comments_api">Comments API (Dantotsu)</string>
     <string name="comments_api_desc">Warning: Known for trolling and abuse</string>
     <string name="no_recommendations">No suggestions available!</string>
     <string name="clear_glide">Wipe Glide Cache</string>
@@ -378,8 +377,8 @@
     <string name="include_media_in_list">Include List</string>
     <string name="release_calendar">Calendar</string>
     <string name="review_type">%1$s Reviews</string>
-    <string name="planned_anime">計畫中的動畫</string>
-    <string name="planned_manga">計畫中的漫畫</string>
+    <string name="planned_anime">Planned Anime</string>
+    <string name="planned_manga">Planned Manga</string>
     <string name="image_long_clicking">Long click to open image</string>
     <string name="always_continue_content">Continue previous media</string>
     <string name="descending_items">List in descending order</string>
@@ -391,24 +390,24 @@
     <string name="forks">Versions</string>
     <string name="faq">FAQ</string>
     <string name="accounts">Accounts</string>
-    <string name="addons">Addons</string>
-    <string name="addons_desc">Addons are Dantotsu extra feature modules.</string>
-    <string name="login_with_anilist">使用 AniList 登錄</string>
+    <string name="addons">Add-ons</string>
+    <string name="addons_desc">Get more features out of your app</string>
+    <string name="login_with_anilist">Log in with AniList</string>
     <string name="account_help">How does this work\?</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
-        \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
+        \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
         \n- Delete a Media
 
-        \n\nNote: The app will not sync old Media\'s from Anilist to MAL, It\'s recommended to sync them.
+        \n\nNote: The app will not sync old Media\'s from AniList to MAL, It\'s recommended to sync them.
         \n- Check __FAQs__ for _Easy Method_
 
         \n\nAnd for _Intermediates_ :
-        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
-        \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
+        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync MAL data with AniList](https://anilist.co/forum/thread/3393)
 
-        \n\n_It is not required to sync both MAL and Anilist accounts._
+        \n\n_It is not required to sync both MAL and AniList accounts._
     </string>
     <string name="frequency">Frequency</string>
     <string name="notification_for_checking_subscriptions">Show notification for checking subscriptions</string>
@@ -467,7 +466,7 @@
     <string name="copied_text">Copied \"%1$s\"</string>
     <string name="back_to_exit">Press BACK again to exit</string>
     <string name="back_button">Back Button</string>
-    <string name="anilist_not_found">Seems like that wasn\'t found on Anilist.</string>
+    <string name="anilist_not_found">Seems like that wasn\'t found on AniList.</string>
     <string name="disabled_auto_skip">Disabled Auto Skipping OP &amp; ED</string>
     <string name="auto_skip">Auto Skipping OP &amp; ED</string>
     <string name="show_skip_time_stamp_button">Show Skip [Segment] Buttons</string>
@@ -485,7 +484,7 @@
     <string name="logging_in_mal">Logging into MAL</string>
     <string name="no_next_episode">No next episode found!</string>
     <string name="enable_banner_animations">Try enabling \"Banner Animations\" in settings</string>
-    <string name="please_login_anilist">Please log in with Anilist!</string>
+    <string name="please_login_anilist">Please log in with AniList!</string>
     <string name="auto_update_reset">Auto Update progress has now been reset-ed</string>
     <string name="cant_wait">Can\'t wait, huh? fine X(</string>
     <string name="downloading">Downloading…</string>
@@ -493,18 +492,18 @@
     <string name="first_chapter">This is the 1st chapter!</string>
     <string name="adult_stuff">Adult Stuff?&#40; &#865;&#176; &#860;&#662; &#865;&#176; &#41;</string>
     <string name="what_did_you_open">What did you even open?</string>
-    <string name="error_getting_data">從 AniList 獲取數據時出錯。</string>
-    <string name="anilist_data_error">擷取 AniList 數據時出錯：%1$s</string>
+    <string name="error_getting_data">Error getting data from AniList.</string>
+    <string name="anilist_data_error">Error fetching AniList data: %1$s</string>
     <string name="empty_response">Empty response! Does your internet suck, perhaps?</string>
     <string name="error_loading_mal_user_data">Error loading MAL user data</string>
     <string name="error_loading_mal_data">Failed to load data from MAL</string>
-    <string name="error_loading_anilist_user_data">加載 AniList 用戶數據時出錯</string>
+    <string name="error_loading_anilist_user_data">Error loading AniList user data</string>
     <string name="episode_not_found">Couldn\'t find episode : %1$s</string>
     <string name="list_updated">List Updated</string>
     <string name="deleted_from_list">Deleted from List</string>
     <string name="no_list_id">No List ID found…</string>
     <string name="matagi_update">Himitsu Shirase %1$s</string>
-    <string name="matagi_dont_show">Don\'t notify again for %1$s</string>
+    <string name="matagi_dont_show">Skip %1$s</string>
     <string name="matagi_downloading">Downloading Himitsu %1$s</string>
     <string name="checking_for_update">Checking for Update</string>
     <string name="dont_show_again">Don\'t notify again for version %1$s</string>
@@ -559,9 +558,9 @@
     <string name="continue_episode">Continue : Episode %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Filler</string>
     <string name="continue_chapter">Continue : %1$s\n%2$s</string>
-    <string name="episode">"集"</string>
+    <string name="episode">"Episode "</string>
     <string name="episode_num">Episode %1$s</string>
-    <string name="chapter">"章"</string>
+    <string name="chapter">"Chapter "</string>
     <string name="chapter_num">Chapter %1$s</string>
     <string name="just_released">- New release!</string>
     <string name="checking_subscriptions_title">Checking Subscriptions</string>
@@ -573,11 +572,11 @@
     <string name="incognito_will_not_update">Incognito mode will still ignore progress.</string>
     <string name="dont_ask_again">"Don't ask again for %1$s"</string>
     <string name="default_speed">Default Speed</string>
-    <string name="default_resize_mode">默認調整模式</string>
+    <string name="default_resize_mode">Default Resize Mode</string>
     <string name="primary_sub_color">Primary Sub Color</string>
     <string name="outline_sub_color">Outline Sub Color</string>
     <string name="outline_type">Outline Type</string>
-    <string name="subtitle_font">字幕字型</string>
+    <string name="subtitle_font">Subtitle Font</string>
     <string name="launch_application">Page is attempting to launch %1$s. Allow?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
@@ -592,10 +591,10 @@
     <string name="available">Available</string>
     <string name="lets_go">Let\'s Go</string>
     <string name="cope">Cope</string>
-    <string name="watched_num">"已觀看"</string>
+    <string name="watched_num">"Watched "</string>
     <string name="read_num">"Read "</string>
     <string name="items_out_of">" out of "</string>
-    <string name="items_total_of">"共 "</string>
+    <string name="items_total_of">"Total of "</string>
     <string name="no_description_available">No Description Available</string>
     <string-array name="manga_directions">
         <item>Top to Bottom</item>
@@ -610,9 +609,9 @@
     </string-array>
     <string name="selected">Selected</string>
     <string name="found">Found</string>
-    <string name="age">"__年齡:__ "</string>
-    <string name="birthday">"\n__生日:__ "</string>
-    <string name="gender">"\n__性別:__ "</string>
+    <string name="age">"__Age:__ "</string>
+    <string name="birthday">"\n__Birthday:__ "</string>
+    <string name="gender">"\n__Gender:__ "</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="question_1">What is Himitsu?</string>
@@ -651,10 +650,10 @@
     <string name="answer_17">The following presents some tips and tricks you may or may not know about - \n \n \n - By hold pressing the Himitsu logo in settings, you can check if there are any new updates manually. \n \n - Hold pressing an error message/tag/synonym or title will copy it. \n \n - You can open an episode with other apps by hold pressing any server for that episode. This helps in streaming the episode using other video players or download the episode using download managers. \n \n - You can set up custom lists using this [link](https://anilist.co/settings/lists). (you need to be signed in) \n \n - If your episode/chapter is not being progressed automatically after you finish watching/reading it, then hold press the status bar(planning/repeating/watching button) of that anime/manga. The next time you start a chapter/finish an episode, you will stumble upon a popup. Press yes there. </string>
     <string name="subscribed_notification">Subscribed! Receiving notifications, when new episodes are released on %1$s.</string>
     <string name="unsubscribed_notification">Unsubscribed, you will not receive any notifications.</string>
-    <string name="episode_plural">集</string>
-    <string name="episode_singular">集</string>
-    <string name="chapter_singular">章</string>
-    <string name="chapter_plural">章</string>
+    <string name="episode_plural">Episodes</string>
+    <string name="episode_singular">Episode</string>
+    <string name="chapter_singular">Chapter</string>
+    <string name="chapter_plural">Chapters</string>
     <string name="filter_status">"Status : %1$s"</string>
     <string name="filter_source">"Source : %1$s"</string>
     <string name="filter_format">"Format : %1$s"</string>
@@ -674,7 +673,7 @@
     <string name="discord_warning">By logging in, Discord will display what you are watching &amp; reading on Himitsu\n\nWhen opening Himitsu, your visibility will be determined by your Himitsu settings.\n\nThis functionality may violate the Discord TOS as it does not use the Discord GameSDK.\n\nHimitsu is not responsible for anything that happens to your account.</string>
     <string name="warning">Warning</string>
     <string name="force_legacy_installer">Force Legacy Installer</string>
-    <string name="extensions_settings">擴展</string>
+    <string name="extensions_settings">Extensions</string>
     <string name="NSFWExtention">NSFW Extensions</string>
     <string name="skip_loading_extension_icons">Skip loading extension icons</string>
     <string name="use_material_you">Material You</string>
@@ -747,7 +746,7 @@
     <string name="mutual">Mutual</string>
     <string name="success">Success</string>
     <string name="error">Some error occurred</string>
-    <string name="error_msg">錯誤: %1$s</string>
+    <string name="error_msg">Error: %1$s</string>
     <string name="please_wait">Please wait</string>
     <string name="upcoming">Upcoming</string>
     <string name="no_shows_to_display">No shows to display</string>
@@ -780,7 +779,7 @@
     <string name="blur">Blur</string>
     <string name="hide_scroll_bar">Hide Scroll Bar</string>
     <string name="view_on_anilist">View on AniList</string>
-    <string name="anilist_notification_filters">Choose category to ignore</string>
+    <string name="anilist_notification_filters">Filter Notifications</string>
     <string name="anilist_notifications_checking_time">AniList notifications update frequency : %1$s</string>
     <string name="comment_notification_checking_time">Comment notifications update frequency : %1$s</string>
     <string name="activities">Activities</string>
@@ -788,16 +787,16 @@
     <string name="password_cannot_be_empty">Password cannot be empty</string>
     <string name="unknown_file_type">Unknown file type</string>
     <string name="error_importing_settings">Error importing settings</string>
-    <string name="download_manager">下載管理器</string>
+    <string name="download_manager">Download Manager</string>
     <string name="enter_password">Enter Password</string>
-    <string name="you_cursed">你被詛咒了</string>
+    <string name="you_cursed">youwu have been cuwsed</string>
     <string name="invalid_file_type">Invalid file type</string>
     <string name="purge_confirm">Are you sure you want to purge all %1$s downloads?</string>
-    <string name="delete_content">您確定要刪除 %1$s 嗎？</string>
+    <string name="delete_content">Are you sure you want to delete %1$s?</string>
     <string name="delete_item">Delete %1$s?</string>
     <string name="deleted_item">Deleted %1$s</string>
-    <string name="multi_download_chapter">多章節下載器</string>
-    <string name="multi_download_chapter_count">輸入要下載的章節數量</string>
+    <string name="multi_download_chapter">Multi Chapter Downloader</string>
+    <string name="multi_download_chapter_count">Enter the number of chapters to download</string>
     <string name="delete_fail_reason">Failed to delete because of… %1$s</string>
     <string name="delete_fail">Failed to delete</string>
     <string name="hide_replies">Hide replies</string>
@@ -822,7 +821,7 @@
     <string name="size_unknown">Unknown Size</string>
     <string name="mb_size">%1$s MB</string>
     <string name="button_restore">Restore</string>
-    <string name="button_backup">備份</string>
+    <string name="button_backup">Backup</string>
     <string name="no_location_selected">No location selected</string>
     <string name="do_it">Do it!</string>
     <string name="password">Password</string>
@@ -830,19 +829,19 @@
     <string name="anilist_broken">AniList appears to be unresponsive and functionality will be severely limited. Would you like to close the app and try again later?\n</string>
     <string name="search_title">Search %1$s</string>
     <string name="profile_stats_widget">Track progress directly from your home screen</string>
-    <string name="anime_watched">動畫</string>
-    <string name="manga_read">漫畫</string>
-    <string name="chapters_read_n">章節</string>
-    <string name="episodes_watched_n">集數</string>
+    <string name="anime_watched">Anime</string>
+    <string name="manga_read">Manga</string>
+    <string name="chapters_read_n">Chapters</string>
+    <string name="episodes_watched_n">Episodes</string>
     <string name="loading">Loading…</string>
     <string name="user_stats">%1$s\'s Stats</string>
     <string name="please">Please</string>
     <string name="log_in">log in</string>
     <string name="or_join">or join</string>
     <string name="audio_tracks">Audio Tracks</string>
-    <string name="disabled_track">\[💬\] Disabled</string>
+    <string name="disabled_track">\[⛔\] Disable Subtitles</string>
     <string name="invalid_track">\[⁉️\] Invalid</string>
-    <string name="unknown_track">\[%1$s\] Unknown</string>
+    <string name="unknown_track">\[%1$s\] Unknown Language</string>
     <string name="load_subtitle">\[👀\] Load Subtitle File</string>
     <string name="subtitle_url">Enter URL or Import File</string>
     <string name="import_file">Import file</string>
@@ -910,10 +909,10 @@
     <string name="japan">Japan</string>
     <string name="taiwan">Taiwan</string>
     <string name="something">Something</string>
-    <string name="sort_score">得分</string>
-    <string name="popular">熱門</string>
-    <string name="trending">趨勢</string>
-    <string name="new_releases">新發行</string>
+    <string name="sort_score">Score</string>
+    <string name="popular">Popular</string>
+    <string name="trending">Trending</string>
+    <string name="new_releases">New Releases</string>
     <string name="a_z">A-Z</string>
     <string name="z_a">Z-A</string>
     <string name="pure_pain">Pure Pain</string>
@@ -956,15 +955,15 @@
     <string name="use_unique_theme_for_each_item_desc">Use color from media\'s banner</string>
     <string name="use_custom_theme_desc">Use your own color for the theme</string>
     <string name="color_picker_desc">Choose a color</string>
-    <string name="torrent_addon">Torrent Addon</string>
-    <string name="anime_downloader_addon">Anime Downloader Addon</string>
-    <string name="install_torrent_addon">Install Torrent Addon</string>
+    <string name="torrent_addon">Torrent Add-on</string>
+    <string name="anime_downloader_addon">Anime Downloader Add-on</string>
+    <string name="install_torrent_addon">Install Torrent Add-on</string>
     <string name="loaded_successfully">Loaded Successfully</string>
     <string name="not_installed">Not Installed</string>
-    <string name="torrent_extension_not_supported">Torrent extension not supported on this device</string>
-    <string name="update_addon">Update Addon</string>
-    <string name="install_addon">Install Addon</string>
-    <string name="download_addon_not_found">Download addon not found</string>
+    <string name="torrent_extension_not_supported">Torrent Add-on not supported on this device</string>
+    <string name="update_addon">Add-on update available</string>
+    <string name="install_addon">Install Add-on</string>
+    <string name="download_addon_not_found">Add-on not found</string>
     <string name="image">Image</string>
     <string name="ppt_title">Person, Place, Thing</string>
     <string name="failed_ext_install_conflict">Failed to install extension due to conflict</string>
@@ -977,8 +976,8 @@
     <string name="download_started">Download started</string>
     <string name="downloads_completed">All downloads completed</string>
     <string name="pending_downloads">Pending downloads: %1$d</string>
-    <string name="reading">閱讀中</string>
-    <string name="watching">觀看中</string>
+    <string name="reading">READING</string>
+    <string name="watching">WATCHING</string>
     <string name="avatar">%1$s\ [Avatar]</string>
     <string name="cover">%1$s\ [Cover]</string>
     <string name="banner">%1$s\ [Banner]</string>
@@ -987,26 +986,26 @@
     <string name="webview_not_found_version">Could not find WebView version %1$s</string>
     <string name="webview_not_found">Could not find an installed WebView library</string>
     <string name="multi">Multi</string>
-    <string name="installed_extensions">已安裝 %1$s</string>
-    <string name="available_extensions">可用 %1$s</string>
-    <string name="available_plugins">%1$s 外掛程式</string>
-    <string name="your_story">您的故事</string>
-    <string name="your_progress">您的進度</string>
-    <string name="file_not_found">找不到檔案</string>
-    <string name="directory_not_found">找不到目錄</string>
-    <string name="successfully_deleted">刪除成功</string>
-    <string name="failed_to_delete_directory">無法刪除目錄</string>
+    <string name="installed_extensions">Installed %1$s</string>
+    <string name="available_extensions">Available %1$s</string>
+    <string name="available_plugins">%1$s Plugins</string>
+    <string name="your_story">Your Story</string>
+    <string name="your_progress">Your Progress</string>
+    <string name="file_not_found">File not found</string>
+    <string name="directory_not_found">Directory not found</string>
+    <string name="successfully_deleted">Successfully deleted</string>
+    <string name="failed_to_delete_directory">Failed to delete directory</string>
     <string name="hidden_anime">Hidden Anime</string>
     <string name="hidden_manga">Hidden Manga</string>
     <string name="random_anime">Random Anime</string>
     <string name="random_manga">Random Manga</string>
-    <string name="you">您</string>
-    <string name="logout_confirm">您確定要登出嗎？</string>
-    <string name="app_died">應用程式當機</string>
-    <string name="an_unexpected_error_occurred">發生意外錯誤。\n請將崩潰報告發送給開發人員 :)</string>
-    <string name="copy_report">複製報告</string>
-    <string name="share_as_file">分享為文件</string>
-    <string name="hidden">隱藏</string>
+    <string name="you">You</string>
+    <string name="logout_confirm">Are you sure you want to logout?</string>
+    <string name="app_died">APP DIED</string>
+    <string name="an_unexpected_error_occurred">An unexpected error occurred.\nPlease send a crash report to the developer :)</string>
+    <string name="copy_report">Copy Report</string>
+    <string name="share_as_file">Share as file</string>
+    <string name="hidden">Hidden</string>
     <string name="no_hidden_items">No Hidden Items</string>
     <string name="download_addon_not_installed">Download Add-on not installed</string>
     <string name="would_you_like_to_install">Would you like to install it?</string>
