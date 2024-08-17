@@ -392,24 +392,22 @@
     <string name="accounts">একাউণ্টসমূহ</string>
     <string name="addons">এড্ড-অন</string>
     <string name="addons_desc">আপোনাৰ এপ্পৰ পৰা অধিক সুবিধা প্ৰাপ্ত কৰক</string>
-    <string name="myanimelist">মাই অনুষ্ঠানৰ তালিকা</string>
     <string name="login_with_anilist">AniList সৈতে লগ ইন কৰক</string>
-    <string name="anilist">অনিলিস্ট</string>
     <string name="account_help">এইটো কেনেকৈ কাম কৰে?</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
-        \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
+        \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
         \n- Delete a Media
 
-        \n\nNote: The app will not sync old Media\'s from Anilist to MAL, It\'s recommended to sync them.
+        \n\nNote: The app will not sync old Media\'s from AniList to MAL, It\'s recommended to sync them.
         \n- Check __FAQs__ for _Easy Method_
 
         \n\nAnd for _Intermediates_ :
-        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
-        \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
+        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync MAL data with AniList](https://anilist.co/forum/thread/3393)
 
-        \n\n_It is not required to sync both MAL and Anilist accounts._
+        \n\n_It is not required to sync both MAL and AniList accounts._
     </string>
     <string name="frequency">Frequency</string>
     <string name="notification_for_checking_subscriptions">চেক কৰী আছো জাননীসমূহ</string>
@@ -570,7 +568,7 @@
     <string name="speed">গতি</string>
     <string name="auto_update">%1$s পৰ্যন্ত স্বয়ংক্ৰিয়ভাৱে উন্নীত কৰিব?</string>
     <string name="continue_from">%1$s পৰ পৰা চালিব?</string>
-    <string name="title_update_progress">Anilistত উন্নীতকৰণৰ প্ৰগ্ৰেছ আপডেট কৰিব?</string>
+    <string name="title_update_progress">AniListত উন্নীতকৰণৰ প্ৰগ্ৰেছ আপডেট কৰিব?</string>
     <string name="incognito_will_not_update">গোপনীয় মোড এতিয়াৰ পৰিগুণীয় উন্নীতকৰণ কৰিব নহয়।.</string>
     <string name="dont_ask_again">"%1$sৰ বাবে আৰু নোহোৱা"</string>
     <string name="default_speed">ডিফল্ট গতি</string>

@@ -392,24 +392,22 @@
     <string name="accounts">Konti</string>
     <string name="addons">Addons</string>
     <string name="addons_desc">Tilføjelser er Dantotsu ekstra feature moduler.</string>
-    <string name="myanimelist">MyanimeList</string>
     <string name="login_with_anilist">Log ind med AniList</string>
-    <string name="anilist">Annonceliste</string>
     <string name="account_help">Hvordan virker dette\?</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
-        \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
+        \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
         \n- Delete a Media
 
-        \n\nNote: The app will not sync old Media\'s from Anilist to MAL, It\'s recommended to sync them.
+        \n\nNote: The app will not sync old Media\'s from AniList to MAL, It\'s recommended to sync them.
         \n- Check __FAQs__ for _Easy Method_
 
         \n\nAnd for _Intermediates_ :
-        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
-        \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
+        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync MAL data with AniList](https://anilist.co/forum/thread/3393)
 
-        \n\n_It is not required to sync both MAL and Anilist accounts._
+        \n\n_It is not required to sync both MAL and AniList accounts._
     </string>
     <string name="frequency">Frequency</string>
     <string name="notification_for_checking_subscriptions">Vis notifikation til kontrol af abonnementer</string>
@@ -468,7 +466,7 @@
     <string name="copied_text">Kopieret \"%1$s\"</string>
     <string name="back_to_exit">Tryk TILBAGE igen for at afslutte</string>
     <string name="back_button">Knappen Tilbage</string>
-    <string name="anilist_not_found">Det ser ud til at det ikke blev fundet på Anilist.</string>
+    <string name="anilist_not_found">Det ser ud til at det ikke blev fundet på AniList.</string>
     <string name="disabled_auto_skip">Deaktiveret Automatisk Spring OP &amp; ED</string>
     <string name="auto_skip">Auto Skipping OP &amp; ED</string>
     <string name="show_skip_time_stamp_button">Vis Spring Over [Segment] Knapper</string>
@@ -486,7 +484,7 @@
     <string name="logging_in_mal">Logger ind på MAL</string>
     <string name="no_next_episode">Ingen næste episode fundet!</string>
     <string name="enable_banner_animations">Prøv at aktivere \"Banner Animations\" i indstillinger</string>
-    <string name="please_login_anilist">Log ind med Anilist!</string>
+    <string name="please_login_anilist">Log ind med AniList!</string>
     <string name="auto_update_reset">Auto-opdaterings fremskridt er nu blevet nulstillet</string>
     <string name="cant_wait">Kan ikke vente, huh? fine X (</string>
     <string name="downloading">Downloader…</string>

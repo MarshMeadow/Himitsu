@@ -393,9 +393,7 @@
     <string name="accounts">Comptes</string>
     <string name="addons">Add-ons</string>
     <string name="addons_desc">Les add-ons sont des extensions qui offrent des fonctionnalités supplémentaires.</string>
-    <string name="myanimelist">Ma liste d\'animés</string>
     <string name="login_with_anilist">Connectez-vous avec AniList !</string>
-    <string name="anilist">AniList</string>
     <string name="account_help">Comment cela fonctionne-t-il\?</string>
     <string name="full_account_help">Himitsu est une application basée sur AniList, donc pour la synchronisation avec votre compte MAL, un compte AniList doit être connecté.
         \nUne fois connecté avec les comptes AniList et MAL, l\'application mettra automatiquement à jour votre compte MAL chaque fois que vous:
@@ -487,7 +485,7 @@
     <string name="logging_in_mal">Connexion à MAL en cours</string>
     <string name="no_next_episode">Aucun épisode suivant trouvé !</string>
     <string name="enable_banner_animations">Essayez d\'activer les animations de bannière depuis les paramètres</string>
-    <string name="please_login_anilist">Veuillez vous connecter avec Anilist !</string>
+    <string name="please_login_anilist">Veuillez vous connecter avec AniList !</string>
     <string name="auto_update_reset">La progression de la mise à jour automatique a maintenant été réinitialisée</string>
     <string name="cant_wait">Vous ne pouvez pas attendre, hein? D\'accord X(</string>
     <string name="downloading">Téléchargement en cours…</string>

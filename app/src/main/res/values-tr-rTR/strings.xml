@@ -392,9 +392,7 @@
     <string name="accounts">Hesaplar</string>
     <string name="addons">Eklentiler</string>
     <string name="addons_desc">Eklentiler Dantotsu ek özellik modülleri.</string>
-    <string name="myanimelist">MyAnimeList</string>
     <string name="login_with_anilist">AniList ile Oturum Açın</string>
-    <string name="anilist">Anilist</string>
     <string name="account_help">Bu nasıl çalışıyor\?</string>
     <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
         \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:

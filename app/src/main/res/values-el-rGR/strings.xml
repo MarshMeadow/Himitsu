@@ -392,24 +392,22 @@
     <string name="accounts">Λογαριασμοί</string>
     <string name="addons">Πρόσθετα</string>
     <string name="addons_desc">Τα πρόσθετα είναι επεκτάσεις που παρέχουν πρόσθετη λειτουργικότητα.</string>
-    <string name="myanimelist">MyAnimeList</string>
     <string name="login_with_anilist">Συνδεθείτε με AniList</string>
-    <string name="anilist">Anilist</string>
     <string name="account_help">Πως λειτουργεί αυτό\;</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
-        \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
+        \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
         \n- Delete a Media
 
-        \n\nNote: The app will not sync old Media\'s from Anilist to MAL, It\'s recommended to sync them.
+        \n\nNote: The app will not sync old Media\'s from AniList to MAL, It\'s recommended to sync them.
         \n- Check __FAQs__ for _Easy Method_
 
         \n\nAnd for _Intermediates_ :
-        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
-        \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
+        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync MAL data with AniList](https://anilist.co/forum/thread/3393)
 
-        \n\n_It is not required to sync both MAL and Anilist accounts._
+        \n\n_It is not required to sync both MAL and AniList accounts._
     </string>
     <string name="frequency">Frequency</string>
     <string name="notification_for_checking_subscriptions">Έλεγχος ειδοποίησης Συνδρομών</string>
@@ -468,7 +466,7 @@
     <string name="copied_text">Αντιγράφηκε το \"%1$s\"</string>
     <string name="back_to_exit">Πατήστε ξανά ΠΙΣΩ για έξοδο</string>
     <string name="back_button">Κουμπί Πίσω</string>
-    <string name="anilist_not_found">Φαίνεται ότι αυτό δεν βρέθηκε στο Anilist.</string>
+    <string name="anilist_not_found">Φαίνεται ότι αυτό δεν βρέθηκε στο AniList.</string>
     <string name="disabled_auto_skip">Απενεργοποιημένο OP Auto Skipping &amp; ED</string>
     <string name="auto_skip">Ενεργοποιημένο OP Auto Skipping &amp; ED</string>
     <string name="show_skip_time_stamp_button">Εμφάνιση κουμπιού σήμανση χρόνου παράλειψης</string>
@@ -486,7 +484,7 @@
     <string name="logging_in_mal">Σύνδεση στο MAL</string>
     <string name="no_next_episode">Δεν βρέθηκε επόμενο επεισόδιο!</string>
     <string name="enable_banner_animations">Δοκιμάστε να ενεργοποιήσετε το \"Banner Animations\" στις ρυθμίσεις</string>
-    <string name="please_login_anilist">Παρακαλούμε συνδεθείτε με το Anilist!</string>
+    <string name="please_login_anilist">Παρακαλούμε συνδεθείτε με το AniList!</string>
     <string name="auto_update_reset">Η πρόοδος της αυτόματης ενημέρωσης έχει πλέον επαναρυθμιστεί</string>
     <string name="cant_wait">Δεν μπορείτε να περιμένετε, ε; μια χαρά X(</string>
     <string name="downloading">Λήψη…</string>

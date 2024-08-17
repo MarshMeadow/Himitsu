@@ -392,9 +392,7 @@
     <string name="accounts">खाते</string>
     <string name="addons">Add-ons</string>
     <string name="addons_desc">Get more features out of your app</string>
-    <string name="myanimelist">मेरा एनिमेलिस्ट</string>
     <string name="login_with_anilist">AniList के साथ लॉग इन करें</string>
-    <string name="anilist">अनिलिस्ट</string>
     <string name="account_help">यह कैसे काम करता है\?</string>
     <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
         \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:

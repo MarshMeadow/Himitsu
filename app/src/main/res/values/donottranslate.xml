@@ -44,6 +44,9 @@
     <string name="rpc_read">Read on Himitsu</string>
     <string name="rpc_watch">Watch on Himitsu</string>
 
+    <string name="anilist">AniList</string>
+    <string name="myanimelist">MyAnimeList</string>
+
     <string name="prime_video">Prime Video</string>
     <string name="icon_prime" tools:ignore="Typos">https://play-lh.googleusercontent.com/Y7drWZZo_F2GBE1RhjR1irOkE3yrtPorHS1U9YkLKAu1DnTjQ8gNbcRmrBtkd3tnHQ</string>
     <string name="crunchyroll">Crunchyroll</string>
@@ -74,13 +77,13 @@
     <string name="mimetype_apk">application/vnd.android.package-archive</string>
     <string name="mimetype_binary">application/octet-stream</string>
     <string name="mimetype_cea">application/cea-608</string>
-    <string name="mimetype_zip" translatable="false">application/zip</string>
+    <string name="mimetype_zip">application/zip</string>
 
     <string name="user_subtitle">\[💬\] %1$s</string>
 
-    <string name="cursed_yt" translatable="false">https://www.youtube.com/watch?v=dQw4w9WgXcQ</string>
+    <string name="cursed_yt">https://www.youtube.com/watch?v=dQw4w9WgXcQ</string>
 
-    <string name="lorem_ipsum" translatable="false">
+    <string name="lorem_ipsum">
 
 Lorem ipsum dolor sit amet. Est consectetur sint qui internos optio nam Quis excepturi qui voluptatem animi. Qui labore quasi vel suscipit deleniti et doloremque omnis in velit suscipit et quasi eaque. Et doloribus recusandae id laudantium Quis qui natus velit in voluptatem voluptatem!
 

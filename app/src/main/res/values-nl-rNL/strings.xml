@@ -392,11 +392,9 @@
     <string name="accounts">Rekeningen</string>
     <string name="addons">Addons</string>
     <string name="addons_desc">Addons zijn Dantotsu extra feature modules.</string>
-    <string name="myanimelist">MyAnimeLijst</string>
     <string name="login_with_anilist">Log in met AniList</string>
-    <string name="anilist">Anilist</string>
     <string name="account_help">Hoe werkt dit?</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
         \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media

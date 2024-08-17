@@ -392,24 +392,22 @@
     <string name="accounts">الحسابات</string>
     <string name="addons">Addons</string>
     <string name="addons_desc">الإضافات هي امتدادات توفر وظائف إضافية.</string>
-    <string name="myanimelist">MyAnimeList</string>
     <string name="login_with_anilist">تسجيل الدخول باستخدام AniList</string>
-    <string name="anilist">أنيليا</string>
     <string name="account_help">كيف يعمل هذا؟</string>
-    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
-        \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
+    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
+        \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
         \n- Delete a Media
 
-        \n\nNote: The app will not sync old Media\'s from Anilist to MAL, It\'s recommended to sync them.
+        \n\nNote: The app will not sync old Media\'s from AniList to MAL, It\'s recommended to sync them.
         \n- Check __FAQs__ for _Easy Method_
 
         \n\nAnd for _Intermediates_ :
-        \n- [How to sync Anilist data with MAL](https://anilist.co/forum/thread/2654)
-        \n- [How to sync MAL data with Anilist](https://anilist.co/forum/thread/3393)
+        \n- [How to sync AniList data with MAL](https://anilist.co/forum/thread/2654)
+        \n- [How to sync MAL data with AniList](https://anilist.co/forum/thread/3393)
 
-        \n\n_It is not required to sync both MAL and Anilist accounts._
+        \n\n_It is not required to sync both MAL and AniList accounts._
     </string>
     <string name="frequency">Frequency</string>
     <string name="notification_for_checking_subscriptions">جاري التحقق من الاشتراكات</string>

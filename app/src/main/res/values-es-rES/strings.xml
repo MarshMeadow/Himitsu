@@ -392,11 +392,9 @@
     <string name="accounts">Cuentas</string>
     <string name="addons">Complementos</string>
     <string name="addons_desc">Los complementos son extensiones que brindan funcionalidad adicional.</string>
-    <string name="myanimelist">MyAnimeList</string>
     <string name="login_with_anilist">Iniciar sesión con AniList</string>
-    <string name="anilist">Anilist</string>
     <string name="account_help">¿Cómo funciona esto\?</string>
-    <string name="full_account_help">Himitsu es una aplicación basada en Anilist, por lo que para sincronizar con su cuenta MAL, necesita iniciar sesión en una cuenta de Anilist. \nUna vez que haya iniciado sesión con las cuentas Anilist y MAL, la aplicación actualizará automáticamente su cuenta MAL siempre que: \n- Agregar un nuevo medio \n- Editar un medio \n- Eliminar un medio \n\nNota: La aplicación no sincronizará los medios antiguos de Anilist a MAL. Se recomienda sincronizarlos. \n- Consulte las __Preguntas frecuentes__ para conocer el _Método fácil_ \n\nY para _Intermedios_ : \n- [Cómo sincronizar datos de Anilist con MAL](https://anilist.co/forum/thread/2654) \n- [Cómo sincronizar datos MAL con Anilist](https://anilist.co/forum/thread/3393) \n\n_No es necesario sincronizar las cuentas MAL y Anilist._    </string>
+    <string name="full_account_help">Himitsu es una aplicación basada en AniList, por lo que para sincronizar con su cuenta MAL, necesita iniciar sesión en una cuenta de AniList. \nUna vez que haya iniciado sesión con las cuentas AniList y MAL, la aplicación actualizará automáticamente su cuenta MAL siempre que: \n- Agregar un nuevo medio \n- Editar un medio \n- Eliminar un medio \n\nNota: La aplicación no sincronizará los medios antiguos de AniList a MAL. Se recomienda sincronizarlos. \n- Consulte las __Preguntas frecuentes__ para conocer el _Método fácil_ \n\nY para _Intermedios_ : \n- [Cómo sincronizar datos de AniList con MAL](https://anilist.co/forum/thread/2654) \n- [Cómo sincronizar datos MAL con AniList](https://anilist.co/forum/thread/3393) \n\n_No es necesario sincronizar las cuentas MAL y Anilist._    </string>
     <string name="frequency">Frequency</string>
     <string name="notification_for_checking_subscriptions">Comprobando Notificación de suscripciones</string>
     <string name="use_alarm_manager">Usar Administrador de alarmas</string>
