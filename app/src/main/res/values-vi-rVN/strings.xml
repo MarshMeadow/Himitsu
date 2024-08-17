@@ -160,7 +160,7 @@
     <string name="server_enabled">Đang bắt đầu TorrServer</string>
     <string name="enable_server_temp">Bạn có muốn tạm thời kích hoạt TorrServer (vô hiệu hóa khi đóng ứng dụng)?</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">Cài đặt Anilist</string>
+    <string name="anilist_settings">Cài đặt AniList</string>
     <string name="extension_settings">Tiện ích mở rộng</string>
     <string name="downloads">Tải xuống</string>
     <string name="offline_mode">Chế độ ngoại tuyến</string>
@@ -254,12 +254,12 @@
     <string name="ask_update_progress_info_ep">Tắt sẽ luôn tự động cập nhật tiến độ khi xem xong tập.</string>
     <string name="ask_update_progress_info_chap">Tắt sẽ luôn tự động cập nhật tiến độ khi đọc xong chương.</string>
     <string name="ask_update_progress_chapter_zero">Cập nhật Tiến độ cho Chương 0</string>
-    <string name="ask_update_progress_info_zero">Bật sẽ thêm các mục mới bắt đầu vào Anilist với tiến trình được đặt là chương 0.</string>
+    <string name="ask_update_progress_info_zero">Bật lên sẽ thêm các mục mới bắt đầu vào AniList với tiến độ được thiết lập thành chương 0.</string>
     <string name="ask_update_progress_hentai">Cập nhật Tiến độ cho Hentai</string>
     <string name="ask_update_progress_doujin">Cập nhật Tiến độ cho Doujins</string>
     <string name="very_bold">Rất táo bạo của bạn sar</string>
     <string name="watch_complete_percentage">Xem Cập nhật Phần trăm</string>
-    <string name="watch_complete_percentage_info">Phần trăm mà tiến độ Anilist của bạn nên được cập nhật sau khi xem xong một tập. \nĐiều này cũng đặt \% để khi nào tải trước liên kết cho tập tiếp theo.</string>
+    <string name="watch_complete_percentage_info">Phần trăm mà tiến độ AniList của bạn sẽ được cập nhật sau khi xem một tập. \NĐiều này cũng thiết lập \% để tải trước liên kết cho tập tiếp theo.</string>
     <string name="behaviour">Hành vi</string>
     <string name="always_continue">Luôn tiếp tục từ thời điểm dừng</string>
     <string name="pause_video_focus">Tạm dừng khi không tập trung</string>
@@ -393,7 +393,7 @@
     <string name="addons">Tiện ích mở rộng</string>
     <string name="addons_desc">Tiện ích mở rộng là các mô-đun tính năng phụ Dantotsu.</string>
     <string name="myanimelist">MyAnimeList</string>
-    <string name="login_with_anilist">Đăng nhập bằng Anilist</string>
+    <string name="login_with_anilist">Đăng nhập bằng AniList</string>
     <string name="anilist">Anilist</string>
     <string name="account_help">Làm thế nào để hoạt động này\?</string>
     <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
@@ -494,11 +494,12 @@
     <string name="first_chapter">Đây là chương đầu tiên!</string>
     <string name="adult_stuff">Nội dung Người lớn?( ͡° ͜ʖ ͡° )</string>
     <string name="what_did_you_open">Bạn đã mở cái gì vậy?</string>
-    <string name="error_getting_data">Lỗi khi lấy dữ liệu từ Anilist.</string>
+    <string name="error_getting_data">Lỗi khi lấy dữ liệu từ AniList.</string>
+    <string name="anilist_data_error">Lỗi khi truy xuất dữ liệu từ AniList: %1$s</string>
     <string name="empty_response">Phản hồi trống! Internet của bạn có vấn đề chăng?</string>
     <string name="error_loading_mal_user_data">Lỗi khi tải dữ liệu người dùng MAL</string>
     <string name="error_loading_mal_data">Không thể tải dữ liệu từ MAL</string>
-    <string name="error_loading_anilist_user_data">Lỗi khi tải dữ liệu người dùng Anilist</string>
+    <string name="error_loading_anilist_user_data">Lỗi khi tải dữ liệu người dùng AniList</string>
     <string name="episode_not_found">Không thể tìm thấy tập : %1$s</string>
     <string name="list_updated">Danh sách đã được cập nhật</string>
     <string name="deleted_from_list">Đã xóa khỏi Danh sách</string>
@@ -516,7 +517,7 @@
     <string name="error_getting_image_data">Lỗi khi lấy dữ liệu hình ảnh</string>
     <string name="loading_image_failed">Tải ảnh thất bại</string>
     <string name="copied_device_info">Đã sao chép thông tin thiết bị</string>
-    <string name="anilist_down">Dường như Anilist đang gặp sự cố, có thể thử sử dụng VPN hoặc bạn có thể chờ đợi cho đến khi nó trở lại.</string>
+    <string name="anilist_down">Seems like AniList is down, maybe try using a VPN or you can wait for it to come back.</string>
     <string name="failed_to_load_data">Không thể tải dữ liệu đã lưu của %1$d</string>
     <string name="access_not_available">Không thể truy cập</string>
     <string name="mal_login_uri_not_found">Đăng nhập Mal : Uri không tìm thấy</string>
@@ -588,7 +589,7 @@
     <string name="deny">Deny</string>
     <string name="deny_all">Deny All</string>
     <string name="no_chapter">Không có Chương</string>
-    <string name="content_18">Bật nội dung 18+ từ cài đặt Anilist của bạn</string>
+    <string name="content_18">Turn on 18+ content from your AniList settings</string>
     <string name="available">Có sẵn</string>
     <string name="lets_go">Chúng ta đi</string>
     <string name="cope">Đối phó</string>
@@ -616,7 +617,7 @@
     <string name="male">Nam</string>
     <string name="female">Nữ</string>
     <string name="question_1">What is Himitsu?</string>
-    <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. It is (mostly) an Anilist only client, which also supports extensions. \n&gt;Himitsu (秘密; Him-itsu) means \"secret\" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
+    <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. It is (mostly) an AniList only client, which also supports extensions. \n&gt;Himitsu (秘密; Him-itsu) means \"secret\" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
     <string name="question_2">What are some features of Himitsu?</string>
     <string name="answer_2">This would be a pretty big paragraph if we listed everything Dantotsu attempts to accomplish, let alone everything Himitsu has added onto that. Your best bet would be to drop by the [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) and look over the README.</string>
     <string name="question_3">Sự khác biệt giữa các phiên bản Stable, Beta &amp; Alpha là gì?</string>
@@ -628,17 +629,17 @@
     <string name="question_src">Doesn\'t Himitsu violate Dantotsu licensing?</string>
     <string name="answer_src">The short answer is no, but a detailed explanation is available in the [Himitsu README](https://github.com/RepoDevil/Himitsu?tab=readme-ov-file#himitsu-%EF%B8%8F)</string>
     <string name="question_6">Tại sao thống kê của tôi không cập nhật?</string>
-    <string name="answer_6">Điều này là do nó cập nhật mỗi 48 giờ một cách tự động (bởi Anilist). Nếu bạn thực sự cần cập nhật thống kê của mình, bạn có thể buộc cập nhật thống kê của mình sau khi đến [liên kết này](https://anilist.co/settings/lists).</string>
+    <string name="answer_6">This is because it updates every 48 hours automatically (by AniList). If you really need to update your stats, you can force update your stats after going to this [link](https://anilist.co/settings/lists).</string>
     <string name="question_7">Làm thế nào để tải Anime?</string>
     <string name="answer_7">A third-party download Add-on is developed and distributed by Dantotsu. Compatibility is based on Dantotsu and may cease to function at any time. It can be found by accessing the \"Add-ons\" page in the app settings.</string>
     <string name="question_9">Làm thế nào để kích hoạt nội dung NSFW?</string>
     <string name="answer_9">Bạn có thể kích hoạt nội dung NSFW bằng cách bật nội dung 18+ từ [liên kết này](https://anilist.co/settings/media). Bạn cũng phải bật các tiện ích NSFW trong \`Cài đặt &gt; Tiện ích &gt; Tiện ích NSFW\` </string>
-    <string name="question_10">How to import my MAL / Kitsu lists to Anilist?</string>
+    <string name="question_10">How to import my MAL / Kitsu lists to AniList?</string>
     <string name="answer_10">Dưới đây là cách bạn làm điều đó,\n\nXuất:\n\n1. Đi đến [liên kết này](https://malscraper.azurewebsites.net).\n2. Nhập tên người dùng Kitsu/MAL của bạn và tải xuống cả danh sách anime và manga. (Chúng sẽ ở định dạng XML)\nGhi chú: Bạn phải viết tên người dùng của bộ theo dõi bạn đã chọn\n\nNhập:\n\n1. Sau khi xuất danh sách anime và manga từ Kitsu/MAL của bạn, hãy đến [đây](https://anilist.co/settings/import) \n2. Chọn/thả tệp XML anime vào ô phía trên.\n|→Chọn/thả tệp XML manga vào ô phía dưới.</string>
-    <string name="question_11">How to import my Anilist / Kitsu lists to MAL?</string>
-    <string name="answer_11">Dưới đây là cách bạn làm điều đó,\n\nXuất:\n\n1. Đi đến [liên kết này](https://malscraper.azurewebsites.net/). \n2. Nhập tên người dùng Anilist/Kitsu của bạn vào ô \'Tên người dùng/Kitsu ID\' . \n3. Chọn loại danh sách và bật \'cập nhật khi nhập\'. \n4. Tải tệp xuống; nó sẽ ở định dạng .xml. Hãy chắc chắn tải cả danh sách Anime và Manga.\n\nNhập:\n1. Để nhập nó vào tài khoản MAL của bạn, hãy đến [liên kết này](https://myanimelist.net/import.php) và chọn \'Nhập MyAnimeList\' làm loại nhập. \n2. Nhấn vào \'Chọn Tệp\' và chọn tệp XML danh sách anime/manga đã tải xuống. \n3. Nhấn vào \'Nhập Dữ Liệu\'. \nChúc mừng, bạn vừa nhập danh sách đã chọn vào tài khoản MAL của bạn.</string>
+    <string name="question_11">How to import my AniList / Kitsu lists to MAL?</string>
+    <string name="answer_11">Here is how you do it,\n\nExport:\n\n1. Go to this [link](https://malscraper.azurewebsites.net/). \n2. Give your AniList username/Kitsu ID in the \'Username/Kitsu User ID\' box. \n3. Select list type and enable \'update_on_import\'. \n4. Download the file; it will be in .xml format. Be sure to download both Anime and Manga lists.\n\nImport:\n1. To import it in your MAL account, go to this [link](https://myanimelist.net/import.php) and choose \'MyAnimeList Import\' as import type. \n2. Press on \'Choose File\'and select the downloaded anime/manga list XML file. \n3. Press on \'Import Data\'. \nCongratulations, you just imported the selected list to your MAL account.</string>
     <string name="question_12">Why can\'t I find a specific anime / manga title?</string>
-    <string name="answer_12">Let\'s say you are looking for Castlevania, but Anilist doesn\'t have it. This means Himitsu doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
+    <string name="answer_12">Let\'s say you are looking for Castlevania, but AniList doesn\'t have it. This means Himitsu doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
     <string name="question_13">Làm thế nào để sửa chọn nguồn hiển thị một tiêu đề hoàn toàn sai lầm?</string>
     <string name="answer_13">Himitsu itself doesn\'t host anything but relies on other sources. When showing the episodes, it chooses the 1st result given by the source after searching for the title. Himitsu has no way of detecting if that\'s legit or not. So, for this, we have the \'Wrong Title?\' just below the source name(above layouts). You can choose the correct result/title by pressing on it and enjoy its episodes.</string>
     <string name="question_14">Làm thế nào để đọc manga màu?</string>
@@ -666,7 +667,7 @@
     <string name="similarity_text">Tương đồng: %1$s %%</string>
     <string name="time_range">Từ %1$s đến %2$s</string>
     <string name="invalid_url">URL không hợp lệ</string>
-    <string name="no_anilist_id_found">Không tìm thấy ID Anilist</string>
+    <string name="no_anilist_id_found">No AniList ID found</string>
     <string name="error_loading_image">Lỗi tải hình ảnh</string>
     <string name="discord_logout_success">Đã Đăng Xuất Thành Công</string>
     <string name="discord_try_again">Hãy Thử Đăng Nhập Lại</string>
@@ -781,7 +782,7 @@
     <string name="hide_scroll_bar">Ẩn thanh cuộn</string>
     <string name="view_on_anilist">Xem trên AniList</string>
     <string name="anilist_notification_filters">Chọn danh mục để bỏ qua</string>
-    <string name="anilist_notifications_checking_time">Tần suất cập nhật thông báo Anilist: %1$s</string>
+    <string name="anilist_notifications_checking_time">AniList notifications update frequency : %1$s</string>
     <string name="comment_notification_checking_time">Tần suất cập nhật thông báo bình luận: %1$s</string>
     <string name="activities">Hoạt động</string>
     <string name="incorrect_password">Mật khẩu không chính xác</string>
@@ -886,7 +887,7 @@
     <string name="exo_source_exception">Ngoại lệ Nguồn: %1$s</string>
     <string name="exo_decoding_failed">Giải mã thất bại: %1$s</string>
     <string name="exo_player_error">Lỗi Trình phát: %1$d %2$s: %3$s</string>
-    <string name="accounts_desc">Anilist, MAL và Discord.\nBạn cần gì hơn nữa?</string>
+    <string name="accounts_desc">AniList, MAL and Discord.\nWhat more could you need?</string>
     <string name="theme_desc">Thay đổi không khí của ứng dụng của bạn</string>
     <string name="extensions_desc">Quản lý bộ sưu tập kho lưu trữ của bạn</string>
     <string name="common_desc">Tải xuống, DNS và mặc định</string>
@@ -947,7 +948,7 @@
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="include_list_desc">Bao gồm các mục trong danh sách trên trang khám phá Manga</string>
     <string name="anilist_notification_filters_desc">Chọn danh mục để Bỏ qua</string>
-    <string name="anilist_notifications_checking_time_desc">Thiết lập tần suất bạn muốn ứng dụng kiểm tra thông báo Anilist</string>
+    <string name="anilist_notifications_checking_time_desc">Set the frequency you want the app to check for AniList notifications</string>
     <string name="comment_notification_checking_time_desc">Thiết lập tần suất bạn muốn ứng dụng kiểm tra thông báo Bình luận</string>
     <string name="notification_for_checking_subscriptions_desc">Hiển thị thông báo để kiểm tra Đăng ký</string>
     <string name="use_alarm_manager_reliable_desc">Sử dụng để bypass trình tối ưu pin của điện thoại</string>
@@ -1070,13 +1071,13 @@
     <string name="running_fixes">Running Fixes…</string>
     <string name="test_search">Test Search</string>
     <string name="subtitle_langauge">Subtitle Langauge</string>
-    <string name="auto_open_links">Allow Himitsu to automatically open Anilist &amp; MAL Links?</string>
-    <string name="auto_open_links_desc">Select Anilist &amp; MAL in the supported links section</string>
+    <string name="auto_open_links">Allow Himitsu to automatically open AniList &amp; MAL Links?</string>
+    <string name="auto_open_links_desc">Select AniList &amp; MAL in the supported links section</string>
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
     <string name="down_to_up">Down to Up</string>
     <string name="up_to_down">Up to Down</string>
-    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="anilist_notification">New AniList Notification</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

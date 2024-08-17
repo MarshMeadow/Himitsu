@@ -160,7 +160,7 @@
     <string name="server_enabled">Startar TorrServer</string>
     <string name="enable_server_temp">Vill du tillfälligt aktivera TorrServer (inaktiverat på appen nära)?</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">Anilist inställningar</string>
+    <string name="anilist_settings">AniList inställningar</string>
     <string name="extension_settings">Tillägg</string>
     <string name="downloads">Nedladdningar</string>
     <string name="offline_mode">Offline läge</string>
@@ -254,12 +254,12 @@
     <string name="ask_update_progress_info_ep">Stänga av kommer alltid automatiskt att uppdatera framsteg när episoden tittas.</string>
     <string name="ask_update_progress_info_chap">Stänga av kommer alltid automatiskt uppdatera framsteg när kapitlet läses in.</string>
     <string name="ask_update_progress_chapter_zero">Uppdatera framsteg för kapitel 0</string>
-    <string name="ask_update_progress_info_zero">Om du aktiverar kommer du lägga till nystartade objekt till Anilist med förloppet inställt på kapitel 0.</string>
+    <string name="ask_update_progress_info_zero">Om du aktiverar kommer nystartade objekt att läggas till AniList med förloppsinställningar satta till kapitel 0.</string>
     <string name="ask_update_progress_hentai">Uppdatera framsteg för Hentai</string>
     <string name="ask_update_progress_doujin">Uppdatera framsteg för Doujins</string>
     <string name="very_bold">mycket djärv av dig sar</string>
     <string name="watch_complete_percentage">Titta på uppdateringsprocent</string>
-    <string name="watch_complete_percentage_info">Den procentandel som din Anilist framsteg bör uppdateras efter att ha sett en episod. \nDetta sätter också \% för när du ska ladda länkar för nästa avsnitt.</string>
+    <string name="watch_complete_percentage_info">Den procentandel som din AniList framsteg bör uppdateras efter att ha tittat på en episod. \nDetta sätter också \% för när du ska ladda länkar för nästa avsnitt.</string>
     <string name="behaviour">Beteende</string>
     <string name="always_continue">Återuppta alltid från tidsstämpel</string>
     <string name="pause_video_focus">Pausa när du inte är i fokus</string>
@@ -393,7 +393,7 @@
     <string name="addons">Addons</string>
     <string name="addons_desc">Tillägg är Dantotsu extra funktionsmoduler.</string>
     <string name="myanimelist">MyAnimeList</string>
-    <string name="login_with_anilist">Logga in med Anilist</string>
+    <string name="login_with_anilist">Logga in med AniList</string>
     <string name="anilist">Anilist</string>
     <string name="account_help">Hur fungerar detta\?</string>
     <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
@@ -494,11 +494,12 @@
     <string name="first_chapter">Detta är det första kapitlet!</string>
     <string name="adult_stuff">Vuxen sak?&#40; &#865;&#176; &#860;&#662; &#865;&#176; &#41;</string>
     <string name="what_did_you_open">Vad har du ens öppnat?</string>
-    <string name="error_getting_data">Fel vid hämtning av data från Anilist.</string>
+    <string name="error_getting_data">Fel vid hämtning från AniList.</string>
+    <string name="anilist_data_error">Fel vid hämtning av AniList data: %1$s</string>
     <string name="empty_response">Töm svar! Är ditt internet suger kanske?</string>
     <string name="error_loading_mal_user_data">Fel vid inläsning av MAL-användardata</string>
     <string name="error_loading_mal_data">Det gick inte att ladda data från MAL</string>
-    <string name="error_loading_anilist_user_data">Fel vid inläsning av Anilist-användardata</string>
+    <string name="error_loading_anilist_user_data">Fel vid laddning av AniList användardata</string>
     <string name="episode_not_found">Kunde inte hitta episod : %1$s</string>
     <string name="list_updated">Lista uppdaterad</string>
     <string name="deleted_from_list">Borttagen från listan</string>
@@ -516,7 +517,7 @@
     <string name="error_getting_image_data">Fel vid hämtning av bilddata</string>
     <string name="loading_image_failed">Laddning av bild misslyckades</string>
     <string name="copied_device_info">Information om kopierad enhet</string>
-    <string name="anilist_down">Verkar som Anilist är nere, kanske försöka använda en VPN eller så kan du vänta på att den ska komma tillbaka.</string>
+    <string name="anilist_down">Verkar som AniList är nere, kanske försöka använda en VPN eller så kan du vänta på att den ska komma tillbaka.</string>
     <string name="failed_to_load_data">Det gick inte att ladda sparad data från %1$d</string>
     <string name="access_not_available">Kunde inte få åtkomst</string>
     <string name="mal_login_uri_not_found">Inloggning till Mal : Uri hittades inte</string>
@@ -588,7 +589,7 @@
     <string name="deny">Deny</string>
     <string name="deny_all">Deny All</string>
     <string name="no_chapter">Inget kapitel</string>
-    <string name="content_18">Aktivera 18+ innehåll från dina Anilist-inställningar</string>
+    <string name="content_18">Slå på 18+ innehåll från dina AniList inställningar</string>
     <string name="available">Tillgänglig</string>
     <string name="lets_go">Låt oss gå</string>
     <string name="cope">Sopa</string>
@@ -616,7 +617,7 @@
     <string name="male">Man</string>
     <string name="female">Kvinna</string>
     <string name="question_1">What is Himitsu?</string>
-    <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. It is (mostly) an Anilist only client, which also supports extensions. \n&gt;Himitsu (秘密; Him-itsu) means \"secret\" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
+    <string name="answer_1">Dantotsu sammanfogade delar av Aniyomi in i kärnkoden av Saikou, men därefter Himitsu forked Dantotsu och började förbättra på den. Det är (mestadels) en AniList endast klient, som också stöder tillägg. \n&gt;Himitsu (&lt;unk&gt; &lt;unk&gt; ; Him-itsu) betyder \"hemlighet\" på japanska. Shhh. Det är en hemlighet så bra att även namnet förbjuds.</string>
     <string name="question_2">What are some features of Himitsu?</string>
     <string name="answer_2">This would be a pretty big paragraph if we listed everything Dantotsu attempts to accomplish, let alone everything Himitsu has added onto that. Your best bet would be to drop by the [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) and look over the README.</string>
     <string name="question_3">Vad är skillnaden mellan Stable, Beta &amp; Alpha-versioner?</string>
@@ -628,17 +629,17 @@
     <string name="question_src">Doesn\'t Himitsu violate Dantotsu licensing?</string>
     <string name="answer_src">The short answer is no, but a detailed explanation is available in the [Himitsu README](https://github.com/RepoDevil/Himitsu?tab=readme-ov-file#himitsu-%EF%B8%8F)</string>
     <string name="question_6">Varför uppdateras inte min statistik?</string>
-    <string name="answer_6">Detta beror på att den uppdateras var 48 timmar automatiskt (av Anilist). Om du verkligen behöver uppdatera din statistik kan du tvinga fram uppdateringar av din statistik efter att du gått till [link](https://anilist.co/settings/lists).</string>
+    <string name="answer_6">Detta beror på att den uppdateras var 48 timmar automatiskt (av AniList). Om du verkligen behöver uppdatera din statistik kan du tvinga fram uppdateringar av din statistik efter att du gått till [link](https://anilist.co/settings/lists).</string>
     <string name="question_7">Hur hämtar man Anime?</string>
     <string name="answer_7">A third-party download Add-on is developed and distributed by Dantotsu. Compatibility is based on Dantotsu and may cease to function at any time. It can be found by accessing the \"Add-ons\" page in the app settings.</string>
     <string name="question_9">Hur aktiverar du innehåll från NSFW?</string>
     <string name="answer_9">Du kan aktivera NSFW-innehåll genom att aktivera 18+ innehåll från detta [link](https://anilist.co/settings/media). Du måste också aktivera NSFW-tillägg i \`Inställningar &gt; Tillägg &gt; NSFW-tillägg\` </string>
-    <string name="question_10">How to import my MAL / Kitsu lists to Anilist?</string>
+    <string name="question_10">Hur importerar jag mina MAL / Kitsu listor till AniList?</string>
     <string name="answer_10">Så här gör du det,\n\nExportera:\n\n1. Gå till [link](https://malscraper. zurewebsites.net).\n2. Ge ditt Kitsu/MAL användarnamn och ladda ner både anime och manga lista. (De kommer att vara i XML-format)\nObs: Du måste skriva användarnamnet på den tracker du valt\n\nImportera:\n\n1. Efter att ha exporterat din anime och manga lista från Kitsu/MAL, nu gå [here](https://anilist.co/settings/import) \n2. Välj/släpp anime XML-filen på rutan ovan.\n&lt;unk&gt; →Välj/släpp manga XML-filen på rutan nedan.</string>
-    <string name="question_11">How to import my Anilist / Kitsu lists to MAL?</string>
-    <string name="answer_11">Så här gör du det,\n\nExportera:\n\n1. Gå till [link](https://malscraper. zurewebsites.net/). \n2. Ge din Anilist användarnamn/Kitsu ID i rutan \"Användarnamn/Kitsu användarnamn\". \n3. Välj listtyp och aktivera \'update_on_import\'. \n4. Ladda ner filen; det kommer att vara i .xml-format. Se till att ladda ner både Anime och Manga listor.\n\nImportera:\n1. För att importera den till ditt MAL-konto, gå till [link](https://myanimelist. et/import.php) och välj \'MyAnimeList Import\' som importtyp. \n2. Tryck på \"Välj File\" och välj den nedladdade anime/manga listan XML-fil. \n3. Tryck på \"Importera data\". \nGrattis, du har precis importerat den valda listan till ditt MAL-konto.</string>
+    <string name="question_11">Hur importerar jag mina AniList / Kitsu-listor till MAL?</string>
+    <string name="answer_11">Så här gör du det,\n\nExportera:\n\n1. Gå till [link](https://malscraper. zurewebsites.net/). \n2. Ge ditt AniList användarnamn/Kitsu ID i rutan \"Användarnamn/Kitsu användarnamn\". \n3. Välj listtyp och aktivera \'update_on_import\'. \n4. Ladda ner filen; det kommer att vara i .xml-format. Se till att ladda ner både Anime och Manga listor.\n\nImportera:\n1. För att importera den till ditt MAL-konto, gå till [link](https://myanimelist. et/import.php) och välj \'MyAnimeList Import\' som importtyp. \n2. Tryck på \"Välj File\" och välj den nedladdade anime/manga listan XML-fil. \n3. Tryck på \"Importera data\". \nGrattis, du har precis importerat den valda listan till ditt MAL-konto.</string>
     <string name="question_12">Why can\'t I find a specific anime / manga title?</string>
-    <string name="answer_12">Let\'s say you are looking for Castlevania, but Anilist doesn\'t have it. This means Himitsu doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
+    <string name="answer_12">Låt oss säga att du letar efter Castlevania, men AniList har det inte. Det betyder att Himitsu inte heller.\nEn lösning på detta problem är följande:\n1) Gå till någon anime som inte finns i din lista.\n2) Gå till klockavsnitt.\n3) Välj vilken källa som helst och tryck på \'Fel titel?\'.\n4) Sök nu efter Castlevania (Den anime du letade efter) och välj den.\n5) NJU!\n\nOm du inte kan hitta animen genom dessa steg, då är det otur för dig, knopp. Prova en annan källa.</string>
     <string name="question_13">Hur fixar man källor som väljer en helt felaktig titel?</string>
     <string name="answer_13">Himitsu itself doesn\'t host anything but relies on other sources. When showing the episodes, it chooses the 1st result given by the source after searching for the title. Himitsu has no way of detecting if that\'s legit or not. So, for this, we have the \'Wrong Title?\' just below the source name(above layouts). You can choose the correct result/title by pressing on it and enjoy its episodes.</string>
     <string name="question_14">Hur läser man färgad mangas?</string>
@@ -666,7 +667,7 @@
     <string name="similarity_text">Likhet: %1$s %%</string>
     <string name="time_range">Från %1$s till %2$s</string>
     <string name="invalid_url">Ogiltig URL</string>
-    <string name="no_anilist_id_found">Inget Anilist-ID hittades</string>
+    <string name="no_anilist_id_found">Inget AniList ID hittades</string>
     <string name="error_loading_image">Fel vid inläsning av bild</string>
     <string name="discord_logout_success">Utloggningen lyckades</string>
     <string name="discord_try_again">Försök logga in igen</string>
@@ -781,7 +782,7 @@
     <string name="hide_scroll_bar">Dölj rullningsfältet</string>
     <string name="view_on_anilist">Visa på AniList</string>
     <string name="anilist_notification_filters">Välj kategori att ignorera</string>
-    <string name="anilist_notifications_checking_time">Uppdateringsfrekvens för antika meddelanden: %1$s</string>
+    <string name="anilist_notifications_checking_time">AniList notifieringar uppdateringsfrekvens : %1$s</string>
     <string name="comment_notification_checking_time">Kommentar uppdateringsfrekvens : %1$s</string>
     <string name="activities">Aktiviteter</string>
     <string name="incorrect_password">Felaktigt lösenord</string>
@@ -886,7 +887,7 @@
     <string name="exo_source_exception">Källa undantag: %1$s</string>
     <string name="exo_decoding_failed">Avkodning misslyckades: %1$s</string>
     <string name="exo_player_error">Spelarfel: %1$d %2$s: %3$s</string>
-    <string name="accounts_desc">Anilist, MAL och Discord.\nVad mer kan du behöva?</string>
+    <string name="accounts_desc">AniList, MAL och Discord.\nVad mer kan du behöva?</string>
     <string name="theme_desc">Ändra atmosfären i din app</string>
     <string name="extensions_desc">Hantera din repo samling</string>
     <string name="common_desc">Nedladdningar, DNS och standardvärden</string>
@@ -947,7 +948,7 @@
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="include_list_desc">Inkludera listobjekt i Manga utforska sidan</string>
     <string name="anilist_notification_filters_desc">Välj kategori att ignorera</string>
-    <string name="anilist_notifications_checking_time_desc">Ställ in frekvensen du vill att appen ska kontrollera om Anilist-aviseringar</string>
+    <string name="anilist_notifications_checking_time_desc">Ställ in den frekvens du vill att appen ska kontrollera AniList notifieringar</string>
     <string name="comment_notification_checking_time_desc">Ange den frekvens du vill att appen ska söka efter kommentarsmeddelanden</string>
     <string name="notification_for_checking_subscriptions_desc">Visa avisering för kontroll av prenumerationer</string>
     <string name="use_alarm_manager_reliable_desc">Använd för att kringgå telefonens batterioptimerare</string>
@@ -1070,13 +1071,13 @@
     <string name="running_fixes">Running Fixes…</string>
     <string name="test_search">Test Search</string>
     <string name="subtitle_langauge">Subtitle Langauge</string>
-    <string name="auto_open_links">Allow Himitsu to automatically open Anilist &amp; MAL Links?</string>
-    <string name="auto_open_links_desc">Välj Anilist &amp; MAL i avsnittet länkar som stöds</string>
+    <string name="auto_open_links">Tillåt Himitsu att automatiskt öppna AniList &amp; MAL länkar?</string>
+    <string name="auto_open_links_desc">Välj AniList &amp; MAL i avsnittet länkar som stöds</string>
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
     <string name="down_to_up">Down to Up</string>
     <string name="up_to_down">Up to Down</string>
-    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="anilist_notification">Ny AniList notifiering</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

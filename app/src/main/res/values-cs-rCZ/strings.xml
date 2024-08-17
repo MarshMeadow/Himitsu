@@ -160,7 +160,7 @@
     <string name="server_enabled">Spouštění TorrServer</string>
     <string name="enable_server_temp">Chcete dočasně povolit TorrServer (zakázáno při uzavření aplikace)?</string>
     <string name="peer_count_low">Low peer count detected!</string>
-    <string name="anilist_settings">Nastavení AniListu</string>
+    <string name="anilist_settings">Nastavení AniList</string>
     <string name="extension_settings">Rozšíření</string>
     <string name="downloads">Stahování</string>
     <string name="offline_mode">Offline režim</string>
@@ -254,12 +254,12 @@
     <string name="ask_update_progress_info_ep">Vypnutí vždy automaticky aktualizuje průběh epizody.</string>
     <string name="ask_update_progress_info_chap">Vypnutí automaticky aktualizuje průběh při čtení kapitoly.</string>
     <string name="ask_update_progress_chapter_zero">Průběh aktualizace pro kapitolu 0</string>
-    <string name="ask_update_progress_info_zero">Zapnutí přidá nově zahájené položky do AniListy s postupem nastaveným v kapitole 0.</string>
+    <string name="ask_update_progress_info_zero">Zapnutí přidá nové položky do AniList s postupem nastaveným na kapitolu 0.</string>
     <string name="ask_update_progress_hentai">Průběh aktualizace pro Hentai</string>
     <string name="ask_update_progress_doujin">Průběh aktualizace pro Dougjins</string>
     <string name="very_bold">velmi tučné od vás</string>
     <string name="watch_complete_percentage">Procento aktualizace</string>
-    <string name="watch_complete_percentage_info">Procento vašeho anilistického postupu by mělo být aktualizováno po sledování epizody. \nTo také nastaví \% pro kdy načíst odkazy pro další epizodu.</string>
+    <string name="watch_complete_percentage_info">Procenta, ve které by měl být váš AniList průběh aktualizován po sledování epizody. \nTo také nastaví \% pro kdy načíst odkazy pro další epizodu.</string>
     <string name="behaviour">Chování</string>
     <string name="always_continue">Vždy pokračovat z časové značky</string>
     <string name="pause_video_focus">Pozastavit, pokud není v ostření</string>
@@ -394,9 +394,9 @@
     <string name="addons_desc">Addons jsou moduly funkce Dantotsu.</string>
     <string name="myanimelist">MyAnimeList</string>
     <string name="login_with_anilist">Přihlásit se pomocí AniList</string>
-    <string name="anilist">AniLista</string>
+    <string name="anilist">Anilista</string>
     <string name="account_help">Jak to funguje\?</string>
-    <string name="full_account_help">        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
+    <string name="full_account_help">        Himitsu is an Anilist Based App, so for syncing with your MAL Account, It needs an Anilist account to be logged in.
         \nOnce logged in with both Anilist and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
@@ -494,11 +494,12 @@
     <string name="first_chapter">To je první kapitola!</string>
     <string name="adult_stuff">Dospělé věci?&#40; &#865;&#176; &#860;&#662; &#865;&#176; &#41;</string>
     <string name="what_did_you_open">Co jste dokonce otevřel?</string>
-    <string name="error_getting_data">Chyba při získávání dat z Anilistu.</string>
+    <string name="error_getting_data">Chyba při získávání dat z AniList.</string>
+    <string name="anilist_data_error">Chyba při načítání AniList dat: %1$s</string>
     <string name="empty_response">Prázdná odpověď! Napadá váš internet?</string>
     <string name="error_loading_mal_user_data">Chyba při načítání MAL uživatelských dat</string>
     <string name="error_loading_mal_data">Nepodařilo se načíst data z MAL</string>
-    <string name="error_loading_anilist_user_data">Chyba při načítání uživatelských dat Anilist</string>
+    <string name="error_loading_anilist_user_data">Chyba při načítání dat uživatele AniList</string>
     <string name="episode_not_found">Nelze najít epizodu: %1$s</string>
     <string name="list_updated">Seznam aktualizován</string>
     <string name="deleted_from_list">Odstraněno ze seznamu</string>
@@ -516,7 +517,7 @@
     <string name="error_getting_image_data">Chyba při načítání obrázkových dat</string>
     <string name="loading_image_failed">Načítání obrázku se nezdařilo</string>
     <string name="copied_device_info">Informace o zařízení zkopírováno</string>
-    <string name="anilist_down">Zdá se, že Anilist je vypnutý, možná zkuste použít VPN nebo můžete počkat, až se vrátíte.</string>
+    <string name="anilist_down">Zdá se, že AniList je vypnutý, možná zkuste použít VPN nebo můžete počkat, až se vrátíte.</string>
     <string name="failed_to_load_data">Nepodařilo se načíst uložená data z %1$d</string>
     <string name="access_not_available">Nebylo možné získat přístup</string>
     <string name="mal_login_uri_not_found">Mal přihlášení: Uri nenalezeno</string>
@@ -588,7 +589,7 @@
     <string name="deny">Deny</string>
     <string name="deny_all">Deny All</string>
     <string name="no_chapter">Bez kapitoly</string>
-    <string name="content_18">Zapněte 18+ obsah z nastavení Anilist</string>
+    <string name="content_18">Zapněte 18+ obsah z nastavení AniList</string>
     <string name="available">Dostupné</string>
     <string name="lets_go">Jdeme</string>
     <string name="cope">Kopie</string>
@@ -616,7 +617,7 @@
     <string name="male">Muž</string>
     <string name="female">Samice</string>
     <string name="question_1">What is Himitsu?</string>
-    <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. It is (mostly) an Anilist only client, which also supports extensions. \n&gt;Himitsu (秘密; Him-itsu) means \"secret\" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
+    <string name="answer_1">Dantotsu sloučil komponenty Aniyomi do jádra kódu Saikou, ale pak Himitsu forked Dantotsu a začal se zlepšovat na to. Je to (většinou) pouze klient AniList, který také podporuje rozšíření. \n&gt;Himitsu (&lt;unk&gt; ; Him-itsu) znamená \"tajné\" v japonštině. Shhh. Je to tak tajné, že i jméno je zakázáno.</string>
     <string name="question_2">What are some features of Himitsu?</string>
     <string name="answer_2">This would be a pretty big paragraph if we listed everything Dantotsu attempts to accomplish, let alone everything Himitsu has added onto that. Your best bet would be to drop by the [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) and look over the README.</string>
     <string name="question_3">Jaký je rozdíl mezi stabilní, Beta &amp; alfa verzemi?</string>
@@ -628,17 +629,17 @@
     <string name="question_src">Doesn\'t Himitsu violate Dantotsu licensing?</string>
     <string name="answer_src">The short answer is no, but a detailed explanation is available in the [Himitsu README](https://github.com/RepoDevil/Himitsu?tab=readme-ov-file#himitsu-%EF%B8%8F)</string>
     <string name="question_6">Proč se mé statistiky neaktualizují?</string>
-    <string name="answer_6">To proto, že se aktualizuje každých 48 hodin automaticky (od Anilistu). Pokud opravdu potřebujete aktualizovat statistiky, můžete si vynutit aktualizaci statistik poté, co přejdete na tento [link](https://anilist.co/settings/lists).</string>
+    <string name="answer_6">Je to proto, že se aktualizuje každých 48 hodin automaticky (prostřednictvím AniList). Pokud opravdu potřebujete aktualizovat statistiky, můžete si vynutit aktualizaci statistik poté, co přejdete na tento [link](https://anilist.co/settings/lists).</string>
     <string name="question_7">Jak stáhnout anim?</string>
     <string name="answer_7">A third-party download Add-on is developed and distributed by Dantotsu. Compatibility is based on Dantotsu and may cease to function at any time. It can be found by accessing the \"Add-ons\" page in the app settings.</string>
     <string name="question_9">Jak povolit obsah NSFW?</string>
     <string name="answer_9">Můžete povolit NSFW obsah povolením 18+ obsahu z tohoto [link](https://anilist.co/settings/media). Musíte také povolit NSFW rozšíření v \`Settings &gt; Rozšíření &gt; NSFW rozšíření\` </string>
-    <string name="question_10">How to import my MAL / Kitsu lists to Anilist?</string>
+    <string name="question_10">Jak importovat mé seznamy MAL / Kitsu do AniList?</string>
     <string name="answer_10">Zde je jak to uděláte,\n\nExport:\n\n1. Jděte na tento [link](https://malscraper. zurewebsites.net).\n2. Dej své uživatelské jméno Kitsu/MAL a stáhni si anime i manga. (Budou ve formátu XML)\nPoznámka: Musíte napsat uživatelské jméno trackeru, který jste vybrali\n\nImport:\n\n1. Po exportu vašeho anime a manga ze seznamu Kitsu/MAL, přejděte nyní [here](https://anilist.co/settings/import) \n2. Vybrat/přetáhněte soubor anime XML na výše uvedené pole.\n|→Vybrat/přetáhněte soubor manga XML do níže uvedeného pole.</string>
-    <string name="question_11">How to import my Anilist / Kitsu lists to MAL?</string>
-    <string name="answer_11">Zde je jak to uděláte,\n\nExport:\n\n1. Jděte na tento [link](https://malscraper. zurewebsites.net/). \n2. Přidejte své anonymní uživatelské jméno/Kitsu ID do pole \'Uživatelské jméno/Kitsu ID uživatele\'. \n3. Vyberte typ seznamu a povolte \'update_on_import\'. \n4. Stáhněte si soubor; bude ve formátu .xml. Nezapomeňte stáhnout seznam Anime i Manga.\n\nImport:\n1. Chcete-li jej importovat do vašeho MAL účtu, přejděte na tento [link](https://myanimelist. et/import.php) a zvolte \'MyAnimeList Import\' jako typ importu. \n2. Stiskněte \'Vybrat soubor\' a vyberte stažený XML soubor anime/manga. \n3. Stiskněte \'Importovat data\'. \nGratulujeme, právě jste importovali vybraný seznam do vašeho MAL účtu.</string>
+    <string name="question_11">Jak importovat mé AniList / Kitsu seznamy do MAL?</string>
+    <string name="answer_11">Zde je jak to uděláte,\n\nExport:\n\n1. Jděte na tento [link](https://malscraper. zurewebsites.net/). \n2. Zadejte své AniList uživatelské jméno/Kitsu ID v poli \'Uživatelské jméno/Kitsu uživatelské ID\'. \n3. Vyberte typ seznamu a povolte \'update_on_import\'. \n4. Stáhněte si soubor; bude ve formátu .xml. Nezapomeňte stáhnout seznam Anime i Manga.\n\nImport:\n1. Chcete-li jej importovat do vašeho MAL účtu, přejděte na tento [link](https://myanimelist. et/import.php) a zvolte \'MyAnimeList Import\' jako typ importu. \n2. Stiskněte \'Vybrat soubor\' a vyberte stažený XML soubor anime/manga. \n3. Stiskněte \'Importovat data\'. \nGratulujeme, právě jste importovali vybraný seznam do vašeho MAL účtu.</string>
     <string name="question_12">Why can\'t I find a specific anime / manga title?</string>
-    <string name="answer_12">Let\'s say you are looking for Castlevania, but Anilist doesn\'t have it. This means Himitsu doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
+    <string name="answer_12">Řekněme, že hledáš Castlevanii, ale AniList ji nemá. To znamená, že ani Himitsu nemá.\nŘešení tohoto problému je následující:\n1) Přejděte na libovolné anime, které nejsou v seznamu.\n2) Přejděte do sekce hodinek.\n3) Vyberte libovolný zdroj a stiskněte \'Špatný název?\'.\n4) Nyní hledat Castlevania (anime jste hledali) a vybrat to.\n5) ENJOY!\n\nPokud nemůžete najít anime prostřednictvím těchto kroků, pak je to pro tebe smůla. Zkuste jiný zdroj.</string>
     <string name="question_13">Jak opravit zdroje výběru zcela špatného názvu?</string>
     <string name="answer_13">Himitsu itself doesn\'t host anything but relies on other sources. When showing the episodes, it chooses the 1st result given by the source after searching for the title. Himitsu has no way of detecting if that\'s legit or not. So, for this, we have the \'Wrong Title?\' just below the source name(above layouts). You can choose the correct result/title by pressing on it and enjoy its episodes.</string>
     <string name="question_14">Jak si přečíst barevný hnůj?</string>
@@ -666,7 +667,7 @@
     <string name="similarity_text">Podobnost: %1$s %%</string>
     <string name="time_range">Od %1$s do %2$s</string>
     <string name="invalid_url">Neplatná URL</string>
-    <string name="no_anilist_id_found">Nebylo nalezeno žádné anilistické ID</string>
+    <string name="no_anilist_id_found">Nebylo nalezeno žádné AniList ID</string>
     <string name="error_loading_image">Chyba při načítání obrázku</string>
     <string name="discord_logout_success">Odhlášení proběhlo úspěšně</string>
     <string name="discord_try_again">Zkuste se znovu přihlásit</string>
@@ -781,7 +782,7 @@
     <string name="hide_scroll_bar">Skrýt posuvník</string>
     <string name="view_on_anilist">Zobrazit na AniList</string>
     <string name="anilist_notification_filters">Vyberte kategorii, kterou chcete ignorovat</string>
-    <string name="anilist_notifications_checking_time">Frekvence aktualizace Anilist oznámení: %1$s</string>
+    <string name="anilist_notifications_checking_time">Frekvence aktualizace AniList oznámení: %1$s</string>
     <string name="comment_notification_checking_time">Četnost aktualizace oznámení komentáře: %1$s</string>
     <string name="activities">Aktivity</string>
     <string name="incorrect_password">Nesprávné heslo</string>
@@ -886,7 +887,7 @@
     <string name="exo_source_exception">Zdrojová výjimka: %1$s</string>
     <string name="exo_decoding_failed">Dekódování selhalo: %1$s</string>
     <string name="exo_player_error">Chyba přehrávače: %1$d %2$s: %3$s</string>
-    <string name="accounts_desc">Anilisté, MAL a Discord.\nCo budeš potřebovat?</string>
+    <string name="accounts_desc">AniList, MAL a Discord.\nCo víc byste mohli potřebovat?</string>
     <string name="theme_desc">Změňte náhled aplikace</string>
     <string name="extensions_desc">Spravovat vaši repozitář</string>
     <string name="common_desc">Stažení, DNS a výchozí hodnoty</string>
@@ -947,7 +948,7 @@
     <string name="comic_format_desc">Download chapters as CBZ archives</string>
     <string name="include_list_desc">Zahrnout položky seznamu v Manga průzkumné stránce</string>
     <string name="anilist_notification_filters_desc">Vyberte kategorii, kterou chcete ignorovat</string>
-    <string name="anilist_notifications_checking_time_desc">Nastavte frekvenci, kterou chcete, aby aplikace kontrolovala oznámení o Anilistech</string>
+    <string name="anilist_notifications_checking_time_desc">Nastavte frekvenci, kterou chcete, aby aplikace ověřovala oznámení AniList</string>
     <string name="comment_notification_checking_time_desc">Nastavte frekvenci, kterou chcete, aby aplikace kontrolovala oznámení Komentáře</string>
     <string name="notification_for_checking_subscriptions_desc">Zobrazit oznámení pro kontrolu odebírání</string>
     <string name="use_alarm_manager_reliable_desc">Použít k obejití optimalizátoru baterie telefonu</string>
@@ -1070,13 +1071,13 @@
     <string name="running_fixes">Running Fixes…</string>
     <string name="test_search">Test Search</string>
     <string name="subtitle_langauge">Subtitle Langauge</string>
-    <string name="auto_open_links">Allow Himitsu to automatically open Anilist &amp; MAL Links?</string>
-    <string name="auto_open_links_desc">Vyberte Anilist &amp; MAL v sekci podporované odkazy</string>
+    <string name="auto_open_links">Povolit Himitsu automaticky otevřít AniList &amp; MAL odkazy?</string>
+    <string name="auto_open_links_desc">Vyberte AniList &amp; MAL v sekci podporované odkazy</string>
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>
     <string name="error_no_media_id">Error: No media ID</string>
     <string name="down_to_up">Down to Up</string>
     <string name="up_to_down">Up to Down</string>
-    <string name="anilist_notification">New Anilist Notification</string>
+    <string name="anilist_notification">Nové AniList oznámení</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>
