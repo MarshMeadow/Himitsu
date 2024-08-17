@@ -186,8 +186,7 @@
     <string name="about">À propos</string>
     <string name="devs">Développeurs/Aides</string>
     <string name="disclaimer">Avertissement</string>
-    <string name="full_disclaimer">
-         - Himitsu was a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
+    <string name="full_disclaimer">         - Himitsu was a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
         \n\n - Himitsu and any Himitsu contributors do not host any of the content found inside Himitsu. Any and all images or information found in the app are taken from various public APIs (AniList, MyAnimeList, Kitsu).
         \n\n - Furthermore, all of the anime/manga links found in Himitsu are provided by various 3rd party plugins supplied by the user and have no affiliation with Himitsu or its staff.
         \n\n - Himitsu and it\'s contributors aren\'t liable for any misuse of any of the contents found inside or outside of the app and cannot be held accountable for the distribution of any of the contents found inside the app.
@@ -237,7 +236,7 @@
     <string name="secondary_sub_outline_type_select">Type de contour des sous-titres</string>
     <string name="sub_background_color_select">Couleur de fond des sous-titres</string>
     <string name="sub_window_color_select">Couleur de la fenêtre des sous-titres</string>
-    <string name="sub_window_color_info">"La fenêtre des sous-titres est la partie gauche et droite d\'eux. (où l\'arrière-plan n\'est pas)"</string>
+    <string name="sub_window_color_info">"La fenêtre des sous-titres est la partie gauche et droite d'eux. (où l'arrière-plan n'est pas)"</string>
     <string name="sub_color_info"><b>Note:</b> Ces paramètres s\'appliquent uniquement aux sous-titres \"soft\"!</string>
     <string name="sub_alpha">Transparence des sous-titres</string>
     <string name="sub_text_example">Aperçu des sous-titres</string>
@@ -494,6 +493,7 @@
     <string name="adult_stuff">Des trucs pour adultes? &#40; &#865;&#176; &#860;&#662; &#865;&#176; &#41;</string>
     <string name="what_did_you_open">Qu\'avez-vous ouvert, au juste?</string>
     <string name="error_getting_data">Erreur lors de la récupération des données depuis Anilist.</string>
+    <string name="anilist_data_error">Error fetching AniList data: %1$s</string>
     <string name="empty_response">Réponse vide, votre connexion Internet est peut-être mauvaise?</string>
     <string name="error_loading_mal_user_data">Erreur lors du chargement des données utilisateur MAL</string>
     <string name="error_loading_mal_data">Échec du chargement des données depuis MAL</string>
@@ -558,9 +558,9 @@
     <string name="continue_episode">Continuer : Épisode </string>
     <string name="filler_tag"> - Remplissage</string>
     <string name="continue_chapter">Continuer : </string>
-    <string name="episode">\"Épisode \"</string>
+    <string name="episode">"\"Épisode \""</string>
     <string name="episode_num">Épisode %1$s</string>
-    <string name="chapter">\"Chapitre \"</string>
+    <string name="chapter">"\"Chapitre \""</string>
     <string name="chapter_num">Chapitre %1$s</string>
     <string name="just_released">- New release!</string>
     <string name="checking_subscriptions_title">Vérification des abonnements</string>
@@ -631,7 +631,7 @@ Genre : "</string>
     <string name="question_6">Pourquoi mes statistiques ne se mettent-elles pas à jour?</string>
     <string name="answer_6">C\'est parce qu\'elles se mettent à jour automatiquement toutes les 48 heures (par Anilist). Si vous avez vraiment besoin de mettre à jour vos statistiques, vous pouvez forcer la mise à jour après avoir accédé à ce [lien](https://anilist.co/settings/lists).</string>
     <string name="question_7">Comment télécharger des anime?</string>
-    <string name="answer_7">Un add-on tiers est développé et distribué par Dantotsu. La compatibilité est basée sur Dantotsu et peut cesser de fonctionner à tout moment. Vous pouvez l\'installer en accédant à la page "add-ons" dans les paramètres de l\'application.</string>
+    <string name="answer_7">Un add-on tiers est développé et distribué par Dantotsu. La compatibilité est basée sur Dantotsu et peut cesser de fonctionner à tout moment. Vous pouvez l\'installer en accédant à la page \"add-ons\" dans les paramètres de l\'application.</string>
     <string name="question_9">Comment activer le contenu NSFW?</string>
     <string name="answer_9">Vous pouvez activer le contenu NSFW en l\'activant dans vos paramètres AniList à partir de ce [lien](https://anilist.co/settings/media). Vous devez également activer les extensions NSFW dans \`Paramètres &gt; Extensions &gt; Extensions NSFW\`</string>
     <string name="question_10">Comment importer mes listes MAL/Kitsu dans AniList?</string>
@@ -916,7 +916,7 @@ Genre : "</string>
     <string name="trending">Tendance</string>
     <string name="new_releases">Nouveautés</string>
     <string name="a_z">Z-A</string>
-    <string name="z_a">Z-A</string>
+    <string name="z_a">Pure douleur</string>
     <string name="pure_pain">Douleur pure</string>
     <string name="add_a_comment">Ajouter un commentaire…</string>
     <string name="type">Type de texte</string>

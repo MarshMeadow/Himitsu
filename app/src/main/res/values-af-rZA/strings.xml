@@ -615,7 +615,7 @@
     <string name="male">Manlik</string>
     <string name="female">Vroulik</string>
     <string name="question_1">What is Himitsu?</string>
-    <string name="answer_1">Dantotsu het komponente van Aniyomi in die kernkode van Saikou saamgevoeg, maar toe vurk Himitsu Dantotsu en begin verbeter. Dit is (meestal) \'n AniList-slegs klient, wat ook uitbreidings ondersteun. \n>Himitsu (秘密; Him-itsu) beteken \"geheim\" in Japanees. Sssst. Dit is \'n geheim so goed dat selfs die naam verbode is.</string>
+    <string name="answer_1">Dantotsu het komponente van Aniyomi in die kernkode van Saikou saamgevoeg, maar toe vurk Himitsu Dantotsu en begin verbeter. Dit is (meestal) \'n AniList-slegs klient, wat ook uitbreidings ondersteun. \n&gt;Himitsu (秘密; Him-itsu) beteken \"geheim\" in Japanees. Sssst. Dit is \'n geheim so goed dat selfs die naam verbode is.</string>
     <string name="question_2">What are some features of Himitsu?</string>
     <string name="answer_2">This would be a pretty big paragraph if we listed everything Dantotsu attempts to accomplish, let alone everything Himitsu has added onto that. Your best bet would be to drop by the [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) and look over the README.</string>
     <string name="question_3">Wat is die verskil tussen Stabiele, Beta &amp; Alfa weergawes?</string>
