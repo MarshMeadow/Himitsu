@@ -71,6 +71,7 @@ import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.withTimeout
 import tachiyomi.core.util.lang.launchIO
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
@@ -241,7 +242,11 @@ class AnimeWatchFragment : Fragment() {
                                 override val list =
                                     (model.watchSources as WatchSources).list.sortedByDescending {
                                         try {
-                                            runBlocking(Dispatchers.IO) { it.get.value?.autoSearch(media) != null }
+                                            runBlocking(Dispatchers.IO) {
+                                                withTimeout(15000) {
+                                                    it.get.value?.autoSearch(media)
+                                                } != null
+                                            }
                                         } catch (ignored:Exception) { false }
                                     }
                             }

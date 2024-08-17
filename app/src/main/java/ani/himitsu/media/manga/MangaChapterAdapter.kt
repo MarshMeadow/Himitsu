@@ -13,8 +13,8 @@ import ani.himitsu.connections.updateProgress
 import ani.himitsu.currContext
 import ani.himitsu.databinding.ItemChapterListBinding
 import ani.himitsu.databinding.ItemEpisodeCompactBinding
-import ani.himitsu.media.cereal.Media
 import ani.himitsu.media.MediaNameAdapter
+import ani.himitsu.media.cereal.Media
 import ani.himitsu.setAnimation
 import ani.himitsu.util.customAlertDialog
 import bit.himitsu.nio.Strings.getString

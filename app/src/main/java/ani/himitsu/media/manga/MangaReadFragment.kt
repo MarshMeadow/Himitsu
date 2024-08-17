@@ -67,6 +67,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
+import kotlinx.coroutines.withTimeout
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 import kotlin.math.ceil
@@ -237,7 +238,11 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                                 model.mangaReadSources = object: MangaReadSources() {
                                     override val list = (model.mangaReadSources as MangaReadSources).list.sortedByDescending {
                                         try {
-                                            runBlocking(Dispatchers.IO) { it.get.value?.autoSearch(media) != null }
+                                            runBlocking(Dispatchers.IO) {
+                                                withTimeout(15000) {
+                                                    it.get.value?.autoSearch(media)
+                                                } != null
+                                            }
                                         } catch (ignored: Exception) { false }
                                     }
                                 }
