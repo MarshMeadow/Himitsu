@@ -19,7 +19,7 @@
     <string name="novels">Novelles</string>
     <string name="info">Informació</string>
     <string name="watch">Mira</string>
-    <string name="read">Llegeix</string>
+    <string name="read">Llegit</string>
     <string name="language">Idioma</string>
     <string name="anime_list">Llista d\'Anime</string>
     <string name="manga_list">Llista de Manga</string>
@@ -592,7 +592,7 @@
     <string name="lets_go">Anem-hi</string>
     <string name="cope">Enfrontar-se</string>
     <string name="watched_num">"Vist "</string>
-    <string name="read_num">"Llegit "</string>
+    <string name="read_num">"Llegeix "</string>
     <string name="items_out_of">" de "</string>
     <string name="items_total_of">"Total de "</string>
     <string name="no_description_available">Cap descripció disponible</string>
