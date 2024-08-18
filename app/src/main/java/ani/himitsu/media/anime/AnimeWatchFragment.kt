@@ -280,6 +280,18 @@ class AnimeWatchFragment : Fragment() {
             if (loadedEpisodes != null) {
                 val episodes = loadedEpisodes[media.selected!!.sourceIndex]
                 if (episodes != null) {
+                    if (!this::headerAdapter.isInitialized) {
+                        headerAdapter = AnimeWatchAdapter(
+                            media, this@AnimeWatchFragment, model.watchSources!!
+                        )
+                        episodeAdapter = EpisodeAdapter(
+                            style ?: PrefManager.getVal(PrefName.AnimeDefaultView),
+                            media,
+                            this@AnimeWatchFragment
+                        )
+                        binding.animeSourceRecycler.adapter =
+                            ConcatAdapter(headerAdapter, episodeAdapter)
+                    }
                     episodes.forEach { (i, episode) ->
                         if (media.anime?.fillerEpisodes != null) {
                             if (media.anime!!.fillerEpisodes!!.containsKey(i)) {
@@ -314,18 +326,6 @@ class AnimeWatchFragment : Fragment() {
                         (divisions < 25) -> 25
                         (divisions < 50) -> 50
                         else -> 100
-                    }
-                    if (!this::headerAdapter.isInitialized) {
-                        headerAdapter = AnimeWatchAdapter(
-                            media, this@AnimeWatchFragment, model.watchSources!!
-                        )
-                        episodeAdapter = EpisodeAdapter(
-                            style ?: PrefManager.getVal(PrefName.AnimeDefaultView),
-                            media,
-                            this@AnimeWatchFragment
-                        )
-                        binding.animeSourceRecycler.adapter =
-                            ConcatAdapter(headerAdapter, episodeAdapter)
                     }
                     headerAdapter.clearChips()
                     if (total > limit) {

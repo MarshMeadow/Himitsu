@@ -312,6 +312,19 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
         if (loadedChapters != null) {
             val chapters = loadedChapters[media.selected!!.sourceIndex]
             if (chapters != null) {
+                if (!this::headerAdapter.isInitialized) {
+                    headerAdapter = MangaReadAdapter(
+                        media, this@MangaReadFragment, model.mangaReadSources!!
+                    ).apply { scanlatorSelectionListener = this@MangaReadFragment }
+                    chapterAdapter = MangaChapterAdapter(
+                        style ?: PrefManager.getVal(PrefName.MangaDefaultView),
+                        media,
+                        this@MangaReadFragment
+                    )
+                    binding.animeSourceRecycler.adapter =
+                        ConcatAdapter(headerAdapter, chapterAdapter)
+                }
+
                 headerAdapter.options = getScanlators(chapters)
                 val filteredChapters = chapters.filterNot { (_, chapter) ->
                     chapter.scanlator in headerAdapter.hiddenScanlators
@@ -328,18 +341,6 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                     (divisions < 25) -> 25
                     (divisions < 50) -> 50
                     else -> 100
-                }
-                if (!this::headerAdapter.isInitialized) {
-                    headerAdapter = MangaReadAdapter(
-                        media, this@MangaReadFragment, model.mangaReadSources!!
-                    )
-                    chapterAdapter = MangaChapterAdapter(
-                        style ?: PrefManager.getVal(PrefName.MangaDefaultView),
-                        media,
-                        this@MangaReadFragment
-                    )
-                    binding.animeSourceRecycler.adapter =
-                        ConcatAdapter(headerAdapter, chapterAdapter)
                 }
                 headerAdapter.clearChips()
                 if (total > limit) {
