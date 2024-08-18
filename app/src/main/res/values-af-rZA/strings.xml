@@ -19,7 +19,7 @@
     <string name="novels">Novelle</string>
     <string name="info">Inligting</string>
     <string name="watch">Kyk</string>
-    <string name="read">Lees</string>
+    <string name="read">Gelees</string>
     <string name="language">Taal</string>
     <string name="anime_list">Anime lys</string>
     <string name="manga_list">Manga lys</string>
@@ -122,7 +122,7 @@
     <string name="details">Besonderhede</string>
     <string name="trailer_yt">Trailer on YouTube</string>
     <string name="eps">Episodes</string>
-    <string name="ep">Episode</string>
+    <string name="ep">Aflewering</string>
     <string name="chaps">Hoofstukke</string>
     <string name="chap">Hoofstuk</string>
     <string name="wrong"><u>Verkeerde Titel?</u></string>
@@ -592,7 +592,7 @@
     <string name="lets_go">Laat ons Gaan</string>
     <string name="cope">Hanteer</string>
     <string name="watched_num">"Gekyk "</string>
-    <string name="read_num">"Gelees "</string>
+    <string name="read_num">"Lees "</string>
     <string name="items_out_of">" uit "</string>
     <string name="items_total_of">"Totaal van "</string>
     <string name="no_description_available">Geen Beskrywing Beskikbaar</string>
@@ -651,7 +651,7 @@
     <string name="subscribed_notification">Geskryf! Ontvang kennisgewings wanneer nuwe episodes op %1$s vrygestel word.</string>
     <string name="unsubscribed_notification">Nie geabonneer nie, jy sal geen kennisgewings ontvang nie.</string>
     <string name="episode_plural">Episodes</string>
-    <string name="episode_singular">Episode</string>
+    <string name="episode_singular">Aflewering</string>
     <string name="chapter_singular">Hoofstuk</string>
     <string name="chapter_plural">Hoofstukke</string>
     <string name="filter_status">"Status : %1$s"</string>

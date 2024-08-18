@@ -179,7 +179,7 @@
     <string name="default_chp_view">Structura implicita a capitolului</string>
     <string name="ui">Interfață utilizator</string>
     <string name="common">Frecvente</string>
-    <string name="theme">Tema</string>
+    <string name="theme">Temă</string>
     <string name="day_night">Temă luminoasă / întunecată</string>
     <string name="ui_settings">Setări UI</string>
     <string name="system">Sistem</string>
@@ -679,7 +679,7 @@
     <string name="use_material_you">Materiale cu tine</string>
     <string name="use_app_theme">Folosește tema aplicației</string>
     <string name="extension_specific_dns">DNS specific extensiei</string>
-    <string name="theme_">Temă:</string>
+    <string name="theme_">Tema:</string>
     <string name="user_agent">Agent utilizator</string>
     <string name="custom_theme">Temă personalizată:</string>
     <string name="use_custom_theme">Temă personalizată</string>
