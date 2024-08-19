@@ -84,16 +84,16 @@ internal object ExtensionLoader {
     private const val signatureSuwayomi =
         "263228f0827ca0b66e8aad8eba50d71c0f13927fe6912520f8a05f19667283bc"
 
-    // dan's key
-    private const val officialSignature =
-        "a3061edb369278749b8e8de810d440d38e96417bbd67bbdfc5d9d9ed475ce4a5"
-
     /**
      * List of the trusted signatures.
      */
     var trustedSignaturesManga = mutableSetOf<String>() +
             preferences.trustedSignatures().get() +
             officialSignatureManga + signatureSuwayomi
+
+    // dan's key
+    private const val officialSignatureNovel =
+        "a3061edb369278749b8e8de810d440d38e96417bbd67bbdfc5d9d9ed475ce4a5"
 
     /**
      * Return a list of all the installed extensions initialized concurrently.
@@ -494,7 +494,7 @@ internal object ExtensionLoader {
             versionName = versionName,
             versionCode = versionCode,
             sources = listOfNotNull(novelInterfaceInstance),
-            isUnofficial = signatureHash != officialSignatureManga,
+            isUnofficial = signatureHash != officialSignatureNovel,
             icon = context.getApplicationIcon(pkgName),
         )
         return NovelLoadResult.Success(extension)
