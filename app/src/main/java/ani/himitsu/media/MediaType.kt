@@ -5,7 +5,7 @@ import bit.himitsu.nio.Strings.getString
 
 interface Type {
     fun asText(): String
-    fun asLocalizedText(): String
+    fun asDisplayText(): String
 
     companion object {
         fun fromText(string: String): Type? {
@@ -19,7 +19,10 @@ interface Type {
         }
     }
 
+    /** hardcoded string value of enum **/
     val text: String get() = this.asText()
+    /** user-facing value for the enum **/
+    val string: String get() = this.asDisplayText()
 }
 
 enum class MediaType : Type {
@@ -35,7 +38,7 @@ enum class MediaType : Type {
         }
     }
 
-    override fun asLocalizedText(): String {
+    override fun asDisplayText(): String {
         return when (this) {
             ANIME -> getString(R.string.anime)
             MANGA -> getString(R.string.manga)
@@ -53,7 +56,7 @@ enum class AddonType : Type {
         }
     }
 
-    override fun asLocalizedText(): String {
+    override fun asDisplayText(): String {
         return when (this) {
             DOWNLOAD -> getString(R.string.download)
         }
