@@ -64,7 +64,7 @@ class DiscordService : Service() {
         log("Service onCreate()")
         val powerManager = baseContext.getSystemService(Context.POWER_SERVICE) as PowerManager
         wakeLock = powerManager.newWakeLock(
-            PowerManager.PROXIMITY_SCREEN_OFF_WAKE_LOCK,
+            PowerManager.PARTIAL_WAKE_LOCK,
             "discordRPC:backgroundPresence"
         )
         wakeLock.acquire(30 * 60 * 1000L /*30 minutes*/)
