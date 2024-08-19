@@ -1,7 +1,11 @@
 package ani.himitsu.media
 
+import ani.himitsu.R
+import bit.himitsu.nio.Strings.getString
+
 interface Type {
     fun asText(): String
+    fun asLocalizedText(): String
 
     companion object {
         fun fromText(string: String): Type? {
@@ -30,6 +34,14 @@ enum class MediaType : Type {
             NOVEL -> "Novel"
         }
     }
+
+    override fun asLocalizedText(): String {
+        return when (this) {
+            ANIME -> getString(R.string.anime)
+            MANGA -> getString(R.string.manga)
+            NOVEL -> getString(R.string.novel)
+        }
+    }
 }
 
 enum class AddonType : Type {
@@ -38,6 +50,12 @@ enum class AddonType : Type {
     override fun asText(): String {
         return when (this) {
             DOWNLOAD -> "Download"
+        }
+    }
+
+    override fun asLocalizedText(): String {
+        return when (this) {
+            DOWNLOAD -> getString(R.string.download)
         }
     }
 }

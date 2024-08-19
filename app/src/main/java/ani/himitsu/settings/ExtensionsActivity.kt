@@ -119,13 +119,13 @@ class ExtensionsActivity : AppCompatActivity() {
 
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             tab.text = when (position) {
-                0 -> getString(R.string.installed_extensions, MediaType.ANIME.text)
-                1 -> getString(R.string.available_extensions, MediaType.ANIME.text)
-                2 -> getString(R.string.installed_extensions, MediaType.MANGA.text)
-                3 -> getString(R.string.available_extensions, MediaType.MANGA.text)
-                4 -> getString(R.string.installed_extensions, MediaType.NOVEL.text)
-                5 -> getString(R.string.available_extensions, MediaType.NOVEL.text)
-                6 -> getString(R.string.available_plugins, MediaType.NOVEL.text)
+                0 -> getString(R.string.installed_extensions, MediaType.ANIME.asLocalizedText())
+                1 -> getString(R.string.available_extensions, MediaType.ANIME.asLocalizedText())
+                2 -> getString(R.string.installed_extensions, MediaType.MANGA.asLocalizedText())
+                3 -> getString(R.string.available_extensions, MediaType.MANGA.asLocalizedText())
+                4 -> getString(R.string.installed_extensions, MediaType.NOVEL.asLocalizedText())
+                5 -> getString(R.string.available_extensions, MediaType.NOVEL.asLocalizedText())
+                6 -> getString(R.string.available_plugins, MediaType.NOVEL.asLocalizedText())
                 else -> null
             }
         }.attach()

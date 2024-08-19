@@ -21,6 +21,7 @@
     <string name="browse_anime">Sfoglia gli Anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Sfoglia i Manga</string>
+    <string name="novel">Romanzo</string>
     <string name="novels">Romanzi</string>
     <string name="info">Info</string>
     <string name="watch">Guarda</string>
@@ -235,7 +236,7 @@
         <item>Tema 1</item>
         <item>Tema 2</item>
         <item>Tema 3</item>
-        <item> Tema 4</item>
+        <item>Tema 4</item>
     </string-array>
 
     <string name="video">Video</string>

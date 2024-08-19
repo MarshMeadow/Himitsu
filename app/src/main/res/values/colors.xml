@@ -586,7 +586,7 @@
     <color name="md_theme_light_9_outlineVariant">#D8C2BE</color>
     <color name="md_theme_light_9_scrim">#000000</color>
     <color name="md_theme_dark_9_primary">#FFB343</color>
-    <color name="md_theme_dark_9_onPrimary">#FAE965</color>
+    <color name="md_theme_dark_9_onPrimary">#FF322E09</color>
     <color name="md_theme_dark_9_primaryContainer">#FF6600</color>
     <color name="md_theme_dark_9_onPrimaryContainer">#FFDAD5</color>
     <color name="md_theme_dark_9_secondary">#FF7700</color>
@@ -615,6 +615,5 @@
     <color name="md_theme_dark_9_surfaceTint">#FFB4AA</color>
     <color name="md_theme_dark_9_outlineVariant">#534341</color>
     <color name="md_theme_dark_9_scrim">#000000</color>
-
 
 </resources>
