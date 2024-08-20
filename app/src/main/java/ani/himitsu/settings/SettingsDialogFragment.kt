@@ -154,6 +154,7 @@ class SettingsDialogFragment : BottomSheetDialogFragment() {
             binding.settingsDiscord.isVisible = binding.settingsDiscord.isGone
             true
         }
+        binding.settingsNotification.requestFocus()
 
         binding.settingsDiscord.setOnClickListener {
             ContextCompat.startActivity(
