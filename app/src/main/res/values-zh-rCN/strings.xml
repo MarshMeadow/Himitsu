@@ -274,6 +274,7 @@
     <string name="skip_time_info">将设置为0，隐藏跳过按钮。</string>
     <string name="show_cast_button">显示投射按钮</string>
     <string name="show_cast_button_info">需要\"Web Video Caster\"应用进行投射。</string>
+    <string name="picture_in_picture">图片中</string>
     <string name="always_minimize">始终最小化</string>
     <string name="always_minimize_info">需要启用 PiP，使播放器行为类似于Youtube播放器，但更好。
 还会隐藏 PiP 按钮。</string>
@@ -693,7 +694,7 @@ _不需要同步 MAL 和 AniList 帐户。_
     <string name="use_material_you">Material You</string>
     <string name="use_app_theme">使用应用主题</string>
     <string name="extension_specific_dns">特定于扩展的 DNS</string>
-    <string name="theme_">主题：</string>
+    <string name="theme_">主题:</string>
     <string name="user_agent">用户代理</string>
     <string name="custom_theme">自定义主题：</string>
     <string name="use_custom_theme">自定义主题</string>

@@ -274,6 +274,7 @@
     <string name="skip_time_info">0 olarak ayarlandığında, Atla Düğmesi gizlenir.</string>
     <string name="show_cast_button">Yayın Düğmesini Göster</string>
     <string name="show_cast_button_info">Yayın yapmak için \"Web Video Caster\" uygulaması gereklidir.</string>
+    <string name="picture_in_picture">Resim İçinde Resim</string>
     <string name="always_minimize">Her Zaman Küçült</string>
     <string name="always_minimize_info">PiP\'nin etkin olmasını gerektirir, oyuncuyu Youtube Oyuncu gibi davranmasını sağlar, ancak daha iyidir.\nAyrıca PiP düğmesini gizler.</string>
     <string name="app">Uygulama</string>

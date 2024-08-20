@@ -45,7 +45,7 @@
     <string name="chapters_read">Capítols llegits</string>
     <string name="episodes_watched">Episodis vistos</string>
     <string name="continue_reading">Continua llegint</string>
-    <string name="continue_watching">Continua veient</string>
+    <string name="continue_watching">Continua mirant</string>
     <string name="continue_media">Continua...</string>
     <string name="recommended">Recomanat</string>
     <string name="get_recommendations">Mira/Llegeix algun Anime o Manga per obtenir Recomanacions</string>
@@ -62,7 +62,7 @@
         <item>Pausat</item>
         <item>Abandonat</item>
         <item>Planificant</item>
-        <item>Favorits</item>
+        <item>Preferits</item>
         <item>Tornar a veure</item>
         <item>Relectura</item>
         <item>Tot</item>
@@ -75,15 +75,15 @@
     <string-array name="status_anime">
         <item>PLANIFICACIÓ</item>
         <item>VEIENT</item>
-        <item>ACABAT</item>
+        <item>COMPLETAT</item>
         <item>RE-VEIENT</item>
         <item>EN PAUSA</item>
         <item>ABANDONAT</item>
     </string-array>
     <string-array name="status_manga">
         <item>PLANIFICACIÓ</item>
-        <item>LECTURA</item>
-        <item>ACABAT</item>
+        <item>LENT</item>
+        <item>COMPLETAT</item>
         <item>RE-LECTURA</item>
         <item>EN PAUSA</item>
         <item>ABANDONAT</item>
@@ -117,7 +117,7 @@
     <string name="characters">Personatges</string>
     <string name="relations">Relacions</string>
     <string name="staff">Personal</string>
-    <string name="favourites">Favorits</string>
+    <string name="favourites">Preferits</string>
     <string name="popularity">Popularitat</string>
     <string name="roles">Rols</string>
     <string name="details">Detalls</string>
@@ -227,7 +227,7 @@
     <string name="default_playback_speed">Velocitat de reproducció per defecte: %1$s</string>
     <string name="cursed_speeds">Velocitats maleïdes</string>
     <string name="scrub_preview">Previsualitzacions de cerca de vídeo</string>
-    <string name="resize_mode_button">Mode redimensionament per defecte</string>
+    <string name="resize_mode_button">Mode de Redimensionament per Defecte</string>
     <string name="exceed_cap">Ometre capacitats</string>
     <string name="exceed_cap_desc">Permet anul·lar les limitacions del reproductor detectades</string>
     <string name="subtitles">Subtítols</string>
@@ -241,7 +241,7 @@
     <string name="sub_color_info"><b>Nota:</b> La configuració només s\'aplica als subtítols \"suaus\"!</string>
     <string name="sub_alpha">Transparència dels subtítols</string>
     <string name="sub_text_example">Previsualització dels subtítols</string>
-    <string name="sub_font_select">Font de subtítols</string>
+    <string name="sub_font_select">Tipus de Lletra dels Subtítols</string>
     <string name="subtitle_font_size">Mida dels subtítols</string>
     <string name="no_subs_available">Subtítols no disponibles</string>
     <string name="auto">Automàtic</string>
@@ -274,6 +274,7 @@
     <string name="skip_time_info">Al configurar-ho a 0, s\'amaga el botó d\'oferir.</string>
     <string name="show_cast_button">Mostra el botó de repartiment</string>
     <string name="show_cast_button_info">Requereix l\'aplicació \"Web Video Caster\" per fer la distribució.</string>
+    <string name="picture_in_picture">Picture-in-Picture</string>
     <string name="always_minimize">Minimitza sempre</string>
     <string name="always_minimize_info">Requereix que PiP estigui habilitat, fa que el reproductor es comporti com el reproductor de Youtube però millor.\nTambé amaga el botó de PiP.</string>
     <string name="app">Aplicació</string>
@@ -283,12 +284,12 @@
     <string name="home_layout_show">Mostra/Amaga dissenys a la pàgina d\'inici</string>
     <string-array name="home_layouts">
         <item>Subscripcions</item>
-        <item>Continua veient</item>
-        <item>Anime favorit</item>
-        <item>Anime planejat</item>
+        <item>Continua mirant</item>
+        <item>Anime Favorit</item>
+        <item>Anime Planificat</item>
         <item>Continua llegint</item>
-        <item>Manga favorit</item>
-        <item>Manga planejat</item>
+        <item>Manga Favorit</item>
+        <item>Manga Planificat</item>
         <item>Recomanat</item>
         <item>Fluxe socials</item>
     </string-array>
@@ -296,7 +297,7 @@
     <string name="notification_page_desc">Selecciona la pestanya d\'inici per a les notificacions</string>
     <string-array name="notification_type">
         <item>Tot</item>
-        <item>Mitjans de comunicació</item>
+        <item>Mitjans</item>
         <item>Social</item>
         <item>Usuari</item>
     </string-array>
@@ -315,8 +316,8 @@
     <string name="animation_speed">Velocitat General</string>
     <string name="empty_fav">Proveu d\'afegir alguna cosa per mantenir-la aquí.</string>
     <string name="no_suggestions">Encara t\'estem coneixent.</string>
-    <string name="fav_anime">Anime favorit</string>
-    <string name="fav_manga">Manga favorit</string>
+    <string name="fav_anime">Anime Favorit</string>
+    <string name="fav_manga">Manga Favorit</string>
     <string name="restart_app">Reinicieu l\'aplicació?</string>
     <string name="next">Següent</string>
     <string name="previous">Anterior</string>
@@ -377,8 +378,8 @@
     <string name="include_media_in_list">Incloure Llista</string>
     <string name="release_calendar">Calendari</string>
     <string name="review_type">%1$s Ressenyes</string>
-    <string name="planned_anime">Anime planejat</string>
-    <string name="planned_manga">Manga planejat</string>
+    <string name="planned_anime">Anime Planificat</string>
+    <string name="planned_manga">Manga Planificat</string>
     <string name="image_long_clicking">Clic llarg per obrir la imatge</string>
     <string name="always_continue_content">Continuar contingut anterior</string>
     <string name="descending_items">Llista en ordre descendent</string>
@@ -534,7 +535,7 @@
         <item>Puntuació</item>
         <item>Popular</item>
         <item>Tendència</item>
-        <item>Novetats</item>
+        <item>Noves publicacions</item>
         <item>A-Z</item>
         <item>Z-A</item>
         <item>Dolor pur</item>
@@ -572,11 +573,11 @@
     <string name="incognito_will_not_update">El mode d\'incògnit ignorarà encara el progrés.</string>
     <string name="dont_ask_again">"No tornis a preguntar per %1$s"</string>
     <string name="default_speed">Velocitat per defecte</string>
-    <string name="default_resize_mode">Mode redimensionament per defecte</string>
+    <string name="default_resize_mode">Mode de Redimensionament per Defecte</string>
     <string name="primary_sub_color">Color de subtitols primari</string>
     <string name="outline_sub_color">Color de subtitols de contorn</string>
     <string name="outline_type">Tipus de contorn</string>
-    <string name="subtitle_font">Font de subtítols</string>
+    <string name="subtitle_font">Tipus de Lletra dels Subtítols</string>
     <string name="launch_application">La pàgina intenta iniciar %1$s. Permetre?</string>
     <string name="yes">Sí</string>
     <string name="no">No</string>
@@ -877,7 +878,7 @@
     <string name="download_location_msg">Segur que vols canviar la ubicació de les descàrregues?\nLes antigues descàrregues poden deixar de ser accessibles.</string>
     <string name="voice_actors">Actors de veu</string>
     <string name="download_permission_required">Es requereix permís per descarregar</string>
-    <string name="media">Mitjans de comunicació</string>
+    <string name="media">Mitjans</string>
     <string name="users">Usuaris</string>
     <string name="social">Social</string>
     <string name="auto_skip_recap">Salt automàtic de resum</string>
@@ -912,7 +913,7 @@
     <string name="sort_score">Puntuació</string>
     <string name="popular">Popular</string>
     <string name="trending">Tendència</string>
-    <string name="new_releases">Novetats</string>
+    <string name="new_releases">Noves publicacions</string>
     <string name="a_z">A-Z</string>
     <string name="z_a">Z-A</string>
     <string name="pure_pain">Dolor Pura</string>
@@ -976,7 +977,7 @@
     <string name="download_started">Descàrrega iniciada</string>
     <string name="downloads_completed">Totes les descàrregues completades</string>
     <string name="pending_downloads">Descàrregues pendents: %1$d</string>
-    <string name="reading">LECTURA</string>
+    <string name="reading">LENT</string>
     <string name="watching">VEIENT</string>
     <string name="avatar">%1$s\ [Avatar]</string>
     <string name="cover">%1$s\ [Portada]</string>

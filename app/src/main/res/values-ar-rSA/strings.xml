@@ -8,13 +8,13 @@
     <string name="discord_login">تسجيل دخول Discord لـ Himitsu</string>
     <string name="extension_notice">Himitsu هو خدمة BYOR</string>
     <string name="extension_notice_desc">Himitsu تتبع تنسيق \"أحضر مستودعك الخاص\". على الرغم من دعم الامتدادات، يجب على المستخدم توفير الفهارس. ومع ذلك، يتم تضمين دعم العديد من خدمات البث الشهيرة منذ الإصدار الأول.</string>
-    <string name="conversion_title">مرحباً مرة أخرى!</string>
+    <string name="conversion_title">مرحبا بعودتك!</string>
     <string name="conversion_message">يبدو أن لديك حزمة قديمة مثبتة.\nيرجى تحديد \"النسخ الاحتياطي\" لفتح الإصدار القديم وإجراء نسخة احتياطية. يمكنك بعد ذلك العودة إلى هذا التطبيق واستخدام \"استعادة الإعدادات\".</string>
     <string name="backup">النسخ الأحتياطي</string>
     <string name="home">الرئيسية</string>
     <string name="anime">Anime\nWatched</string>
     <string name="browse_anime">تصفح الأنمي</string>
-    <string name="manga">مانغا</string>
+    <string name="manga">Manga\nRead</string>
     <string name="browse_manga">تصفح المانغا</string>
     <string name="novel">رواية</string>
     <string name="novels">روايات</string>
@@ -44,10 +44,10 @@
     <string name="username">اسم المستخدم</string>
     <string name="chapters_read">عدد الفصول المقروءة</string>
     <string name="episodes_watched">حلقات شاهدتها</string>
-    <string name="continue_reading">متابعة القراءة</string>
-    <string name="continue_watching">متابعة المشاهدة</string>
+    <string name="continue_reading">اكمل القراءة</string>
+    <string name="continue_watching">اكمل المشاهدة</string>
     <string name="continue_media">متابعة...</string>
-    <string name="recommended">موصى</string>
+    <string name="recommended">موصى به</string>
     <string name="get_recommendations">شاهد/اقرأ بعض الأنمي أو المانجا للحصول على توصيات</string>
     <string name="empty">كل شيء تمام، متى الجديد؟</string>
     <string name="action_settings">الإعدادات</string>
@@ -73,20 +73,20 @@
     <string name="social_in_media_desc">عرض تصنيفات الأصدقاء والتقدم</string>
     <string name="status">الحالة</string>
     <string-array name="status_anime">
-        <item>التخطيط</item>
-        <item>المشاهدة</item>
-        <item>مكمل</item>
+        <item>اخطط للشاهده</item>
+        <item>جاري المشاهدة</item>
+        <item>مكتمل</item>
         <item>إحتواء</item>
-        <item>متوقف</item>
-        <item>مسحوب</item>
+        <item>متوقف مؤقتًا</item>
+        <item>متروك</item>
     </string-array>
     <string-array name="status_manga">
-        <item>التخطيط</item>
-        <item>القراءة</item>
-        <item>مكمل</item>
+        <item>اخطط للشاهده</item>
+        <item>جاري القراءة</item>
+        <item>مكتمل</item>
         <item>إستعادة</item>
-        <item>متوقف</item>
-        <item>مسحوب</item>
+        <item>متوقف مؤقتًا</item>
+        <item>متروك</item>
     </string-array>
     <string name="progress">التقدم</string>
     <string name="score">نقاط</string>
@@ -122,7 +122,7 @@
     <string name="roles">الأدوار</string>
     <string name="details">التفاصيل</string>
     <string name="trailer_yt">المقطع الدعائي على YouTube</string>
-    <string name="eps">الحلقات</string>
+    <string name="eps">حلقات\nتم مشاهدتها</string>
     <string name="ep">الحلقة</string>
     <string name="chaps">فصول\nتم قراءتها</string>
     <string name="chap">الفصل</string>
@@ -162,15 +162,15 @@
     <string name="enable_server_temp">هل ترغب في تمكين خادم تورر مؤقتًا (معطل عند إغلاق التطبيق)؟</string>
     <string name="peer_count_low">اكتشف عدد قليل من القرناء!</string>
     <string name="anilist_settings">إعدادات AniList</string>
-    <string name="extension_settings">الامتدادات</string>
+    <string name="extension_settings">الإضافات</string>
     <string name="downloads">التنزيلات</string>
     <string name="offline_mode">وضع عدم الاتصال</string>
     <string name="settings">الإعدادات</string>
-    <string name="extensions">الامتدادات</string>
+    <string name="extensions">الإضافات</string>
     <string name="extension_updates_available">التحديثات المتوفرة للامتدادات</string>
     <string name="player_settings">إعدادات اللاعب</string>
     <string name="recentlyListOnly">فقط المحتوى الخاص بي في \"التحديث مؤخراً\"</string>
-    <string name="download_manager_select">مدير التنزيل</string>
+    <string name="download_manager_select">مسؤول التحميل</string>
     <string name="downloadInSd">تنزيل على بطاقة SD</string>
     <string name="noSdFound">لم يتم العثور على بطاقة SD.</string>
     <string name="reader_settings">إعدادات القارئ</string>
@@ -227,11 +227,11 @@
     <string name="default_playback_speed">سرعة التشغيل الافتراضية: %1$s</string>
     <string name="cursed_speeds">سرعات ملعونة</string>
     <string name="scrub_preview">معاينات البحث في الفيديو</string>
-    <string name="resize_mode_button">وضع إعادة تحجيم افتراضي</string>
+    <string name="resize_mode_button">وضع حجم الفيديو الافتراضي</string>
     <string name="exceed_cap">تجاوز القدرات</string>
     <string name="exceed_cap_desc">يسمح بتجاوز قيود اللاعب المكتشفة</string>
-    <string name="subtitles">ترجمات</string>
-    <string name="subtitle_toggle">ترجمات</string>
+    <string name="subtitles">التَّرْجَمَةً</string>
+    <string name="subtitle_toggle">التَّرْجَمَةً</string>
     <string name="primary_sub_color_select">لون الترجمة</string>
     <string name="secondary_sub_color_select">لون تخطيط الترجمة</string>
     <string name="secondary_sub_outline_type_select">نوع تخطيط الترجمة</string>
@@ -241,7 +241,7 @@
     <string name="sub_color_info"><b>ملاحظة:</b> يتم تطبيق الإعدادات على الترجمات \"ناعمة\" فقط!</string>
     <string name="sub_alpha">شفافية الترجمة</string>
     <string name="sub_text_example">معاينة الترجمة</string>
-    <string name="sub_font_select">نوع الخط الفرعي</string>
+    <string name="sub_font_select">خط الترجمة</string>
     <string name="subtitle_font_size">حجم النص الفرعي</string>
     <string name="no_subs_available">لا تتوفر ترجمة</string>
     <string name="auto">تلقائي</string>
@@ -274,6 +274,7 @@
     <string name="skip_time_info">وضع القيمة على 0، يخفي زر التخطي.</string>
     <string name="show_cast_button">إظهار زر العرض</string>
     <string name="show_cast_button_info">يتطلب تطبيق \"Web Video Caster\" للبث.</string>
+    <string name="picture_in_picture">صورة في صورة</string>
     <string name="always_minimize">تصغير دائم</string>
     <string name="always_minimize_info">يتطلب تمكين صورة في صورة، يجعل اللاعب يتصرف مثل لاعب Youtube ولكن بشكل أفضل.\nكما يخفي زر صورة في صورة.</string>
     <string name="app">التطبيق</string>
@@ -283,21 +284,21 @@
     <string name="home_layout_show">إظهار/إخفاء التخطيطات على الصفحة الرئيسية</string>
     <string-array name="home_layouts">
         <item>الاشتراكات</item>
-        <item>متابعة المشاهدة</item>
-        <item>أنمي المفضلة</item>
-        <item>أنمي مخطط لها</item>
-        <item>متابعة القراءة</item>
-        <item>مانجا المفضلة</item>
-        <item>مانجا مخطط لها</item>
-        <item>موصى</item>
+        <item>اكمل المشاهدة</item>
+        <item>الانمي المفضل</item>
+        <item>الانمي المخطط مشاهدته</item>
+        <item>اكمل القراءة</item>
+        <item>المانجا المفضلة</item>
+        <item>المانجا المخطط قراءتها</item>
+        <item>موصى به</item>
         <item>تغذية اجتماعية</item>
     </string-array>
     <string name="notification_page">علامة تبويب الإشعارات الافتراضية</string>
     <string name="notification_page_desc">حدد علامة التبويب الابتدائية للإشعارات</string>
     <string-array name="notification_type">
         <item>الكل</item>
-        <item>وسائط</item>
-        <item>اجتماعي</item>
+        <item>الوسائط</item>
+        <item>تواصل اجتماعي</item>
         <item>مستخدم</item>
     </string-array>
     <string name="startUpTab">علامة تبويب بدء التشغيل الافتراضية</string>
@@ -315,8 +316,8 @@
     <string name="animation_speed">السرعة العامة</string>
     <string name="empty_fav">جرب إضافة شيء للحفاظ عليه هنا.</string>
     <string name="no_suggestions">نحن نزال نتعرف عليك.</string>
-    <string name="fav_anime">أنمي المفضلة</string>
-    <string name="fav_manga">مانجا المفضلة</string>
+    <string name="fav_anime">الانمي المفضل</string>
+    <string name="fav_manga">المانجا المفضلة</string>
     <string name="restart_app">هل ترغب في إعادة تشغيل التطبيق؟</string>
     <string name="next">التالي</string>
     <string name="previous">السابق</string>
@@ -377,8 +378,8 @@
     <string name="include_media_in_list">تضمين القائمة</string>
     <string name="release_calendar">التقويم</string>
     <string name="review_type">%1$s تقييمات</string>
-    <string name="planned_anime">أنمي مخطط لها</string>
-    <string name="planned_manga">مانجا مخطط لها</string>
+    <string name="planned_anime">الانمي المخطط مشاهدته</string>
+    <string name="planned_manga">المانجا المخطط قراءتها</string>
     <string name="image_long_clicking">انقر مطولاً لفتح الصورة</string>
     <string name="always_continue_content">متابعة المحتوى السابق</string>
     <string name="descending_items">ترتيب القائمة بتنازلي</string>
@@ -531,12 +532,12 @@
     <string name="chapter_predication">من المتوقع صدور فصل جديد %1$s</string>
     <string name="chapter_delayed">يبدو أن الفصل الجديد متأخر</string>
     <string-array name="sort_by">
-        <item>التصنيف</item>
-        <item>الشهرة</item>
-        <item>الاتجاه</item>
-        <item>الإصدارات الجديدة</item>
+        <item>نقاط</item>
+        <item>شعبية</item>
+        <item>متداولة</item>
+        <item>إصدارات جديدة</item>
         <item>أ-ي</item>
-        <item>ي-أ</item>
+        <item>ز-أ</item>
         <item>ألم نقي</item>
     </string-array>
     <string name="main_role">الرئيسية</string>
@@ -572,11 +573,11 @@
     <string name="incognito_will_not_update">وضع التجسس سيتجاهل المتقدمات ما زال.</string>
     <string name="dont_ask_again">"لا تسأل مرة أخرى عن٪ 1$s"</string>
     <string name="default_speed">السرعة الافتراضية</string>
-    <string name="default_resize_mode">وضع إعادة تحجيم افتراضي</string>
+    <string name="default_resize_mode">وضع حجم الفيديو الافتراضي</string>
     <string name="primary_sub_color">لون العنوان الرئيسي</string>
     <string name="outline_sub_color">لون العنوان الخارجي</string>
     <string name="outline_type">نوع الهامش</string>
-    <string name="subtitle_font">نوع الخط الفرعي</string>
+    <string name="subtitle_font">خط الترجمة</string>
     <string name="launch_application">الصفحة تحاول إطلاق٪ 1$s. السماح؟</string>
     <string name="yes">نعم</string>
     <string name="no">لا</string>
@@ -673,7 +674,7 @@
     <string name="discord_warning">عند تسجيل الدخول، سيعرض Discord ما تشاهده وتقرأه على Himitsu\n\nعند فتح Himitsu، سيتم تحديد رؤيتك بواسطة إعدادات Himitsu الخاصة بك.\n\nقد ينتهك هذا الوظيفية شروط خدمة Discord لعدم استخدام Discord GameSDK.\n\nHimitsu غير مسؤولة عن أي شيء يحدث لحسابك.</string>
     <string name="warning">تحذير</string>
     <string name="force_legacy_installer">فرض المثبت القديم</string>
-    <string name="extensions_settings">الامتدادات</string>
+    <string name="extensions_settings">الإضافات</string>
     <string name="NSFWExtention">توسيعات غير مناسبة للعمل</string>
     <string name="skip_loading_extension_icons">تخطي تحميل أيقونات التوسيع</string>
     <string name="use_material_you">Material You</string>
@@ -787,7 +788,7 @@
     <string name="password_cannot_be_empty">يتعذر ترك كلمة المرور فارغة</string>
     <string name="unknown_file_type">نوع ملف غير معروف</string>
     <string name="error_importing_settings">خطأ في استيراد الإعدادات</string>
-    <string name="download_manager">مدير التنزيل</string>
+    <string name="download_manager">مسؤول التحميل</string>
     <string name="enter_password">أدخل كلمة مرور</string>
     <string name="you_cursed">تم لعنك</string>
     <string name="invalid_file_type">نوع ملف غير صالح</string>
@@ -830,7 +831,7 @@
     <string name="search_title">ابحث عن %1$s</string>
     <string name="profile_stats_widget">تتبع التقدم مباشرة من شاشة الرئيسية الخاصة بك</string>
     <string name="anime_watched">أنمي</string>
-    <string name="manga_read">مانغا</string>
+    <string name="manga_read">المانجا</string>
     <string name="chapters_read_n">الفصول</string>
     <string name="episodes_watched_n">الحلقات</string>
     <string name="loading">جار التحميل…</string>
@@ -868,7 +869,7 @@
     <string name="adult_only_content">محتوى الكبار فقط</string>
     <string name="report">تقرير</string>
     <string name="ban">حظر</string>
-    <string name="activity_label">نشاط</string>
+    <string name="activity_label">النشاط</string>
     <string name="activity_delete">هل تريد حذف النشاط؟</string>
     <string name="dir_error">لا يمكن تعيين مسارك</string>
     <string name="dir_access">وصول التنزيلات</string>
@@ -877,9 +878,9 @@
     <string name="download_location_msg">هل أنت متأكد أنك تريد تغيير موقع التنزيل؟\nقد لا يكون التنزيل القديم متاحًا بعد الآن</string>
     <string name="voice_actors">ممثلي الأصوات</string>
     <string name="download_permission_required">الإذن مطلوب للتنزيل</string>
-    <string name="media">وسائط</string>
+    <string name="media">الوسائط</string>
     <string name="users">المستخدمون</string>
-    <string name="social">اجتماعي</string>
+    <string name="social">تواصل اجتماعي</string>
     <string name="auto_skip_recap">تخطي تلخيص الحادث تلقائيًا</string>
     <string name="use_anilist_icon">استخدام أيقونة AniList</string>
     <string name="exo_source_exception">استثناء المصدر: %1$s</string>
@@ -909,12 +910,12 @@
     <string name="japan">اليابان</string>
     <string name="taiwan">تايوان</string>
     <string name="something">شيء ما</string>
-    <string name="sort_score">التصنيف</string>
-    <string name="popular">الشهرة</string>
-    <string name="trending">الاتجاه</string>
-    <string name="new_releases">الإصدارات الجديدة</string>
+    <string name="sort_score">نقاط</string>
+    <string name="popular">شعبية</string>
+    <string name="trending">متداولة</string>
+    <string name="new_releases">إصدارات جديدة</string>
     <string name="a_z">أ-ي</string>
-    <string name="z_a">ي-أ</string>
+    <string name="z_a">ز-أ</string>
     <string name="pure_pain">ألم نقي</string>
     <string name="add_a_comment">أضف تعليقًا...</string>
     <string name="type">نوع</string>
@@ -976,8 +977,8 @@
     <string name="download_started">بدء التنزيل</string>
     <string name="downloads_completed">انتهى جميع التنزيلات</string>
     <string name="pending_downloads">التنزيلات المعلقة: %1$d</string>
-    <string name="reading">القراءة</string>
-    <string name="watching">المشاهدة</string>
+    <string name="reading">جاري القراءة</string>
+    <string name="watching">جاري المشاهدة</string>
     <string name="avatar">%1$s\ [الصورة الرمزية]</string>
     <string name="cover">%1$s\ [الغلاف]</string>
     <string name="banner">%1$s\ [البانر]</string>
@@ -1015,7 +1016,7 @@
     <string name="no_video_selected">لم يتم اختيار فيديو</string>
     <string name="no_subtitles_available">لا توجد ترجمات متاحة</string>
     <string name="all">الكل</string>
-    <string name="activity">نشاط</string>
+    <string name="activity">النشاط</string>
     <string name="threads">مواضيع</string>
     <string name="contributor">المساهم</string>
     <string name="comment_mod">مشرف التعليق</string>
@@ -1023,7 +1024,7 @@
     <string name="biometric_summary">يتطلب المصادقة للوصول إلى HImitsu</string>
     <string name="biometric_details">يتطلب التحقق الحيوي</string>
     <string name="biometric_error">خطأ في التحقق الحيوي: %1$s</string>
-    <string name="biometric_success">مرحباً مرة أخرى!</string>
+    <string name="biometric_success">مرحبا بعودتك!</string>
     <string name="biometric_failed">فشل التحقق الحيوي!</string>
     <string name="reviews_empty">لا توجد مراجعات %1$s</string>
     <string name="vote_out_of_total">(%1$s من بين %2$s أعجبت بهذه المراجعة)</string>

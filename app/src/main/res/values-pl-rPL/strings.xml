@@ -274,6 +274,7 @@
     <string name="skip_time_info">Ustawienie na 0, ukrywa przycisk Pomijania.</string>
     <string name="show_cast_button">Pokaż Przycisk Cast</string>
     <string name="show_cast_button_info">Wymaga aplikacji \"Web Video Caster\" do rzutowania.</string>
+    <string name="picture_in_picture">Zdjęcie w zdjęciu</string>
     <string name="always_minimize">Zawsze minimalizuj</string>
     <string name="always_minimize_info">Wymaga włączenia PiP, sprawia, że gracz zachowuje się jak YouTube Player ale lepiej.\nrównież ukrywa przycisk PiP.</string>
     <string name="app">Aplikacja</string>

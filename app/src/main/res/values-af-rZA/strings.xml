@@ -44,10 +44,10 @@
     <string name="username">Gebruikersnaam</string>
     <string name="chapters_read">Hoofstukke Gelees</string>
     <string name="episodes_watched">Episodes Kyk</string>
-    <string name="continue_reading">Lees Voort</string>
-    <string name="continue_watching">Kyk Voort</string>
+    <string name="continue_reading">Gaan Voort met Lees</string>
+    <string name="continue_watching">Gaan Voort met Kyk</string>
     <string name="continue_media">Gaan Voort…</string>
-    <string name="recommended">Aanbeveel</string>
+    <string name="recommended">Aanbevole</string>
     <string name="get_recommendations">Kyk/Lees \'n Anime of Manga om Aanbevelings te Kry</string>
     <string name="empty">Alles bygewerk, wanneer Nuut?</string>
     <string name="action_settings">Instellings</string>
@@ -227,7 +227,7 @@
     <string name="default_playback_speed">Verstek Afspeeltrefferus : %1$s</string>
     <string name="cursed_speeds">Gevloekte Spoed</string>
     <string name="scrub_preview">Video Soekvoorbeelde</string>
-    <string name="resize_mode_button">Verstek Herskaalmodus</string>
+    <string name="resize_mode_button">Standaard Herskaal Modus</string>
     <string name="exceed_cap">Omseil Vermo\"e</string>
     <string name="exceed_cap_desc">Laat toe om opgespoorde speler beperkings te oorskry</string>
     <string name="subtitles">Ondertitels</string>
@@ -241,7 +241,7 @@
     <string name="sub_color_info"><b>Nota:</b> Instellings word slegs toegepas op \"sagte\" ondertitels!</string>
     <string name="sub_alpha">Ondertiteldeursigtigheid</string>
     <string name="sub_text_example">Ondertitelaansig</string>
-    <string name="sub_font_select">Ondertiteling Lettertipe</string>
+    <string name="sub_font_select">Ondertitel Lettertipe</string>
     <string name="subtitle_font_size">Ondertiteling Grootte</string>
     <string name="no_subs_available">Geen Ondertitels Beskikbaar</string>
     <string name="auto">Outomaties</string>
@@ -274,6 +274,7 @@
     <string name="skip_time_info">Instelling na 0 verberg die Oorskakel Knoppie.</string>
     <string name="show_cast_button">Wys Cast Knoppie</string>
     <string name="show_cast_button_info">Benodig die \"Web Video Caster\" app om te kan caste.</string>
+    <string name="picture_in_picture">Picture-in-Picture</string>
     <string name="always_minimize">Altwee Minimeer</string>
     <string name="always_minimize_info">Benodig PiP om geaktiveer te wees, maak die speler soortgelyk aan die Youtube Speler maar beter.\nVerberg ook die PiP knoppie.</string>
     <string name="app">Program</string>
@@ -283,13 +284,13 @@
     <string name="home_layout_show">Wys/Verberg Uitlegte op Die Tuisblad</string>
     <string-array name="home_layouts">
         <item>Inschrywings</item>
-        <item>Kyk Voort</item>
-        <item>Gunsteling Anime</item>
-        <item>Beplande Anime</item>
-        <item>Lees Voort</item>
-        <item>Gunsteling Manga</item>
-        <item>Beplande Manga</item>
-        <item>Aanbeveel</item>
+        <item>Gaan Voort met Kyk</item>
+        <item>Gunsteling-anime</item>
+        <item>Beplande anime</item>
+        <item>Gaan Voort met Lees</item>
+        <item>Gunsteling-manga</item>
+        <item>Beplande manga</item>
+        <item>Aanbevole</item>
         <item>Sosiale Feeds</item>
     </string-array>
     <string name="notification_page">Verstek Kennisgewing Oortjie</string>
@@ -315,8 +316,8 @@
     <string name="animation_speed">Algehele Spoed</string>
     <string name="empty_fav">Probeer iets byvoeg om dit hier te hou.</string>
     <string name="no_suggestions">Ons leer jou nog ken.</string>
-    <string name="fav_anime">Gunsteling Anime</string>
-    <string name="fav_manga">Gunsteling Manga</string>
+    <string name="fav_anime">Gunsteling-anime</string>
+    <string name="fav_manga">Gunsteling-manga</string>
     <string name="restart_app">Herlaai die program?</string>
     <string name="next">Volgende</string>
     <string name="previous">Vorige</string>
@@ -377,8 +378,8 @@
     <string name="include_media_in_list">Sluit lys in</string>
     <string name="release_calendar">Kalender</string>
     <string name="review_type">%1$s Resensies</string>
-    <string name="planned_anime">Beplande Anime</string>
-    <string name="planned_manga">Beplande Manga</string>
+    <string name="planned_anime">Beplande anime</string>
+    <string name="planned_manga">Beplande manga</string>
     <string name="image_long_clicking">Lang klik om die prent oop te maak</string>
     <string name="always_continue_content">Gaan voort met vorige media</string>
     <string name="descending_items">Lys in aflopende volgorde</string>
@@ -534,7 +535,7 @@
     <string-array name="sort_by">
         <item>Puntetelling</item>
         <item>Gewild</item>
-        <item>Neigend</item>
+        <item>Tendens</item>
         <item>Nuwe Vrystellings</item>
         <item>A-Z</item>
         <item>Z-A</item>
@@ -573,11 +574,11 @@
     <string name="incognito_will_not_update">Incognito-modus sal steeds vordering ignoreer.</string>
     <string name="dont_ask_again">"Moenie weer vir %1$s vra nie"</string>
     <string name="default_speed">Verstek Spoed</string>
-    <string name="default_resize_mode">Verstek Herskaalmodus</string>
+    <string name="default_resize_mode">Standaard Herskaal Modus</string>
     <string name="primary_sub_color">Primêre Subkleur</string>
     <string name="outline_sub_color">Omtrek Subkleur</string>
     <string name="outline_type">Omtrek Tipe</string>
-    <string name="subtitle_font">Ondertiteling Lettertipe</string>
+    <string name="subtitle_font">Ondertitel Lettertipe</string>
     <string name="launch_application">Bladsy probeer om %1$s te begin. Toelaat?</string>
     <string name="yes">Ja</string>
     <string name="no">Nee</string>
@@ -912,7 +913,7 @@
     <string name="something">Iets</string>
     <string name="sort_score">Puntetelling</string>
     <string name="popular">Gewild</string>
-    <string name="trending">Neigend</string>
+    <string name="trending">Tendens</string>
     <string name="new_releases">Nuwe Vrystellings</string>
     <string name="a_z">A-Z</string>
     <string name="z_a">Z-A</string>

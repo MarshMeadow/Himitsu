@@ -274,6 +274,7 @@
     <string name="skip_time_info">Постављање на 0, скрива дугме за прескакање.</string>
     <string name="show_cast_button">Прикажи дугме за кастирање</string>
     <string name="show_cast_button_info">Захтева апликацију \"Web Video Caster\" за кастирање.</string>
+    <string name="picture_in_picture">Picture-in-Picture</string>
     <string name="always_minimize">Увек минимизирај</string>
     <string name="always_minimize_info">Захтева активиран ПиП режим, прави плејер да се понаша као YouTube плејер али боље.\nИсто тако крије дугме за ПиП.</string>
     <string name="app">Апликација</string>

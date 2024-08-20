@@ -6,17 +6,17 @@
     <string name="anilist_login">Connexion AniList pour Himitsu</string>
     <string name="mal_login">Connexion MyAnimeList pour Himitsu</string>
     <string name="discord_login">Connexion Discord pour Himitsu</string>
-    <string name="extension_notice">Himitsu est un service BYOR</string>
-    <string name="extension_notice_desc">Himitsu suit un format \"apportez votre propre dépôt\". Bien que les extensions soient supportées, les index doivent être fournis par l\'utilisateur. Cependant, le support de nombreux services de streaming populaires est inclus par défaut.</string>
-    <string name="conversion_title">Bienvenue!</string>
+    <string name="extension_notice">Himitsu est un service \"AVPR\"</string>
+    <string name="extension_notice_desc">Himitsu suit un format \"Apportez Vos Propres Dépôt\". Bien que les extensions soient supportées, les index doivent être fournis par l\'utilisateur. Cependant, le support de nombreux services de streaming populaires est inclus par défaut.</string>
+    <string name="conversion_title">Content de vous revoir!</string>
     <string name="conversion_message">Il semble que vous ayez un ancien package installé.\nVeuillez sélectionner \"Sauvegarde\" pour ouvrir la version antérieure et effectuer une sauvegarde. Vous pouvez ensuite retourner à cette application et utiliser \"Restaurer les paramètres\".</string>
-    <string name="backup">Sauvegarde</string>
+    <string name="backup">Sauvegarder</string>
     <string name="home">Accueil</string>
-    <string name="anime">Anime</string>
+    <string name="anime">Anime\nRehardés</string>
     <string name="browse_anime">Parcourir les Anime</string>
-    <string name="manga">Manga</string>
+    <string name="manga">Manga\nlus</string>
     <string name="browse_manga">Parcourir les Manga</string>
-    <string name="novel">Révélation</string>
+    <string name="novel">Roman</string>
     <string name="novels">Romans</string>
     <string name="info">Infos</string>
     <string name="watch">Regarder</string>
@@ -27,7 +27,7 @@
     <string name="no_internet">Pas de connexion Internet</string>
     <string name="no_internet_connection">Pas de connexion Internet</string>
     <string name="refresh">Actualiser</string>
-    <string name="go_online">Passer en ligne</string>
+    <string name="go_online">Retourner en ligne</string>
     <string name="search">Recherche</string>
     <string name="extension_search">rechercher sources</string>
     <string name="external_search">Rechercher Himitsu</string>
@@ -47,7 +47,7 @@
     <string name="continue_reading">Continuer la lecture</string>
     <string name="continue_watching">Continuer le visionnage</string>
     <string name="continue_media">Poursuivre…</string>
-    <string name="recommended">Recommandé</string>
+    <string name="recommended">Recommandés</string>
     <string name="get_recommendations">Regardez/Lisez quelques Anime ou Manga pour obtenir des recommandations</string>
     <string name="empty">Vous êtes à jour, quand la nouveauté?</string>
     <string name="action_settings">Paramètres</string>
@@ -65,7 +65,7 @@
         <item>Favoris</item>
         <item>Relecture</item>
         <item>Relecture</item>
-        <item>Tous</item>
+        <item>Tout</item>
     </string-array>
     <string name="no_notifications">Plus de notifications</string>
     <string name="followers">Abonnés</string>
@@ -73,7 +73,7 @@
     <string name="social_in_media_desc">Afficher les évaluations et les progrès des amis</string>
     <string name="status">État</string>
     <string-array name="status_anime">
-        <item>À VOIR</item>
+        <item>À LIRE</item>
         <item>VISIONNAGE</item>
         <item>TERMINÉ</item>
         <item>RE-VISIONNAGE</item>
@@ -81,7 +81,7 @@
         <item>ABANDONNÉ</item>
     </string-array>
     <string-array name="status_manga">
-        <item>À LIRE</item>
+        <item>À VOIR</item>
         <item>LECTURE</item>
         <item>TERMINÉ</item>
         <item>RE-LECTURE</item>
@@ -122,9 +122,9 @@
     <string name="roles">Rôles</string>
     <string name="details">Détails</string>
     <string name="trailer_yt">Bande-annonce sur YouTube</string>
-    <string name="eps">Épisodes</string>
+    <string name="eps">Épisodes\nRegardés</string>
     <string name="ep">Épisode</string>
-    <string name="chaps">Chapitres</string>
+    <string name="chaps">Chapitres\nLus</string>
     <string name="chap">Chapitre</string>
     <string name="wrong"><u>Titre incorrect?</u></string>
     <string name="source_not_found">        Rien trouvé X( \n
@@ -142,7 +142,7 @@
     <string name="synonyms">Synonymes</string>
     <string name="trailer">Bande-annonce</string>
     <string name="opening">opening</string>
-    <string name="ending">Fin</string>
+    <string name="ending">Ending</string>
     <string name="prequel">Préquelle</string>
     <string name="sequel">Suite</string>
     <string name="installed">Installée</string>
@@ -274,6 +274,7 @@
     <string name="skip_time_info">Réglage à 0 cache le bouton de saut.</string>
     <string name="show_cast_button">Afficher le bouton de diffusion</string>
     <string name="show_cast_button_info">Nécessite l\'application \"Web Video Caster\" pour diffuser.</string>
+    <string name="picture_in_picture">Image en image</string>
     <string name="always_minimize">Toujours minimiser</string>
     <string name="always_minimize_info">Nécessite que l\'image dans l\'image soit activée, fait en sorte que le lecteur se comporte comme le lecteur Youtube mais mieux.\nCache également le bouton d\'image dans l\'image.</string>
     <string name="app">Application</string>
@@ -284,12 +285,12 @@
     <string-array name="home_layouts">
         <item>Abonnements</item>
         <item>Continuer le visionnage</item>
-        <item>Anime préféré</item>
-        <item>Anime prévu</item>
+        <item>Anime favoris</item>
+        <item>Anime prévus</item>
         <item>Continuer la lecture</item>
-        <item>Manga préféré</item>
-        <item>Mangas prévus</item>
-        <item>Recommandés</item>
+        <item>Manga favoris</item>
+        <item>Manga prévus</item>
+        <item>Recommandé</item>
         <item>FLUX SOCIAL</item>
     </string-array>
     <string name="notification_page">Onglet de notification par défaut</string>
@@ -297,7 +298,7 @@
     <string-array name="notification_type">
         <item>Tout</item>
         <item>Média</item>
-        <item>Social</item>
+        <item>Réseaux sociaux</item>
         <item>Utilisateur</item>
     </string-array>
     <string name="startUpTab">Onglet de démarrage par défaut</string>
@@ -315,8 +316,8 @@
     <string name="animation_speed">Vitesse globale</string>
     <string name="empty_fav">Essayez d\'ajouter quelque chose pourqu\'il reste ici</string>
     <string name="no_suggestions">Nous apprenons encore à vous connaître.</string>
-    <string name="fav_anime">Anime favoris</string>
-    <string name="fav_manga">Manga favoris</string>
+    <string name="fav_anime">Anime préféré</string>
+    <string name="fav_manga">Manga préféré</string>
     <string name="restart_app">Redémarrer l\'application?</string>
     <string name="next">Suivant</string>
     <string name="previous">Précédent</string>
@@ -377,8 +378,8 @@
     <string name="include_media_in_list">Inclure la liste</string>
     <string name="release_calendar">Calendrier</string>
     <string name="review_type">%1$s CRITIQUES</string>
-    <string name="planned_anime">Anime prévus</string>
-    <string name="planned_manga">Manga prévus</string>
+    <string name="planned_anime">Anime prévu</string>
+    <string name="planned_manga">Mangas prévus</string>
     <string name="image_long_clicking">Ouvrir l\'image en cliquant longuement</string>
     <string name="always_continue_content">Toujours continuer les médias précédents</string>
     <string name="descending_items">Liste par ordre décroissant</string>
@@ -534,7 +535,7 @@
         <item>Score</item>
         <item>Populaire</item>
         <item>Tendance</item>
-        <item>A-Z</item>
+        <item>Nouveautés</item>
         <item>Z-A</item>
         <item>Pure douleur</item>
         <item>Douleur pure</item>
@@ -652,10 +653,10 @@ Genre : "</string>
     <string name="answer_17">Les astuces suivantes présentent des conseils et des astuces que vous connaissez peut-être ou non -\n\n\n- En maintenant la pression sur le logo Himitsu dans les paramètres, vous pouvez vérifier manuellement s\'il y a des mises à jour.\n\n- En maintenant la pression sur un message d\'erreur/étiquette/synonyme ou un titre, vous pouvez le copier.\n\n- Vous pouvez ouvrir un épisode avec d\'autres applications en maintenant la pression sur n\'importe quel serveur pour cet épisode. Cela vous aide à diffuser l\'épisode en utilisant d\'autres lecteurs vidéo ou à télécharger l\'épisode en utilisant des gestionnaires de téléchargement.\n\n- Vous pouvez configurer des listes personnalisées en utilisant ce [lien](https://anilist.co/settings/lists). (vous devez être connecté)\n\n- Si votre épisode/chapitre ne progresse pas automatiquement après que vous avez fini de regarder/lire, maintenez pressé la barre d\'état (bouton planification/répétition/visualisation) de cet anime/manga. La prochaine fois que vous commencerez un chapitre/finirez un épisode, vous tomberez sur une fenêtre contextuelle. Appuyez sur oui.</string>
     <string name="subscribed_notification">Abonné ! Vous recevrez des notifications lorsque de nouveaux épisodes seront diffusés sur %1$s.</string>
     <string name="unsubscribed_notification">Désabonné, vous ne recevrez aucune notification.</string>
-    <string name="episode_plural">Épisodes</string>
+    <string name="episode_plural">Épisodes\nRegardés</string>
     <string name="episode_singular">Épisode</string>
     <string name="chapter_singular">Chapitre</string>
-    <string name="chapter_plural">Chapitres</string>
+    <string name="chapter_plural">Chapitres\nLus</string>
     <string name="filter_status">"Statut: %1$s"</string>
     <string name="filter_source">"Source: %1$s"</string>
     <string name="filter_format">"Format : %1$s"</string>
@@ -793,7 +794,7 @@ Genre : "</string>
     <string name="enter_password">Entrer le mot de passe</string>
     <string name="you_cursed">wous awez weçu une malédiction~</string>
     <string name="invalid_file_type">Type de fichier invalide</string>
-    <string name="purge_confirm">Êtes-vous sûr de vouloir supprimer tous les %1$s téléchargements?</string>
+    <string name="purge_confirm">Êtes-vous sûr de vouloir supprimer tous les %1$s téléchargés ?</string>
     <string name="delete_content">Etes-vous sûr de vouloir supprimer %1$s?</string>
     <string name="delete_item">Supprimer %1$s?</string>
     <string name="deleted_item">%1$s a été supprimé</string>
@@ -823,7 +824,7 @@ Genre : "</string>
     <string name="size_unknown">Taille inconnue</string>
     <string name="mb_size">%1$s Mo</string>
     <string name="button_restore">Restaurer</string>
-    <string name="button_backup">Sauvegarder</string>
+    <string name="button_backup">Sauvegarde</string>
     <string name="no_location_selected">Pas d\'emplacement sélectionné</string>
     <string name="do_it">Faites-le!</string>
     <string name="password">Mot de passe</string>
@@ -833,8 +834,8 @@ Genre : "</string>
     <string name="profile_stats_widget">Suivez les progrès directement depuis votre écran d\'accueil</string>
     <string name="anime_watched">Anime\nRehardés</string>
     <string name="manga_read">Manga\nlus</string>
-    <string name="chapters_read_n">Chapitres\nLus</string>
-    <string name="episodes_watched_n">Épisodes\nRegardés</string>
+    <string name="chapters_read_n">Chapitres</string>
+    <string name="episodes_watched_n">Épisodes</string>
     <string name="loading">Chargement…</string>
     <string name="user_stats">État de %1$s</string>
     <string name="please">S\'il vous plaît</string>
@@ -914,9 +915,9 @@ Genre : "</string>
     <string name="sort_score">Score</string>
     <string name="popular">Populaire</string>
     <string name="trending">Tendance</string>
-    <string name="new_releases">Nouveautés</string>
+    <string name="new_releases">A-Z</string>
     <string name="a_z">Z-A</string>
-    <string name="z_a">Z-A</string>
+    <string name="z_a">Pure douleur</string>
     <string name="pure_pain">Douleur pure</string>
     <string name="add_a_comment">Ajouter un commentaire…</string>
     <string name="type">Type de texte</string>
@@ -1025,7 +1026,7 @@ Genre : "</string>
     <string name="biometric_summary">Exiger une authentification pour accéder à HImitsu</string>
     <string name="biometric_details">L\'authentification biométrique est requise</string>
     <string name="biometric_error">Erreur biométrique: %1$s</string>
-    <string name="biometric_success">Content de vous revoir!</string>
+    <string name="biometric_success">Bienvenue!</string>
     <string name="biometric_failed">La vérification biométrique a échoué!</string>
     <string name="reviews_empty">Pas de critiques de %1$s</string>
     <string name="vote_out_of_total">(%1$s sur %2$s ont liké cette critique)</string>

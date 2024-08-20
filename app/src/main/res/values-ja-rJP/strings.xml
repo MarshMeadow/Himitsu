@@ -274,6 +274,7 @@
     <string name="skip_time_info">Skipボタンを非表示にするには、設定を0にします。</string>
     <string name="show_cast_button">Castボタンを表示</string>
     <string name="show_cast_button_info">「Web Video Caster」アプリが必要です。</string>
+    <string name="picture_in_picture">ピクチャーイン画像</string>
     <string name="always_minimize">常に最小化</string>
     <string name="always_minimize_info">PiPを有効にする必要があり、プレイヤーをYoutube Playerのように動作させますが、より優れています。\nまた、PiPボタンを非表示にします。</string>
     <string name="app">アプリ</string>
