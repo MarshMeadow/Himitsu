@@ -276,6 +276,7 @@
     <string name="skip_time_info">הגדרה ל-0 מסתירה את כפתור הדילוג.</string>
     <string name="show_cast_button">הצג כפתור לשדר</string>
     <string name="show_cast_button_info">נדרש אפליקציית \'Web Video Caster\' על מנת לשדר.</string>
+    <string name="picture_in_picture">Picture-in-Picture</string>
     <string name="always_minimize">ממוזערת תמיד</string>
     <string name="always_minimize_info">נדרש PiP להיות מופעל, מבטיח שהנגן יתנהג כמו נגן Youtube אך עדיף.\nגם מסתיר את כפתור PiP.</string>
     <string name="app">אפליקציה</string>

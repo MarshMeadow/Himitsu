@@ -274,6 +274,7 @@
     <string name="skip_time_info">Aseta 0:an, piilottaa Ohita-painikkeen.</string>
     <string name="show_cast_button">Näytä Heittopainike</string>
     <string name="show_cast_button_info">Vaatii sovelluksen \"Web Video Caster\" heittämiseen.</string>
+    <string name="picture_in_picture">Kuva</string>
     <string name="always_minimize">Aina Minimoi</string>
     <string name="always_minimize_info">Edellyttää PiP-toiminnon olevan käytössä, tekee soittimen toiminnasta kuten YouTube-soitin mutta paremmin.\nPiilottaa myös PiP-painikkeen.</string>
     <string name="app">Sovellus</string>

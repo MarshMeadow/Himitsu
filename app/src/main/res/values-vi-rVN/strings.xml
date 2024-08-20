@@ -274,6 +274,7 @@
     <string name="skip_time_info">Cài đặt về 0, ẩn nút Bỏ qua.</string>
     <string name="show_cast_button">Hiển thị nút Cast</string>
     <string name="show_cast_button_info">Yêu cầu ứng dụng \"Web Video Caster\" để cast.</string>
+    <string name="picture_in_picture">Hình trong hình</string>
     <string name="always_minimize">Luôn luôn Thu nhỏ</string>
     <string name="always_minimize_info">Yêu cầu PiP được bật, làm cho người chơi hoạt động giống như Người chơi Youtube nhưng tốt hơn.\nCũng ẩn nút PiP.</string>
     <string name="app">Ứng dụng</string>

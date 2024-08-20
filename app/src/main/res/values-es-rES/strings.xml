@@ -8,9 +8,9 @@
     <string name="discord_login">Inicio de Sesión en Discord para Himitsu</string>
     <string name="extension_notice">Himitsu es un Servicio BYOR</string>
     <string name="extension_notice_desc">Himitsu sigue un formato de \"traer tu propio repositorio\". Si bien se admiten extensiones, los índices deben ser proporcionados por el usuario. Sin embargo, el soporte para muchos servicios de streaming populares está incluido de serie.</string>
-    <string name="conversion_title">¡Bienvenido de vuelta!</string>
+    <string name="conversion_title">¡Bienvenido de nuevo!</string>
     <string name="conversion_message">Parece que tienes instalado un paquete antiguo.\nSelecciona \"Copia de seguridad\" para abrir la versión antigua y realizar una copia de seguridad. Luego puedes regresar a esta aplicación y usar \"Restaurar Configuración\".</string>
-    <string name="backup">Copia de Seguridad</string>
+    <string name="backup">Copia de seguridad</string>
     <string name="home">Inicio</string>
     <string name="anime">Anime</string>
     <string name="browse_anime">Buscar Anime</string>
@@ -44,8 +44,8 @@
     <string name="username">Nombre de Usuario</string>
     <string name="chapters_read">Lectura de capítulos</string>
     <string name="episodes_watched">Episodios Vistos</string>
-    <string name="continue_reading">Continuar leyendo</string>
-    <string name="continue_watching">Continuar viendo</string>
+    <string name="continue_reading">Continuar Leyendo</string>
+    <string name="continue_watching">Continuar Viendo</string>
     <string name="continue_media">Continuar…</string>
     <string name="recommended">Recomendados</string>
     <string name="get_recommendations">Ver/Leer algunos Anime o Manga para obtener Recomendaciones</string>
@@ -65,7 +65,7 @@
         <item>Favoritos</item>
         <item>Volver a ver</item>
         <item>Releer</item>
-        <item>Todos</item>
+        <item>Todo</item>
     </string-array>
     <string name="no_notifications">No más notificaciones</string>
     <string name="followers">Seguidores</string>
@@ -73,20 +73,20 @@
     <string name="social_in_media_desc">Mostrar calificaciones y progreso de amigos</string>
     <string name="status">ESTADO</string>
     <string-array name="status_anime">
-        <item>PLANIFICACIÓN</item>
-        <item>AGUA</item>
+        <item>PLANEANDO</item>
+        <item>VIENDO</item>
         <item>COMPLETADO</item>
         <item>REVIENDO</item>
-        <item>EN PAUSA</item>
-        <item>DESARROPADO</item>
+        <item>PAUSADO</item>
+        <item>ABANDONADO</item>
     </string-array>
     <string-array name="status_manga">
-        <item>PLANIFICACIÓN</item>
-        <item>LISTO</item>
+        <item>PLANEANDO</item>
+        <item>LEYENDO</item>
         <item>COMPLETADO</item>
         <item>RERELEYENDO</item>
-        <item>EN PAUSA</item>
-        <item>DESARROPADO</item>
+        <item>PAUSADO</item>
+        <item>ABANDONADO</item>
     </string-array>
     <string name="progress">PROGRESO</string>
     <string name="score">PUNTUACIÓN</string>
@@ -170,7 +170,7 @@
     <string name="extension_updates_available">Actualizaciones de extensiones disponibles</string>
     <string name="player_settings">Configuraciones del reproductor</string>
     <string name="recentlyListOnly">Sólo mi contenido en \"Actualizado recientemente\"</string>
-    <string name="download_manager_select">Administrador de descargas</string>
+    <string name="download_manager_select">Gestor de Descargas</string>
     <string name="downloadInSd">Descargar en la tarjeta SD</string>
     <string name="noSdFound">No se ha encontrado ninguna tarjeta SD.</string>
     <string name="reader_settings">Configuración del lector</string>
@@ -227,7 +227,7 @@
     <string name="default_playback_speed">Velocidad de reproducción predeterminada: %1$s</string>
     <string name="cursed_speeds">Velocidades malditas</string>
     <string name="scrub_preview">Previsualizaciones de búsqueda de video</string>
-    <string name="resize_mode_button">Modo de reajuste por defecto</string>
+    <string name="resize_mode_button">Modo de redimensionamiento predeterminado</string>
     <string name="exceed_cap">Capacidades de omisión</string>
     <string name="exceed_cap_desc">Permite anular las limitaciones de reproducción detectadas por el reproductor</string>
     <string name="subtitles">Subtítulos</string>
@@ -274,6 +274,7 @@
     <string name="skip_time_info">Al configurar a 0, se oculta el botón de omitir.</string>
     <string name="show_cast_button">Mostrar botón de reparto</string>
     <string name="show_cast_button_info">Requiere la aplicación \"Web Video Caster\" para emitir.</string>
+    <string name="picture_in_picture">Fotografía en foto</string>
     <string name="always_minimize">Minimizar siempre</string>
     <string name="always_minimize_info">Requiere que PiP esté habilitado, hace que el reproductor se comporte como el reproductor de Youtube pero mejor.
 También oculta el botón de PiP.</string>
@@ -284,20 +285,20 @@ También oculta el botón de PiP.</string>
     <string name="home_layout_show">Mostrar/Ocultar diseños en la pantalla de inicio</string>
     <string-array name="home_layouts">
         <item>Suscripciones</item>
-        <item>Continuar viendo</item>
-        <item>Anime favorito</item>
-        <item>Anime planificado</item>
-        <item>Continuar leyendo</item>
-        <item>Manga favorito</item>
-        <item>Manga planificado</item>
+        <item>Continuar Viendo</item>
+        <item>Anime Favorito</item>
+        <item>Animes pendientes</item>
+        <item>Continuar Leyendo</item>
+        <item>Manga Favorito</item>
+        <item>Mangas pendientes</item>
         <item>Recomendado</item>
         <item>Fuentes sociales</item>
     </string-array>
     <string name="notification_page">Pestaña de notificaciones predeterminada</string>
     <string name="notification_page_desc">Seleccione la pestaña de inicio para las notificaciones</string>
     <string-array name="notification_type">
-        <item>Todos</item>
-        <item>Medios</item>
+        <item>Todo</item>
+        <item>Multimedia</item>
         <item>Social</item>
         <item>Usuario</item>
     </string-array>
@@ -316,8 +317,8 @@ También oculta el botón de PiP.</string>
     <string name="animation_speed">Velocidad General</string>
     <string name="empty_fav">Intenta agregar algo para conservarlo aquí.</string>
     <string name="no_suggestions">Todavía te estamos conociendo.</string>
-    <string name="fav_anime">Anime favorito</string>
-    <string name="fav_manga">Manga favorito</string>
+    <string name="fav_anime">Anime Favorito</string>
+    <string name="fav_manga">Manga Favorito</string>
     <string name="restart_app">¿Reiniciar la aplicación?</string>
     <string name="next">Siguiente</string>
     <string name="previous">Anterior</string>
@@ -378,8 +379,8 @@ También oculta el botón de PiP.</string>
     <string name="include_media_in_list">Incluir Lista</string>
     <string name="release_calendar">Calendario</string>
     <string name="review_type">%1$s reseñas</string>
-    <string name="planned_anime">Anime planificado</string>
-    <string name="planned_manga">Manga planificado</string>
+    <string name="planned_anime">Anime Planeado</string>
+    <string name="planned_manga">Manga Planeado</string>
     <string name="image_long_clicking">Mantén pulsado para abrir imagen</string>
     <string name="always_continue_content">Continuar contenido anterior</string>
     <string name="descending_items">Lista en orden descendente</string>
@@ -532,12 +533,12 @@ También oculta el botón de PiP.</string>
     <string name="chapter_predication">Nuevo Capítulo Esperado %1$s</string>
     <string name="chapter_delayed">El nuevo capítulo parece estar retrasado</string>
     <string-array name="sort_by">
-        <item>Puntuación</item>
+        <item>Calificación</item>
         <item>Popular</item>
-        <item>Tendencia</item>
-        <item>Nuevos Lanzamientos</item>
+        <item>Tendencias</item>
         <item>A-Z</item>
         <item>Z-A</item>
+        <item>Puro dolor</item>
         <item>Dolor puro</item>
     </string-array>
     <string name="main_role">MAIN</string>
@@ -573,7 +574,7 @@ También oculta el botón de PiP.</string>
     <string name="incognito_will_not_update">El modo Incognito seguirá ignorando el progreso.</string>
     <string name="dont_ask_again">"No volver a pedir %1$s"</string>
     <string name="default_speed">Velocidad por defecto</string>
-    <string name="default_resize_mode">Modo de reajuste por defecto</string>
+    <string name="default_resize_mode">Modo de redimensionamiento predeterminado</string>
     <string name="primary_sub_color">Color de Subtítulo Principal</string>
     <string name="outline_sub_color">Color de Subtítulo con Contorno</string>
     <string name="outline_type">Tipo de Contorno</string>
@@ -794,7 +795,7 @@ Himitsu no se hace responsable de nada que suceda en tu cuenta.</string>
     <string name="password_cannot_be_empty">La contraseña no puede estar vacía</string>
     <string name="unknown_file_type">Tipo de archivo desconocido</string>
     <string name="error_importing_settings">Error al importar la configuración</string>
-    <string name="download_manager">Administrador de descargas</string>
+    <string name="download_manager">Gestor de Descargas</string>
     <string name="enter_password">Ingresar Contraseña</string>
     <string name="you_cursed">Has sido maldecido</string>
     <string name="invalid_file_type">Tipo de archivo inválido</string>
@@ -828,7 +829,7 @@ Himitsu no se hace responsable de nada que suceda en tu cuenta.</string>
     <string name="size_unknown">Tamaño Desconocido</string>
     <string name="mb_size">%1$s MB</string>
     <string name="button_restore">Restaurar</string>
-    <string name="button_backup">Copia de Seguridad</string>
+    <string name="button_backup">Respaldo</string>
     <string name="no_location_selected">No hay ubicación seleccionada</string>
     <string name="do_it">¡Hazlo!</string>
     <string name="password">Contraseña</string>
@@ -884,7 +885,7 @@ Himitsu no se hace responsable de nada que suceda en tu cuenta.</string>
     <string name="download_location_msg">¿Estás seguro de que deseas cambiar la ubicación de descarga?\nLas descargas antiguas pueden no ser accesibles.</string>
     <string name="voice_actors">Actores de Voz</string>
     <string name="download_permission_required">Se necesita permiso para descargar</string>
-    <string name="media">Medios</string>
+    <string name="media">Multimedia</string>
     <string name="users">Usuarios</string>
     <string name="social">Social</string>
     <string name="auto_skip_recap">Omitir Automáticamente Resumen</string>
@@ -916,10 +917,10 @@ Himitsu no se hace responsable de nada que suceda en tu cuenta.</string>
     <string name="japan">Japón</string>
     <string name="taiwan">Taiwán</string>
     <string name="something">Algo</string>
-    <string name="sort_score">Puntuación</string>
+    <string name="sort_score">Calificación</string>
     <string name="popular">Popular</string>
-    <string name="trending">Tendencia</string>
-    <string name="new_releases">Nuevos Lanzamientos</string>
+    <string name="trending">Tendencias</string>
+    <string name="new_releases">Nuevos lanzamientos</string>
     <string name="a_z">A-Z</string>
     <string name="z_a">Z-A</string>
     <string name="pure_pain">Dolor puro</string>
@@ -983,8 +984,8 @@ Himitsu no se hace responsable de nada que suceda en tu cuenta.</string>
     <string name="download_started">Descarga iniciada</string>
     <string name="downloads_completed">Todas las descargas completadas</string>
     <string name="pending_downloads">Descargas Pendientes: %1$d</string>
-    <string name="reading">LISTO</string>
-    <string name="watching">AGUA</string>
+    <string name="reading">LEYENDO</string>
+    <string name="watching">VIENDO</string>
     <string name="avatar">%1$s\ [Avatar]</string>
     <string name="cover">%1$s\ [Portada]</string>
     <string name="banner">%1$s\ [Banner]</string>
@@ -1021,7 +1022,7 @@ Himitsu no se hace responsable de nada que suceda en tu cuenta.</string>
     <string name="download_audio_tracks">Descargar pistas de audio</string>
     <string name="no_video_selected">Ningún video seleccionado</string>
     <string name="no_subtitles_available">No hay subtítulos disponibles</string>
-    <string name="all">Todos</string>
+    <string name="all">Todo</string>
     <string name="activity">Actividad</string>
     <string name="threads">Hilos</string>
     <string name="contributor">Contribuidor</string>
@@ -1030,7 +1031,7 @@ Himitsu no se hace responsable de nada que suceda en tu cuenta.</string>
     <string name="biometric_summary">Se requiere autenticación para acceder a HImitsu</string>
     <string name="biometric_details">Se requiere autenticación biométrica</string>
     <string name="biometric_error">Error biométrico: %1$s</string>
-    <string name="biometric_success">¡Bienvenido de vuelta!</string>
+    <string name="biometric_success">¡Bienvenido de nuevo!</string>
     <string name="biometric_failed">¡La Verificación Biométrica Falló!</string>
     <string name="reviews_empty">No hay Reseñas de %1$s</string>
     <string name="vote_out_of_total">(%1$s de %2$s les gustó esta reseña)</string>

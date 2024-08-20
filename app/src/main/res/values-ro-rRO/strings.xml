@@ -8,7 +8,7 @@
     <string name="discord_login">Discord Autentificare pentru Himitsu</string>
     <string name="extension_notice">Himitsu este un Serviciu BYOR</string>
     <string name="extension_notice_desc">Himitsu urmează un format \"aduce-ți propriul tău depozit\". În timp ce extensiile sunt acceptate, indexurile trebuie furnizate de utilizator. Cu toate acestea, suportul pentru multe servicii populare de streaming este inclus din fabrică.</string>
-    <string name="conversion_title">Bun venit înapoi!</string>
+    <string name="conversion_title">Bine ai revenit!</string>
     <string name="conversion_message">Se pare că aveți instalat un pachet mai vechi.\nVă rugăm să selectați \"Backup\" pentru a deschide versiunea mai veche și a face o copie de rezervă. Apoi vă puteți întoarce la această aplicație și utilizați \"Restaurare setări\".</string>
     <string name="backup">Copie de siguranță</string>
     <string name="home">Acasă</string>
@@ -44,8 +44,8 @@
     <string name="username">Nume utilizator</string>
     <string name="chapters_read">Capitole Citite</string>
     <string name="episodes_watched">Episoade Vizionate</string>
-    <string name="continue_reading">Continuă Citirea</string>
-    <string name="continue_watching">Continuă Vizionarea</string>
+    <string name="continue_reading">Continuă lectura</string>
+    <string name="continue_watching">Continuă urmărirea</string>
     <string name="continue_media">Continuă…</string>
     <string name="recommended">Recomandat</string>
     <string name="get_recommendations">Vezi/Citește unele Anime sau Manga pentru a primi Recomandări</string>
@@ -74,19 +74,19 @@
     <string name="status">STATUT</string>
     <string-array name="status_anime">
         <item>PLANIFICARE</item>
-        <item>VIZIONARE</item>
-        <item>FINALIZAT</item>
+        <item>AȘTEPTARE</item>
+        <item>COMPLETAT</item>
         <item>RE-VIZIONARE</item>
-        <item>PAUZĂ</item>
-        <item>GRUPURI</item>
+        <item>ÎN PAUZĂ</item>
+        <item>ABANDONAT</item>
     </string-array>
     <string-array name="status_manga">
         <item>PLANIFICARE</item>
-        <item>LECTURĂ</item>
-        <item>FINALIZAT</item>
+        <item>CREARE</item>
+        <item>COMPLETAT</item>
         <item>RE-LECTURĂ</item>
-        <item>PAUZĂ</item>
-        <item>GRUPURI</item>
+        <item>ÎN PAUZĂ</item>
+        <item>ABANDONAT</item>
     </string-array>
     <string name="progress">PROGRES</string>
     <string name="score">NOTĂ</string>
@@ -170,7 +170,7 @@
     <string name="extension_updates_available">Actualizări de extensii disponibile</string>
     <string name="player_settings">Setările player-ului</string>
     <string name="recentlyListOnly">Doar conținutul meu din \"Actualizări recente\"</string>
-    <string name="download_manager_select">Manager de descărcare</string>
+    <string name="download_manager_select">Manager descărcări</string>
     <string name="downloadInSd">Descărcare pe cardul SD</string>
     <string name="noSdFound">Nu a fost găsit niciun card SD.</string>
     <string name="reader_settings">Setări cititor</string>
@@ -274,6 +274,7 @@
     <string name="skip_time_info">Setarea la 0 ascunde butonul de omitere.</string>
     <string name="show_cast_button">Afișează butonul de distribuție</string>
     <string name="show_cast_button_info">Necesită aplicația \"Web Video Caster\" pentru a distribui.</string>
+    <string name="picture_in_picture">Imagine în imagine</string>
     <string name="always_minimize">Minimizează întotdeauna</string>
     <string name="always_minimize_info">Necesită activarea PiP, face ca playerul să se comporte ca Playerul Youtube dar mai bine.\nDe asemenea ascunde butonul PiP.</string>
     <string name="app">Aplicație</string>
@@ -283,12 +284,12 @@
     <string name="home_layout_show">Afișează/Ascunde aspectele pe Pagina Principală</string>
     <string-array name="home_layouts">
         <item>Abonamente</item>
-        <item>Continuă Vizionarea</item>
-        <item>Anime Favorit</item>
-        <item>Anime Planificat</item>
-        <item>Continuă Citirea</item>
-        <item>Manga Favorit</item>
-        <item>Manga Planificat</item>
+        <item>Continuă urmărirea</item>
+        <item>Anime preferate</item>
+        <item>Anime planificate</item>
+        <item>Continuă lectura</item>
+        <item>Manga favorită</item>
+        <item>Manga Planificată</item>
         <item>Recomandat</item>
         <item>Feed-uri Sociale</item>
     </string-array>
@@ -297,7 +298,7 @@
     <string-array name="notification_type">
         <item>Toate</item>
         <item>Media</item>
-        <item>Social</item>
+        <item>Sociale</item>
         <item>Utilizator</item>
     </string-array>
     <string name="startUpTab">Tab de Pornire Implicit</string>
@@ -315,8 +316,8 @@
     <string name="animation_speed">Viteză Generală</string>
     <string name="empty_fav">Încearcă să adaugi ceva pentru a-l păstra aici.</string>
     <string name="no_suggestions">Încă te cunoaștem.</string>
-    <string name="fav_anime">Anime Favorit</string>
-    <string name="fav_manga">Manga Favorit</string>
+    <string name="fav_anime">Anime preferate</string>
+    <string name="fav_manga">Manga favorită</string>
     <string name="restart_app">Reporniți aplicația?</string>
     <string name="next">Următorul</string>
     <string name="previous">Anteriorul</string>
@@ -377,8 +378,8 @@
     <string name="include_media_in_list">Includere în Listă</string>
     <string name="release_calendar">Calendar</string>
     <string name="review_type">%1$s Recenzii</string>
-    <string name="planned_anime">Anime Planificat</string>
-    <string name="planned_manga">Manga Planificat</string>
+    <string name="planned_anime">Anime planificate</string>
+    <string name="planned_manga">Manga Planificată</string>
     <string name="image_long_clicking">Apăsați lung pentru a deschide imaginea</string>
     <string name="always_continue_content">Continuă conținutul anterior</string>
     <string name="descending_items">Listă în ordine descrescătoare</string>
@@ -532,8 +533,8 @@
     <string name="chapter_delayed">Se pare că noul capitol este întârziat</string>
     <string-array name="sort_by">
         <item>Scor</item>
-        <item>Popular</item>
-        <item>Trending</item>
+        <item>Populare</item>
+        <item>Populare</item>
         <item>Lansări noi</item>
         <item>A-Z</item>
         <item>Z-A</item>
@@ -787,7 +788,7 @@
     <string name="password_cannot_be_empty">Parola nu poate fi goală</string>
     <string name="unknown_file_type">Tip de fișier necunoscut</string>
     <string name="error_importing_settings">Eroare la importul setărilor</string>
-    <string name="download_manager">Manager de descărcare</string>
+    <string name="download_manager">Manager descărcări</string>
     <string name="enter_password">Introduceți Parola</string>
     <string name="you_cursed">youwu ați fost blestemat</string>
     <string name="invalid_file_type">Tip de fișier invalid</string>
@@ -879,7 +880,7 @@
     <string name="download_permission_required">Este necesară permisiunea pentru a descărca</string>
     <string name="media">Media</string>
     <string name="users">Utilizatori</string>
-    <string name="social">Social</string>
+    <string name="social">Sociale</string>
     <string name="auto_skip_recap">Ocolire Automată Recapitulare</string>
     <string name="use_anilist_icon">Folosește Iconița AniList</string>
     <string name="exo_source_exception">Excepție Sursă: %1$s</string>
@@ -910,8 +911,8 @@
     <string name="taiwan">Taiwan</string>
     <string name="something">Ceva</string>
     <string name="sort_score">Scor</string>
-    <string name="popular">Popular</string>
-    <string name="trending">Trending</string>
+    <string name="popular">Populare</string>
+    <string name="trending">Populare</string>
     <string name="new_releases">Lansări noi</string>
     <string name="a_z">A-Z</string>
     <string name="z_a">Z-A</string>
@@ -976,8 +977,8 @@
     <string name="download_started">Descărcare începută</string>
     <string name="downloads_completed">Toate descărcările finalizate</string>
     <string name="pending_downloads">Descărcări în așteptare: %1$d</string>
-    <string name="reading">LECTURĂ</string>
-    <string name="watching">VIZIONARE</string>
+    <string name="reading">CREARE</string>
+    <string name="watching">AȘTEPTARE</string>
     <string name="avatar">%1$s\ [Avatar]</string>
     <string name="cover">%1$s\ [Copertă]</string>
     <string name="banner">%1$s\ [Banner]</string>
@@ -1023,7 +1024,7 @@
     <string name="biometric_summary">Necesită autentificare pentru a accesa HImitsu</string>
     <string name="biometric_details">Autentificarea biometrică este necesară</string>
     <string name="biometric_error">Eroare biometrică: %1$s</string>
-    <string name="biometric_success">Bun venit înapoi!</string>
+    <string name="biometric_success">Bine ai revenit!</string>
     <string name="biometric_failed">Verificare biometrică eșuată!</string>
     <string name="reviews_empty">Fără %1$s Recenzii</string>
     <string name="vote_out_of_total">(%1$s din %2$s au apreciat această recenzie)</string>

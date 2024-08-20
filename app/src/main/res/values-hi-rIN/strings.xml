@@ -12,9 +12,9 @@
     <string name="conversion_message">लगता है आपने एक पुराना पैकेज इंस्टॉल किया है।\nकृपया \"बैकअप\" चुनें और पुराने संस्करण को खोलकर बैकअप करें। फिर आप वापस इस एप्लिकेशन पर लौट सकते हैं और \"सेटिंग्स पुनर्स्थापन\" का उपयोग कर सकते हैं।</string>
     <string name="backup">बैकअप</string>
     <string name="home">होम</string>
-    <string name="anime">एनिमे</string>
+    <string name="anime">एनिमे\nदेखा गया</string>
     <string name="browse_anime">एनिमे ब्राउज़ करें</string>
-    <string name="manga">मंगा</string>
+    <string name="manga">मंगा\nपढ़ा गया</string>
     <string name="browse_manga">मंगा ब्राउज़ करें</string>
     <string name="novel">उपन्यास</string>
     <string name="novels">उपन्यास</string>
@@ -74,7 +74,7 @@
     <string name="status">स्थिति</string>
     <string-array name="status_anime">
         <item>योजना</item>
-        <item>देख रहा है</item>
+        <item>देखना</item>
         <item>पूर्ण</item>
         <item>फिर से देख रहा है</item>
         <item>रोका</item>
@@ -82,7 +82,7 @@
     </string-array>
     <string-array name="status_manga">
         <item>योजना</item>
-        <item>पढ़ना</item>
+        <item>रीडिंग</item>
         <item>पूर्ण</item>
         <item>फिर से पढ़ रहा है</item>
         <item>रोका</item>
@@ -122,9 +122,9 @@
     <string name="roles">भूमिकाएँ</string>
     <string name="details">विवरण</string>
     <string name="trailer_yt">YouTube पर ट्रेलर</string>
-    <string name="eps">एपिसोड</string>
+    <string name="eps">एपिसोड\nदेखा</string>
     <string name="ep">एपिसोड</string>
-    <string name="chaps">अध्याय</string>
+    <string name="chaps">अध्याय\nपढ़ें</string>
     <string name="chap">अध्याय</string>
     <string name="wrong"><u>गलत शीर्षक?</u></string>
     <string name="source_not_found">            कुछ नहीं मिला X( \n
@@ -162,7 +162,7 @@
     <string name="enable_server_temp">क्या आप अस्थायी रूप से टॉरसर्वर को सक्षम करना चाहेंगे (ऐप बंद होने पर अक्षम)?</string>
     <string name="peer_count_low">कम पीयर गिनी गई!</string>
     <string name="anilist_settings">AniList सेटिंग्स</string>
-    <string name="extension_settings">एक्सटेंशन</string>
+    <string name="extension_settings">एक्सटेंशन्स</string>
     <string name="downloads">डाउनलोड</string>
     <string name="offline_mode">ऑफ़लाइन मोड</string>
     <string name="settings">सेटिंग्स</string>
@@ -274,6 +274,7 @@
     <string name="skip_time_info">सेटिंग 0 पर, स्किप बटन को छुपाता है।</string>
     <string name="show_cast_button">कास्ट बटन दिखाएं</string>
     <string name="show_cast_button_info">कास्ट करने के लिए \"वेब वीडियो कास्टर\" ऐप की आवश्यकता होती है।</string>
+    <string name="picture_in_picture">चित्र में चित्र</string>
     <string name="always_minimize">हमेशा न्यूनतम करें</string>
     <string name="always_minimize_info">PiP सक्षम करने की आवश्यकता होती है, प्लेयर को यूट्यूब प्लेयर की तरह व्यवहार करने के लिए।\nयह भी PiP बटन को छुपाता है।</string>
     <string name="app">एप्लिकेशन</string>
@@ -650,10 +651,10 @@
     <string name="answer_17">निम्नलिखित कुछ सुझाव और ट्रिक्स पेश करता है जिनके बारे में आप नहीं जानते हो सकते - \n \n \n - सेटिंग्स में हिमित्सु लोगो को होल्ड दबाकर, आप मैन्युअल रूप से कोई नया अपडेट है या नहीं चेक कर सकते हैं। \n \n - किसी त्रुटि संदेश/टैग/सिनोनाइम या शीर्षक को होल्ड दबाने से आप उसे कॉपी कर सकते हैं। \n \n - आप किसी अन्य ऐप के साथ एक एपिसोड ओपन कर सकते हैं जिसे डाउनलोड मैनेजर्स का उपयोग करके एपिसोड को डाउनलोड करने में मदद मिलती है।.</string>
     <string name="subscribed_notification">सदस्यता लें! नए एपिसोड %1$s पर रिलीज होते ही सूचनाएँ प्राप्त कर रहे हैं।</string>
     <string name="unsubscribed_notification">सदस्यता रद्द की गई, आपको कोई सूचनाएँ प्राप्त नहीं होंगी।</string>
-    <string name="episode_plural">एपिसोड</string>
+    <string name="episode_plural">एपिसोड\nदेखा</string>
     <string name="episode_singular">एपिसोड</string>
     <string name="chapter_singular">अध्याय</string>
-    <string name="chapter_plural">अध्याय</string>
+    <string name="chapter_plural">अध्याय\nपढ़ें</string>
     <string name="filter_status">"स्थिति: %1$s"</string>
     <string name="filter_source">"स्रोत: %1$s"</string>
     <string name="filter_format">"फ़ॉर्मेट: %1$s"</string>
@@ -679,7 +680,7 @@ Himitsu खोलते समय, आपकी दृश्यता आपक�
 Himitsu आपके खाते के साथ होने वाले किसी भी चीज के लिए जिम्मेदार नहीं है।</string>
     <string name="warning">चेतावनी</string>
     <string name="force_legacy_installer">लेगसि इंस्टालर को मजबूर करें</string>
-    <string name="extensions_settings">एक्सटेंशन्स</string>
+    <string name="extensions_settings">एक्सटेंशन</string>
     <string name="NSFWExtention">NSFW एक्सटेंशन्स</string>
     <string name="skip_loading_extension_icons">एक्सटेंशन आइकन्स को लोड करना छोड़ें</string>
     <string name="use_material_you">मटेरियल आप</string>
@@ -835,10 +836,10 @@ Himitsu आपके खाते के साथ होने वाले क
     <string name="anilist_broken">AniList प्रतिक्रियाशील दिखता है और कार्यक्षमता बहुत प्रतिबंधित होगी। क्या आप ऐप को बंद करना और बाद में पुन: प्रयास करना चाहेंगे?\n</string>
     <string name="search_title">%1$s खोजें</string>
     <string name="profile_stats_widget">अपने होम स्क्रीन से प्रगति को सीधे ट्रैक करें</string>
-    <string name="anime_watched">एनिमे\nदेखा गया</string>
-    <string name="manga_read">मंगा\nपढ़ा गया</string>
-    <string name="chapters_read_n">अध्याय\nपढ़ें</string>
-    <string name="episodes_watched_n">एपिसोड\nदेखा</string>
+    <string name="anime_watched">एनिमे</string>
+    <string name="manga_read">मंगा</string>
+    <string name="chapters_read_n">अध्याय</string>
+    <string name="episodes_watched_n">एपिसोड</string>
     <string name="loading">लोड हो रहा है...</string>
     <string name="user_stats">%1$s की आँकड़े</string>
     <string name="please">कृपया</string>
@@ -982,8 +983,8 @@ Himitsu आपके खाते के साथ होने वाले क
     <string name="download_started">डाउनलोड शुरू हो गया</string>
     <string name="downloads_completed">सभी डाउनलोड पूर्ण हो गए</string>
     <string name="pending_downloads">अपूर्ण डाउनलोड: %1$d</string>
-    <string name="reading">रीडिंग</string>
-    <string name="watching">देखना</string>
+    <string name="reading">पढ़ना</string>
+    <string name="watching">देख रहा है</string>
     <string name="avatar">%1$s\ [अवतार]</string>
     <string name="cover">%1$s\ [कवर]</string>
     <string name="banner">%1$s\ [बैनर]</string>

@@ -44,10 +44,10 @@
     <string name="username">Uživatelské jméno</string>
     <string name="chapters_read">Přečtené kapitoly</string>
     <string name="episodes_watched">Obezřetnosti sledované díly</string>
-    <string name="continue_reading">Pokračujte ve čtení</string>
-    <string name="continue_watching">Pokračujte ve sledování</string>
+    <string name="continue_reading">Pokračovat ve čtení</string>
+    <string name="continue_watching">Pokračovat ve sledování</string>
     <string name="continue_media">Pokračovat…</string>
-    <string name="recommended">Doporučeno</string>
+    <string name="recommended">Doporučené</string>
     <string name="get_recommendations">Sledujte/čtěte nějaký Anime nebo Manga, abyste získali doporučení</string>
     <string name="empty">Vše dohromady, kdy nové?</string>
     <string name="action_settings">Nastavení</string>
@@ -77,16 +77,16 @@
         <item>SLEDUJI</item>
         <item>DOKONČENO</item>
         <item>ZNOVU SLEDUJI</item>
-        <item>PŘERUŠENO</item>
-        <item>DROPPED</item>
+        <item>POZASTAVENO</item>
+        <item>ZRUŠENO</item>
     </string-array>
     <string-array name="status_manga">
         <item>PLÁNOVÁNÍ</item>
-        <item>ČTU</item>
+        <item>ČTENÍ</item>
         <item>DOKONČENO</item>
         <item>ZNOVU ČTU</item>
-        <item>PŘERUŠENO</item>
-        <item>DROPPED</item>
+        <item>POZASTAVENO</item>
+        <item>ZRUŠENO</item>
     </string-array>
     <string name="progress">POKROK</string>
     <string name="score">SKÓRE</string>
@@ -124,8 +124,8 @@
     <string name="trailer_yt">Upoutávka na YouTube</string>
     <string name="eps">Epizody</string>
     <string name="ep">Epizoda</string>
-    <string name="chaps">Kapitoly</string>
-    <string name="chap">Kapitola</string>
+    <string name="chaps">Kapitola</string>
+    <string name="chap">KAPITOLA 1 1 —</string>
     <string name="wrong"><u>Špatný Název?</u></string>
     <string name="source_not_found">        Nic se nenašlo X( \n
         Zkuste jiný zdroj.
@@ -170,7 +170,7 @@
     <string name="extension_updates_available">Dostupné aktualizace rozšíření</string>
     <string name="player_settings">Nastavení přehrávače</string>
     <string name="recentlyListOnly">Pouze můj obsah v \"Nedávno aktualizovaný\"</string>
-    <string name="download_manager_select">Správce Stažení</string>
+    <string name="download_manager_select">Správce stahování</string>
     <string name="downloadInSd">Stáhnout na SD kartu</string>
     <string name="noSdFound">Nenalezena žádná SD karta.</string>
     <string name="reader_settings">Nastavení Čtenáře</string>
@@ -278,6 +278,7 @@
     <string name="skip_time_info">Nastavení na 0 skryje tlačítko Přeskočit.</string>
     <string name="show_cast_button">Zobrazit tlačítko Obsazení</string>
     <string name="show_cast_button_info">Vyžaduje aplikaci \"Web Video Caster\" k přehrávání.</string>
+    <string name="picture_in_picture">Obrázek v obraze</string>
     <string name="always_minimize">Vždy minimalizovat</string>
     <string name="always_minimize_info">Vyžaduje povolení PiP, chová se jako přehrávač YouTube, ale lépe.\nTaké skryje tlačítko PiP.</string>
     <string name="app">Aplikace</string>
@@ -287,13 +288,13 @@
     <string name="home_layout_show">Zobrazit/Skrýt rozložení na úvodní stránce</string>
     <string-array name="home_layouts">
         <item>Odběry</item>
-        <item>Pokračujte ve sledování</item>
-        <item>Oblíbené Anime</item>
+        <item>Pokračovat ve sledování</item>
+        <item>Oblíbená Anime</item>
         <item>Plánované Anime</item>
-        <item>Pokračujte ve čtení</item>
-        <item>Oblíbené Manga</item>
+        <item>Pokračovat ve čtení</item>
+        <item>Oblíbená Manga</item>
         <item>Plánovaná Manga</item>
-        <item>Doporučeno</item>
+        <item>Doporučené</item>
         <item>Sociální kanály</item>
     </string-array>
     <string name="notification_page">Výchozí záložka s oznámeními</string>
@@ -319,8 +320,8 @@
     <string name="animation_speed">Celková rychlost</string>
     <string name="empty_fav">Zkuste něco přidat, abyste to tady měli.</string>
     <string name="no_suggestions">Stále se snažíme poznat vás.</string>
-    <string name="fav_anime">Oblíbené Anime</string>
-    <string name="fav_manga">Oblíbené Manga</string>
+    <string name="fav_anime">Oblíbená Anime</string>
+    <string name="fav_manga">Oblíbená Manga</string>
     <string name="restart_app">Restartovat aplikaci?</string>
     <string name="next">Další</string>
     <string name="previous">Předchozí</string>
@@ -536,8 +537,8 @@
     <string name="chapter_delayed">Nová kapitola se zdá být zpožděna</string>
     <string-array name="sort_by">
         <item>Skóre</item>
+        <item>Oblíbené</item>
         <item>Populární</item>
-        <item>Trendující</item>
         <item>Nové vydání</item>
         <item>A-Z</item>
         <item>Z-A</item>
@@ -656,8 +657,8 @@
     <string name="unsubscribed_notification">Odhlášeno, nebudete dostávat žádná oznámení.</string>
     <string name="episode_plural">Epizody</string>
     <string name="episode_singular">Epizoda</string>
-    <string name="chapter_singular">Kapitola</string>
-    <string name="chapter_plural">Kapitoly</string>
+    <string name="chapter_singular">KAPITOLA 1 1 —</string>
+    <string name="chapter_plural">Kapitola</string>
     <string name="filter_status">"Stav: %1$s"</string>
     <string name="filter_source">"Zdroj: %1$s"</string>
     <string name="filter_format">"Formát: %1$s"</string>
@@ -791,7 +792,7 @@
     <string name="password_cannot_be_empty">Heslo nesmí být prázdné</string>
     <string name="unknown_file_type">Neznámý typ souboru</string>
     <string name="error_importing_settings">Chyba při importu nastavení</string>
-    <string name="download_manager">Správce Stažení</string>
+    <string name="download_manager">Správce stahování</string>
     <string name="enter_password">Zadejte heslo</string>
     <string name="you_cursed">Byl jste zaklet</string>
     <string name="invalid_file_type">Neplatný typ souboru</string>
@@ -835,7 +836,7 @@
     <string name="profile_stats_widget">Sledovat postup přímo z domovské obrazovky</string>
     <string name="anime_watched">Anime</string>
     <string name="manga_read">Manga</string>
-    <string name="chapters_read_n">Kapitoly</string>
+    <string name="chapters_read_n">Kapitola</string>
     <string name="episodes_watched_n">Epizody</string>
     <string name="loading">Načítání…</string>
     <string name="user_stats">Statistiky uživatele %1$s</string>
@@ -914,8 +915,8 @@
     <string name="taiwan">Tchaj-wan</string>
     <string name="something">Něco</string>
     <string name="sort_score">Skóre</string>
-    <string name="popular">Populární</string>
-    <string name="trending">Trendující</string>
+    <string name="popular">Oblíbené</string>
+    <string name="trending">Populární</string>
     <string name="new_releases">Nové vydání</string>
     <string name="a_z">A-Z</string>
     <string name="z_a">Z-A</string>
@@ -980,7 +981,7 @@
     <string name="download_started">Stahování spuštěno</string>
     <string name="downloads_completed">Všechna stahování dokončena</string>
     <string name="pending_downloads">Čekající stahování: %1$d</string>
-    <string name="reading">ČTU</string>
+    <string name="reading">ČTENÍ</string>
     <string name="watching">SLEDUJI</string>
     <string name="avatar">%1$s\ [Avatar]</string>
     <string name="cover">%1$s\ [Obal]</string>

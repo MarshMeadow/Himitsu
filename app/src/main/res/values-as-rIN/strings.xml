@@ -12,9 +12,9 @@
     <string name="conversion_message">আপুনি এটা পুৰাণৰ পেকেজ স্থাপন কৰা আছে।\nঅনুগ্ৰহ কৰি পুৰাণৰ সংস্কৰণ খোলিবলৈ \"বেকআপ\" নিৰ্বাচন কৰক আৰু এটা বেকআপ কাৰ্য সম্পাদনা কৰক। তাহলে আপোনাৰ ইয়াত পৰা এই এপ্পত পুনৰ সেটিংছ \"পূনৰ্স্থাপন কৰক\" ব্যৱহাৰ কৰিব পাৰে।</string>
     <string name="backup">বেকআপ</string>
     <string name="home">হম</string>
-    <string name="anime">এনিমে</string>
+    <string name="anime">অনিমে\nচাইছিল</string>
     <string name="browse_anime">এনিমে ব্ৰাউজ কৰক</string>
-    <string name="manga">মাংগা</string>
+    <string name="manga">মাংগা\nপঢ়িছিল</string>
     <string name="browse_manga">মাংগা ব্ৰাউজ কৰক</string>
     <string name="novel">উপন্যাস</string>
     <string name="novels">উপন্যাস</string>
@@ -62,7 +62,7 @@
         <item>বিৰম্ভিত</item>
         <item>প্ৰস্থান কৰা</item>
         <item>পৰিকল্পনা</item>
-        <item>প্ৰিয়</item>
+        <item>প্ৰিয়</item>
         <item>পুনৰ দেখা</item>
         <item>পুনৰ পড়া</item>
         <item>সকল</item>
@@ -74,7 +74,7 @@
     <string name="status">ষ্টেটাছ</string>
     <string-array name="status_anime">
         <item>পৰিকল্পনা</item>
-        <item>দেখা হোৱা</item>
+        <item>দেখা</item>
         <item>সম্পন্ন</item>
         <item>পুনৰ দেখা</item>
         <item>বিৰম্ভিত</item>
@@ -117,15 +117,15 @@
     <string name="characters">চৰিত্ৰ</string>
     <string name="relations">সম্পৰ্ক</string>
     <string name="staff">কাৰ্যকাৰীসমূহ</string>
-    <string name="favourites">প্ৰিয়</string>
+    <string name="favourites">প্ৰিয়</string>
     <string name="popularity">জনপ্ৰিয়তা</string>
     <string name="roles">ভূমিকা</string>
     <string name="details">বিবৰণী</string>
     <string name="trailer_yt">YouTubeত প্ৰদৰ্শিতা</string>
-    <string name="eps">এপিষদছ</string>
-    <string name="ep">এপিষদ</string>
-    <string name="chaps">চাপ্তেৰছ</string>
-    <string name="chap">চাপ্তেৰ</string>
+    <string name="eps">চোৱা\n খণ্ডসমূহ</string>
+    <string name="ep">এপিস\'ড</string>
+    <string name="chaps">পঢ়া\nঅধ্যায়সমূহ</string>
+    <string name="chap">চাপ্টাৰ</string>
     <string name="wrong"><u>ভুল শিৰোনাম?</u></string>
     <string name="source_not_found">        সৰ্চ কৰা নগ\'ল X( \n
         অন্য উৎস প্ৰয়াস কৰক।
@@ -162,15 +162,15 @@
     <string name="enable_server_temp">অস্থায়ীভাৱে TorrServer (অ্যাপ বন্ধ কৰিলে নিষ্ক্ৰিয়) সক্ৰিয় কৰিবলৈ আপুনি কেইটা বিচাৰে?</string>
     <string name="peer_count_low">কম পীৰ গণনা কৰা হৈছে!</string>
     <string name="anilist_settings">AniList ছেটিংস</string>
-    <string name="extension_settings">এক্সটেনচনসমূহ</string>
+    <string name="extension_settings">এক্সটেনচন</string>
     <string name="downloads">ডাউনলোডছ</string>
     <string name="offline_mode">অফলাইন মোড</string>
     <string name="settings">চেটিংছসমূহ</string>
-    <string name="extensions">এক্সটেনচনসমূহ</string>
+    <string name="extensions">এক্সটেনচন</string>
     <string name="extension_updates_available">সম্প্ৰসাৰণ আপডেট উপলব্ধ</string>
     <string name="player_settings">প্লেয়াৰ চেটিংছ</string>
     <string name="recentlyListOnly">সম্প্ৰতিকতম অপশনসমূহত মাত্ৰ মোৰ দেখা অনুমোদন দিব</string>
-    <string name="download_manager_select">ডাউনলোড ম্যানেজাৰ চয়ন কৰক</string>
+    <string name="download_manager_select">ডাউনল’ড ম্যানেজাৰ বাছনি কৰক</string>
     <string name="downloadInSd">SD কাৰ্ডত ডাউনলোড কৰক</string>
     <string name="noSdFound">কোনো SD কাৰ্ড পোৱা নাই।</string>
     <string name="reader_settings">পঠন চেটিংসমূহ</string>
@@ -227,7 +227,7 @@
     <string name="default_playback_speed">ডিফ\'ল্ট প্ৰতিধ্বনি দ্ৰুতি: %1$s</string>
     <string name="cursed_speeds">প্ৰতিধ্বনি দ্ৰুতি</string>
     <string name="scrub_preview">ভিডিঅ\' অনুসন্ধান পূৰ্বদৃশ্য</string>
-    <string name="resize_mode_button">ডিফ\'ল্ট পুনঃ আকাৰ মোড</string>
+    <string name="resize_mode_button">ডিফল্ট ৰিচাইজ় মোড</string>
     <string name="exceed_cap">নিঝোকহীন সামৰ্থ্য</string>
     <string name="exceed_cap_desc">চাওঁনী গুৰুত্ব লংঘনৰ পৰেহি আতিতোৱা প্ৰয়োগ কৰাও দিয়াক</string>
     <string name="subtitles">উপশিৰোণ</string>
@@ -241,7 +241,7 @@
     <string name="sub_color_info"><b>নোট:</b> চৌবানি ৰাখিবলৈ কেৱল \"সফ্ট\" উপশিৰোণেই প্ৰয়োগ কৰা হ\'য়!</string>
     <string name="sub_alpha">উপশীৰ্ষক স্বচ্ছতা </string>
     <string name="sub_text_example">উপশিৰোণৰ প্ৰিভিউ</string>
-    <string name="sub_font_select">উপশিৰোণৰ ফন্ট</string>
+    <string name="sub_font_select">সাবটাইটেল ফন্ট</string>
     <string name="subtitle_font_size">উপশিৰোণৰ মাপ</string>
     <string name="no_subs_available">উপশিৰ উপস্তিত নাই</string>
     <string name="auto">অট\'</string>
@@ -274,6 +274,7 @@
     <string name="skip_time_info">সেটিং 0 কৰি অনুপ্ৰান্ত বুটাম লুকাই।</string>
     <string name="show_cast_button">কাষ্ট বুটাম দেখাৰ বাবে</string>
     <string name="show_cast_button_info">কাষ্ট কৰিবলৈ \"ওয়েব ভিডিঅ’ কাষ্টাৰ\" এপ প্ৰয়োজন।</string>
+    <string name="picture_in_picture">পিক্চাৰ ইন পিক্চাৰ</string>
     <string name="always_minimize">সদা নিম্নস্থানত দেখুৱাওক</string>
     <string name="always_minimize_info">PiP সক্ৰিয় কৰিবলৈ প্ৰয়োজনীয়, প্লেয়াৰটোক ইউটিউব প্লেয়াৰৰ পৰা আচৰণ কৰি মেজব থকা কৰি।\nএতিয়া PiP বুটাম লুকাই।</string>
     <string name="app">অৱলোকন</string>
@@ -441,7 +442,7 @@
     <string name="update_complete">আপডেট পুৰ্ণ হ\'ল</string>
     <string name="extension_updated">এক্সটেনচন সফলভাৱে আপডেট কৰা হ\'ল</string>
     <string name="extension_removed">এক্সটেনচন আঁইই হ’ল</string>
-    <string name="error_message">ভুল %1$s</string>
+    <string name="error_message">ত্ৰুটি: %1$s</string>
     <string name="installer_step">পদ: %1$s</string>
     <string name="review">সমীক্ষা</string>
     <string name="select_source">এটা উৎস চয়ন কৰক</string>
@@ -572,11 +573,11 @@
     <string name="incognito_will_not_update">গোপনীয় মোড এতিয়াৰ পৰিগুণীয় উন্নীতকৰণ কৰিব নহয়।.</string>
     <string name="dont_ask_again">"%1$sৰ বাবে আৰু নোহোৱা"</string>
     <string name="default_speed">ডিফল্ট গতি</string>
-    <string name="default_resize_mode">ডিফল্ট ৰিচাইজ় মোড</string>
+    <string name="default_resize_mode">ডিফ\'ল্ট পুনঃ আকাৰ মোড</string>
     <string name="primary_sub_color">প্ৰাথমিক সাব ৰঙ</string>
     <string name="outline_sub_color">আউটলাইন সাব ৰঙ</string>
     <string name="outline_type">আউটলাইন ধৰণ</string>
-    <string name="subtitle_font">সাবটাইটেল ফন্ট</string>
+    <string name="subtitle_font">উপশিৰোণৰ ফন্ট</string>
     <string name="launch_application">পৃষ্ঠা %1$s লঞ্চ কৰিব চাওঁক। অনুমতি দিব?</string>
     <string name="yes">হয়</string>
     <string name="no">নহয়</string>
@@ -650,10 +651,10 @@
     <string name="answer_17">হিমত্সু লগৰোডত লগ ইন কৰাৰ পৰা নতুন উডেট আছে কোনো চেক কৰিব পাৰে।</string>
     <string name="subscribed_notification">সাবস্ক্ৰাইব কৰা! যখনো নতুন এপিস\'ডসমূহ মুক্তি পাব Dantotsu-ত %1$s তে।</string>
     <string name="unsubscribed_notification">সাবস্ক্ৰাইব কৰা হৈছে, আপুনি যেনেই কোনো নতুন প্ৰকাশ পাবনা।</string>
-    <string name="episode_plural">এপিস\'ডসমূহ</string>
-    <string name="episode_singular">এপিস\'ড</string>
+    <string name="episode_plural">চোৱা\n খণ্ডসমূহ</string>
+    <string name="episode_singular">এপিষদ</string>
     <string name="chapter_singular">চাপ্টাৰ</string>
-    <string name="chapter_plural">চাপ্টাৰসমূহ</string>
+    <string name="chapter_plural">পঢ়া\nঅধ্যায়সমূহ</string>
     <string name="filter_status">"স্থিতি : %1$s"</string>
     <string name="filter_source">"উৎস : %1$s"</string>
     <string name="filter_format">"ফৰ্মেট: %1$s"</string>
@@ -679,7 +680,7 @@
 হিমিট্সু আপুনাৰ একাউণ্টত ঘটোৱাৰ দায়ৰ নকৰিব।</string>
     <string name="warning">সাবদ্ধৰণা</string>
     <string name="force_legacy_installer">পুৰন ইনষ্টলাৰ বাধান বাৰদি</string>
-    <string name="extensions_settings">এক্সটেনচন</string>
+    <string name="extensions_settings">এক্সটেনচনসমূহ</string>
     <string name="NSFWExtention">NSFW এক্সটেনচনসমূহ</string>
     <string name="skip_loading_extension_icons">এক্সটেনচন আইকন ল\'ড কৰিব না</string>
     <string name="use_material_you">পদাৰ্থ তুমি ব্যৱহাৰ কৰক</string>
@@ -752,7 +753,7 @@
     <string name="mutual">সহকৰ্মী</string>
     <string name="success">সফলতা</string>
     <string name="error">কিবা ত্ৰুটি হৈছে</string>
-    <string name="error_msg">ত্ৰুটি: %1$s</string>
+    <string name="error_msg">ভুল %1$s</string>
     <string name="please_wait">অপেক্ষা কৰক</string>
     <string name="upcoming">আসন্ন</string>
     <string name="no_shows_to_display">দেখাব কোনো প্ৰদৰ্শনী নাই</string>
@@ -793,7 +794,7 @@
     <string name="password_cannot_be_empty">পাছৱাৰ্ড খালী হৈ নিব নোৱাৰে</string>
     <string name="unknown_file_type">অজ্ঞাত ফাইল ধৰণ</string>
     <string name="error_importing_settings">ছেটিংস আমদানি কৰাৰ সময় ত্ৰুটি হৈছে</string>
-    <string name="download_manager">ডাউনল’ড ম্যানেজাৰ বাছনি কৰক</string>
+    <string name="download_manager">ডাউনলোড ম্যানেজাৰ চয়ন কৰক</string>
     <string name="enter_password">পাছৱাৰ্ড এন্টাৰ কৰক</string>
     <string name="you_cursed">আপুনি শীঘ্ৰত শাপিত হৈ গৈছে :pwayge:</string>
     <string name="invalid_file_type">অবৈধ ফাইলৰ ধৰণ</string>
@@ -835,10 +836,10 @@
     <string name="anilist_broken">AniList উপলব্ধ নহয় আৰু কাম্যতা অত্যন্ত সীমাবদ্ধ হ\'ব। কি আপুনি এপটো বন্ধ কৰিব আৰু পিছতে পুনৰা চেষ্টা কৰিব বিচাৰে?”</string>
     <string name="search_title">অনুসন্ধান %1$s</string>
     <string name="profile_stats_widget">আপোনাৰ হোম স্ক্ৰীনৰ পৰা প্ৰগতি ট্ৰেক কৰক</string>
-    <string name="anime_watched">অনিমে\nচাইছিল</string>
-    <string name="manga_read">মাংগা\nপঢ়িছিল</string>
-    <string name="chapters_read_n">পঢ়া\nঅধ্যায়সমূহ</string>
-    <string name="episodes_watched_n">চোৱা\n খণ্ডসমূহ</string>
+    <string name="anime_watched">এনিমে</string>
+    <string name="manga_read">মাংগা</string>
+    <string name="chapters_read_n">চাপ্টাৰসমূহ</string>
+    <string name="episodes_watched_n">এপিস\'ডসমূহ</string>
     <string name="loading">লোড হচ্ছে…</string>
     <string name="user_stats">%1$s পৰিসংখ্যা</string>
     <string name="please">অনুগ্ৰহ কৰি</string>
@@ -983,7 +984,7 @@
     <string name="downloads_completed">সকলো ডাউনল\'ড পূৰ্ণ হৈছে</string>
     <string name="pending_downloads">বাকী ডাউনল\'ডসমূহ: %1$d</string>
     <string name="reading">পড়া</string>
-    <string name="watching">দেখা</string>
+    <string name="watching">দেখা হোৱা</string>
     <string name="avatar">%1$s [অৱতাৰ]</string>
     <string name="cover">%1$s [কভাৰ]</string>
     <string name="banner">%1$s [বেননাৰ]</string>

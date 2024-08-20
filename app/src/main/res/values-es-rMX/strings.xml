@@ -10,7 +10,7 @@
     <string name="extension_notice_desc">Himitsu sigue un formato de \"traer su propio depósito\". Si bien se admiten extensiones, los índices deben ser proporcionados por el usuario. Sin embargo, el soporte para muchos servicios de transmisión populares está incluido de serie.</string>
     <string name="conversion_title">¡Bienvenido de nuevo!</string>
     <string name="conversion_message">Parece que tiene un paquete antiguo instalado.\nPor favor, seleccione \"Copia de seguridad\" para abrir la versión anterior y realizar una copia de seguridad. Luego puede volver a esta aplicación y utilizar \"Restaurar configuración\".</string>
-    <string name="backup">Respaldo</string>
+    <string name="backup">Copia de seguridad</string>
     <string name="home">Inicio</string>
     <string name="anime">Anime</string>
     <string name="browse_anime">Explorar Anime</string>
@@ -47,7 +47,7 @@
     <string name="continue_reading">Continuar Leyendo</string>
     <string name="continue_watching">Continuar Viendo</string>
     <string name="continue_media">Continuar…</string>
-    <string name="recommended">Recomendado</string>
+    <string name="recommended">Recomendados</string>
     <string name="get_recommendations">Mira/Lee algún Anime o Manga para obtener Recomendaciones</string>
     <string name="empty">¡Todo al día!, ¿cuándo hay Novedades?</string>
     <string name="action_settings">Ajustes</string>
@@ -122,7 +122,7 @@
     <string name="roles">Roles</string>
     <string name="details">Detalles</string>
     <string name="trailer_yt">Tráiler en YouTube</string>
-    <string name="eps">Episodios</string>
+    <string name="eps">Capitulos</string>
     <string name="ep">Episodio</string>
     <string name="chaps">Capítulos</string>
     <string name="chap">Capítulo</string>
@@ -274,6 +274,7 @@
     <string name="skip_time_info">Configurando a 0, oculta el botón de salto.</string>
     <string name="show_cast_button">Mostrar botón de transmitir</string>
     <string name="show_cast_button_info">Requiere la aplicación \"Web Video Caster\" para lanzar.</string>
+    <string name="picture_in_picture">Fotografía en foto</string>
     <string name="always_minimize">Siempre minimizar</string>
     <string name="always_minimize_info">Requiere que PiP esté habilitado, hace que el reproductor se comporte como el reproductor de YouTube pero mejor.\nTambién oculta el botón de PiP.</string>
     <string name="app">Aplicación</string>
@@ -285,11 +286,11 @@
         <item>Suscripciones</item>
         <item>Continuar Viendo</item>
         <item>Anime Favorito</item>
-        <item>Anime Planeado</item>
+        <item>Animes pendientes</item>
         <item>Continuar Leyendo</item>
         <item>Manga Favorito</item>
-        <item>Manga Planeado</item>
-        <item>Recomendados</item>
+        <item>Mangas pendientes</item>
+        <item>Recomendado</item>
         <item>Feeds sociales</item>
     </string-array>
     <string name="notification_page">Pestaña de notificaciones predeterminada</string>
@@ -377,8 +378,8 @@
     <string name="include_media_in_list">Incluir lista</string>
     <string name="release_calendar">Calendario</string>
     <string name="review_type">%1$s Reseñas</string>
-    <string name="planned_anime">Animes pendientes</string>
-    <string name="planned_manga">Mangas pendientes</string>
+    <string name="planned_anime">Anime Planeado</string>
+    <string name="planned_manga">Manga Planeado</string>
     <string name="image_long_clicking">Abrir imagen haciendo un clic largo</string>
     <string name="always_continue_content">Continuar contenido anterior</string>
     <string name="descending_items">Lista en orden descendente</string>
@@ -520,9 +521,9 @@
         <item>Calificación</item>
         <item>Popular</item>
         <item>Tendencias</item>
-        <item>Nuevos lanzamientos</item>
         <item>A-Z</item>
         <item>Z-A</item>
+        <item>Puro dolor</item>
         <item>Dolor Puro</item>
     </string-array>
     <string name="main_role">PRINCIPAL</string>
@@ -636,7 +637,7 @@
     <string name="answer_17">A continuación se presentan algunos consejos y trucos que puede o no conocerás - \n \n \n - Pulsando el logo del Himitsu en ajustes, puede comprobar si hay nuevas actualizaciones manualmente. \n \n - Mantenga presionado un mensaje de error/tag/sinónimo o el título lo copiará. \n \n - Puedes abrir un episodio con otras aplicaciones manteniendo presionado cualquier servidor para ese episodio. Esto ayuda a transmitir el episodio usando otros reproductores de vídeo o a descargar el episodio usando gestores de descargas. \n \n - Puedes configurar listas personalizadas usando esta [link](https://anilist.co/settings/lists). (necesitas iniciar sesión) \n \n - Si tu episodio/capítulo no está siendo progresado automáticamente después de terminar de verlo/leerlo, luego mantenga presionada la barra de estado (botón planificar/repetir/ver) de ese anime/manga. La próxima vez que inicies un capítulo/termines un episodio, tropezarás con una ventana emergente. Pulsa sí allí. </string>
     <string name="subscribed_notification">¡Suscrito! Recibiendo notificaciones cuando se lanzan nuevos episodios en %1$s.</string>
     <string name="unsubscribed_notification">Dado de baja, no recibirás ninguna notificación.</string>
-    <string name="episode_plural">Episodios</string>
+    <string name="episode_plural">Capitulos</string>
     <string name="episode_singular">Episodio</string>
     <string name="chapter_singular">Capítulo</string>
     <string name="chapter_plural">Capítulos</string>
@@ -813,7 +814,7 @@ Himitsu no se hace responsable de nada que ocurra en tu cuenta.</string>
     <string name="size_unknown">Tamaño desconocido</string>
     <string name="mb_size">%1$s MB</string>
     <string name="button_restore">Restaurar</string>
-    <string name="button_backup">Copia de seguridad</string>
+    <string name="button_backup">Respaldo</string>
     <string name="no_location_selected">Ubicación no seleccionada</string>
     <string name="do_it">¡Hazlo!</string>
     <string name="password">Contraseña</string>
@@ -824,7 +825,7 @@ Himitsu no se hace responsable de nada que ocurra en tu cuenta.</string>
     <string name="anime_watched">Anime</string>
     <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Capítulos</string>
-    <string name="episodes_watched_n">Capitulos</string>
+    <string name="episodes_watched_n">Episodios</string>
     <string name="loading">Cargando…</string>
     <string name="user_stats">Estadísticas de %1$s\'s</string>
     <string name="please">Por favor</string>
@@ -904,7 +905,7 @@ Himitsu no se hace responsable de nada que ocurra en tu cuenta.</string>
     <string name="sort_score">Calificación</string>
     <string name="popular">Popular</string>
     <string name="trending">Tendencias</string>
-    <string name="new_releases">A-Z</string>
+    <string name="new_releases">Nuevos lanzamientos</string>
     <string name="a_z">Z-A</string>
     <string name="z_a">Puro dolor</string>
     <string name="pure_pain">Dolor puro</string>
