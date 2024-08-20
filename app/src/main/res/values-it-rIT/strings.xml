@@ -12,7 +12,7 @@
     <string name="conversion_message">Sembra che tu abbia un pacchetto più vecchio installato.\nPer favore, seleziona \"Backup\" per aprire la versione più vecchia ed eseguire un backup. Poi puoi tornare a questa app e utilizzare \"Ripristina impostazioni\".</string>
     <string name="backup">Backup</string>
     <string name="home">Home</string>
-    <string name="anime">Animazione</string>
+    <string name="anime">Anime</string>
     <string name="browse_anime">Sfoglia gli Anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Sfoglia i Manga</string>
@@ -134,7 +134,7 @@
     <string name="server_selector">Seleziona il Server</string>
     <string name="auto_select_server">Selezionando Automaticamente il Server</string>
     <string name="make_default">Rendi Predefinito</string>
-    <string name="filler">Riempimento</string>
+    <string name="filler">Filler</string>
     <string name="adult">Adulto</string>
     <string name="list_only">Solo la Lista</string>
     <string name="tag">Etichetta</string>
@@ -274,7 +274,7 @@
     <string name="skip_time_info">Impostando a 0, si nasconde il Pulsante Salta.</string>
     <string name="show_cast_button">Mostra il Pulsante Trasmetti</string>
     <string name="show_cast_button_info">Richiede l\'app \"Web Video Caster\" per trasmettere.</string>
-    <string name="picture_in_picture">Immagine nella Immagine</string>
+    <string name="picture_in_picture">Picture in Picture</string>
     <string name="always_minimize">Minimizza Sempre</string>
     <string name="always_minimize_info">Richiede che il PiP sia abilitato, fa sì che il lettore video si comporti come il Lettore Youtube ma meglio.\nNasconde anche il pulsante PiP.</string>
     <string name="app">App</string>
@@ -389,7 +389,7 @@
     <string name="check_app_updates">Verifica gli Aggiornamenti</string>
     <string name="author">Autore</string>
     <string name="forks">Versioni</string>
-    <string name="faq">Domande frequenti</string>
+    <string name="faq">FAQ</string>
     <string name="accounts">Account</string>
     <string name="addons">Add-on</string>
     <string name="addons_desc">Ottieni più funzioni dalla tua app</string>
@@ -453,7 +453,7 @@
     <string name="discord_nothing_button">Mostra solo il primo pulsante</string>
     <string name="discord_himitsu_button">Mostra Himitsu nel secondo pulsante</string>
     <string name="discord_anilist_button">Mostra invece il tuo profilo AniList</string>
-    <string name="discord_rich_presence">Presenza Discord ricca</string>
+    <string name="discord_rich_presence">Discord Rich Presence</string>
     <string name="stream_on_himitsu">Trasmetti su Himitsu</string>
     <string name="discord_rpc">Mostra Discord Rich Presence</string>
     <string name="jobless_message">DANNAZIONE! SEI DAVVERO SENZA LAVORO\nHAI RAGGIUNTO LA FINE</string>
@@ -557,7 +557,7 @@
     <string name="type_contains">CONTIENE</string>
     <string name="view_profile_in_himitsu">Vedi Profilo in Himitsu</string>
     <string name="continue_episode">Continua : Episodio %1$s%2$s\n%3$s</string>
-    <string name="filler_tag"> - Riempitivo</string>
+    <string name="filler_tag"> - Filler</string>
     <string name="continue_chapter">Continua : %1$s\n%2$s</string>
     <string name="episode">"Episodio "</string>
     <string name="episode_num">Episodio %1$s</string>
@@ -591,7 +591,7 @@
     <string name="content_18">Attiva il contenuto 18+ dalle tue impostazioni AniList</string>
     <string name="available">Disponibile</string>
     <string name="lets_go">Andiamo</string>
-    <string name="cope">Affronta</string>
+    <string name="cope">Cope</string>
     <string name="watched_num">"Guardato/i "</string>
     <string name="read_num">"Letto/i "</string>
     <string name="items_out_of">" su "</string>
@@ -793,7 +793,7 @@
     <string name="you_cursed">Sei stato maledetto</string>
     <string name="invalid_file_type">Tipo di file non valido</string>
     <string name="purge_confirm">Sei sicuro di voler eliminare tutti i download di %1$s?</string>
-    <string name="delete_content">Sei sicuro di voler eliminare %1$s?</string>
+    <string name="delete_content">Are you sure you want to delete %1$s?</string>
     <string name="delete_item">Cancellare %1$s?</string>
     <string name="deleted_item">%1$s cancellato</string>
     <string name="multi_download_chapter">Scaricatore Multi Capitolo</string>
@@ -830,7 +830,7 @@
     <string name="anilist_broken">AniList sembra essere non reattivo e le funzionalità saranno gravemente limitate. Vorresti chiudere l\'app e riprovare più tardi?\n</string>
     <string name="search_title">Ricerca %1$s</string>
     <string name="profile_stats_widget">Traccia i progressi direttamente dalla tua schermata home</string>
-    <string name="anime_watched">Animazione</string>
+    <string name="anime_watched">Anime</string>
     <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Capitoli</string>
     <string name="episodes_watched_n">Episodi</string>
@@ -880,7 +880,7 @@
     <string name="download_permission_required">È richiesta l\'autorizzazione per scaricare</string>
     <string name="media">Media</string>
     <string name="users">Utenti</string>
-    <string name="social">Sociale</string>
+    <string name="social">Social</string>
     <string name="auto_skip_recap">Salta Automaticamente il Riassunto</string>
     <string name="use_anilist_icon">Usa l\'Icona di AniList</string>
     <string name="exo_source_exception">Errore della Fonte: %1$s</string>
@@ -980,7 +980,7 @@
     <string name="reading">LEGGENDO</string>
     <string name="watching">GUARDANDO</string>
     <string name="avatar">%1$s\ [Avatar]</string>
-    <string name="cover">%1$s\ [Copertina]</string>
+    <string name="cover">%1$s\ [Cover]</string>
     <string name="banner">%1$s\ [Banner]</string>
     <string name="update_webview">Aggiorna WebView da Google Play per favore</string>
     <string name="update_webview_version">La versione di Webview %1$d richiede l\'aggiornamento</string>
