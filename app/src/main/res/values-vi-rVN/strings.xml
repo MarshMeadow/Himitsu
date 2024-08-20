@@ -16,6 +16,7 @@
     <string name="browse_anime">Duyệt Anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Duyệt Manga</string>
+    <string name="novel">Tiểu thuyết</string>
     <string name="novels">Truyện</string>
     <string name="info">Thông tin</string>
     <string name="watch">Xem</string>
@@ -615,7 +616,7 @@
     <string name="male">Nam</string>
     <string name="female">Nữ</string>
     <string name="question_1">Himitsu là gì?</string>
-    <string name="answer_1">Dantotsu đã hợp nhất các thành phần của Aniyomi vào mã nguồn chính của Saikou, nhưng sau đó Himitsu đã tách ra từ Dantotsu và bắt đầu cải thiện nó. Đó chủ yếu là một ứng dụng dành riêng cho AniList, cũng hỗ trợ các tiện ích mở rộng. \n>Himitsu (秘密; Him-itsu) có nghĩa là \"bí mật\" trong tiếng Nhật. Psst. Đó là một bí mật quá tuyệt vời nên ngay cả cái tên cũng bị cấm.</string>
+    <string name="answer_1">Dantotsu đã hợp nhất các thành phần của Aniyomi vào mã nguồn chính của Saikou, nhưng sau đó Himitsu đã tách ra từ Dantotsu và bắt đầu cải thiện nó. Đó chủ yếu là một ứng dụng dành riêng cho AniList, cũng hỗ trợ các tiện ích mở rộng. \n&gt;Himitsu (秘密; Him-itsu) có nghĩa là \"bí mật\" trong tiếng Nhật. Psst. Đó là một bí mật quá tuyệt vời nên ngay cả cái tên cũng bị cấm.</string>
     <string name="question_2">Các tính năng của Himitsu là gì?</string>
     <string name="answer_2">Nếu liệt kê mọi thứ mà Dantotsu cố gắng đạt được, thì Himitsu đã thêm vào nó. Cách tốt nhất của bạn là ghé thăm trang [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) và đọc README.</string>
     <string name="question_3">Sự khác biệt giữa các phiên bản Ổn định, Beta &amp; Alpha là gì?</string>
@@ -631,7 +632,7 @@
     <string name="question_7">Làm thế nào để tải Anime?</string>
     <string name="answer_7">Một Tiện ích tải xuống bên thứ ba đã được phát triển và phân phối bởi Dantotsu. Tính tương thích dựa trên Dantotsu và có thể ngưng hoạt động bất cứ lúc nào. Nó có thể được tìm thấy bằng cách truy cập trang \"Tiện ích bổ sung\" trong cài đặt ứng dụng.</string>
     <string name="question_9">Làm thế nào để bật nội dung 18+?</string>
-    <string name="answer_9">Bạn có thể kích hoạt nội dung NSFW bằng cách kích hoạt nội dung 18+ từ [liên kết](https://anilist.co/settings/media). Bạn cũng phải kích hoạt các tiện ích mở rộng NSFW trong \`Cài đặt > Tiện ích mở rộng > Tiện ích mở rộng NSFW\` </string>
+    <string name="answer_9">Bạn có thể kích hoạt nội dung NSFW bằng cách kích hoạt nội dung 18+ từ [liên kết](https://anilist.co/settings/media). Bạn cũng phải kích hoạt các tiện ích mở rộng NSFW trong \`Cài đặt &gt; Tiện ích mở rộng &gt; Tiện ích mở rộng NSFW\` </string>
     <string name="question_10">Làm thế nào để nhập danh sách MAL / Kitsu của tôi vào AniList?</string>
     <string name="answer_10">Dưới đây là cách bạn thực hiện nó,\n\nXuất:\n\n1. Truy cập vào [liên kết này](https://malscraper.azurewebsites.net).\n2. Nhập tên người dùng Kitsu/MAL của bạn và tải xuống cả danh sách anime và manga. (Chúng sẽ ở định dạng XML)\nLưu ý: Bạn phải viết tên người dùng của bộ theo dõi bạn đã chọn\n\nNhập:\n\n1. Sau khi xuất danh sách anime và manga của bạn từ Kitsu/MAL, bây giờ hãy đến [đây](https://anilist.co/settings/import) \n2. Chọn/thả file XML anime vào hộp phía trên.\n|→Chọn/thả file XML manga vào hộp phía dưới.</string>
     <string name="question_11">Làm thế nào để nhập danh sách AniList / Kitsu của tôi vào MAL?</string>
@@ -643,7 +644,7 @@
     <string name="question_14">Làm thế nào để đọc manga màu?</string>
     <string name="answer_14">Xin lỗi vì phải thất vọng bạn, nhưng chỉ một lượng nhỏ manga có phiên bản màu. Nếu phiên bản màu được cho là có sẵn, có thể đơn giản là nó bị ẩn trong Himitsu. Hãy xem bạn muốn đọc phiên bản màu của Chainsaw Man. Thực hiện theo các bước dưới đây ↓\n\n1) Đi đến Chainsaw Man\n2) Nhấn vào \'Đọc\'\n3) Chọn bất kỳ nguồn hoạt động\n4 ) Nhấn \'Sai Tiêu Đề\'\n5) Chọn Chainsaw Man màu sắc\n6) Thưởng thức\n\nLưu ý: Nhiều nguồn không có phiên bản màu ngay cả khi nó có sẵn ở một nơi khác. Hãy thử một nguồn khác. Nếu không có nguồn nào có nó, thì phiên bản màu của manga mong muốn có thể không tồn tại.</string>
     <string name="question_15">Handshake thất bại? Tại sao không có dấu thời gian nào được tải?</string>
-    <string name="answer_15">Bạn có thể sửa lỗi này bằng cách kích hoạt \'Proxy\' từ \n\`Cài đặt > Anime > Cài đặt Người chơi > Đoạn > Proxy\`.\nNếu dấu thời gian vẫn không tải nhưng cửa sổ bật lên Handshake đã được sửa, thì tập bạn đang xem chỉ không có dấu thời gian cho nó.</string>
+    <string name="answer_15">Bạn có thể sửa lỗi này bằng cách kích hoạt \'Proxy\' từ \n\`Cài đặt &gt; Anime &gt; Cài đặt Người chơi &gt; Đoạn &gt; Proxy\`.\nNếu dấu thời gian vẫn không tải nhưng cửa sổ bật lên Handshake đã được sửa, thì tập bạn đang xem chỉ không có dấu thời gian cho nó.</string>
     <string name="question_16">Không tìm thấy gì trong nguồn?</string>
     <string name="answer_16">Một số cách sửa cơ bản sẽ là: \n\n• Cập nhật các tiện ích mở rộng nếu có. \n• Mở Xem Web và chờ nó tải. Sau khi tải xong, quay lại. (Nếu Xem Web hiển thị lỗi 404 hoặc một cái gì đó tương tự, có khả năng nguồn của bạn đang gặp sự cố)\n• Sử dụng một DNS khác từ cài đặt của bạn, ưu tiên Libre. \n• Thử một VPN đáng tin cậy. (Bạn sẽ phải lặp lại bước 1 sau điều này) \n\nNếu không có một trong các bước trên hoạt động thì hãy sử dụng một nguồn khác hoặc tham gia [discord](https://discord.gg/invite/4HPZ5nAWwM) của chúng tôi để nhận sự trợ giúp.</string>
     <string name="question_17">Một số mẹo và thủ thuật hữu ích</string>

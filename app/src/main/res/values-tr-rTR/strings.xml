@@ -16,6 +16,7 @@
     <string name="browse_anime">Anime Filtrele</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Manga Filtrele</string>
+    <string name="novel">Roman</string>
     <string name="novels">Romanlar</string>
     <string name="info">Bilgi</string>
     <string name="watch">İzle</string>
@@ -628,7 +629,7 @@ _Hem MAL hem de AniList hesaplarını senk etmek zorunlu değildir._
     <string name="male">Erkek</string>
     <string name="female">Kadın</string>
     <string name="question_1">Himitsu nedir?</string>
-    <string name="answer_1">Dantotsu, Aniyomi\'nin bileşenlerini Saikou\'un çekirdek koduna birleştirdi, ancak sonra Himitsu, Dantotsu\'yu çatallaştırdı ve üstüne eklemeler yapmaya başladı. (Çoğunlukla) bir AniList sadece istemcisi olup ayrıca uzantıları da destekler. \n>Himitsu (秘密; Him-itsu), Japonca\'da \"gizli\" anlamına gelir. Ssss. Adı bile yasaktır.</string>
+    <string name="answer_1">Dantotsu, Aniyomi\'nin bileşenlerini Saikou\'un çekirdek koduna birleştirdi, ancak sonra Himitsu, Dantotsu\'yu çatallaştırdı ve üstüne eklemeler yapmaya başladı. (Çoğunlukla) bir AniList sadece istemcisi olup ayrıca uzantıları da destekler. \n&gt;Himitsu (秘密; Him-itsu), Japonca\'da \"gizli\" anlamına gelir. Ssss. Adı bile yasaktır.</string>
     <string name="question_2">Himitsu\'nun bazı özellikleri nelerdir?</string>
     <string name="answer_2">Burada her şeyi listelediğimizde Dantotsu\'nun başarmaya çalıştığı her şeyi, hatta buna eklediği Her şeyi eklediğinde oldukça uzun bir paragraf olurdu. En iyisi [Himitsu GitHub](https://github.com/RepoDevil/Himitsu)\'a uğrayıp README dosyasını incelemenizdir.</string>
     <string name="question_3">Sabit, Beta ve Alfa sürümleri arasındaki farklar nelerdir?</string>
@@ -644,7 +645,7 @@ _Hem MAL hem de AniList hesaplarını senk etmek zorunlu değildir._
     <string name="question_7">Anime nasıl indirilir?</string>
     <string name="answer_7">Dantotsu tarafından geliştirilen ve dağıtılan üçüncü taraf indirme Eklentisi. Uyumluluk, Dantotsu\'ya dayanır ve herhangi bir zamanda işlevsiz hale gelebilir. Uygulama ayarlarında \"Eklentiler\" sayfasına erişilerek bulunabilir.</string>
     <string name="question_9">NSFW içeriği nasıl etkinleştirilir?</string>
-    <string name="answer_9">18+ içerikleri etkinleştirebilmek için [bu bağlantıdan](https://anilist.co/settings/media) 18+ içeriklerini etkinleştirmeniz gerekir. Ayrıca NSFW uzantılarını \`Ayarlar > Uzantılar > NSFW uzantılar\` bölümünden etkinleştirmeniz gerekecektir</string>
+    <string name="answer_9">18+ içerikleri etkinleştirebilmek için [bu bağlantıdan](https://anilist.co/settings/media) 18+ içeriklerini etkinleştirmeniz gerekir. Ayrıca NSFW uzantılarını \`Ayarlar &gt; Uzantılar &gt; NSFW uzantılar\` bölümünden etkinleştirmeniz gerekecektir</string>
     <string name="question_10">MAL / Kitsu listelerimi AniList\'e nasıl aktarabilirim?</string>
     <string name="answer_10">İşte nasıl yapılır,\n\nDışa aktar:\n\n1. Bu [bağlantıya](https://malscraper.azurewebsites.net) gidin.\n2. Kitsu/MAL kullanıcı adınızı girin ve hem anime hem de manga listesini indirin. (XML formatında olacaklardır)\nNot: Seçtiğiniz izleyicinin adını yazmanız gerekecektir\n\nİçe aktar:\n\n1. Kitsu/MAL\'den anime ve manga listenizi dışa aktardıktan sonra şimdi [buraya](https://anilist.co/settings/import) gidin \n2. Yukarıdaki kutuya anime XML dosyasını seçip bırakın.\n|→Manga XML dosyasını aşağıdaki kutuya seçip bırakın.</string>
     <string name="question_11">AniList / Kitsu listelerimi MAL\'e nasıl aktarabilirim?</string>
@@ -656,7 +657,7 @@ _Hem MAL hem de AniList hesaplarını senk etmek zorunlu değildir._
     <string name="question_14">Renkli mangaları nasıl okuyabilirim?</string>
     <string name="answer_14">Size kötü haber vermek istiyorum, ancak sadece biraz manga renkli versiyona sahiptir. Bir renkli versiyonun bulunması gerekiyorsa, muhtemelen Himitsu\'da gizlidir. Örneğin, Chainsaw Man\'in renkli versiyonunu okumak istiyorsunuz diyelim. Aşağıdaki adımları izleyin ↓\n\n1) Chainsaw Man\'e gidin\n2) \'Oku\'ya basın\n3) İşlevsel bir kaynak seçin\n4) \'Yanlış Başlık\' seçeneğine basın\n5) Renkli Chainsaw Man\'i seçin\n6) Keyfini çıkarın\n\nNot: Birçok kaynak, renkli versiyonun benzer kaynaklarda mevcut olmasına rağmen, renkli versiyonu bulamamaktadır. Farklı bir kaynak deneyin. Eğer hiçbir kaynakta bulamazsanız, istediğiniz manganın renkli versiyonu olmayabilir.</string>
     <string name="question_15">El sıkışma başarısız mı? Neden zaman damgaları yüklenmiyor?</string>
-    <string name="answer_15">\'Proxy\'yi etkinleştirerek bu sorunu düzeltebilirsiniz \n\`Ayarlar > Anime > Oynatıcı Ayarları > Bölümler > Proxy\`\'den.\nEğer zaman damgaları hala yüklenmiyorsa ama el sıkışma başarısız pop-up penceresi düzeltildiyse, o zaman izlediğiniz bölüm için henüz zaman damgaları yok demektir.</string>
+    <string name="answer_15">\'Proxy\'yi etkinleştirerek bu sorunu düzeltebilirsiniz \n\`Ayarlar &gt; Anime &gt; Oynatıcı Ayarları &gt; Bölümler &gt; Proxy\`\'den.\nEğer zaman damgaları hala yüklenmiyorsa ama el sıkışma başarısız pop-up penceresi düzeltildiyse, o zaman izlediğiniz bölüm için henüz zaman damgaları yok demektir.</string>
     <string name="question_16">Kaynakta bir şey bulamıyorum. Neden?</string>
     <string name="answer_16">Bazı temel düzeltmeler şunlar olabilir: \n\n• Eklentilerinizi güncelleyin varsa. \n• Web Görünümünü açın ve yüklemesini bekleyin. Yükleme tamamlandıktan sonra geri dönün. (Web Görünümü hata 404 veya buna benzer bir şey gösteriyorsa, kaynağınızın kapalı olma ihtimali vardır)\n• Ayarlarınızdan farklı bir DNS kullanın, tercihen Libre. \n• Güvenilir bir VPN kullanın. (Bunu yaptıktan sonra adım 1\'i tekrarlamalısınız) \n\nYukarıdaki adımların hiçbiri işe yaramazsa farklı bir kaynak kullanın veya yardım için [discord](https://discord.gg/invite/4HPZ5nAWwM)\'umuza katılın.</string>
     <string name="question_17">Bazı yararlı ipuçları ve püf noktaları</string>

@@ -16,6 +16,7 @@
     <string name="browse_anime">Anime böngészése</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Manga böngészése</string>
+    <string name="novel">Regény</string>
     <string name="novels">Novellák</string>
     <string name="info">Infó</string>
     <string name="watch">Nézés</string>
@@ -614,7 +615,7 @@
     <string name="male">Férfi</string>
     <string name="female">Nő</string>
     <string name="question_1">Mi az a Himitsu?</string>
-    <string name="answer_1">A Dantotsu összefűzte az Aniyomi összetevőit a Saikou fő kódjába, de aztán a Himitsu kiválta a Dantotsu-t, és javítani kezdte rajta. (Főként) csak egy AniList kliens, amely támogatja a bővítményeket is. \n>Himitsu (秘密; Him-itsu) azt jelenti japánul, hogy \"titok\". Sssst. Az a titok olyan jó, hogy még a neve is tiltott.</string>
+    <string name="answer_1">A Dantotsu összefűzte az Aniyomi összetevőit a Saikou fő kódjába, de aztán a Himitsu kiválta a Dantotsu-t, és javítani kezdte rajta. (Főként) csak egy AniList kliens, amely támogatja a bővítményeket is. \n&gt;Himitsu (秘密; Him-itsu) azt jelenti japánul, hogy \"titok\". Sssst. Az a titok olyan jó, hogy még a neve is tiltott.</string>
     <string name="question_2">Milyen funkciói vannak a Himitsunak?</string>
     <string name="answer_2">Ez egy elég hosszú bekezdés lenne, ha felsorolnánk mindent, amit a Dantotsu megpróbál elérni, nemhogy mindent, amit a Himitsu hozzáadott ehhez. A legjobb tétje az lenne, ha ellátogatna a [Himitsu GitHub](https://github.com/RepoDevil/Himitsu)-ra, és átolvasná a README-t.</string>
     <string name="question_3">Mi a különbség a Stabil, Béta és Alfa verziók között?</string>
@@ -630,7 +631,7 @@
     <string name="question_7">Hogyan tölthetek le Anime-t?</string>
     <string name="answer_7">Egy harmadik fél által kifejlesztett és terjesztett letöltési Add-on került kifejlesztésre a Dantotsu által. A kompatibilitás a Dantotsu-ra épül, és bármikor megszűnhet a működés. Az „Add-ons” oldalon található az alkalmazásbeállításokban.</string>
     <string name="question_9">Hogyan lehet engedélyezni a NSFW tartalmat?</string>
-    <string name="answer_9">Az NSFW tartalmak engedélyezhetők a 18+ tartalmak engedélyezésével ezen a [linken](https://anilist.co/settings/media). Emellett engedélyezned kell az NSFW bővítményeket is a \`Beállítások > Bővítmények > NSFW bővítmények\` lehetőségnél.</string>
+    <string name="answer_9">Az NSFW tartalmak engedélyezhetők a 18+ tartalmak engedélyezésével ezen a [linken](https://anilist.co/settings/media). Emellett engedélyezned kell az NSFW bővítményeket is a \`Beállítások &gt; Bővítmények &gt; NSFW bővítmények\` lehetőségnél.</string>
     <string name="question_10">Hogyan importálhatom az MAL / Kitsu listáimat az AniListre?</string>
     <string name="answer_10">Így teheted meg:\n\nExportálás:\n\n1. Menj erre a [linakra](https://malscraper.azurewebsites.net).\n2. Add meg a Kitsu/MAL felhasználónevedet és töltsd le mind az anime, mind a manga listádat. (XML formátumban lesznek)\nMegjegyzés: Írnod kell a kiválasztott követő felhasználónevét\n\nImportálás:\n\n1. Miután exportáltad az anime és manga listáidat a Kitsu/MAL felületről, menj [ide](https://anilist.co/settings/import)\n2. Válaszd ki/húzd át az anime XML fájlt a fenti mezőbe.\n|→Válaszd ki/húzd át a manga XML fájlt az alábbi mezőbe.</string>
     <string name="question_11">Hogyan importálhatom az AniList / Kitsu listáimat az MALra?</string>
@@ -642,7 +643,7 @@
     <string name="question_14">Hogyan lehet színes mangákat olvasni?</string>
     <string name="answer_14">Sajnáljuk, de csak kevés manga rendelkezik színes változattal. Ha elérhetőnek kellene lennie egy színes változatnak, lehet, hogy egyszerűen rejtve van a Himitsu-ban. Mondjuk, hogy szeretnél olvasni a Száncsó Man színes verzióját. Kövesd az alábbi lépéseket ↓\n\n1) Menj a Száncsó Man oldalára\n2) Nyomj az \'Olvasás\' gombra\n3) Válassz egy működő forrást\n4) Nyomj \'Hibás cím\'\n5) Válaszd ki a színes Száncsó Mant\n6) Élvezd\n\nMegjegyzés: Sok forrásnak nincs színes változata, még akkor sem, ha valahol elérhető. Próbálj egy másik forrást. Ha egyik forrásnak sem találsz színes verziót, akkor lehetséges, hogy a kívánt manga színes verziója nem létezik.</string>
     <string name="question_15">A kapcsolatfelvétel sikertelen? Miért nem töltődnek be az időbélyegek?</string>
-    <string name="answer_15">Ezt a problémát megoldhatod a \'Proxy\' engedélyezésével az \n\`Beállítások > Anime > Lejátszó beállítások > Szegmensek > Proxy\`.\nHa az időbélyegek még mindig nem töltődnek be, de a kapcsolatfelvételi hibaablak megoldódott, akkor az az epizód, amit nézel, egyszerűen még nem rendelkezik időbélyegekkel.</string>
+    <string name="answer_15">Ezt a problémát megoldhatod a \'Proxy\' engedélyezésével az \n\`Beállítások &gt; Anime &gt; Lejátszó beállítások &gt; Szegmensek &gt; Proxy\`.\nHa az időbélyegek még mindig nem töltődnek be, de a kapcsolatfelvételi hibaablak megoldódott, akkor az az epizód, amit nézel, egyszerűen még nem rendelkezik időbélyegekkel.</string>
     <string name="question_16">Nem találsz semmit a forrásban?</string>
     <string name="answer_16">Néhány alap javítás lehet: \n\n• Frissítsd a bővítményeidet, ha van ilyen. \n• Nyisd meg a Web nézetet és várj, amíg betölt. Miután a betöltés befejeződött, lépj vissza. (Ha a Web nézet 404-es hibát vagy hasonlót mutat, valószínűleg a forrás nem elérhető)\n• Használj más DNS-t a beállításokból, lehetőleg Liberét. \n• Próbálj ki egy megbízható VPN-t. (Ezt követően meg kell ismételni az első lépést) \n\nHa egyik fenti lépés sem működik, akkor használj másik forrást, vagy csatlakozz a [discord](https://discord.gg/invite/4HPZ5nAWwM) csatornánkhoz segítségért.</string>
     <string name="question_17">Néhány hasznos tipp és trükk</string>

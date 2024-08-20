@@ -16,6 +16,7 @@
     <string name="browse_anime">Navega per l\'anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Navega pel manga</string>
+    <string name="novel">Novel·la</string>
     <string name="novels">Novel·les</string>
     <string name="info">Informació</string>
     <string name="watch">Mirar</string>
@@ -615,7 +616,7 @@
     <string name="male">Masculí</string>
     <string name="female">Femení</string>
     <string name="question_1">Què és Himitsu?</string>
-    <string name="answer_1">Dantotsu va fusionar components d\'Aniyomi en el codi principal de Saikou, però després Himitsu va bifurcar Dantotsu i va començar a millorar-lo. És principalment un client només d\'AniList, que també suporta extensions. \n>Himitsu (秘密; Him-itsu) significa \"secret\" en japonès. Xhh. És un secret tan bo que fins i tot el nom està prohibit.</string>
+    <string name="answer_1">Dantotsu va fusionar components d\'Aniyomi en el codi principal de Saikou, però després Himitsu va bifurcar Dantotsu i va començar a millorar-lo. És principalment un client només d\'AniList, que també suporta extensions. \n&gt;Himitsu (秘密; Him-itsu) significa \"secret\" en japonès. Xhh. És un secret tan bo que fins i tot el nom està prohibit.</string>
     <string name="question_2">Quines són algunes de les característiques de Himitsu?</string>
     <string name="answer_2">Això seria un paràgraf bastant gran si llistéssim tot el que Dantotsu intenta aconseguir, per no parlar de tot el que Himitsu ha afegit això. La millor opció seria passar per [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) i revisar el README.</string>
     <string name="question_3">Quina és la diferència entre les versions Estable, Beta i Alfa?</string>
@@ -631,7 +632,7 @@
     <string name="question_7">Com descarregar Anime?</string>
     <string name="answer_7">S\'ha desenvolupat un Add-on de descàrrega de tercers i es distribueix per Dantotsu. La compatibilitat es basa en Dantotsu i pot deixar de funcionar en qualsevol moment. Es pot trobar accedint a la pàgina \"Complements\" en la configuració de l\'aplicació.</string>
     <string name="question_9">Com habilitar contingut NSFW?</string>
-    <string name="answer_9">Pots habilitar contingut NSFW activant el contingut per a majors de 18 anys des d\'aquest [enllaç](https://anilist.co/settings/media). També has d\'activar les extensions NSFW a \`Configuració > Extensions > Extensions NSFW\` </string>
+    <string name="answer_9">Pots habilitar contingut NSFW activant el contingut per a majors de 18 anys des d\'aquest [enllaç](https://anilist.co/settings/media). També has d\'activar les extensions NSFW a \`Configuració &gt; Extensions &gt; Extensions NSFW\` </string>
     <string name="question_10">Com importar les meves llistes de MAL / Kitsu a AniList?</string>
     <string name="answer_10">Aquí tens com fer-ho,\n\nExporta:\n\n1. Vés a aquest [enllaç](https://malscraper.azurewebsites.net).\n2. Introdueix el teu nom d\'usuari de Kitsu/MAL i descarrega tant la llista d\'anime com de manga. (Estaran en format XML)\nNota: Has d\'escriure el nom d\'usuari del rastrejador que has seleccionat\n\nImporta:\n\n1. Després d\'exportar la teva llista d\'anime i manga de Kitsu/MAL, ara ves [aquí](https://anilist.co/settings/import) \n2. Selecciona/deixa anar el fitxer XML d\'anime a la casella de dalt.\n|→Selecciona/deixa anar el fitxer XML de manga a la casella de sota.</string>
     <string name="question_11">Com importar les meves llistes d\'AniList / Kitsu a MAL?</string>
@@ -643,7 +644,7 @@
     <string name="question_14">Com llegir mangues en color?</string>
     <string name="answer_14">Ho sento per trencar-t\'ho, però només una petita quantitat de mangues tenen versió en color. Si s\'hauria de disposar d\'una versió en color, potser està oculta simplement a Himitsu. Digues que vols llegir la versió en color de Chainsaw Man. Segueix els passos següents ↓\n\n1) Vés a Chainsaw Man\n2) Prem \'Llegir\'\n3) Selecciona qualsevol font que funcioni\n4) Prem \'Títol equivocat\'\n5) Selecciona Chainsaw Man en color\n6) Gaudeix\n\nNota: Moltes fonts no tenen la versió en color encara que estigui disponible en altres llocs. Prova amb una altra font. Si cap de les fonts ho té, aleshores potser no existeix una versió en color del manga que desitges.</string>
     <string name="question_15">Falla la connexió? Per què no es carreguen els marcadors de temps?</string>
-    <string name="answer_15">Pots solucionar aquest problema activant \'Proxy\' des de \n\`Configuració > Anime > Configuració del reproductor > Segons > Proxy\`.\nSi els marcadors de temps encara no es carreguen però la finestra emergent de fallada de connexió s\'ha solucionat, aleshores l\'episodi que estàs veient encara no té marcadors de temps per a ell.</string>
+    <string name="answer_15">Pots solucionar aquest problema activant \'Proxy\' des de \n\`Configuració &gt; Anime &gt; Configuració del reproductor &gt; Segons &gt; Proxy\`.\nSi els marcadors de temps encara no es carreguen però la finestra emergent de fallada de connexió s\'ha solucionat, aleshores l\'episodi que estàs veient encara no té marcadors de temps per a ell.</string>
     <string name="question_16">No pots trobar res en una font?</string>
     <string name="answer_16">Algunes correccions bàsiques serien : \n\n• Actualitza les teves extensions si n\'hi ha alguna. \n• Obre Visualització web i espera que es carregui. Després que s\'hagi carregat, retorna enrere. (Si la Visualització web mostra error 404 o alguna cosa similar, les possibilitats són que la teva font estigui fora de servei)\n• Utilitza un DNS diferent dels teus ajustaments, de preferència Libre. \n• Prova una VPN de confiança. (Hauràs de repetir el pas 1 després d\'això) \n\nSi cap de les passes anteriors funciona, aleshores utilitza una altra font o uneix-te al nostre [discord](https://discord.gg/invite/4HPZ5nAWwM) per obtenir ajuda.</string>
     <string name="question_17">Alguns consells i trucs útils</string>

@@ -16,6 +16,7 @@
     <string name="browse_anime">瀏覽動畫</string>
     <string name="manga">漫畫</string>
     <string name="browse_manga">瀏覽漫畫</string>
+    <string name="novel">小說</string>
     <string name="novels">小說</string>
     <string name="info">信息</string>
     <string name="watch">觀看</string>
@@ -616,7 +617,7 @@
     <string name="male">男性</string>
     <string name="female">女性</string>
     <string name="question_1">Himitsu 是什麼？</string>
-    <string name="answer_1">Dantotsu將Aniyomi的組件合併到Saikou的核心代碼中，但後來Himitsu分叉了Dantotsu並開始改進它。這主要是一個只支持AniList客戶端，也支持擴展功能。\n>Himitsu（秘密;秘密）在日語中意為“秘密”。噓。這是一個如此機密的秘密，連名字都被禁止使用。</string>
+    <string name="answer_1">Dantotsu將Aniyomi的組件合併到Saikou的核心代碼中，但後來Himitsu分叉了Dantotsu並開始改進它。這主要是一個只支持AniList客戶端，也支持擴展功能。\n&gt;Himitsu（秘密;秘密）在日語中意為“秘密”。噓。這是一個如此機密的秘密，連名字都被禁止使用。</string>
     <string name="question_2">Himitsu 的一些特點是什麼？</string>
     <string name="answer_2">如果列出Dantotsu試圖實現的所有功能，那將是一個相當大的段落，更不用說Himitsu已經添加的所有東西了。您最好查閱[Himitsu GitHub](https://github.com/RepoDevil/Himitsu)並查看自述文件。</string>
     <string name="question_3">穩定版、測試版和Alpha版本之間有什麼不同？</string>
@@ -632,7 +633,7 @@
     <string name="question_7">如何下載動畫？</string>
     <string name="answer_7">第三方下載Add-on由Dantotsu開發和分發。兼容性基於Dantotsu，可能隨時停止運作。可以通過訪問應用程序設置中的“Add-ons”頁面找到。</string>
     <string name="question_9">如何啟用不安全內容？</string>
-    <string name="answer_9">您可以通過啟用此 [link](https://anilist.co/settings/media) 上的 18+ 內容來啟用 NSFW 內容。您還需要在 `設置 > 擴展功能 > NSFW 擴展功能` 中啟用 NSFW 擴展功能</string>
+    <string name="answer_9">您可以通過啟用此 [link](https://anilist.co/settings/media) 上的 18+ 內容來啟用 NSFW 內容。您還需要在 `設置 &gt; 擴展功能 &gt; NSFW 擴展功能` 中啟用 NSFW 擴展功能</string>
     <string name="question_10">如何將我的 MAL / Kitsu 列表導入到 AniList？</string>
     <string name="answer_10">這是如何做到的，\n\n導出：\n\n1. 前往此 [link](https://malscraper.azurewebsites.net)。\n2. 提供您的 Kitsu/MAL 用戶名並下載動畫和漫畫列表（它們將以 XML 格式保存）\n注意：您必須寫下您選擇的追踪器的用戶名\n\n導入：\n\n1. 從 Kitsu/MAL 導出您的動畫和漫畫列表後，現在前往 [here](https://anilist.co/settings/import) \n2. 選擇/拖放上面框中的動畫 XML 檔案。\n|→選擇/拖放下面框中的漫畫 XML 檔案。</string>
     <string name="question_11">如何將我的 AniList / Kitsu 列表導入到 MAL？</string>
@@ -644,7 +645,7 @@
     <string name="question_14">如何閱讀彩色漫畫?</string>
     <string name="answer_14">很抱歉要告訴您，但僅有少量漫畫有彩色版本。如果應有彩色版本，可能只是隱藏在Himitsu。 假設您想閱讀《Chainsaw Man》的彩色版本。請按照以下步驟進行 ↓\n\n1) 前往《Chainsaw Man》\n2) 點擊\'閱讀\'\n3) 選擇任何有效來源\n4) 點擊\'錯誤的標題\'\n5) 選擇彩色的Chainsaw Man\n6) 享受\n\n註：許多來源即使其他地方有彩色版本也可能沒有。如果所有來源都沒有，則可能不存在您想要的漫畫的彩色版本。</string>
     <string name="question_15">握手失敗？為什麼沒有載入時間戳記?</string>
-    <string name="answer_15">您可以通過從\n\`設定 > 動畫 > 播放器設定 > 段 > 代理\`啟用\'代理\'來解決此問題。 如果時間戳記仍未載入，但握手失敗彈出窗口已解決，那麼您正在觀看的劇集可能尚未有時間戳記。</string>
+    <string name="answer_15">您可以通過從\n\`設定 &gt; 動畫 &gt; 播放器設定 &gt; 段 &gt; 代理\`啟用\'代理\'來解決此問題。 如果時間戳記仍未載入，但握手失敗彈出窗口已解決，那麼您正在觀看的劇集可能尚未有時間戳記。</string>
     <string name="question_16">在來源中找不到任何內容?</string>
     <string name="answer_16">一些基本修復方法包括：\n\n• 如果有任何擴展，請更新它們。\n• 打開Web查看並等待加載完成。 加載完成後返回。 （如果Web查看顯示錯誤404或類似內容，您的來源可能已關閉）\n• 使用來自您的設置的不同DNS，最好使用Libre。\n• 嘗試一個可靠的VPN。（這之後您將不得不重複第一步）\n\n如果上述任何步驟都無效，那麼請使用其他來源或加入我們的[discord](https://discord.gg/invite/4HPZ5nAWwM)尋求幫助。</string>
     <string name="question_17">一些有用的技巧</string>

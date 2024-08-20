@@ -16,6 +16,7 @@
     <string name="browse_anime">تصفح الأنمي</string>
     <string name="manga">مانغا</string>
     <string name="browse_manga">تصفح المانغا</string>
+    <string name="novel">رواية</string>
     <string name="novels">روايات</string>
     <string name="info">معلومات</string>
     <string name="watch">مشاهدة</string>
@@ -213,7 +214,7 @@
         <item>نمط 1</item>
         <item>نمط 2</item>
         <item>نمط 3</item>
-        <item> نمط 4</item>
+        <item>المظهر 4</item>
     </string-array>
     <string name="video">فيديو</string>
     <string name="video_info">إظهار معلومات الفيديو</string>
@@ -615,7 +616,7 @@
     <string name="male">ذكر</string>
     <string name="female">أنثى</string>
     <string name="question_1">ما هو Himitsu؟</string>
-    <string name="answer_1">دمج Dantotsu لمكونات Aniyomi في الشيفرة الأساسية لـ Saikou، ولكن Himitsu شعر بالفرعية من Dantotsu وبدأ في تحسينها. إنه عميل خاص بـ AniList فقط، ويدعم أيضًا الامتدادات.\n>Himitsu (秘密؛ Him-itsu) يعني \"سر\" باللغة اليابانية. ششش. إنه سر جيد حتى أن الاسم ممنوع.</string>
+    <string name="answer_1">دمج Dantotsu لمكونات Aniyomi في الشيفرة الأساسية لـ Saikou، ولكن Himitsu شعر بالفرعية من Dantotsu وبدأ في تحسينها. إنه عميل خاص بـ AniList فقط، ويدعم أيضًا الامتدادات.\n&gt;Himitsu (秘密؛ Him-itsu) يعني \"سر\" باللغة اليابانية. ششش. إنه سر جيد حتى أن الاسم ممنوع.</string>
     <string name="question_2">ما هي بعض الميزات الخاصة بـ Himitsu؟</string>
     <string name="answer_2">سيكون هذا فقرة كبيرة جدًا إذا قمنا بسرد كل ما تحاول Dantotsu تحقيقه، ناهيك عن كل ما أضافته Himitsu على ذلك. أفضل خيار لديك هو زيارة [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) والاطلاع على ملف \"README\".</string>
     <string name="question_3">ما هو الفارق بين الإصدارات Stable, Beta &amp; Alpha؟</string>
@@ -631,7 +632,7 @@
     <string name="question_7">كيفية تحميل Anim؟</string>
     <string name="answer_7">تم تطوير وتوزيع إضافة تنزيل من طرف ثالث من قبل Dantotsu. التوافق يعتمد على Dantotsu وقد يتوقف عن العمل في أي وقت. يمكن العثور عليه عند الوصول إلى صفحة \"Add-ons\" في إعدادات التطبيق.</string>
     <string name="question_9">كيفية تمكين محتوى NSFW؟</string>
-    <string name="answer_9">يمكنك تمكين محتوى NSFW عن طريق تمكين المحتويات 18+ من هذا ال [link](https://anilist.co/settings/media). عليك أيضًا تمكين امتدادات NSFW في \`الإعدادات > الامتدادات > امتدادات NSFW\`</string>
+    <string name="answer_9">يمكنك تمكين محتوى NSFW عن طريق تمكين المحتويات 18+ من هذا ال [link](https://anilist.co/settings/media). عليك أيضًا تمكين امتدادات NSFW في \`الإعدادات &gt; الامتدادات &gt; امتدادات NSFW\`</string>
     <string name="question_10">كيف تستورد قائمتي MAL / Kitsu إلى AniList؟</string>
     <string name="answer_10">إليك كيف تفعل ذلك،\n\nالتصدير:\n\n1. انتقل إلى هذا ال [link](https://malscraper.azurewebsites.net).\n2. أدخل اسمك على Kitsu/MAL وقم بتنزيل قائمتي الأنمي والمانغا. (ستكون في تنسيق XML)\nملاحظة: عليك كتابة اسم المتتبع الذي اخترته\n\nالاستيراد:\n\n1. بعد تصدير قائمتك للأنمي والمانغا من Kitsu/MAL، انتقل الآن [هنا](https://anilist.co/settings/import)\n2. حدد/اسحب ملف XML للأنمي في المربع أعلاه.\n|→حدد/اسحب ملف XML للمانغا في المربع أدناه.</string>
     <string name="question_11">كيف تستورد قائمتي AniList / Kitsu إلى MAL؟</string>

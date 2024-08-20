@@ -17,6 +17,7 @@
     <string name="browse_anime">סייר אנימה</string>
     <string name="manga">מאנגה</string>
     <string name="browse_manga">סייר מאנגה</string>
+    <string name="novel">רומן</string>
     <string name="novels">סיפורים</string>
     <string name="info">מידע</string>
     <string name="watch">צפה</string>
@@ -215,7 +216,7 @@
         <item>ערכת נושא 1</item>
         <item>ערכת נושא 2</item>
         <item>ערכת נושא 3</item>
-        <item> ערכת נושא 4</item>
+        <item>נושא 4</item>
     </string-array>
     <string name="video">וידאו</string>
     <string name="video_info">הצג מידע על הווידאו</string>
@@ -619,7 +620,7 @@
     <string name="male">זכר</string>
     <string name="female">נקבה</string>
     <string name="question_1">מה זה Himitsu?</string>
-    <string name="answer_1">Dantotsu מיזהר רכב רכיבים של Aniyomi לקוד הליבה של Saikou, אך אז Himitsu סמן את Dantotsu והחל לשפר עליו. זה (ברובו) לקוח רק מAniList, שגם תומך בהרחבות. \n>Himitsu (秘密; Him-itsu) אומר \"סוד\" ביפנית. שש. זה סוד טוב כל כך, שגם השם אסור.</string>
+    <string name="answer_1">Dantotsu מיזהר רכב רכיבים של Aniyomi לקוד הליבה של Saikou, אך אז Himitsu סמן את Dantotsu והחל לשפר עליו. זה (ברובו) לקוח רק מAniList, שגם תומך בהרחבות. \n&gt;Himitsu (秘密; Him-itsu) אומר \"סוד\" ביפנית. שש. זה סוד טוב כל כך, שגם השם אסור.</string>
     <string name="question_2">מהן כמה תכונות של Himitsu?</string>
     <string name="answer_2">זה היה פסקה רבה גדולה אם היינו רושמים הכל שDantotsu מנסה להשיג, לא לדבר על כל הדברים שHimitsu הוסיף על זה. מה שהכי טוב לך זה להתעדכן ב[P4ra GitHub](https://github.com/RepoDevil/Himitsu) ולהבחין את קריאטו.</string>
     <string name="question_3">מה ההבדל בין גירסאות יציבה, בטא ואלפא?</string>
@@ -635,7 +636,7 @@
     <string name="question_7">כיצד להוריד אנימה?</string>
     <string name="answer_7">תוסף הורדה שלישי פותח ומשוקלל על ידי Dantotsu. התאימות מבוססת על Dantotsu ותוכל להפסיק לפעול בכל עת. תוכל למצוא אותו על ידי כניסה לדף התוספים בהגדרות האפליקציה.</string>
     <string name="question_9">איך להפעיל תוכן NSFW?</string>
-    <string name="answer_9">ניתן לאפשר תוכן NSFW על ידי הפעלת תוכן 18+ מה[קישור](https://anilist.co/settings/media). עליך גם להפעיל הרחבות NSFW בהגדרות > הרחבות > הרחבות NSFW </string>
+    <string name="answer_9">ניתן לאפשר תוכן NSFW על ידי הפעלת תוכן 18+ מה[קישור](https://anilist.co/settings/media). עליך גם להפעיל הרחבות NSFW בהגדרות &gt; הרחבות &gt; הרחבות NSFW </string>
     <string name="question_10">כיצד לייבא את רשימות ה-MAL / Kitsu שלי ל-AniList?</string>
     <string name="answer_10">הנה איך אתה עושה את זה,\n\nיצוא:\n\n1. לך ל[קישור זה](https://malscraper.azurewebsites.net).\n2. הזן את שם המשתמש שלך ב-Kitsu/MAL והורד שניים את רשימת האנימה והמנגה. (הרשימות תהיינה בתבנית XML)\nהערה: עליך לרשום את שם המשתמש של הגשם שנבחר\n\nייבוא:\n\n1. לאחר הייצוא של רשימת האנימה והמנגה מ-Kitsu/MAL, עכשיו עבור [לכאן](https://anilist.co/settings/import) \n2. בחר/זרוק את קובץ ה-XML של האנימה בתיבה למעלה.\n|→בחר/זרוק את קובץ ה-XML של המנגה בתיבה למטה.</string>
     <string name="question_11">כיצד לייבא את רשימות ה-AniList / Kitsu שלי ל-MAL?</string>
@@ -647,7 +648,7 @@
     <string name="question_14">כיצד לקרוא מנגות מצבעים?</string>
     <string name="answer_14">מצטערים להודיע לך, אך רק כמות קטנה של מנגות מגיעות בגרסה צבעונית. אם גרסה צבעונית אמורה להיות זמינה, ייתכן פשוט שהיא מוסתרת ב-Himitsu. נניח שתרצה לקרוא את גרסת הצבעים של Chainsaw Man. תקשב לשלבים הבאים להלן ↓\n\n1) עבור ל-Chainsaw Man\n2) לחץ על \'קרוא\'\n3) בחר מקור פועל כלשהו\n4) לחץ על \'כותרת שגויה\'\n5) בחר בגרסת הצבעונית של Chainsaw Man\n6) תהנה\n\nהערה: רבים מהמקורות אינם מציעים את גרסת הצבעים אפילו אם היא זמינה במקום אחר. תנסה מקור אחר. אם אף אחד מהמקורות אינם מציעים אותה, אז ייתכן שגרסת צבעונית של המנגה הרצויה שלך אינה קיימת.</string>
     <string name="question_15">הידיש בוטל? למה שלטי זמן לא נטענים?</string>
-    <string name="answer_15">ניתן לתקן את הבעיה זו על ידי הפעלת \'פרוקסי\' מתוך \n\`הגדרות > אנימה > הגדרות נגן > קטעים > פרוקסי\`.\nאם שלטי הזמן עדיין לא נטענים אך חלון ההיכנס בוטל, אז הפרק שאתה צופה בו פשוט אינו מכיל עדיין שלטי זמן בשבילו.</string>
+    <string name="answer_15">ניתן לתקן את הבעיה זו על ידי הפעלת \'פרוקסי\' מתוך \n\`הגדרות &gt; אנימה &gt; הגדרות נגן &gt; קטעים &gt; פרוקסי\`.\nאם שלטי הזמן עדיין לא נטענים אך חלון ההיכנס בוטל, אז הפרק שאתה צופה בו פשוט אינו מכיל עדיין שלטי זמן בשבילו.</string>
     <string name="question_16">לא מוצאים דבר במקור?</string>
     <string name="answer_16">כמה תיקונים בסיסיים יהיו : \n\n• עדכן את ההרחבות שלך אם ישנן. \n• פתח Web View וחכה שיטען. לאחר שהטעינה הושלמה, חזור. (אם Web View מציג שגיאה 404 או משהו דומה, סיכויים שהמקור שלך מופסק)\n• השתמש ב-DNS שונה מההגדרות שלך, למשל, Libre. \n• נסה VPN אמין. (יהיה לך לחזור על שלב 1 לאחר זה) \n\nאם אף אחד מהצעדים לעיל לא עובד אז השתמש במקור שונה או הצטרף אל [דיסקורד שלנו](https://discord.gg/invite/4HPZ5nAWwM) לעזרה.</string>
     <string name="question_17">כמה טיפים ותחבירים שימושיים</string>

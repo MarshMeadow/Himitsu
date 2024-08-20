@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="it">
-
     <string name="slogan">Noi che non dobbiamo essere nominati.</string>
-
     <string name="login">Accedi</string>
     <string name="logout">Logout</string>
     <string name="anilist_login">Login AniList per Himitsu</string>
     <string name="mal_login">Login MyAnimeList per Himitsu</string>
     <string name="discord_login">Login Discord per Himitsu</string>
-
     <string name="extension_notice">Himitsu è un Servizio BYOR</string>
     <string name="extension_notice_desc">Himitsu segue un formato \"porta il tuo proprio repository\". Anche se le estensioni sono supportate, gli indici devono essere forniti dall\'utente. Tuttavia, il supporto per molti servizi di streaming popolari è incluso e pronto all\'uso.</string>
-
     <string name="conversion_title">Bentornato!</string>
     <string name="conversion_message">Sembra che tu abbia un pacchetto più vecchio installato.\nPer favore, seleziona \"Backup\" per aprire la versione più vecchia ed eseguire un backup. Poi puoi tornare a questa app e utilizzare \"Ripristina impostazioni\".</string>
     <string name="backup">Backup</string>
-
     <string name="home">Home</string>
-    <string name="anime">Anime</string>
+    <string name="anime">Animazione</string>
     <string name="browse_anime">Sfoglia gli Anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Sfoglia i Manga</string>
@@ -27,15 +22,12 @@
     <string name="watch">Guarda</string>
     <string name="read">Leggi</string>
     <string name="language">Lingua</string>
-
     <string name="anime_list">Lista Anime</string>
     <string name="manga_list">Lista Manga</string>
-
     <string name="no_internet">Nessuna Connessione Internet</string>
     <string name="no_internet_connection">Nessuna Connessione Internet\nModalità offline disponibile</string>
     <string name="refresh">Aggiorna</string>
     <string name="go_online">Vai Online</string>
-
     <string name="search">Cerca</string>
     <string name="extension_search">Ricerca Inversa delle Fonti</string>
     <string name="external_search">Cerca su Himitsu</string>
@@ -49,7 +41,6 @@
     <string name="trending_manga">Manga di Tendenza</string>
     <string name="trending_novel">Romanzi di Tendenza</string>
     <string name="popular_manga">Manga Popolari</string>
-
     <string name="username">Nome Utente</string>
     <string name="chapters_read">Capitoli Letti</string>
     <string name="episodes_watched">Episodi Guardati</string>
@@ -57,11 +48,9 @@
     <string name="continue_watching">Continua a Guardare</string>
     <string name="continue_media">Continua…</string>
     <string name="recommended">Consigliati</string>
-
     <string name="get_recommendations">Guarda/Leggi degli Anime o Manga per ottenere Consigli</string>
     <string name="empty">Tutto in regola, quando qualcosa di Nuovo?</string>
     <string name="action_settings">Impostazioni</string>
-
     <string name="add">Aggiungi alla Lista</string>
     <string name="list_editor">Editor della Lista</string>
     <string name="add_fav">Aggiungi ai Preferiti</string>
@@ -78,12 +67,10 @@
         <item>Rileggendo</item>
         <item>Tutto</item>
     </string-array>
-
     <string name="no_notifications">Niente più notifiche</string>
     <string name="followers">Seguaci</string>
     <string name="social_in_media">Statistiche sociali nei media</string>
     <string name="social_in_media_desc">Visualizza valutazioni e progresso degli amici</string>
-
     <string name="status">STATO</string>
     <string-array name="status_anime">
         <item>PIANIFICANDO</item>
@@ -109,7 +96,6 @@
     <string name="save">Salva</string>
     <string name="delete">Cancella</string>
     <string name="remove">Rimuovi</string>
-
     <string name="name">Nome</string>
     <string name="name_romaji">Nome Romaji</string>
     <string name="mean_score">Punteggio Medio</string>
@@ -133,25 +119,22 @@
     <string name="staff">Staff</string>
     <string name="favourites">Preferiti</string>
     <string name="popularity">Popolarità</string>
-
     <string name="roles">Ruoli</string>
     <string name="details">Dettagli</string>
-
     <string name="trailer_yt">Trailer su YouTube</string>
     <string name="eps">Episodi</string>
     <string name="ep">Episodio</string>
     <string name="chaps">Capitoli</string>
     <string name="chap">Capitolo</string>
     <string name="wrong"><u>Titolo Errato?</u></string>
-    <string name="source_not_found">
-        Non sono riuscito a trovare nulla X( \n
+    <string name="source_not_found">        Non sono riuscito a trovare nulla X( \n
         Prova un\'altra fonte.
     </string>
     <string name="not_supported">%1$s non è supportato!</string>
     <string name="server_selector">Seleziona il Server</string>
     <string name="auto_select_server">Selezionando Automaticamente il Server</string>
     <string name="make_default">Rendi Predefinito</string>
-    <string name="filler">Filler</string>
+    <string name="filler">Riempimento</string>
     <string name="adult">Adulto</string>
     <string name="list_only">Solo la Lista</string>
     <string name="tag">Etichetta</string>
@@ -162,9 +145,7 @@
     <string name="ending">Sigla di Chiusura</string>
     <string name="prequel">Prequel</string>
     <string name="sequel">Sequel</string>
-
     <string name="installed">Installato</string>
-
     <string name="torrserver">TorrServer</string>
     <string name="torrent_running">Il server è in funzione…</string>
     <string name="settings_torrent">TorrServer Interno</string>
@@ -180,7 +161,6 @@
     <string name="server_enabled">Avviando TorrServer</string>
     <string name="enable_server_temp">Vorresti abilitare temporaneamente TorrServer (disabilitato alla chiusura dell\'app)?</string>
     <string name="peer_count_low">Rilevato numero basso di peer!</string>
-
     <string name="anilist_settings">Impostazioni di AniList</string>
     <string name="extension_settings">Estensioni</string>
     <string name="downloads">Download</string>
@@ -207,8 +187,7 @@
     <string name="about">Informazioni</string>
     <string name="devs">Collaboratori</string>
     <string name="disclaimer">Avvertenza</string>
-    <string name="full_disclaimer">
-         - Himitsu era un fork of Dantotsu. Dantotsu, di per sé, fornisce un tracciatore di anime e manga e non fornisce alcun contenuto per trasmettere o scaricare anime o manga.
+    <string name="full_disclaimer">         - Himitsu era un fork of Dantotsu. Dantotsu, di per sé, fornisce un tracciatore di anime e manga e non fornisce alcun contenuto per trasmettere o scaricare anime o manga.
         \n\n - Himitsu e tutti i collaboratori di Himitsu non ospitano alcun contenuto trovato dentro Himitsu. Tutte le immagini o informazioni trovate nell\'app sono prese da varie API pubbliche (AniList, MyAnimeList, Kitsu).
         \n\n - Inoltre, tutti i link di anime/manga trovati in Himitsu sono forniti da vari plugin di terze parti forniti dall\'utente e non hanno alcuna affiliazione con Himitsu o il suo staff.
         \n\n - Himitsu ed i suoi collaboratori non sono responsabili di alcun uso improprio di alcun contenuto trovato dentro o fuori l\'app e non possono essere ritenuti responsabili della distribuzione di alcun contenuto trovato dentro l\'app.
@@ -230,7 +209,6 @@
         <item>Novels? più come NO vels.</item>
         <item>Fai un Clic Lungo sul logo per verificare gli aggiornamenti</item>
     </string-array>
-
     <string-array name="themes">
         <item>Predefinito</item>
         <item>Tema 1</item>
@@ -238,7 +216,6 @@
         <item>Tema 3</item>
         <item>Tema 4</item>
     </string-array>
-
     <string name="video">Video</string>
     <string name="video_info">Mostra Info Video</string>
     <string name="source_info">Mostra Nome Fonte</string>
@@ -260,20 +237,18 @@
     <string name="secondary_sub_outline_type_select">Tipo di Contorno dei Sottotitoli</string>
     <string name="sub_background_color_select">Colore di Sfondo dei Sottotitoli</string>
     <string name="sub_window_color_select">Colore della Finestra dei Sottotitoli</string>
-    <string name="sub_window_color_info">"La finestra dei sottotitoli è la parte a sinistra e a destra di essi. (dove non c\'è lo sfondo)"</string>
+    <string name="sub_window_color_info">"La finestra dei sottotitoli è la parte a sinistra e a destra di essi. (dove non c'è lo sfondo)"</string>
     <string name="sub_color_info"><b>Nota:</b> Le impostazioni sono applicate solo ai sottotitoli \"soft\"!</string>
     <string name="sub_alpha">Trasparenza dei Sottotitoli</string>
     <string name="sub_text_example">Anteprima dei Sottotitoli</string>
     <string name="sub_font_select">Font dei Sottotitoli</string>
     <string name="subtitle_font_size">Dimensione dei Sottotitoli</string>
     <string name="no_subs_available">Nessun Sottotitolo Disponibile</string>
-
     <string name="auto">Automatico</string>
     <string name="auto_play_next_episode">Riproduci Automaticamente il Prossimo Episodio</string>
     <string name="auto_play_next_episode_info">Si sisattiva automaticamente se non c\'è alcuna interazione con il lettore video dopo 1 ora.</string>
     <string name="auto_skip_fillers">Salta Automaticamente i Filler</string>
     <string name="auto_skip_fillers_info">Salta gli episodi filler quando si va all\'episodio successivo.</string>
-
     <string name="update_progress">Aggiornamento del Progresso</string>
     <string name="ask_update_progress_anime">Chiedi per ogni Anime \"Individualmente\"</string>
     <string name="ask_update_progress_manga">Chiedi ogni Manga \"Individualmente\"</string>
@@ -286,7 +261,6 @@
     <string name="very_bold">molto audace da parte sua seg.</string>
     <string name="watch_complete_percentage">Percentuale di Aggiornamento della Visione</string>
     <string name="watch_complete_percentage_info">La percentuale alla quale il tuo progresso AniList dovrebbe essere aggiornato dopo aver guardato un episodio. \nQuesto imposta anche la \% per quando precaricare i link per l\'episodio successivo.</string>
-
     <string name="behaviour">Comportamento</string>
     <string name="always_continue">Riprendi sempre dal timestamp</string>
     <string name="pause_video_focus">Metti in pausa quando non a Fuoco</string>
@@ -300,10 +274,9 @@
     <string name="skip_time_info">Impostando a 0, si nasconde il Pulsante Salta.</string>
     <string name="show_cast_button">Mostra il Pulsante Trasmetti</string>
     <string name="show_cast_button_info">Richiede l\'app \"Web Video Caster\" per trasmettere.</string>
-    <string name="picture_in_picture">Picture in Picture</string>
+    <string name="picture_in_picture">Immagine nella Immagine</string>
     <string name="always_minimize">Minimizza Sempre</string>
     <string name="always_minimize_info">Richiede che il PiP sia abilitato, fa sì che il lettore video si comporti come il Lettore Youtube ma meglio.\nNasconde anche il pulsante PiP.</string>
-    
     <string name="app">App</string>
     <string name="immersive_mode">Nascondi Barra di Stato</string>
     <string name="immersive_modelist">Nascondi la Barra di Stato per la lista</string>
@@ -320,7 +293,6 @@
         <item>Consigliati</item>
         <item>Feed Sociali</item>
     </string-array>
-
     <string name="notification_page">Scheda Predefinita delle Notifiche</string>
     <string name="notification_page_desc">Seleziona la scheda iniziale per le notifiche</string>
     <string-array name="notification_type">
@@ -329,7 +301,6 @@
         <item>Sociali</item>
         <item>Utenti</item>
     </string-array>
-
     <string name="startUpTab">Scheda Di Avvio Predefinita</string>
     <string name="floating_avatar">Pulsante dell\'Avatar Fluttuante</string>
     <string name="hide_home_main">Home per DOC Acuto</string>
@@ -361,13 +332,11 @@
     <string name="layout">Layout</string>
     <string name="spaced_pages">Pagine Distanziate</string>
     <string name="direction">Direzione</string>
-
     <string name="comments_api">API Commenti (Dantotsu)</string>
     <string name="comments_api_desc">Atenzione: Conosciuta per trolling ed abuso</string>
     <string name="no_recommendations">Nessun consiglio disponibile!</string>
     <string name="clear_glide">Cancella la Cache di Scorrimento</string>
     <string name="clear_glide_desc">Esegue un ripristino completo della cache delle immagini</string>
-
     <string name="general">Generali</string>
     <string name="show_system_bars">Mostra le Barre di Stato &amp; Navigazione</string>
     <string name="auto_detect_webtoon">Rileva Automaticamente i Webtoon</string>
@@ -420,14 +389,13 @@
     <string name="check_app_updates">Verifica gli Aggiornamenti</string>
     <string name="author">Autore</string>
     <string name="forks">Versioni</string>
-    <string name="faq">FAQ</string>
+    <string name="faq">Domande frequenti</string>
     <string name="accounts">Account</string>
     <string name="addons">Add-on</string>
     <string name="addons_desc">Ottieni più funzioni dalla tua app</string>
     <string name="login_with_anilist">Accedi con AniList</string>
     <string name="account_help">Come funziona questo\?</string>
-    <string name="full_account_help">
-        Himitsu è un\'App Basata su AniList, quindi per sincronizzarsi con il tuo Account MAL, Ha bisogno di un account AniList per accedere.
+    <string name="full_account_help">        Himitsu è un\'App Basata su AniList, quindi per sincronizzarsi con il tuo Account MAL, Ha bisogno di un account AniList per accedere.
         \nUna volta effettuato l\'accesso con entrambi gli account AniList e MAL, l\'app aggiornerà automaticamente il tuo account MAL ogni volta che:
         \n- Aggiungi un nuovo Media
         \n- Modifichi un Media
@@ -457,13 +425,11 @@
     <string name="sort_by_release_date">Ordina per Data di Rilascio</string>
     <string name="crop_borders">Ritaglia Bordi</string>
     <string name="note">NOTA</string>
-
     <string name="subscriptions">Iscrizioni</string>
     <string name="subscribe_lists">Iscriviti a Tutti i Correnti</string>
     <string name="subscribe_lists_desc">Aggiungi i leggendo / guardando / pianificando correnti</string>
     <string name="no_current_items">Lista dei media correnti vuota!</string>
     <string name="current_subscribed">Iscritto alle liste correnti!</string>
-
     <string name="manage_extension_repos">Gestisci Repo Estensioni</string>
     <string name="installing_extension">Installazione estensione</string>
     <string name="installation_failed">Installazione fallita: %1$s</string>
@@ -479,21 +445,17 @@
     <string name="error_message">Errore: %1$s</string>
     <string name="installer_step">Passaggio: %1$s</string>
     <string name="review">Esamina</string>
-
     <string name="select_source">Seleziona una Fonte</string>
-
     <string name="install_update">Installare l\'aggiornamento %1$s?</string>
     <string name="beta_update">Beta </string>
     <string name="update_available">Aggiornamento Disponibile</string>
-
     <string name="reviews">Recensioni</string>
     <string name="discord_nothing_button">Mostra solo il primo pulsante</string>
     <string name="discord_himitsu_button">Mostra Himitsu nel secondo pulsante</string>
     <string name="discord_anilist_button">Mostra invece il tuo profilo AniList</string>
-    <string name="discord_rich_presence">Discord Rich Presence</string>
+    <string name="discord_rich_presence">Presenza Discord ricca</string>
     <string name="stream_on_himitsu">Trasmetti su Himitsu</string>
     <string name="discord_rpc">Mostra Discord Rich Presence</string>
-
     <string name="jobless_message">DANNAZIONE! SEI DAVVERO SENZA LAVORO\nHAI RAGGIUNTO LA FINE</string>
     <string name="file_manager_not_found">Impossibile trovare un Gestore File per aprire la scheda SD</string>
     <string name="error_loading_data">Errore nel caricamento dei dati %1$s</string>
@@ -502,7 +464,7 @@
     <string name="login_anilist_account">Accedi all\'account AniList per favore!</string>
     <string name="congrats_vro">Congratulazioni Vro</string>
     <string name="please_reload">Ricarica per favore.</string>
-    <string name="copied_text">Copiato "%1$s"</string>
+    <string name="copied_text">Copiato \"%1$s\"</string>
     <string name="back_to_exit">Premi nuovamente INDIETRO per uscire</string>
     <string name="back_button">Pulsante Indietro</string>
     <string name="anilist_not_found">Sembra che non sia stato trovato su AniList.</string>
@@ -541,11 +503,9 @@
     <string name="list_updated">Lista Aggiornata</string>
     <string name="deleted_from_list">Eliminato dalla Lista</string>
     <string name="no_list_id">Nessun ID Lista trovato…</string>
-
     <string name="matagi_update">Himitsu Shirase %1$s</string>
     <string name="matagi_dont_show">Salta %1$s</string>
     <string name="matagi_downloading">Download Himitsu %1$s</string>
-
     <string name="checking_for_update">Verificando gli Aggiornamenti</string>
     <string name="dont_show_again">Non notificare di nuovo per la versione %1$s</string>
     <string name="no_update_found">Nessun Aggiornamento Trovato</string>
@@ -582,13 +542,11 @@
     </string-array>
     <string name="main_role">PRINCIPALE</string>
     <string name="supporting_role">SECONDARIO</string>
-
     <string name="status_finished">FINITO</string>
     <string name="status_releasing">IN PUBBLICAZIONE</string>
     <string name="status_not_yet_released">NON ANCORA RILASCIATO</string>
     <string name="status_cancelled">CANCELLATO</string>
     <string name="status_hiatus">IN PAUSA</string>
-
     <string name="type_adaptation">ADATTAMENTO</string>
     <string name="type_parent">PRINCIPALE</string>
     <string name="type_character">PERSONAGGIO</string>
@@ -597,10 +555,9 @@
     <string name="type_other">ALTRI</string>
     <string name="type_source">FONTE</string>
     <string name="type_contains">CONTIENE</string>
-
     <string name="view_profile_in_himitsu">Vedi Profilo in Himitsu</string>
     <string name="continue_episode">Continua : Episodio %1$s%2$s\n%3$s</string>
-    <string name="filler_tag"> - Filler</string>
+    <string name="filler_tag"> - Riempitivo</string>
     <string name="continue_chapter">Continua : %1$s\n%2$s</string>
     <string name="episode">"Episodio "</string>
     <string name="episode_num">Episodio %1$s</string>
@@ -609,7 +566,6 @@
     <string name="just_released">- Nuovo rilascio!</string>
     <string name="checking_subscriptions_title">Verificando le Iscrizioni</string>
     <string name="user_list">Lista %2$s di %1$s</string>
-
     <string name="speed">Velocità</string>
     <string name="auto_update">Aggiorna Automaticamente il progresso per %1$s?</string>
     <string name="continue_from">Continuare da %1$s?</string>
@@ -623,7 +579,6 @@
     <string name="outline_type">Tipo Di Contorno</string>
     <string name="subtitle_font">Font Sottotitoli</string>
     <string name="launch_application">La pagina sta tentando di avviare %1$s. Lo permetti?</string>
-
     <string name="yes">Sì</string>
     <string name="no">No</string>
     <string name="ok">OK</string>
@@ -636,96 +591,70 @@
     <string name="content_18">Attiva il contenuto 18+ dalle tue impostazioni AniList</string>
     <string name="available">Disponibile</string>
     <string name="lets_go">Andiamo</string>
-    <string name="cope">Cope</string>
-
+    <string name="cope">Affronta</string>
     <string name="watched_num">"Guardato/i "</string>
     <string name="read_num">"Letto/i "</string>
     <string name="items_out_of">" su "</string>
     <string name="items_total_of">"Totale di "</string>
     <string name="no_description_available">Nessuna Descrizione Disponibile</string>
-
     <string-array name="manga_directions">
         <item>Dall\'Alto verso il Basso</item>
         <item>Da Destra a Sinistra</item>
         <item>Dal Basso verso l\'Alto</item>
         <item>Da Sinistra a Destra</item>
     </string-array>
-
     <string-array name="manga_layouts">
         <item>Impaginato</item>
         <item>Continuo Impaginato</item>
         <item>Continuo</item>
     </string-array>
-
     <string name="selected">Selezionato</string>
     <string name="found">Trovato</string>
-
     <string name="age">"__Età:__ "</string>
     <string name="birthday">"\n__Compleanno:__ "</string>
     <string name="gender">"\n__Genere:__ "</string>
-
     <string name="male">Maschio</string>
     <string name="female">Femmina</string>
-
     <string name="question_1">Cos\'è Himitsu?</string>
-    <string name="answer_1">Dantotsu ha unito dei componenti di Aniyomi nel codice principale di Saikou, ma poi Himitsu ha forkato Dantotsu e ha iniziato a migliorarlo. È (per lo più) un client solo per AniList, che supporta anche le estensioni. \n>Himitsu (秘密; Him-itsu) significa "segreto" in Giapponese. Shhh. È un segreto così buono che persino il nome è vietato.</string>
-
+    <string name="answer_1">Dantotsu ha unito dei componenti di Aniyomi nel codice principale di Saikou, ma poi Himitsu ha forkato Dantotsu e ha iniziato a migliorarlo. È (per lo più) un client solo per AniList, che supporta anche le estensioni. \n&gt;Himitsu (秘密; Him-itsu) significa \"segreto\" in Giapponese. Shhh. È un segreto così buono che persino il nome è vietato.</string>
     <string name="question_2">Quali sono alcune funzioni i Himitsu?</string>
     <string name="answer_2">Questo sarebbe un paragrafo piuttosto grande se elencassimo tutto ciò che Dantotsu tenta di realizzare, per non parlare di tutto ciò che Himitsu ha aggiunto. La cosa migliore per te sarebbe fare un salto sul [GitHub di Himitsu](https://github.com/RepoDevil/Himitsu) e consultare il README.</string>
-
     <string name="question_3">Qual è la differenza tra le versioni Stabile, Beta &amp; Alpha?</string>
     <string name="answer_3">Questo fork non fornisce tracce multiple. La versione che scarichi dal [repository](https://github.com/RepoDevil/Himitsu) è la stessa di [AbandonedCart](https://github.com/AbandonedCart). Se trovi dei bug e hai già aggiornato all\'ultima versione, sentiti libero di segnalare un [problema](https://github.com/RepoDevil/Himitsu/issues)</string>
-
     <string name="question_4">Himitsu è disponibile per PC?</string>
     <string name="answer_4">Attualmente no (sia per Windows che per Linux). Non c\'è una stima di quando sarà disponibile. Ma puoi scaricare un qualsiasi emulatore Android ed eseguire Himitsu su di esso. Gli utenti di Windows 11 possono utilizzare il Windows Subsystem for Android (WSA) per eseguire Himitsu in Windows.</string>
-
     <string name="question_5">Himitsu è disponibile per iOS?</string>
     <string name="answer_5">No, il meglio che possiamo fare è intagliare Himitsu su una mela.</string>
-
     <string name="question_src">Himitsu non viola la licenza di Dantotsu?</string>
     <string name="answer_src">La risposta breve è no, ma una spiegazione dettagliata è disponibile nel [README di Himitsu](https://github.com/RepoDevil/Himitsu?tab=readme-ov-file#himitsu-%EF%B8%8F)</string>
-
     <string name="question_6">Perché le mie statistiche non si aggiornano?</string>
     <string name="answer_6">Questo perché si aggiorna automaticamente ogni 48 ore (da AniList). Se hai davvero bisogno di aggiornare le tue statistiche, puoi forzarne l\'aggiornamento andando a questo [link](https://anilist.co/settings/lists).</string>
-
     <string name="question_7">Come scaricare gli Anime?</string>
     <string name="answer_7">Un Add-on di terze parti per il download è sviluppato e distribuito da Dantotsu. La compatibilità è basata su Dantotsu e può cessare di funzionare in qualsiasi momento. Può essere trovato accedendo alla pagina \"Add-on\" nelle impostazioni dell\'app.</string>
-
     <string name="question_9">Come abilitare i contenuti NSFW?</string>
-    <string name="answer_9">Puoi abilitare i contenuti NSFW attivando i contenuti 18+ da questo [link](https://anilist.co/settings/media). Devi anche abilitare le estensioni NSFW in \`Impostazioni > Estensioni > Estensioni NSFW\` </string>
-
+    <string name="answer_9">Puoi abilitare i contenuti NSFW attivando i contenuti 18+ da questo [link](https://anilist.co/settings/media). Devi anche abilitare le estensioni NSFW in \`Impostazioni &gt; Estensioni &gt; Estensioni NSFW\` </string>
     <string name="question_10">Come importare le mie liste MAL / Kitsu in AniList?</string>
     <string name="answer_10">Ecco come farlo,\n\nEsporta:\n\n1. Vai a questo [link](https://malscraper.azurewebsites.net).\n2. Dai il tuo nome utente Kitsu/MAL e scarica entrambe le liste anime e manga. (Saranno in formato XML)\nNota: Devi scrivere il nome utente del tracciatore che hai selezionato\n\nImporta:\n\n1. Dopo aver esportato la tua lista anime e manga da Kitsu/MAL, ora vai [qui](https://anilist.co/settings/import) \n2. Seleziona/rilascia il file XML degli anime sulla casella sopra.\n|→Seleziona/rilascia il file XML dei manga sulla casella sotto.</string>
-
     <string name="question_11">Come importare le mie liste AniList / Kitsu in MAL?</string>
     <string name="answer_11">Ecco come farlo,\n\nEsporta:\n\n1. Vai a questo [link](https://malscraper.azurewebsites.net/). \n2. Dai il tuo nome utente AniList/ID Kitsu nella casella \'Username/Kitsu User ID\'. \n3. Seleziona il tipo di lista e abilita \'update_on_import\'. \n4. Scarica il file; sarà in formato .xml. Assicurati di scaricare entrambe le liste Anime e Manga.\n\nImporta:\n1. Per importarle nel tuo account MAL, vai a questo [link](https://myanimelist.net/import.php) e scegli \'MyAnimeList Import\' come tipo di importazione. \n2. Premi su \'Choose File\' e seleziona il file XML scaricato della lista anime/manga. \n3. Premi su \'Import Data\'. \nCongratulazioni, hai appena importato la lista selezionata nel tuo account MAL.</string>
-
     <string name="question_12">Perché non riesco a trovare uno specifico titolo anime / manga?</string>
     <string name="answer_12">Diciamo che stai cercando Castlevania, ma AniList non ce l\'ha. Questo significa che non ce l\'ha nemmeno Himitsu.\nUna soluzione a questo problema è la seguente:\n1) Vai su un qualsiasi anime che non è nella tua lista.\n2) Vai alla sezione guarda.\n3) Seleziona una qualsiasi fonte e premi su \'Titolo Errato?\'.\n4) Ora cerca Castlevania (L\'anime che stavi cercando) e selezionalo.\n5) DIVERTITI!\n\nSe non riesci a trovare l\'anime attraverso questi passaggi, allora è una sfortuna per te, amico. Prova un\'altra fonte.</string>
-
     <string name="question_13">Come risolvere che le fonti selezionano un titolo completamente sbagliato?</string>
     <string name="answer_13">Himitsu di per sé non ospita nulla, ma si affida ad altre fonti. Quando mostra gli episodi, sceglie il 1° risultato fornito dalla fonte dopo aver cercato il titolo. Himitsu non ha modo di rilevare se è legittimo o no. Quindi, per questo, abbiamo il \'Titolo Errato?\' appena sotto il nome della fonte(sopra i layout). Puoi scegliere il risultato/titolo corretto premendo su di esso e goderti i suoi episodi.</string>
-
     <string name="question_14">Come leggere i manga a colori?</string>
     <string name="answer_14">Mi dispiace dovertelolo dire, ma solo una piccola quantità di manga ha una versione a colori. Se una versione a colori dovrebbe essere disponibile, potrebbe essere semplicemente nascosta in Himitsu. Diciamo che vuoi leggere la versione a colori di Chainsaw Man. Segui i passaggi seguenti ↓\n\n1) Vai su Chainsaw Man\n2) Premi su \'Leggi\'\n3) Seleziona una qualsiasi fonte funzionante\n4) Premi \'Titolo Errato\'\n5) Seleziona Chainsaw Man a colori\n6) Divertiti\n\nNota: molte fonti non hanno la versione a colori anche se è disponibile da qualche altra parte. Prova una fonte diversa. Se nessuna fonte ce l\'ha, allora la versione a colori del tuo manga desiderato potrebbe non esistere.</string>
-
     <string name="question_15">Errori di Handshake? Perché non si carica alcun timestamp?</string>
-    <string name="answer_15">Puoi risolvere questo problema abilitando \'Proxy\' da \n\`Impostazioni > Anime > Impostazioni del Lettore > Segmenti > Proxy\`.\nSe i timestamp non vengono ancora caricati, ma il popup dell\'errore di handshake è risolto, allora l\'episodio che stai guardando semplicemente non ha ancora i timestamp.</string>
-
+    <string name="answer_15">Puoi risolvere questo problema abilitando \'Proxy\' da \n\`Impostazioni &gt; Anime &gt; Impostazioni del Lettore &gt; Segmenti &gt; Proxy\`.\nSe i timestamp non vengono ancora caricati, ma il popup dell\'errore di handshake è risolto, allora l\'episodio che stai guardando semplicemente non ha ancora i timestamp.</string>
     <string name="question_16">Non riesci a trovare nulla in una fonte?</string>
     <string name="answer_16">Alcune soluzioni di base sarebbero : \n\n• Aggiornare le tue estensioni se ce ne sono. \n• Aprire la Vista Web e attendere che venga caricata. Dopo che il caricamento è stato completato, tornare indietro. (Se la Vista Web mostra l\'errore 404 o qualcosa di simile, è probabile che la tua fonte non funzioni)\n• Usare un DNS diverso dalle tue impostazioni, preferibilmente, Libre. \n• Prova una VPN affidabile. (Dovrai ripetere il passaggio 1 dopo questo) \n\nSe nessuno dei passaggi precedenti funziona allora usa una fonte diversa o unisciti al nostro [discord](https://discord.gg/invite/4HPZ5nAWwM) per aiuto.</string>
-
     <string name="question_17">Alcuni consigli e trucchi utili</string>
     <string name="answer_17">Di seguito sono riportati alcuni suggerimenti e trucchi che potresti conoscere o no - \n \n \n - Tenendo premuto il logo di Himitsu nelle impostazioni, puoi controllare manualmente se ci sono nuovi aggiornamenti. \n \n - Tenendo premuto un messaggio di errore/etichetta/sinonimo o titolo, si copierà. \n \n - Puoi aprire un episodio con altre app tenendo premuto un qualsiasi server per quell\'episodio. Questo aiuta a trasmettere quell\'episodio con altri lettori video o a scaricarlo usando i gestori di download. \n \n - Puoi impostare liste personalizzate utilizzando questo [link](https://anilist.co/settings/lists). (devi aver effettuato l\'accesso) \n \n - Se il tuo episodio/capitolo non viene progredito automaticamente dopo aver finito di guardarlo/leggerlo, allora tieni premuta la barra di stato(il pulsante pianificando/ripetendo/guardando) di quell\'anime/manga. La prossima volta che inizierai un capitolo/finirai un episodio, ti imbatterai in un popup. Premi sì lì. </string>
-
     <string name="subscribed_notification">Iscritto! Ricevendo notifiche, quando vengono rilasciati nuovi episodi su %1$s.</string>
-
     <string name="unsubscribed_notification">Disiscritto, non riceverai alcuna notifica.</string>
     <string name="episode_plural">Episodi</string>
     <string name="episode_singular">Episodio</string>
     <string name="chapter_singular">Capitolo</string>
     <string name="chapter_plural">Capitoli</string>
-
     <string name="filter_status">"Stato : %1$s"</string>
     <string name="filter_source">"Fonte: %1$s"</string>
     <string name="filter_format">"Formato : %1$s"</string>
@@ -780,19 +709,16 @@
     <string name="restore_settings">Impostazioni di Importazione</string>
     <string name="restore_settings_underline"><u>Ripristina Impostazioni</u></string>
     <string name="try_internal_cast_experimental">Prova il Cast Interno (Sperimentale)</string>
-
     <string name="faq_desc">Domande generali su Himitsu</string>
     <string name="check_app_updates_desc">Controlla Github per gli aggiornamenti dell\'app</string>
     <string name="share_username_in_logs_desc">Includi nome utente nelle segnalazioni di crash</string>
     <string name="devs_desc">I lavvoratori non pagati propri di Himitsu</string>
     <string name="forks_desc">Progetti deriati da Dantotsu</string>
     <string name="disclaimer_desc">Qualcosa da tenere a mente</string>
-
     <string name="use_foldable">Usa layout per pieghevoli</string>
     <string name="use_foldable_desc">Il contenuto si adatta alla configurazione della cerniera</string>
     <string name="add_shortcuts">Aggiungi scorciatoie al launcher</string>
     <string name="add_shortcuts_desc">Aggiunge continua gli articoli al clic lungo dell\'icona</string>
-
     <string name="comments">Commenti</string>
     <string name="newest">Più Recenti</string>
     <string name="oldest">Più Vecchi</string>
@@ -806,7 +732,6 @@
     <string name="no_fav_manga">L\'utente non ha Manga preferiti</string>
     <string name="fav_character">Personaggi Preferiti</string>
     <string name="fav_staff">Staff Preferito</string>
-
     <string name="stats">Statistiche</string>
     <string name="days_watched">Giorni guardati</string>
     <string name="total_anime">Anime Totali</string>
@@ -844,7 +769,6 @@
     <string name="scanlator">Scanlator</string>
     <string name="set_cookies">Imposta i Cookie</string>
     <string name="open_website">Apri Sito Web</string>
-
     <string name="disable_debug">Disabilita il Logging</string>
     <string name="rogue_warning">Potrebbe migliorare le prestazioni, ma i problemi vengono ignorati.</string>
     <string name="log_to_file">Log su file</string>
@@ -860,7 +784,6 @@
     <string name="anilist_notifications_checking_time">Frequenza di aggiornamento delle notifiche di AniList : %1$s</string>
     <string name="comment_notification_checking_time">Frequenza di aggiornamento delle notifiche dei commenti : %1$s</string>
     <string name="activities">Attività</string>
-
     <string name="incorrect_password">Password errata</string>
     <string name="password_cannot_be_empty">La password non può essere vuota</string>
     <string name="unknown_file_type">Tipo di file sconosciuto</string>
@@ -869,15 +792,12 @@
     <string name="enter_password">Inserisci La Password</string>
     <string name="you_cursed">Sei stato maledetto</string>
     <string name="invalid_file_type">Tipo di file non valido</string>
-
     <string name="purge_confirm">Sei sicuro di voler eliminare tutti i download di %1$s?</string>
-    <string name="delete_content">Are you sure you want to delete %1$s?</string>
-
+    <string name="delete_content">Sei sicuro di voler eliminare %1$s?</string>
     <string name="delete_item">Cancellare %1$s?</string>
     <string name="deleted_item">%1$s cancellato</string>
     <string name="multi_download_chapter">Scaricatore Multi Capitolo</string>
     <string name="multi_download_chapter_count">Inserisci il numero di capitoli da scaricare</string>
-
     <string name="delete_fail_reason">Impossibile cancellare a causa di… %1$s</string>
     <string name="delete_fail">Impossibile cancellare</string>
     <string name="hide_replies">Nascondi risposte</string>
@@ -885,25 +805,19 @@
     <string name="view_replies">Visualizza risposte</string>
     <string name="view_replies_count">Visualizza %1$d risposte</string>
     <string name="replying_to">Rispondendo a %1$s</string>
-
     <string name="delete_comment">Elimina Commento</string>
     <string name="delete_comment_confirm">Sei sicuro di voler eliminare questo commento?</string>
     <string name="comment_deleted">Commento Eliminato</string>
-    
     <string name="ban_user">Banna Utente</string>
     <string name="ban_user_confirm">Sei sicuro di voler bannare questo utente?</string>
     <string name="user_banned">Utente Bannato</string>
-
     <string name="report_comment">Segnala Commento</string>
     <string name="report_comment_confirm">Segnalare solo commenti che violano le regole. Sei sicuro di voler segnalare questo commento?</string>
     <string name="comment_reported">Commento Segnalato</string>
-
     <string name="list">Elenco</string>
     <string name="grid">Griglia</string>
     <string name="compact">Compatto</string>
-
     <string name="webview_not_installed">WebView non installato</string>
-
     <string name="video_quality">Qualità: %1$dp</string>
     <string name="size_unknown">Dimensione Sconosciuta</string>
     <string name="mb_size">%1$s MB</string>
@@ -912,24 +826,19 @@
     <string name="no_location_selected">Nessuna posizione selezionata</string>
     <string name="do_it">Fallo!</string>
     <string name="password">Password</string>
-
     <string name="anilist_broken_title">Errore Interno del Server!</string>
     <string name="anilist_broken">AniList sembra essere non reattivo e le funzionalità saranno gravemente limitate. Vorresti chiudere l\'app e riprovare più tardi?\n</string>
-
     <string name="search_title">Ricerca %1$s</string>
-
     <string name="profile_stats_widget">Traccia i progressi direttamente dalla tua schermata home</string>
-    <string name="anime_watched">Anime</string>
+    <string name="anime_watched">Animazione</string>
     <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Capitoli</string>
     <string name="episodes_watched_n">Episodi</string>
     <string name="loading">Caricamento…</string>
     <string name="user_stats">Statistiche di %1$s</string>
-
     <string name="please">Per Favore</string>
     <string name="log_in">accedi</string>
     <string name="or_join">o unisciti</string>
-
     <string name="audio_tracks">Tracce Audio</string>
     <string name="disabled_track">\[⛔\] Disabilita i Sottotitoli</string>
     <string name="invalid_track">\[⁉️\] Non Valido</string>
@@ -939,7 +848,6 @@
     <string name="import_file">Importa file</string>
     <string name="duplicate_sub">Sottotitoli già caricati</string>
     <string name="remove_subtitle">Rimuovere la traccia dei sottotitoli?</string>
-
     <string name="top_background_color">Colore dello sfondo superiore</string>
     <string name="bottom_background_color">Colore dello Sfondo Inferiore</string>
     <string name="countdown_text_color">Colore del Testo del Conto alla Rovescia</string>
@@ -947,13 +855,11 @@
     <string name="stat_text_color">Colore del Testo delle Statistiche</string>
     <string name="flipper_color">Colore dei Flipper</string>
     <string name="placeholder">Segnaposto</string>
-
     <string name="anime_add_repository">Aggiungi Repo Anime</string>
     <string name="manga_add_repository">Aggiungi Repo Manga</string>
     <string name="novel_add_repository">Aggiungi Repo Romanzi</string>
     <string name="edit_repositories">Modifica repository</string>
     <string name="rem_repository">Rimuovere il repository?</string>
-
     <string name="trending_movies">Film di Tendenza</string>
     <string name="include_list">Includi lista</string>
     <string name="top_rated">Miglior valutazione</string>
@@ -963,28 +869,23 @@
     <string name="adult_only_content">Contenuto solo per adulti</string>
     <string name="report">Segnala</string>
     <string name="ban">Banna</string>
-
     <string name="activity_label">Attività</string>
     <string name="activity_delete">Cancellare Attività?</string>
-
     <string name="dir_error">Il tuo percorso non può essere impostato</string>
     <string name="dir_access">Accesso ai download</string>
     <string name="dir_access_msg">Scegli una cartella per salvare i tuoi download per favore</string>
     <string name="change_download_location">Cambia la Posizione dei Download</string>
     <string name="download_location_msg">Sei sicuro di voler cambiare la posizione dei download?\nI vecchi download potrebbero non essere più accessibili.</string>
-
     <string name="voice_actors">Doppiatori</string>
     <string name="download_permission_required">È richiesta l\'autorizzazione per scaricare</string>
     <string name="media">Media</string>
     <string name="users">Utenti</string>
-    <string name="social">Social</string>
+    <string name="social">Sociale</string>
     <string name="auto_skip_recap">Salta Automaticamente il Riassunto</string>
     <string name="use_anilist_icon">Usa l\'Icona di AniList</string>
-
     <string name="exo_source_exception">Errore della Fonte: %1$s</string>
     <string name="exo_decoding_failed">Decodifica fallita: %1$s</string>
     <string name="exo_player_error">Errore del Lettore Video: %1$d %2$s: %3$s</string>
-
     <string name="accounts_desc">AniList, MAL e Discord.\nChe cosa si può desiderare di più?</string>
     <string name="theme_desc">Cambia l\'atmosfera della tua app</string>
     <string name="extensions_desc">Gestisci la tua raccolta di repo</string>
@@ -995,9 +896,7 @@
     <string name="system_desc">Aggiornamenti e strumenti utili</string>
     <string name="about_desc">Scopri di più su Himitsu</string>
     <string name="ani_setting_desc">Apri le impostazioni di AniList nel browser</string>
-
     <string name="enable">Abilita</string>
-
     <string name="default_novel_settings">Impostazioni Predefinite dei Romanzi</string>
     <string name="line_height">Altezza delle Righe</string>
     <string name="margin">Margine</string>
@@ -1005,15 +904,12 @@
     <string name="maximum_column_width">Larghezza (scrittura orizzontale) o altezza (scrittura verticale) massima della colonna</string>
     <string name="maximum_block_size">Dimensione Massima del Blocco</string>
     <string name="maximum_height">Altezza (scrittura orizzontale) o larghezza (scrittura verticale) massima</string>
-
     <string name="global">Globale</string>
     <string name="china">Cina</string>
     <string name="south_korea">Corea del Sud</string>
     <string name="japan">Giappone</string>
     <string name="taiwan">Taiwan</string>
-
     <string name="something">Qualcosa</string>
-    
     <string name="sort_score">Punteggio</string>
     <string name="popular">Popolare</string>
     <string name="trending">Di Tendenza</string>
@@ -1021,17 +917,13 @@
     <string name="a_z">A-Z</string>
     <string name="z_a">Z-A</string>
     <string name="pure_pain">Dolore Puro</string>
-
     <string name="add_a_comment">Aggiungi un commento…</string>
-
     <string name="type">Tipo</string>
     <string name="view">Visualizza</string>
-    
     <string name="count">CONTO</string>
     <string name="open">Apri</string>
     <string name="hentai">HENTAI?????</string>
     <string name="time">Tempo</string>
-
     <string name="player_settings_desc">Tutte le impostazioni relative al lettore video</string>
     <string name="prefer_dub_desc">Seleziona media doppiati di default</string>
     <string name="show_yt_desc">Mostra i link delle piattaforme di streaming quando disponibili</string>
@@ -1080,43 +972,34 @@
     <string name="feed">Feed</string>
     <string name="profile">Profilo</string>
     <string name="content_not_found">Contenuto mancante o non disponibile</string>
-
     <string name="epub_download_exception">Errore durante il download del .epub: %1$s</string>
     <string name="novel_download_progress">Progresso del Download del Romanzo</string>
     <string name="download_started">Download avviato</string>
     <string name="downloads_completed">Tutti i download completati</string>
     <string name="pending_downloads">Download in sospeso: %1$d</string>
-
     <string name="reading">LEGGENDO</string>
     <string name="watching">GUARDANDO</string>
     <string name="avatar">%1$s\ [Avatar]</string>
-    <string name="cover">%1$s\ [Cover]</string>
+    <string name="cover">%1$s\ [Copertina]</string>
     <string name="banner">%1$s\ [Banner]</string>
-
     <string name="update_webview">Aggiorna WebView da Google Play per favore</string>
     <string name="update_webview_version">La versione di Webview %1$d richiede l\'aggiornamento</string>
     <string name="webview_not_found_version">Impossibile trovare la versione %1$s di WebView</string>
     <string name="webview_not_found">Impossibile trovare una libreria WebView installata</string>
     <string name="multi">Multi</string>
-
     <string name="installed_extensions">%1$s Installati</string>
     <string name="available_extensions">%1$s Disponibili</string>
     <string name="available_plugins">Plugin %1$s</string>
-
     <string name="your_story">La Tua Storia</string>
     <string name="your_progress">Il Tuo Progresso</string>
-
     <string name="file_not_found">File non trovato</string>
     <string name="directory_not_found">Cartella non trovata</string>
     <string name="successfully_deleted">Cancellato con successo</string>
     <string name="failed_to_delete_directory">Impossibile cancellare la cartella</string>
-
     <string name="hidden_anime">Anime Nascosti</string>
     <string name="hidden_manga">Manga Nascosti</string>
-
     <string name="random_anime">Anime Casuale</string>
     <string name="random_manga">Manga Casuale</string>
-
     <string name="you">Tu</string>
     <string name="logout_confirm">Sei sicuro di volerti disconnettere?</string>
     <string name="app_died">L\'APP È MORTA</string>
@@ -1132,21 +1015,17 @@
     <string name="download_audio_tracks">Scarica Tracce Audio</string>
     <string name="no_video_selected">Nessun video selezionato</string>
     <string name="no_subtitles_available">Nessun sottotitolo adisponibile</string>
-
     <string name="all">Tutto</string>
     <string name="activity">Attività</string>
     <string name="threads">Thread</string>
-
     <string name="contributor">Collaboratore</string>
     <string name="comment_mod">Moderatore dei Commenti</string>
-
     <string name="biometric_title">Verifica Biometrica</string>
     <string name="biometric_summary">Richiedere l\'autenticazione per accedere ad Himitsu</string>
     <string name="biometric_details">È richiesta l\'autenticazione biometrica</string>
     <string name="biometric_error">Errore Biometrico: %1$s</string>
     <string name="biometric_success">Bentornat*!</string>
     <string name="biometric_failed">Verifica Biometrica Fallita!</string>
-
     <string name="reviews_empty">Nessuna Recensione di %1$s</string>
     <string name="vote_out_of_total">(A %1$s su %2$s è piaciuta questa recensione)</string>
     <string name="create_new_activity">Crea Nuova Attività</string>
@@ -1199,6 +1078,5 @@
     <string name="down_to_up">Dal Basso verso l\'Alto</string>
     <string name="up_to_down">Dall\'Alto verso il Basso</string>
     <string name="anilist_notification">Nuova Notifica di AniList</string>
-    
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

@@ -16,6 +16,7 @@
     <string name="browse_anime">Explorar Anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Explorar Manga</string>
+    <string name="novel">Novel</string>
     <string name="novels">Novelas</string>
     <string name="info">Información</string>
     <string name="watch">Ver</string>
@@ -629,7 +630,7 @@
     <string name="question_14">¿Cómo leer mangas a color?</string>
     <string name="answer_14">Lamento decirte que solo una pequeña cantidad de mangas tienen versión a color. Si se supone que una versión a color está disponible, puede estar simplemente oculta en Himitsu. Digamos que deseas leer la versión a color de Chainsaw Man. Sigue los pasos a continuación ↓\n\n1) Ve a Chainsaw Man\n2) Presiona en \'Leer\'\n3) Selecciona cualquier fuente funcional\n4) Presiona \'Título incorrecto\'\n5) Selecciona Chainsaw Man a color\n6) Disfruta\n\nNota: Muchas fuentes no tienen la versión a color incluso si está disponible en otro lugar. Intenta con una fuente diferente. Si ninguna de las fuentes la tiene, entonces es posible que no exista una versión a color de tu manga deseado.</string>
     <string name="question_15">¿Falla el saludo? ¿Por qué no se cargan las marcas de tiempo?</string>
-    <string name="answer_15">Puedes solucionar este problema habilitando \'Proxy\' desde \n\`Configuración > Anime > Configuración del reproductor > Segmentos > Proxy\`.\nSi los sellos de tiempo aún no se cargan pero se solucionó la ventana emergente de fallo de apretón de manos, entonces el episodio que estás viendo simplemente aún no tiene sellos de tiempo para ello.</string>
+    <string name="answer_15">Puedes solucionar este problema habilitando \'Proxy\' desde \n\`Configuración &gt; Anime &gt; Configuración del reproductor &gt; Segmentos &gt; Proxy\`.\nSi los sellos de tiempo aún no se cargan pero se solucionó la ventana emergente de fallo de apretón de manos, entonces el episodio que estás viendo simplemente aún no tiene sellos de tiempo para ello.</string>
     <string name="question_16">¿No encuentras nada en una fuente?</string>
     <string name="answer_16">Algunas soluciones básicas serían: \n\n• Actualiza tus extensiones si las hay. \n• Abre la Vista Web y espera a que cargue. Después de que haya terminado de cargar, regresa. (Si la Vista Web muestra error 404 o algo similar, es probable que tu fuente esté caída)\n• Utiliza un DNS diferente de tus ajustes, preferiblemente, Libre. \n• Prueba una VPN confiable. (Tendrás que repetir el paso 1 después de esto) \n\nSi ninguno de los pasos anteriores funciona, entonces utiliza una fuente diferente o únete a nuestro [discord](https://discord.gg/invite/4HPZ5nAWwM) para obtener ayuda.</string>
     <string name="question_17">Algunos consejos y trucos útiles</string>

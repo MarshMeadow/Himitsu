@@ -16,6 +16,7 @@
     <string name="browse_anime">Bläddra bland Anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Bläddra bland Manga</string>
+    <string name="novel">Novel</string>
     <string name="novels">Romaner</string>
     <string name="info">Info</string>
     <string name="watch">Titta</string>
@@ -615,7 +616,7 @@
     <string name="male">Manlig</string>
     <string name="female">Kvinnlig</string>
     <string name="question_1">Vad är Himitsu?</string>
-    <string name="answer_1">Dantotsu sammanslöt komponenter från Aniyomi i Saikous kärnkod, men sedan gafflade Himitsu Dantotsu och började förbättra den. Det är (mestadels) en AniList-client som stöder även tillägg. \n>Himitsu (秘密; Him-itsu) betyder \"hemlig\" på japanska. Psst. Det är en så hemlig hemlighet att namnet till och med är förbjudet.</string>
+    <string name="answer_1">Dantotsu sammanslöt komponenter från Aniyomi i Saikous kärnkod, men sedan gafflade Himitsu Dantotsu och började förbättra den. Det är (mestadels) en AniList-client som stöder även tillägg. \n&gt;Himitsu (秘密; Him-itsu) betyder \"hemlig\" på japanska. Psst. Det är en så hemlig hemlighet att namnet till och med är förbjudet.</string>
     <string name="question_2">Vilka är några funktioner i Himitsu?</string>
     <string name="answer_2">Det här skulle vara en ganska lång paragraf om vi listade allt Dantotsu försöker åstadkomma, än mindre allt Himitsu har lagt till på det. Din bästa satsning skulle vara att kika in på [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) och läsa README.</string>
     <string name="question_3">Vad är skillnaden mellan Stabil, Beta &amp; Alfa versioner?</string>
@@ -631,7 +632,7 @@
     <string name="question_7">Hur laddar man ner Anime?</string>
     <string name="answer_7">En tredjeparts nedladdnings-tillägg har utvecklats och distribueras av Dantotsu. Kompatibiliteten är baserad på Dantotsu och kan upphöra att fungera när som helst. Det kan hittas genom att komma åt sidan \"Tillägg\" i appinställningarna.</string>
     <string name="question_9">Hur aktiverar man NSFW-innehåll?</string>
-    <string name="answer_9">Du kan aktivera NSFW-innehåll genom att aktivera innehåll för vuxna från denna [länk](https://anilist.co/settings/media). Du måste också aktivera NSFW-tillägg i \`Inställningar > Tillägg > NSFW-tillägg\`</string>
+    <string name="answer_9">Du kan aktivera NSFW-innehåll genom att aktivera innehåll för vuxna från denna [länk](https://anilist.co/settings/media). Du måste också aktivera NSFW-tillägg i \`Inställningar &gt; Tillägg &gt; NSFW-tillägg\`</string>
     <string name="question_10">Hur importerar jag mina MAL / Kitsu-listor till AniList?</string>
     <string name="answer_10">Så här gör du det,\n\nExport:\n\n1. Gå till denna [länk](https://malscraper.azurewebsites.net).\n2. Ange ditt Kitsu/MAL-användarnamn och ladda ner både anime- och mangalistan. (De kommer att vara i XML-format)\nObs: Du måste skriva användarnamnet för den tracker du valt\n\nImportera:\n\n1. Efter att ha exporterat din anime- och mangalista från Kitsu/MAL, gå nu [hit](https://anilist.co/settings/import) \n2. Välj/släpp upp anime-XML-filen i rutan ovan.\n|→Välj/släpp upp manga-XML-filen i rutan nedan.</string>
     <string name="question_11">Hur importerar jag mina AniList / Kitsu-listor till MAL?</string>
@@ -644,7 +645,7 @@
     <string name="answer_14">Ledsen att behöva berätta detta för dig, men bara en liten mängd manga har färgad version. Om en färgad version är avsedd att finnas tillgänglig kan den helt enkelt vara dold i Himitsu. Säg att du vill läsa den färgade versionen av Chainsaw Man. Följ stegen nedan ↓\n\n1) Gå till Chainsaw Man\n2) Tryck på \'Läs\'\n3) Välj vilken fungerande källa som helst\n4) Tryck på \'Fel titel\'\n5) Välj den färgade Chainsaw Man\n6) Njut\n
 Obs: Många källor har inte den färgade versionen även om den är tillgänglig någon annanstans. Försök med en annan källa. Om inga av källorna har det, då kan en färgad version av din önskade manga inte finnas.</string>
     <string name="question_15">Handslag misslyckas? Varför laddas inga tidsstämplar?</string>
-    <string name="answer_15">Du kan lösa detta genom att aktivera \'Proxy\' från \n\`Inställningar > Anime > Spelarinställningar > Segment > Proxy\`.\nOm tidsstämplarna fortfarande inte laddas men felhandlingen avslutas, betyder det att avsnittet du tittar på helt enkelt inte har tidsstämplar än för det.</string>
+    <string name="answer_15">Du kan lösa detta genom att aktivera \'Proxy\' från \n\`Inställningar &gt; Anime &gt; Spelarinställningar &gt; Segment &gt; Proxy\`.\nOm tidsstämplarna fortfarande inte laddas men felhandlingen avslutas, betyder det att avsnittet du tittar på helt enkelt inte har tidsstämplar än för det.</string>
     <string name="question_16">Kan inte hitta något i en källa?</string>
     <string name="answer_16">Några grundläggande fixar skulle vara: \n\n• Uppdatera dina tillägg om det finns några. \n• Öppna Webbvy och vänta på att den ska laddas. Efter att laddningen har slutförts, gå tillbaka. (Om Web View visar fel 404 eller liknande, är chanserna stora att din källa är nere)\n• Använd en annan DNS från dina inställningar, helst Libre. \n• Prova en pålitlig VPN. (Du måste upprepa steg 1 efter detta) \n
 Om inget av ovanstående steg fungerar, använd en annan källa eller gå med i vår [discord](https://discord.gg/invite/4HPZ5nAWwM) för hjälp.</string>

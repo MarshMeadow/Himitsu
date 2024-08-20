@@ -16,6 +16,7 @@
     <string name="browse_anime">Bla gjennom Anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Bla gjennom Manga</string>
+    <string name="novel">Novel</string>
     <string name="novels">Romaner</string>
     <string name="info">Info</string>
     <string name="watch">Se</string>
@@ -615,7 +616,7 @@
     <string name="male">Hann</string>
     <string name="female">Hunn</string>
     <string name="question_1">Hva er Himitsu?</string>
-    <string name="answer_1">Dantotsu fusjonerte komponenter fra Aniyomi inn i kjernekode av Saikou, men så gafflet Himitsu Dantotsu og begynte å forbedre den. Det er (for det meste) en AniList bare klient, som også støtter utvidelser. \n>Himitsu (秘密; Him-itsu) betyr \"hemmelighet\" på japansk. Shhh. Det er en hemmelighet så god at selv navnet er forbudt.</string>
+    <string name="answer_1">Dantotsu fusjonerte komponenter fra Aniyomi inn i kjernekode av Saikou, men så gafflet Himitsu Dantotsu og begynte å forbedre den. Det er (for det meste) en AniList bare klient, som også støtter utvidelser. \n&gt;Himitsu (秘密; Him-itsu) betyr \"hemmelighet\" på japansk. Shhh. Det er en hemmelighet så god at selv navnet er forbudt.</string>
     <string name="question_2">Hva er noen funksjoner ved Himitsu?</string>
     <string name="answer_2">Dette blir en ganske stor avsnitt hvis vi lister alt Dantotsu prøver å oppnå, for ikke å nevne alt Himitsu har lagt til på det. Ditt beste alternativ ville være å stikke innom [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) og se gjennom README.</string>
     <string name="question_3">Hva er forskjellen mellom Stabil, Beta og Alpha versjoner?</string>
@@ -631,7 +632,7 @@
     <string name="question_7">Hvordan laste ned Anime?</string>
     <string name="answer_7">En tredjeparts nedlastings Add-on er utviklet og distribuert av Dantotsu. Kompatibilitet er basert på Dantotsu og kan slutte å fungere når som helst. Den kan bli funnet ved å få tilgang til \"Add-ons\"-siden i app-innstillingene.</string>
     <string name="question_9">Hvordan aktivere NSFW-innhold?</string>
-    <string name="answer_9">Du kan aktivere NSFW-innhold ved å aktivere 18+ innhold fra denne [lenken](https://anilist.co/settings/media). Du må også aktivere NSFW-utvidelser i \`Innstillinger > Utvidelser > NSFW-utvidelser\` </string>
+    <string name="answer_9">Du kan aktivere NSFW-innhold ved å aktivere 18+ innhold fra denne [lenken](https://anilist.co/settings/media). Du må også aktivere NSFW-utvidelser i \`Innstillinger &gt; Utvidelser &gt; NSFW-utvidelser\` </string>
     <string name="question_10">Hvordan importerer jeg mine MAL / Kitsu-lister til AniList?</string>
     <string name="answer_10">Her er hvordan du gjør det,\n\nEksport: \n\n1. Gå til denne [lenken](https://malscraper.azurewebsites.net).\n2. Oppgi ditt Kitsu/MAL-brukernavn og last ned både anime- og manga-listen. (De vil være i XML-format)\nMerk: Du må skrive brukernavnet til sporeren du valgte\n\nImport: \n\n1. Etter at du har eksportert anime- og manga-listen din fra Kitsu/MAL, gå nå [hit](https://anilist.co/settings/import) \n2. Velg/dra anime XML-filen til boksen ovenfor.\n|→Velg/dra manga XML-filen til boksen nedenfor.</string>
     <string name="question_11">Hvordan importerer jeg mine AniList-/Kitsu-lister til MAL?</string>
@@ -643,7 +644,7 @@
     <string name="question_14">Hvordan leser man fargede mangaer?</string>
     <string name="answer_14">Beklager å si det, men bare en liten mengde mangaer har farget versjon. Hvis en farget versjon skal være tilgjengelig, kan den enkelt være skjult i Himitsu. La oss si du vil lese den fargede versjonen av Chainsaw Man. Følg trinnene nedenfor ↓\n\n1) Gå til Chainsaw Man\n2) Trykk på \'Les\'\n3) Velg en hvilken som helst fungerende kilde\n4) Trykk \'Feil Tittel\'\n5) Velg den fargede Chainsaw Man\n6) Kos deg\n\nMerk: Mange kilder har ikke den fargede versjonen selv om den er tilgjengelig et annet sted. Prøv en annen kilde. Hvis ingen av kildene har den, kan det være at det ikke finnes en farget versjon av den ønskede mangaen.</string>
     <string name="question_15">Håndtrykk mislykkes? Hvorfor lastes ingen tidsstempel inn?</string>
-    <string name="answer_15">Du kan fikse dette ved å aktivere \'Proxy\' fra \n\`Innstillinger > Anime > Spilleinnstillinger > Segmenter > Proxy\`.\nHvis tidsstempler fortsatt ikke lastes inn, men håndtrykk mislyktes popup er fikset, betyr det at episoden du ser bare ikke har tidsstempler ennå for den.</string>
+    <string name="answer_15">Du kan fikse dette ved å aktivere \'Proxy\' fra \n\`Innstillinger &gt; Anime &gt; Spilleinnstillinger &gt; Segmenter &gt; Proxy\`.\nHvis tidsstempler fortsatt ikke lastes inn, men håndtrykk mislyktes popup er fikset, betyr det at episoden du ser bare ikke har tidsstempler ennå for den.</string>
     <string name="question_16">Finner ikke noe i en kilde?</string>
     <string name="answer_16">Noen grunnleggende fiksinger ville være: \n\n• Oppdater dine utvidelser hvis du har noen. \n• Åpne nettleservisning og vent på at den lastes inn. Etter at lasting er fullført, gå tilbake. (Hvis nettleservisningen viser feil 404 eller lignende, er sjansene store for at kilden din er nede)\n• Bruk en annen DNS fra innstillingene dine, helst Libre. \n• Prøv en pålitelig VPN. (Du må gjenta trinn 1 etter dette) \n\nHvis ingen av trinnene over fungerer, så bruk en annen kilde eller bli med i vår [discord](https://discord.gg/invite/4HPZ5nAWwM) for hjelp.</string>
     <string name="question_17">Noen nyttige tips og triks</string>

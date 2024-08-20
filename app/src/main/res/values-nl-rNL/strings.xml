@@ -16,6 +16,7 @@
     <string name="browse_anime">Anime Bekijken</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Manga Bekijken</string>
+    <string name="novel">Nieuw</string>
     <string name="novels">Romans</string>
     <string name="info">Info</string>
     <string name="watch">Kijken</string>
@@ -615,7 +616,7 @@
     <string name="male">Mannelijk</string>
     <string name="female">Vrouwelijk</string>
     <string name="question_1">Wat is Himitsu?</string>
-    <string name="answer_1">Dantotsu voegde onderdelen van Aniyomi samen in de kerncode van Saikou, maar toen forked Himitsu Dantotsu en begon het te verbeteren. Het is voornamelijk een AniList-only client, dat ook extensies ondersteunt. \n>Himitsu (秘密; Him-itsu) betekent \"geheim\" in het Japans. Ssst. Het is zo\'n goed geheim dat zelfs de naam verboden is.</string>
+    <string name="answer_1">Dantotsu voegde onderdelen van Aniyomi samen in de kerncode van Saikou, maar toen forked Himitsu Dantotsu en begon het te verbeteren. Het is voornamelijk een AniList-only client, dat ook extensies ondersteunt. \n&gt;Himitsu (秘密; Him-itsu) betekent \"geheim\" in het Japans. Ssst. Het is zo\'n goed geheim dat zelfs de naam verboden is.</string>
     <string name="question_2">Wat zijn enkele functies van Himitsu?</string>
     <string name="answer_2">Dit zou een behoorlijk grote alinea zijn als we alles zouden opsommen wat Dantotsu probeert te bereiken, laat staan alles wat Himitsu daaraan heeft toegevoegd. Je kunt het beste langsgaan bij de [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) en de README bekijken.</string>
     <string name="question_3">Wat is het verschil tussen Stabiele, Bèta &amp; Alfaversies?</string>
@@ -631,7 +632,7 @@
     <string name="question_7">Hoe Anime downloaden?</string>
     <string name="answer_7">Een download Add-on van derden is ontwikkeld en verspreid door Dantotsu. De compatibiliteit is gebaseerd op Dantotsu en kan op elk moment stoppen met functioneren. Het kan worden gevonden door naar de \"Add-ons\" pagina in de app-instellingen te gaan.</string>
     <string name="question_9">Hoe NSFW-inhoud inschakelen?</string>
-    <string name="answer_9">U kunt NSFW-inhoud inschakelen door 18+ inhoud in te schakelen via deze [link](https://anilist.co/settings/media). U moet ook NSFW-extensies inschakelen in \`Instellingen > Extensies > NSFW-extensies\` </string>
+    <string name="answer_9">U kunt NSFW-inhoud inschakelen door 18+ inhoud in te schakelen via deze [link](https://anilist.co/settings/media). U moet ook NSFW-extensies inschakelen in \`Instellingen &gt; Extensies &gt; NSFW-extensies\` </string>
     <string name="question_10">Hoe importeer ik mijn MAL / Kitsu-lijsten naar AniList?</string>
     <string name="answer_10">Dit is hoe je het doet,\n\nExporteren:\n\n1. Ga naar deze [link](https://malscraper.azurewebsites.net).\n2. Geef je Kitsu/MAL-gebruikersnaam op en download zowel de anime- als mangalijst. (Ze zullen in XML-indeling zijn)\nLet op: je moet de gebruikersnaam van de tracker die je hebt geselecteerd opschrijven\n\nImporteren:\n\n1. Nadat je je anime- en mangalijst hebt geëxporteerd vanuit Kitsu/MAL, ga nu [hier](https://anilist.co/settings/import) \n2. Selecteer/sleep het anime XML-bestand in het bovenstaande vak.\n|→Selecteer/sleep het manga XML-bestand in het onderstaande vak.</string>
     <string name="question_11">Hoe importeer ik mijn AniList / Kitsu-lijsten naar MAL?</string>
@@ -643,7 +644,7 @@
     <string name="question_14">Hoe lees je gekleurde manga\'s?</string>
     <string name="answer_14">Sorry om het je te vertellen, maar slechts een klein aantal manga\'s heeft een gekleurde versie. Als er een gekleurde versie zou moeten zijn, is deze mogelijk gewoon verborgen in Himitsu. Stel dat je de gekleurde versie van Chainsaw Man wilt lezen. Volg de onderstaande stappen ↓\n\n1) Ga naar Chainsaw Man\n2) Druk op \'Lezen\'\n3) Selecteer een werkende bron\n4) Druk op \'Verkeerde titel\'\n5) Selecteer de gekleurde Chainsaw Man\n6) Geniet\n\nOpmerking: Veel bronnen hebben de gekleurde versie niet, zelfs als deze ergens anders beschikbaar is. Probeer een andere bron. Als geen van de bronnen het heeft, bestaat er mogelijk geen gekleurde versie van je gewenste manga.</string>
     <string name="question_15">Handdruk mislukt? Waarom worden er geen tijdstempels geladen?</string>
-    <string name="answer_15">Je kunt dit probleem oplossen door \'Proxy\' in te schakelen vanuit \n\`Instellingen > Anime > Spelerinstellingen > Segmenten > Proxy\`.\nAls de tijdstempels nog steeds niet laden maar het pop-upvenster voor handshake mislukt is opgelost, dan heeft de aflevering die je bekijkt simpelweg nog geen tijdstempels ervoor.</string>
+    <string name="answer_15">Je kunt dit probleem oplossen door \'Proxy\' in te schakelen vanuit \n\`Instellingen &gt; Anime &gt; Spelerinstellingen &gt; Segmenten &gt; Proxy\`.\nAls de tijdstempels nog steeds niet laden maar het pop-upvenster voor handshake mislukt is opgelost, dan heeft de aflevering die je bekijkt simpelweg nog geen tijdstempels ervoor.</string>
     <string name="question_16">Kan niets vinden in een bron?</string>
     <string name="answer_16">Enkele basisoplossingen zouden zijn : \n\n• Update je extensies als je die hebt. \n• Open Webweergave en wacht tot het geladen is. Nadat het laden is voltooid, ga terug. (Als Webweergave een foutmelding 404 of iets dergelijks weergeeft, is de kans groot dat je bron niet beschikbaar is)\n• Gebruik een ander DNS uit je instellingen, bij voorkeur Libre. \n• Probeer een betrouwbare VPN. (Je moet stap 1 herhalen na dit) \n\nAls geen van de bovenstaande stappen werkt, gebruik dan een andere bron of word lid van onze [discord](https://discord.gg/invite/4HPZ5nAWwM) voor hulp.</string>
     <string name="question_17">Enkele nuttige tips en trucs</string>
