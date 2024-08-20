@@ -16,6 +16,7 @@
     <string name="browse_anime">Prohlížet Anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Prohlížet Manga</string>
+    <string name="novel">Novinky</string>
     <string name="novels">Romány</string>
     <string name="info">Informace</string>
     <string name="watch">Sledovat</string>
@@ -619,7 +620,7 @@
     <string name="male">Muž</string>
     <string name="female">Žena</string>
     <string name="question_1">Co je Himitsu?</string>
-    <string name="answer_1">Dantotsu sloučil komponenty Aniyomi do jádra kódu Saikou, ale pak Himitsu odštěpila Dantotsu a začala ho zdokonalovat. Je to (převážně) pouze klient AniListu, který také podporuje rozšíření. \n>Himitsu (秘密; Him-itsu) znamená \"tajemství\" v japonštině. Psst. Je to tajemství tak dobré, že dokonce jméno je zakázáno.</string>
+    <string name="answer_1">Dantotsu sloučil komponenty Aniyomi do jádra kódu Saikou, ale pak Himitsu odštěpila Dantotsu a začala ho zdokonalovat. Je to (převážně) pouze klient AniListu, který také podporuje rozšíření. \n&gt;Himitsu (秘密; Him-itsu) znamená \"tajemství\" v japonštině. Psst. Je to tajemství tak dobré, že dokonce jméno je zakázáno.</string>
     <string name="question_2">Jaké jsou některé funkce Himitsu?</string>
     <string name="answer_2">To by byl docela velký odstavec, kdybychom vypisovali všechno, co Dantotsu snaží dosáhnout, natož co Himitsu k tomu přidala. Vaší nejlepší sázka by bylo zastavit se na [Himitsu GitHubu](https://github.com/RepoDevil/Himitsu) a přečíst si README.</string>
     <string name="question_3">Jaký je rozdíl mezi stabilními, beta a alfa verzemi?</string>
@@ -635,7 +636,7 @@
     <string name="question_7">Jak stáhnout Anime?</string>
     <string name="answer_7">Stažení třetí strany byla vyvinuta a distribuována společností Dantotsu. Kompatibilita je založena na Dantotsu a může kdykoli přestat fungovat. Můžete ji najít přístupem na stránku \"Doplňky\" v nastavení aplikace.</string>
     <string name="question_9">Jak povolit obsah NSFW?</string>
-    <string name="answer_9">Obsah NSFW můžete povolit tím, že zapnete obsah 18+ z tohoto [odkazu](https://anilist.co/settings/media). Také musíte povolit rozšíření NSFW v \`Nastavení > Rozšíření > Rozšíření NSFW\` </string>
+    <string name="answer_9">Obsah NSFW můžete povolit tím, že zapnete obsah 18+ z tohoto [odkazu](https://anilist.co/settings/media). Také musíte povolit rozšíření NSFW v \`Nastavení &gt; Rozšíření &gt; Rozšíření NSFW\` </string>
     <string name="question_10">Jak importovat mé MAL / Kitsu seznamy do AniListu?</string>
     <string name="answer_10">Zde je, jak na to,\n\nExport:\n\n1. Přejděte na tento [odkaz](https://malscraper.azurewebsites.net).\n2. Zadejte své uživatelské jméno pro Kitsu/MAL a stáhněte si jak seznam anime, tak manga. (Budou ve formátu XML)\nPoznámka: Musíte napsat uživatelské jméno vybraného trackeru\n\nImport:\n\n1. Po exportu vašeho seznamu anime a manga z Kitsu/MAL, nyní přejděte [sem](https://anilist.co/settings/import) \n2. Vyberte/přetáhněte soubor anime XML do pole nahoře.\n|→Vyberte/přetáhněte soubor manga XML do pole dole.</string>
     <string name="question_11">Jak importovat mé AniList / Kitsu seznamy do MAL?</string>
@@ -647,7 +648,7 @@
     <string name="question_14">Jak číst barevné mangy?</string>
     <string name="answer_14">Omlouvám se, ale jen malé množství mang má barevnou verzi. Pokud by měla být dostupná barevná verze, může být jednoduše skrytá v Himitsu. Řekněme, že chcete číst barevnou verzi Chainsaw Man. Postupujte podle následujících kroků ↓\n\n1) Jděte na Chainsaw Man\n2) Klepněte na \'Číst\'\n3) Vyberte libovolný funkční zdroj\n4) Klepněte na \'Špatný název\'\n5) Vyberte barevné Chainsaw Man\n6) Užijte si\n\nPoznámka: Mnoho zdrojů nemá barevnou verzi, i když je dostupná na jiném místě. Zkuste jiný zdroj. Pokud žádný zdroj to nemá, pak barevná verze vaší požadované mangy pravděpodobně neexistuje.</string>
     <string name="question_15">Handshake selhal? Proč se ne načítají žádné časové razítka?</string>
-    <string name="answer_15">Můžete tento problém opravit povolením \'Proxy\' z \n\`Nastavení > Anime > Nastavení přehrávače > Segmenty > Proxy\`.\nPokud se časová razítka stále nenahrávají, ale vyskakuje okno s chybou handshake failed, pak epizoda, kterou sledujete, prostě nemá pro ni ještě časová razítka.</string>
+    <string name="answer_15">Můžete tento problém opravit povolením \'Proxy\' z \n\`Nastavení &gt; Anime &gt; Nastavení přehrávače &gt; Segmenty &gt; Proxy\`.\nPokud se časová razítka stále nenahrávají, ale vyskakuje okno s chybou handshake failed, pak epizoda, kterou sledujete, prostě nemá pro ni ještě časová razítka.</string>
     <string name="question_16">Nemůžete najít nic ve zdroji?</string>
     <string name="answer_16">Některé základní opravy mohou být: \n\n• Aktualizujte své rozšíření, pokud nějaká máte. \n• Otevřete Web View a počkejte, až se načte. Po dokončení načítání se vraťte zpět. (Pokud Web View zobrazuje chybu 404 nebo něco podobného, šance jsou, že váš zdroj je dolů)\n• Použijte jiný DNS ze svých nastavení, ideálně Libre. \n• Vyzkoušejte důvěryhodnou VPN. (Po tomto kroku budete muset znovu zopakovat krok 1) \n\nPokud ani jeden z výše uvedených kroků nefunguje, použijte jiný zdroj nebo se připojte k našemu [discordu](https://discord.gg/invite/4HPZ5nAWwM) pro pomoc.</string>
     <string name="question_17">Některé užitečné tipy a triky</string>

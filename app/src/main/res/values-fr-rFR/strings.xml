@@ -16,6 +16,7 @@
     <string name="browse_anime">Parcourir les Anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Parcourir les Manga</string>
+    <string name="novel">Révélation</string>
     <string name="novels">Romans</string>
     <string name="info">Infos</string>
     <string name="watch">Regarder</string>
@@ -645,7 +646,7 @@ Genre : "</string>
     <string name="question_14">Comment lire des mangas en couleur?</string>
     <string name="answer_14">Désolé de vous le dire, mais seule une petite quantité de mangas ont une version en couleur. Si une version en couleur est censée être disponible, elle peut simplement être cachée dans Himitsu. Disons que vous voulez lire la version en couleur de Chainsaw Man. Suivez les étapes ci-dessous ↓\n\n1) Allez sur Chainsaw Man\n2) Appuyez sur \'Lire\'\n3) Sélectionnez une source qui fonctionne\n4) Appuyez sur \"titre incorrect\" titre\'\n5) Sélectionnez le Chainsaw Man en couleur\n6) Profitez\n\nRemarque: de nombreuses sources n\'ont pas la version en couleur même si elle est disponible ailleurs. Essayez une autre source. Si aucune des sources ne l\'a, il se peut qu\'une version en couleur du manga que vous souhaitez n\'existe pas.</string>
     <string name="question_15">Échec de la poignée de main? Pourquoi les horodatages ne se chargent-ils pas?</string>
-    <string name="answer_15">Vous pouvez résoudre ce problème en activant \'Proxy\' depuis \n\`Paramètres > Anime > Paramètres du lecteur > Segments > Proxy\`.\nSi les horodatages ne se chargent toujours pas mais que la fenêtre contextuelle d\'échec de la poignée de main est corrigée, alors l\'épisode que vous regardez n\'a simplement pas encore de horodatages.</string>
+    <string name="answer_15">Vous pouvez résoudre ce problème en activant \'Proxy\' depuis \n\`Paramètres &gt; Anime &gt; Paramètres du lecteur &gt; Segments &gt; Proxy\`.\nSi les horodatages ne se chargent toujours pas mais que la fenêtre contextuelle d\'échec de la poignée de main est corrigée, alors l\'épisode que vous regardez n\'a simplement pas encore de horodatages.</string>
     <string name="question_16">Impossible de trouver quoi que ce soit sur une source?</string>
     <string name="answer_16">Quelques correctifs de base seraient : \n\n• Mettez à jour vos extensions s\'il y en a. \n• Ouvrez la vue Web et attendez qu\'elle se charge. Une fois le chargement terminé, revenez en arrière. (Si la vue Web affiche une erreur 404 ou quelque chose de similaire, il est probable que votre source soit hors service)\n• Utilisez un DNS différent de celui de vos paramètres, de préférence Libre. \n• Essayez un VPN de confiance. (Vous devrez répéter l\'étape 1 après cela) \n\nSi aucune des étapes ci-dessus ne fonctionne, utilisez une autre source ou rejoignez notre [discord](https://discord.gg/invite/4HPZ5nAWwM) pour obtenir de l\'aide.</string>
     <string name="question_17">Quelques astuces et conseils utiles</string>

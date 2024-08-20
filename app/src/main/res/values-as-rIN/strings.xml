@@ -16,6 +16,7 @@
     <string name="browse_anime">এনিমে ব্ৰাউজ কৰক</string>
     <string name="manga">মাংগা</string>
     <string name="browse_manga">মাংগা ব্ৰাউজ কৰক</string>
+    <string name="novel">উপন্যাস</string>
     <string name="novels">উপন্যাস</string>
     <string name="info">তথ্য</string>
     <string name="watch">চোৱা</string>
@@ -615,7 +616,7 @@
     <string name="male">পুৰুষ</string>
     <string name="female">মহিলা</string>
     <string name="question_1">হিমিত্সু হ\'ল কি?</string>
-    <string name="answer_1">Dantotsu আনিয়োমিৰ উপাদানসমূহ Saikouৰ কোৰ codeত জোড় কৰিলে, পাছত Himitsu দ্বারা Dantotsu ফোৰ্ক কৰা আৰু ইয়াক উন্নত কৰিব আৰম্ভ কৰিছে। এটা (বেছিটা) প্ৰধানত AniList অনলি ক্লাইণ্ট, যি এওৱা extensionsসমৰ্থন কৰে। \n>Himitsu (গোপন ; হিম-ইৎসু) জাপানী ভাষাত \"গোপনীয়\"-কথা বুজায়। চুপ্। নামও প্ৰচৰ্য়া ভুলোৱা।</string>
+    <string name="answer_1">Dantotsu আনিয়োমিৰ উপাদানসমূহ Saikouৰ কোৰ codeত জোড় কৰিলে, পাছত Himitsu দ্বারা Dantotsu ফোৰ্ক কৰা আৰু ইয়াক উন্নত কৰিব আৰম্ভ কৰিছে। এটা (বেছিটা) প্ৰধানত AniList অনলি ক্লাইণ্ট, যি এওৱা extensionsসমৰ্থন কৰে। \n&gt;Himitsu (গোপন ; হিম-ইৎসু) জাপানী ভাষাত \"গোপনীয়\"-কথা বুজায়। চুপ্। নামও প্ৰচৰ্য়া ভুলোৱা।</string>
     <string name="question_2">Himitsuৰ কিছু বৈশিষ্ট্যবোৰ কি আছে?</string>
     <string name="answer_2">যদি আমি আপোণাৰে কেনেদৰে Dantotsuৰ উদ্যোগসমূহ তাৰিখ দিয়ে লিখি, তাৰ উপৰ সৌজন্য কৰা আছে। আপুনি [Himitsu GitHub](https://github.com/RepoDevil/Himitsu)লৈ গৈ উপস্থাপন কৰিব লাগিব।</string>
     <string name="question_3">Stable, Beta &amp; Alpha সংস্কৰণৰ মাজত পাৰ্থক্যসমূহ কি?</string>

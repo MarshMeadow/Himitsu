@@ -16,6 +16,7 @@
     <string name="browse_anime">Deursoek Anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Deursoek Manga</string>
+    <string name="novel">Novelle</string>
     <string name="novels">Novelle</string>
     <string name="info">Inligting</string>
     <string name="watch">Kyk</string>
@@ -495,7 +496,7 @@
     <string name="what_did_you_open">Wat het jy selfs oopgemaak?</string>
     <string name="error_getting_data">Fout by die kry van data van AniList.</string>
     <string name="anilist_data_error">Fout met die oplaai van AniList-data: %1$s</string>
-    <string name="empty_response">Leë antwoord! Het jou internet dalk swak?<span></span></string>
+    <string name="empty_response">Leë antwoord! Het jou internet dalk swak?<span/></string>
     <string name="error_loading_mal_user_data">Fout by die laai van MAL-gebruiker-inligting</string>
     <string name="error_loading_mal_data">Kon nie data van MAL laai nie</string>
     <string name="error_loading_anilist_user_data">Fout by die laai van AniList-gebruiker-inligting</string>
@@ -616,7 +617,7 @@
     <string name="male">Manlik</string>
     <string name="female">Vroulik</string>
     <string name="question_1">Wat is Himitsu?</string>
-    <string name="answer_1">Dantotsu het komponente van Aniyomi saamgesmelt in die kernkode van Saikou, maar toe het Himitsu \'n aftakking van Dantotsu gemaak en begin om daarop te verbeter. Dit is (meestal) \'n AniList-slegs kliënt, wat ook uitbreidings ondersteun. \n>Himitsu (秘密; Him-itsu) beteken \"geheim\" in Japanees. Sssst. Dit is \'n geheim so goed dat selfs die naam verbode is.</string>
+    <string name="answer_1">Dantotsu het komponente van Aniyomi saamgesmelt in die kernkode van Saikou, maar toe het Himitsu \'n aftakking van Dantotsu gemaak en begin om daarop te verbeter. Dit is (meestal) \'n AniList-slegs kliënt, wat ook uitbreidings ondersteun. \n&gt;Himitsu (秘密; Him-itsu) beteken \"geheim\" in Japanees. Sssst. Dit is \'n geheim so goed dat selfs die naam verbode is.</string>
     <string name="question_2">Wat is enkele kenmerke van Himitsu?</string>
     <string name="answer_2">Dit sal \'n redelik groot paragraaf wees as ons alles moes lys wat Dantotsu probeer behaal, laat staan alles wat Himitsu daarby gevoeg het. Jou beste opsie sou wees om by die [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) in te loer en die README te lees.</string>
     <string name="question_3">Wat is die verskil tussen Stabiele, Bèta &amp; Alfa weergawes?</string>
@@ -632,7 +633,7 @@
     <string name="question_7">Hoe om Anime af te laai?</string>
     <string name="answer_7">\'n Derde-party aflaai byvoegsel is ontwikkel en versprei deur Dantotsu. Verenbaarheid is gebaseer op Dantotsu en mag enige tyd ophou om te funksioneer. Dit kan gevind word deur toegang tot die \"Byvoegsels\" bladsy in die toepassing se instellings.</string>
     <string name="question_9">Hoe om NSFW-inhoud te aktiveer?</string>
-    <string name="answer_9">Jy kan NSFW-inhoud aktiveer deur 18+ inhoud te aktiveer vanaf hierdie [skakel](https://anilist.co/settings/media). Jy moet ook NSFW-uitbreidings in \`Instellings > Uitbreidings > NSFW-uitbreidings\` aktiveer </string>
+    <string name="answer_9">Jy kan NSFW-inhoud aktiveer deur 18+ inhoud te aktiveer vanaf hierdie [skakel](https://anilist.co/settings/media). Jy moet ook NSFW-uitbreidings in \`Instellings &gt; Uitbreidings &gt; NSFW-uitbreidings\` aktiveer </string>
     <string name="question_10">Hoe om my MAL / Kitsu-lyste na AniList te importeer?</string>
     <string name="answer_10">Hier is hoe dit gedoen word,\n\nUitvoer:\n\n1. Gaan na hierdie [skakel](https://malscraper.azurewebsites.net).\n2. Gee jou Kitsu/MAL gebruikersnaam en laai beide anime en manga lys af. (Hulle sal in XML-formaat wees)\nNota: Jy moet die gebruikersnaam van die tracker wat jy gekies het, skryf\n\nInvoer:\n\n1. Nadat jy jou anime en manga lys van Kitsu/MAL uitgevoer het, gaan nou [hierheen](https://anilist.co/settings/import) \n2. Kies/laat val die anime XML-lêer bo in die boks.\n|→Kies/laat val die manga XML-lêer onder in die boks.</string>
     <string name="question_11">Hoe om my AniList / Kitsu-lyste na MAL te importeer?</string>
@@ -644,7 +645,7 @@
     <string name="question_14">Hoe om gekleurde mangas te lees?</string>
     <string name="answer_14">Jammer om dit vir jou te sê, maar slegs \'n klein aantal manga het \'n gekleurde weergawe. As \'n gekleurde weergawe beskikbaar moet wees, mag dit eenvoudig net in Himitsu weggesteek wees. Laat ons sê jy wil die gekleurde weergawe van Chainsaw Man lees. Volg die stappe hieronder ↓\n\n1) Gaan na Chainsaw Man\n2) Druk op \'Lees\'\n3) Kies enige werkende bron\n4) Druk op \'Verkeerde Titel\'\n5) Kies die gekleurde Chainsaw Man\n6) Geniet\n\nNota: Baie bronne het nie die gekleurde weergawe nie selfs al is dit elders beskikbaar. Probeer \'n ander bron. As geen van die bronne dit het nie, mag \'n gekleurde weergawe van jou gewenste manga nie bestaan nie.</string>
     <string name="question_15">Handskud misluk? Hoekom laai geen tyepe-stempels nie?</string>
-    <string name="answer_15">Jy kan hierdie probleem regstel deur \'Proxy\' vanaf \n\`Instellings > Anime > Speler Instellings > Segment > Proxy\`\nIn te skakel.\nAs die tyepe-stempels steeds nie laai nie maar die handskud misluk-melding is reggestel, dan het die episode wat jy kyk eenvoudig nog nie tyepe-stempels daarvoor nie.</string>
+    <string name="answer_15">Jy kan hierdie probleem regstel deur \'Proxy\' vanaf \n\`Instellings &gt; Anime &gt; Speler Instellings &gt; Segment &gt; Proxy\`\nIn te skakel.\nAs die tyepe-stempels steeds nie laai nie maar die handskud misluk-melding is reggestel, dan het die episode wat jy kyk eenvoudig nog nie tyepe-stempels daarvoor nie.</string>
     <string name="question_16">Kan niks in \'n bron vind nie?</string>
     <string name="answer_16">Sommige basiese regstellings sal wees: \n\n• Werk jou uitbreidings by as daar enige is. \n• Maak Web Aansig oop en wag vir dit om te laai. Nadat die laai voltooi het, keer terug. (As Web Aansig fout 404 of iets soortgelyks toon, is die kans groot dat jou bron af is)\n• Gebruik \'n ander DNS vanuit jou instellings, verkieslik, Libre. \n• Probeer \'n betroubare VPN. (Jy sal stap 1 moet herhaal na hierdie) \n\nAs geen van die stappe hierbo werk nie, gebruik \'n ander bron of sluit by ons [discord](https://discord.gg/invite/4HPZ5nAWwM) vir hulp.</string>
     <string name="question_17">Sommige nuttige wenke en truuks</string>

@@ -16,6 +16,7 @@
     <string name="browse_anime">Anime durchsuchen</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Manga durchsuchen</string>
+    <string name="novel">Neu</string>
     <string name="novels">Romane</string>
     <string name="info">Info</string>
     <string name="watch">Anschauen</string>
@@ -617,7 +618,7 @@
     <string name="male">Männlich</string>
     <string name="female">Weiblich</string>
     <string name="question_1">Was ist Himitsu?</string>
-    <string name="answer_1">Dantotsu verschmelzte Komponenten von Aniyomi in den Kerncode von Saikou, aber dann forkte Himitsu Dantotsu und begann, ihn zu verbessern. Es ist (meistens) ein nur AniList-Client, der auch Erweiterungen unterstützt. \n>Himitsu (秘密; Him-itsu) bedeutet \"geheim\" auf Japanisch. Shhh. Es ist ein Geheimnis, das so gut ist, dass sogar der Name verboten ist.</string>
+    <string name="answer_1">Dantotsu verschmelzte Komponenten von Aniyomi in den Kerncode von Saikou, aber dann forkte Himitsu Dantotsu und begann, ihn zu verbessern. Es ist (meistens) ein nur AniList-Client, der auch Erweiterungen unterstützt. \n&gt;Himitsu (秘密; Him-itsu) bedeutet \"geheim\" auf Japanisch. Shhh. Es ist ein Geheimnis, das so gut ist, dass sogar der Name verboten ist.</string>
     <string name="question_2">Was sind einige Funktionen von Himitsu?</string>
     <string name="answer_2">Dies würde ein ziemlich langer Absatz sein, wenn wir alles auflisten würden, was Dantotsu zu erreichen versucht, geschweige denn alles, was Himitsu hinzugefügt hat. Am besten schaust du im [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) vorbei und liest das README.</string>
     <string name="question_3">Was ist der Unterschied zwischen den stabilen, Beta- &amp; Alpha-Versionen?</string>
@@ -633,7 +634,7 @@
     <string name="question_7">Wie lade ich Anime herunter?</string>
     <string name="answer_7">Ein Drittanbieter-Download-Add-On wurde von Dantotsu entwickelt und verbreitet. Die Kompatibilität basiert auf Dantotsu und kann jederzeit aufhören zu funktionieren. Es kann gefunden werden, indem man die Seite \"Add-ons\" in den App-Einstellungen aufruft.</string>
     <string name="question_9">Wie aktiviere ich NSFW-Inhalte?</string>
-    <string name="answer_9">Du kannst NSFW-Inhalte aktivieren, indem du 18+-Inhalte über diesen [Link](https://anilist.co/settings/media) aktivierst. Du musst auch NSFW-Erweiterungen in \`Einstellungen > Erweiterungen > NSFW-Erweiterungen\` aktivieren.</string>
+    <string name="answer_9">Du kannst NSFW-Inhalte aktivieren, indem du 18+-Inhalte über diesen [Link](https://anilist.co/settings/media) aktivierst. Du musst auch NSFW-Erweiterungen in \`Einstellungen &gt; Erweiterungen &gt; NSFW-Erweiterungen\` aktivieren.</string>
     <string name="question_10">Wie importiere ich meine MAL / Kitsu-Listen in AniList?</string>
     <string name="answer_10">So geht\'s,\n\nExportieren:\n\n1. Gehe zu diesem [Link](https://malscraper.azurewebsites.net).\n2. Gib deinen Kitsu/MAL-Benutzernamen ein und lade sowohl die Anime- als auch die Manga-Liste herunter. (Sie werden im XML-Format sein)\nHinweis: Du musst den Benutzernamen des ausgewählten Trackers angeben\n\nImportieren:\n\n1. Nachdem du deine Anime- und Manga-Liste aus Kitsu/MAL exportiert hast, gehe jetzt [hierhin](https://anilist.co/settings/import) \n2. Wähle/droppe die Anime-XML-Datei über dem Kasten aus.\n|→Wähle/droppe die Manga-XML-Datei über dem unteren Kasten aus.</string>
     <string name="question_11">Wie importiere ich meine AniList / Kitsu-Listen in MAL?</string>
@@ -645,7 +646,7 @@
     <string name="question_14">Wie liest man farbige Mangas?</string>
     <string name="answer_14">Es tut uns leid, um es Ihnen zu brechen, aber nur eine kleine Menge Manga haben eine gefärbte Version. Wenn eine gefärbte Version verfügbar sein soll, könnte sie einfach im Himitsu versteckt sein. Nehmen wir an, du möchtest die farbige Version von Chainsaw Man lesen. Folge den unten stehenden Schritten ↓\n\n1) Gehe zu Chainsaw Man\n2) Drücke auf \'Lesen\'\n3) Wähle eine funktionierende Quelle aus\n4) Drücke \'Falscher Titel\'\n5) Wähle den farbigen Chainsaw Man\n6) Genieße\n\nHinweis: Viele Quellen haben die gefärbte Version nicht, auch wenn sie anderswo verfügbar ist. Versuche es mit einer anderen Quelle. Wenn keine der Quellen es hat, dann existiert vielleicht keine farbige Version deines gewünschten Mangas.</string>
     <string name="question_15">Handshake fehlt? Warum laden keine Zeitstempel? </string>
-    <string name="answer_15">Du kannst dieses Problem beheben, indem du \'Proxy\' aus \n`Einstellungen > Anime > Player-Einstellungen > Segmente > Proxy\` aktivierst.\nWenn die Zeitstempel immer noch nicht geladen werden, aber das Handshake-Fehler-Popup behoben ist, dann hat die Episode, die du gerade ansiehst, einfach noch keine Zeitstempel.</string>
+    <string name="answer_15">Du kannst dieses Problem beheben, indem du \'Proxy\' aus \n`Einstellungen &gt; Anime &gt; Player-Einstellungen &gt; Segmente &gt; Proxy\` aktivierst.\nWenn die Zeitstempel immer noch nicht geladen werden, aber das Handshake-Fehler-Popup behoben ist, dann hat die Episode, die du gerade ansiehst, einfach noch keine Zeitstempel.</string>
     <string name="question_16">Kann nichts in einer Quelle finden?</string>
     <string name="answer_16">Einige grundlegende Lösungen wären: \n\n• Aktualisiere deine Erweiterungen, falls du welche hast. \n• Öffne die Webansicht und warte, bis sie geladen ist. Nachdem das Laden abgeschlossen ist, gehe zurück. (Wenn die Webansicht Fehler 404 oder ähnliches anzeigt, besteht die Möglichkeit, dass deine Quelle nicht erreichbar ist)\n• Verwende einen anderen DNS aus deinen Einstellungen, vorzugsweise Libre. \n• Versuche es mit einem vertrauenswürdigen VPN. (Du musst nach diesem Schritt 1 wiederholen) \n\nWenn keiner der obigen Schritte funktioniert, dann verwende eine andere Quelle oder trete unserem [Discord](https://discord.gg/invite/4HPZ5nAWwM) bei, um Hilfe zu erhalten.</string>
     <string name="question_17">Einige nützliche Tipps und Tricks</string>

@@ -16,6 +16,7 @@
     <string name="browse_anime">Selaa Animea</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Selaa Mangaa</string>
+    <string name="novel">Uusi</string>
     <string name="novels">Novellit</string>
     <string name="info">Tiedot</string>
     <string name="watch">Katso</string>
@@ -615,7 +616,7 @@
     <string name="male">Mies</string>
     <string name="female">Nainen</string>
     <string name="question_1">Mikä on Himitsu?</string>
-    <string name="answer_1">Dantotsu yhdisti Aniyomin komponentit Saikoun ydinkoodiin, mutta sitten Himitsu haarautti Dantotsun ja alkoi parantaa sitä. Se on (pääasiassa) AniListin oma asiakasohjelma, joka tukee myös laajennuksia. \n>Himitsu (秘密; Him-itsu) tarkoittaa \"salaisuutta\" japaniksi. Shhh. Se on salaisuus, niin hyvä että jopa nimi on kielletty.</string>
+    <string name="answer_1">Dantotsu yhdisti Aniyomin komponentit Saikoun ydinkoodiin, mutta sitten Himitsu haarautti Dantotsun ja alkoi parantaa sitä. Se on (pääasiassa) AniListin oma asiakasohjelma, joka tukee myös laajennuksia. \n&gt;Himitsu (秘密; Him-itsu) tarkoittaa \"salaisuutta\" japaniksi. Shhh. Se on salaisuus, niin hyvä että jopa nimi on kielletty.</string>
     <string name="question_2">Mitä joitakin Himitsun ominaisuuksia on?</string>
     <string name="answer_2">Tämä olisi melko pitkä kappale, jos lueteltaisiin kaikki Dantotsun tavoittelemat asiat, puhumattakaan kaikesta siitä, mitä Himitsu on lisännyt siihen. Paras vaihtoehto olisi tulla [Himitsu GitHubiin](https://github.com/RepoDevil/Himitsu) ja lukea README.</string>
     <string name="question_3">Mikä on vakaiden, beetan ja alfan versioiden ero?</string>
@@ -631,7 +632,7 @@
     <string name="question_7">Kuinka ladata Animea?</string>
     <string name="answer_7">Kolmannen osapuolen latauslisäosa on kehitetty ja jaettu Dantotsun toimesta. Yhteensopivuus perustuu Dantotsuun ja se saattaa lakata toimimasta milloin tahansa. Se löytyy siirtymällä sovelluksen asetuksissa olevaan \"Lisäosat\"-sivulle.</string>
     <string name="question_9">Kuinka ottaa käyttöön NSFW-sisältö?</string>
-    <string name="answer_9">Voit ottaa käyttöön NSFW-sisällön ottamalla käyttöön 18+ sisällöt tästä [linkistä](https://anilist.co/settings/media). Sinun on myös otettava käyttöön NSFW-laajennukset asetuksissa \`Asetukset > Laajennukset > NSFW-laajennukset\` </string>
+    <string name="answer_9">Voit ottaa käyttöön NSFW-sisällön ottamalla käyttöön 18+ sisällöt tästä [linkistä](https://anilist.co/settings/media). Sinun on myös otettava käyttöön NSFW-laajennukset asetuksissa \`Asetukset &gt; Laajennukset &gt; NSFW-laajennukset\` </string>
     <string name="question_10">Kuinka voin tuoda MAL / Kitsu-listani AniListiin?</string>
     <string name="answer_10">Tässä miten sen teet,\n\nVie:\n\n1. Mene tähän [linkkiin](https://malscraper.azurewebsites.net).\n2. Anna Kitsu/MAL-käyttäjänimesi ja lataa sekä anime- että manga-lista. (Ne ovat XML-muodossa)\nHuom: Sinun on kirjoitettava valitsemasi seurantatyökalun käyttäjänimi\n\nTuo:\n\n1. Viedessäsi anime- ja manga-listasi Kitsu/MAL:sta, mene nyt [tänne](https://anilist.co/settings/import) \n2. Valitse/tiputa anime XML-tiedosto yllä olevaan ruutuun.\n|→Valitse/tiputa manga XML-tiedosto alla olevaan ruutuun.</string>
     <string name="question_11">Kuinka voin tuoda AniList / Kitsu-listani MAL:iin?</string>
@@ -643,7 +644,7 @@
     <string name="question_14">Kuinka lukea värikkäitä mangoja?</string>
     <string name="answer_14">Pahoittelen, mutta vain pieni osa mangoista on väriversioita. Jos värikkään version pitäisi olla saatavilla, sitä saattaa yksinkertaisesti piilotettu Himitsussa. Oletetaan, että haluat lukea värillisen version Chainsaw Manista. Seuraa alla olevia vaiheita ↓\n\n1) Mene Chainsaw Maniin\n2) Paina \'Lue\'\n3) Valitse mikä tahansa toimiva lähde\n4) Paina \'Väärä otsikko\'\n5) Valitse värillinen Chainsaw Man\n6) Nauti\n\nHuom: Monilla lähteillä ei ole väriversiota, vaikka se olisi saatavilla jossain muualla. Kokeile eri lähdettä. Jos mikään lähteistä ei sisällä sitä, haluamasi mango saattaa olla väritön versio.</string>
     <string name="question_15">Kättely epäonnistuu? Miksi aikaleimat eivät lataudu?</string>
-    <string name="answer_15">Voit korjata tämän ongelman ottamalla \'Välityspalvelimen\' käyttöön \n\`Asetukset > Anime > Soittimen asetukset > Segmentit > Välityspalvelin\`.\nJos aikaleimat eivät vieläkään lataudu mutta kättely epäonnistui -ponnahdusikkuna on korjattu, niin jakso, jota katsot, ei yksinkertaisesti sisällä vielä aikaleimoja.</string>
+    <string name="answer_15">Voit korjata tämän ongelman ottamalla \'Välityspalvelimen\' käyttöön \n\`Asetukset &gt; Anime &gt; Soittimen asetukset &gt; Segmentit &gt; Välityspalvelin\`.\nJos aikaleimat eivät vieläkään lataudu mutta kättely epäonnistui -ponnahdusikkuna on korjattu, niin jakso, jota katsot, ei yksinkertaisesti sisällä vielä aikaleimoja.</string>
     <string name="question_16">Et voi löytää mitään lähteestä?</string>
     <string name="answer_16">Joitain peruskeinoja olisivat: \n\n• Päivitä laajennuksesi, jos sellaisia on. \n• Avaa Web View ja odota sen latautumista. Kun lataus on suoritettu, mene takaisin. (Jos Web View näyttää virheen 404 tai jotain vastaavaa, lähteesi saattaa olla pois päältä)\n• Käytä eri DNS:ää asetuksista, mieluiten Libre. \n• Kokeile luotettavaa VPN:ää. (Sinun on toistettava vaihe 1 tämän jälkeen) \n\nJos mikään yllä olevista vaiheista ei toimi, käytä toista lähdettä tai liity [discordiimme](https://discord.gg/invite/4HPZ5nAWwM) saadaksesi apua.</string>
     <string name="question_17">Joitain hyödyllisiä vinkkejä ja niksejä</string>

@@ -16,6 +16,7 @@
     <string name="browse_anime">アニメをブラウズ</string>
     <string name="manga">マンガ</string>
     <string name="browse_manga">マンガをブラウズ</string>
+    <string name="novel">Novel</string>
     <string name="novels">小説</string>
     <string name="info">情報</string>
     <string name="watch">視聴</string>
@@ -633,7 +634,7 @@
     <string name="question_7">アニメをダウンロードする方法</string>
     <string name="answer_7">ダントツによって開発および配布されたサードパーティのダウンロードアドオンがあります。 互換性はダントツに基づいており、いつでも機能しなくなる可能性があります。 アプリ設定の\"アドオン\"ページにアクセスして見つけることができます。</string>
     <string name="question_9">NSFW コンテンツを有効にする方法</string>
-    <string name="answer_9">18+ コンテンツを有効にするには、[リンク](https://anilist.co/settings/media) から18+コンテンツを有効にします。また、\`Settings > Extensions > NSFW extensions\` でNSFW拡張機能を有効にする必要があります。</string>
+    <string name="answer_9">18+ コンテンツを有効にするには、[リンク](https://anilist.co/settings/media) から18+コンテンツを有効にします。また、\`Settings &gt; Extensions &gt; NSFW extensions\` でNSFW拡張機能を有効にする必要があります。</string>
     <string name="question_10">MAL / KitsuのリストをAniListにインポートする方法は？</string>
     <string name="answer_10">こうすればできます。\n\nエクスポート:\n\n1. この [リンク](https://malscraper.azurewebsites.net) に移動します。\n2. Kitsu/MALのユーザー名を入力し、アニメリストとマンガリストの両方をダウンロードします。（XML形式で保存されます）\n注意：選択したトラッカーのユーザー名を入力する必要があります\n\nインポート:\n\n1. Kitsu/MALからアニメリストとマンガリストをエクスポートしたら、[こちら](https://anilist.co/settings/import) に移動します。\n2. 上のボックスにアニメのXMLファイルを選択/ドロップします。\n|→下のボックスにマンガのXMLファイルを選択/ドロップします。</string>
     <string name="question_11">AniList / KitsuのリストをMALにインポートする方法は？</string>
