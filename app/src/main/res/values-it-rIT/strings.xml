@@ -408,7 +408,7 @@
     <string name="previous_season">Scorsa Stagione</string>
     <string name="include_media_in_list">Includi Lista</string>
     <string name="release_calendar">Calendario</string>
-    <string name="review_type">%1$s Recensioni</string>
+    <string name="review_type">Recensioni %1$s</string>
     <string name="planned_anime">Anime Pianificati</string>
     <string name="planned_manga">Manga Pianificati</string>
     <string name="image_long_clicking">Fai un clic lungo per aprire un\'immagine</string>
@@ -1099,9 +1099,9 @@
     <string name="webview_not_found">Impossibile trovare una libreria WebView installata</string>
     <string name="multi">Multi</string>
 
-    <string name="installed_extensions">Installato %1$s</string>
-    <string name="available_extensions">Disponibile %1$s</string>
-    <string name="available_plugins">%1$s Plugin</string>
+    <string name="installed_extensions">%1$s Installati</string>
+    <string name="available_extensions">%1$s Disponibili</string>
+    <string name="available_plugins">Plugin %1$s</string>
 
     <string name="your_story">La Tua Storia</string>
     <string name="your_progress">Il Tuo Progresso</string>
@@ -1171,7 +1171,7 @@
     <string name="test_type">Tipo di Test</string>
     <string name="extension_type">Tipo di Estensione</string>
     <string name="view_options">Vedi le Opzioni</string>
-    <string name="testing">Testando</string>
+    <string name="testing">Test</string>
     <string name="extension_test">Test dell\'Estensione</string>
     <string name="extension_test_desc">Testa se le estensioni stanno funzionando</string>
     <string name="start_test">Avvia il Test</string>
