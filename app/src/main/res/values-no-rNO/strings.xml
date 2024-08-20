@@ -274,7 +274,6 @@
     <string name="skip_time_info">Innstilling til 0 skjuler Hopp over-knappen.</string>
     <string name="show_cast_button">Vis Kast-knapp</string>
     <string name="show_cast_button_info">Krever appen \"Web Video Caster\" for å kaste.</string>
-    <string name="picture_in_picture">Bilde-i-bilde</string>
     <string name="always_minimize">Alltid Minimer</string>
     <string name="always_minimize_info">Krever at PiP er aktivert, får spilleren til å oppføre seg som Youtube-spilleren, men bedre.\nSkjuler også PiP-knappen.</string>
     <string name="app">App</string>

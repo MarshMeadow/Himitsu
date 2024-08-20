@@ -274,7 +274,6 @@
     <string name="skip_time_info">सेटिंग 0 पर, स्किप बटन को छुपाता है।</string>
     <string name="show_cast_button">कास्ट बटन दिखाएं</string>
     <string name="show_cast_button_info">कास्ट करने के लिए \"वेब वीडियो कास्टर\" ऐप की आवश्यकता होती है।</string>
-    <string name="picture_in_picture">चित्र में चित्र</string>
     <string name="always_minimize">हमेशा न्यूनतम करें</string>
     <string name="always_minimize_info">PiP सक्षम करने की आवश्यकता होती है, प्लेयर को यूट्यूब प्लेयर की तरह व्यवहार करने के लिए।\nयह भी PiP बटन को छुपाता है।</string>
     <string name="app">एप्लिकेशन</string>

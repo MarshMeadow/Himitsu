@@ -274,7 +274,6 @@
     <string name="skip_time_info">Configurando a 0, oculta el botón de salto.</string>
     <string name="show_cast_button">Mostrar botón de transmitir</string>
     <string name="show_cast_button_info">Requiere la aplicación \"Web Video Caster\" para lanzar.</string>
-    <string name="picture_in_picture">Imagen en imagen</string>
     <string name="always_minimize">Siempre minimizar</string>
     <string name="always_minimize_info">Requiere que PiP esté habilitado, hace que el reproductor se comporte como el reproductor de YouTube pero mejor.\nTambién oculta el botón de PiP.</string>
     <string name="app">Aplicación</string>

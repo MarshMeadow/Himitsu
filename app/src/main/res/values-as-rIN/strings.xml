@@ -274,7 +274,6 @@
     <string name="skip_time_info">সেটিং 0 কৰি অনুপ্ৰান্ত বুটাম লুকাই।</string>
     <string name="show_cast_button">কাষ্ট বুটাম দেখাৰ বাবে</string>
     <string name="show_cast_button_info">কাষ্ট কৰিবলৈ \"ওয়েব ভিডিঅ’ কাষ্টাৰ\" এপ প্ৰয়োজন।</string>
-    <string name="picture_in_picture">পিক্চাৰ ইন পিক্চাৰ</string>
     <string name="always_minimize">সদা নিম্নস্থানত দেখুৱাওক</string>
     <string name="always_minimize_info">PiP সক্ৰিয় কৰিবলৈ প্ৰয়োজনীয়, প্লেয়াৰটোক ইউটিউব প্লেয়াৰৰ পৰা আচৰণ কৰি মেজব থকা কৰি।\nএতিয়া PiP বুটাম লুকাই।</string>
     <string name="app">অৱলোকন</string>

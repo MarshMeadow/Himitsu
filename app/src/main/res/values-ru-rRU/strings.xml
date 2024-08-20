@@ -278,7 +278,6 @@ Himitsu и его участники не несут ответственнос�
     <string name="skip_time_info">Установка на 0 скрывает кнопку Пропустить.</string>
     <string name="show_cast_button">Показать кнопку кастинга</string>
     <string name="show_cast_button_info">Требуется приложение \"Web Video Caster\" для кастинга.</string>
-    <string name="picture_in_picture">Картинка в картинке</string>
     <string name="always_minimize">Всегда минимизировать</string>
     <string name="always_minimize_info">Требуется включение PiP, делает плеер похожим на плеер Youtube, но лучше.\nТакже скрывает кнопку PiP.</string>
     <string name="app">Приложение</string>

@@ -274,7 +274,6 @@
     <string name="skip_time_info">Setarea la 0 ascunde butonul de omitere.</string>
     <string name="show_cast_button">Afișează butonul de distribuție</string>
     <string name="show_cast_button_info">Necesită aplicația \"Web Video Caster\" pentru a distribui.</string>
-    <string name="picture_in_picture">Imagine în imagine</string>
     <string name="always_minimize">Minimizează întotdeauna</string>
     <string name="always_minimize_info">Necesită activarea PiP, face ca playerul să se comporte ca Playerul Youtube dar mai bine.\nDe asemenea ascunde butonul PiP.</string>
     <string name="app">Aplicație</string>

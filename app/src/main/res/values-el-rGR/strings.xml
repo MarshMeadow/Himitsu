@@ -274,7 +274,6 @@
     <string name="skip_time_info">Η ρύθμιση σε 0, κρύβει το κουμπί Αγνόηση.</string>
     <string name="show_cast_button">Εμφάνιση κουμπιού Ρίψης</string>
     <string name="show_cast_button_info">Απαιτεί την εφαρμογή \"Web Video Caster\" για ρίψη.</string>
-    <string name="picture_in_picture">Εικόνα μέσα στην Εικόνα</string>
     <string name="always_minimize">Πάντα Ελαχιστοποίηση</string>
     <string name="always_minimize_info">Απαιτεί την ενεργοποίηση PiP, κάνει τον παίκτη να συμπεριφέρεται όπως ο παίκτης του Youtube αλλά καλύτερα.\nΚρύβει επίσης το κουμπί PiP.</string>
     <string name="app">Εφαρμογή</string>

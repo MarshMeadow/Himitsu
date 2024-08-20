@@ -275,7 +275,6 @@
     <string name="skip_time_info">Einstellung auf 0 setzen, um die Überspringen-Schaltfläche auszublenden.</string>
     <string name="show_cast_button">Cast-Schaltfläche anzeigen</string>
     <string name="show_cast_button_info">Benötigt die App \"Web Video Caster\" zum Streamen.</string>
-    <string name="picture_in_picture">Bild-in-Bild</string>
     <string name="always_minimize">Immer minimieren</string>
     <string name="always_minimize_info">Erfordert die Aktivierung von PiP, macht den Player ähnlich dem Youtube-Player, jedoch besser.\nBlendet auch die PiP-Schaltfläche aus.</string>
     <string name="app">App</string>

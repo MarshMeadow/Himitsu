@@ -274,7 +274,6 @@
     <string name="skip_time_info">وضع القيمة على 0، يخفي زر التخطي.</string>
     <string name="show_cast_button">إظهار زر العرض</string>
     <string name="show_cast_button_info">يتطلب تطبيق \"Web Video Caster\" للبث.</string>
-    <string name="picture_in_picture">صورة في صورة</string>
     <string name="always_minimize">تصغير دائم</string>
     <string name="always_minimize_info">يتطلب تمكين صورة في صورة، يجعل اللاعب يتصرف مثل لاعب Youtube ولكن بشكل أفضل.\nكما يخفي زر صورة في صورة.</string>
     <string name="app">التطبيق</string>

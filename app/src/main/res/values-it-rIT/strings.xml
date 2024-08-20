@@ -274,7 +274,6 @@
     <string name="skip_time_info">Impostando a 0, si nasconde il Pulsante Salta.</string>
     <string name="show_cast_button">Mostra il Pulsante Trasmetti</string>
     <string name="show_cast_button_info">Richiede l\'app \"Web Video Caster\" per trasmettere.</string>
-    <string name="picture_in_picture">Picture in Picture</string>
     <string name="always_minimize">Minimizza Sempre</string>
     <string name="always_minimize_info">Richiede che il PiP sia abilitato, fa sì che il lettore video si comporti come il Lettore Youtube ma meglio.\nNasconde anche il pulsante PiP.</string>
     <string name="app">App</string>

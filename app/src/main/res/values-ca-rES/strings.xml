@@ -274,7 +274,6 @@
     <string name="skip_time_info">Al configurar-ho a 0, s\'amaga el botó d\'oferir.</string>
     <string name="show_cast_button">Mostra el botó de repartiment</string>
     <string name="show_cast_button_info">Requereix l\'aplicació \"Web Video Caster\" per fer la distribució.</string>
-    <string name="picture_in_picture">Imatge en Imatge</string>
     <string name="always_minimize">Minimitza sempre</string>
     <string name="always_minimize_info">Requereix que PiP estigui habilitat, fa que el reproductor es comporti com el reproductor de Youtube però millor.\nTambé amaga el botó de PiP.</string>
     <string name="app">Aplicació</string>

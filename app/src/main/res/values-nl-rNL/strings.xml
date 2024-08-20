@@ -274,7 +274,6 @@
     <string name="skip_time_info">Instelling op 0 verbergt de Overslaan-knop.</string>
     <string name="show_cast_button">Toon Cast-knop</string>
     <string name="show_cast_button_info">Vereist de app \"Web Video Caster\" om te casten.</string>
-    <string name="picture_in_picture">Beeld in Beeld</string>
     <string name="always_minimize">Altijd Minimaliseren</string>
     <string name="always_minimize_info">Vereist dat PiP is ingeschakeld, maakt dat de speler zich gedraagt als Youtube Player maar beter.\nVerbergt ook de PiP-knop.</string>
     <string name="app">App</string>

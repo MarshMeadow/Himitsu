@@ -274,7 +274,6 @@
     <string name="skip_time_info">Al configurar a 0, se oculta el botón de omitir.</string>
     <string name="show_cast_button">Mostrar botón de reparto</string>
     <string name="show_cast_button_info">Requiere la aplicación \"Web Video Caster\" para emitir.</string>
-    <string name="picture_in_picture">Fotografía en foto</string>
     <string name="always_minimize">Minimizar siempre</string>
     <string name="always_minimize_info">Requiere que PiP esté habilitado, hace que el reproductor se comporte como el reproductor de Youtube pero mejor.
 También oculta el botón de PiP.</string>

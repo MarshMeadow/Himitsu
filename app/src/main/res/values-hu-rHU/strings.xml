@@ -273,7 +273,6 @@
     <string name="skip_time_info">A Skip gomb elrejtése 0-ra állítva.</string>
     <string name="show_cast_button">Cast gomb megjelenítése</string>
     <string name="show_cast_button_info">A casthoz szükséges a \"Web Video Caster\" app.</string>
-    <string name="picture_in_picture">Kép a képben</string>
     <string name="always_minimize">Mindig minimalizálás</string>
     <string name="always_minimize_info">A PiP engedélyezése szükséges, a lejátszó hasonlóan viselkedik a Youtube lejátszóhoz, de jobban.\nEzenkívül elrejti a PiP gombot.</string>
     <string name="app">App</string>

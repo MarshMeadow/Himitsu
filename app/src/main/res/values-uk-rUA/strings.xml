@@ -274,7 +274,6 @@
     <string name="skip_time_info">Параметр Setting на 0 приховує кнопку Пропустити.</string>
     <string name="show_cast_button">Показати кнопку Про кастинг</string>
     <string name="show_cast_button_info">Потрібно додаток \"Web Video Caster\" для кастингу.</string>
-    <string name="picture_in_picture">Картинка в картинці</string>
     <string name="always_minimize">Завжди мінімізувати</string>
     <string name="always_minimize_info">Потрібно увімкнути PiP, щоб гравець працював, як гравець Youtube, але краще. \nТакож приховує кнопку PiP.</string>
     <string name="app">Додаток</string>

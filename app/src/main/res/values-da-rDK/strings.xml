@@ -274,7 +274,6 @@
     <string name="skip_time_info">Indstilling til 0 skjuler springknappen.</string>
     <string name="show_cast_button">Vis cast-knap</string>
     <string name="show_cast_button_info">Kræver appen \'Web Video Caster\' for at caste.</string>
-    <string name="picture_in_picture">Billede-i-billede</string>
     <string name="always_minimize">Altid minimér</string>
     <string name="always_minimize_info">Kræver PiP for at være aktiveret, får afspilleren til at opføre sig som YouTube-afspilleren, men bedre.\nSkjuler også PiP-knappen.</string>
     <string name="app">App</string>

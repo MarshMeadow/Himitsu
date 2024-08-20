@@ -274,7 +274,6 @@
     <string name="skip_time_info">設置為0時，隱藏跳過按鈕。</string>
     <string name="show_cast_button">顯示 Cast 按鈕</string>
     <string name="show_cast_button_info">需要“Web Video Caster”應用程式進行投射。</string>
-    <string name="picture_in_picture">畫中畫</string>
     <string name="always_minimize">總是最小化</string>
     <string name="always_minimize_info">需要啟用 PiP，使播放器的行為類似 Youtube 播放器，但更好。\n同時隱藏 PiP 按鈕。</string>
     <string name="app">應用程式</string>

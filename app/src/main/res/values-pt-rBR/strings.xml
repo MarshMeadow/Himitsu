@@ -274,7 +274,6 @@
     <string name="skip_time_info">Definindo como 0, oculta o botão de Ignorar.</string>
     <string name="show_cast_button">Mostrar Botão de Transmissão</string>
     <string name="show_cast_button_info">Requer o aplicativo \"Web Video Caster\" para transmitir.</string>
-    <string name="picture_in_picture">Imagem em Imagem</string>
     <string name="always_minimize">Minimizar Sempre</string>
     <string name="always_minimize_info">Requer o PiP habilitado, faz o player se comportar como o Youtube Player, mas melhor.\nTambém oculta o botão PiP.</string>
     <string name="app">Aplicativo</string>

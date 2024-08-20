@@ -274,7 +274,6 @@
     <string name="skip_time_info">Réglage à 0 cache le bouton de saut.</string>
     <string name="show_cast_button">Afficher le bouton de diffusion</string>
     <string name="show_cast_button_info">Nécessite l\'application \"Web Video Caster\" pour diffuser.</string>
-    <string name="picture_in_picture">Image dans l\'image</string>
     <string name="always_minimize">Toujours minimiser</string>
     <string name="always_minimize_info">Nécessite que l\'image dans l\'image soit activée, fait en sorte que le lecteur se comporte comme le lecteur Youtube mais mieux.\nCache également le bouton d\'image dans l\'image.</string>
     <string name="app">Application</string>

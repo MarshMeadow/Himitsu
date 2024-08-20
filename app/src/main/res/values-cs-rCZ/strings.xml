@@ -278,7 +278,6 @@
     <string name="skip_time_info">Nastavení na 0 skryje tlačítko Přeskočit.</string>
     <string name="show_cast_button">Zobrazit tlačítko Obsazení</string>
     <string name="show_cast_button_info">Vyžaduje aplikaci \"Web Video Caster\" k přehrávání.</string>
-    <string name="picture_in_picture">Obrázek v obrázku</string>
     <string name="always_minimize">Vždy minimalizovat</string>
     <string name="always_minimize_info">Vyžaduje povolení PiP, chová se jako přehrávač YouTube, ale lépe.\nTaké skryje tlačítko PiP.</string>
     <string name="app">Aplikace</string>

@@ -274,7 +274,6 @@
     <string name="skip_time_info">Inställning till 0 gömmer Skjutknappen.</string>
     <string name="show_cast_button">Visa Cast-knappen</string>
     <string name="show_cast_button_info">Kräver appen \"Web Video Caster\" för att kunna casta.</string>
-    <string name="picture_in_picture">Bild-i-bild</string>
     <string name="always_minimize">Minimera alltid</string>
     <string name="always_minimize_info">Kräver aktivering av PiP, låter spelaren agera som Youtube-spelaren men bättre.\nDöljer även PiP-knappen.</string>
     <string name="app">App</string>
