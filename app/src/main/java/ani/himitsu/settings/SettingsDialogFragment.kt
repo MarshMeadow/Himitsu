@@ -7,6 +7,7 @@ import android.view.HapticFeedbackConstants
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import androidx.core.content.ContextCompat
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
@@ -63,9 +64,11 @@ class SettingsDialogFragment : BottomSheetDialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val window = dialog?.window
-        window?.statusBarColor = Color.CYAN
-        window?.setNavigationTheme(requireContext())
+        dialog?.window?.run {
+            statusBarColor = Color.CYAN
+            setNavigationTheme(requireContext())
+            setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_UNCHANGED)
+        }
         val notificationIcon = if (AniList.unreadNotificationCount > 0) {
             R.drawable.ic_round_notifications_active_24
         } else {
@@ -154,7 +157,6 @@ class SettingsDialogFragment : BottomSheetDialogFragment() {
             binding.settingsDiscord.isVisible = binding.settingsDiscord.isGone
             true
         }
-        binding.settingsNotification.requestFocus()
 
         binding.settingsDiscord.setOnClickListener {
             ContextCompat.startActivity(
