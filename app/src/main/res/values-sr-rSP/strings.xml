@@ -987,6 +987,7 @@
     <string name="multi">Вишеструко</string>
     <string name="installed_extensions">Инсталирано %1$s</string>
     <string name="available_extensions">Доступан %1$s</string>
+    <string name="novel_plugins">Нови плагинови</string>
     <string name="your_story">Твоја Прича</string>
     <string name="your_progress">Твој Напредак</string>
     <string name="file_not_found">Фајл није пронађен</string>

@@ -987,6 +987,7 @@
     <string name="multi">Multi</string>
     <string name="installed_extensions">Installeret %1$s</string>
     <string name="available_extensions">Tilgængelig %1$s</string>
+    <string name="novel_plugins">Novel Plugins</string>
     <string name="your_story">Din historie</string>
     <string name="your_progress">Din fremgang</string>
     <string name="file_not_found">Fil ikke fundet</string>

@@ -993,6 +993,7 @@ Himitsu er ikke ansvarlig for hva som skjer med kontoen din.</string>
     <string name="multi">Multi</string>
     <string name="installed_extensions">Installert %1$s</string>
     <string name="available_extensions">Tilgjengelig %1$s</string>
+    <string name="novel_plugins">Novel Plugins</string>
     <string name="your_story">Din Historie</string>
     <string name="your_progress">Din Framgang</string>
     <string name="file_not_found">Filen ble ikke funnet</string>

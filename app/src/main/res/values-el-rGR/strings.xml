@@ -987,6 +987,7 @@
     <string name="multi">Πολλαπλό</string>
     <string name="installed_extensions">Εγκατεστάθη %1$s</string>
     <string name="available_extensions">Διαθέσιμο %1$s</string>
+    <string name="novel_plugins">Νέα Πρόσθετα</string>
     <string name="your_story">Η Ιστορία Σας</string>
     <string name="your_progress">Η Πρόοδός Σας</string>
     <string name="file_not_found">Το Αρχείο δεν βρέθηκε</string>

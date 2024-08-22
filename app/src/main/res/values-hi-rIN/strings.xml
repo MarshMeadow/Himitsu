@@ -993,6 +993,7 @@ Himitsu आपके खाते के साथ होने वाले क
     <string name="multi">मल्टी</string>
     <string name="installed_extensions">स्थापित %1$s</string>
     <string name="available_extensions">उपलब्ध %1$s</string>
+    <string name="novel_plugins">नॉवेल प्लगइन्स</string>
     <string name="your_story">आपकी कहानी</string>
     <string name="your_progress">आपकी प्रगति</string>
     <string name="file_not_found">फ़ाइल नहीं मिली</string>

@@ -987,6 +987,7 @@
     <string name="multi">Múltiplo</string>
     <string name="installed_extensions">Instalado %1$s</string>
     <string name="available_extensions">Disponível %1$s</string>
+    <string name="novel_plugins">Plugins do Novel</string>
     <string name="your_story">Sua História</string>
     <string name="your_progress">Seu Progresso</string>
     <string name="file_not_found">Arquivo não encontrado</string>

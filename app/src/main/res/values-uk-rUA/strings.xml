@@ -993,6 +993,7 @@ Himitsu не відповідає за те, що станеться з ваши
     <string name="multi">Багатофункціональний</string>
     <string name="installed_extensions">Встановлено %1$s</string>
     <string name="available_extensions">Доступно %1$s</string>
+    <string name="novel_plugins">Нові плагіни</string>
     <string name="your_story">Ваша історія</string>
     <string name="your_progress">Ваш Прогрес</string>
     <string name="file_not_found">Файл не знайдено</string>

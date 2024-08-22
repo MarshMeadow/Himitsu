@@ -1006,6 +1006,7 @@ Himitsu, hesabınıza ne olursa olsun sorumlu değildir.</string>
     <string name="multi">Çoklu</string>
     <string name="installed_extensions">%1$s Yüklendi</string>
     <string name="available_extensions">Uygun %1$s</string>
+    <string name="novel_plugins">Yeni Eklentiler</string>
     <string name="your_story">Hikayeniz</string>
     <string name="your_progress">Ilginiz</string>
     <string name="file_not_found">Dosya bulunamadı</string>

@@ -987,6 +987,7 @@
     <string name="multi">Meerdere</string>
     <string name="installed_extensions">Geïnstalleerd %1$s</string>
     <string name="available_extensions">Beschikbaar %1$s</string>
+    <string name="novel_plugins">Novel Plugins</string>
     <string name="your_story">Uw verhaal</string>
     <string name="your_progress">Uw voortgang</string>
     <string name="file_not_found">Bestand niet gevonden</string>
