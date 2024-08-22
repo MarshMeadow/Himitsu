@@ -16,7 +16,7 @@
     <string name="browse_anime">Sfoglia gli Anime</string>
     <string name="manga">Manga</string>
     <string name="browse_manga">Sfoglia i Manga</string>
-    <string name="novel">Romanzo</string>
+    <string name="novel">Romanzi</string>
     <string name="novels">Romanzi</string>
     <string name="info">Info</string>
     <string name="watch">Guarda</string>
@@ -241,7 +241,7 @@
     <string name="sub_color_info"><b>Nota:</b> Le impostazioni sono applicate solo ai sottotitoli \"soft\"!</string>
     <string name="sub_alpha">Trasparenza dei Sottotitoli</string>
     <string name="sub_text_example">Anteprima dei Sottotitoli</string>
-    <string name="sub_font_select">Font Sottotitoli</string>
+    <string name="sub_font_select">Font dei Sottotitoli</string>
     <string name="subtitle_font_size">Dimensione dei Sottotitoli</string>
     <string name="no_subs_available">Nessun Sottotitolo Disponibile</string>
     <string name="auto">Automatico</string>
@@ -251,7 +251,7 @@
     <string name="auto_skip_fillers_info">Salta gli episodi filler quando si va all\'episodio successivo.</string>
     <string name="update_progress">Aggiornamento del Progresso</string>
     <string name="ask_update_progress_anime">Chiedi per ogni Anime \"Individualmente\"</string>
-    <string name="ask_update_progress_manga">Chiedi ogni Manga \"Individualmente\"</string>
+    <string name="ask_update_progress_manga">Chiedi per ogni Manga \"Individualmente\"</string>
     <string name="ask_update_progress_info_ep">Disattivando, il progresso si aggiornerà sempre automaticamente quando l\'episodio viene guardato.</string>
     <string name="ask_update_progress_info_chap">Disattivando, il progresso si aggiornerà sempre automaticamente quando il capitolo viene letto.</string>
     <string name="ask_update_progress_chapter_zero">Aggiorna il Progresso per il Capitolo 0</string>
@@ -296,7 +296,7 @@
     <string name="notification_page">Scheda Predefinita delle Notifiche</string>
     <string name="notification_page_desc">Seleziona la scheda iniziale per le notifiche</string>
     <string-array name="notification_type">
-        <item>Tutto</item>
+        <item>Tutte</item>
         <item>Media</item>
         <item>Social</item>
         <item>Utenti</item>
@@ -880,7 +880,7 @@
     <string name="download_permission_required">È richiesta l\'autorizzazione per scaricare</string>
     <string name="media">Media</string>
     <string name="users">Utenti</string>
-    <string name="social">Sociali</string>
+    <string name="social">Social</string>
     <string name="auto_skip_recap">Salta Automaticamente il Riassunto</string>
     <string name="use_anilist_icon">Usa l\'Icona di AniList</string>
     <string name="exo_source_exception">Errore della Fonte: %1$s</string>
@@ -1024,7 +1024,7 @@
     <string name="biometric_summary">Richiedere l\'autenticazione per accedere ad Himitsu</string>
     <string name="biometric_details">È richiesta l\'autenticazione biometrica</string>
     <string name="biometric_error">Errore Biometrico: %1$s</string>
-    <string name="biometric_success">Bentornato!</string>
+    <string name="biometric_success">Bentornat*!</string>
     <string name="biometric_failed">Verifica Biometrica Fallita!</string>
     <string name="reviews_empty">Nessuna Recensione di %1$s</string>
     <string name="vote_out_of_total">(A %1$s su %2$s è piaciuta questa recensione)</string>
