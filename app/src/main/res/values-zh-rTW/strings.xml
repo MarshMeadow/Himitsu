@@ -988,6 +988,7 @@
     <string name="multi">多重</string>
     <string name="installed_extensions">已安裝 %1$s</string>
     <string name="available_extensions">可用 %1$s</string>
+    <string name="novel_plugins">新奇的插件</string>
     <string name="your_story">您的故事</string>
     <string name="your_progress">您的進度</string>
     <string name="file_not_found">找不到檔案</string>

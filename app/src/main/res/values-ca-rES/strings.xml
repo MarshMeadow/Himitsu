@@ -987,6 +987,7 @@
     <string name="multi">Multi</string>
     <string name="installed_extensions">Instal·lat %1$s</string>
     <string name="available_extensions">%1$s disponible</string>
+    <string name="novel_plugins">Connectors de Novel</string>
     <string name="your_story">La teva història</string>
     <string name="your_progress">El teu progrés</string>
     <string name="file_not_found">Fitxer no trobat</string>

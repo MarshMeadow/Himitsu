@@ -299,7 +299,7 @@
         <item>Tutte</item>
         <item>Media</item>
         <item>Social</item>
-        <item>Utenti</item>
+        <item>Utente</item>
     </string-array>
     <string name="startUpTab">Scheda Di Avvio Predefinita</string>
     <string name="floating_avatar">Pulsante dell\'Avatar Fluttuante</string>
@@ -987,6 +987,7 @@
     <string name="multi">Multi</string>
     <string name="installed_extensions">%1$s Installati</string>
     <string name="available_extensions">%1$s Disponibili</string>
+    <string name="novel_plugins">Plugin Romanzi</string>
     <string name="your_story">La Tua Storia</string>
     <string name="your_progress">Il Tuo Progresso</string>
     <string name="file_not_found">File non trovato</string>
