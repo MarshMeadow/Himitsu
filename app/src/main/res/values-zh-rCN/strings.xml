@@ -1003,7 +1003,6 @@ _不需要同步 MAL 和 AniList 帐户。_
     <string name="multi">多</string>
     <string name="installed_extensions">已安装 %1$s</string>
     <string name="available_extensions">可用的 %1$s</string>
-    <string name="available_plugins">%1$s 插件</string>
     <string name="your_story">您的故事</string>
     <string name="your_progress">您的进度</string>
     <string name="file_not_found">文件未找到</string>

@@ -988,7 +988,6 @@
     <string name="multi">Több</string>
     <string name="installed_extensions">Telepítve: %1$s</string>
     <string name="available_extensions">Elérhető %1$s</string>
-    <string name="available_plugins">%1$s Bővítmények</string>
     <string name="your_story">A te történeted</string>
     <string name="your_progress">A te fejlődésed</string>
     <string name="file_not_found">Fájl nem található</string>

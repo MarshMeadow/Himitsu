@@ -995,7 +995,6 @@ Himitsu는 귀하의 계정에 대한 모든 일에 대해 책임지지 않습�
     <string name="multi">다중</string>
     <string name="installed_extensions">%1$s 설치됨</string>
     <string name="available_extensions">사용 가능 %1$s</string>
-    <string name="available_plugins">%1$s 플러그인</string>
     <string name="your_story">당신의 이야기</string>
     <string name="your_progress">당신의 진행</string>
     <string name="file_not_found">파일을 찾을 수 없음</string>

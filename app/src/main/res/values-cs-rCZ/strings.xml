@@ -993,7 +993,6 @@
     <string name="multi">Multifunkční</string>
     <string name="installed_extensions">Nainstalováno %1$s</string>
     <string name="available_extensions">Dostupné %1$s</string>
-    <string name="available_plugins">%1$s Pluginy</string>
     <string name="your_story">Vaše Příběh</string>
     <string name="your_progress">Vaše Pokroky</string>
     <string name="file_not_found">Soubor nebyl nalezen</string>

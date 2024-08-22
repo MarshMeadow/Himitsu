@@ -105,7 +105,7 @@ class ExtensionsActivity : AppCompatActivity() {
                     binding.searchViewText.clearFocus()
                     binding.tabLayout.clearFocus()
                     binding.languageselect.isVisible = tab.text?.contains(
-                        getString(R.string.available_extensions, "")
+                        getString(R.string.available)
                     ) == true
                 }
 
@@ -125,7 +125,7 @@ class ExtensionsActivity : AppCompatActivity() {
                 3 -> getString(R.string.available_extensions, MediaType.MANGA.string)
                 4 -> getString(R.string.installed_extensions, MediaType.NOVEL.string)
                 5 -> getString(R.string.available_extensions, MediaType.NOVEL.string)
-                6 -> getString(R.string.available_plugins, MediaType.NOVEL.string)
+                6 -> getString(R.string.novel_plugins)
                 else -> null
             }
         }.attach()

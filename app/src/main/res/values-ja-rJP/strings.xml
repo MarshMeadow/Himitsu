@@ -997,7 +997,6 @@ Himitsuは、アカウントに何か起こった場合には責任を負いま�
     <string name="multi">マルチ</string>
     <string name="installed_extensions">%1$sがインストールされました</string>
     <string name="available_extensions">%1$s利用可能</string>
-    <string name="available_plugins">%1$sプラグイン</string>
     <string name="your_story">あなたのストーリー</string>
     <string name="your_progress">あなたの進捗</string>
     <string name="file_not_found">ファイルが見つかりません</string>

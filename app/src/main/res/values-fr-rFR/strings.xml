@@ -991,7 +991,6 @@ Genre : "</string>
     <string name="multi">Multi</string>
     <string name="installed_extensions">Installés %1$s</string>
     <string name="available_extensions">Disponibles %1$s</string>
-    <string name="available_plugins">Plugins %1$s</string>
     <string name="your_story">Votre Activités</string>
     <string name="your_progress">Votre progression</string>
     <string name="file_not_found">Fichier non trouvé</string>

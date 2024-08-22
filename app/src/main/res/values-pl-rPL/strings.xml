@@ -989,7 +989,6 @@
     <string name="multi">Wielokrotne</string>
     <string name="installed_extensions">Zainstalowano %1$s</string>
     <string name="available_extensions">Dostępne %1$s</string>
-    <string name="available_plugins">%1$s wtyczek</string>
     <string name="your_story">Twoja Opowieść</string>
     <string name="your_progress">Twój postęp</string>
     <string name="file_not_found">Nie znaleziono pliku</string>

@@ -989,7 +989,6 @@
     <string name="multi">Multiplu</string>
     <string name="installed_extensions">Instalat %1$s</string>
     <string name="available_extensions">Disponibil %1$s</string>
-    <string name="available_plugins">Module %1$s</string>
     <string name="your_story">Povestea ta</string>
     <string name="your_progress">Progresul tău</string>
     <string name="file_not_found">Fișierul nu a fost găsit</string>

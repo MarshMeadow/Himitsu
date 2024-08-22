@@ -995,7 +995,6 @@
     <string name="multi">বহু</string>
     <string name="installed_extensions">ইনস্টল কৰা হৈছে %1$s</string>
     <string name="available_extensions">%1$s উপলভ্য</string>
-    <string name="available_plugins">%1$s প্লাগইনসমূহ</string>
     <string name="your_story">আপোনাৰ ষ্টোৰী</string>
     <string name="your_progress">আপোনাৰ প্ৰগ্ৰেছ</string>
     <string name="file_not_found">ফাইল পোৱা নাই</string>

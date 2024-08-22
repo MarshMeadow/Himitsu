@@ -991,7 +991,6 @@ Om inget av ovanstående steg fungerar, använd en annan källa eller gå med i 
     <string name="multi">Multi</string>
     <string name="installed_extensions">Installerat %1$s</string>
     <string name="available_extensions">Tillgänglig %1$s</string>
-    <string name="available_plugins">%1$s Tillägg</string>
     <string name="your_story">Din Berättelse</string>
     <string name="your_progress">Din Framsteg</string>
     <string name="file_not_found">Fil ej hittad</string>

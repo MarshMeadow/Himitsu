@@ -989,7 +989,6 @@
     <string name="multi">متعدد</string>
     <string name="installed_extensions">تم تثبيت %1$s</string>
     <string name="available_extensions">متاح %1$s</string>
-    <string name="available_plugins">إضافات %1$s</string>
     <string name="your_story">قصتك</string>
     <string name="your_progress">تقدمك</string>
     <string name="file_not_found">لم يتم العثور على الملف</string>

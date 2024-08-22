@@ -989,7 +989,6 @@
     <string name="multi">Multi</string>
     <string name="installed_extensions">Installed %1$s</string>
     <string name="available_extensions">Available %1$s</string>
-    <string name="available_plugins">%1$s Plugins</string>
     <string name="your_story">Your Story</string>
     <string name="your_progress">Your Progress</string>
     <string name="file_not_found">File not found</string>

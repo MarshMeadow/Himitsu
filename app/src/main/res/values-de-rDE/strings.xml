@@ -997,7 +997,6 @@ Himitsu ist nicht verantwortlich für Ereignisse, die Ihrem Konto zustoßen.</st
     <string name="multi">Mehrere</string>
     <string name="installed_extensions">%1$s installiert</string>
     <string name="available_extensions">Verfügbar %1$s</string>
-    <string name="available_plugins">%1$s Plugins</string>
     <string name="your_story">Deine Geschichte</string>
     <string name="your_progress">Dein Fortschritt</string>
     <string name="file_not_found">Datei nicht gefunden</string>

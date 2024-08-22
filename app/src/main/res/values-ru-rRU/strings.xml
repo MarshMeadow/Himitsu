@@ -999,7 +999,6 @@ Himitsu не несет ответственности за то, что про�
     <string name="multi">Мульти</string>
     <string name="installed_extensions">Установлено %1$s</string>
     <string name="available_extensions">Доступно %1$s</string>
-    <string name="available_plugins">Плагины %1$s</string>
     <string name="your_story">Ваш рассказ</string>
     <string name="your_progress">Ваш прогресс</string>
     <string name="file_not_found">Файл не найден</string>

@@ -989,7 +989,6 @@
     <string name="multi">Moni</string>
     <string name="installed_extensions">Asennettu %1$s</string>
     <string name="available_extensions">Saatavilla %1$s</string>
-    <string name="available_plugins">%1$s Lisäosaa</string>
     <string name="your_story">Sinun Tarinasi</string>
     <string name="your_progress">Edistyksesi</string>
     <string name="file_not_found">Tiedostoa ei löytynyt</string>

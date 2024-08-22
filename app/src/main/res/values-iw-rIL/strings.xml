@@ -993,7 +993,6 @@
     <string name="multi">רב-פעמי</string>
     <string name="installed_extensions">%1$s מותקנים</string>
     <string name="available_extensions">זמין %1$s</string>
-    <string name="available_plugins">%1$s תוספים</string>
     <string name="your_story">הסיפור שלך</string>
     <string name="your_progress">התקדמותך</string>
     <string name="file_not_found">קובץ לא נמצא</string>
