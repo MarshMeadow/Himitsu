@@ -12,9 +12,9 @@
     <string name="conversion_message">Il semble que vous ayez un ancien package installé.\nVeuillez sélectionner \"Sauvegarde\" pour ouvrir la version antérieure et effectuer une sauvegarde. Vous pouvez ensuite retourner à cette application et utiliser \"Restaurer les paramètres\".</string>
     <string name="backup">Sauvegarder</string>
     <string name="home">Accueil</string>
-    <string name="anime">Anime\nRehardés</string>
+    <string name="anime">Anime</string>
     <string name="browse_anime">Parcourir les Anime</string>
-    <string name="manga">Manga\nlus</string>
+    <string name="manga">Manga</string>
     <string name="browse_manga">Parcourir les Manga</string>
     <string name="novel">Roman</string>
     <string name="novels">Romans</string>
@@ -377,7 +377,7 @@
     <string name="previous_season">Saison précédente</string>
     <string name="include_media_in_list">Inclure la liste</string>
     <string name="release_calendar">Calendrier</string>
-    <string name="review_type">%1$s CRITIQUES</string>
+    <string name="review_type">Critiques %1$s</string>
     <string name="planned_anime">Anime prévu</string>
     <string name="planned_manga">Mangas prévus</string>
     <string name="image_long_clicking">Ouvrir l\'image en cliquant longuement</string>
@@ -832,7 +832,7 @@ Genre : "</string>
     <string name="anilist_broken">AniList semble ne pas répondre et les fonctionnalités seront très limitées. Voulez-vous fermer l\'application et réessayer plus tard?\n</string>
     <string name="search_title">Rechercher %1$s</string>
     <string name="profile_stats_widget">Suivez les progrès directement depuis votre écran d\'accueil</string>
-    <string name="anime_watched">Anime\nRehardés</string>
+    <string name="anime_watched">Anime regardés</string>
     <string name="manga_read">Manga\nlus</string>
     <string name="chapters_read_n">Chapitres</string>
     <string name="episodes_watched_n">Épisodes</string>
@@ -1027,7 +1027,7 @@ Genre : "</string>
     <string name="biometric_error">Erreur biométrique: %1$s</string>
     <string name="biometric_success">Bienvenue!</string>
     <string name="biometric_failed">La vérification biométrique a échoué!</string>
-    <string name="reviews_empty">Pas de critiques de %1$s</string>
+    <string name="reviews_empty">Aucunes critiques pour ce %1$s</string>
     <string name="vote_out_of_total">(%1$s sur %2$s ont liké cette critique)</string>
     <string name="create_new_activity">Créer une nouvelle activité</string>
     <string name="create_new_review">Créer une nouvelle critique</string>
