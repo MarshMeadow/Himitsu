@@ -831,8 +831,6 @@
     <string name="anilist_broken">AniList似乎無法回應，功能將受到嚴重限制。你想要關閉應用程式，稍後再試嗎？\n</string>
     <string name="search_title">搜索 %1$s</string>
     <string name="profile_stats_widget">直接從您的主屏幕追踪進度</string>
-    <string name="anime_watched">動畫</string>
-    <string name="manga_read">漫畫</string>
     <string name="chapters_read_n">章節</string>
     <string name="episodes_watched_n">集數</string>
     <string name="loading">加載中…</string>

@@ -836,8 +836,6 @@ Himitsu er ikke ansvarlig for hva som skjer med kontoen din.</string>
     <string name="anilist_broken">AniList virker å være ikke responsiv, og funksjonaliteten vil være sterkt begrenset. Ønsker du å lukke appen og prøve igjen senere?\n</string>
     <string name="search_title">Søk %1$s</string>
     <string name="profile_stats_widget">Spor progresjon direkte fra startskjermen din</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Kapitler</string>
     <string name="episodes_watched_n">Episoder</string>
     <string name="loading">Laster…</string>

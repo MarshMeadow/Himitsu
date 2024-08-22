@@ -84,7 +84,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="@string/anime_watched" />
+                    android:text="@string/anime" />
             </LinearLayout>
 
             <RelativeLayout
@@ -160,7 +160,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_semi_bold"
                     android:gravity="center"
-                    android:text="@string/manga_read" />
+                    android:text="@string/manga" />
             </LinearLayout>
 
             <RelativeLayout

@@ -830,8 +830,6 @@
     <string name="anilist_broken">يبدو أن AniList لا تستجيب وسيتم تقليل الوظائف بشكل كبير. هل ترغب في إغلاق التطبيق والمحاولة مرة أخرى لاحقًا؟\n</string>
     <string name="search_title">ابحث عن %1$s</string>
     <string name="profile_stats_widget">تتبع التقدم مباشرة من شاشة الرئيسية الخاصة بك</string>
-    <string name="anime_watched">أنمي</string>
-    <string name="manga_read">المانجا</string>
     <string name="chapters_read_n">الفصول</string>
     <string name="episodes_watched_n">الحلقات</string>
     <string name="loading">جار التحميل…</string>

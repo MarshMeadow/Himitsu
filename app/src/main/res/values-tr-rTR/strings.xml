@@ -849,8 +849,6 @@ Himitsu, hesabınıza ne olursa olsun sorumlu değildir.</string>
     <string name="anilist_broken">AniList yanıt vermeyebilir ve işlevsellik önemli ölçüde sınırlı olabilir. Uygulamayı kapatıp daha sonra tekrar mı denemek istersiniz?\n</string>
     <string name="search_title">%1$s\'ı (ıyı ara</string>
     <string name="profile_stats_widget">İlerlemeyi doğrudan ana ekranınızdan takip edin</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Bölümler</string>
     <string name="episodes_watched_n">Bölümler</string>
     <string name="loading">Yükleniyor…</string>

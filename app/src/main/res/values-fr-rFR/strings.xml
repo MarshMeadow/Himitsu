@@ -832,8 +832,6 @@ Genre : "</string>
     <string name="anilist_broken">AniList semble ne pas répondre et les fonctionnalités seront très limitées. Voulez-vous fermer l\'application et réessayer plus tard?\n</string>
     <string name="search_title">Rechercher %1$s</string>
     <string name="profile_stats_widget">Suivez les progrès directement depuis votre écran d\'accueil</string>
-    <string name="anime_watched">Anime regardés</string>
-    <string name="manga_read">Manga\nlus</string>
     <string name="chapters_read_n">Chapitres</string>
     <string name="episodes_watched_n">Épisodes</string>
     <string name="loading">Chargement…</string>

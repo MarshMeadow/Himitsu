@@ -838,8 +838,6 @@ Himitsuは、アカウントに何か起こった場合には責任を負いま�
     <string name="anilist_broken">AniList appears to be unresponsive and functionality will be severely limited. Would you like to close the app and try again later?\n</string>
     <string name="search_title">Search %1$s</string>
     <string name="profile_stats_widget">Track progress directly from your home screen</string>
-    <string name="anime_watched">アニメ</string>
-    <string name="manga_read">マンガ</string>
     <string name="chapters_read_n">章</string>
     <string name="episodes_watched_n">エピソード</string>
     <string name="loading">Loading…</string>

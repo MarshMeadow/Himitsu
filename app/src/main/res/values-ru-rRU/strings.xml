@@ -840,8 +840,6 @@ Himitsu не несет ответственности за то, что про�
     <string name="anilist_broken">AniList кажется не отвечает, и функциональность будет серьезно ограничена. Хотите закрыть приложение и попробовать позже снова?\n</string>
     <string name="search_title">Поиск %1$s</string>
     <string name="profile_stats_widget">Отслеживайте прогресс непосредственно с главного экрана</string>
-    <string name="anime_watched">Аниме</string>
-    <string name="manga_read">Манга</string>
     <string name="chapters_read_n">Главы</string>
     <string name="episodes_watched_n">Эпизоды</string>
     <string name="loading">Загрузка…</string>

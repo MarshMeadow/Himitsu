@@ -830,8 +830,6 @@
     <string name="anilist_broken">AniList изгледа да не одговара и функционалност ће бити ограничена. Да ли желите да затворите апликацију и покушате поново касније?\n</string>
     <string name="search_title">Претрага %1$s</string>
     <string name="profile_stats_widget">Праћење прогреса директно са вашег почетног екрана</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Главе</string>
     <string name="episodes_watched_n">Епизоде</string>
     <string name="loading">Учитавање…</string>

@@ -830,8 +830,6 @@
     <string name="anilist_broken">AniList lijkt niet te reageren en de functionaliteit zal ernstig beperkt zijn. Wil je de app afsluiten en later opnieuw proberen?\n</string>
     <string name="search_title">Zoek %1$s</string>
     <string name="profile_stats_widget">Volg de voortgang rechtstreeks vanaf je startscherm</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Hoofdstukken</string>
     <string name="episodes_watched_n">Afleveringen</string>
     <string name="loading">Laden…</string>

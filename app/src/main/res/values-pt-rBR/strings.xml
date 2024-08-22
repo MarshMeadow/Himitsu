@@ -830,8 +830,6 @@
     <string name="anilist_broken">O AniList parece estar inativo e a funcionalidade será severamente limitada. Você gostaria de fechar o aplicativo e tentar novamente mais tarde?\n</string>
     <string name="search_title">Pesquisar %1$s</string>
     <string name="profile_stats_widget">Acompanhe o progresso diretamente da sua tela inicial</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Mangá</string>
     <string name="chapters_read_n">Capítulos</string>
     <string name="episodes_watched_n">Episódios</string>
     <string name="loading">Carregando…</string>

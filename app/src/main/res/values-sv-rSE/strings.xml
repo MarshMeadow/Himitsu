@@ -832,8 +832,6 @@ Om inget av ovanstående steg fungerar, använd en annan källa eller gå med i 
     <string name="anilist_broken">AniList verkar vara oresponsiv och funktionaliteten kommer att vara kraftigt begränsad. Vill du stänga appen och försöka igen senare?\n</string>
     <string name="search_title">Sök %1$s</string>
     <string name="profile_stats_widget">Följ framsteg direkt från din startskärm</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Kapitel</string>
     <string name="episodes_watched_n">Avsnitt</string>
     <string name="loading">Laddar…</string>

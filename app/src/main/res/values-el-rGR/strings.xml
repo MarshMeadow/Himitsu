@@ -830,8 +830,6 @@
     <string name="anilist_broken">Το AniList φαίνεται να μην ανταποκρίνεται και η λειτουργικότητα θα περιοριστεί σοβαρά. Θα θέλατε να κλείσετε την εφαρμογή και να δοκιμάσετε ξανά αργότερα;\n</string>
     <string name="search_title">Αναζήτηση %1$s</string>
     <string name="profile_stats_widget">Καταγράψτε την πρόοδό σας απευθείας από την οθόνη του σπιτιού σας</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Μάνγκα</string>
     <string name="chapters_read_n">Κεφάλαια</string>
     <string name="episodes_watched_n">Επεισόδια</string>
     <string name="loading">Φόρτωση...</string>

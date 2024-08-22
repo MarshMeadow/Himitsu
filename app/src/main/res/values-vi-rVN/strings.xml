@@ -830,8 +830,6 @@
     <string name="anilist_broken">AniList dường như không phản hồi và chức năng sẽ bị hạn chế nghiêm trọng. Bạn có muốn đóng ứng dụng và thử lại sau không?\n</string>
     <string name="search_title">Tìm kiếm %1$s</string>
     <string name="profile_stats_widget">Theo dõi tiến độ trực tiếp từ màn hình chính của bạn</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Chương</string>
     <string name="episodes_watched_n">Tập</string>
     <string name="loading">Đang tải…</string>

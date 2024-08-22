@@ -836,8 +836,6 @@ Himitsu आपके खाते के साथ होने वाले क
     <string name="anilist_broken">AniList प्रतिक्रियाशील दिखता है और कार्यक्षमता बहुत प्रतिबंधित होगी। क्या आप ऐप को बंद करना और बाद में पुन: प्रयास करना चाहेंगे?\n</string>
     <string name="search_title">%1$s खोजें</string>
     <string name="profile_stats_widget">अपने होम स्क्रीन से प्रगति को सीधे ट्रैक करें</string>
-    <string name="anime_watched">एनिमे</string>
-    <string name="manga_read">मंगा</string>
     <string name="chapters_read_n">अध्याय</string>
     <string name="episodes_watched_n">एपिसोड</string>
     <string name="loading">लोड हो रहा है...</string>

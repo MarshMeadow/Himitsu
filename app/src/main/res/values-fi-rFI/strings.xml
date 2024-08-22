@@ -830,8 +830,6 @@
     <string name="anilist_broken">AniList vaikuttaa olevan vastaamatta ja toiminnallisuus on vakavasti rajoitettu. Haluatko sulkea sovelluksen ja yrittää myöhemmin uudelleen?\n</string>
     <string name="search_title">Hae %1$s</string>
     <string name="profile_stats_widget">Seuraa edistymistä suoraan aloitusnäytöltäsi</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Luvut</string>
     <string name="episodes_watched_n">Jaksot</string>
     <string name="loading">Ladataan…</string>

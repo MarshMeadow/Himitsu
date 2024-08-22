@@ -834,8 +834,6 @@
     <string name="anilist_broken">נראה כי AniList אינה מגיבה והפונקציונליות תוגבל מאוד. האם תרצה לסגור את האפליקציה ולנסות שוב מאוחר יותר?\n</string>
     <string name="search_title">חיפוש %1$s</string>
     <string name="profile_stats_widget">עקוב אחר התקדמות ישירות ממסך הבית שלך</string>
-    <string name="anime_watched">אנימה</string>
-    <string name="manga_read">מאנגה</string>
     <string name="chapters_read_n">פרקים</string>
     <string name="episodes_watched_n">פרקים</string>
     <string name="loading">טוען...</string>

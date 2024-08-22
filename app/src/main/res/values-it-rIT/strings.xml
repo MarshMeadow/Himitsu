@@ -830,8 +830,6 @@
     <string name="anilist_broken">AniList sembra essere non reattivo e le funzionalità saranno gravemente limitate. Vorresti chiudere l\'app e riprovare più tardi?\n</string>
     <string name="search_title">Ricerca %1$s</string>
     <string name="profile_stats_widget">Traccia i progressi direttamente dalla tua schermata home</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Capitoli</string>
     <string name="episodes_watched_n">Episodi</string>
     <string name="loading">Caricamento…</string>

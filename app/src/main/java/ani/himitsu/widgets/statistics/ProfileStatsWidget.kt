@@ -143,7 +143,7 @@ class ProfileStatsWidget : AppWidgetProvider() {
                                     )
                                     setTextViewText(
                                         R.id.topLeftLabel,
-                                        context.getString(R.string.anime_watched)
+                                        context.getString(R.string.anime)
                                     )
 
                                     setTextViewText(
@@ -161,7 +161,7 @@ class ProfileStatsWidget : AppWidgetProvider() {
                                     )
                                     setTextViewText(
                                         R.id.bottomLeftLabel,
-                                        context.getString(R.string.manga_read)
+                                        context.getString(R.string.manga)
                                     )
 
                                     setTextViewText(

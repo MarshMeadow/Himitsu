@@ -831,8 +831,6 @@
     <string name="anilist_broken">AniList lyk ongevoelig te wees en funksionaliteit sal ernstig beperk wees. Wil jy die program sluit en later weer probeer?\n</string>
     <string name="search_title">Soek %1$s</string>
     <string name="profile_stats_widget">Volg vordering direk vanaf jou tuisblad</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Hoofstukke</string>
     <string name="episodes_watched_n">Episodes</string>
     <string name="loading">Laai...</string>

@@ -830,8 +830,6 @@
     <string name="anilist_broken">AniList sembla no respondre i la funcionalitat serà severament limitada. Voleu tancar l\'aplicació i tornar-ho a intentar més tard?\n</string>
     <string name="search_title">Cerca %1$s</string>
     <string name="profile_stats_widget">Segueix el progrés directament des de la pantalla principal</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Capítols</string>
     <string name="episodes_watched_n">Episodis</string>
     <string name="loading">Carregant…</string>

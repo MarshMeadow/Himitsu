@@ -836,8 +836,6 @@
     <string name="anilist_broken">AniList উপলব্ধ নহয় আৰু কাম্যতা অত্যন্ত সীমাবদ্ধ হ\'ব। কি আপুনি এপটো বন্ধ কৰিব আৰু পিছতে পুনৰা চেষ্টা কৰিব বিচাৰে?”</string>
     <string name="search_title">অনুসন্ধান %1$s</string>
     <string name="profile_stats_widget">আপোনাৰ হোম স্ক্ৰীনৰ পৰা প্ৰগতি ট্ৰেক কৰক</string>
-    <string name="anime_watched">এনিমে</string>
-    <string name="manga_read">মাংগা</string>
     <string name="chapters_read_n">চাপ্টাৰসমূহ</string>
     <string name="episodes_watched_n">এপিস\'ডসমূহ</string>
     <string name="loading">লোড হচ্ছে…</string>

@@ -830,8 +830,6 @@
     <string name="anilist_broken">AniList appears to be unresponsive and functionality will be severely limited. Would you like to close the app and try again later?\n</string>
     <string name="search_title">Search %1$s</string>
     <string name="profile_stats_widget">Track progress directly from your home screen</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Chapters</string>
     <string name="episodes_watched_n">Episodes</string>
     <string name="loading">Loading…</string>

@@ -836,8 +836,6 @@ Himitsu не відповідає за те, що станеться з ваши
     <string name="anilist_broken">Здається, AniList не реагує, і функціональність буде значно обмежена. Хочете закрити програму та спробувати пізніше ще раз?\n</string>
     <string name="search_title">Пошук %1$s</string>
     <string name="profile_stats_widget">Відстежуйте прогрес безпосередньо з головного екрану</string>
-    <string name="anime_watched">Аніме</string>
-    <string name="manga_read">Манґа</string>
     <string name="chapters_read_n">Глави</string>
     <string name="episodes_watched_n">Епізоди</string>
     <string name="loading">Завантаження…</string>

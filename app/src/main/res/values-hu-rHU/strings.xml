@@ -829,8 +829,6 @@
     <string name="anilist_broken">Az AniList nem válaszol, és a funkciók súlyosan korlátozottak lesznek. Szeretné bezárni az alkalmazást, majd később újra megpróbálni?</string>
     <string name="search_title">Keresés %1$s</string>
     <string name="profile_stats_widget">Követési haladás közvetlenül a kezdőképernyőről</string>
-    <string name="anime_watched">Anime</string>
-    <string name="manga_read">Manga</string>
     <string name="chapters_read_n">Fejezetek</string>
     <string name="episodes_watched_n">Epizódok</string>
     <string name="loading">Betöltés...</string>

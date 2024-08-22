@@ -844,8 +844,6 @@ _不需要同步 MAL 和 AniList 帐户。_
     <string name="anilist_broken">AniList似乎没有响应，功能将受到严重限制。您想要关闭应用程序并稍后再试吗？\n</string>
     <string name="search_title">搜索 %1$s</string>
     <string name="profile_stats_widget">直接从主屏幕跟踪进度</string>
-    <string name="anime_watched">动漫</string>
-    <string name="manga_read">漫画</string>
     <string name="chapters_read_n">章节</string>
     <string name="episodes_watched_n">剧集</string>
     <string name="loading">加载中…</string>

@@ -836,8 +836,6 @@ Himitsu는 귀하의 계정에 대한 모든 일에 대해 책임지지 않습�
     <string name="anilist_broken">AniList가 응답하지 않고 기능이 심각하게 제한될 수 있습니다. 앱을 닫고 나중에 다시 시도하시겠습니까?\n</string>
     <string name="search_title">%1$s 검색</string>
     <string name="profile_stats_widget">집 화면에서 진척 상황을 직접 추적하세요</string>
-    <string name="anime_watched">애니메이션</string>
-    <string name="manga_read">만화</string>
     <string name="chapters_read_n">챕터</string>
     <string name="episodes_watched_n">에피소드</string>
     <string name="loading">로딩 중…</string>
