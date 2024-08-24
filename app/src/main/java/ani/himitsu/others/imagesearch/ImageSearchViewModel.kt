@@ -47,7 +47,7 @@ class ImageSearchViewModel : ViewModel() {
 
     @Serializable
     data class ImageResult(
-        val anilist: AnilistData? = null,
+        val anilist: AniListData? = null,
         val filename: String? = null,
         @SerialName("episode") val rawEpisode: JsonElement? = null,
         val from: Double? = null,
@@ -65,7 +65,7 @@ class ImageSearchViewModel : ViewModel() {
     }
 
     @Serializable
-    data class AnilistData(
+    data class AniListData(
         val id: Long? = null,
         val idMal: Long? = null,
         val title: Title? = null,

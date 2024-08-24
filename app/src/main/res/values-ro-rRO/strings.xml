@@ -1075,6 +1075,6 @@
     <string name="error_no_media_id">Eroare: Fără ID media</string>
     <string name="down_to_up">De Jos în Sus</string>
     <string name="up_to_down">De Sus în Jos</string>
-    <string name="anilist_notification">Notificare Noua Lista Anilist</string>
+    <string name="anilist_notification">Notificare Noua Lista AniList</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

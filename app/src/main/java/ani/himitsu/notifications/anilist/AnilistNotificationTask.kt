@@ -20,7 +20,7 @@ import eu.kanade.tachiyomi.data.notification.Notifications
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class AnilistNotificationTask : Task {
+class AniListNotificationTask : Task {
     override suspend fun execute(context: Context): Boolean {
         try {
             withContext(Dispatchers.IO) {
@@ -88,7 +88,7 @@ class AnilistNotificationTask : Task {
             }
             return true
         } catch (e: Exception) {
-            Logger.log("AnilistNotificationTask: ${e.message}")
+            Logger.log("AniListNotificationTask: ${e.message}")
             Logger.log(e)
             return false
         }

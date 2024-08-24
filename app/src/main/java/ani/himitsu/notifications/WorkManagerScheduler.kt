@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.work.Constraints
 import androidx.work.PeriodicWorkRequest
 import ani.himitsu.notifications.TaskScheduler.TaskType
-import ani.himitsu.notifications.anilist.AnilistNotificationWorker
+import ani.himitsu.notifications.anilist.AniListNotificationWorker
 import ani.dantotsu.notifications.comment.CommentNotificationWorker
 import ani.himitsu.notifications.subscription.SubscriptionNotificationWorker
 
@@ -38,7 +38,7 @@ class WorkManagerScheduler(private val context: Context) : TaskScheduler {
 
             TaskType.ANILIST_NOTIFICATION -> {
                 val recurringWork = PeriodicWorkRequest.Builder(
-                    AnilistNotificationWorker::class.java,
+                    AniListNotificationWorker::class.java,
                     interval,
                     java.util.concurrent.TimeUnit.MINUTES,
                     PeriodicWorkRequest.MIN_PERIODIC_FLEX_MILLIS,
@@ -47,7 +47,7 @@ class WorkManagerScheduler(private val context: Context) : TaskScheduler {
                     .setConstraints(constraints)
                     .build()
                 androidx.work.WorkManager.getInstance(context).enqueueUniquePeriodicWork(
-                    AnilistNotificationWorker.WORK_NAME,
+                    AniListNotificationWorker.WORK_NAME,
                     androidx.work.ExistingPeriodicWorkPolicy.UPDATE,
                     recurringWork
                 )
@@ -81,7 +81,7 @@ class WorkManagerScheduler(private val context: Context) : TaskScheduler {
 
             TaskType.ANILIST_NOTIFICATION -> {
                 androidx.work.WorkManager.getInstance(context)
-                    .cancelUniqueWork(AnilistNotificationWorker.WORK_NAME)
+                    .cancelUniqueWork(AniListNotificationWorker.WORK_NAME)
             }
 
             TaskType.SUBSCRIPTION_NOTIFICATION -> {

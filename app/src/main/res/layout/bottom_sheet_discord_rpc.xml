@@ -112,7 +112,7 @@
             </LinearLayout>
 
             <RadioButton
-                android:id="@+id/radio_anilist"
+                android:id="@+id/radio_aniList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_semi_bold"
@@ -123,7 +123,7 @@
                 android:layout_height="match_parent">
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/anilistCard"
+                    android:id="@+id/aniListCard"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
@@ -148,7 +148,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <TextView
-                    android:id="@+id/anilistLinkPreview"
+                    android:id="@+id/aniListLinkPreview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.ConcatAdapter
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ani.himitsu.connections.anilist.AniList
-import ani.himitsu.connections.anilist.AnilistSearch
+import ani.himitsu.connections.anilist.AniListSearch
 import ani.himitsu.media.cereal.SearchResults
 import ani.himitsu.databinding.ActivitySearchBinding
 import ani.himitsu.initActivity
@@ -37,7 +37,7 @@ import java.util.TimerTask
 class SearchActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySearchBinding
     private val scope = lifecycleScope
-    val model: AnilistSearch by viewModels()
+    val model: AniListSearch by viewModels()
 
     var style: Int = 0
     private var screenWidth: Float = 0f

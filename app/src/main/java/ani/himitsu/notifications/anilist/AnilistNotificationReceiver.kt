@@ -10,14 +10,14 @@ import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.util.Logger
 import kotlinx.coroutines.runBlocking
 
-class AnilistNotificationReceiver : BroadcastReceiver() {
+class AniListNotificationReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent?) {
-        Logger.log("AnilistNotificationReceiver: onReceive")
+        Logger.log("AniListNotificationReceiver: onReceive")
         runBlocking {
-            AnilistNotificationTask().execute(context)
+            AniListNotificationTask().execute(context)
         }
         val anilistInterval =
-            AnilistNotificationWorker.checkIntervals[PrefManager.getVal(PrefName.AnilistNotificationInterval)]
+            AniListNotificationWorker.checkIntervals[PrefManager.getVal(PrefName.AnilistNotificationInterval)]
         AlarmManagerScheduler(context).scheduleRepeatingTask(
             TaskScheduler.TaskType.ANILIST_NOTIFICATION,
             anilistInterval

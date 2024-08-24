@@ -30,21 +30,21 @@ class DiscordDialogFragment : BottomSheetDialogFragment() {
         when (PrefManager.getCustomVal("discord_mode", Discord.MODE.HIMITSU.name)) {
             Discord.MODE.NOTHING.name -> binding.radioNothing.isChecked = true
             Discord.MODE.HIMITSU.name -> binding.radioHimitsu.isChecked = true
-            Discord.MODE.ANILIST.name -> binding.radioAnilist.isChecked = true
-            else -> binding.radioAnilist.isChecked = true
+            Discord.MODE.ANILIST.name -> binding.radioAniList.isChecked = true
+            else -> binding.radioAniList.isChecked = true
         }
         binding.showIcon.isChecked = PrefManager.getVal(PrefName.ShowAniListIcon)
         binding.showIcon.setOnCheckedChangeListener { _, isChecked ->
             PrefManager.setVal(PrefName.ShowAniListIcon, isChecked)
         }
-        binding.anilistLinkPreview.text =
+        binding.aniListLinkPreview.text =
             getString(R.string.anilist_link, PrefManager.getVal<String>(PrefName.AnilistUserName))
 
         binding.radioGroup.setOnCheckedChangeListener { _, checkedId ->
             val mode = when (checkedId) {
                 binding.radioNothing.id -> Discord.MODE.NOTHING.name
                 binding.radioHimitsu.id -> Discord.MODE.HIMITSU.name
-                binding.radioAnilist.id -> Discord.MODE.ANILIST.name
+                binding.radioAniList.id -> Discord.MODE.ANILIST.name
                 else -> Discord.MODE.HIMITSU.name
             }
             PrefManager.setCustomVal("discord_mode", mode)

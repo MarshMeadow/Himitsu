@@ -6,7 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import ani.himitsu.notifications.TaskScheduler.TaskType
-import ani.himitsu.notifications.anilist.AnilistNotificationReceiver
+import ani.himitsu.notifications.anilist.AniListNotificationReceiver
 import ani.dantotsu.notifications.comment.CommentNotificationReceiver
 import ani.himitsu.notifications.subscription.SubscriptionNotificationReceiver
 import ani.himitsu.settings.saving.PrefManager
@@ -28,7 +28,7 @@ class AlarmManagerScheduler(private val context: Context) : TaskScheduler {
 
             TaskType.ANILIST_NOTIFICATION -> Intent(
                 context,
-                AnilistNotificationReceiver::class.java
+                AniListNotificationReceiver::class.java
             )
 
             TaskType.SUBSCRIPTION_NOTIFICATION -> Intent(
@@ -72,7 +72,7 @@ class AlarmManagerScheduler(private val context: Context) : TaskScheduler {
 
             TaskType.ANILIST_NOTIFICATION -> Intent(
                 context,
-                AnilistNotificationReceiver::class.java
+                AniListNotificationReceiver::class.java
             )
 
             TaskType.SUBSCRIPTION_NOTIFICATION -> Intent(

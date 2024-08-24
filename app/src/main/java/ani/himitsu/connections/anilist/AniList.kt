@@ -163,7 +163,7 @@ object AniList {
         cache: Int? = null
     ): T? {
         return try {
-            if (show) Logger.log("Anilist Query: $query")
+            if (show) Logger.log("AniList Query: $query")
             if (rateLimitReset > System.currentTimeMillis() / 1000) {
                 toast("Rate limited. Try after ${rateLimitReset - (System.currentTimeMillis() / 1000)} seconds")
                 throw Exception("Rate limited after ${rateLimitReset - (System.currentTimeMillis() / 1000)} seconds")
@@ -205,7 +205,7 @@ object AniList {
             } else null
         } catch (e: Exception) {
             if (show) snackString(getString(R.string.anilist_data_error, e.message))
-            Logger.log("Anilist Query Error: ${e.message}")
+            Logger.log("AniList Query Error: ${e.message}")
             null
         }
     }

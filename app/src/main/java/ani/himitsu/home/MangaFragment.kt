@@ -24,7 +24,7 @@ import ani.himitsu.R
 import ani.himitsu.Refresh
 import ani.himitsu.bottomBar
 import ani.himitsu.connections.anilist.AniList
-import ani.himitsu.connections.anilist.AnilistMangaViewModel
+import ani.himitsu.connections.anilist.AniListMangaViewModel
 import ani.himitsu.media.cereal.SearchResults
 import ani.himitsu.databinding.FragmentAnimeBinding
 import ani.himitsu.loadFragment
@@ -54,7 +54,7 @@ class MangaFragment : Fragment() {
     private val binding by lazy { _binding!! }
     private lateinit var mangaPageAdapter: MangaPageAdapter
 
-    val model: AnilistMangaViewModel by activityViewModels()
+    val model: AniListMangaViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,

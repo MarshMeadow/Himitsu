@@ -395,7 +395,7 @@
     <string name="addons_desc">Los complementos son extensiones que brindan funcionalidad adicional.</string>
     <string name="login_with_anilist">Iniciar sesión con AniList</string>
     <string name="account_help">¿Cómo funciona esto\?</string>
-    <string name="full_account_help">Himitsu es una aplicación basada en AniList, por lo que para sincronizar con su cuenta MAL, necesita iniciar sesión en una cuenta de AniList. \nUna vez que haya iniciado sesión con las cuentas AniList y MAL, la aplicación actualizará automáticamente su cuenta MAL siempre que: \n- Agregar un nuevo medio \n- Editar un medio \n- Eliminar un medio \n\nNota: La aplicación no sincronizará los medios antiguos de AniList a MAL. Se recomienda sincronizarlos. \n- Consulte las __Preguntas frecuentes__ para conocer el _Método fácil_ \n\nY para _Intermedios_ : \n- [Cómo sincronizar datos de AniList con MAL](https://anilist.co/forum/thread/2654) \n- [Cómo sincronizar datos MAL con AniList](https://anilist.co/forum/thread/3393) \n\n_No es necesario sincronizar las cuentas MAL y Anilist._    </string>
+    <string name="full_account_help">Himitsu es una aplicación basada en AniList, por lo que para sincronizar con su cuenta MAL, necesita iniciar sesión en una cuenta de AniList. \nUna vez que haya iniciado sesión con las cuentas AniList y MAL, la aplicación actualizará automáticamente su cuenta MAL siempre que: \n- Agregar un nuevo medio \n- Editar un medio \n- Eliminar un medio \n\nNota: La aplicación no sincronizará los medios antiguos de AniList a MAL. Se recomienda sincronizarlos. \n- Consulte las __Preguntas frecuentes__ para conocer el _Método fácil_ \n\nY para _Intermedios_ : \n- [Cómo sincronizar datos de AniList con MAL](https://anilist.co/forum/thread/2654) \n- [Cómo sincronizar datos MAL con AniList](https://anilist.co/forum/thread/3393) \n\n_No es necesario sincronizar las cuentas MAL y AniList._    </string>
     <string name="frequency">Frecuencia</string>
     <string name="notification_for_checking_subscriptions">Comprobando Notificación de suscripciones</string>
     <string name="use_alarm_manager">Usar Administrador de alarmas</string>
@@ -447,13 +447,13 @@
     <string name="error_loading_data">Error al cargar datos %1$s</string>
     <string name="long_click_to_check_update">Clic largo para buscar actualizaciones de la aplicación</string>
     <string name="saved_to_path">Guardado en:\n%s</string>
-    <string name="login_anilist_account">¡Inicia sesión en la cuenta de Anilist!</string>
+    <string name="login_anilist_account">¡Inicia sesión en la cuenta de AniList!</string>
     <string name="congrats_vro">Felicidades, Bro</string>
     <string name="please_reload">Por favor, recarga.</string>
     <string name="copied_text">Copiado \"%1$s\"</string>
     <string name="back_to_exit">Presiona ATRÁS de nuevo para salir</string>
     <string name="back_button">Botón Atrás</string>
-    <string name="anilist_not_found">Parece que eso no se encontró en Anilist.</string>
+    <string name="anilist_not_found">Parece que eso no se encontró en AniList.</string>
     <string name="disabled_auto_skip">Se ha desactivado el salto automático de OP &amp; ED</string>
     <string name="auto_skip">Salto automático de OP &amp; ED</string>
     <string name="show_skip_time_stamp_button">Mostrar botón de salto de marca de tiempo</string>
@@ -471,7 +471,7 @@
     <string name="logging_in_mal">Iniciando sesión en MAL</string>
     <string name="no_next_episode">¡No se encontró el siguiente episodio!</string>
     <string name="enable_banner_animations">Intenta habilitar las \"animaciones de banner\" en Configuración</string>
-    <string name="please_login_anilist">¡Porfavor Inicia sesión con Anilist!</string>
+    <string name="please_login_anilist">¡Porfavor Inicia sesión con AniList!</string>
     <string name="auto_update_reset">El progreso de actualización automática ahora se ha restablecido</string>
     <string name="cant_wait">¿No puedes esperar eh? Bien X(</string>
     <string name="downloading">Descargando…</string>
@@ -480,7 +480,7 @@
     <string name="adult_stuff">¿Cosas de adultos?&#40; &#865;&#176; &#860;&#662; &#865;&#176; &#41;</string>
     <string name="what_did_you_open">¿Qué abriste?</string>
     <string name="error_getting_data">Error obteniendo datos de AniList.</string>
-    <string name="anilist_data_error">Error obteniendo datos de Anilista: %1$s</string>
+    <string name="anilist_data_error">Error obteniendo datos de AniLista: %1$s</string>
     <string name="empty_response">Respuesta vacía, ¿tal vez tu internet apesta?</string>
     <string name="error_loading_mal_user_data">Error al cargar los datos de usuario de MAL</string>
     <string name="error_loading_mal_data">Error al cargar datos de MAL</string>
@@ -555,7 +555,7 @@
     <string name="speed">Velocidad</string>
     <string name="auto_update">¿Autoactualizar el progreso dé %1$s?</string>
     <string name="continue_from">¿Continuar desde %1$s?</string>
-    <string name="title_update_progress">¿Actualizar progreso en Anilist?</string>
+    <string name="title_update_progress">¿Actualizar progreso en AniList?</string>
     <string name="incognito_will_not_update">El modo incógnito seguirá ignorando el progreso.</string>
     <string name="dont_ask_again">"No preguntar de nuevo por %1$s"</string>
     <string name="default_speed">Velocidad predeterminada</string>

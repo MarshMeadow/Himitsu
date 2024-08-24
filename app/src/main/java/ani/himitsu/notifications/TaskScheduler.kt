@@ -1,7 +1,7 @@
 package ani.himitsu.notifications
 
 import android.content.Context
-import ani.himitsu.notifications.anilist.AnilistNotificationWorker
+import ani.himitsu.notifications.anilist.AniListNotificationWorker
 import ani.dantotsu.notifications.comment.CommentNotificationWorker
 import ani.himitsu.notifications.subscription.SubscriptionNotificationWorker
 import ani.himitsu.settings.saving.PrefManager
@@ -24,7 +24,7 @@ interface TaskScheduler {
                     PrefName.CommentNotificationInterval
                 )]
 
-                TaskType.ANILIST_NOTIFICATION -> AnilistNotificationWorker.checkIntervals[PrefManager.getVal(
+                TaskType.ANILIST_NOTIFICATION -> AniListNotificationWorker.checkIntervals[PrefManager.getVal(
                     PrefName.AnilistNotificationInterval
                 )]
 
@@ -54,9 +54,9 @@ interface TaskScheduler {
                     .build()
             )
             workManager.enqueueUniqueWork(
-                AnilistNotificationWorker.WORK_NAME + "_single",
+                AniListNotificationWorker.WORK_NAME + "_single",
                 androidx.work.ExistingWorkPolicy.REPLACE,
-                androidx.work.OneTimeWorkRequest.Builder(AnilistNotificationWorker::class.java)
+                androidx.work.OneTimeWorkRequest.Builder(AniListNotificationWorker::class.java)
                     .build()
             )
             workManager.enqueueUniqueWork(

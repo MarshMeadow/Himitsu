@@ -6,7 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import ani.himitsu.notifications.TaskScheduler.TaskType
-import ani.himitsu.notifications.anilist.AnilistNotificationWorker
+import ani.himitsu.notifications.anilist.AniListNotificationWorker
 import ani.dantotsu.notifications.comment.CommentNotificationWorker
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
@@ -23,7 +23,7 @@ class BootCompletedReceiver : BroadcastReceiver() {
                 val commentInterval =
                     CommentNotificationWorker.checkIntervals[PrefManager.getVal(PrefName.CommentNotificationInterval)]
                 val anilistInterval =
-                    AnilistNotificationWorker.checkIntervals[PrefManager.getVal(PrefName.AnilistNotificationInterval)]
+                    AniListNotificationWorker.checkIntervals[PrefManager.getVal(PrefName.AnilistNotificationInterval)]
                 scheduler.scheduleRepeatingTask(
                     TaskType.COMMENT_NOTIFICATION,
                     commentInterval

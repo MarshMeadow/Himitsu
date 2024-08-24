@@ -21,7 +21,7 @@ import ani.himitsu.connections.anilist.api.NotificationType
 import ani.himitsu.databinding.ActivitySettingsNotificationsBinding
 import ani.himitsu.media.cereal.Media
 import ani.himitsu.notifications.TaskScheduler
-import ani.himitsu.notifications.anilist.AnilistNotificationWorker
+import ani.himitsu.notifications.anilist.AniListNotificationWorker
 import ani.dantotsu.notifications.comment.CommentNotificationWorker
 import ani.himitsu.notifications.subscription.SubscriptionHelper
 import ani.himitsu.notifications.subscription.SubscriptionHelper.Companion.saveSubscription
@@ -68,7 +68,7 @@ class SettingsNotificationFragment : Fragment() {
                 else getString(R.string.do_not_update)
             }.toTypedArray()
 
-            val aTimeNames = AnilistNotificationWorker.checkIntervals.map { it.toInt() }
+            val aTimeNames = AniListNotificationWorker.checkIntervals.map { it.toInt() }
             val aItems = aTimeNames.map {
                 val mins = it % 60
                 val hours = it / 60

@@ -140,7 +140,7 @@ class AniListHomeViewModel : ViewModel() {
     val genres: MutableLiveData<Boolean?> = MutableLiveData(null)
 }
 
-class AnilistAnimeViewModel : ViewModel() {
+class AniListAnimeViewModel : ViewModel() {
     var searched = false
     var notSet = true
     lateinit var searchResults: SearchResults
@@ -234,7 +234,7 @@ class AnilistAnimeViewModel : ViewModel() {
     }
 }
 
-class AnilistMangaViewModel : ViewModel() {
+class AniListMangaViewModel : ViewModel() {
     var searched = false
     var notSet = true
     lateinit var searchResults: SearchResults
@@ -335,7 +335,7 @@ class AnilistMangaViewModel : ViewModel() {
     }
 }
 
-class AnilistSearch : ViewModel() {
+class AniListSearch : ViewModel() {
     var searched = false
     var notSet = true
     lateinit var searchResults: SearchResults
