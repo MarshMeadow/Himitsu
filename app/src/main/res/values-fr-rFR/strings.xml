@@ -316,8 +316,8 @@
     <string name="animation_speed">Vitesse globale</string>
     <string name="empty_fav">Essayez d\'ajouter quelque chose pourqu\'il reste ici</string>
     <string name="no_suggestions">Nous apprenons encore à vous connaître.</string>
-    <string name="fav_anime">Anime préféré</string>
-    <string name="fav_manga">Manga préféré</string>
+    <string name="fav_anime">Anime favoris</string>
+    <string name="fav_manga">Manga favoris</string>
     <string name="restart_app">Redémarrer l\'application?</string>
     <string name="next">Suivant</string>
     <string name="previous">Précédent</string>
@@ -543,7 +543,7 @@
     <string name="main_role">RÔLE PRINCIPAL</string>
     <string name="supporting_role">RÔLE DE SOUTIEN</string>
     <string name="status_finished">TERMINÉ</string>
-    <string name="status_releasing">EN COURS DE DIFFUSION</string>
+    <string name="status_releasing">EN COURS</string>
     <string name="status_not_yet_released">PAS ENCORE PUBLIÉ</string>
     <string name="status_cancelled">ANNULÉ</string>
     <string name="status_hiatus">EN PAUSE</string>
@@ -733,7 +733,7 @@ Genre : "</string>
     <string name="no_fav_anime">L\'utilisateur n\'a pas d\'Anime favori</string>
     <string name="no_fav_manga">L\'utilisateur n\'a pas de Manga favori</string>
     <string name="fav_character">Personnages Favoris</string>
-    <string name="fav_staff">Personnel Favori</string>
+    <string name="fav_staff">Personnel Favoris</string>
     <string name="stats">Statistiques</string>
     <string name="days_watched">Jours regardés</string>
     <string name="total_anime">Total d\'Anime</string>
@@ -742,8 +742,8 @@ Genre : "</string>
     <string name="total_manga">Total de Manga</string>
     <string name="manga_mean_score">Score Moyen du Manga</string>
     <string name="about_me">À Propos de moi</string>
-    <string name="follow">SUIVI</string>
-    <string name="following">Abonnement</string>
+    <string name="follow">Suivre</string>
+    <string name="following">Abonnements</string>
     <string name="unfollow">Se désabonner</string>
     <string name="follows_you">Vous suit</string>
     <string name="mutual">Mutuel</string>
@@ -918,7 +918,7 @@ Genre : "</string>
     <string name="z_a">Pure douleur</string>
     <string name="pure_pain">Douleur pure</string>
     <string name="add_a_comment">Ajouter un commentaire…</string>
-    <string name="type">Type de texte</string>
+    <string name="type">Type</string>
     <string name="view">Voir</string>
     <string name="count">COMPTE</string>
     <string name="open">Ouvert</string>
@@ -969,7 +969,7 @@ Genre : "</string>
     <string name="ppt_title">Personne, Lieu, Chose</string>
     <string name="failed_ext_install_conflict">Échec de l\'installation de l\'extension à cause d\'un conflit</string>
     <string name="download_extension_not_available">Télécharger l\'extension non disponible</string>
-    <string name="feed">Flux</string>
+    <string name="feed">Activités</string>
     <string name="profile">Profil</string>
     <string name="content_not_found">Contenu manquant ou non disponible</string>
     <string name="epub_download_exception">Exception lors du téléchargement de .epub: %1$s</string>
@@ -1027,7 +1027,7 @@ Genre : "</string>
     <string name="biometric_success">Bienvenue!</string>
     <string name="biometric_failed">La vérification biométrique a échoué!</string>
     <string name="reviews_empty">Aucunes critiques pour ce %1$s</string>
-    <string name="vote_out_of_total">(%1$s sur %2$s ont liké cette critique)</string>
+    <string name="vote_out_of_total">(%1$s utilisateurs sur %2$s ont aimé cette critique)</string>
     <string name="create_new_activity">Créer une nouvelle activité</string>
     <string name="create_new_review">Créer une nouvelle critique</string>
     <string name="create_new_reply">Répondre</string>
