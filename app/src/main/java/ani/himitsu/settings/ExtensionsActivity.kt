@@ -104,8 +104,8 @@ class ExtensionsActivity : AppCompatActivity() {
                     binding.searchViewText.setText("")
                     binding.searchViewText.clearFocus()
                     binding.tabLayout.clearFocus()
-                    binding.languageselect.isVisible = tab.text?.contains(
-                        getString(R.string.available)
+                    binding.languageSelect.isVisible = tab.text?.contains(
+                        getString(R.string.available_extensions, "")
                     ) == true
                 }
 
@@ -151,7 +151,7 @@ class ExtensionsActivity : AppCompatActivity() {
                 .putExtra("fragment", Page.EXTENSION.name))
         }
 
-        binding.languageselect.setOnClickListener {
+        binding.languageSelect.setOnClickListener {
             val languageOptions = LanguageMapper.codeMap.values.toTypedArray()
             val builder = AlertDialog.Builder(currContext(), R.style.MyPopup)
             val listOrder: String = PrefManager.getVal(PrefName.LangSort)
