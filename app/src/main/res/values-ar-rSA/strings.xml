@@ -146,7 +146,6 @@
     <string name="prequel">سابقة</string>
     <string name="sequel">تكملة</string>
     <string name="installed">مثبت</string>
-    <string name="torrserver">خادم تورر</string>
     <string name="torrent_running">الخادم يعمل ...</string>
     <string name="settings_torrent">الخادم الداخلي للتورر</string>
     <string name="enable_server">تمكين خادم تورر</string>

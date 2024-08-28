@@ -146,7 +146,6 @@
     <string name="prequel">Προδρόμου</string>
     <string name="sequel">Συνέχεια</string>
     <string name="installed">Εγκαταστημένο</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">Ο διακομιστής λειτουργεί…</string>
     <string name="settings_torrent">Εσωτερικό TorrServer</string>
     <string name="enable_server">Ενεργοποίηση TorrServer</string>

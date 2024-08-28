@@ -146,7 +146,6 @@
     <string name="prequel">Pęcherz</string>
     <string name="sequel">Sekwencja</string>
     <string name="installed">Zainstalowane</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">Serwer jest uruchomiony…</string>
     <string name="settings_torrent">Wewnętrzny TorrServer</string>
     <string name="enable_server">Włącz TorrServer</string>

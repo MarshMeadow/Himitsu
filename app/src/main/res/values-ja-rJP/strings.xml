@@ -146,7 +146,6 @@
     <string name="prequel">前日譚</string>
     <string name="sequel">続編</string>
     <string name="installed">インストール済み</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">サーバーが稼働しています…</string>
     <string name="settings_torrent">内部TorServer</string>
     <string name="enable_server">TorrServerの有効化</string>

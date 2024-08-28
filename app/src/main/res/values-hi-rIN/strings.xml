@@ -146,7 +146,6 @@
     <string name="prequel">पहला भाग</string>
     <string name="sequel">दूसरा भाग</string>
     <string name="installed">स्थापित</string>
-    <string name="torrserver">टॉरसर्वर</string>
     <string name="torrent_running">सर्वर चल रहा है...</string>
     <string name="settings_torrent">आंतरिक टॉरसर्वर</string>
     <string name="enable_server">टॉरसर्वर सक्षम करें</string>

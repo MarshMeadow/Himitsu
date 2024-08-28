@@ -146,7 +146,6 @@
     <string name="prequel">Prequel</string>
     <string name="sequel">Sequel</string>
     <string name="installed">Instalat</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">Serverul rulează…</string>
     <string name="settings_torrent">TorrServer intern</string>
     <string name="enable_server">Activează TorrServer</string>

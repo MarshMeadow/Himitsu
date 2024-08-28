@@ -146,7 +146,6 @@
     <string name="prequel">Преквел</string>
     <string name="sequel">Сиквел</string>
     <string name="installed">Инсталирано</string>
-    <string name="torrserver">ТорСервер</string>
     <string name="torrent_running">Сервер је покренут…</string>
     <string name="settings_torrent">Интерни ТорСервер</string>
     <string name="enable_server">Омогући ТорСервер</string>

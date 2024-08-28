@@ -146,7 +146,6 @@
     <string name="prequel">Forløber</string>
     <string name="sequel">Efterfølger</string>
     <string name="installed">Installeret</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">Server kører…</string>
     <string name="settings_torrent">Intern TorrServer</string>
     <string name="enable_server">Aktivér TorrServer</string>

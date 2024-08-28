@@ -146,7 +146,6 @@
     <string name="prequel">Phần trước</string>
     <string name="sequel">Phần phim tiếp theo</string>
     <string name="installed">Đã cài đặt</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">Máy chủ đang hoạt động...</string>
     <string name="settings_torrent">TorrServer Nội bộ</string>
     <string name="enable_server">Bật TorrServer</string>

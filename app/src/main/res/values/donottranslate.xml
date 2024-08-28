@@ -47,6 +47,8 @@
     <string name="anilist">AniList</string>
     <string name="myanimelist">MyAnimeList</string>
 
+    <string name="torrserver">TorrServer</string>
+
     <string name="prime_video">Prime Video</string>
     <string name="icon_prime" tools:ignore="Typos">https://play-lh.googleusercontent.com/Y7drWZZo_F2GBE1RhjR1irOkE3yrtPorHS1U9YkLKAu1DnTjQ8gNbcRmrBtkd3tnHQ</string>
     <string name="crunchyroll">Crunchyroll</string>

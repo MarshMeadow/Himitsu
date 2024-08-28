@@ -148,7 +148,6 @@
     <string name="prequel">פריקואל</string>
     <string name="sequel">המשך</string>
     <string name="installed">מותקן</string>
-    <string name="torrserver">שרת טור</string>
     <string name="torrent_running">השרת פועל...</string>
     <string name="settings_torrent">שרת טור פנימי</string>
     <string name="enable_server">הפעלת שרת טור</string>

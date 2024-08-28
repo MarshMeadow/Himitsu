@@ -146,7 +146,6 @@
     <string name="prequel">전편</string>
     <string name="sequel">후편</string>
     <string name="installed">설치된</string>
-    <string name="torrserver">토르서버</string>
     <string name="torrent_running">서버가 실행 중입니다...</string>
     <string name="settings_torrent">내부 TorrServer</string>
     <string name="enable_server">TorrServer 활성화</string>

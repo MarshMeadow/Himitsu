@@ -146,7 +146,6 @@
     <string name="prequel">Předchůdce</string>
     <string name="sequel">Pokračování</string>
     <string name="installed">Nainstalováno</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">Server běží…</string>
     <string name="settings_torrent">Interní TorrServer</string>
     <string name="enable_server">Povolit TorrServer</string>

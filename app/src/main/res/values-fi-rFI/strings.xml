@@ -146,7 +146,6 @@
     <string name="prequel">Elokuvasarjan esiosa</string>
     <string name="sequel">Elokuvasarjan jatko-osa</string>
     <string name="installed">Asennettu</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">Palvelin on käynnissä…</string>
     <string name="settings_torrent">Sisäinen TorrServer</string>
     <string name="enable_server">Ota TorrServer käyttöön</string>

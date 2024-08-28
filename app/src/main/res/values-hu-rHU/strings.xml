@@ -145,7 +145,6 @@
     <string name="prequel">Előzmény</string>
     <string name="sequel">Folytatás</string>
     <string name="installed">Telepítve</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">A szerver fut…</string>
     <string name="settings_torrent">Belső TorrServer</string>
     <string name="enable_server">TorrServer engedélyezése</string>

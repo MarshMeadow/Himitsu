@@ -146,7 +146,6 @@
     <string name="prequel">前傳</string>
     <string name="sequel">續集</string>
     <string name="installed">已安裝</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">伺服器正在運行中…</string>
     <string name="settings_torrent">內部TorrServer</string>
     <string name="enable_server">啟用TorrServer</string>

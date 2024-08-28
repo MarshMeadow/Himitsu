@@ -146,7 +146,6 @@
     <string name="prequel">Prequel</string>
     <string name="sequel">Sequel</string>
     <string name="installed">Installed</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">Server is running…</string>
     <string name="settings_torrent">Internal TorrServer</string>
     <string name="enable_server">Enable TorrServer</string>

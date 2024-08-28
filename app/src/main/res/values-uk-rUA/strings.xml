@@ -146,7 +146,6 @@
     <string name="prequel">Преквел</string>
     <string name="sequel">Сиквел</string>
     <string name="installed">Встановлено</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">Сервер працює…</string>
     <string name="settings_torrent">Внутрішній TorrServer</string>
     <string name="enable_server">Увімкнути TorrServer</string>

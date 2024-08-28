@@ -146,7 +146,6 @@
     <string name="prequel">Öncül</string>
     <string name="sequel">Devam</string>
     <string name="installed">Yüklendi</string>
-    <string name="torrserver">TorrServer</string>
     <string name="torrent_running">Sunucu çalışıyor…</string>
     <string name="settings_torrent">Dahili TorrServer</string>
     <string name="enable_server">TorrServer\'ı Etkinleştir</string>
