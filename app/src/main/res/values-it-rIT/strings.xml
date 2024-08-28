@@ -8,7 +8,7 @@
     <string name="discord_login">Login Discord per Himitsu</string>
     <string name="extension_notice">Himitsu è un Servizio BYOR</string>
     <string name="extension_notice_desc">Himitsu segue un formato \"porta il tuo proprio repository\". Anche se le estensioni sono supportate, gli indici devono essere forniti dall\'utente. Tuttavia, il supporto per molti servizi di streaming popolari è incluso e pronto all\'uso.</string>
-    <string name="conversion_title">Bentornat\*!</string>
+    <string name="conversion_title">Bentornat*!</string>
     <string name="conversion_message">Sembra che tu abbia un pacchetto più vecchio installato.\nPer favore, seleziona \"Backup\" per aprire la versione più vecchia ed eseguire un backup. Poi puoi tornare a questa app e utilizzare \"Ripristina impostazioni\".</string>
     <string name="backup">Backup</string>
     <string name="home">Home</string>
@@ -394,8 +394,7 @@
     <string name="addons_desc">Ottieni più funzioni dalla tua app</string>
     <string name="login_with_anilist">Accedi con AniList</string>
     <string name="account_help">Come funziona questo\?</string>
-    <string name="full_account_help">
-        Himitsu è un\'App Basata su AniList, quindi per sincronizzarsi con il tuo Account MAL, Ha bisogno di un account AniList per accedere.
+    <string name="full_account_help">        Himitsu è un\'App Basata su AniList, quindi per sincronizzarsi con il tuo Account MAL, Ha bisogno di un account AniList per accedere.
         \nUna volta effettuato l\'accesso con entrambi gli account AniList e MAL, l\'app aggiornerà automaticamente il tuo account MAL ogni volta che:
         \n- Aggiungi un nuovo Media
         \n- Modifichi un Media

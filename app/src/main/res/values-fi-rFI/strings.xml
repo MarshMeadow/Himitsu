@@ -394,8 +394,7 @@
     <string name="addons_desc">Hanki lisää ominaisuuksia sovelluksestasi</string>
     <string name="login_with_anilist">Kirjaudu sisään AniListin kanssa</string>
     <string name="account_help">Kuinka tämä toimii\?</string>
-    <string name="full_account_help">
-        Himitsu on AniList-perustainen sovellus, joten synkronointia MAL-tilisi kanssa varten sen on oltava kirjautuneena AniList-tilille.
+    <string name="full_account_help">        Himitsu on AniList-perustainen sovellus, joten synkronointia MAL-tilisi kanssa varten sen on oltava kirjautuneena AniList-tilille.
         \nKun olet kirjautunut sekä AniList- että MAL-tilille, sovellus päivittää automaattisesti MAL-tilisi aina, kun:
         \n- Lisäät uuden median
         \n- Muokkaat mediaa
