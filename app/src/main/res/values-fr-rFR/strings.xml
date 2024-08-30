@@ -73,7 +73,7 @@
     <string name="social_in_media_desc">Afficher les évaluations et les progrès des amis</string>
     <string name="status">État</string>
     <string-array name="status_anime">
-        <item>À LIRE</item>
+        <item>À VOIR</item>
         <item>VISIONNAGE</item>
         <item>TERMINÉ</item>
         <item>RE-VISIONNAGE</item>
@@ -81,7 +81,7 @@
         <item>ABANDONNÉ</item>
     </string-array>
     <string-array name="status_manga">
-        <item>À VOIR</item>
+        <item>À LIRE</item>
         <item>LECTURE</item>
         <item>TERMINÉ</item>
         <item>RE-LECTURE</item>
