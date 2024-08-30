@@ -134,14 +134,10 @@ class AnimeWatchFragment : Fragment() {
             override fun getSpanSize(position: Int): Int {
                 val style = episodeAdapter.getItemViewType(position)
 
-                return when (position) {
-                    0 -> maxGridSize
-                    else -> when (style) {
-                        0 -> maxGridSize
-                        1 -> 2
-                        2 -> 1
-                        else -> maxGridSize
-                    }
+                return if (position == 0) maxGridSize else when (style) {
+                    1 -> 2
+                    2 -> 1
+                    else -> maxGridSize
                 }
             }
         }
@@ -274,9 +270,7 @@ class AnimeWatchFragment : Fragment() {
                             loaded = true
                         }
                     }
-                } else {
-                    reload()
-                }
+                } else { reload() }
             }
         }
         model.getEpisodes().observe(viewLifecycleOwner) { loadedEpisodes ->

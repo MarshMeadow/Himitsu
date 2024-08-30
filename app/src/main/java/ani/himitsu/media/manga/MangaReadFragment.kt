@@ -129,14 +129,7 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
             override fun getSpanSize(position: Int): Int {
                 val style = chapterAdapter.getItemViewType(position)
 
-                return when (position) {
-                    0 -> maxGridSize
-                    else -> when (style) {
-                        0 -> maxGridSize
-                        1 -> 1
-                        else -> maxGridSize
-                    }
-                }
+                return if (position == 0 || style != 1) maxGridSize else 1
             }
         }
 
@@ -266,9 +259,7 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                                 loaded = true
                             }
                         }
-                    } else {
-                        reload()
-                    }
+                    } else { reload() }
                 } else {
                     binding.animeNotSupported.visibility = View.VISIBLE
                     binding.animeNotSupported.text =
