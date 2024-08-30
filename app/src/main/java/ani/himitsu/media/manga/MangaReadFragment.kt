@@ -235,6 +235,7 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
 
                             if (PrefManager.getVal(PrefName.SearchSources)
                                 && !model.mangaReadSources?.list.isNullOrEmpty()) {
+                                val source = model.mangaReadSources?.list?.get(media.selected!!.sourceIndex)
                                 model.mangaReadSources = object: MangaReadSources() {
                                     override val list = (model.mangaReadSources as MangaReadSources).list.sortedByDescending {
                                         try {
@@ -246,6 +247,8 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
                                         } catch (ignored: Exception) { false }
                                     }
                                 }
+                                media.selected!!.sourceIndex = model.mangaReadSources?.list?.indexOf(source)
+                                    ?: media.selected!!.sourceIndex
                             }
 
                             withContext(Dispatchers.Main) {

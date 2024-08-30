@@ -238,6 +238,7 @@ class AnimeWatchFragment : Fragment() {
                         if (PrefManager.getVal(PrefName.SearchSources)
                             && !model.watchSources?.list.isNullOrEmpty()
                         ) {
+                            val source = model.watchSources?.list?.get(media.selected!!.sourceIndex)
                             model.watchSources = object : WatchSources() {
                                 override val list =
                                     (model.watchSources as WatchSources).list.sortedByDescending {
@@ -250,6 +251,8 @@ class AnimeWatchFragment : Fragment() {
                                         } catch (ignored:Exception) { false }
                                     }
                             }
+                            media.selected!!.sourceIndex = model.watchSources?.list?.indexOf(source)
+                                ?: media.selected!!.sourceIndex
                         }
 
                         withContext(Dispatchers.Main) {

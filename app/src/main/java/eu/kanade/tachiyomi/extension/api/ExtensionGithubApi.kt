@@ -163,7 +163,7 @@ internal class ExtensionGithubApi {
             repos.map {
                 async {
                     try {
-                        val githubResponse = try {
+                        val response = try {
                             networkService.client
                                 .newCall(GET("${it}/index.min.json"))
                                 .awaitSuccess()
@@ -171,9 +171,7 @@ internal class ExtensionGithubApi {
                             Logger.log("Failed to get repo: $it")
                             Logger.log(e)
                             null
-                        }
-
-                        val response = githubResponse ?: run {
+                        } ?: run {
                             networkService.client
                                 .newCall(GET("${fallbackRepoUrl(it)}/index.min.json"))
                                 .awaitSuccess()
@@ -184,12 +182,6 @@ internal class ExtensionGithubApi {
                                 .parseAs<List<ExtensionJsonObject>>()
                                 .toMangaExtensions(it)
                         }
-
-                        // Sanity check - a small number of extensions probably means something broke
-                        // with the repo generator
-//                        if (repoExtensions.size < 10) {
-//                            throw Exception()
-//                        }
 
                         extensions.addAll(repoExtensions)
                     } catch (e: Throwable) {
@@ -249,7 +241,7 @@ internal class ExtensionGithubApi {
             repos.map {
                 async {
                     try {
-                        val githubResponse = try {
+                        val response = try {
                             networkService.client
                                 .newCall(GET("${it}/index.min.json"))
                                 .awaitSuccess()
@@ -257,9 +249,7 @@ internal class ExtensionGithubApi {
                             Logger.log("Failed to get repo: $it")
                             Logger.log(e)
                             null
-                        }
-
-                        val response = githubResponse ?: run {
+                        } ?: run {
                             networkService.client
                                 .newCall(GET("${fallbackRepoUrl(it)}/index.min.json"))
                                 .awaitSuccess()
@@ -273,7 +263,6 @@ internal class ExtensionGithubApi {
 
                         extensions.addAll(repoExtensions)
                     } catch (e: Throwable) {
-                        Logger.log("Failed to get extension. Possibly a plugin.")
                         Logger.log(e)
                     }
                 }
@@ -327,19 +316,16 @@ internal class ExtensionGithubApi {
 
             repos.forEach {
                     try {
-                        val response = networkService.client
-                            .newCall(GET("${it}/plugins.min.json"))
-                            .awaitSuccess()
-
                         val repoExtensions = with(json) {
-                            response
+                            networkService.client
+                                .newCall(GET("${it}/plugins.min.json"))
+                                .awaitSuccess()
                                 .parseAs<List<PluginJsonObject>>()
                                 .toNovelPlugins(it)
                         }
 
                         plugins.addAll(repoExtensions)
                     } catch (ex: Throwable) {
-                        Logger.log("Failed to get plugin. Possibly an extension.")
                         Logger.log(ex)
                     }
                 }
