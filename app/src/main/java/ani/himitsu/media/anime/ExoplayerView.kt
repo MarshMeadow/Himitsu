@@ -338,6 +338,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
     }
 
     private fun setupSubFormatting(playerView: PlayerView) {
+        val useDefaults = PrefManager.getVal<Boolean>(PrefName.SubDefaults)
         val primaryColor = when (PrefManager.getVal<Int>(PrefName.PrimaryColor)) {
             0 -> Color.BLACK
             1 -> Color.DKGRAY
@@ -418,8 +419,10 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         val fontSize = PrefManager.getVal<Int>(PrefName.FontSize).toFloat()
 
         playerView.subtitleView?.let { subtitles ->
-            subtitles.setApplyEmbeddedStyles(false)
-            subtitles.setApplyEmbeddedFontSizes(false)
+            subtitles.setApplyEmbeddedStyles(useDefaults)
+            subtitles.setApplyEmbeddedFontSizes(useDefaults)
+
+            if (useDefaults) return
 
             subtitles.setStyle(
                 CaptionStyleCompat(

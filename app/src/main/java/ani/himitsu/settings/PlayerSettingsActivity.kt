@@ -307,6 +307,17 @@ class PlayerSettingsActivity : AppCompatActivity() {
             PrefManager.setVal(PrefName.SettingsExceedCap, isChecked)
         }
 
+        fun toggleSubDefaults(isChecked: Boolean) {
+            binding.subDefaults.run {
+                isEnabled = isChecked
+                isClickable = isChecked
+                alpha = when (isChecked) {
+                    true -> 1f
+                    false -> 0.5f
+                }
+            }
+        }
+
         fun toggleSubOptions(isChecked: Boolean) {
             arrayOf(
                 binding.videoSubColorPrimary,
@@ -328,12 +339,22 @@ class PlayerSettingsActivity : AppCompatActivity() {
                 }
             }
         }
+
+        binding.subDefaults.isChecked = PrefManager.getVal(PrefName.SubDefaults)
+        binding.subDefaults.setOnCheckedChangeListener { _, isChecked ->
+            PrefManager.setVal(PrefName.SubDefaults, isChecked)
+            toggleSubOptions(!isChecked)
+        }
+        toggleSubOptions(!binding.subDefaults.isChecked)
+
         binding.subSwitch.isChecked = PrefManager.getVal(PrefName.Subtitles)
         binding.subSwitch.setOnCheckedChangeListener { _, isChecked ->
             PrefManager.setVal(PrefName.Subtitles, isChecked)
             toggleSubOptions(isChecked)
+            toggleSubDefaults(isChecked)
         }
         toggleSubOptions(binding.subSwitch.isChecked)
+        toggleSubDefaults(binding.subSwitch.isChecked)
 
         val subLanguageDialog = AlertDialog.Builder(this, R.style.MyPopup)
             .setTitle(getString(R.string.subtitle_langauge))

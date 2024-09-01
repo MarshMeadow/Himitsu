@@ -103,6 +103,7 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     CursedSpeeds(Pref(Location.Player, Boolean::class, false)),
     Resize(Pref(Location.Player, Int::class, 0)),
     Subtitles(Pref(Location.Player, Boolean::class, true)),
+    SubDefaults(Pref(Location.Player, Boolean::class, false)),
     SubLanguage(Pref(Location.Player, Int::class, 16)),
     PrimaryColor(Pref(Location.Player, Int::class, 4)),
     SecondaryColor(Pref(Location.Player, Int::class, 0)),
