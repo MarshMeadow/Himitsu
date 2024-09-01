@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">検出されたプレーヤーの制限を上書きすることを許可します</string>
     <string name="subtitles">字幕</string>
     <string name="subtitle_toggle">字幕</string>
+    <string name="subtitle_defaults">動画スタイルを使用</string>
     <string name="primary_sub_color_select">字幕の色</string>
     <string name="secondary_sub_color_select">字幕の輪郭の色</string>
     <string name="secondary_sub_outline_type_select">字幕の輪郭のタイプ</string>

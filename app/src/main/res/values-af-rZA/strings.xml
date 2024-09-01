@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">Laat toe om opgespoorde speler beperkings te oorskry</string>
     <string name="subtitles">Ondertitels</string>
     <string name="subtitle_toggle">Ondertitels</string>
+    <string name="subtitle_defaults">Use Video Style</string>
     <string name="primary_sub_color_select">Ondertitelkleur</string>
     <string name="secondary_sub_color_select">Ondertitelomlynkleur</string>
     <string name="secondary_sub_outline_type_select">Ondertitelomlyn Tipe</string>

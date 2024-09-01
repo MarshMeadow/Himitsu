@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">Επιτρέπει την παράκαμψη των εντοπισμένων περιορισμών του παίκτη</string>
     <string name="subtitles">Υπότιτλοι</string>
     <string name="subtitle_toggle">Υπότιτλοι</string>
+    <string name="subtitle_defaults">Χρήση Στυλ Βίντεο</string>
     <string name="primary_sub_color_select">Χρώμα Υποτίτλων</string>
     <string name="secondary_sub_color_select">Χρώμα Περιγράμματος Υποτίτλων</string>
     <string name="secondary_sub_outline_type_select">Τύπος Περιγράμματος Υποτίτλων</string>

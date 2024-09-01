@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">يسمح بتجاوز قيود اللاعب المكتشفة</string>
     <string name="subtitles">التَّرْجَمَةً</string>
     <string name="subtitle_toggle">التَّرْجَمَةً</string>
+    <string name="subtitle_defaults">استخدام نمط الفيديو</string>
     <string name="primary_sub_color_select">لون الترجمة</string>
     <string name="secondary_sub_color_select">لون تخطيط الترجمة</string>
     <string name="secondary_sub_outline_type_select">نوع تخطيط الترجمة</string>

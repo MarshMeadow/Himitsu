@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">हरकत करने वाले प्लेयर की पर्याप्तता को रोकने की अनुमति देता है</string>
     <string name="subtitles">उपशीर्षक</string>
     <string name="subtitle_toggle">उपशीर्षक</string>
+    <string name="subtitle_defaults">वीडियो स्टाइल का उपयोग करें</string>
     <string name="primary_sub_color_select">उपशीर्षक रंग</string>
     <string name="secondary_sub_color_select">उपशीर्षक आउटलाइन रंग</string>
     <string name="secondary_sub_outline_type_select">उपशीर्षक आउटलाइन प्रकार</string>

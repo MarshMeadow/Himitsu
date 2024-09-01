@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">Tillåter att åsidosätta detekterade spelarbegränsningar</string>
     <string name="subtitles">Undertexter</string>
     <string name="subtitle_toggle">Undertexter</string>
+    <string name="subtitle_defaults">Använd videostil</string>
     <string name="primary_sub_color_select">Undertextfärg</string>
     <string name="secondary_sub_color_select">Undertextkonturfärg</string>
     <string name="secondary_sub_outline_type_select">Undertextkonturtyp</string>

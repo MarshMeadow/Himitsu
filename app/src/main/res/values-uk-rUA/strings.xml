@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">Дозволяє обійти обмеження, виявлені відтворювачем</string>
     <string name="subtitles">Субтитри</string>
     <string name="subtitle_toggle">Субтитри</string>
+    <string name="subtitle_defaults">Використовувати стиль відео</string>
     <string name="primary_sub_color_select">Колір субтитрів</string>
     <string name="secondary_sub_color_select">Колір контурів субтитрів</string>
     <string name="secondary_sub_outline_type_select">Тип контурів субтитрів</string>

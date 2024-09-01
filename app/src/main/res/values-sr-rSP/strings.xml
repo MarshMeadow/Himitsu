@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">Омогућава превазилажење откривених ограничења играча</string>
     <string name="subtitles">Титлови</string>
     <string name="subtitle_toggle">Титлови</string>
+    <string name="subtitle_defaults">Користите видео стил</string>
     <string name="primary_sub_color_select">Боја титла</string>
     <string name="secondary_sub_color_select">Боја контуре титла</string>
     <string name="secondary_sub_outline_type_select">Тип контуре титла</string>

@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">允许覆盖检测到的播放器限制</string>
     <string name="subtitles">字幕</string>
     <string name="subtitle_toggle">字幕</string>
+    <string name="subtitle_defaults">使用视频样式</string>
     <string name="primary_sub_color_select">字幕颜色</string>
     <string name="secondary_sub_color_select">字幕轮廓颜色</string>
     <string name="secondary_sub_outline_type_select">字幕轮廓类型</string>

@@ -232,6 +232,7 @@
     <string name="exceed_cap_desc">Ermöglicht das Überschreiben erkannter Spielerbeschränkungen</string>
     <string name="subtitles">Untertitel</string>
     <string name="subtitle_toggle">Untertitel</string>
+    <string name="subtitle_defaults">Videostil verwenden</string>
     <string name="primary_sub_color_select">Untertitelfarbe</string>
     <string name="secondary_sub_color_select">Randfarbe für Untertitel</string>
     <string name="secondary_sub_outline_type_select">Randtyp für Untertitel</string>

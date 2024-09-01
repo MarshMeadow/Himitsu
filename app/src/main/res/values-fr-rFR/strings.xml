@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">Permet de contourner les limitations du lecteur</string>
     <string name="subtitles">Sous-titres</string>
     <string name="subtitle_toggle">Sous-titres</string>
+    <string name="subtitle_defaults">Utiliser le style vidéo</string>
     <string name="primary_sub_color_select">Couleur des sous-titres</string>
     <string name="secondary_sub_color_select">Couleur du contour des sous-titres</string>
     <string name="secondary_sub_outline_type_select">Type de contour des sous-titres</string>

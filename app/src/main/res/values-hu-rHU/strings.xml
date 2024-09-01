@@ -230,6 +230,7 @@
     <string name="exceed_cap_desc">Lehetővé teszi a detektált lejátszó korlátozások felülbírálását</string>
     <string name="subtitles">Feliratok</string>
     <string name="subtitle_toggle">Feliratok</string>
+    <string name="subtitle_defaults">Használjon videóstílust</string>
     <string name="primary_sub_color_select">Felirat színe</string>
     <string name="secondary_sub_color_select">Felirat körvonal színe</string>
     <string name="secondary_sub_outline_type_select">Felirat körvonal típusa</string>

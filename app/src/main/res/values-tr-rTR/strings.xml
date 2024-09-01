@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">Algılanan oynatıcı sınırlamalarını geçersiz kılmaya izin verir</string>
     <string name="subtitles">Altyazılar</string>
     <string name="subtitle_toggle">Altyazılar</string>
+    <string name="subtitle_defaults">Video Stilini Kullan</string>
     <string name="primary_sub_color_select">Altyazı Rengi</string>
     <string name="secondary_sub_color_select">Altyazı Dış Çizgi Rengi</string>
     <string name="secondary_sub_outline_type_select">Altyazı Dış Çizgi Türü</string>
