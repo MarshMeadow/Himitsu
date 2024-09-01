@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">Permette di sovrascrivere le limitazioni rilevate del lettore video</string>
     <string name="subtitles">Sottotitoli</string>
     <string name="subtitle_toggle">Sottotitoli</string>
+    <string name="subtitle_defaults">Usa Stile Video</string>
     <string name="primary_sub_color_select">Colore dei Sottotitoli</string>
     <string name="secondary_sub_color_select">Colore del Contorno dei Sottotitoli</string>
     <string name="secondary_sub_outline_type_select">Tipo di Contorno dei Sottotitoli</string>

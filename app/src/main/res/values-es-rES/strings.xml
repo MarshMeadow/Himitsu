@@ -231,6 +231,7 @@
     <string name="exceed_cap_desc">Permite anular las limitaciones de reproducción detectadas por el reproductor</string>
     <string name="subtitles">Subtítulos</string>
     <string name="subtitle_toggle">Subtítulos</string>
+    <string name="subtitle_defaults">Usar estilo de vídeo</string>
     <string name="primary_sub_color_select">Color de subtítulos</string>
     <string name="secondary_sub_color_select">Color del contorno de subtítulos</string>
     <string name="secondary_sub_outline_type_select">Tipo de línea de salida de subtítulos</string>

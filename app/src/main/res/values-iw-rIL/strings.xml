@@ -233,6 +233,7 @@
     <string name="exceed_cap_desc">מאפשר דריסה על המגבלות שנמצאות בשחקן</string>
     <string name="subtitles">כתוביות</string>
     <string name="subtitle_toggle">כתוביות</string>
+    <string name="subtitle_defaults">השתמש בסגנון וידאו</string>
     <string name="primary_sub_color_select">צבע כותרת</string>
     <string name="secondary_sub_color_select">צבע מעטפת כתוביות</string>
     <string name="secondary_sub_outline_type_select">סוג קו מעטפת כתוביות</string>

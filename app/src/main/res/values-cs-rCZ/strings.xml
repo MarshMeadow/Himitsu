@@ -235,6 +235,7 @@
     <string name="exceed_cap_desc">Umožňuje překonání detekovaných omezení přehrávače</string>
     <string name="subtitles">Titulky</string>
     <string name="subtitle_toggle">Titulky</string>
+    <string name="subtitle_defaults">Použít video styl</string>
     <string name="primary_sub_color_select">Barva titulků</string>
     <string name="secondary_sub_color_select">Barva obrysu titulků</string>
     <string name="secondary_sub_outline_type_select">Typ obrysu titulků</string>
