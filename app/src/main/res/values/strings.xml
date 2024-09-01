@@ -262,6 +262,7 @@
     <string name="exceed_cap_desc">Allows overriding detected player limitations</string>
     <string name="subtitles">Subtitles</string>
     <string name="subtitle_toggle">Subtitles</string>
+    <string name="subtitle_defaults">Use Video Style</string>
     <string name="primary_sub_color_select">Subtitle Color</string>
     <string name="secondary_sub_color_select">Subtitle Outline Color</string>
     <string name="secondary_sub_outline_type_select">Subtitle Outline Type</string>
