@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="tr">
-    <string name="slogan">Adı Konulmamış Biz</string>
+    <string name="slogan">Adı Anılmayan Bizler</string>
     <string name="login">Oturum Aç</string>
     <string name="logout">Çıkış Yap</string>
     <string name="anilist_login">Himitsu İçin AniList Oturumu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Algılanan oynatıcı sınırlamalarını geçersiz kılmaya izin verir</string>
     <string name="subtitles">Altyazılar</string>
     <string name="subtitle_toggle">Altyazılar</string>
-    <string name="subtitle_defaults">Video Stilini Kullan</string>
+    <string name="subtitle_defaults">Takip Ayarlarını Kullan</string>
     <string name="primary_sub_color_select">Altyazı Rengi</string>
     <string name="secondary_sub_color_select">Altyazı Dış Çizgi Rengi</string>
     <string name="secondary_sub_outline_type_select">Altyazı Dış Çizgi Türü</string>

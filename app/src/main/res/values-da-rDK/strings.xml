@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="da">
-    <string name="slogan">Vi, der ikke skal nævnes.</string>
+    <string name="slogan">Vi, der ikke vil blive navngivet</string>
     <string name="login">Log ind</string>
     <string name="logout">Log ud</string>
     <string name="anilist_login">AniList Login for Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Tillader at tilsidesætte detekterede afspillerbegrænsninger</string>
     <string name="subtitles">Undertekster</string>
     <string name="subtitle_toggle">Undertekster</string>
-    <string name="subtitle_defaults">Brug Video- Stil</string>
+    <string name="subtitle_defaults">Brug Spor Indstillinger</string>
     <string name="primary_sub_color_select">Undertekstfarve</string>
     <string name="secondary_sub_color_select">Undertekst Kantfarve</string>
     <string name="secondary_sub_outline_type_select">Undertekst Kanttype</string>

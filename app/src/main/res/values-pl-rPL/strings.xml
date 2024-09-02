@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="pl">
-    <string name="slogan">My nie zostaniemy nazwani.</string>
+    <string name="slogan">My nie zostaniemy nazwani</string>
     <string name="login">Zaloguj się</string>
     <string name="logout">Wyloguj się</string>
     <string name="anilist_login">Logowanie AniList do Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Pozwala na nadpisywanie wykrytych ograniczeń gracza</string>
     <string name="subtitles">Napisy</string>
     <string name="subtitle_toggle">Napisy</string>
-    <string name="subtitle_defaults">Użyj stylu wideo</string>
+    <string name="subtitle_defaults">Użyj ustawień śladu</string>
     <string name="primary_sub_color_select">Kolor napisów</string>
     <string name="secondary_sub_color_select">Kolor obrysu napisów</string>
     <string name="secondary_sub_outline_type_select">Typ obrysu napisów</string>

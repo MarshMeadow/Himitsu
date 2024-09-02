@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="ja">
-    <string name="slogan">私たちが名前を明かさない人々。</string>
+    <string name="slogan">指名されない人</string>
     <string name="login">サインイン</string>
     <string name="logout">ログアウト</string>
     <string name="anilist_login">HimitsuのAniListログイン</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">検出されたプレーヤーの制限を上書きすることを許可します</string>
     <string name="subtitles">字幕</string>
     <string name="subtitle_toggle">字幕</string>
-    <string name="subtitle_defaults">動画スタイルを使用</string>
+    <string name="subtitle_defaults">トラック設定を使用</string>
     <string name="primary_sub_color_select">字幕の色</string>
     <string name="secondary_sub_color_select">字幕の輪郭の色</string>
     <string name="secondary_sub_outline_type_select">字幕の輪郭のタイプ</string>

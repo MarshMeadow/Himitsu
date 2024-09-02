@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="zh-rCN">
-    <string name="slogan">我们将被称之为谁。</string>
+    <string name="slogan">我们不会被点名</string>
     <string name="login">登录</string>
     <string name="logout">登出</string>
     <string name="anilist_login">Himitsu的AniList登录</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">允许覆盖检测到的播放器限制</string>
     <string name="subtitles">字幕</string>
     <string name="subtitle_toggle">字幕</string>
-    <string name="subtitle_defaults">使用视频样式</string>
+    <string name="subtitle_defaults">使用曲目设置</string>
     <string name="primary_sub_color_select">字幕颜色</string>
     <string name="secondary_sub_color_select">字幕轮廓颜色</string>
     <string name="secondary_sub_outline_type_select">字幕轮廓类型</string>

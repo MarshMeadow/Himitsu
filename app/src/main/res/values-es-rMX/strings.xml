@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="es-rMX">
-    <string name="slogan">Nosotros que no seremos nombrados.</string>
+    <string name="slogan">Nosotros, que no seremos nombrados</string>
     <string name="login">Acceso</string>
     <string name="logout">Cerrar sesión</string>
     <string name="anilist_login">AniList Iniciar sesión para Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Permite anular las limitaciones del reproductor detectadas</string>
     <string name="subtitles">Subtítulos</string>
     <string name="subtitle_toggle">Subtítulos</string>
-    <string name="subtitle_defaults">Usar estilo de vídeo</string>
+    <string name="subtitle_defaults">Usar ajustes de pista</string>
     <string name="primary_sub_color_select">Color</string>
     <string name="secondary_sub_color_select">Color del contorno</string>
     <string name="secondary_sub_outline_type_select">Tipo de contorno de subtítulos</string>

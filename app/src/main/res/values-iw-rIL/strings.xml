@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="he">
-    <string name="slogan">אנחנו שלא נזוז.</string>
+    <string name="slogan">אנחנו שלא ייקרא שמם</string>
     <string name="login">התחברות</string>
     <string name="logout">התנתקות</string>
     <string name="anilist_login">התחברות ל-AniList עבור Himitsu</string>
@@ -233,7 +233,7 @@
     <string name="exceed_cap_desc">מאפשר דריסה על המגבלות שנמצאות בשחקן</string>
     <string name="subtitles">כתוביות</string>
     <string name="subtitle_toggle">כתוביות</string>
-    <string name="subtitle_defaults">השתמש בסגנון וידאו</string>
+    <string name="subtitle_defaults">השתמש בהגדרות המסלול</string>
     <string name="primary_sub_color_select">צבע כותרת</string>
     <string name="secondary_sub_color_select">צבע מעטפת כתוביות</string>
     <string name="secondary_sub_outline_type_select">סוג קו מעטפת כתוביות</string>

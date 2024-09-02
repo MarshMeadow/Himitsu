@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="sv-rSE">
-    <string name="slogan">Vi som inte ska nämnas.</string>
+    <string name="slogan">Vi som inte kommer att namnges</string>
     <string name="login">Logga in</string>
     <string name="logout">Logga ut</string>
     <string name="anilist_login">AniList Inloggning för Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Tillåter att åsidosätta detekterade spelarbegränsningar</string>
     <string name="subtitles">Undertexter</string>
     <string name="subtitle_toggle">Undertexter</string>
-    <string name="subtitle_defaults">Använd videostil</string>
+    <string name="subtitle_defaults">Använd spårinställningar</string>
     <string name="primary_sub_color_select">Undertextfärg</string>
     <string name="secondary_sub_color_select">Undertextkonturfärg</string>
     <string name="secondary_sub_outline_type_select">Undertextkonturtyp</string>

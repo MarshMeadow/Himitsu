@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="sr">
-    <string name="slogan">Mi koji se nećemo imenovati.</string>
+    <string name="slogan">Mi koji nećemo biti imenovani</string>
     <string name="login">Prijava</string>
     <string name="logout">Odjava</string>
     <string name="anilist_login">AniList prijava za Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Омогућава превазилажење откривених ограничења играча</string>
     <string name="subtitles">Титлови</string>
     <string name="subtitle_toggle">Титлови</string>
-    <string name="subtitle_defaults">Користите видео стил</string>
+    <string name="subtitle_defaults">Koristite Postavke Traga</string>
     <string name="primary_sub_color_select">Боја титла</string>
     <string name="secondary_sub_color_select">Боја контуре титла</string>
     <string name="secondary_sub_outline_type_select">Тип контуре титла</string>

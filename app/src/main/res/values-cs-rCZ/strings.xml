@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="cs">
-    <string name="slogan">Jsme ti, o koho se nezmiňujeme.</string>
+    <string name="slogan">My, kdo nebudeme jmenováni</string>
     <string name="login">Přihlásit se</string>
     <string name="logout">Odhlásit se</string>
     <string name="anilist_login">AniList Přihlášení pro Himitsu</string>
@@ -235,7 +235,7 @@
     <string name="exceed_cap_desc">Umožňuje překonání detekovaných omezení přehrávače</string>
     <string name="subtitles">Titulky</string>
     <string name="subtitle_toggle">Titulky</string>
-    <string name="subtitle_defaults">Použít video styl</string>
+    <string name="subtitle_defaults">Použít nastavení skladby</string>
     <string name="primary_sub_color_select">Barva titulků</string>
     <string name="secondary_sub_color_select">Barva obrysu titulků</string>
     <string name="secondary_sub_outline_type_select">Typ obrysu titulků</string>

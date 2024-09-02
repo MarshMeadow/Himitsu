@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="pt-rPT">
-    <string name="slogan">We who shall not be named.</string>
+    <string name="slogan">Nós que não devemos ser nomeados</string>
     <string name="login">Sign In</string>
     <string name="logout">Logout</string>
     <string name="anilist_login">AniList Login for Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Allows overriding detected player limitations</string>
     <string name="subtitles">Subtitles</string>
     <string name="subtitle_toggle">Subtitles</string>
-    <string name="subtitle_defaults">Usar estilo de vídeo</string>
+    <string name="subtitle_defaults">Usar Configurações de Faixa</string>
     <string name="primary_sub_color_select">Subtitle Color</string>
     <string name="secondary_sub_color_select">Subtitle Outline Color</string>
     <string name="secondary_sub_outline_type_select">Subtitle Outline Type</string>
