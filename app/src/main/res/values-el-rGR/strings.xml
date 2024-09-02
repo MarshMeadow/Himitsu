@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="el">
-    <string name="slogan">Εμείς που δεν πρόκειται να αναφερθούμε.</string>
+    <string name="slogan">Εμείς που δεν θα το ονομάσουμε</string>
     <string name="login">Σύνδεση</string>
     <string name="logout">Αποσύνδεση</string>
     <string name="anilist_login">Είσοδος στο AniList για το Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Επιτρέπει την παράκαμψη των εντοπισμένων περιορισμών του παίκτη</string>
     <string name="subtitles">Υπότιτλοι</string>
     <string name="subtitle_toggle">Υπότιτλοι</string>
-    <string name="subtitle_defaults">Χρήση Στυλ Βίντεο</string>
+    <string name="subtitle_defaults">Χρήση Ρυθμίσεων Κομματιού</string>
     <string name="primary_sub_color_select">Χρώμα Υποτίτλων</string>
     <string name="secondary_sub_color_select">Χρώμα Περιγράμματος Υποτίτλων</string>
     <string name="secondary_sub_outline_type_select">Τύπος Περιγράμματος Υποτίτλων</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="hi">
-    <string name="slogan">हम जिनका नाम नहीं है।</string>
+    <string name="slogan">हम जिन्हें नाम नहीं दिया जाएगा</string>
     <string name="login">लॉग इन करें</string>
     <string name="logout">लॉग आउट करें</string>
     <string name="anilist_login">हिमित्सु के लिए एनीलिस्ट लॉगिन</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">हरकत करने वाले प्लेयर की पर्याप्तता को रोकने की अनुमति देता है</string>
     <string name="subtitles">उपशीर्षक</string>
     <string name="subtitle_toggle">उपशीर्षक</string>
-    <string name="subtitle_defaults">वीडियो स्टाइल का उपयोग करें</string>
+    <string name="subtitle_defaults">ट्रैक सेटिंग का उपयोग करें</string>
     <string name="primary_sub_color_select">उपशीर्षक रंग</string>
     <string name="secondary_sub_color_select">उपशीर्षक आउटलाइन रंग</string>
     <string name="secondary_sub_outline_type_select">उपशीर्षक आउटलाइन प्रकार</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="ru">
-    <string name="slogan">Те, кого не стоит называть.</string>
+    <string name="slogan">Мы, кто не будет назван</string>
     <string name="login">Войти</string>
     <string name="logout">Выйти</string>
     <string name="anilist_login">AniList Вход для Himitsu</string>
@@ -235,7 +235,7 @@ Himitsu и его участники не несут ответственнос�
     <string name="exceed_cap_desc">Позволяет обойти определенные ограничения проигрывателя</string>
     <string name="subtitles">Субтитры</string>
     <string name="subtitle_toggle">Субтитры</string>
-    <string name="subtitle_defaults">Использовать стиль видео</string>
+    <string name="subtitle_defaults">Использовать настройки трека</string>
     <string name="primary_sub_color_select">Цвет субтитров</string>
     <string name="secondary_sub_color_select">Цвет обводки субтитров</string>
     <string name="secondary_sub_outline_type_select">Тип обводки субтитров</string>

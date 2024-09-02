@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="de">
-    <string name="slogan">Wir, die nicht genannt werden sollen.</string>
+    <string name="slogan">Wir, die wir nicht benannt werden</string>
     <string name="login">Anmelden</string>
     <string name="logout">Ausloggen</string>
     <string name="anilist_login">AniList-Anmeldung für Himitsu</string>
@@ -232,7 +232,7 @@
     <string name="exceed_cap_desc">Ermöglicht das Überschreiben erkannter Spielerbeschränkungen</string>
     <string name="subtitles">Untertitel</string>
     <string name="subtitle_toggle">Untertitel</string>
-    <string name="subtitle_defaults">Videostil verwenden</string>
+    <string name="subtitle_defaults">Track-Einstellungen verwenden</string>
     <string name="primary_sub_color_select">Untertitelfarbe</string>
     <string name="secondary_sub_color_select">Randfarbe für Untertitel</string>
     <string name="secondary_sub_outline_type_select">Randtyp für Untertitel</string>

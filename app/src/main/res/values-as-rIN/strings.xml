@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="as">
-    <string name="slogan">আমি যে যে নামৰ পৰা কথা নহয়।</string>
+    <string name="slogan">আমি যেহেতু নামৰ নাই</string>
     <string name="login">লগইন</string>
     <string name="logout">লগআউট</string>
     <string name="anilist_login">হিমতিসুৰ বাবে AniList লগইন কৰক</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">চাওঁনী গুৰুত্ব লংঘনৰ পৰেহি আতিতোৱা প্ৰয়োগ কৰাও দিয়াক</string>
     <string name="subtitles">উপশিৰোণ</string>
     <string name="subtitle_toggle">উপশিৰোণ</string>
-    <string name="subtitle_defaults">ভিডিও শৈলী ব্যবহার কৰক</string>
+    <string name="subtitle_defaults">ট্ৰেক ছেটিংস ব্যৱহাৰ কৰক</string>
     <string name="primary_sub_color_select">প্ৰাথমিক উপশিৰোণৰ ৰং</string>
     <string name="secondary_sub_color_select">উপশিৰোণৰ আউটলাইনৰ ৰং</string>
     <string name="secondary_sub_outline_type_select">উপশিৰোণৰ আউটলাইনৰ ধৰন</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="pt-rBR">
-    <string name="slogan">Nós que não devemos ser nomeados.</string>
+    <string name="slogan">Nós que não devemos ser nomeados</string>
     <string name="login">Entrar</string>
     <string name="logout">Sair</string>
     <string name="anilist_login">AniList Login para Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Permite substituir as limitações do player detectadas</string>
     <string name="subtitles">Legendas</string>
     <string name="subtitle_toggle">Legendas</string>
-    <string name="subtitle_defaults">Usar estilo de vídeo</string>
+    <string name="subtitle_defaults">Usar Configurações de Faixa</string>
     <string name="primary_sub_color_select">Cor da legenda</string>
     <string name="secondary_sub_color_select">Cor da borda da legenda</string>
     <string name="secondary_sub_outline_type_select">Tipo de contorno da legenda</string>

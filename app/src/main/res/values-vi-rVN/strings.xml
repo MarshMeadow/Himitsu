@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="vi">
-    <string name="slogan">Chúng tôi không được đặt tên.</string>
+    <string name="slogan">Chúng ta mà không được nhắc tên</string>
     <string name="login">Đăng nhập</string>
     <string name="logout">Đăng xuất</string>
     <string name="anilist_login">AniList Đăng nhập cho Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Cho phép ghi đè hạn chế của trình phát phát hiện</string>
     <string name="subtitles">Phụ đề</string>
     <string name="subtitle_toggle">Phụ đề</string>
-    <string name="subtitle_defaults">Sử dụng Kiểu Video</string>
+    <string name="subtitle_defaults">Sử dụng Cài đặt Đường đua</string>
     <string name="primary_sub_color_select">Màu phụ đề</string>
     <string name="secondary_sub_color_select">Màu viền phụ đề</string>
     <string name="secondary_sub_outline_type_select">Loại viền phụ đề</string>

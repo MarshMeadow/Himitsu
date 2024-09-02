@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="fi">
-    <string name="slogan">Meitä, joita ei tule mainita.</string>
+    <string name="slogan">Meitä, joita ei nimetä</string>
     <string name="login">Kirjaudu sisään</string>
     <string name="logout">Kirjaudu ulos</string>
     <string name="anilist_login">AniList Kirjautuminen Himitsuun</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Sallii havaittujen soittimen rajoitusten ohittamisen</string>
     <string name="subtitles">Tekstitykset</string>
     <string name="subtitle_toggle">Tekstitykset</string>
-    <string name="subtitle_defaults">Käytä Videotyyliä</string>
+    <string name="subtitle_defaults">Käytä Kappaleen Asetuksia</string>
     <string name="primary_sub_color_select">Tekstityksen Väri</string>
     <string name="secondary_sub_color_select">Tekstityksen Reunusväri</string>
     <string name="secondary_sub_outline_type_select">Tekstityksen Reunustyyppi</string>

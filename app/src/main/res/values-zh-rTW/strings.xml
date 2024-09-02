@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="zh-rTW">
-    <string name="slogan">我們將不被點名。</string>
+    <string name="slogan">不可名狀的我們</string>
     <string name="login">登錄</string>
     <string name="logout">登出</string>
     <string name="anilist_login">AniList 登錄為秘密</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">允許覆蓋檢測到的播放器限制</string>
     <string name="subtitles">字幕</string>
     <string name="subtitle_toggle">字幕</string>
-    <string name="subtitle_defaults">使用視頻風格</string>
+    <string name="subtitle_defaults">使用追踪設定</string>
     <string name="primary_sub_color_select">字幕顏色</string>
     <string name="secondary_sub_color_select">字幕輪廓顏色</string>
     <string name="secondary_sub_outline_type_select">字幕輪廓類型</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="nl">
-    <string name="slogan">Wij die niet genoemd zullen worden.</string>
+    <string name="slogan">Wij zullen niet genoemd worden</string>
     <string name="login">Aanmelden</string>
     <string name="logout">Uitloggen</string>
     <string name="anilist_login">AniList Aanmelding voor Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Maakt overschrijving van gedetecteerde spelerbeperkingen mogelijk</string>
     <string name="subtitles">Ondertitels</string>
     <string name="subtitle_toggle">Ondertitels</string>
-    <string name="subtitle_defaults">Gebruik video stijl</string>
+    <string name="subtitle_defaults">Track instellingen gebruiken</string>
     <string name="primary_sub_color_select">Ondertitelkleur</string>
     <string name="secondary_sub_color_select">Ondertitelomlijstingskleur</string>
     <string name="secondary_sub_outline_type_select">Ondertitelomlijstingstype</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="hu">
-    <string name="slogan">Akiknek nevetnie sem szabad.</string>
+    <string name="slogan">Mi, akik nem nevezhetők meg</string>
     <string name="login">Bejelentkezés</string>
     <string name="logout">Kijelentkezés</string>
     <string name="anilist_login">AniList Bejelentkezés a Himitsu-hoz</string>
@@ -230,7 +230,7 @@
     <string name="exceed_cap_desc">Lehetővé teszi a detektált lejátszó korlátozások felülbírálását</string>
     <string name="subtitles">Feliratok</string>
     <string name="subtitle_toggle">Feliratok</string>
-    <string name="subtitle_defaults">Használjon videóstílust</string>
+    <string name="subtitle_defaults">Használja a követési beállításokat</string>
     <string name="primary_sub_color_select">Felirat színe</string>
     <string name="secondary_sub_color_select">Felirat körvonal színe</string>
     <string name="secondary_sub_outline_type_select">Felirat körvonal típusa</string>

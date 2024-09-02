@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="uk">
-    <string name="slogan">Mi, кого не слід називати.</string>
+    <string name="slogan">Ми, кого не будуть названі</string>
     <string name="login">Увійти</string>
     <string name="logout">Вийти</string>
     <string name="anilist_login">AniList Увійти для Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Дозволяє обійти обмеження, виявлені відтворювачем</string>
     <string name="subtitles">Субтитри</string>
     <string name="subtitle_toggle">Субтитри</string>
-    <string name="subtitle_defaults">Використовувати стиль відео</string>
+    <string name="subtitle_defaults">Використовувати налаштування маршруту</string>
     <string name="primary_sub_color_select">Колір субтитрів</string>
     <string name="secondary_sub_color_select">Колір контурів субтитрів</string>
     <string name="secondary_sub_outline_type_select">Тип контурів субтитрів</string>
