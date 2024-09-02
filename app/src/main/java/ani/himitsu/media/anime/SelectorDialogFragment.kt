@@ -39,7 +39,6 @@ import ani.himitsu.media.SubtitleDownloader
 import ani.himitsu.media.cereal.Media
 import ani.himitsu.navBarHeight
 import ani.himitsu.openInGooglePlay
-import ani.himitsu.openLinkInApp
 import ani.himitsu.others.Download.download
 import ani.himitsu.parsers.Subtitle
 import ani.himitsu.parsers.Video
@@ -59,6 +58,7 @@ import ani.himitsu.view.dialog.BottomSheetDialogFragment
 import bit.himitsu.TorrManager
 import bit.himitsu.TorrManager.getPlayLink
 import bit.himitsu.torrServerStart
+import bit.himitsu.webkit.ChromeIntegration
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -420,7 +420,9 @@ class SelectorDialogFragment : BottomSheetDialogFragment() {
 
             binding.urlShare.isVisible = true
             binding.urlShare.setOnClickListener {
-                openLinkInApp(extractor.videos[position].file.url)
+                ChromeIntegration.openStreamTab(
+                    requireContext(), extractor.videos[position].file.url
+                )
             }
 
             binding.urlDownload.isVisible = isDownloadMenu == true
