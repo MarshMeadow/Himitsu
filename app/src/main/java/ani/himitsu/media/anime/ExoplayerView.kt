@@ -91,10 +91,14 @@ import androidx.media3.datasource.HttpDataSource
 import androidx.media3.datasource.cache.CacheDataSource
 import androidx.media3.datasource.okhttp.OkHttpDataSource
 import androidx.media3.exoplayer.DefaultLoadControl
+import androidx.media3.exoplayer.DefaultRenderersFactory
 import androidx.media3.exoplayer.ExoPlayer
+import androidx.media3.exoplayer.Renderer
 import androidx.media3.exoplayer.hls.HlsMediaSource
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
 import androidx.media3.exoplayer.source.MergingMediaSource
+import androidx.media3.exoplayer.text.TextOutput
+import androidx.media3.exoplayer.text.TextRenderer
 import androidx.media3.exoplayer.trackselection.DefaultTrackSelector
 import androidx.media3.exoplayer.util.EventLogger
 import androidx.media3.session.MediaSession
@@ -173,6 +177,7 @@ import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
 import com.google.android.material.card.MaterialCardView
 import com.google.android.material.slider.Slider
+import com.google.common.collect.Iterables
 import com.lagradost.nicehttp.ignoreAllSSLErrors
 import eu.kanade.tachiyomi.data.torrentServer.model.Torrent
 import kotlinx.coroutines.CoroutineScope
@@ -196,7 +201,7 @@ import kotlin.time.toDuration
 
 @UnstableApi
 @SuppressLint("ClickableViewAccessibility")
-class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityListener {
+open class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityListener {
 
     private val resumeWindow = "resumeWindow"
     private val resumePosition = "resumePosition"
@@ -337,92 +342,93 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         }
     }
 
-    private fun setupSubFormatting(playerView: PlayerView) {
+    private fun setSubtitleStyle(playerView: PlayerView) {
         val useDefaults = PrefManager.getVal<Boolean>(PrefName.SubDefaults)
-        val primaryColor = when (PrefManager.getVal<Int>(PrefName.PrimaryColor)) {
-            0 -> Color.BLACK
-            1 -> Color.DKGRAY
-            2 -> Color.GRAY
-            3 -> Color.LTGRAY
-            4 -> Color.WHITE
-            5 -> Color.RED
-            6 -> Color.YELLOW
-            7 -> Color.GREEN
-            8 -> Color.CYAN
-            9 -> Color.BLUE
-            10 -> Color.MAGENTA
-            11 -> Color.TRANSPARENT
-            else -> Color.WHITE
-        }
-        val secondaryColor = when (PrefManager.getVal<Int>(PrefName.SecondaryColor)) {
-            0 -> Color.BLACK
-            1 -> Color.DKGRAY
-            2 -> Color.GRAY
-            3 -> Color.LTGRAY
-            4 -> Color.WHITE
-            5 -> Color.RED
-            6 -> Color.YELLOW
-            7 -> Color.GREEN
-            8 -> Color.CYAN
-            9 -> Color.BLUE
-            10 -> Color.MAGENTA
-            11 -> Color.TRANSPARENT
-            else -> Color.BLACK
-        }
-        val outline = when (PrefManager.getVal<Int>(PrefName.Outline)) {
-            0 -> EDGE_TYPE_OUTLINE // Normal
-            1 -> EDGE_TYPE_DEPRESSED // Shine
-            2 -> EDGE_TYPE_DROP_SHADOW // Drop shadow
-            3 -> EDGE_TYPE_NONE // No outline
-            else -> EDGE_TYPE_OUTLINE // Normal
-        }
-        val subBackground = when (PrefManager.getVal<Int>(PrefName.SubBackground)) {
-            0 -> Color.TRANSPARENT
-            1 -> Color.BLACK
-            2 -> Color.DKGRAY
-            3 -> Color.GRAY
-            4 -> Color.LTGRAY
-            5 -> Color.WHITE
-            6 -> Color.RED
-            7 -> Color.YELLOW
-            8 -> Color.GREEN
-            9 -> Color.CYAN
-            10 -> Color.BLUE
-            11 -> Color.MAGENTA
-            else -> Color.TRANSPARENT
-        }
-        val subWindow = when (PrefManager.getVal<Int>(PrefName.SubWindow)) {
-            0 -> Color.TRANSPARENT
-            1 -> Color.BLACK
-            2 -> Color.DKGRAY
-            3 -> Color.GRAY
-            4 -> Color.LTGRAY
-            5 -> Color.WHITE
-            6 -> Color.RED
-            7 -> Color.YELLOW
-            8 -> Color.GREEN
-            9 -> Color.CYAN
-            10 -> Color.BLUE
-            11 -> Color.MAGENTA
-            else -> Color.TRANSPARENT
-        }
-        val font = when (PrefManager.getVal<Int>(PrefName.Font)) {
-            0 -> ResourcesCompat.getFont(this, R.font.poppins_semi_bold)
-            1 -> ResourcesCompat.getFont(this, R.font.poppins_bold)
-            2 -> ResourcesCompat.getFont(this, R.font.poppins)
-            3 -> ResourcesCompat.getFont(this, R.font.poppins_thin)
-            4 -> ResourcesCompat.getFont(this, R.font.century_gothic_regular)
-            5 -> ResourcesCompat.getFont(this, R.font.levenim_mt_bold)
-            6 -> ResourcesCompat.getFont(this, R.font.blocky)
-            else -> ResourcesCompat.getFont(this, R.font.poppins_semi_bold)
-        }
-        val fontSize = PrefManager.getVal<Int>(PrefName.FontSize).toFloat()
 
         playerView.subtitleView?.let { subtitles ->
             subtitles.setApplyEmbeddedStyles(useDefaults)
             subtitles.setApplyEmbeddedFontSizes(useDefaults)
 
             if (useDefaults) return
+
+            val primaryColor = when (PrefManager.getVal<Int>(PrefName.PrimaryColor)) {
+                0 -> Color.BLACK
+                1 -> Color.DKGRAY
+                2 -> Color.GRAY
+                3 -> Color.LTGRAY
+                4 -> Color.WHITE
+                5 -> Color.RED
+                6 -> Color.YELLOW
+                7 -> Color.GREEN
+                8 -> Color.CYAN
+                9 -> Color.BLUE
+                10 -> Color.MAGENTA
+                11 -> Color.TRANSPARENT
+                else -> Color.WHITE
+            }
+            val secondaryColor = when (PrefManager.getVal<Int>(PrefName.SecondaryColor)) {
+                0 -> Color.BLACK
+                1 -> Color.DKGRAY
+                2 -> Color.GRAY
+                3 -> Color.LTGRAY
+                4 -> Color.WHITE
+                5 -> Color.RED
+                6 -> Color.YELLOW
+                7 -> Color.GREEN
+                8 -> Color.CYAN
+                9 -> Color.BLUE
+                10 -> Color.MAGENTA
+                11 -> Color.TRANSPARENT
+                else -> Color.BLACK
+            }
+            val outline = when (PrefManager.getVal<Int>(PrefName.Outline)) {
+                0 -> EDGE_TYPE_OUTLINE // Normal
+                1 -> EDGE_TYPE_DEPRESSED // Shine
+                2 -> EDGE_TYPE_DROP_SHADOW // Drop shadow
+                3 -> EDGE_TYPE_NONE // No outline
+                else -> EDGE_TYPE_OUTLINE // Normal
+            }
+            val subBackground = when (PrefManager.getVal<Int>(PrefName.SubBackground)) {
+                0 -> Color.TRANSPARENT
+                1 -> Color.BLACK
+                2 -> Color.DKGRAY
+                3 -> Color.GRAY
+                4 -> Color.LTGRAY
+                5 -> Color.WHITE
+                6 -> Color.RED
+                7 -> Color.YELLOW
+                8 -> Color.GREEN
+                9 -> Color.CYAN
+                10 -> Color.BLUE
+                11 -> Color.MAGENTA
+                else -> Color.TRANSPARENT
+            }
+            val subWindow = when (PrefManager.getVal<Int>(PrefName.SubWindow)) {
+                0 -> Color.TRANSPARENT
+                1 -> Color.BLACK
+                2 -> Color.DKGRAY
+                3 -> Color.GRAY
+                4 -> Color.LTGRAY
+                5 -> Color.WHITE
+                6 -> Color.RED
+                7 -> Color.YELLOW
+                8 -> Color.GREEN
+                9 -> Color.CYAN
+                10 -> Color.BLUE
+                11 -> Color.MAGENTA
+                else -> Color.TRANSPARENT
+            }
+            val font = when (PrefManager.getVal<Int>(PrefName.Font)) {
+                0 -> ResourcesCompat.getFont(this, R.font.poppins_semi_bold)
+                1 -> ResourcesCompat.getFont(this, R.font.poppins_bold)
+                2 -> ResourcesCompat.getFont(this, R.font.poppins)
+                3 -> ResourcesCompat.getFont(this, R.font.poppins_thin)
+                4 -> ResourcesCompat.getFont(this, R.font.century_gothic_regular)
+                5 -> ResourcesCompat.getFont(this, R.font.levenim_mt_bold)
+                6 -> ResourcesCompat.getFont(this, R.font.blocky)
+                else -> ResourcesCompat.getFont(this, R.font.poppins_semi_bold)
+            }
+            val fontSize = PrefManager.getVal<Int>(PrefName.FontSize).toFloat()
 
             subtitles.setStyle(
                 CaptionStyleCompat(
@@ -562,7 +568,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
                 it.visibility = View.GONE
             }
         }
-        setupSubFormatting(playerView)
+        setSubtitleStyle(playerView)
 
         if (savedInstanceState != null) {
             currentWindow = savedInstanceState.getInt(resumeWindow)
@@ -1653,13 +1659,18 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
         val audioSources = audioMediaItem.map { mediaItem ->
             if (video?.format == VideoType.M3U8) {
                 HlsMediaSource.Factory(cacheFactory).apply {
+                    experimentalParseSubtitlesDuringExtraction(false)
                     setAllowChunklessPreparation(false)
                 }.createMediaSource(mediaItem)
             } else {
-                DefaultMediaSourceFactory(cacheFactory).createMediaSource(mediaItem)
+                DefaultMediaSourceFactory(cacheFactory)
+                    .experimentalParseSubtitlesDuringExtraction(false)
+                    .createMediaSource(mediaItem)
+
             }
         }.toTypedArray()
         val videoMediaSource = DefaultMediaSourceFactory(cacheFactory)
+            .experimentalParseSubtitlesDuringExtraction(false)
             .createMediaSource(mediaItem)
         mediaSource = MergingMediaSource(videoMediaSource, *audioSources)
 
@@ -1667,9 +1678,12 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
             "${media.id}_${episode.number}_subtitles", setOf()
         ).forEach { userSubtitles.add(importSubtitle(Uri.parse(it), true)) }
         if (userSubtitles.isNotEmpty()) {
-            mediaSource = MergingMediaSource(DefaultMediaSourceFactory(this).createMediaSource(
-                mediaItem.buildUpon().setSubtitleConfigurations(userSubtitles).build()
-            ))
+            mediaSource = MergingMediaSource(DefaultMediaSourceFactory(this)
+                .experimentalParseSubtitlesDuringExtraction(false)
+                .createMediaSource(
+                    mediaItem.buildUpon().setSubtitleConfigurations(userSubtitles).build()
+                )
+            )
         }
 
         //Source
@@ -1748,6 +1762,22 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
 
         hideSystemBars()
         exoPlayer = ExoPlayer.Builder(this)
+            .setRenderersFactory(
+                object : DefaultRenderersFactory(this) {
+                    override fun buildTextRenderers(
+                        context: Context,
+                        output: TextOutput,
+                        outputLooper: Looper,
+                        extensionRendererMode: Int,
+                        out: java.util.ArrayList<Renderer>
+                    ) {
+                        super.buildTextRenderers(
+                            context, output, outputLooper, extensionRendererMode, out
+                        )
+                        (Iterables.getLast(out) as TextRenderer)
+                            .experimentalSetLegacyDecodingEnabled(true)
+                    }
+                })
             .setMediaSourceFactory(DefaultMediaSourceFactory(cacheFactory))
             .setTrackSelector(trackSelector)
             .setLoadControl(loadControl)
@@ -2069,7 +2099,7 @@ class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabilityL
             )
             .setSelectUndeterminedTextLanguage(format.containerMimeType == getString(R.string.mimetype_cea))
             .build()
-        if (type == TRACK_TYPE_TEXT) setupSubFormatting(playerView)
+        if (type == TRACK_TYPE_TEXT) setSubtitleStyle(playerView)
     }
 
     private val dummyTrack = Tracks.Group(
