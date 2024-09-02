@@ -180,11 +180,15 @@ class MangaReadAdapter(
             var style =
                 media.selected!!.recyclerStyle ?: PrefManager.getVal(PrefName.MangaDefaultView)
             dialogBinding.animeSourceTop.rotation = if (reversed) -90f else 90f
-            dialogBinding.sortText.text = if (reversed) "Down to Up" else "Up to Down"
+            dialogBinding.sortText.text = getString(
+                if (reversed) R.string.descending else R.string.ascending
+            )
             dialogBinding.animeSourceTop.setOnClickListener {
                 reversed = !reversed
                 dialogBinding.animeSourceTop.rotation = if (reversed) -90f else 90f
-                dialogBinding.sortText.text = if (reversed) "Down to Up" else "Up to Down"
+                dialogBinding.sortText.text = getString(
+                    if (reversed) R.string.descending else R.string.ascending
+                )
                 run = true
             }
 

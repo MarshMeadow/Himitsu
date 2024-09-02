@@ -39,6 +39,7 @@ import ani.himitsu.media.MediaType
 import ani.himitsu.media.SubtitleDownloader
 import ani.himitsu.navBarHeight
 import ani.himitsu.openInGooglePlay
+import ani.himitsu.openLinkInBrowser
 import ani.himitsu.others.Download.download
 import ani.himitsu.parsers.Subtitle
 import ani.himitsu.parsers.Video
@@ -416,6 +417,12 @@ class SelectorDialogFragment : BottomSheetDialogFragment() {
         override fun onBindViewHolder(holder: UrlViewHolder, position: Int) {
             val binding = holder.binding
             val video = extractor.videos[position]
+
+            binding.urlShare.isVisible = true
+            binding.urlShare.setOnClickListener {
+                openLinkInBrowser(extractor.videos[position].file.url)
+            }
+
             binding.urlDownload.isVisible = isDownloadMenu == true
             val subtitles = extractor.subtitles
             if (subtitles.isNotEmpty()) {
@@ -519,6 +526,7 @@ class SelectorDialogFragment : BottomSheetDialogFragment() {
                             snackString(R.string.no_video_selected)
                         }
                     }
+
                     fun checkAudioTracks() {
                         val audioTracks = extractor.audioTracks.map { it.lang }
                         if (audioTracks.isNotEmpty()) {

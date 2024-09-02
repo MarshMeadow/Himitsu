@@ -257,13 +257,13 @@ class AnimeWatchAdapter(
                 media.selected!!.recyclerStyle ?: PrefManager.getVal(PrefName.AnimeDefaultView)
             dialogBinding.animeSourceTop.rotation = if (reversed) -90f else 90f
             dialogBinding.sortText.text = getString(
-                if (reversed) R.string.down_to_up else R.string.up_to_down
+                if (reversed) R.string.descending else R.string.ascending
             )
             dialogBinding.animeSourceTop.setOnClickListener {
                 reversed = !reversed
                 dialogBinding.animeSourceTop.rotation = if (reversed) -90f else 90f
                 dialogBinding.sortText.text = getString(
-                    if (reversed) R.string.down_to_up else R.string.up_to_down
+                    if (reversed) R.string.descending else R.string.ascending
                 )
                 run = true
             }
