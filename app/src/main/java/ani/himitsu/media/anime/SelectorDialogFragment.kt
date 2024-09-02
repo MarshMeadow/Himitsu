@@ -22,8 +22,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.media3.common.util.UnstableApi
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import ani.himitsu.R
 import ani.dantotsu.addons.download.DownloadAddonManager
+import ani.himitsu.R
 import ani.himitsu.copyToClipboard
 import ani.himitsu.currActivity
 import ani.himitsu.currContext
@@ -33,13 +33,13 @@ import ani.himitsu.databinding.ItemUrlBinding
 import ani.himitsu.download.DownloadedType
 import ani.himitsu.download.video.Helper
 import ani.himitsu.hideSystemBars
-import ani.himitsu.media.cereal.Media
 import ani.himitsu.media.MediaDetailsViewModel
 import ani.himitsu.media.MediaType
 import ani.himitsu.media.SubtitleDownloader
+import ani.himitsu.media.cereal.Media
 import ani.himitsu.navBarHeight
 import ani.himitsu.openInGooglePlay
-import ani.himitsu.openLinkInBrowser
+import ani.himitsu.openLinkInApp
 import ani.himitsu.others.Download.download
 import ani.himitsu.parsers.Subtitle
 import ani.himitsu.parsers.Video
@@ -420,7 +420,7 @@ class SelectorDialogFragment : BottomSheetDialogFragment() {
 
             binding.urlShare.isVisible = true
             binding.urlShare.setOnClickListener {
-                openLinkInBrowser(extractor.videos[position].file.url)
+                openLinkInApp(extractor.videos[position].file.url)
             }
 
             binding.urlDownload.isVisible = isDownloadMenu == true

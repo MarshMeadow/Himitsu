@@ -1086,6 +1086,7 @@
     <string name="feed">Feed</string>
     <string name="profile">Profile</string>
     <string name="content_not_found">Content missing or unavailable</string>
+    <string name="no_intent_apps">No compatible apps found!</string>
 
     <string name="epub_download_exception">Exception while downloading .epub: %1$s</string>
     <string name="novel_download_progress">Novel Download Progress</string>

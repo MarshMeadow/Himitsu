@@ -513,22 +513,38 @@ fun View.circularReveal(ex: Int, ey: Int, subX: Boolean, time: Long) {
     ).setDuration(time).start()
 }
 
+fun openLinkInApp(link: String?) {
+    link?.let {
+        try {
+            val sendIntent = Intent().apply {
+                action = Intent.ACTION_VIEW
+                data = Uri.parse(link)
+                selector = Intent(Intent.ACTION_VIEW)
+            }
+            currContext().startActivity(sendIntent)
+        } catch (e: ActivityNotFoundException) {
+            snackString(R.string.no_intent_apps)
+        } catch (e: Exception) {
+            Logger.log(e)
+        }
+    }
+}
+
 fun openLinkInBrowser(link: String?) {
     link?.let {
         try {
-            val emptyBrowserIntent = Intent(Intent.ACTION_VIEW).apply {
-                addCategory(Intent.CATEGORY_BROWSABLE)
-                data = Uri.fromParts("http", "", null)
-            }
             val sendIntent = Intent().apply {
                 action = Intent.ACTION_VIEW
                 addCategory(Intent.CATEGORY_BROWSABLE)
                 data = Uri.parse(link)
-                selector = emptyBrowserIntent
+                selector = Intent(Intent.ACTION_VIEW).apply {
+                    addCategory(Intent.CATEGORY_BROWSABLE)
+                    data = Uri.fromParts("http", "", null)
+                }
             }
             currContext().startActivity(sendIntent)
         } catch (e: ActivityNotFoundException) {
-            snackString("No browser found")
+            snackString(R.string.no_intent_apps)
         } catch (e: Exception) {
             Logger.log(e)
         }
