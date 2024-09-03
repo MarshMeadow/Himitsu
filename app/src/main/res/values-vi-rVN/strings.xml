@@ -1074,7 +1074,9 @@
     <string name="error_no_parent_id">Lỗi: Không có ID cha</string>
     <string name="error_no_media_id">Lỗi: Không có ID phương tiện</string>
     <string name="down_to_up">Từ dưới lên trên</string>
+    <string name="descending">Giảm dần</string>
     <string name="up_to_down">Từ trên xuống dưới</string>
+    <string name="ascending">Tăng dần</string>
     <string name="anilist_notification">Thông báo Mới từ AniList</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

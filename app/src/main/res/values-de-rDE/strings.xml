@@ -1082,7 +1082,9 @@ Himitsu ist nicht verantwortlich für Ereignisse, die Ihrem Konto zustoßen.</st
     <string name="error_no_parent_id">Fehler: Keine Eltern-ID</string>
     <string name="error_no_media_id">Fehler: Keine Medien-ID</string>
     <string name="down_to_up">Von unten nach oben</string>
+    <string name="descending">Absteigend</string>
     <string name="up_to_down">Von oben nach unten</string>
+    <string name="ascending">Aufsteigend</string>
     <string name="anilist_notification">Neue AniList Benachrichtigung</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

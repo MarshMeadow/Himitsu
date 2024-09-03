@@ -1082,7 +1082,9 @@ Himitsuは、アカウントに何か起こった場合には責任を負いま�
     <string name="error_no_parent_id">エラー：親IDがありません</string>
     <string name="error_no_media_id">エラー：メディアIDがありません</string>
     <string name="down_to_up">下から上へ</string>
+    <string name="descending">降順</string>
     <string name="up_to_down">上から下へ</string>
+    <string name="ascending">昇順</string>
     <string name="anilist_notification">新しいAniList通知</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

@@ -1080,7 +1080,9 @@ Himitsu не відповідає за те, що станеться з ваши
     <string name="error_no_parent_id">Помилка: Немає батьківського ID</string>
     <string name="error_no_media_id">Помилка: Немає ID медіа</string>
     <string name="down_to_up">Знизу вгору</string>
+    <string name="descending">За спаданням</string>
     <string name="up_to_down">Зверху вниз</string>
+    <string name="ascending">За зростанням</string>
     <string name="anilist_notification">Нове сповіщення в AniList</string>
     <string name="bandwidth_down">%1$d Мбіт/с</string>
 </resources>

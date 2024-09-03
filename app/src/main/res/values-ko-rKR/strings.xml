@@ -1080,7 +1080,9 @@ Himitsu는 귀하의 계정에 대한 모든 일에 대해 책임지지 않습�
     <string name="error_no_parent_id">오류: 부모 ID 없음</string>
     <string name="error_no_media_id">오류: 미디어 ID 없음</string>
     <string name="down_to_up">아래에서 위로</string>
+    <string name="descending">내림차순</string>
     <string name="up_to_down">위에서 아래로</string>
+    <string name="ascending">오름차순</string>
     <string name="anilist_notification">새로운 AniList 알림</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

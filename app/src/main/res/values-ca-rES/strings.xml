@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="ca">
-    <string name="slogan">We who shall not be named</string>
+    <string name="slogan">Nosaltres que no serem nomenats</string>
     <string name="login">Inicia la sessió</string>
     <string name="logout">Tanca la sessió</string>
     <string name="anilist_login">AniList Inicia la sessió per a Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Permet anul·lar les limitacions del reproductor detectades</string>
     <string name="subtitles">Subtítols</string>
     <string name="subtitle_toggle">Subtítols</string>
-    <string name="subtitle_defaults">Use Track Settings</string>
+    <string name="subtitle_defaults">Utilitza la configuració de la pista</string>
     <string name="primary_sub_color_select">Color dels subtítols</string>
     <string name="secondary_sub_color_select">Color del contorn del subtítol</string>
     <string name="secondary_sub_outline_type_select">Tipus de contorn del subtítol</string>
@@ -1074,7 +1074,9 @@
     <string name="error_no_parent_id">Error: Cap identificador principal</string>
     <string name="error_no_media_id">Error: Cap identificador de mitjà</string>
     <string name="down_to_up">De baix a dalt</string>
+    <string name="descending">Descendent</string>
     <string name="up_to_down">De dalt a baix</string>
+    <string name="ascending">Ascendent</string>
     <string name="anilist_notification">Nova notificació d\'AniList</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

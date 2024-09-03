@@ -1080,7 +1080,9 @@
     <string name="error_no_parent_id">ত্ৰিপুৰ আই’ডি নাই</string>
     <string name="error_no_media_id">মিডিয়া আই’ডি নাই</string>
     <string name="down_to_up">দাউন টু আপ</string>
+    <string name="descending">অধঃবর্তী</string>
     <string name="up_to_down">আপ টু ডাঊন</string>
+    <string name="ascending">উর্দ্ধবর্তী</string>
     <string name="anilist_notification">নতুন AniList জানাৰি</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>
