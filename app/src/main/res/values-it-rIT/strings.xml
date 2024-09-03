@@ -764,7 +764,7 @@
     <string name="manga_queue">Coda Manga (WIP)</string>
     <string name="anime_queue">Coda Anime (WIP)</string>
     <string name="no_offline_manga_found">Nessun manga offline trovato</string>
-    <string name="sort">Ordina</string>
+    <string name="sort">Ordinamento</string>
     <string name="download">Scarica</string>
     <string name="scanlator">Scanlator</string>
     <string name="set_cookies">Imposta i Cookie</string>
