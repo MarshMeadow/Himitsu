@@ -1084,7 +1084,9 @@ Himitsu не несет ответственности за то, что про�
     <string name="error_no_parent_id">Ошибка: Нет идентификатора родителя</string>
     <string name="error_no_media_id">Ошибка: Нет идентификатора медиафайла</string>
     <string name="down_to_up">Сверху вниз</string>
+    <string name="descending">По убыванию</string>
     <string name="up_to_down">Снизу вверх</string>
+    <string name="ascending">По возрастанию</string>
     <string name="anilist_notification">Новое уведомление AniList</string>
     <string name="bandwidth_down">%1$d Мбит/с</string>
 </resources>

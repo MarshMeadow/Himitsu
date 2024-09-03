@@ -1078,7 +1078,9 @@
     <string name="error_no_parent_id">Chyba: Neexistuje žádné ID rodiče</string>
     <string name="error_no_media_id">Chyba: Neexistuje žádné ID média</string>
     <string name="down_to_up">Zdola nahoru</string>
+    <string name="descending">sestupně</string>
     <string name="up_to_down">Shora dolů</string>
+    <string name="ascending">Vzestupně</string>
     <string name="anilist_notification">Nové AniList oznámení</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

@@ -1074,7 +1074,9 @@
     <string name="error_no_parent_id">خطأ: لا توجد معرف رئيسي</string>
     <string name="error_no_media_id">خطأ: لا توجد معرف وسائط</string>
     <string name="down_to_up">من أسفل لأعلى</string>
+    <string name="descending">تنازلي</string>
     <string name="up_to_down">من أعلى لأسفل</string>
+    <string name="ascending">تصاعدي</string>
     <string name="anilist_notification">اشعار جديد للقائمة</string>
     <string name="bandwidth_down">%1$d ميجابت في الثانية</string>
 </resources>

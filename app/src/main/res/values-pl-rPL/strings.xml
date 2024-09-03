@@ -1074,7 +1074,9 @@
     <string name="error_no_parent_id">Błąd: Brak identyfikatora nadrzędnego</string>
     <string name="error_no_media_id">Błąd: brak ID mediów</string>
     <string name="down_to_up">W dół do góry</string>
+    <string name="descending">Malejąco</string>
     <string name="up_to_down">Do dół</string>
+    <string name="ascending">Rosnąco</string>
     <string name="anilist_notification">Nova notificação AniList</string>
     <string name="bandwidth_down">%1$d Mb/s</string>
 </resources>

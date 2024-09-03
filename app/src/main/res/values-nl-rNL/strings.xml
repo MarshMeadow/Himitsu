@@ -1074,7 +1074,9 @@
     <string name="error_no_parent_id">Fout: Geen ouder ID</string>
     <string name="error_no_media_id">Fout: Geen media ID</string>
     <string name="down_to_up">Van beneden naar boven</string>
+    <string name="descending">Aflopend</string>
     <string name="up_to_down">Van boven naar beneden</string>
+    <string name="ascending">Oplopend</string>
     <string name="anilist_notification">Nieuwe AniList Melding</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

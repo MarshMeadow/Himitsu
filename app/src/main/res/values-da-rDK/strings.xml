@@ -1074,7 +1074,9 @@
     <string name="error_no_parent_id">Fejl: Ingen overordnet ID</string>
     <string name="error_no_media_id">Fejl: Ingen medie-ID</string>
     <string name="down_to_up">Ned til op</string>
+    <string name="descending">Faldende</string>
     <string name="up_to_down">Op til ned</string>
+    <string name="ascending">Stigende</string>
     <string name="anilist_notification">Ny AniList-meddelelse</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

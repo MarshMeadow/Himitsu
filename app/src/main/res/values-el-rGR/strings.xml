@@ -1074,7 +1074,9 @@
     <string name="error_no_parent_id">Σφάλμα: Χωρίς κωδικό γονέα</string>
     <string name="error_no_media_id">Σφάλμα: Χωρίς κωδικό μέσου</string>
     <string name="down_to_up">Κάτω προς Πάνω</string>
+    <string name="descending">Φθίνουσα</string>
     <string name="up_to_down">Πάνω προς Κάτω</string>
+    <string name="ascending">Αύξουσα</string>
     <string name="anilist_notification">Νέα Ειδοποίηση AniList</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

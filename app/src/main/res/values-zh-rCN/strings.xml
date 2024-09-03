@@ -1088,7 +1088,9 @@ _不需要同步 MAL 和 AniList 帐户。_
     <string name="error_no_parent_id">错误：无父ID</string>
     <string name="error_no_media_id">错误：无媒体ID</string>
     <string name="down_to_up">从下到上</string>
+    <string name="descending">降序</string>
     <string name="up_to_down">从上到下</string>
+    <string name="ascending">升序</string>
     <string name="anilist_notification">新的AniList通知</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

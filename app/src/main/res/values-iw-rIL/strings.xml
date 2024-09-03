@@ -1078,7 +1078,9 @@
     <string name="error_no_parent_id">שגיאה: אין מזהה הורה</string>
     <string name="error_no_media_id">שגיאה: אין מזהה מדיה</string>
     <string name="down_to_up">ממטה כלפי מעלה</string>
+    <string name="descending">יורד</string>
     <string name="up_to_down">ממעלה כלפי מטה</string>
+    <string name="ascending">עולה</string>
     <string name="anilist_notification">התראת AniList חדשה</string>
     <string name="bandwidth_down">%1$d מיגה־ביט לשנייה</string>
 </resources>

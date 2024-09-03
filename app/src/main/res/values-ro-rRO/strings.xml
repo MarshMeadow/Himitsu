@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:locale="ro">
-    <string name="slogan">We who shall not be named</string>
+    <string name="slogan">Noi cine nu vom fi numiţi</string>
     <string name="login">Autentificare</string>
     <string name="logout">Deconectare</string>
     <string name="anilist_login">AniList Autentificare pentru Himitsu</string>
@@ -231,7 +231,7 @@
     <string name="exceed_cap_desc">Permite substituirea limitărilor jucătorului detectate</string>
     <string name="subtitles">Subtitrări</string>
     <string name="subtitle_toggle">Subtitrări</string>
-    <string name="subtitle_defaults">Use Track Settings</string>
+    <string name="subtitle_defaults">Folosește Setările Piesei</string>
     <string name="primary_sub_color_select">Culoare subtitrare</string>
     <string name="secondary_sub_color_select">Culoare contur subtitrare</string>
     <string name="secondary_sub_outline_type_select">Tip contur subtitrare</string>
@@ -1074,7 +1074,9 @@
     <string name="error_no_parent_id">Eroare: Fără ID părinte</string>
     <string name="error_no_media_id">Eroare: Fără ID media</string>
     <string name="down_to_up">De Jos în Sus</string>
+    <string name="descending">Descrescător</string>
     <string name="up_to_down">De Sus în Jos</string>
+    <string name="ascending">Crescător</string>
     <string name="anilist_notification">Notificare Noua Lista AniList</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>
