@@ -1074,7 +1074,9 @@
     <string name="error_no_parent_id">Errore: No parent ID</string>
     <string name="error_no_media_id">Errore: No media ID</string>
     <string name="down_to_up">Dal Basso verso l\'Alto</string>
+    <string name="descending">Decrescente</string>
     <string name="up_to_down">Dall\'Alto verso il Basso</string>
+    <string name="ascending">Crescente</string>
     <string name="anilist_notification">Nuova Notifica di AniList</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

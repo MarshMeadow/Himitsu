@@ -1080,7 +1080,9 @@ Himitsu er ikke ansvarlig for hva som skjer med kontoen din.</string>
     <string name="error_no_parent_id">Feil: Ingen foreldre-ID</string>
     <string name="error_no_media_id">Feil: Ingen media-ID</string>
     <string name="down_to_up">Ned til Opp</string>
+    <string name="descending">Synkende</string>
     <string name="up_to_down">Opp til Ned</string>
+    <string name="ascending">Stigende</string>
     <string name="anilist_notification">Ny AniList Varsel</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

@@ -36,9 +36,9 @@
 
             <ImageButton
                 android:id="@+id/itemEpisodeViewed"
-                android:layout_width="24dp"
+                android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginEnd="4dp"
                 android:background="?android:attr/selectableItemBackground"
                 app:srcCompat="@drawable/ic_round_remove_red_eye_24"
                 app:tint="?attr/colorOnBackground"
@@ -46,9 +46,9 @@
 
             <ImageButton
                 android:id="@+id/itemDownload"
-                android:layout_width="24dp"
+                android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:layout_marginEnd="5dp"
+                android:layout_marginEnd="4dp"
                 android:background="@android:color/transparent"
                 app:srcCompat="@drawable/ic_download_24"
                 app:tint="?attr/colorOnBackground"

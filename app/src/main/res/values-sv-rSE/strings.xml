@@ -1076,7 +1076,9 @@ Om inget av ovanstående steg fungerar, använd en annan källa eller gå med i 
     <string name="error_no_parent_id">Fel: Inget föräldraindex</string>
     <string name="error_no_media_id">Fel: Inget media ID</string>
     <string name="down_to_up">Ner till Upp</string>
+    <string name="descending">Fallande</string>
     <string name="up_to_down">Upp till Ner</string>
+    <string name="ascending">Stigande</string>
     <string name="anilist_notification">Ny AniList-notifiering</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

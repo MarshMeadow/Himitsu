@@ -1093,7 +1093,9 @@ Himitsu, hesabınıza ne olursa olsun sorumlu değildir.</string>
     <string name="error_no_parent_id">Hata: Hiçbir ebeveyn kimliği yok</string>
     <string name="error_no_media_id">Hata: Hiçbir medya kimliği yok</string>
     <string name="down_to_up">Aşağıdan Yukarıya</string>
+    <string name="descending">Azalan</string>
     <string name="up_to_down">Yukarıdan Aşağıya</string>
+    <string name="ascending">Artan</string>
     <string name="anilist_notification">Yeni AniList Bildirimi</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

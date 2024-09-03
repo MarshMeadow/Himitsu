@@ -1074,7 +1074,9 @@
     <string name="error_no_parent_id">Virhe: Ei vanhempaa tunnistetta</string>
     <string name="error_no_media_id">Virhe: Ei tiedotusvälinettä</string>
     <string name="down_to_up">Alhaalta ylös</string>
+    <string name="descending">Laskeva</string>
     <string name="up_to_down">Ylhäältä alas</string>
+    <string name="ascending">Nouseva</string>
     <string name="anilist_notification">Uusi AniList-ilmoitus</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

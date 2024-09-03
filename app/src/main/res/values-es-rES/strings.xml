@@ -1081,7 +1081,9 @@ Himitsu no se hace responsable de nada que suceda en tu cuenta.</string>
     <string name="error_no_parent_id">Error: No hay ID padre</string>
     <string name="error_no_media_id">Error: No hay ID de medio</string>
     <string name="down_to_up">De abajo hacia arriba</string>
+    <string name="descending">Descendente</string>
     <string name="up_to_down">De arriba hacia abajo</string>
+    <string name="ascending">Ascendente</string>
     <string name="anilist_notification">Nueva notificación de AniList</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

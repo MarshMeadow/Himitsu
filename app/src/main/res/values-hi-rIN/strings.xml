@@ -1080,7 +1080,9 @@ Himitsu आपके खाते के साथ होने वाले क
     <string name="error_no_parent_id">त्रुटि: कोई माता पहुंच आईडी नहीं</string>
     <string name="error_no_media_id">त्रुटि: कोई मीडिया आईडी नहीं</string>
     <string name="down_to_up">नीचे से ऊपर</string>
+    <string name="descending">अवरोहण</string>
     <string name="up_to_down">ऊपर से नीचे</string>
+    <string name="ascending">उत्तराधिकारी</string>
     <string name="anilist_notification">नई आनीलिस्ट अधिसूचना</string>
     <string name="bandwidth_down">%1$d मेगाबिट प्रति सेकंड</string>
 </resources>

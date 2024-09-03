@@ -1076,7 +1076,9 @@ Genre : "</string>
     <string name="error_no_parent_id">Erreur: No parent ID</string>
     <string name="error_no_media_id">Erreur: No media ID</string>
     <string name="down_to_up">de bas en haut</string>
+    <string name="descending">Descendant</string>
     <string name="up_to_down">de haut en bas</string>
+    <string name="ascending">Ascendant</string>
     <string name="anilist_notification">nouvelle notification AniList</string>
     <string name="bandwidth_down">%1$d Mbps</string>
 </resources>

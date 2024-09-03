@@ -1074,7 +1074,9 @@
     <string name="error_no_parent_id">Грешка: Нема иД родитеља</string>
     <string name="error_no_media_id">Грешка: Нема иД медија</string>
     <string name="down_to_up">Од до Горе</string>
+    <string name="descending">Опадајући</string>
     <string name="up_to_down">Од Горе до Доле</string>
+    <string name="ascending">Растући</string>
     <string name="anilist_notification">Нова АниЛист обавештења</string>
     <string name="bandwidth_down">%1$d Мбит/с</string>
 </resources>
