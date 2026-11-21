@@ -558,6 +558,12 @@ class VideoServerPassthrough(private val videoServer: VideoServer) : VideoExtrac
                 //}
             }
 
+            // Extension streams proxied through the local server (127.0.0.1/pl/N)
+            // are HLS playlists with no file extension to key off.
+            if (format == null && urlObj.host in listOf("127.0.0.1", "localhost")) {
+                format = VideoType.M3U8
+            }
+
             // If the format is still undetermined, log an error
             if (format == null) {
                 Logger.log("Unknown video format: $videoUrl")

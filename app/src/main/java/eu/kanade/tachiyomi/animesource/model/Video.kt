@@ -8,6 +8,7 @@ import kotlinx.serialization.json.JsonObject
 import okhttp3.Headers
 import rx.subjects.Subject
 import java.io.IOException
+import kotlin.jvm.internal.DefaultConstructorMarker
 import java.io.ObjectInputStream
 import java.io.ObjectOutputStream
 import java.io.Serializable
@@ -60,6 +61,31 @@ open class Video(
         subtitleTracks: List<Track>,
         audioTracks: List<Track>,
     ) : this(url, quality, videoUrl, headers, subtitleTracks, audioTracks, "")
+
+    // ABI shim: ext-lib <16 extensions link against the synthetic default-args
+    // constructor Video(String,String,String,Headers,List,List,int,DefaultConstructorMarker).
+    // Kotlin only emits that overload when the constructor declares default values, so the
+    // marker signature is declared explicitly. Masked (null) params fall back to the
+    // original defaults, matching the real synthetic's behaviour.
+    @Suppress("UNUSED_PARAMETER")
+    constructor(
+        url: String?,
+        quality: String?,
+        videoUrl: String?,
+        headers: Headers?,
+        subtitleTracks: List<Track>?,
+        audioTracks: List<Track>?,
+        mask: Int,
+        marker: DefaultConstructorMarker?,
+    ) : this(
+        url ?: "",
+        quality ?: "",
+        videoUrl,
+        headers,
+        subtitleTracks.orEmpty(),
+        audioTracks.orEmpty(),
+        "",
+    )
 
     // ext-lib 16+ fields (ABI compat for extensions built against newer aniyomi-lib)
     var resolution: Int? = null
