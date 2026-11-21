@@ -679,10 +679,10 @@
     <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. It is (mostly) an AniList only client, which also supports extensions. \n>Himitsu (秘密; Him-itsu) means "secret" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
 
     <string name="question_2">What are some features of Himitsu?</string>
-    <string name="answer_2">This would be a pretty big paragraph if we listed everything Dantotsu attempts to accomplish, let alone everything Himitsu has added onto that. Your best bet would be to drop by the [Himitsu GitHub](https://github.com/RepoDevil/Himitsu) and look over the README.</string>
+    <string name="answer_2">This would be a pretty big paragraph if we listed everything Dantotsu attempts to accomplish, let alone everything Himitsu has added onto that. Your best bet would be to drop by the [HimitsuX GitHub](https://github.com/Nekomo-App/HimitsuX) and look over the README.</string>
 
     <string name="question_3">Whats the difference between Stable, Beta &amp; Alpha versions?</string>
-    <string name="answer_3">This fork does not provide multiple tracks. The version you download from the [repository](https://github.com/RepoDevil/Himitsu) is the same one [AbandonedCart](https://github.com/AbandonedCart) is running. If you find bugs and have already updated to the latest version, feel free to submit an [issue](https://github.com/RepoDevil/Himitsu/issues)</string>
+    <string name="answer_3">This fork does not provide multiple tracks. The version you download from the [repository](https://github.com/Nekomo-App/HimitsuX) is the same one [Nekosphere](https://github.com/Nekomo-App) is running. If you find bugs and have already updated to the latest version, feel free to submit an [issue](https://github.com/Nekomo-App/HimitsuX/issues)</string>
 
     <string name="question_4">Is Himitsu available for PC?</string>
     <string name="answer_4">Currently no (for both Windows and Linux). There isn\'t any estimation when it will be available. But you can download any Android emulator and run Himitsu on it. For Windows 11 users, they can use the Windows Subsystem for Android (WSA) to run Himitsu in Windows.</string>
@@ -691,7 +691,7 @@
     <string name="answer_5">No, best we can do is carve Himitsu on an apple.</string>
 
     <string name="question_src">Doesn\'t Himitsu violate Dantotsu licensing?</string>
-    <string name="answer_src">The short answer is no, but a detailed explanation is available in the [Himitsu README](https://github.com/RepoDevil/Himitsu?tab=readme-ov-file#himitsu-%EF%B8%8F)</string>
+    <string name="answer_src">The short answer is no, but a detailed explanation is available in the [HimitsuX README](https://github.com/Nekomo-App/HimitsuX?tab=readme-ov-file#readme)</string>
 
     <string name="question_6">Why are my stats not updating?</string>
     <string name="answer_6">This is because it updates every 48 hours automatically (by AniList). If you really need to update your stats, you can force update your stats after going to this [link](https://anilist.co/settings/lists).</string>

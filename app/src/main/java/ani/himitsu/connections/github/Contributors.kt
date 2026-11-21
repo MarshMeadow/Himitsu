@@ -39,6 +39,16 @@ class Contributors {
                     )
                 )
             }
+            contributors.addAll(0,
+                arrayOf(
+                    Developer(
+                        "Nekosphere",
+                        "https://avatars.githubusercontent.com/u/213000000?v=4",
+                        "Developed & maintained by Nekosphere - founded & led by N3K0",
+                        "https://github.com/Nekomo-App"
+                    )
+                ).toList()
+            )
             contributors.addAll(1,
                 arrayOf(
                     Developer(

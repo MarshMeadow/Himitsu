@@ -4,6 +4,7 @@ import android.net.Uri
 import eu.kanade.tachiyomi.network.ProgressListener
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.serialization.json.JsonObject
 import okhttp3.Headers
 import rx.subjects.Subject
 import java.io.IOException
@@ -13,6 +14,21 @@ import java.io.Serializable
 
 data class Track(val url: String, val lang: String) : Serializable
 
+enum class ChapterType {
+    Opening,
+    Ending,
+    Recap,
+    MixedOp,
+    Other,
+}
+
+data class TimeStamp(
+    val start: Double,
+    val end: Double,
+    val name: String,
+    val type: ChapterType = ChapterType.Other,
+) : Serializable
+
 open class Video(
     val url: String = "",
     val quality: String = "",
@@ -21,6 +37,7 @@ open class Video(
     // "url", "language-label-2", "url2", "language-label-2"
     val subtitleTracks: List<Track> = emptyList(),
     val audioTracks: List<Track> = emptyList(),
+    val videoTitle: String = "",
 ) : Serializable, ProgressListener {
 
     @Transient
@@ -34,6 +51,58 @@ open class Video(
         uri: Uri? = null,
         headers: Headers? = null,
     ) : this(url, quality, videoUrl, headers)
+
+    constructor(
+        url: String,
+        quality: String,
+        videoUrl: String?,
+        headers: Headers?,
+        subtitleTracks: List<Track>,
+        audioTracks: List<Track>,
+    ) : this(url, quality, videoUrl, headers, subtitleTracks, audioTracks, "")
+
+    // ext-lib 16+ fields (ABI compat for extensions built against newer aniyomi-lib)
+    var resolution: Int? = null
+    var bitrate: Int? = null
+    var preferred: Boolean = false
+    var timestamps: List<TimeStamp> = emptyList()
+    var mpvArgs: List<Pair<String, String>> = emptyList()
+    var ffmpegStreamArgs: List<Pair<String, String>> = emptyList()
+    var ffmpegVideoArgs: List<Pair<String, String>> = emptyList()
+    var internalData: String = ""
+    var initialized: Boolean = false
+
+    // Ext lib 16 constructor (ABI compat — extensions built against newer aniyomi-lib
+    // invoke this signature through the synthetic default-args overload)
+    constructor(
+        videoUrl: String = "",
+        videoTitle: String = "",
+        resolution: Int? = null,
+        bitrate: Int? = null,
+        headers: Headers? = null,
+        preferred: Boolean = false,
+        subtitleTracks: List<Track> = emptyList(),
+        audioTracks: List<Track> = emptyList(),
+        timestamps: List<TimeStamp> = emptyList(),
+        mpvArgs: List<Pair<String, String>> = emptyList(),
+        ffmpegStreamArgs: List<Pair<String, String>> = emptyList(),
+        ffmpegVideoArgs: List<Pair<String, String>> = emptyList(),
+        internalData: String = "",
+        initialized: Boolean = false,
+    ) : this(videoUrl, videoTitle, videoUrl, headers, subtitleTracks, audioTracks, videoTitle) {
+        this.resolution = resolution
+        this.bitrate = bitrate
+        this.preferred = preferred
+        this.timestamps = timestamps
+        this.mpvArgs = mpvArgs
+        this.ffmpegStreamArgs = ffmpegStreamArgs
+        this.ffmpegVideoArgs = ffmpegVideoArgs
+        this.internalData = internalData
+        this.initialized = initialized
+    }
+
+    @Transient
+    val memo: JsonObject = JsonObject(emptyMap())
 
     @Transient
     @Volatile

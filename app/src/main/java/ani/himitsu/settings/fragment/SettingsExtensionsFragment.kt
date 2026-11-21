@@ -105,8 +105,12 @@ class SettingsExtensionsFragment : Fragment() {
             }
 
             fun processUserInput(input: String, mediaType: MediaType, view: ViewGroup) {
-                val entry = if (input.endsWith("/") || input.endsWith(".min.json"))
-                    input.substring(0, input.lastIndexOf("/")) else input
+                // IMEs can auto-insert spaces into URLs; a malformed entry
+                // silently breaks index fetches and APK downloads.
+                val cleaned = input.replace(Regex("\\s+"), "")
+                if (cleaned.isEmpty()) return
+                val entry = if (cleaned.endsWith("/") || cleaned.endsWith(".min.json"))
+                    cleaned.substring(0, cleaned.lastIndexOf("/")) else cleaned
                 val prefName: PrefName = when (mediaType) {
                     MediaType.ANIME -> { PrefName.AnimeExtensionRepos }
                     MediaType.MANGA -> { PrefName.MangaExtensionRepos }
@@ -137,6 +141,7 @@ class SettingsExtensionsFragment : Fragment() {
                             val dialogView = DialogUserAgentBinding.inflate(layoutInflater)
                             val editText = dialogView.userAgentTextBox.apply {
                                 hint = getString(R.string.anime_add_repository)
+                                inputType = android.text.InputType.TYPE_TEXT_VARIATION_URI
                             }
                             settings.customAlertDialog().apply {
                                 setCancellable(true)
@@ -177,6 +182,7 @@ class SettingsExtensionsFragment : Fragment() {
                             val dialogView = DialogUserAgentBinding.inflate(layoutInflater)
                             val editText = dialogView.userAgentTextBox.apply {
                                 hint = getString(R.string.manga_add_repository)
+                                inputType = android.text.InputType.TYPE_TEXT_VARIATION_URI
                             }
                             settings.customAlertDialog().apply {
                                 setCancellable(true)
@@ -217,6 +223,7 @@ class SettingsExtensionsFragment : Fragment() {
                             val dialogView = DialogUserAgentBinding.inflate(layoutInflater)
                             val editText = dialogView.userAgentTextBox.apply {
                                 hint = getString(R.string.novel_add_repository)
+                                inputType = android.text.InputType.TYPE_TEXT_VARIATION_URI
                             }
                             settings.customAlertDialog().apply {
                                 setCancellable(true)

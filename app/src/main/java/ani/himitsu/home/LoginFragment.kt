@@ -46,7 +46,7 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding.loginButton.setOnClickListener { AniList.loginIntent(requireActivity()) }
         binding.loginDiscord.setOnClickListener { openLinkInBrowser(getString(R.string.discord_url)) }
-        binding.loginGitlab.setOnClickListener { openLinkInBrowser(getString(R.string.gitlab, getString(R.string.repo_gl))) }
+        binding.loginGitlab.setOnClickListener { openLinkInBrowser(getString(R.string.github, getString(R.string.repo_gh))) }
         binding.loginHimitsu.setOnClickListener { openLinkInBrowser(getString(R.string.himitsu_url)) }
 
         val openDocumentLauncher =

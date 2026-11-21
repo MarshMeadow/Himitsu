@@ -144,7 +144,7 @@ class SettingsAboutFragment : Fragment() {
                 openLinkInBrowser(getString(R.string.discord_url))
             }
             loginGitlab.setOnClickListener {
-                openLinkInBrowser(getString(R.string.gitlab, getString(R.string.repo_gl)))
+                openLinkInBrowser(getString(R.string.github, getString(R.string.repo_gh)))
             }
             binding.loginHimitsu.setOnClickListener {
                 openLinkInBrowser(getString(R.string.himitsu_url))
