@@ -1,10 +1,13 @@
 package ani.himitsu.home
 
 import android.app.AlertDialog
+import android.app.UiModeManager
 import android.content.ComponentName
+import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.content.res.Configuration
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -97,6 +100,14 @@ class LoginFragment : Fragment() {
 
         binding.importSettingsButton.setOnClickListener {
             openDocumentLauncher.launch(arrayOf("*/*"))
+        }
+
+        // On TV the ViewPager's internal RecyclerView grabs initial focus and
+        // swallows D-pad events, leaving the user stuck on this screen.
+        val uiModeManager =
+            requireContext().getSystemService(Context.UI_MODE_SERVICE) as UiModeManager
+        if (uiModeManager.currentModeType == Configuration.UI_MODE_TYPE_TELEVISION) {
+            binding.loginButton.requestFocus()
         }
 
         if (!Version.isHimitsu) return
