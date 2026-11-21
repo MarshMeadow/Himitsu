@@ -342,7 +342,12 @@ class DynamicMangaParser(extension: MangaExtension.Installed) : MangaParser() {
         } as? HttpSource ?: return emptyList()
 
         return try {
-            val res = source.getChapterList(sManga)
+            val res = source.getMangaUpdate(
+                sManga,
+                emptyList(),
+                fetchDetails = false,
+                fetchChapters = true,
+            ).chapters
             val reversedRes = res.reversed()
             val chapterList = reversedRes.map { sChapterToMangaChapter(it) }
             Logger.log("chapterList title: ${chapterList[0].title}, description: ${chapterList[0].description}, size: ${chapterList.size}")
@@ -427,7 +432,7 @@ class DynamicMangaParser(extension: MangaExtension.Installed) : MangaParser() {
         } as? HttpSource ?: return emptyList()
 
         return try {
-            val res = source.fetchSearchManga(1, query, source.getFilterList()).awaitSingle()
+            val res = source.getSearchManga(1, query, source.getFilterList())
             Logger.log("res observable: $res")
             convertMangasPageToShowResponse(res)
         } catch (e: CloudflareBypassException) {

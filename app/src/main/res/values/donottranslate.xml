@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Himitsu</string>
+    <string name="app_name">HimitsuX</string>
 
     <string name="repo_gh">Nekomo-App/HimitsuX</string>
     <string name="repo_gl">Nekomo-App/HimitsuX</string>
 
     <string name="preference_file_key">dantotsuprefs</string>
 
-    <string name="git_issue_title">[Logcat]: Himitsu #%1$s</string>
+    <string name="git_issue_title">[Logcat]: HimitsuX #%1$s</string>
 
-    <string name="himitsu_url">https://animecross.xyz</string>
+    <string name="himitsu_url">https://github.com/Nekomo-App/HimitsuX</string>
     <string name="discord_txt">Himitsu Discord</string>
     <string name="discord_bot">file:///android_asset/discord.html</string>
     <string name="discord_url">https://discord.gg/vnrhgrt</string>
@@ -17,7 +17,7 @@
     <string name="gitlab">https://gitlab.com/%1$s</string>
     <string name="coffee">https://www.buymeacoffee.com/abandonedcart</string>
 
-    <string name="rpc_intent">intent://%1$s#Intent;scheme=himitsu;package=%2$s;S.browser_fallback_url=https%%3A%%2F%%2Frepodevil.vercel.app;end</string>
+    <string name="rpc_intent">intent://%1$s#Intent;scheme=himitsu;package=%2$s;S.browser_fallback_url=https%%3A%%2F%%2Fgithub.com%%2FNekomo-App%%2FHimitsuX;end</string>
 
     <string name="anilist_link">https://anilist.co/user/%1$s/</string>
     <string name="myanilist_link">https://myanimelist.net/profile/%1$s/</string>

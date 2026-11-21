@@ -7,8 +7,8 @@ buildscript {
         maven { url 'https://jitpack.io' }
     }
     ext {
-        kotlin_version = '1.9.23'
-        ksp_version = '1.9.23-1.0.20'
+        kotlin_version = '2.0.21'
+        ksp_version = '2.0.21-1.0.28'
     }
 
     dependencies {

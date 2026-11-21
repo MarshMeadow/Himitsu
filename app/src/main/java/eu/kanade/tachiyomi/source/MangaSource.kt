@@ -3,7 +3,10 @@ package eu.kanade.tachiyomi.source
 import eu.kanade.tachiyomi.source.model.Page
 import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.source.model.SManga
+import eu.kanade.tachiyomi.source.model.SMangaUpdate
 import eu.kanade.tachiyomi.util.lang.awaitSingle
+import kotlinx.coroutines.async
+import kotlinx.coroutines.supervisorScope
 import rx.Observable
 
 /**
@@ -74,6 +77,24 @@ interface MangaSource {
     @Suppress("DEPRECATION")
     suspend fun getChapterList(manga: SManga): List<SChapter> {
         return fetchChapterList(manga).awaitSingle()
+    }
+
+    /**
+     * [1.x API] Fetches updated information for a manga.
+     *
+     * Extensions built against extensions-lib 1.6+ override this directly;
+     * older extensions get the behaviour via [getMangaDetails]/[getChapterList].
+     */
+    @Suppress("DEPRECATION")
+    suspend fun getMangaUpdate(
+        manga: SManga,
+        chapters: List<SChapter>,
+        fetchDetails: Boolean,
+        fetchChapters: Boolean,
+    ): SMangaUpdate = supervisorScope {
+        val asyncManga = if (fetchDetails) async { getMangaDetails(manga) } else null
+        val asyncChapters = if (fetchChapters) async { getChapterList(manga) } else null
+        SMangaUpdate(asyncManga?.await() ?: manga, asyncChapters?.await() ?: chapters)
     }
 
     /**

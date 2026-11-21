@@ -33,6 +33,8 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.FlowPreview
+import kotlinx.coroutines.flow.debounce
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
@@ -60,20 +62,20 @@ class AnimeExtensionsViewModel(
         currentPagingSource?.invalidate()
     }
 
-    @OptIn(ExperimentalCoroutinesApi::class)
+    @OptIn(ExperimentalCoroutinesApi::class, FlowPreview::class)
     val pagerFlow: Flow<PagingData<AnimeExtension.Available>> = combine(
         animeExtensionManager.availableExtensionsFlow,
         animeExtensionManager.installedExtensionsFlow,
-        searchQuery
+        searchQuery.debounce(350),
     ) { available, installed, query ->
         Triple(available, installed, query)
     }.flatMapLatest { (available, installed, query) ->
         Pager(
             PagingConfig(
                 pageSize = 20,
-                initialLoadSize = available.size + installed.size,
+                initialLoadSize = 60,
                 prefetchDistance = 10,
-                enablePlaceholders = true
+                enablePlaceholders = false
             )
         ) {
             AnimeExtensionPagingSource(available, installed, query). also {

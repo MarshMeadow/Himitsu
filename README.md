@@ -1,13 +1,14 @@
 <p align="center">
 <img src="https://img.shields.io/badge/platforms-android-blueviolet?style=for-the-badge"/>
-<a href="https://github.com/RepoDevil/Himitsu/releases"><img src="https://img.shields.io/github/actions/workflow/status/RepoDevil/Himitsu/tsubaki.yml?color=%233DDC84&logo=android&logoColor=%23fff&style=for-the-badge"></a>
+<a href="https://github.com/Nekomo-App/HimitsuX/releases"><img src="https://img.shields.io/github/actions/workflow/status/Nekomo-App/HimitsuX/tsubaki.yml?color=%233DDC84&logo=android&logoColor=%23fff&style=for-the-badge"></a>
 </p>
 <p align="center">
 <a href="https://discord.gg/vnrhgrt"><img src="https://invidget.switchblade.xyz/vnrhgrt"></a>
 </p>
 
-# **Himitsu** ㊙️
+# **HimitsuX** ㊙️
 
+> **HimitsuX** is developed and maintained by [Nekosphere](https://github.com/Nekomo-App), founded and led by **N3K0**.
 > **Himitsu (秘密; Him-itsu)** means "secret" in Japanese. *Shhh*
 
 <br />

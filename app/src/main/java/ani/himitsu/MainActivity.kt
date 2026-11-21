@@ -570,7 +570,9 @@ class MainActivity : AppCompatActivity() {
 //    }
 
     override fun onDestroy() {
-        torrServerKill()
+        try {
+            torrServerKill()
+        } catch (ignored: Throwable) { }
         hasCompletedLoading = -1
         hasConfirmedSession = false
         super.onDestroy()

@@ -257,37 +257,48 @@ class SelectorDialogFragment : BottomSheetDialogFragment() {
 
     @androidx.annotation.OptIn(UnstableApi::class)
     private suspend fun launchWithTorrentServer(video: Video) = withContext(Dispatchers.IO) {
-        ExoplayerView.torrent?.hash?.let {
-            runBlocking(Dispatchers.IO) { TorrManager.removeTorrent(it) }
-        }
-        val index = if (video.file.url.contains("index=")) {
-            try {
-                video.file.url.substringAfter("index=").toInt()
-            } catch (ignored: NumberFormatException) {
+        try {
+            ExoplayerView.torrent?.hash?.let {
+                runBlocking(Dispatchers.IO) { TorrManager.removeTorrent(it) }
+            }
+            val index = if (video.file.url.contains("index=")) {
+                try {
+                    video.file.url.substringAfter("index=").toInt()
+                } catch (ignored: NumberFormatException) {
+                    0
+                }
+            } else {
                 0
             }
-        } else {
-            0
-        }
-        ExoplayerView.torrent = TorrManager.addTorrent(
-            video.file.url, video.quality.toString(), "", "", false
-        ).apply {
-            video.file.url = this.getPlayLink(index)
-        }
+            ExoplayerView.torrent = TorrManager.addTorrent(
+                video.file.url, video.quality.toString(), "", "", false
+            ).apply {
+                video.file.url = this.getPlayLink(index)
+            }
+        } catch (ignored: Throwable) { }
     }
 
     private fun parseMagnetLink(video: Video, ep: Episode, videoUrl: String): Boolean {
         if (videoUrl.startsWith("magnet:") || videoUrl.endsWith(".torrent")) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                val serviceRunning = try {
+                    TorrManager.isServiceRunning()
+                } catch (ignored: Throwable) {
+                    false
+                }
                 if (!PrefManager.getVal<Boolean>(PrefName.TorrServerEnabled)
-                    && !TorrManager.isServiceRunning()
+                    && !serviceRunning
                 ) {
                     val dialog = AlertDialog.Builder(requireContext(), R.style.MyPopup)
                         .setTitle(R.string.server_disabled)
                         .setMessage(R.string.enable_server_temp)
                         .setPositiveButton(R.string.yes) { dialog, _ ->
-                            torrServerStart()
-                            toast(R.string.server_enabled)
+                            try {
+                                torrServerStart()
+                                toast(R.string.server_enabled)
+                            } catch (ignored: Throwable) {
+                                snackString(R.string.error)
+                            }
                             dialog.dismiss()
                         }
                         .setNegativeButton(R.string.no) { dialog, _ ->

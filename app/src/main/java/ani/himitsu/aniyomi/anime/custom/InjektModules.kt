@@ -21,6 +21,7 @@ import eu.kanade.tachiyomi.source.anime.AndroidAnimeSourceManager
 import eu.kanade.tachiyomi.source.manga.AndroidMangaSourceManager
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.protobuf.ProtoBuf
 import tachiyomi.core.preference.PreferenceStore
 import tachiyomi.domain.source.anime.service.AnimeSourceManager
 import tachiyomi.domain.source.manga.service.MangaSourceManager
@@ -53,6 +54,12 @@ class AppModule(val app: Application) : InjektModule {
             Json {
                 ignoreUnknownKeys = true
                 explicitNulls = false
+            }
+        }
+
+        addSingletonFactory {
+            ProtoBuf {
+                encodeDefaults = true
             }
         }
 

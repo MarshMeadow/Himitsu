@@ -363,7 +363,9 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
         val extension = intent.getStringExtra("extension")
         if (media.anime != null) {
             if (PrefManager.getVal(PrefName.TorrServerEnabled))
-                torrServerStart()
+                try {
+                    torrServerStart()
+                } catch (ignored: Throwable) { }
             binding.mediaViewPager.adapter = ViewPagerAdapter(
                 supportFragmentManager,
                 lifecycle,

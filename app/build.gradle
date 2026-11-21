@@ -18,7 +18,11 @@ android {
 
     defaultConfig {
         applicationId "ani.himitsu"
-        minSdk 21
+        // minSdk 24+: dex-loaded extensions call default interface methods on the
+        // shared extension-lib runtime (e.g. GeneratedSerializer.typeParametersSerializers);
+        // below 24 D8 desugars them into DefaultImpls and old extension classes die
+        // with AbstractMethodError.
+        minSdk 24
         targetSdk 34
         versionName "1.0.0"
         versionCode = versionName.replace(".","").toInteger() * 10
@@ -100,9 +104,14 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+    packaging {
+        resources {
+            excludes += "META-INF/versions/9/OSGI-INF/MANIFEST.MF"
+        }
+    }
     kotlinOptions {
         jvmTarget = '17'
-        freeCompilerArgs = ["-Xcontext-receivers", "-Xmulti-platform",
+        freeCompilerArgs = ["-Xmulti-platform",
                             "-Xskip-metadata-version-check", "-Xskip-prerelease-check"]
     }
     lint {
@@ -146,9 +155,10 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.google.code.gson:gson:2.10.1'
     implementation 'com.github.Blatzar:NiceHttp:0.4.4'
-    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-protobuf:1.8.0'
     implementation 'androidx.preference:preference-ktx:1.2.1'
-    implementation 'androidx.webkit:webkit:1.11.0'
+    implementation 'androidx.webkit:webkit:1.8.0'
     implementation "com.anggrayudi:storage:1.5.5"
 
     /* User Interface */
@@ -235,13 +245,14 @@ dependencies {
     implementation 'com.squareup.logcat:logcat:0.1'
     // 65b0440 is gone from JitPack; d649d37 is the last good injekt build.
     implementation 'com.github.inorichi.injekt:injekt-core:d649d37'
-    implementation 'com.squareup.okhttp3:logging-interceptor:5.1.0'
-    implementation 'com.squareup.okhttp3:okhttp:5.1.0'
-    implementation 'com.squareup.okhttp3:okhttp-dnsoverhttps'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.3.2'
+    implementation 'com.squareup.okhttp3:okhttp:5.3.2'
+    implementation 'com.squareup.okhttp3:okhttp-dnsoverhttps:5.3.2'
     implementation 'com.squareup.okio:okio:3.8.0'
-    implementation 'com.squareup.okhttp3:okhttp-brotli:5.1.0'
+    implementation 'com.squareup.okhttp3:okhttp-brotli:5.3.2'
+    implementation 'com.squareup.okhttp3:okhttp-zstd:5.3.2'
     implementation 'org.jsoup:jsoup:1.17.2'
-    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json-okio:1.6.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json-okio:1.8.0'
     implementation 'com.jakewharton.rxrelay:rxrelay:1.2.0'
     implementation 'com.github.tachiyomiorg:unifile:17bec43'
     implementation 'com.github.gpanther:java-nat-sort:natural-comparator-1.1'

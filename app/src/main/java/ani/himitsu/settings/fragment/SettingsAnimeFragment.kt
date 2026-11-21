@@ -147,11 +147,17 @@ class SettingsAnimeFragment : Fragment() {
 
             settingsTorrServer.isChecked = PrefManager.getVal(PrefName.TorrServerEnabled)
             settingsTorrServer.setOnCheckedChangeListener { _, isChecked ->
-                if (isChecked)
-                    torrServerStart()
-                else
-                    torrServerStop()
-                PrefManager.setVal(PrefName.TorrServerEnabled, isChecked)
+                try {
+                    if (isChecked)
+                        torrServerStart()
+                    else
+                        torrServerStop()
+                    PrefManager.setVal(PrefName.TorrServerEnabled, isChecked)
+                } catch (ignored: Throwable) {
+                    settingsTorrServer.isChecked = false
+                    PrefManager.setVal(PrefName.TorrServerEnabled, false)
+                    snackString(R.string.error)
+                }
             }
 
             torrentPortNumber.setText(TorrentServerUtils.port)
@@ -161,9 +167,11 @@ class SettingsAnimeFragment : Fragment() {
                 ) {
                     snackString(R.string.invalid_port)
                 }
-                torrServerStop()
-                TorrentServerUtils.port = torrentPortNumber.text.toString()
-                torrServerStart()
+                try {
+                    torrServerStop()
+                    TorrentServerUtils.port = torrentPortNumber.text.toString()
+                    torrServerStart()
+                } catch (ignored: Throwable) { }
             })
         }
     }

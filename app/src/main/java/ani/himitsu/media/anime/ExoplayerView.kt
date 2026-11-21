@@ -2419,7 +2419,11 @@ open class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabi
         }
 
         torrent?.hash?.let {
-            runBlocking(Dispatchers.IO) { removeTorrent(it) }
+            runBlocking(Dispatchers.IO) {
+                try {
+                    removeTorrent(it)
+                } catch (ignored: Throwable) { }
+            }
             torrent = null
         }
 
