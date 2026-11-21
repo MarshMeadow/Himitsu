@@ -48,6 +48,7 @@ import eu.kanade.tachiyomi.source.model.SChapterImpl
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
@@ -198,6 +199,64 @@ class AnimeDownloaderService : Service() {
         notificationManager.notify(NOTIFICATION_ID, builder.build())
     }
 
+    /**
+     * Download an HLS stream by fetching the playlist and concatenating its
+     * segments into a single MPEG-TS file. Used for http:// URLs, which the
+     * download add-on cannot handle because it always passes -tls_verify.
+     */
+    private suspend fun downloadHlsToTemp(
+        task: AnimeDownloadTask,
+        outputDir: DocumentFile,
+        onProgress: suspend (Int) -> Unit
+    ): DocumentFile = withContext(Dispatchers.IO) {
+        fun open(u: URL): HttpURLConnection = (u.openConnection() as HttpURLConnection).apply {
+            task.video.file.headers.forEach { (k, v) -> setRequestProperty(k, v) }
+            connectTimeout = 20_000
+            readTimeout = 30_000
+        }
+
+        val base = URL(task.video.file.url)
+        val playlist = open(base).let { conn ->
+            try {
+                conn.inputStream.bufferedReader().use { it.readText() }
+            } finally {
+                conn.disconnect()
+            }
+        }
+        if (playlist.contains("#EXT-X-KEY")) {
+            throw Exception("Encrypted HLS is not supported for http downloads")
+        }
+        val segments = playlist.lines()
+            .map { it.trim() }
+            .filter { it.isNotEmpty() && !it.startsWith("#") }
+            .map { URL(base, it) }
+        if (segments.isEmpty()) throw Exception("Playlist has no segments")
+
+        val temp = outputDir.createFile(
+            "video/mp2t",
+            "tmp_${task.getTaskName().findValidName()}.ts"
+        ) ?: throw Exception("Failed to create temp file")
+
+        try {
+            contentResolver.openOutputStream(temp.uri, "w")?.buffered()?.use { out ->
+                segments.forEachIndexed { i, seg ->
+                    coroutineContext.ensureActive()
+                    val conn = open(seg)
+                    try {
+                        conn.inputStream.use { it.copyTo(out, 64 * 1024) }
+                    } finally {
+                        conn.disconnect()
+                    }
+                    onProgress(((i + 1) * 90) / segments.size)
+                }
+            } ?: throw Exception("Failed to open temp output stream")
+        } catch (e: Exception) {
+            temp.forceDelete(this@AnimeDownloaderService)
+            throw e
+        }
+        temp
+    }
+
     @androidx.annotation.OptIn(UnstableApi::class)
     suspend fun download(task: AnimeDownloadTask) = withContext(Dispatchers.IO) {
         try {
@@ -242,15 +301,36 @@ class AnimeDownloaderService : Service() {
                 task.video.file.headers = newHeaders
             }
 
-            ffExtension.executeFFProbe(
-                task.video.file.url,
-                task.video.file.headers
-            ) {
-                if (it.toDoubleOrNull() != null) {
-                    totalLength = it.toDouble()
+            var hlsTemp: DocumentFile? = null
+            val ffTask = if (task.video.file.url.startsWith("http://", true)) {
+                // The download add-on always passes -tls_verify to ffmpeg, which is
+                // fatal for non-TLS inputs (e.g. extension localhost proxy URLs like
+                // http://127.0.0.1/pl/N). Fetch the HLS stream ourselves and let the
+                // add-on remux the concatenated .ts instead.
+                hlsTemp = downloadHlsToTemp(task, outputDir) { p ->
+                    percent = p
+                    builder.setProgress(100, percent.coerceAtMost(99), false)
+                    broadcastDownloadProgress(task.episode, percent.coerceAtMost(99))
+                    if (notifi) {
+                        withContext(Dispatchers.Main) {
+                            notificationManager.notify(NOTIFICATION_ID, builder.build())
+                        }
+                    }
                 }
-            }
-            val ffTask =
+                val tempRead =
+                    ffExtension!!.getReadPath(this@AnimeDownloaderService, hlsTemp!!.uri)
+                ffExtension.customFFMpeg("1", listOf(tempRead, path)) {
+                    Logger.log(it)
+                }
+            } else {
+                ffExtension.executeFFProbe(
+                    task.video.file.url,
+                    task.video.file.headers
+                ) {
+                    if (it.toDoubleOrNull() != null) {
+                        totalLength = it.toDouble()
+                    }
+                }
                 ffExtension.executeFFMpeg(
                     task.video.file.url,
                     path,
@@ -265,6 +345,7 @@ class AnimeDownloaderService : Service() {
                     }
                     Logger.log("Statistics: $it")
                 }
+            }
             task.sessionId = ffTask
             currentTasks.find { it.getTaskName() == task.getTaskName() }?.sessionId =
                 ffTask
@@ -301,10 +382,12 @@ class AnimeDownloaderService : Service() {
                                     " ${getTaskName(task.title, task.episode)}" +
                                     " url: ${task.video.file.url}" +
                                     " title: ${task.title}" +
-                                    " episode: ${task.episode}"
+                                    " episode: ${task.episode}" +
+                                    "\nffmpeg: ${ffExtension.getStackTrace(ffTask)}"
                         )
                     )
                     currentTasks.removeAll { it.getTaskName() == task.getTaskName() }
+                    hlsTemp?.forceDelete(this@AnimeDownloaderService)
                     broadcastDownloadFailed(task.episode)
                     break
                 }
@@ -351,10 +434,12 @@ class AnimeDownloaderService : Service() {
                                     " ${getTaskName(task.title, task.episode)}" +
                                     " url: ${task.video.file.url}" +
                                     " title: ${task.title}" +
-                                    " episode: ${task.episode}"
+                                    " episode: ${task.episode}" +
+                                    "\nffmpeg: ${ffExtension.getStackTrace(ffTask)}"
                         )
                     )
                     currentTasks.removeAll { it.getTaskName() == task.getTaskName() }
+                    hlsTemp?.forceDelete(this@AnimeDownloaderService)
                     broadcastDownloadFailed(task.episode)
                     return@withContext
                 }
@@ -384,6 +469,7 @@ class AnimeDownloaderService : Service() {
                 )
 
                 currentTasks.removeAll { it.getTaskName() == task.getTaskName() }
+                hlsTemp?.forceDelete(this@AnimeDownloaderService)
                 broadcastDownloadFinished(task.episode)
             } else throw Exception("Download failed")
         } catch (e: Exception) {

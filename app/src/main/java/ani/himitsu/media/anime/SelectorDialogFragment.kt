@@ -46,7 +46,8 @@ import ani.himitsu.parsers.VideoExtractor
 import ani.himitsu.parsers.VideoType
 import ani.himitsu.setNavigationTheme
 import ani.himitsu.setSafeOnClickListener
-import ani.himitsu.settings.fragment.SettingsAddonFragment
+import ani.himitsu.settings.Page
+import ani.himitsu.settings.SettingsActivity
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.snackString
@@ -499,7 +500,8 @@ class SelectorDialogFragment : BottomSheetDialogFragment() {
                             setPosButton(R.string.yes) {
                                 ContextCompat.startActivity(
                                     currContext(),
-                                    Intent(currContext(), SettingsAddonFragment::class.java),
+                                    Intent(currContext(), SettingsActivity::class.java)
+                                        .putExtra("fragment", Page.ADDON.name),
                                     null
                                 )
                             }
