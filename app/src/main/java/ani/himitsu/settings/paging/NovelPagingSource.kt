@@ -105,20 +105,18 @@ class NovelExtensionPagingSource(
         } else {
             availableExtensions.filter { it.name.contains(query, ignoreCase = true) }
         }
-        /*val filternfsw = if(isNsfwEnabled) {  currently not implemented
-            filteredExtensions
-        } else {
-            filteredExtensions.filterNot { it.isNsfw }
-        }*/
+        val isNsfwEnabled: Boolean = PrefManager.getVal(PrefName.NSFWExtension)
+        val filteredList =
+            if (isNsfwEnabled) filteredExtensions else filteredExtensions.filterNot { it.isNsfw }
         return try {
-            val sublist = filteredExtensions.subList(
+            val sublist = filteredList.subList(
                 fromIndex = position,
-                toIndex = (position + params.loadSize).coerceAtMost(filteredExtensions.size)
+                toIndex = (position + params.loadSize).coerceAtMost(filteredList.size)
             )
             LoadResult.Page(
                 data = sublist,
                 prevKey = if (position == 0) null else position - params.loadSize,
-                nextKey = if (position + params.loadSize >= filteredExtensions.size) null else position + params.loadSize
+                nextKey = if (position + params.loadSize >= filteredList.size) null else position + params.loadSize
             )
         } catch (e: Exception) {
             LoadResult.Error(e)

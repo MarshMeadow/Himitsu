@@ -10,7 +10,7 @@ import java.io.File
 
 object TorrentServerUtils {
     private val preferences: TorrentServerPreferences by injectLazy()
-    val hostUrl = "http://127.0.0.1:${port}"
+    val hostUrl get() = "http://127.0.0.1:${port}"
 
     private val animeTrackers = preferences.trackers().get().split("\n").joinToString(",\n")
 

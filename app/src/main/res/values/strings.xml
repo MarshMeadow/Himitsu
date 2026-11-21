@@ -783,6 +783,7 @@
     <string name="purge_novel_downloads">Delete all Novel Downloads</string>
     <string name="requires_android_12">Requires Android 12+</string>
     <string name="share_username_in_logs">Share username in logs</string>
+    <string name="verbose_logging">Verbose network logging</string>
     <string name="pinned_sources">Pinned Sources</string>
     <string name="backup_restore">Backup and Restore</string>
     <string name="restore_settings">Import Settings</string>
@@ -792,6 +793,7 @@
     <string name="faq_desc">General questions about HimitsuX</string>
     <string name="check_app_updates_desc">Check Github for app updates</string>
     <string name="share_username_in_logs_desc">Include username in crash reports</string>
+    <string name="verbose_logging_desc">Log every HTTP request and response for debugging</string>
     <string name="devs_desc">HimitsuX\'s very own unpaid laborers</string>
     <string name="forks_desc">Projects derived from Dantotsu</string>
     <string name="disclaimer_desc">Something to keep in mind</string>

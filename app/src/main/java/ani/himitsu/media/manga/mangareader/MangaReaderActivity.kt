@@ -579,6 +579,7 @@ class MangaReaderActivity : AppCompatActivity() {
             currentChapterPage
         }.toInt()
 
+        binding.mangaReaderSwipy.isEnabled = defaultSettings.overScrollMode
         if ((defaultSettings.direction == TOP_TO_BOTTOM || defaultSettings.direction == BOTTOM_TO_TOP)) {
             binding.mangaReaderSwipy.vertical = true
             if (defaultSettings.direction == TOP_TO_BOTTOM) {

@@ -58,13 +58,6 @@ class SettingsMangaFragment : Fragment() {
                         isActivity = true
                     ),
                     Settings(
-                        type = ViewType.SWITCH,
-                        name = getString(R.string.comic_format),
-                        desc = getString(R.string.comic_format_desc),
-                        icon = R.drawable.ic_menu_book_24,
-                        pref = PrefName.ComicBookFormat
-                    ),
-                    Settings(
                         type = ViewType.BUTTON,
                         name = getString(R.string.purge_manga_downloads),
                         icon = R.drawable.ic_round_delete_24,

@@ -147,6 +147,11 @@ object Logger {
 
         return buildString {
             append("Date/time: ${Date()}\n")
+            if (PrefManager.getVal<Boolean>(PrefName.SharedUserID)) {
+                ani.himitsu.connections.anilist.AniList.username?.let {
+                    append("Username: $it\n")
+                }
+            }
             append("Device: ${Build.MODEL}\n")
             append("OS version: ${Build.VERSION.RELEASE}\n")
             append("App version: $versionName\n")

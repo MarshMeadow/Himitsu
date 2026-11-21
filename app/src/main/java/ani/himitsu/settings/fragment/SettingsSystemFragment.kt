@@ -244,6 +244,13 @@ class SettingsSystemFragment : Fragment() {
                     ),
                     Settings(
                         type = ViewType.SWITCH,
+                        name = getString(R.string.verbose_logging),
+                        desc = getString(R.string.verbose_logging_desc),
+                        icon = R.drawable.ic_round_search_24,
+                        pref = PrefName.VerboseLogging
+                    ),
+                    Settings(
+                        type = ViewType.SWITCH,
                         name = getString(R.string.log_to_file),
                         desc = getString(R.string.logging_warning),
                         icon = R.drawable.ic_round_edit_note_24,

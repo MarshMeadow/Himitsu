@@ -162,16 +162,17 @@ class SettingsAnimeFragment : Fragment() {
 
             torrentPortNumber.setText(TorrentServerUtils.port)
             torrentPortNumber.setOnEditorActionListener(onCompletedAction {
-                if (torrentPortNumber.text.toString().toInt() < 0
-                    || torrentPortNumber.text.toString().toInt() > 65535
-                ) {
+                val portValue = torrentPortNumber.text.toString().toIntOrNull() ?: -1
+                if (portValue < 0 || portValue > 65535) {
                     snackString(R.string.invalid_port)
+                    torrentPortNumber.setText(TorrentServerUtils.port)
+                } else {
+                    try {
+                        torrServerStop()
+                        TorrentServerUtils.port = torrentPortNumber.text.toString()
+                        torrServerStart()
+                    } catch (ignored: Throwable) { }
                 }
-                try {
-                    torrServerStop()
-                    TorrentServerUtils.port = torrentPortNumber.text.toString()
-                    torrServerStart()
-                } catch (ignored: Throwable) { }
             })
         }
     }

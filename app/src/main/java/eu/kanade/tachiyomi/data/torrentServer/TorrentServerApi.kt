@@ -15,7 +15,7 @@ import java.io.InputStream
 
 object TorrentServerApi {
     private val network: NetworkHelper by injectLazy()
-    private val hostUrl = TorrentServerUtils.hostUrl
+    private val hostUrl get() = TorrentServerUtils.hostUrl
 
     fun echo(): String {
         return try {

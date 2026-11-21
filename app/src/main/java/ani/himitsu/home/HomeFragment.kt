@@ -745,11 +745,13 @@ class HomeFragment : Fragment() {
                         }
                     }
 
-                    ResumableShortcuts.updateShortcuts(
-                        context,
-                        model.getAnimeContinue().value,
-                        model.getMangaContinue().value
-                    )
+                    if (PrefManager.getVal<Boolean>(PrefName.UseShortcuts)) {
+                        ResumableShortcuts.updateShortcuts(
+                            context,
+                            model.getAnimeContinue().value,
+                            model.getMangaContinue().value
+                        )
+                    }
                     ResumableWidget.injectUpdate(
                         context,
                         model.getAnimeContinue().value,

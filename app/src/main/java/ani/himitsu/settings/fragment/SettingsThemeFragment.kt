@@ -165,7 +165,7 @@ class SettingsThemeFragment : Fragment(), SimpleDialog.OnDialogResultListener {
             }
 
             settingsUiLight.setOnClickListener {
-                val oledSwitch = settingsRecyclerView.findViewHolderForAdapterPosition(1)
+                val oledSwitch = settingsRecyclerView.findViewHolderForAdapterPosition(0)
                         as SettingsAdapter.SettingsSwitchViewHolder
                 oledSwitch.binding.settingsButton.isChecked = false
                 PrefManager.setVal(PrefName.UseOLED, false)

@@ -113,6 +113,7 @@ class UserInterfaceFragment : Fragment() {
                     Settings(
                         type = ViewType.SWITCH,
                         name = getString(R.string.immersive_mode),
+                        desc = getString(R.string.immersive_mode_info),
                         icon = R.drawable.ic_round_fullscreen_24,
                         pref = PrefName.ImmersiveMode
                     ),

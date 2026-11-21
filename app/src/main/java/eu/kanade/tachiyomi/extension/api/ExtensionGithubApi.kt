@@ -174,11 +174,12 @@ internal class ExtensionGithubApi {
                 )
             }
             NovelExtension.Available(
-                extension.name,
-                extension.pkg,
-                extension.apk,
-                extension.code,
-                sources?.toNovelSources() ?: emptyList(),
+                name = extension.name,
+                pkgName = extension.pkg,
+                versionName = extension.apk,
+                versionCode = extension.code,
+                isNsfw = extension.nsfw == 1,
+                sources = sources?.toNovelSources() ?: emptyList(),
                 repository = repository,
                 iconUrl = extension.iconUrl.ifEmpty { "${repository}/icon/${extension.pkg}.png" },
             )
