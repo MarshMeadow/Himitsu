@@ -18,6 +18,10 @@ captures/
 *.aar
 *.apk
 *.jar
+
+# Recovered dependencies — required to build, see app/RECOVERED-DEPS.md
+!app/libs/bit-himitsu.jar
+!app/stubs/app-stubs.jar
 output.json
 
 # IntelliJ

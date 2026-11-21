@@ -59,6 +59,7 @@ import bit.himitsu.TorrManager
 import bit.himitsu.TorrManager.getPlayLink
 import bit.himitsu.torrServerStart
 import bit.himitsu.webkit.ChromeIntegration
+import bit.himitsu.webkit.openStreamTab
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

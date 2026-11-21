@@ -27,6 +27,7 @@ import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.toPx
 import bit.himitsu.ShellActivity
 import bit.himitsu.webkit.ChromeIntegration
+import bit.himitsu.webkit.openPluginTab
 import com.bumptech.glide.Glide
 import kotlinx.coroutines.launch
 import uy.kohesive.injekt.Injekt

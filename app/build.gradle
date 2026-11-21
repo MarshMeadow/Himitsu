@@ -120,22 +120,9 @@ android {
     }
 }
 
-tasks.register('torrserver') {
-    def f = new File('app/libs/server.aar')
-    if (!f.exists()) {
-        new URL(
-                'https://github.com/RepoDevil/TorrServer/raw/kuukiyomi/server.aar'
-        ).withInputStream { i -> f.withOutputStream { it << i } }
-    }
-    def s = new File('app/libs/server-sources.jar')
-    if (!s.exists()) {
-        new URL(
-                'https://github.com/RepoDevil/TorrServer/raw/kuukiyomi/server-sources.jar'
-        ).withInputStream { i -> s.withOutputStream { it << i } }
-    }
-}
-
-build.dependsOn tasks.torrserver
+// The original TorrServer aar was fetched from a repo that no longer exists.
+// recloudstream/torrentserver ships the same torrServer.TorrServer gomobile
+// API on JitPack and is maintained.
 
 dependencies {
     implementation 'androidx.activity:activity-ktx:1.9.1'
@@ -172,7 +159,8 @@ dependencies {
     implementation 'com.github.VipulOG:ebook-reader:0.1.6'
     implementation 'androidx.paging:paging-runtime-ktx:3.3.2'
     implementation 'com.github.eltos:simpledialogfragments:v3.7'
-    implementation 'com.github.AAChartModel:AAChartCore-Kotlin:7.2.1'
+    // 7.2.1 never built on JitPack; 7.2.3 is the closest published artifact.
+    implementation 'com.github.AAChartModel:AAChartCore-Kotlin:7.2.3'
 
     /* Glide */
     ext.glide_version = '4.16.0'
@@ -207,7 +195,14 @@ dependencies {
     implementation "androidx.mediarouter:mediarouter:1.7.0"
 
     /* TorrServer */
+    implementation 'com.github.recloudstream:torrentserver:7861970'
     implementation fileTree(dir: 'libs', include: ['*.aar', '*.jar'])
+
+    /* Compile-time stubs for the recovered bit.himitsu library: its binary
+       signatures reference app classes that only exist as sources, so the
+       1.0.0-era compiled app classes are provided for resolution only.
+       compileOnly => never packaged (real classes come from sources). */
+    compileOnly files('stubs/app-stubs.jar')
 
     /* Markwon */
     ext.markwon_version = '4.6.2'
@@ -237,7 +232,8 @@ dependencies {
     implementation 'ru.beryukhov:flowreactivenetwork:1.0.4'
     implementation 'ca.gosyer:voyager-navigator:1.0.0-rc07'
     implementation 'com.squareup.logcat:logcat:0.1'
-    implementation 'com.github.inorichi.injekt:injekt-core:65b0440'
+    // 65b0440 is gone from JitPack; d649d37 is the last good injekt build.
+    implementation 'com.github.inorichi.injekt:injekt-core:d649d37'
     implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.12'
     implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.12'
     implementation 'com.squareup.okhttp3:okhttp-dnsoverhttps'

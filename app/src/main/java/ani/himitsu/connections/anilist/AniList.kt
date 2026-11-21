@@ -11,6 +11,7 @@ import ani.himitsu.toast
 import ani.himitsu.util.Logger
 import bit.himitsu.nio.Strings.getString
 import bit.himitsu.webkit.ChromeIntegration
+import bit.himitsu.webkit.openStreamTab
 import java.util.Calendar
 
 object AniList {

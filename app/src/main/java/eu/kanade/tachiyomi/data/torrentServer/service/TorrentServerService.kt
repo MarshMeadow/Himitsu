@@ -57,7 +57,14 @@ class TorrentServerService : Service() {
         serviceScope.launch {
             if (TorrentServerApi.echo() == "") {
                 if (BuildConfig.DEBUG) Log.d("TorrentService", "startServer()")
-                torrServer.TorrServer.startTorrentServer(filesDir.absolutePath)
+                // recloudstream torrentserver takes an explicit port and
+                // returns the bound one; keep using the configured port so
+                // TorrentServerApi.hostUrl stays consistent.
+                go.Seq.load()
+                torrServer.TorrServer.startTorrentServer(
+                    filesDir.absolutePath,
+                    TorrentServerUtils.port.toLongOrNull() ?: 8090L,
+                )
                 wait(10)
                 TorrentServerUtils.setTrackersList()
             }

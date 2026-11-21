@@ -34,6 +34,7 @@ import ani.himitsu.snackString
 import ani.himitsu.toast
 import bit.himitsu.update.MatagiUpdater
 import bit.himitsu.webkit.ChromeIntegration
+import bit.himitsu.webkit.openStreamTab
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

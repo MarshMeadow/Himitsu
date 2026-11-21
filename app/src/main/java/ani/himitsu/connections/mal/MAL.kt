@@ -9,6 +9,7 @@ import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.tryWithSuspend
 import bit.himitsu.nio.Strings.getString
 import bit.himitsu.webkit.ChromeIntegration
+import bit.himitsu.webkit.openStreamTab
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import java.security.SecureRandom

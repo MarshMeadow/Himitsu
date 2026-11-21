@@ -335,7 +335,7 @@ class AniListMangaViewModel : ViewModel() {
     }
 }
 
-class AniListSearch : ViewModel() {
+class AnilistSearch : ViewModel() {
     var searched = false
     var notSet = true
     lateinit var searchResults: SearchResults
