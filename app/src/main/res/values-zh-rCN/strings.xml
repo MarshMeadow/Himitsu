@@ -660,7 +660,7 @@ _不需要同步 MAL 和 AniList 帐户。_
     <string name="question_15">握手失败？为什么没有时间戳加载？</string>
     <string name="answer_15">您可以通过从\n\`设置 &gt; 动画 &gt; 播放器设置 &gt; 分段 &gt; 代理\`启用“代理”来解决此问题。如果时间戳仍未加载，但握手失败弹出窗口已解决，则您正在观看的剧集目前还没有时间戳。</string>
     <string name="question_16">在源中找不到任何内容？</string>
-    <string name="answer_16">一些基本修复方法如下： \n\n• 如果有任何扩展程序，请更新它们。 \n• 打开Web视图并等待加载完成。加载完成后返回。（如果Web视图显示错误404或类似的内容，很有可能您的源已经关闭）\n• 在设置中使用不同的DNS，最好是Libre。 \n• 尝试一个可信的VPN。（这之后您将需要重复步骤1） \n\n如果上述步骤均无效，则使用其他来源或加入我们的[discord](https://discord.gg/invite/4HPZ5nAWwM)以寻求帮助。</string>
+    <string name="answer_16">一些基本修复方法如下： \n\n• 如果有任何扩展程序，请更新它们。 \n• 打开Web视图并等待加载完成。加载完成后返回。（如果Web视图显示错误404或类似的内容，很有可能您的源已经关闭）\n• 在设置中使用不同的DNS，最好是Libre。 \n• 尝试一个可信的VPN。（这之后您将需要重复步骤1） \n\n如果上述步骤均无效，则使用其他来源或加入我们的[discord](https://discord.com/invite/E4Ezmgg7Ka)以寻求帮助。</string>
     <string name="question_17">一些有用的技巧</string>
     <string name="answer_17">以下介绍了一些您可能不知道的提示和技巧 - \n \n \n - 在设置中长按秘密标志，您可以手动检查是否有任何新更新。 \n \n - 长按错误消息/标签/同义词或标题将复制它。 \n \n - 您可以通过长按该集的任何服务器来使用其他应用程序打开某一集。这有助于使用其他视频播放器流传该集或使用下载管理器下载该集。 \n \n - 您可以使用此[链接](https://anilist.co/settings/lists)设置自定义列表。（需要登录） \n \n - 如果您观看/阅读完一集后，该集并未自动标记为已完成，那么长按该动画/漫画的状态栏（计划/重复/观看按钮）。下次开始一章节/结束一个集时，您将遇到一个弹出窗口。在那里选择是。</string>
     <string name="subscribed_notification">已订阅！在%1$s发布新集时收到通知。</string>

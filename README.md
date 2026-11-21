@@ -3,7 +3,7 @@
 <a href="https://github.com/Nekomo-App/HimitsuX/releases"><img src="https://img.shields.io/github/actions/workflow/status/Nekomo-App/HimitsuX/tsubaki.yml?color=%233DDC84&logo=android&logoColor=%23fff&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://discord.gg/vnrhgrt"><img src="https://invidget.switchblade.xyz/vnrhgrt"></a>
+<a href="https://discord.com/invite/E4Ezmgg7Ka"><img src="https://invidget.switchblade.xyz/E4Ezmgg7Ka"></a>
 </p>
 
 # **HimitsuX** ㊙️

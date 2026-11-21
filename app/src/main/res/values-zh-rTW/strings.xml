@@ -647,7 +647,7 @@
     <string name="question_15">握手失敗？為什麼沒有載入時間戳記?</string>
     <string name="answer_15">您可以通過從\n\`設定 &gt; 動畫 &gt; 播放器設定 &gt; 段 &gt; 代理\`啟用\'代理\'來解決此問題。 如果時間戳記仍未載入，但握手失敗彈出窗口已解決，那麼您正在觀看的劇集可能尚未有時間戳記。</string>
     <string name="question_16">在來源中找不到任何內容?</string>
-    <string name="answer_16">一些基本修復方法包括：\n\n• 如果有任何擴展，請更新它們。\n• 打開Web查看並等待加載完成。 加載完成後返回。 （如果Web查看顯示錯誤404或類似內容，您的來源可能已關閉）\n• 使用來自您的設置的不同DNS，最好使用Libre。\n• 嘗試一個可靠的VPN。（這之後您將不得不重複第一步）\n\n如果上述任何步驟都無效，那麼請使用其他來源或加入我們的[discord](https://discord.gg/invite/4HPZ5nAWwM)尋求幫助。</string>
+    <string name="answer_16">一些基本修復方法包括：\n\n• 如果有任何擴展，請更新它們。\n• 打開Web查看並等待加載完成。 加載完成後返回。 （如果Web查看顯示錯誤404或類似內容，您的來源可能已關閉）\n• 使用來自您的設置的不同DNS，最好使用Libre。\n• 嘗試一個可靠的VPN。（這之後您將不得不重複第一步）\n\n如果上述任何步驟都無效，那麼請使用其他來源或加入我們的[discord](https://discord.com/invite/E4Ezmgg7Ka)尋求幫助。</string>
     <string name="question_17">一些有用的技巧</string>
     <string name="answer_17">以下提供一些您可能或可能不知道的技巧和訣竅 - \n \n \n - 通過長按設置中的秘密標誌，您可以手動檢查是否有任何新的更新。 \n \n - 長按錯誤消息/標籤/同義詞或標題將進行複製。 \n \n - 您可以通過長按任何該集數的任何服務器來使用其他應用程式打開一集。這有助於使用其他視頻播放器串流該集，或使用下載管理器下載該集。 \n \n - 您可以使用此 [link](https://anilist.co/settings/lists) 設置自定義列表。(您需要登錄) \n \n - 如果您觀看/閱讀完畢後，您的集數/章節未自動進度，請長按該動畫/漫畫的狀態欄(計劃/重複/觀看按鈕)。下次您開始一章節/完成一集時，您將遇到一個彈出窗口。請在那裡點擊是。</string>
     <string name="subscribed_notification">已訂閱！當有新集數在 %1$s 上發布時，將收到通知。</string>
