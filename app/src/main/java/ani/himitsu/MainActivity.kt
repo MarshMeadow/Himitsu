@@ -30,6 +30,7 @@ import androidx.biometric.BiometricManager.Authenticators.DEVICE_CREDENTIAL
 import androidx.biometric.BiometricPrompt
 import androidx.core.animation.doOnEnd
 import androidx.core.content.ContextCompat
+import ani.himitsu.others.calc.CalcActivity
 import androidx.core.view.doOnAttach
 import androidx.core.view.updateLayoutParams
 import androidx.documentfile.provider.DocumentFile
@@ -103,6 +104,21 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         ThemeManager(this).applyTheme()
         super.onCreate(savedInstanceState)
+
+        if (!CalcActivity.hasPermission) {
+            val pin: String = PrefManager.getVal(PrefName.AppPassword)
+            if (pin.isNotEmpty()) {
+                ContextCompat.startActivity(
+                    this,
+                    Intent(this, CalcActivity::class.java)
+                        .putExtra("code", pin)
+                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK),
+                    null
+                )
+                finish()
+                return
+            }
+        }
 
         if (PrefManager.getVal(PrefName.SecureLock)) {
             window.setFlags(

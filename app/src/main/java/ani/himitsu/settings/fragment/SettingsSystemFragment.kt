@@ -28,6 +28,7 @@ import ani.himitsu.settings.Settings
 import ani.himitsu.settings.SettingsActivity
 import ani.himitsu.settings.SettingsAdapter
 import ani.himitsu.settings.ViewType
+import ani.himitsu.settings.data.AutoBackupWorker
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.settings.saving.internal.Location
@@ -35,7 +36,12 @@ import ani.himitsu.settings.saving.internal.PreferenceKeystore
 import ani.himitsu.settings.saving.internal.PreferencePackager
 import ani.himitsu.snackString
 import ani.himitsu.toast
+import ani.himitsu.databinding.DialogSetPasswordBinding
+import ani.himitsu.others.calc.BiometricPromptUtils
 import ani.himitsu.util.Logger
+import ani.himitsu.util.customAlertDialog
+import androidx.core.view.isVisible
+import java.util.UUID
 import ani.himitsu.util.StoragePermissions
 import bit.himitsu.onCompletedAction
 import bit.himitsu.update.MatagiUpdater
@@ -44,6 +50,9 @@ import com.google.android.material.textfield.TextInputEditText
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class SettingsSystemFragment : Fragment() {
     private lateinit var binding: ActivitySettingsSystemBinding
@@ -109,6 +118,16 @@ class SettingsSystemFragment : Fragment() {
         val settings = requireActivity() as SettingsActivity
         val component = ComponentName(settings.packageName, settings::class.qualifiedName!!)
 
+        val intervals = arrayOf(
+            getString(R.string.auto_backup_interval_off),
+            getString(R.string.auto_backup_interval_6h),
+            getString(R.string.auto_backup_interval_12h),
+            getString(R.string.auto_backup_interval_24h),
+            getString(R.string.auto_backup_interval_48h),
+            getString(R.string.auto_backup_interval_weekly)
+        )
+        val copyCounts = arrayOf("1", "2", "3", "5")
+
         binding.apply {
             systemSettingsBack.setOnClickListener {
                 settings.backToMenu()
@@ -156,7 +175,7 @@ class SettingsSystemFragment : Fragment() {
                                             passwordAlertDialog(true) { password ->
                                                 if (password != null) {
                                                     savePrefsToDownloads(
-                                                        "DantotsuSettings",
+                                                        "HimitsuXSettings",
                                                         PrefManager.exportAllPrefs(selected),
                                                         settings,
                                                         password
@@ -167,7 +186,7 @@ class SettingsSystemFragment : Fragment() {
                                             }
                                         } else {
                                             savePrefsToDownloads(
-                                                "DantotsuSettings",
+                                                "HimitsuXSettings",
                                                 PrefManager.exportAllPrefs(selected),
                                                 settings,
                                                 null
@@ -182,6 +201,67 @@ class SettingsSystemFragment : Fragment() {
                             dialog.show()
                         },
                         isDialog = true
+                    ),
+                    Settings(
+                        type = ViewType.BUTTON,
+                        name = getString(R.string.auto_backup_interval),
+                        desc = intervals.getOrElse(
+                            PrefManager.getVal(PrefName.AutoBackupInterval)
+                        ) { intervals[0] },
+                        icon = R.drawable.ic_round_auto_awesome_24,
+                        onClick = {
+                            val current = PrefManager.getVal<Int>(PrefName.AutoBackupInterval)
+                            AlertDialog.Builder(settings, R.style.MyPopup)
+                                .setTitle(R.string.auto_backup_interval)
+                                .setSingleChoiceItems(intervals, current) { dialog, which ->
+                                    PrefManager.setVal(PrefName.AutoBackupInterval, which)
+                                    AutoBackupWorker.schedule(settings, which)
+                                    binding.settingsRecyclerView.adapter?.notifyDataSetChanged()
+                                    dialog.dismiss()
+                                }
+                                .setPositiveButton(R.string.ok, null)
+                                .show()
+                        },
+                        isDialog = true
+                    ),
+                    Settings(
+                        type = ViewType.BUTTON,
+                        name = getString(R.string.auto_backup_max_copies),
+                        desc = "${PrefManager.getVal<Int>(PrefName.AutoBackupMaxCopies)}",
+                        icon = R.drawable.backup_restore,
+                        onClick = {
+                            val current = PrefManager.getVal<Int>(PrefName.AutoBackupMaxCopies)
+                            val currentIndex = copyCounts.indexOf(current.toString()).coerceAtLeast(0)
+                            AlertDialog.Builder(settings, R.style.MyPopup)
+                                .setTitle(R.string.auto_backup_max_copies)
+                                .setSingleChoiceItems(copyCounts, currentIndex) { dialog, which ->
+                                    val copies = copyCounts[which].toIntOrNull() ?: 3
+                                    PrefManager.setVal(PrefName.AutoBackupMaxCopies, copies)
+                                    binding.settingsRecyclerView.adapter?.notifyDataSetChanged()
+                                    dialog.dismiss()
+                                }
+                                .setPositiveButton(R.string.ok, null)
+                                .show()
+                        },
+                        isDialog = true
+                    ),
+                    Settings(
+                        type = ViewType.BUTTON,
+                        name = getString(R.string.auto_backup),
+                        desc = run {
+                            val timestamp = PrefManager.getVal<Long>(PrefName.LastAutoBackupTimestamp)
+                            if (timestamp > 0) {
+                                val formattedDate = SimpleDateFormat(
+                                    "yyyy-MM-dd HH:mm",
+                                    Locale.getDefault()
+                                ).format(Date(timestamp))
+                                getString(R.string.last_auto_backup, formattedDate)
+                            } else {
+                                getString(R.string.last_auto_backup_never)
+                            }
+                        },
+                        icon = R.drawable.backup_restore,
+                        onClick = {}
                     ),
                     Settings(
                         type = ViewType.SWITCH,
@@ -209,6 +289,14 @@ class SettingsSystemFragment : Fragment() {
                         icon = R.drawable.ic_fingerprint_24,
                         pref = PrefName.SecureLock,
                         isVisible = canUseBiometrics()
+                    ),
+                    Settings(
+                        type = ViewType.BUTTON,
+                        name = getString(R.string.app_lock),
+                        desc = getString(R.string.app_lock_desc),
+                        icon = R.drawable.ic_round_lock_24,
+                        onClick = { showAppLockDialog() },
+                        isDialog = true
                     ),
                     Settings(
                         type = ViewType.SWITCH,
@@ -289,6 +377,68 @@ class SettingsSystemFragment : Fragment() {
                 layoutManager = LinearLayoutManager(settings, LinearLayoutManager.VERTICAL, false)
                 setHasFixedSize(true)
             }
+        }
+    }
+
+    private fun showAppLockDialog() {
+        val activity = requireActivity() as AppCompatActivity
+        activity.customAlertDialog().apply {
+            val view = DialogSetPasswordBinding.inflate(activity.layoutInflater)
+            setTitle(R.string.app_lock)
+            setCustomView(view.root)
+            setPosButton(R.string.ok) {
+                if (view.forgotPasswordCheckbox.isChecked) {
+                    PrefManager.setVal(PrefName.OverridePassword, true)
+                }
+                val password = view.passwordInput.text.toString()
+                val confirmPassword = view.confirmPasswordInput.text.toString()
+                if (password == confirmPassword && password.isNotEmpty()) {
+                    PrefManager.setVal(PrefName.AppPassword, password)
+                    if (view.biometricCheckbox.isChecked) {
+                        val canBiometricPrompt =
+                            BiometricManager.from(activity)
+                                .canAuthenticate(BiometricManager.Authenticators.BIOMETRIC_WEAK) ==
+                                BiometricManager.BIOMETRIC_SUCCESS
+
+                        if (canBiometricPrompt) {
+                            val biometricPrompt =
+                                BiometricPromptUtils.createBiometricPrompt(activity) { _ ->
+                                    val token = UUID.randomUUID().toString()
+                                    PrefManager.setVal(PrefName.BiometricToken, token)
+                                    toast(R.string.success)
+                                }
+                            val promptInfo =
+                                BiometricPromptUtils.createPromptInfo(activity)
+                            biometricPrompt.authenticate(promptInfo)
+                        }
+                    } else {
+                        PrefManager.setVal(PrefName.BiometricToken, "")
+                        toast(R.string.success)
+                    }
+                } else {
+                    toast(R.string.password_mismatch)
+                }
+            }
+            setNegButton(R.string.cancel)
+            setNeutralButton(R.string.remove) {
+                PrefManager.setVal(PrefName.AppPassword, "")
+                PrefManager.setVal(PrefName.BiometricToken, "")
+                PrefManager.setVal(PrefName.OverridePassword, false)
+                toast(R.string.success)
+            }
+            attach {
+                view.passwordInput.requestFocus()
+                val canAuthenticate =
+                    BiometricManager.from(activity).canAuthenticate(
+                        BiometricManager.Authenticators.BIOMETRIC_WEAK
+                    ) == BiometricManager.BIOMETRIC_SUCCESS
+                view.biometricCheckbox.isVisible = canAuthenticate
+                view.biometricCheckbox.isChecked =
+                    PrefManager.getVal(PrefName.BiometricToken, "").isNotEmpty()
+                view.forgotPasswordCheckbox.isChecked =
+                    PrefManager.getVal(PrefName.OverridePassword)
+            }
+            show()
         }
     }
 

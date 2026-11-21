@@ -55,6 +55,9 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     IncludeAnimeList(Pref(Location.General, Boolean::class, true)),
     IncludeMangaList(Pref(Location.General, Boolean::class, true)),
     AdultOnly(Pref(Location.General, Boolean::class, false)),
+    AutoBackupInterval(Pref(Location.General, Int::class, 0)),
+    AutoBackupMaxCopies(Pref(Location.General, Int::class, 3)),
+    LastAutoBackupTimestamp(Pref(Location.General, Long::class, 0L)),
 
     //User Interface
     UseOLED(Pref(Location.UI, Boolean::class, false)),
@@ -211,6 +214,9 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     ExtensionNotice(Pref(Location.Irrelevant, Boolean::class, false)),
 
     //Protected
+    AppPassword(Pref(Location.Protected, String::class, "")),
+    BiometricToken(Pref(Location.Protected, String::class, "")),
+    OverridePassword(Pref(Location.Protected, Boolean::class, false)),
     DiscordToken(Pref(Location.Protected, String::class, "")),
     DiscordId(Pref(Location.Protected, String::class, "")),
     DiscordUserName(Pref(Location.Protected, String::class, "")),
