@@ -4,12 +4,12 @@
 
     <string name="login">Sign In</string>
     <string name="logout">Logout</string>
-    <string name="anilist_login">AniList Login for Himitsu</string>
-    <string name="mal_login">MyAnimeList Login for Himitsu</string>
-    <string name="discord_login">Discord Login for Himitsu</string>
+    <string name="anilist_login">AniList Login for HimitsuX</string>
+    <string name="mal_login">MyAnimeList Login for HimitsuX</string>
+    <string name="discord_login">Discord Login for HimitsuX</string>
 
-    <string name="extension_notice">Himitsu is a BYOR Service</string>
-    <string name="extension_notice_desc">Himitsu follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
+    <string name="extension_notice">HimitsuX is a BYOR Service</string>
+    <string name="extension_notice_desc">HimitsuX follows a \"bring your own repository\" format. While extensions are supported, the indexes must be provided by the user. However, support for many popular streaming services is included out of the box.</string>
 
     <string name="conversion_title">Welcome back!</string>
     <string name="conversion_message">It appears you have an older package installed.\nPlease select \"Backup\" to open the older version and perform a backup. You can then return to this app and use \"Restore Settings\".</string>
@@ -38,7 +38,7 @@
 
     <string name="search">Search</string>
     <string name="extension_search">Reverse Source Search</string>
-    <string name="external_search">Search Himitsu</string>
+    <string name="external_search">Search HimitsuX</string>
     <string name="search_results">Search Results</string>
     <string name="sort_by">Sort By</string>
     <string name="genre">Genre</string>
@@ -215,12 +215,12 @@
     <string name="devs">Contributors</string>
     <string name="disclaimer">Disclaimer</string>
     <string name="full_disclaimer">
-         - Himitsu was a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
-        \n\n - Himitsu and any Himitsu contributors do not host any of the content found inside Himitsu. Any and all images or information found in the app are taken from various public APIs (AniList, MyAnimeList, Kitsu).
-        \n\n - Furthermore, all of the anime/manga links found in Himitsu are provided by various 3rd party plugins supplied by the user and have no affiliation with Himitsu or its staff.
-        \n\n - Himitsu and it\'s contributors aren\'t liable for any misuse of any of the contents found inside or outside of the app and cannot be held accountable for the distribution of any of the contents found inside the app.
-        \n\n - By using Himitsu, you confirm that the developer of Himitsu is not responsible for any of the contents found in the app or Dantotsu. You also agree to not use Himitsu to download or stream any copyrighted content.
-        \n\n - If any internet infringement issues are involved, please contact the Dantotsu website. Himitsu and its contributors do not assume any legal responsibility.
+         - HimitsuX is a fork of Himitsu, which was a fork of Dantotsu. Dantotsu, by itself, provides an anime and manga tracker and does not provide any anime or manga streaming or downloading content.
+        \n\n - HimitsuX and any HimitsuX contributors do not host any of the content found inside HimitsuX. Any and all images or information found in the app are taken from various public APIs (AniList, MyAnimeList, Kitsu).
+        \n\n - Furthermore, all of the anime/manga links found in HimitsuX are provided by various 3rd party plugins supplied by the user and have no affiliation with HimitsuX or its staff.
+        \n\n - HimitsuX and it\'s contributors aren\'t liable for any misuse of any of the contents found inside or outside of the app and cannot be held accountable for the distribution of any of the contents found inside the app.
+        \n\n - By using HimitsuX, you confirm that the developer of HimitsuX is not responsible for any of the contents found in the app or Dantotsu. You also agree to not use HimitsuX to download or stream any copyrighted content.
+        \n\n - If any internet infringement issues are involved, please contact the Dantotsu website. HimitsuX and its contributors do not assume any legal responsibility.
     </string>
     <string name="version_current">Version %1$s</string>
     <string-array name="tips">
@@ -403,7 +403,7 @@
     <string name="other">Other</string>
     <string name="total_repeats">TOTAL REPEATS</string>
     <string name="custom_lists">Custom Lists</string>
-    <string name="donate_desc">Want to support Himitsu?\nConsider Donating</string>
+    <string name="donate_desc">Want to support HimitsuX?\nConsider Donating</string>
     <string name="filter">Filter</string>
     <string name="year">Year</string>
     <string name="apply">Apply</string>
@@ -435,7 +435,7 @@
     <string name="login_with_anilist">Log in with AniList</string>
     <string name="account_help">How does this work\?</string>
     <string name="full_account_help">
-        Himitsu is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
+        HimitsuX is an AniList Based App, so for syncing with your MAL Account, It needs an AniList account to be logged in.
         \nOnce logged in with both AniList and MAL accounts, the app will automatically update your MAL account whenever:
         \n- Add a new Media
         \n- Edit a Media
@@ -459,7 +459,7 @@
     <string name="checking_subscriptions">Subscription Check Notifications</string>
     <string name="subscriptions_checking_time_s">Subscriptions Update Frequency : %1$s</string>
     <string name="subscriptions_checking_time">Subscriptions Update Frequency</string>
-    <string name="subscriptions_info">Amount of time for Himitsu to check for new episodes / chapters\n(Less time consumes more battery)</string>
+    <string name="subscriptions_info">Amount of time for HimitsuX to check for new episodes / chapters\n(Less time consumes more battery)</string>
     <string name="do_not_update">Don\'t Update</string>
     <string name="loading_chap_number">Loading Chapter %1$s</string>
     <string name="sort_by_release_date">Sort by Release Date</string>
@@ -496,10 +496,10 @@
 
     <string name="reviews">Reviews</string>
     <string name="discord_nothing_button">Display only the first button</string>
-    <string name="discord_himitsu_button">Display Himitsu in the second button</string>
+    <string name="discord_himitsu_button">Display HimitsuX in the second button</string>
     <string name="discord_anilist_button">Display your AniList profile instead</string>
     <string name="discord_rich_presence">Discord Rich Presence</string>
-    <string name="stream_on_himitsu">Stream on Himitsu</string>
+    <string name="stream_on_himitsu">Stream on HimitsuX</string>
     <string name="discord_rpc">Show Discord Rich Presence</string>
 
     <string name="jobless_message">DAMN! YOU TRULY ARE JOBLESS\nYOU REACHED THE END</string>
@@ -550,9 +550,9 @@
     <string name="deleted_from_list">Deleted from List</string>
     <string name="no_list_id">No List ID found…</string>
 
-    <string name="matagi_update">Himitsu Shirase %1$s</string>
+    <string name="matagi_update">HimitsuX Shirase %1$s</string>
     <string name="matagi_dont_show">Skip %1$s</string>
-    <string name="matagi_downloading">Downloading Himitsu %1$s</string>
+    <string name="matagi_downloading">Downloading HimitsuX %1$s</string>
 
     <string name="checking_for_update">Checking for Update</string>
     <string name="dont_show_again">Don\'t notify again for version %1$s</string>
@@ -606,7 +606,7 @@
     <string name="type_source">SOURCE</string>
     <string name="type_contains">CONTAINS</string>
 
-    <string name="view_profile_in_himitsu">View Profile in Himitsu</string>
+    <string name="view_profile_in_himitsu">View Profile in HimitsuX</string>
     <string name="continue_episode">Continue : Episode %1$s%2$s\n%3$s</string>
     <string name="filler_tag"> - Filler</string>
     <string name="continue_chapter">Continue : %1$s\n%2$s</string>
@@ -675,22 +675,22 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
 
-    <string name="question_1">What is Himitsu?</string>
-    <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. It is (mostly) an AniList only client, which also supports extensions. \n>Himitsu (秘密; Him-itsu) means "secret" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
+    <string name="question_1">What is HimitsuX?</string>
+    <string name="answer_1">Dantotsu merged components of Aniyomi into the core code of Saikou, but then Himitsu forked Dantotsu and began improving upon it. HimitsuX is Nekosphere\'s continuation of that fork. It is (mostly) an AniList only client, which also supports extensions. \n>Himitsu (秘密; Him-itsu) means "secret" in Japanese. Shhh. It\'s a secret so good that even the name is banned.</string>
 
-    <string name="question_2">What are some features of Himitsu?</string>
-    <string name="answer_2">This would be a pretty big paragraph if we listed everything Dantotsu attempts to accomplish, let alone everything Himitsu has added onto that. Your best bet would be to drop by the [HimitsuX GitHub](https://github.com/Nekomo-App/HimitsuX) and look over the README.</string>
+    <string name="question_2">What are some features of HimitsuX?</string>
+    <string name="answer_2">This would be a pretty big paragraph if we listed everything Dantotsu attempts to accomplish, let alone everything HimitsuX has added onto that. Your best bet would be to drop by the [HimitsuX GitHub](https://github.com/Nekomo-App/HimitsuX) and look over the README.</string>
 
     <string name="question_3">Whats the difference between Stable, Beta &amp; Alpha versions?</string>
     <string name="answer_3">This fork does not provide multiple tracks. The version you download from the [repository](https://github.com/Nekomo-App/HimitsuX) is the same one [Nekosphere](https://github.com/Nekomo-App) is running. If you find bugs and have already updated to the latest version, feel free to submit an [issue](https://github.com/Nekomo-App/HimitsuX/issues)</string>
 
-    <string name="question_4">Is Himitsu available for PC?</string>
-    <string name="answer_4">Currently no (for both Windows and Linux). There isn\'t any estimation when it will be available. But you can download any Android emulator and run Himitsu on it. For Windows 11 users, they can use the Windows Subsystem for Android (WSA) to run Himitsu in Windows.</string>
+    <string name="question_4">Is HimitsuX available for PC?</string>
+    <string name="answer_4">Currently no (for both Windows and Linux). There isn\'t any estimation when it will be available. But you can download any Android emulator and run HimitsuX on it. For Windows 11 users, they can use the Windows Subsystem for Android (WSA) to run HimitsuX in Windows.</string>
 
-    <string name="question_5">Is Himitsu available for iOS?</string>
-    <string name="answer_5">No, best we can do is carve Himitsu on an apple.</string>
+    <string name="question_5">Is HimitsuX available for iOS?</string>
+    <string name="answer_5">No, best we can do is carve HimitsuX on an apple.</string>
 
-    <string name="question_src">Doesn\'t Himitsu violate Dantotsu licensing?</string>
+    <string name="question_src">Doesn\'t HimitsuX violate Dantotsu licensing?</string>
     <string name="answer_src">The short answer is no, but a detailed explanation is available in the [HimitsuX README](https://github.com/Nekomo-App/HimitsuX?tab=readme-ov-file#readme)</string>
 
     <string name="question_6">Why are my stats not updating?</string>
@@ -709,13 +709,13 @@
     <string name="answer_11">Here is how you do it,\n\nExport:\n\n1. Go to this [link](https://malscraper.azurewebsites.net/). \n2. Give your AniList username/Kitsu ID in the \'Username/Kitsu User ID\' box. \n3. Select list type and enable \'update_on_import\'. \n4. Download the file; it will be in .xml format. Be sure to download both Anime and Manga lists.\n\nImport:\n1. To import it in your MAL account, go to this [link](https://myanimelist.net/import.php) and choose \'MyAnimeList Import\' as import type. \n2. Press on \'Choose File\'and select the downloaded anime/manga list XML file. \n3. Press on \'Import Data\'. \nCongratulations, you just imported the selected list to your MAL account.</string>
 
     <string name="question_12">Why can\'t I find a specific anime / manga title?</string>
-    <string name="answer_12">Let\'s say you are looking for Castlevania, but AniList doesn\'t have it. This means Himitsu doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
+    <string name="answer_12">Let\'s say you are looking for Castlevania, but AniList doesn\'t have it. This means HimitsuX doesn\'t, either.\nA solution to this problem is as follows:\n1) Go to any anime that\'s not in your list.\n2) Go to the watch section.\n3) Select any source and press on the \'Wrong Title?\'.\n4) Now search for Castlevania (The anime you were looking for) and select it.\n5) ENJOY!\n\nIf you can\'t find the anime through these steps, then that\'s bad luck for you, bud. Try a different source.</string>
 
     <string name="question_13">How to fix sources selecting a completely wrong title?</string>
-    <string name="answer_13">Himitsu itself doesn\'t host anything but relies on other sources. When showing the episodes, it chooses the 1st result given by the source after searching for the title. Himitsu has no way of detecting if that\'s legit or not. So, for this, we have the \'Wrong Title?\' just below the source name(above layouts). You can choose the correct result/title by pressing on it and enjoy its episodes.</string>
+    <string name="answer_13">HimitsuX itself doesn\'t host anything but relies on other sources. When showing the episodes, it chooses the 1st result given by the source after searching for the title. HimitsuX has no way of detecting if that\'s legit or not. So, for this, we have the \'Wrong Title?\' just below the source name(above layouts). You can choose the correct result/title by pressing on it and enjoy its episodes.</string>
 
     <string name="question_14">How to read coloured mangas?</string>
-    <string name="answer_14">Sorry to break it to you, but only a small amount of manga have coloured version. If a coloured version is supposed to be available, it may simply be hidden in Himitsu. Let\'s say you want to read the coloured version of Chainsaw Man. Follow the steps below ↓\n\n1) Go to Chainsaw Man\n2) Press on \'Read\'\n3) Select any working source\n4) Press \'Wrong Title\'\n5) Select the colored Chainsaw Man\n6) Enjoy\n\nNote: Many sources don\'t have the coloured version even if it\'s available somewhere else. Try a different source. If none of the sources have it, then a coloured version of your desired manga may not exist.</string>
+    <string name="answer_14">Sorry to break it to you, but only a small amount of manga have coloured version. If a coloured version is supposed to be available, it may simply be hidden in HimitsuX. Let\'s say you want to read the coloured version of Chainsaw Man. Follow the steps below ↓\n\n1) Go to Chainsaw Man\n2) Press on \'Read\'\n3) Select any working source\n4) Press \'Wrong Title\'\n5) Select the colored Chainsaw Man\n6) Enjoy\n\nNote: Many sources don\'t have the coloured version even if it\'s available somewhere else. Try a different source. If none of the sources have it, then a coloured version of your desired manga may not exist.</string>
 
     <string name="question_15">Handshake fails? Why are no timestamps loading?</string>
     <string name="answer_15">You can fix this issue by enabling \'Proxy\' from \n\`Settings > Anime > Player Settings > Segments > Proxy\`.\nIf the timestamps are still not loading but the handshake failed popup is fixed, then the episode you are watching just doesn\'t have timestamps yet for it.</string>
@@ -724,7 +724,7 @@
     <string name="answer_16">Some basic fixes would be : \n\n• Update your extensions if there are any. \n• Open Web View and wait for it to load. After loading has completed, go back. (If Web View shows error 404 or something similar, chances are that your source is down)\n• Use a different DNS from your settings, preferably, Libre. \n• Try a trustworthy VPN. (You\'ll have to repeat step 1 after this) \n\nIf none of the steps above work then use a different source or join our [discord](https://discord.gg/invite/4HPZ5nAWwM) for help.</string>
 
     <string name="question_17">Some useful tips and tricks</string>
-    <string name="answer_17">The following presents some tips and tricks you may or may not know about - \n \n \n - By hold pressing the Himitsu logo in settings, you can check if there are any new updates manually. \n \n - Hold pressing an error message/tag/synonym or title will copy it. \n \n - You can open an episode with other apps by hold pressing any server for that episode. This helps in streaming the episode using other video players or download the episode using download managers. \n \n - You can set up custom lists using this [link](https://anilist.co/settings/lists). (you need to be signed in) \n \n - If your episode/chapter is not being progressed automatically after you finish watching/reading it, then hold press the status bar(planning/repeating/watching button) of that anime/manga. The next time you start a chapter/finish an episode, you will stumble upon a popup. Press yes there. </string>
+    <string name="answer_17">The following presents some tips and tricks you may or may not know about - \n \n \n - By hold pressing the HimitsuX logo in settings, you can check if there are any new updates manually. \n \n - Hold pressing an error message/tag/synonym or title will copy it. \n \n - You can open an episode with other apps by hold pressing any server for that episode. This helps in streaming the episode using other video players or download the episode using download managers. \n \n - You can set up custom lists using this [link](https://anilist.co/settings/lists). (you need to be signed in) \n \n - If your episode/chapter is not being progressed automatically after you finish watching/reading it, then hold press the status bar(planning/repeating/watching button) of that anime/manga. The next time you start a chapter/finish an episode, you will stumble upon a popup. Press yes there. </string>
 
     <string name="subscribed_notification">Subscribed! Receiving notifications, when new episodes are released on %1$s.</string>
 
@@ -750,7 +750,7 @@
     <string name="discord_logout_success">Successfully Logged Out</string>
     <string name="discord_try_again">Try logging-in again</string>
     <string name="error_loading_discord_user_data">Error loading Discord User Data</string>
-    <string name="discord_warning">By logging in, Discord will display what you are watching &amp; reading on Himitsu\n\nWhen opening Himitsu, your visibility will be determined by your Himitsu settings.\n\nThis functionality may violate the Discord TOS as it does not use the Discord GameSDK.\n\nHimitsu is not responsible for anything that happens to your account.</string>
+    <string name="discord_warning">By logging in, Discord will display what you are watching &amp; reading on HimitsuX\n\nWhen opening HimitsuX, your visibility will be determined by your HimitsuX settings.\n\nThis functionality may violate the Discord TOS as it does not use the Discord GameSDK.\n\nHimitsuX is not responsible for anything that happens to your account.</string>
     <string name="warning">Warning</string>
     <string name="force_legacy_installer">Force Legacy Installer</string>
     <string name="extensions_settings">Extensions</string>
@@ -789,10 +789,10 @@
     <string name="restore_settings_underline"><u>Restore Settings</u></string>
     <string name="try_internal_cast_experimental">Try Internal Cast (Experimental)</string>
 
-    <string name="faq_desc">General questions about Himitsu</string>
+    <string name="faq_desc">General questions about HimitsuX</string>
     <string name="check_app_updates_desc">Check Github for app updates</string>
     <string name="share_username_in_logs_desc">Include username in crash reports</string>
-    <string name="devs_desc">Himitsu\'s very own unpaid laborers</string>
+    <string name="devs_desc">HimitsuX\'s very own unpaid laborers</string>
     <string name="forks_desc">Projects derived from Dantotsu</string>
     <string name="disclaimer_desc">Something to keep in mind</string>
 
@@ -999,7 +999,7 @@
     <string name="manga_desc">Choose how you read</string>
     <string name="notifications_desc">Customize news and updates</string>
     <string name="system_desc">Updates and useful utilities</string>
-    <string name="about_desc">Learn more about Himitsu</string>
+    <string name="about_desc">Learn more about HimitsuX</string>
     <string name="ani_setting_desc">Open AniList settings in browser</string>
 
     <string name="enable">Enable</string>
@@ -1198,7 +1198,7 @@
     <string name="running_fixes">Running Fixes…</string>
     <string name="test_search">Test Search</string>
     <string name="subtitle_langauge">Subtitle Langauge</string>
-    <string name="auto_open_links">Allow Himitsu to automatically open AniList &amp; MAL Links?</string>
+    <string name="auto_open_links">Allow HimitsuX to automatically open AniList &amp; MAL Links?</string>
     <string name="auto_open_links_desc">Select AniList &amp; MAL in the supported links section</string>
     <string name="dev_maintainer">%1$s Maintainer</string>
     <string name="error_no_parent_id">Error: No parent ID</string>

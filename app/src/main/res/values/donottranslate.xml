@@ -10,7 +10,7 @@
     <string name="git_issue_title">[Logcat]: HimitsuX #%1$s</string>
 
     <string name="himitsu_url">https://github.com/Nekomo-App/HimitsuX</string>
-    <string name="discord_txt">Himitsu Discord</string>
+    <string name="discord_txt">HimitsuX Discord</string>
     <string name="discord_bot">file:///android_asset/discord.html</string>
     <string name="discord_url">https://discord.gg/vnrhgrt</string>
     <string name="github">https://github.com/%1$s</string>
@@ -41,8 +41,8 @@
     <string name="rpc_anilist">AniList Profile</string>
     <string name="rpc_anime">View Anime Info</string>
     <string name="rpc_manga">View Manga Info</string>
-    <string name="rpc_read">Read on Himitsu</string>
-    <string name="rpc_watch">Watch on Himitsu</string>
+    <string name="rpc_read">Read on HimitsuX</string>
+    <string name="rpc_watch">Watch on HimitsuX</string>
 
     <string name="anilist">AniList</string>
     <string name="myanimelist">MyAnimeList</string>
