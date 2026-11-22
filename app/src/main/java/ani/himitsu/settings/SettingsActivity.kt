@@ -13,10 +13,12 @@ import androidx.activity.addCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.updateLayoutParams
+import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import androidx.viewpager2.widget.ViewPager2
 import ani.himitsu.BuildConfig
 import ani.himitsu.databinding.ActivitySettingsBinding
 import ani.himitsu.initActivity
@@ -77,6 +79,13 @@ class SettingsActivity : AppCompatActivity() {
             )
             binding.settingsViewPager.setPageTransformer(FidgetSpinTransformer())
 
+            binding.settingsViewPager.registerOnPageChangeCallback(object :
+                ViewPager2.OnPageChangeCallback() {
+                override fun onPageSelected(position: Int) {
+                    resetScroll(position)
+                }
+            })
+
             intent?.getStringExtra("fragment")?.let {
                 silentExit = true
                 setFragment(Page.valueOf(it))
@@ -110,6 +119,21 @@ class SettingsActivity : AppCompatActivity() {
 
     fun setFragment(page: Page) {
         binding.settingsViewPager.setCurrentItem(page.ordinal, false)
+        resetScroll(page.ordinal)
+    }
+
+    private fun resetScroll(position: Int, retries: Int = 8) {
+        binding.settingsViewPager.postDelayed({
+            if (binding.settingsViewPager.currentItem != position) return@postDelayed
+            binding.root.scrollTo(0, 0)
+            binding.root.clearFocus()
+            (supportFragmentManager
+                .findFragmentByTag("f$position")?.view as? NestedScrollView)?.let {
+                it.scrollTo(0, 0)
+                it.clearFocus()
+            }
+            if (retries > 0) resetScroll(position, retries - 1)
+        }, 100)
     }
 
     fun backToMenu() {

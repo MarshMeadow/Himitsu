@@ -7,13 +7,14 @@ import ani.dantotsu.notifications.comment.CommentStore
 import ani.himitsu.notifications.subscription.SubscriptionStore
 import ani.himitsu.settings.saving.internal.Location
 import ani.himitsu.settings.saving.internal.Pref
+import eu.kanade.tachiyomi.network.PREF_DOH_ADGUARD
 
 enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     //General
     SharedUserID(Pref(Location.General, Boolean::class, false)),
     OfflineView(Pref(Location.General, Int::class, 0)),
     DownloadManager(Pref(Location.General, Int::class, 0)),
-    NSFWExtension(Pref(Location.General, Boolean::class, true)),
+    NSFWExtension(Pref(Location.General, Boolean::class, false)),
     ContinueMedia(Pref(Location.General, Boolean::class, true)),
     SearchSources(Pref(Location.General, Boolean::class, false)),
     DescendingItems(Pref(Location.General, Boolean::class, false)),
@@ -27,7 +28,7 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     SubscriptionCheckingNotifications(Pref(Location.General, Boolean::class, true)),
     CheckUpdate(Pref(Location.General, Boolean::class, true)),
     VerboseLogging(Pref(Location.General, Boolean::class, false)),
-    DohProvider(Pref(Location.General, Int::class, 0)),
+    DohProvider(Pref(Location.General, Int::class, PREF_DOH_ADGUARD)),
     DefaultUserAgent(
         Pref(
             Location.General,
@@ -60,11 +61,11 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     LastAutoBackupTimestamp(Pref(Location.General, Long::class, 0L)),
 
     //User Interface
-    UseOLED(Pref(Location.UI, Boolean::class, false)),
+    UseOLED(Pref(Location.UI, Boolean::class, true)),
     UseCustomTheme(Pref(Location.UI, Boolean::class, false)),
     CustomThemeInt(Pref(Location.UI, Int::class, Color.parseColor("#6200EE"))),
     UseSourceTheme(Pref(Location.UI, Boolean::class, false)),
-    UseMaterialYou(Pref(Location.UI, Boolean::class, false)),
+    UseMaterialYou(Pref(Location.UI, Boolean::class, true)),
     Theme(Pref(Location.UI, String::class, "PURPLE")),
     SkipExtensionIcons(Pref(Location.UI, Boolean::class, false)),
     DarkMode(Pref(Location.UI, Int::class, 0)),
