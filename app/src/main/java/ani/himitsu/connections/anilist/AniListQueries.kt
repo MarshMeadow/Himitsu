@@ -56,7 +56,7 @@ class AniListQueries {
         val response: Query.Viewer?
         measureTimeMillis {
             response =
-                executeQuery("""{Viewer{name options{displayAdultContent}avatar{medium}bannerImage id mediaListOptions{rowOrder animeList{sectionOrder customLists}mangaList{sectionOrder customLists}}statistics{anime{episodesWatched}manga{chaptersRead}}unreadNotificationCount}}""")
+                executeQuery("""{Viewer{name options{timezone titleLanguage staffNameLanguage activityMergeTime airingNotifications displayAdultContent restrictMessagesToFollowing}avatar{medium}bannerImage id mediaListOptions{scoreFormat rowOrder animeList{sectionOrder customLists}mangaList{sectionOrder customLists}}statistics{anime{episodesWatched}manga{chaptersRead}}unreadNotificationCount}}""")
         }.also { println("time : $it") }
         val user = response?.data?.user ?: return false
 
@@ -74,6 +74,20 @@ class AniListQueries {
         AniList.episodesWatched = user.statistics?.anime?.episodesWatched
         AniList.chapterRead = user.statistics?.manga?.chaptersRead
         AniList.adult = user.options?.displayAdultContent ?: false
+        user.options?.let {
+            AniList.titleLanguage = it.titleLanguage
+            AniList.staffNameLanguage = it.staffNameLanguage
+            AniList.airingNotifications = it.airingNotifications ?: false
+            AniList.restrictMessagesToFollowing = it.restrictMessagesToFollowing ?: false
+            AniList.timezone = it.timezone
+            AniList.activityMergeTime = it.activityMergeTime
+        }
+        user.mediaListOptions?.let {
+            AniList.scoreFormat = it.scoreFormat
+            AniList.rowOrder = it.rowOrder
+            AniList.animeCustomLists = it.animeList?.customLists
+            AniList.mangaCustomLists = it.mangaList?.customLists
+        }
         AniList.unreadNotificationCount = user.unreadNotificationCount ?: 0
         if (PrefManager.getVal(PrefName.CommentsOptIn)) {
             val unread = PrefManager.getVal<Int>(PrefName.UnreadCommentNotifications)
@@ -474,6 +488,7 @@ class AniListQueries {
 
     suspend fun initHomePage(): Map<String, ArrayList<*>> {
         val removeList = PrefManager.getCustomVal("removeList", setOf<Int>())
+        val hidePrivate = PrefManager.getVal<Boolean>(PrefName.HidePrivate)
         val removedMedia = ArrayList<Media>()
         val toShow: List<Boolean> =
             PrefManager.getVal(PrefName.HomeLayout)
@@ -532,7 +547,7 @@ class AniListQueries {
             current?.lists?.forEach { li ->
                 li.entries?.reversed()?.forEach {
                     val m = Media(it)
-                    if (m.id !in removeList) {
+                    if (m.id !in removeList && (!hidePrivate || !m.isListPrivate)) {
                         m.cameFromContinue = true
                         subMap[m.id] = m
                     } else {
@@ -544,7 +559,7 @@ class AniListQueries {
             repeating?.lists?.forEach { li ->
                 li.entries?.reversed()?.forEach {
                     val m = Media(it)
-                    if (m.id !in removeList) {
+                    if (m.id !in removeList && (!hidePrivate || !m.isListPrivate)) {
                         m.cameFromContinue = true
                         subMap[m.id] = m
                     } else {
@@ -583,7 +598,7 @@ class AniListQueries {
             current?.lists?.forEach { li ->
                 li.entries?.reversed()?.forEach {
                     val m = Media(it)
-                    if (m.id !in removeList) {
+                    if (m.id !in removeList && (!hidePrivate || !m.isListPrivate)) {
                         m.cameFromContinue = true
                         subMap[m.id] = m
                     } else {
@@ -615,7 +630,7 @@ class AniListQueries {
             apiMediaList?.edges?.forEach {
                 it.node?.let { i ->
                     val m = Media(i).apply { isFav = true }
-                    if (m.id !in removeList) {
+                    if (m.id !in removeList && (!hidePrivate || !m.isListPrivate)) {
                         returnArray.add(m)
                     } else {
                         removedMedia.add(m)
@@ -639,8 +654,10 @@ class AniListQueries {
                 val json = it.mediaRecommendation
                 if (json != null) {
                     val m = Media(json)
-                    m.relation = json.type?.toString()
-                    subMap[m.id] = m
+                    if (!hidePrivate || !m.isListPrivate) {
+                        m.relation = json.type?.toString()
+                        subMap[m.id] = m
+                    }
                 }
             }
         }
@@ -648,7 +665,7 @@ class AniListQueries {
             lists?.forEach { li ->
                 li.entries?.forEach {
                     val m = Media(it)
-                    if (m.status == "RELEASING" || m.status == "FINISHED") {
+                    if ((m.status == "RELEASING" || m.status == "FINISHED") && (!hidePrivate || !m.isListPrivate)) {
                         m.relation = it.media?.type?.toString()
                         subMap[m.id] = m
                     }
@@ -659,7 +676,7 @@ class AniListQueries {
             lists?.forEach { li ->
                 li.entries?.forEach {
                     val m = Media(it)
-                    if (m.status == "RELEASING" || m.status == "FINISHED") {
+                    if ((m.status == "RELEASING" || m.status == "FINISHED") && (!hidePrivate || !m.isListPrivate)) {
                         m.relation = it.media?.type?.toString()
                         subMap[m.id] = m
                     }

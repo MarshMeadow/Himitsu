@@ -328,6 +328,8 @@ class PlayerSettingsActivity : AppCompatActivity() {
                 binding.videoSubColorWindow,
                 binding.videoSubFont,
                 binding.videoSubAlpha,
+                binding.videoSubBottomMarginButton,
+                binding.videoSubBottomMargin,
                 binding.subtitleFontSizeText,
                 binding.subtitleFontSize
             ).forEach {
@@ -497,6 +499,13 @@ class PlayerSettingsActivity : AppCompatActivity() {
         binding.videoSubAlpha.addOnChangeListener(OnChangeListener { _, value, fromUser ->
             if (fromUser) {
                 PrefManager.setVal(PrefName.SubAlpha, 1f - value)
+            }
+        })
+
+        binding.videoSubBottomMargin.value = PrefManager.getVal(PrefName.SubBottomMargin)
+        binding.videoSubBottomMargin.addOnChangeListener(OnChangeListener { _, value, fromUser ->
+            if (fromUser) {
+                PrefManager.setVal(PrefName.SubBottomMargin, value)
                 updateSubPreview()
             }
         })

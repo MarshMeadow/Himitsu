@@ -1,6 +1,7 @@
 package ani.himitsu.settings.fragment
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.graphics.drawable.Animatable
 import android.os.Bundle
 import android.view.HapticFeedbackConstants
@@ -22,6 +23,7 @@ import ani.himitsu.openLinkInBrowser
 import ani.himitsu.openLinkInYouTube
 import ani.himitsu.refresh
 import ani.himitsu.setSafeOnClickListener
+import ani.himitsu.settings.AnilistSettingsActivity
 import ani.himitsu.settings.Page
 import ani.himitsu.settings.Settings
 import ani.himitsu.settings.SettingsActivity
@@ -189,6 +191,10 @@ class SettingsMainFragment : Fragment() {
                             AniList.removeSavedToken()
                             settings.recreate()
                             reload()
+                        }
+                        settingsAniListSettings.visibility = View.VISIBLE
+                        settingsAniListSettings.setOnClickListener {
+                            startActivity(Intent(context, AnilistSettingsActivity::class.java))
                         }
                         settingsAniListUsername.visibility = View.VISIBLE
                         settingsAniListUsername.text = AniList.username

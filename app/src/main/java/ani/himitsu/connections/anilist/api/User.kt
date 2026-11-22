@@ -11,9 +11,6 @@ data class User(
     // The name of the user
     @SerialName("name") var name: String?,
 
-    // The bio written by user (Markdown)
-    //    @SerialName("about") var about: String?,
-
     // The user's avatar images
     @SerialName("avatar") var avatar: UserAvatar?,
 
@@ -68,12 +65,15 @@ data class User(
     // The user's previously used names.
     // @SerialName("previousNames") var previousNames: List<UserPreviousName>?,
 
+    // The bio written by user (Markdown)
+    @SerialName("about") var about: String? = null,
+
 ): java.io.Serializable
 
 @Serializable
 data class UserOptions(
     // The language the user wants to see media titles in
-    // @SerialName("titleLanguage") var titleLanguage: UserTitleLanguage?,
+    @SerialName("titleLanguage") var titleLanguage: String?,
 
     // Whether the user has enabled viewing of 18+ content
     @SerialName("displayAdultContent") var displayAdultContent: Boolean?,
@@ -88,16 +88,16 @@ data class UserOptions(
     //    // @SerialName("notificationOptions") var notificationOptions: List<NotificationOption>?,
     //
     //    // The user's timezone offset (Auth user only)
-    //    @SerialName("timezone") var timezone: String?,
+    @SerialName("timezone") var timezone: String?,
     //
     //    // Minutes between activity for them to be merged together. 0 is Never, Above 2 weeks (20160 mins) is Always.
-    //    @SerialName("activityMergeTime") var activityMergeTime: Int?,
+    @SerialName("activityMergeTime") var activityMergeTime: Int?,
     //
     //    // The language the user wants to see staff and character names in
-    //    // @SerialName("staffNameLanguage") var staffNameLanguage: UserStaffNameLanguage?,
+    @SerialName("staffNameLanguage") var staffNameLanguage: String?,
     //
     //    // Whether the user only allow messages from users they follow
-    //    @SerialName("restrictMessagesToFollowing") var restrictMessagesToFollowing: Boolean?,
+    @SerialName("restrictMessagesToFollowing") var restrictMessagesToFollowing: Boolean?,
 
     // The list activity types the user has disabled from being created from list updates
     // @SerialName("disabledListActivity") var disabledListActivity: List<ListActivityOption>?,

@@ -32,6 +32,17 @@ object AniList {
     var chapterRead: Int? = null
     var unreadNotificationCount: Int = 0
 
+    var titleLanguage: String? = null
+    var staffNameLanguage: String? = null
+    var airingNotifications: Boolean = false
+    var restrictMessagesToFollowing: Boolean = false
+    var scoreFormat: String? = null
+    var rowOrder: String? = null
+    var activityMergeTime: Int? = null
+    var timezone: String? = null
+    var animeCustomLists: List<String>? = null
+    var mangaCustomLists: List<String>? = null
+
     var genres: ArrayList<String>? = null
     var tags: Map<Boolean, List<String>>? = null
 
@@ -98,6 +109,113 @@ object AniList {
         "Original Creator", "Story & Art", "Story"
     )
 
+    val timeZone = listOf(
+        "(GMT-11:00) Pago Pago",
+        "(GMT-10:00) Hawaii Time",
+        "(GMT-09:00) Alaska Time",
+        "(GMT-08:00) Pacific Time",
+        "(GMT-07:00) Mountain Time",
+        "(GMT-06:00) Central Time",
+        "(GMT-05:00) Eastern Time",
+        "(GMT-04:00) Atlantic Time - Halifax",
+        "(GMT-03:00) Sao Paulo",
+        "(GMT-02:00) Mid-Atlantic",
+        "(GMT-01:00) Azores",
+        "(GMT+00:00) London",
+        "(GMT+01:00) Berlin",
+        "(GMT+02:00) Helsinki",
+        "(GMT+03:00) Istanbul",
+        "(GMT+04:00) Dubai",
+        "(GMT+04:30) Kabul",
+        "(GMT+05:00) Maldives",
+        "(GMT+05:30) India Standard Time",
+        "(GMT+05:45) Kathmandu",
+        "(GMT+06:00) Dhaka",
+        "(GMT+06:30) Cocos",
+        "(GMT+07:00) Bangkok",
+        "(GMT+08:00) Hong Kong",
+        "(GMT+08:30) Pyongyang",
+        "(GMT+09:00) Tokyo",
+        "(GMT+09:30) Central Time - Darwin",
+        "(GMT+10:00) Eastern Time - Brisbane",
+        "(GMT+10:30) Central Time - Adelaide",
+        "(GMT+11:00) Eastern Time - Melbourne, Sydney",
+        "(GMT+12:00) Nauru",
+        "(GMT+13:00) Auckland",
+        "(GMT+14:00) Kiritimati",
+    )
+
+    val titleLang = listOf(
+        "English (Attack on Titan)",
+        "Romaji (Shingeki no Kyojin)",
+        "Native (進撃の巨人)"
+    )
+
+    val staffNameLang = listOf(
+        "Romaji, Western Order (Killua Zoldyck)",
+        "Romaji (Zoldyck Killua)",
+        "Native (キルア=ゾルディック)"
+    )
+
+    val scoreFormats = listOf(
+        "100 Point (55/100)",
+        "10 Point Decimal (5.5/10)",
+        "10 Point (5/10)",
+        "5 Star (3/5)",
+        "3 Point Smiley :)"
+    )
+
+    val rowOrderMap = mapOf(
+        "Score" to "score",
+        "Title" to "title",
+        "Last Updated" to "updatedAt",
+        "Last Added" to "id"
+    )
+
+    val activityMergeTimeMap = mapOf(
+        "Never" to 0,
+        "30 mins" to 30,
+        "69 mins" to 69,
+        "1 hour" to 60,
+        "2 hours" to 120,
+        "3 hours" to 180,
+        "6 hours" to 360,
+        "12 hours" to 720,
+        "1 day" to 1440,
+        "2 days" to 2880,
+        "3 days" to 4320,
+        "1 week" to 10080,
+        "2 weeks" to 20160,
+        "Always" to 29160
+    )
+
+    fun getDisplayTimezone(apiTimezone: String, context: Context): String {
+        val noTimezone = context.getString(R.string.selected_no_time_zone)
+        val parts = apiTimezone.split(":")
+        if (parts.size != 2) return noTimezone
+
+        val hours = parts[0].toIntOrNull() ?: 0
+        val minutes = parts[1].toIntOrNull() ?: 0
+        val sign = if (hours >= 0) "+" else "-"
+        val formattedHours = String.format(java.util.Locale.US, "%02d", kotlin.math.abs(hours))
+        val formattedMinutes = String.format(java.util.Locale.US, "%02d", minutes)
+
+        val searchString = "(GMT$sign$formattedHours:$formattedMinutes)"
+        return timeZone.find { it.startsWith(searchString) } ?: noTimezone
+    }
+
+    fun getApiTimezone(displayTimezone: String): String {
+        val regex = """\(GMT([+-])(\d{2}):(\d{2})\)""".toRegex()
+        val matchResult = regex.find(displayTimezone)
+        return if (matchResult != null) {
+            val (sign, hours, minutes) = matchResult.destructured
+            val formattedSign = if (sign == "+") "" else "-"
+            "$formattedSign$hours:$minutes"
+        } else {
+            "00:00"
+        }
+    }
+
     private val cal: Calendar = Calendar.getInstance()
     private val currentYear = cal.get(Calendar.YEAR)
     private val currentSeason: Int = when (cal.get(Calendar.MONTH)) {
@@ -149,6 +267,16 @@ object AniList {
         bg = null
         episodesWatched = null
         chapterRead = null
+        titleLanguage = null
+        staffNameLanguage = null
+        airingNotifications = false
+        restrictMessagesToFollowing = false
+        scoreFormat = null
+        rowOrder = null
+        activityMergeTime = null
+        timezone = null
+        animeCustomLists = null
+        mangaCustomLists = null
         PrefManager.removeVal(PrefName.AnilistToken)
         //logout from comments api
         CommentsAPI.logout()

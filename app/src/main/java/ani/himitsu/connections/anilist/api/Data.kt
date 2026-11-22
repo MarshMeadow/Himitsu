@@ -17,6 +17,18 @@ class Query {
     }
 
     @Serializable
+    data class Bio(
+        @SerialName("data")
+        val data: Data?
+    ) {
+        @Serializable
+        data class Data(
+            @SerialName("User")
+            val user: ani.himitsu.connections.anilist.api.User?
+        )
+    }
+
+    @Serializable
     data class Media(
         @SerialName("data")
         val data: Data?

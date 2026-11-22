@@ -138,6 +138,146 @@ class AniListMutations {
         )
     }
 
+    suspend fun updateSettings(
+        timezone: String? = null,
+        titleLanguage: String? = null,
+        staffNameLanguage: String? = null,
+        activityMergeTime: Int? = null,
+        airingNotifications: Boolean? = null,
+        displayAdultContent: Boolean? = null,
+        restrictMessagesToFollowing: Boolean? = null,
+        scoreFormat: String? = null,
+        rowOrder: String? = null,
+        about: String? = null,
+    ) {
+        val query = """
+            mutation (
+                ${"$"}timezone: String,
+                ${"$"}titleLanguage: UserTitleLanguage,
+                ${"$"}staffNameLanguage: UserStaffNameLanguage,
+                ${"$"}activityMergeTime: Int,
+                ${"$"}airingNotifications: Boolean,
+                ${"$"}displayAdultContent: Boolean,
+                ${"$"}restrictMessagesToFollowing: Boolean,
+                ${"$"}scoreFormat: ScoreFormat,
+                ${"$"}rowOrder: String,
+                ${"$"}about: String
+            ) {
+                UpdateUser(
+                    timezone: ${"$"}timezone,
+                    titleLanguage: ${"$"}titleLanguage,
+                    staffNameLanguage: ${"$"}staffNameLanguage,
+                    activityMergeTime: ${"$"}activityMergeTime,
+                    airingNotifications: ${"$"}airingNotifications,
+                    displayAdultContent: ${"$"}displayAdultContent,
+                    restrictMessagesToFollowing: ${"$"}restrictMessagesToFollowing,
+                    scoreFormat: ${"$"}scoreFormat,
+                    rowOrder: ${"$"}rowOrder,
+                    about: ${"$"}about,
+                ) {
+                    id
+                    options {
+                        timezone
+                        titleLanguage
+                        staffNameLanguage
+                        activityMergeTime
+                        airingNotifications
+                        displayAdultContent
+                        restrictMessagesToFollowing
+                    }
+                    mediaListOptions {
+                      scoreFormat
+                      rowOrder
+                    }
+                }
+            }
+        """.trimIndent()
+
+        val variables = """
+            {
+                ${timezone?.let { """"timezone":"$it",""" } ?: ""}
+                ${titleLanguage?.let { """"titleLanguage":"$it",""" } ?: ""}
+                ${staffNameLanguage?.let { """"staffNameLanguage":"$it",""" } ?: ""}
+                ${activityMergeTime?.let { """"activityMergeTime":$it,""" } ?: ""}
+                ${airingNotifications?.let { """"airingNotifications":$it,""" } ?: ""}
+                ${displayAdultContent?.let { """"displayAdultContent":$it,""" } ?: ""}
+                ${restrictMessagesToFollowing?.let { """"restrictMessagesToFollowing":$it,""" } ?: ""}
+                ${scoreFormat?.let { """"scoreFormat":"$it",""" } ?: ""}
+                ${rowOrder?.let { """"rowOrder":"$it",""" } ?: ""}
+                ${about?.let { """"about":${it.sanitizeToGson},""" } ?: ""}
+            }
+        """.trimIndent().replace("\n", "").replace("""    """, "").replace(",}", "}")
+
+        executeQuery<JsonObject>(query, variables)
+    }
+
+    suspend fun updateUserBio(about: String): Boolean {
+        val encodedAbout = about.sanitizeToGson
+        val query = """
+            mutation {
+                UpdateUser(about: $encodedAbout) {
+                    id
+                    about
+                }
+            }
+        """.trimIndent()
+        val result = executeQuery<JsonObject>(query)
+        return result?.get("errors") == null && result != null
+    }
+
+    suspend fun getUserBio(): String? {
+        val query = """{User(id:${AniList.userid}){about(asHtml:false)}}"""
+        val res = executeQuery<Query.Bio>(query)
+        return res?.data?.user?.about
+    }
+
+    suspend fun deleteCustomList(name: String, type: String): Boolean {
+        val query = """
+            mutation (${"$"}name: String, ${"$"}type: MediaType) {
+                DeleteCustomList(customList: ${"$"}name, type: ${"$"}type) {
+                    deleted
+                }
+            }
+        """.trimIndent()
+        val variables = """
+            {
+                "name": "$name",
+                "type": "$type"
+            }
+        """.trimIndent()
+        val result = executeQuery<JsonObject>(query, variables)
+        return result?.get("errors") == null
+    }
+
+    suspend fun updateCustomLists(
+        animeCustomLists: List<String>?,
+        mangaCustomLists: List<String>?
+    ): Boolean {
+        val query = """
+            mutation (${"$"}animeListOptions: MediaListOptionsInput, ${"$"}mangaListOptions: MediaListOptionsInput) {
+                UpdateUser(animeListOptions: ${"$"}animeListOptions, mangaListOptions: ${"$"}mangaListOptions) {
+                    mediaListOptions {
+                        animeList {
+                            customLists
+                        }
+                        mangaList {
+                            customLists
+                        }
+                    }
+                }
+            }
+        """.trimIndent()
+        val variables = """
+            {
+                ${animeCustomLists?.let { """"animeListOptions": {"customLists": ${Gson().toJson(it)}},""" } ?: ""}
+                ${mangaCustomLists?.let { """"mangaListOptions": {"customLists": ${Gson().toJson(it)}}""" } ?: ""}
+            }
+        """.trimIndent().replace("\n", "").replace("""    """, "").replace(",}", "}")
+
+        val result = executeQuery<JsonObject>(query, variables)
+        return result?.get("errors") == null
+    }
+
     // https://gitlab.com/gobusto/unicodifier/-/blob/master/unicodifier.html#L133-143
     private val String.sanitizeToGson : String get() {
         val sb = StringBuilder()

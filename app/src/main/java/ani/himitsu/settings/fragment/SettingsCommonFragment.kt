@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import ani.dantotsu.connections.comments.CommentsAPI
 import ani.himitsu.R
 import ani.himitsu.Refresh
+import ani.himitsu.restartApp
 import ani.himitsu.databinding.ActivitySettingsCommonBinding
 import ani.himitsu.databinding.DialogUserAgentBinding
 import ani.himitsu.download.DownloadsManager
@@ -144,6 +145,17 @@ class SettingsCommonFragment : Fragment() {
                         desc = getString(R.string.recentlyListOnly_desc),
                         icon = R.drawable.ic_round_new_releases_24,
                         pref = PrefName.RecentlyListOnly
+                    ),
+                    Settings(
+                        type = ViewType.SWITCH,
+                        name = getString(R.string.hide_private),
+                        desc = getString(R.string.hide_private_desc),
+                        icon = R.drawable.ic_round_remove_red_eye_24,
+                        isChecked = PrefManager.getVal(PrefName.HidePrivate),
+                        switch = { isChecked, _ ->
+                            PrefManager.setVal(PrefName.HidePrivate, isChecked)
+                            activity?.restartApp()
+                        }
                     ),
                     Settings(
                         type = ViewType.BUTTON,

@@ -70,6 +70,7 @@ class MarkdownCreatorActivity : AppCompatActivity() {
                 }
                 getString(R.string.create_new_reply)
             }
+            "bio" -> getString(R.string.edit_bio)
             else -> ""
         }
         binding.editText.setText(text)
@@ -79,6 +80,18 @@ class MarkdownCreatorActivity : AppCompatActivity() {
             }
         }
         previewMarkdown(false)
+        if (type == "bio" && text.isBlank()) {
+            launchIO {
+                val currentBio = AniList.mutation.getUserBio().orEmpty()
+                kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.Main) {
+                    if (currentBio.isNotBlank() && !isFinishing) {
+                        text = currentBio
+                        binding.editText.setText(currentBio)
+                        binding.editText.setSelection(currentBio.length)
+                    }
+                }
+            }
+        }
         binding.markdownCreatorPreviewCheckbox.setOnClickListener {
             previewMarkdown(binding.markdownCreatorPreviewCheckbox.isChecked)
         }
@@ -111,6 +124,7 @@ class MarkdownCreatorActivity : AppCompatActivity() {
                                 AniList.mutation.postReview(summary, text, mediaId, score)
                             }
                             "replyActivity" -> AniList.mutation.postReply(parentId, text)
+                            "bio" -> if (AniList.mutation.updateUserBio(text)) "Profile bio updated" else "Failed to update bio"
                             else -> "Error: Unknown type"
                         }
                         toast(success)

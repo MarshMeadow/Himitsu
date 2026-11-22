@@ -458,6 +458,9 @@ open class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabi
 
             subtitles.alpha = PrefManager.getVal(PrefName.SubAlpha)
             subtitles.setFixedTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize)
+            subtitles.setBottomPaddingFraction(
+                PrefManager.getVal<Float>(PrefName.SubBottomMargin) / 50f
+            )
         }
     }
 
