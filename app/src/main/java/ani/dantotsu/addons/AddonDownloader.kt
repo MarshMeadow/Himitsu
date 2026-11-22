@@ -80,7 +80,7 @@ object AddonDownloader {
                                 { error -> installerSteps.onError(error) {} },
                                 { installerSteps.onComplete {} }
                             )
-                    } ?: openLinkInBrowser("https://github.com/repos/$repo/releases/tag/v$version")
+                    } ?: openLinkInBrowser("https://github.com/$repo/releases/tag/v$version")
             } catch (e: Exception) {
                 logError(e)
             }

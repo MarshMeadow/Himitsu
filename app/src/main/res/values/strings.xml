@@ -393,6 +393,11 @@
     <string name="sort_by_score">Sort by Score</string>
     <string name="sort_by_airing">Sort by Next Airing</string>
     <string name="over_scroll">Over Scroll to Next/Previous Chapter</string>
+    <string name="auto_scroll">Auto-Scroll</string>
+    <string name="auto_scroll_speed">Auto-Scroll Speed</string>
+    <string name="auto_scroll_speed_up">Speed Up</string>
+    <string name="auto_scroll_speed_down">Speed Down</string>
+    <string name="play_pause">Play/Pause</string>
     <string name="volume_buttons">Change pages with Volume Buttons</string>
     <string name="list_private">Private</string>
     <string name="wrap_images">Wrap Images</string>
@@ -806,6 +811,18 @@
     <string name="bio_prompt_info_desc">Use your fingerprint or face to unlock the app</string>
     <string name="enable_forgot_password">Enable Forgot Password (hold clear button for 10 seconds)</string>
     <string name="restore_settings">Import Settings</string>
+    <string name="download_wifi_only">Download on Wi-Fi Only</string>
+    <string name="download_wifi_only_desc">Only download when connected to Wi-Fi to save mobile data</string>
+    <string name="download_wifi_only_warning">Wi-Fi only is enabled. Connect to Wi-Fi to download.</string>
+    <string name="max_parallel_downloads">Max Parallel Downloads</string>
+    <string name="max_parallel_downloads_desc">Concurrent download tasks (0 = Sequential, 1-10 = Concurrent). Note: High concurrency may trigger source rate limits.</string>
+    <string name="rebuild_download_index">Rebuild download index</string>
+    <string name="rebuild_download_index_desc">Rescan the downloads folder and restore missing entries</string>
+    <string name="rebuild_download_index_msg">Scans the downloads folder and re-registers entries missing from the index. Existing entries are kept.</string>
+    <string name="rebuild_download_index_done">Recovered %1$d download(s)</string>
+    <string name="import_settings_title">Import settings?</string>
+    <string name="import_settings_confirm">This will replace all current settings with the contents of this file. Continue?</string>
+    <string name="import_text">Import</string>
     <string name="restore_settings_underline"><u>Restore Settings</u></string>
     <string name="try_internal_cast_experimental">Try Internal Cast (Experimental)</string>
 

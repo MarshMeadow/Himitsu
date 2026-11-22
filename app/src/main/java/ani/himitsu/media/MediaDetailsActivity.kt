@@ -63,7 +63,7 @@ import ani.himitsu.snackString
 import ani.himitsu.statusBarHeight
 import ani.himitsu.themes.ThemeManager
 import ani.himitsu.toPx
-import ani.himitsu.util.BitmapUtil
+
 import ani.himitsu.util.LauncherWrapper
 import ani.himitsu.view.GestureSlider
 import ani.himitsu.view.ZoomOutPageTransformer
@@ -83,7 +83,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+
 import kotlinx.coroutines.withContext
 import nl.joery.animatedbottombar.AnimatedBottomBar
 import java.io.Serializable
@@ -108,12 +108,19 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
         var media: Media = intent.getSerialized("media") ?: mediaSingleton ?: emptyMedia()
         val id = intent.getIntExtra("mediaId", -1)
         if (id != -1) {
-            runBlocking {
-                withContext(Dispatchers.IO) {
-                    media = AniList.query.getMedia(id, false) ?: emptyMedia()
+            lifecycleScope.launch {
+                media = withContext(Dispatchers.IO) {
+                    AniList.query.getMedia(id, false) ?: emptyMedia()
                 }
+                continueOnCreate(media)
             }
+            return
         }
+        continueOnCreate(media)
+    }
+
+    private fun continueOnCreate(media: Media) {
+        var media = media
         if (media.name == "No media found") {
             snackString(media.name)
             onBackPressedDispatcher.onBackPressed()
@@ -123,9 +130,7 @@ class MediaDetailsActivity : AppCompatActivity(), AppBarLayout.OnOffsetChangedLi
         launcher = LauncherWrapper(this, contract)
 
         mediaSingleton = null
-        themeImage = MediaSingleton.bitmap ?: media.banner?.let {
-            BitmapUtil.downloadImageAsBitmap(it)
-        }
+        themeImage = MediaSingleton.bitmap
         MediaSingleton.bitmap = null
         ThemeManager(this).applyTheme(themeImage)
 

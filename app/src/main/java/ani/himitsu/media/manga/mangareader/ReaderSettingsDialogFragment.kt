@@ -148,6 +148,21 @@ class ReaderSettingsDialogFragment : BottomSheetDialogFragment() {
             activity.applySettings()
         }
 
+        binding.readerAutoScroll.isChecked = settings.autoScroll
+        binding.readerAutoScroll.setOnCheckedChangeListener { _, isChecked ->
+            settings.autoScroll = isChecked
+            activity.applySettings()
+        }
+
+        binding.readerAutoScrollSpeedSlider.value = settings.autoScrollSpeed
+        binding.readerAutoScrollSpeedText.text = "${settings.autoScrollSpeed}x"
+        binding.readerAutoScrollSpeedSlider.addOnChangeListener { _, value, fromUser ->
+            if (fromUser) {
+                binding.readerAutoScrollSpeedText.text = "${value}x"
+                activity.updateAutoScrollSpeed(value)
+            }
+        }
+
         binding.readerOverscroll.isChecked = settings.overScrollMode
         binding.readerOverscroll.setOnCheckedChangeListener { _, isChecked ->
             settings.overScrollMode = isChecked

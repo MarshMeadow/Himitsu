@@ -11,9 +11,14 @@ import com.lagradost.nicehttp.addGenericDns
 import eu.kanade.tachiyomi.network.NetworkHelper
 import eu.kanade.tachiyomi.network.NetworkHelper.Companion.defaultUserAgentProvider
 import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.suspendCancellableCoroutine
+import kotlinx.coroutines.withContext
+import kotlinx.coroutines.withTimeoutOrNull
+import kotlin.coroutines.resume
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.InternalSerializationApi
 import kotlinx.serialization.encodeToString
@@ -25,7 +30,7 @@ import uy.kohesive.injekt.api.get
 import java.io.PrintWriter
 import java.io.Serializable
 import java.io.StringWriter
-import java.util.concurrent.CountDownLatch
+
 import java.util.concurrent.TimeUnit
 import kotlin.reflect.KClass
 import kotlin.reflect.KFunction
@@ -85,12 +90,12 @@ object Mapper : ResponseParser {
     }
 }
 
-fun <A, B> Collection<A>.asyncMap(f: suspend (A) -> B): List<B> = runBlocking {
-    map { async { f(it) } }.map { it.await() }
+suspend fun <A, B> Collection<A>.asyncMap(f: suspend (A) -> B): List<B> = coroutineScope {
+    map { async { f(it) } }.awaitAll()
 }
 
-fun <A, B> Collection<A>.asyncMapNotNull(f: suspend (A) -> B?): List<B> = runBlocking {
-    map { async { f(it) } }.mapNotNull { it.await() }
+suspend fun <A, B> Collection<A>.asyncMapNotNull(f: suspend (A) -> B?): List<B> = coroutineScope {
+    map { async { f(it) } }.awaitAll().filterNotNull()
 }
 
 fun logError(e: Throwable, post: Boolean = true, snackbar: Boolean = true) {
@@ -110,6 +115,8 @@ fun logError(e: Throwable, post: Boolean = true, snackbar: Boolean = true) {
 fun <T> tryWith(post: Boolean = false, snackbar: Boolean = true, call: () -> T): T? {
     return try {
         call.invoke()
+    } catch (e: CancellationException) {
+        throw e
     } catch (e: Throwable) {
         logError(e, post, snackbar)
         null
@@ -123,10 +130,10 @@ suspend fun <T> tryWithSuspend(
 ): T? {
     return try {
         call.invoke()
+    } catch (e: CancellationException) {
+        throw e
     } catch (e: Throwable) {
         logError(e, post, snackbar)
-        null
-    } catch (e: CancellationException) {
         null
     }
 }
@@ -200,21 +207,17 @@ fun OkHttpClient.Builder.addAdGuardDns() = (
             )
         ))
 
-@Suppress("BlockingMethodInNonBlockingContext")
 suspend fun webViewInterface(webViewDialog: WebViewBottomDialog): Map<String, String>? {
-    var map: Map<String, String>? = null
-
-    val latch = CountDownLatch(1)
-    webViewDialog.callback = {
-        map = it
-        latch.countDown()
-    }
     val fragmentManager =
         (currContext() as FragmentActivity?)?.supportFragmentManager ?: return null
-    webViewDialog.show(fragmentManager, "web-view")
-    delay(0)
-    latch.await(2, TimeUnit.MINUTES)
-    return map
+    return withContext(Dispatchers.Main) {
+        withTimeoutOrNull(120_000) {
+            suspendCancellableCoroutine { cont ->
+                webViewDialog.callback = { cont.resume(it) }
+                webViewDialog.show(fragmentManager, "web-view")
+            }
+        }
+    }
 }
 
 suspend fun webViewInterface(type: String, url: FileUrl): Map<String, String>? {

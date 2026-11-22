@@ -11,6 +11,7 @@ import androidx.core.content.ContextCompat
 import ani.himitsu.FileUrl
 import ani.himitsu.R
 import ani.himitsu.defaultHeaders
+import ani.himitsu.isWifiConnected
 import ani.himitsu.marketUri
 import ani.himitsu.media.anime.Episode
 import ani.himitsu.parsers.Book
@@ -80,6 +81,10 @@ object Download {
         folder: String,
         notif: String? = null
     ) {
+        if (PrefManager.getVal<Boolean>(PrefName.DownloadWifiOnly) && !isWifiConnected(context)) {
+            toast(context.getString(R.string.download_wifi_only_warning))
+            return
+        }
         if (!file.url.startsWith("http"))
             toast(context.getString(R.string.invalid_url))
         else

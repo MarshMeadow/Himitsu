@@ -9,6 +9,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import ani.himitsu.BuildConfig
 import ani.himitsu.R
 import ani.himitsu.connections.discord.Discord.saveToken
 import ani.himitsu.restart
@@ -34,7 +35,7 @@ class Login : AppCompatActivity() {
             settings.databaseEnabled = true
             settings.domStorageEnabled = true
         }
-        WebView.setWebContentsDebuggingEnabled(true)
+        WebView.setWebContentsDebuggingEnabled(BuildConfig.DEBUG)
         webView.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(
                 view: WebView?,

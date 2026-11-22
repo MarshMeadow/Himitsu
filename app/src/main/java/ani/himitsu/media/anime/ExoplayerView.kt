@@ -181,6 +181,8 @@ import com.google.common.collect.Iterables
 import com.lagradost.nicehttp.ignoreAllSSLErrors
 import eu.kanade.tachiyomi.data.torrentServer.model.Torrent
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -1473,10 +1475,9 @@ open class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabi
     private fun initPlayer() {
         checkNotch()
 
-        PrefManager.setCustomVal(
-            "${media.id}_current_ep",
-            media.anime!!.selectedEpisode!!
-        )
+        media.anime?.selectedEpisode?.let {
+            PrefManager.setCustomVal("${media.id}_current_ep", it)
+        }
 
         @Suppress("UNCHECKED_CAST")
         val list = (PrefManager.getNullableCustomVal(
@@ -1519,27 +1520,34 @@ open class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabi
         hasExtSubtitles = ext.subtitles.isNotEmpty()
         val sub: MutableList<MediaItem.SubtitleConfiguration> =
             emptyList<MediaItem.SubtitleConfiguration>().toMutableList()
-        ext.subtitles.forEach { subtitle ->
-            val subtitleUrl = if (subsEmbedded) video!!.file.url else subtitle.file.url
-            //var localFile: String? = null
-            if (subtitle.type == SubtitleType.UNKNOWN) {
-                runBlocking(Dispatchers.IO) {
-                    val type = SubtitleDownloader.loadSubtitleType(subtitleUrl)
-                    val fileUri = Uri.parse(subtitleUrl)
-                    sub += MediaItem.SubtitleConfiguration
-                        .Builder(fileUri)
-                        .setSelectionFlags(C.SELECTION_FLAG_DEFAULT)
-                        .setMimeType(SubtitleType.toMimeType(type))
-                        .setId("Extractor")
-                        .setLanguage(subtitle.language)
-                        .build()
+        val subTypes = runBlocking(Dispatchers.IO) {
+            ext.subtitles.map { s ->
+                async {
+                    if (s.type == SubtitleType.UNKNOWN)
+                        SubtitleDownloader.loadSubtitleType(
+                            if (subsEmbedded) video!!.file.url else s.file.url
+                        ) else s.type
                 }
+            }.awaitAll()
+        }
+        ext.subtitles.forEachIndexed { i, subtitle ->
+            val subtitleUrl = if (subsEmbedded) video!!.file.url else subtitle.file.url
+            val resolvedType = subTypes[i]
+            if (resolvedType == SubtitleType.UNKNOWN) {
+                val fileUri = Uri.parse(subtitleUrl)
+                sub += MediaItem.SubtitleConfiguration
+                    .Builder(fileUri)
+                    .setSelectionFlags(C.SELECTION_FLAG_DEFAULT)
+                    .setMimeType(SubtitleType.toMimeType(resolvedType))
+                    .setId("Extractor")
+                    .setLanguage(subtitle.language)
+                    .build()
                 println("Unknown Subtitle: $sub")
             } else {
                 sub += MediaItem.SubtitleConfiguration
                     .Builder(Uri.parse(subtitleUrl))
                     .setSelectionFlags(C.SELECTION_FLAG_FORCED)
-                    .setMimeType(SubtitleType.toMimeType(subtitle.type))
+                    .setMimeType(SubtitleType.toMimeType(resolvedType))
                     .setId("Extractor")
                     .setLanguage(subtitle.language)
                     .build()
@@ -1835,7 +1843,8 @@ open class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabi
         disappeared = false
         functionstarted = false
         exoPlayer.release()
-        retriever?.close()
+        retriever?.release()
+        retriever = null
         VideoCache.release()
         mediaSession?.release()
         stopDiscordService()
@@ -2419,9 +2428,10 @@ open class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabi
         }
 
         torrent?.hash?.let {
-            runBlocking(Dispatchers.IO) {
+            val hash = it
+            CoroutineScope(Dispatchers.IO).launch {
                 try {
-                    removeTorrent(it)
+                    removeTorrent(hash)
                 } catch (ignored: Throwable) { }
             }
             torrent = null

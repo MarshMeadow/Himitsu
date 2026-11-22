@@ -29,6 +29,9 @@ import ani.himitsu.media.manga.MangaReadFragment.Companion.ACTION_DOWNLOAD_FINIS
 import ani.himitsu.media.manga.MangaReadFragment.Companion.ACTION_DOWNLOAD_PROGRESS
 import ani.himitsu.media.manga.MangaReadFragment.Companion.ACTION_DOWNLOAD_STARTED
 import ani.himitsu.media.manga.MangaReadFragment.Companion.EXTRA_CHAPTER_NUMBER
+import ani.himitsu.isWifiConnected
+import ani.himitsu.settings.saving.PrefManager
+import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.snackString
 import ani.himitsu.util.Logger
 import com.anggrayudi.storage.file.deleteRecursively
@@ -40,10 +43,14 @@ import eu.kanade.tachiyomi.data.notification.Notifications.CHANNEL_DOWNLOADER_PR
 import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.source.model.SChapterImpl
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.cancel
 import kotlinx.coroutines.Deferred
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.joinAll
+import kotlinx.coroutines.sync.Semaphore
+import kotlinx.coroutines.sync.withPermit
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -74,6 +81,8 @@ class MangaDownloaderService : Service() {
         return null
     }
 
+    private val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
+
     override fun onCreate() {
         super.onCreate()
         notificationManager = NotificationManagerCompat.from(this)
@@ -97,11 +106,12 @@ class MangaDownloaderService : Service() {
             this,
             cancelReceiver,
             IntentFilter(ACTION_CANCEL_DOWNLOAD),
-            ContextCompat.RECEIVER_EXPORTED
+            ContextCompat.RECEIVER_NOT_EXPORTED
         )
     }
 
     override fun onDestroy() {
+        serviceScope.cancel()
         super.onDestroy()
         MangaServiceDataSingleton.downloadQueue.clear()
         downloadJobs.clear()
@@ -111,7 +121,6 @@ class MangaDownloaderService : Service() {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         snackString("Download started")
-        val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
         serviceScope.launch {
             mutex.withLock {
                 if (!isCurrentlyProcessing) {
@@ -125,31 +134,46 @@ class MangaDownloaderService : Service() {
     }
 
     private fun processQueue() {
-        CoroutineScope(Dispatchers.Default).launch {
+        serviceScope.launch {
+            val maxParallel = PrefManager.getVal<Int>(PrefName.MaxParallelDownloads).coerceIn(0, 10)
+            val semaphore = Semaphore(if (maxParallel > 0) maxParallel else 1)
+            val activeJobs = mutableListOf<Job>()
             while (MangaServiceDataSingleton.downloadQueue.isNotEmpty()) {
                 val task = MangaServiceDataSingleton.downloadQueue.poll()
                 if (task != null) {
-                    val job = launch { download(task) }
+                    if (PrefManager.getVal<Boolean>(PrefName.DownloadWifiOnly) &&
+                        !isWifiConnected(this@MangaDownloaderService)
+                    ) {
+                        broadcastDownloadFailed(task.chapter)
+                        continue
+                    }
+                    val job = launch {
+                        semaphore.withPermit {
+                            try {
+                                download(task)
+                            } finally {
+                                mutex.withLock {
+                                    downloadJobs.remove(task.chapter)
+                                }
+                                updateNotification()
+                            }
+                        }
+                    }
                     mutex.withLock {
                         downloadJobs[task.chapter] = job
                     }
-                    job.join() // Wait for the job to complete before continuing to the next task
-                    mutex.withLock {
-                        downloadJobs.remove(task.chapter)
-                    }
-                    updateNotification() // Update the notification after each task is completed
+                    activeJobs.add(job)
                 }
-                if (MangaServiceDataSingleton.downloadQueue.isEmpty()) {
-                    withContext(Dispatchers.Main) {
-                        stopSelf() // Stop the service when the queue is empty
-                    }
-                }
+            }
+            activeJobs.joinAll()
+            withContext(Dispatchers.Main) {
+                stopSelf()
             }
         }
     }
 
     fun cancelDownload(chapter: String) {
-        CoroutineScope(Dispatchers.Default).launch {
+        serviceScope.launch {
             mutex.withLock {
                 downloadJobs[chapter]?.cancel()
                 downloadJobs.remove(chapter)
@@ -366,6 +390,7 @@ class MangaDownloaderService : Service() {
 
     private fun broadcastDownloadStarted(chapterNumber: String) {
         val intent = Intent(ACTION_DOWNLOAD_STARTED).apply {
+            setPackage(packageName)
             putExtra(EXTRA_CHAPTER_NUMBER, chapterNumber)
         }
         sendBroadcast(intent)
@@ -373,6 +398,7 @@ class MangaDownloaderService : Service() {
 
     private fun broadcastDownloadFinished(chapterNumber: String) {
         val intent = Intent(ACTION_DOWNLOAD_FINISHED).apply {
+            setPackage(packageName)
             putExtra(EXTRA_CHAPTER_NUMBER, chapterNumber)
         }
         sendBroadcast(intent)
@@ -380,6 +406,7 @@ class MangaDownloaderService : Service() {
 
     private fun broadcastDownloadFailed(chapterNumber: String) {
         val intent = Intent(ACTION_DOWNLOAD_FAILED).apply {
+            setPackage(packageName)
             putExtra(EXTRA_CHAPTER_NUMBER, chapterNumber)
         }
         sendBroadcast(intent)
@@ -387,6 +414,7 @@ class MangaDownloaderService : Service() {
 
     private fun broadcastDownloadProgress(chapterNumber: String, progress: Int) {
         val intent = Intent(ACTION_DOWNLOAD_PROGRESS).apply {
+            setPackage(packageName)
             putExtra(EXTRA_CHAPTER_NUMBER, chapterNumber)
             putExtra("progress", progress)
         }

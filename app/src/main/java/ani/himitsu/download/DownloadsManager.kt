@@ -103,6 +103,47 @@ class DownloadsManager(private val context: Context) {
         saveDownloads()
     }
 
+    /**
+     * Rebuilds the index by scanning the downloads folder, keeping existing entries.
+     * The index lives in SharedPreferences while the files live in a user-picked
+     * folder, so a reinstall or a change of applicationId leaves every file intact
+     * but the index empty.
+     *
+     * @return number of entries recovered
+     */
+    fun rebuildIndexFromDisk(): Int {
+        var added = 0
+        for (type in listOf(MediaType.ANIME, MediaType.MANGA, MediaType.NOVEL)) {
+            val directory = getBaseDirectory(context, type) ?: continue
+            if (!directory.exists() || !directory.isDirectory) continue
+
+            for (titleDir in directory.listFiles()) {
+                if (!titleDir.isDirectory) continue
+                val title = titleDir.name ?: continue
+
+                for (chapterDir in titleDir.listFiles()) {
+                    if (!chapterDir.isDirectory) continue
+                    val chapter = chapterDir.name ?: continue
+                    // Skip empty shells left behind by a cancelled download.
+                    if (chapterDir.listFiles().none { it.isFile && it.length() > 0 }) continue
+
+                    val alreadyIndexed = downloadsList.any {
+                        it.type == type && it.titleName == title && it.chapterName == chapter
+                    }
+                    if (!alreadyIndexed) {
+                        downloadsList.add(DownloadedType(title, chapter, type))
+                        added++
+                    }
+                }
+            }
+        }
+        if (added > 0) {
+            saveDownloads()
+            Logger.log("rebuildIndexFromDisk: recovered $added download(s)")
+        }
+        return added
+    }
+
     private fun cleanDownloads() {
         cleanDownload(MediaType.MANGA)
         cleanDownload(MediaType.ANIME)

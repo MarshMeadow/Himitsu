@@ -31,6 +31,8 @@ import ani.himitsu.media.MediaType
 import ani.himitsu.media.anime.AnimeWatchFragment
 import ani.himitsu.parsers.Video
 import ani.himitsu.settings.saving.PrefManager
+import ani.himitsu.settings.saving.PrefName
+import ani.himitsu.isWifiConnected
 import ani.himitsu.snackString
 import ani.himitsu.toast
 import ani.himitsu.util.Logger
@@ -46,8 +48,12 @@ import eu.kanade.tachiyomi.data.notification.Notifications
 import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.source.model.SChapterImpl
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.cancel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.joinAll
+import kotlinx.coroutines.sync.Semaphore
+import kotlinx.coroutines.sync.withPermit
 import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
@@ -79,6 +85,8 @@ class AnimeDownloaderService : Service() {
         return null
     }
 
+    private val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+
     override fun onCreate() {
         super.onCreate()
         if (ffExtension == null) {
@@ -108,11 +116,12 @@ class AnimeDownloaderService : Service() {
             this,
             cancelReceiver,
             IntentFilter(ACTION_CANCEL_DOWNLOAD),
-            ContextCompat.RECEIVER_EXPORTED
+            ContextCompat.RECEIVER_NOT_EXPORTED
         )
     }
 
     override fun onDestroy() {
+        serviceScope.cancel()
         super.onDestroy()
         AnimeServiceDataSingleton.downloadQueue.clear()
         downloadJobs.clear()
@@ -122,7 +131,6 @@ class AnimeDownloaderService : Service() {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         snackString("Download started")
-        val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
         serviceScope.launch {
             mutex.withLock {
                 if (!isCurrentlyProcessing) {
@@ -136,26 +144,42 @@ class AnimeDownloaderService : Service() {
     }
 
     private fun processQueue() {
-        CoroutineScope(Dispatchers.IO).launch {
+        serviceScope.launch {
+            val maxParallel = PrefManager.getVal<Int>(PrefName.MaxParallelDownloads).coerceIn(0, 10)
+            val semaphore = Semaphore(if (maxParallel > 0) maxParallel else 1)
+            val activeJobs = mutableListOf<Job>()
             while (AnimeServiceDataSingleton.downloadQueue.isNotEmpty()) {
                 val task = AnimeServiceDataSingleton.downloadQueue.poll()
                 if (task != null) {
-                    val job = launch { download(task) }
-                    currentTasks.add(task)
+                    if (PrefManager.getVal<Boolean>(PrefName.DownloadWifiOnly) &&
+                        !isWifiConnected(this@AnimeDownloaderService)
+                    ) {
+                        broadcastDownloadFailed(task.episode)
+                        continue
+                    }
+                    val job = launch {
+                        semaphore.withPermit {
+                            currentTasks.add(task)
+                            try {
+                                download(task)
+                            } finally {
+                                currentTasks.remove(task)
+                                mutex.withLock {
+                                    downloadJobs.remove(task.getTaskName())
+                                }
+                                updateNotification()
+                            }
+                        }
+                    }
                     mutex.withLock {
                         downloadJobs[task.getTaskName()] = job
                     }
-                    job.join() // Wait for the job to complete before continuing to the next task
-                    mutex.withLock {
-                        downloadJobs.remove(task.getTaskName())
-                    }
-                    updateNotification() // Update the notification after each task is completed
+                    activeJobs.add(job)
                 }
-                if (AnimeServiceDataSingleton.downloadQueue.isEmpty()) {
-                    withContext(Dispatchers.Main) {
-                        stopSelf() // Stop the service when the queue is empty
-                    }
-                }
+            }
+            activeJobs.joinAll()
+            withContext(Dispatchers.Main) {
+                stopSelf()
             }
         }
     }
@@ -170,7 +194,7 @@ class AnimeDownloaderService : Service() {
             ffExtension!!.cancelDownload(it)
         }
         currentTasks.removeAll { it.getTaskName() == taskName }
-        CoroutineScope(Dispatchers.IO).launch {
+        serviceScope.launch {
             mutex.withLock {
                 downloadJobs[taskName]?.cancel()
                 downloadJobs.remove(taskName)
@@ -483,7 +507,7 @@ class AnimeDownloaderService : Service() {
     }
 
     private fun saveMediaInfo(task: AnimeDownloadTask) {
-        CoroutineScope(Dispatchers.IO).launch {
+        serviceScope.launch {
             val directory =
                 getSubDirectory(this@AnimeDownloaderService, MediaType.ANIME, false, task.title)
                     ?: throw Exception("Directory not found")
@@ -589,6 +613,7 @@ class AnimeDownloaderService : Service() {
 
     private fun broadcastDownloadStarted(episodeNumber: String) {
         val intent = Intent(AnimeWatchFragment.ACTION_DOWNLOAD_STARTED).apply {
+            setPackage(packageName)
             putExtra(AnimeWatchFragment.EXTRA_EPISODE_NUMBER, episodeNumber)
         }
         sendBroadcast(intent)
@@ -596,6 +621,7 @@ class AnimeDownloaderService : Service() {
 
     private fun broadcastDownloadFinished(episodeNumber: String) {
         val intent = Intent(AnimeWatchFragment.ACTION_DOWNLOAD_FINISHED).apply {
+            setPackage(packageName)
             putExtra(AnimeWatchFragment.EXTRA_EPISODE_NUMBER, episodeNumber)
         }
         sendBroadcast(intent)
@@ -603,6 +629,7 @@ class AnimeDownloaderService : Service() {
 
     private fun broadcastDownloadFailed(episodeNumber: String) {
         val intent = Intent(AnimeWatchFragment.ACTION_DOWNLOAD_FAILED).apply {
+            setPackage(packageName)
             putExtra(AnimeWatchFragment.EXTRA_EPISODE_NUMBER, episodeNumber)
         }
         sendBroadcast(intent)
@@ -610,6 +637,7 @@ class AnimeDownloaderService : Service() {
 
     private fun broadcastDownloadProgress(episodeNumber: String, progress: Int) {
         val intent = Intent(AnimeWatchFragment.ACTION_DOWNLOAD_PROGRESS).apply {
+            setPackage(packageName)
             putExtra(AnimeWatchFragment.EXTRA_EPISODE_NUMBER, episodeNumber)
             putExtra("progress", progress)
         }

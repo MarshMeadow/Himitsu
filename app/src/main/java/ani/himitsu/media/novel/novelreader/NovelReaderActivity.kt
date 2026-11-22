@@ -195,7 +195,12 @@ class NovelReaderActivity : AppCompatActivity(), EbookReaderEventListener {
 
     @SuppressLint("ClickableViewAccessibility")
     private fun setupViews() {
-        scope.launch { binding.bookReader.openBook(intent.data!!) }
+        val data = intent.data
+        if (data == null) {
+            finish()
+            return
+        }
+        scope.launch { binding.bookReader.openBook(data) }
         binding.bookReader.setEbookReaderListener(this)
 
         binding.mangaReaderBack.setOnClickListener { finish() }

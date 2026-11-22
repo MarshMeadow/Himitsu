@@ -25,6 +25,7 @@ import android.net.NetworkCapabilities.TRANSPORT_CELLULAR
 import android.net.NetworkCapabilities.TRANSPORT_ETHERNET
 import android.net.NetworkCapabilities.TRANSPORT_LOWPAN
 import android.net.NetworkCapabilities.TRANSPORT_USB
+import android.net.NetworkCapabilities.TRANSPORT_WIFI
 import android.net.NetworkCapabilities.TRANSPORT_VPN
 import android.net.NetworkCapabilities.TRANSPORT_WIFI
 import android.net.NetworkCapabilities.TRANSPORT_WIFI_AWARE
@@ -346,6 +347,23 @@ suspend fun loadFragment(activity: FragmentActivity, response: () -> Unit) {
     } catch (ignored: Exception) {
         serverDownDialog(activity)
     }
+}
+
+fun isWifiConnected(context: Context): Boolean {
+    val connectivityManager =
+        context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+    return tryWith {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            val cap = connectivityManager.getNetworkCapabilities(connectivityManager.activeNetwork)
+            return@tryWith cap?.hasTransport(TRANSPORT_WIFI) == true ||
+                    cap?.hasTransport(TRANSPORT_ETHERNET) == true
+        } else {
+            @Suppress("DEPRECATION")
+            return@tryWith connectivityManager.activeNetworkInfo?.run {
+                type == ConnectivityManager.TYPE_WIFI || type == ConnectivityManager.TYPE_ETHERNET
+            } ?: false
+        }
+    } ?: false
 }
 
 fun isOnline(context: Context): Boolean {

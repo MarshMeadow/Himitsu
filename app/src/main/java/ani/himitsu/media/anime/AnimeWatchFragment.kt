@@ -122,7 +122,7 @@ class AnimeWatchFragment : Fragment() {
             requireContext(),
             downloadStatusReceiver,
             intentFilter,
-            ContextCompat.RECEIVER_EXPORTED
+            ContextCompat.RECEIVER_NOT_EXPORTED
         )
 
         var maxGridSize = 100.dpToColumns
@@ -525,6 +525,7 @@ class AnimeWatchFragment : Fragment() {
 
     fun onAnimeEpisodeStopDownloadClick(i: String) {
         val cancelIntent = Intent().apply {
+            setPackage(requireContext().packageName)
             action = AnimeDownloaderService.ACTION_CANCEL_DOWNLOAD
             putExtra(
                 AnimeDownloaderService.EXTRA_TASK_NAME,

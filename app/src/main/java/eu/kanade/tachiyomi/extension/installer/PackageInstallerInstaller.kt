@@ -144,9 +144,9 @@ class PackageInstallerInstaller(private val service: Service) : Installer(servic
             service,
             packageActionReceiver,
             IntentFilter(INSTALL_ACTION),
-            ContextCompat.RECEIVER_EXPORTED,
+            ContextCompat.RECEIVER_NOT_EXPORTED,
         )
     }
 }
 
-private const val INSTALL_ACTION = "PackageInstallerInstaller.INSTALL_ACTION"
+private const val INSTALL_ACTION = "ani.himitsu.EXTENSION_INSTALL_RESULT"

@@ -113,6 +113,7 @@ class SettingsDialogFragment : BottomSheetDialogFragment() {
         }
 
         fun search(query: String) {
+            if (query.isBlank()) return
             ReverseSearchDialogFragment(query).show(
                 requireActivity().supportFragmentManager, null
             )

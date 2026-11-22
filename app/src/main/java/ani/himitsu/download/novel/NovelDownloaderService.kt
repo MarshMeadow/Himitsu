@@ -23,6 +23,9 @@ import ani.himitsu.download.DownloadsManager.Companion.getSubDirectory
 import ani.himitsu.media.cereal.Media
 import ani.himitsu.media.MediaType
 import ani.himitsu.media.novel.NovelReadFragment
+import ani.himitsu.isWifiConnected
+import ani.himitsu.settings.saving.PrefManager
+import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.snackString
 import ani.himitsu.util.Logger
 import com.anggrayudi.storage.file.forceDelete
@@ -34,9 +37,13 @@ import eu.kanade.tachiyomi.network.NetworkHelper
 import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.source.model.SChapterImpl
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.cancel
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.joinAll
+import kotlinx.coroutines.sync.Semaphore
+import kotlinx.coroutines.sync.withPermit
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.sync.Mutex
@@ -71,6 +78,8 @@ class NovelDownloaderService : Service() {
         return null
     }
 
+    private val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
+
     override fun onCreate() {
         super.onCreate()
         notificationManager = NotificationManagerCompat.from(this)
@@ -95,11 +104,12 @@ class NovelDownloaderService : Service() {
             this,
             cancelReceiver,
             IntentFilter(ACTION_CANCEL_DOWNLOAD),
-            ContextCompat.RECEIVER_EXPORTED
+            ContextCompat.RECEIVER_NOT_EXPORTED
         )
     }
 
     override fun onDestroy() {
+        serviceScope.cancel()
         super.onDestroy()
         NovelServiceDataSingleton.downloadQueue.clear()
         downloadJobs.clear()
@@ -109,7 +119,6 @@ class NovelDownloaderService : Service() {
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         snackString(getString(R.string.download_started))
-        val serviceScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
         serviceScope.launch {
             mutex.withLock {
                 if (!isCurrentlyProcessing) {
@@ -123,31 +132,46 @@ class NovelDownloaderService : Service() {
     }
 
     private fun processQueue() {
-        CoroutineScope(Dispatchers.Default).launch {
+        serviceScope.launch {
+            val maxParallel = PrefManager.getVal<Int>(PrefName.MaxParallelDownloads).coerceIn(0, 10)
+            val semaphore = Semaphore(if (maxParallel > 0) maxParallel else 1)
+            val activeJobs = mutableListOf<Job>()
             while (NovelServiceDataSingleton.downloadQueue.isNotEmpty()) {
                 val task = NovelServiceDataSingleton.downloadQueue.poll()
                 if (task != null) {
-                    val job = launch { download(task) }
+                    if (PrefManager.getVal<Boolean>(PrefName.DownloadWifiOnly) &&
+                        !isWifiConnected(this@NovelDownloaderService)
+                    ) {
+                        broadcastDownloadFailed(task.originalLink)
+                        continue
+                    }
+                    val job = launch {
+                        semaphore.withPermit {
+                            try {
+                                download(task)
+                            } finally {
+                                mutex.withLock {
+                                    downloadJobs.remove(task.chapter)
+                                }
+                                updateNotification()
+                            }
+                        }
+                    }
                     mutex.withLock {
                         downloadJobs[task.chapter] = job
                     }
-                    job.join() // Wait for the job to complete before continuing to the next task
-                    mutex.withLock {
-                        downloadJobs.remove(task.chapter)
-                    }
-                    updateNotification() // Update the notification after each task is completed
+                    activeJobs.add(job)
                 }
-                if (NovelServiceDataSingleton.downloadQueue.isEmpty()) {
-                    withContext(Dispatchers.Main) {
-                        stopSelf() // Stop the service when the queue is empty
-                    }
-                }
+            }
+            activeJobs.joinAll()
+            withContext(Dispatchers.Main) {
+                stopSelf()
             }
         }
     }
 
     fun cancelDownload(chapter: String) {
-        CoroutineScope(Dispatchers.Default).launch {
+        serviceScope.launch {
             mutex.withLock {
                 downloadJobs[chapter]?.cancel()
                 downloadJobs.remove(chapter)
@@ -435,6 +459,7 @@ class NovelDownloaderService : Service() {
 
     private fun broadcastDownloadStarted(link: String) {
         val intent = Intent(NovelReadFragment.ACTION_DOWNLOAD_STARTED).apply {
+            setPackage(packageName)
             putExtra(NovelReadFragment.EXTRA_NOVEL_LINK, link)
         }
         sendBroadcast(intent)
@@ -442,6 +467,7 @@ class NovelDownloaderService : Service() {
 
     private fun broadcastDownloadFinished(link: String) {
         val intent = Intent(NovelReadFragment.ACTION_DOWNLOAD_FINISHED).apply {
+            setPackage(packageName)
             putExtra(NovelReadFragment.EXTRA_NOVEL_LINK, link)
         }
         sendBroadcast(intent)
@@ -449,6 +475,7 @@ class NovelDownloaderService : Service() {
 
     private fun broadcastDownloadFailed(link: String) {
         val intent = Intent(NovelReadFragment.ACTION_DOWNLOAD_FAILED).apply {
+            setPackage(packageName)
             putExtra(NovelReadFragment.EXTRA_NOVEL_LINK, link)
         }
         sendBroadcast(intent)
@@ -456,6 +483,7 @@ class NovelDownloaderService : Service() {
 
     private fun broadcastDownloadProgress(link: String, progress: Int) {
         val intent = Intent(NovelReadFragment.ACTION_DOWNLOAD_PROGRESS).apply {
+            setPackage(packageName)
             putExtra(NovelReadFragment.EXTRA_NOVEL_LINK, link)
             putExtra("progress", progress)
         }

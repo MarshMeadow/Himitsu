@@ -211,7 +211,7 @@ class NovelReadFragment : Fragment(),
             requireContext(),
             downloadStatusReceiver,
             intentFilter,
-            ContextCompat.RECEIVER_EXPORTED
+            ContextCompat.RECEIVER_NOT_EXPORTED
         )
 
         binding.animeSourceRecycler.updatePadding(bottom = binding.animeSourceRecycler.paddingBottom + navBarHeight)

@@ -114,6 +114,7 @@ class MangaReaderActivity : AppCompatActivity() {
     private val scope = lifecycleScope
 
     var defaultSettings = CurrentReaderSettings()
+    val autoScrollHelper = MangaReaderAutoScroll()
 
     private lateinit var media: Media
     private lateinit var chapter: MangaChapter
@@ -257,7 +258,26 @@ class MangaReaderActivity : AppCompatActivity() {
         setDiscordStatus()
     }
 
+    override fun onPause() {
+        super.onPause()
+        if (autoScrollHelper.isRunning) {
+            autoScrollHelper.stop()
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        if (defaultSettings.autoScroll && ::binding.isInitialized && defaultSettings.layout != PAGED) {
+            autoScrollHelper.speed = defaultSettings.autoScrollSpeed
+            autoScrollHelper.attach(binding.mangaReaderRecycler, defaultSettings.direction)
+            autoScrollHelper.stop()
+            binding.mangaReaderAutoScrollPlayBar.isVisible = true
+            binding.autoScrollPlayPause.setImageResource(R.drawable.ic_round_play_arrow_24)
+        }
+    }
+
     override fun onDestroy() {
+        autoScrollHelper.destroy()
         mangaCache.clear()
         super.onDestroy()
     }
@@ -443,6 +463,23 @@ class MangaReaderActivity : AppCompatActivity() {
             ReaderSettingsDialogFragment.newInstance().show(supportFragmentManager, "settings")
         }
 
+        binding.autoScrollPlayPause.setOnClickListener {
+            val isRunning = autoScrollHelper.toggle()
+            binding.autoScrollPlayPause.setImageResource(
+                if (isRunning) R.drawable.ic_round_pause_24 else R.drawable.ic_round_play_arrow_24
+            )
+        }
+        binding.autoScrollSpeedUp.setOnClickListener {
+            val newSpeed = (autoScrollHelper.speed + 0.5f).coerceAtMost(10f)
+            updateAutoScrollSpeed(newSpeed)
+            snackString("${newSpeed}x")
+        }
+        binding.autoScrollSpeedDown.setOnClickListener {
+            val newSpeed = (autoScrollHelper.speed - 0.5f).coerceAtLeast(0.5f)
+            updateAutoScrollSpeed(newSpeed)
+            snackString("${newSpeed}x")
+        }
+
         //Next Chapter
         binding.mangaReaderNextChap.setOnClickListener {
             binding.mangaReaderNextChapter.performClick()
@@ -523,6 +560,26 @@ class MangaReaderActivity : AppCompatActivity() {
         }
     }
 
+    private fun setupAutoScroll() {
+        if (defaultSettings.autoScroll && defaultSettings.layout != PAGED) {
+            autoScrollHelper.speed = defaultSettings.autoScrollSpeed
+            autoScrollHelper.attach(binding.mangaReaderRecycler, defaultSettings.direction)
+            autoScrollHelper.stop()
+            binding.mangaReaderAutoScrollPlayBar.isVisible = true
+            binding.autoScrollPlayPause.setImageResource(R.drawable.ic_round_play_arrow_24)
+        } else {
+            autoScrollHelper.stop()
+            binding.mangaReaderAutoScrollPlayBar.isVisible = false
+        }
+    }
+
+    fun updateAutoScrollSpeed(speed: Float) {
+        defaultSettings.autoScrollSpeed = speed
+        PrefManager.setVal(PrefName.AutoScrollSpeed, speed)
+        saveReaderSettings("${media.id}_current_settings", defaultSettings)
+        autoScrollHelper.speed = speed
+    }
+
     @SuppressLint("ClickableViewAccessibility")
     fun applySettings() {
 
@@ -580,6 +637,7 @@ class MangaReaderActivity : AppCompatActivity() {
         }.toInt()
 
         binding.mangaReaderSwipy.isEnabled = defaultSettings.overScrollMode
+        setupAutoScroll()
         if ((defaultSettings.direction == TOP_TO_BOTTOM || defaultSettings.direction == BOTTOM_TO_TOP)) {
             binding.mangaReaderSwipy.vertical = true
             if (defaultSettings.direction == TOP_TO_BOTTOM) {

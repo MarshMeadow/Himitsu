@@ -29,6 +29,7 @@ import ani.himitsu.settings.saving.PrefName
 import ani.himitsu.toast
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import kotlinx.coroutines.launch
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
@@ -197,6 +198,67 @@ class SettingsCommonFragment : Fragment() {
                                 }.setNeutralButton(R.string.cancel) { dialog, _ ->
                                     dialog.dismiss()
                                 }.create()
+                            dialog.window?.setDimAmount(0.8f)
+                            dialog.show()
+                        },
+                        isDialog = true
+                    ),
+                    Settings(
+                        type = ViewType.BUTTON,
+                        name = getString(R.string.max_parallel_downloads),
+                        desc = getString(R.string.max_parallel_downloads_desc),
+                        icon = R.drawable.ic_download_24,
+                        onClick = {
+                            val options = Array(11) {
+                                if (it == 0) "0 (Off / Sequential)" else "$it"
+                            }
+                            val current =
+                                PrefManager.getVal<Int>(PrefName.MaxParallelDownloads).coerceIn(0, 10)
+                            val dialog = AlertDialog.Builder(settings, R.style.MyPopup)
+                                .setTitle(R.string.max_parallel_downloads)
+                                .setSingleChoiceItems(options, current) { d, which ->
+                                    PrefManager.setVal(PrefName.MaxParallelDownloads, which)
+                                    d.dismiss()
+                                }.create()
+                            dialog.window?.setDimAmount(0.8f)
+                            dialog.show()
+                        },
+                        isDialog = true
+                    ),
+                    Settings(
+                        type = ViewType.SWITCH,
+                        name = getString(R.string.download_wifi_only),
+                        desc = getString(R.string.download_wifi_only_desc),
+                        icon = R.drawable.ic_download_24,
+                        pref = PrefName.DownloadWifiOnly
+                    ),
+                    Settings(
+                        type = ViewType.BUTTON,
+                        name = getString(R.string.rebuild_download_index),
+                        desc = getString(R.string.rebuild_download_index_desc),
+                        icon = R.drawable.ic_download_24,
+                        onClick = {
+                            val dialog = AlertDialog.Builder(settings, R.style.MyPopup)
+                                .setTitle(R.string.rebuild_download_index)
+                                .setMessage(R.string.rebuild_download_index_msg)
+                                .setPositiveButton(R.string.ok) { d, _ ->
+                                    toast(getString(R.string.please_wait))
+                                    lifecycleScope.launch(Dispatchers.IO) {
+                                        val recovered =
+                                            Injekt.get<DownloadsManager>().rebuildIndexFromDisk()
+                                        withContext(Dispatchers.Main) {
+                                            toast(
+                                                getString(
+                                                    R.string.rebuild_download_index_done,
+                                                    recovered
+                                                )
+                                            )
+                                        }
+                                    }
+                                    d.dismiss()
+                                }
+                                .setNegativeButton(R.string.cancel) { d, _ -> d.dismiss() }
+                                .create()
                             dialog.window?.setDimAmount(0.8f)
                             dialog.show()
                         },

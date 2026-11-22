@@ -14,6 +14,8 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     SharedUserID(Pref(Location.General, Boolean::class, false)),
     OfflineView(Pref(Location.General, Int::class, 0)),
     DownloadManager(Pref(Location.General, Int::class, 0)),
+    MaxParallelDownloads(Pref(Location.General, Int::class, 0)),
+    DownloadWifiOnly(Pref(Location.General, Boolean::class, false)),
     NSFWExtension(Pref(Location.General, Boolean::class, false)),
     ContinueMedia(Pref(Location.General, Boolean::class, true)),
     SearchSources(Pref(Location.General, Boolean::class, false)),
@@ -166,6 +168,8 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     LongClickImage(Pref(Location.Reader, Boolean::class, true)),
     CropBorders(Pref(Location.Reader, Boolean::class, false)),
     CropBorderThreshold(Pref(Location.Reader, Int::class, 10)),
+    AutoScroll(Pref(Location.Reader, Boolean::class, false)),
+    AutoScrollSpeed(Pref(Location.Reader, Float::class, 3.0f)),
 
     //Novel Reader
     CurrentThemeName(Pref(Location.NovelReader, String::class, "Default")),

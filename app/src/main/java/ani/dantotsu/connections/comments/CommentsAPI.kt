@@ -20,6 +20,12 @@ import kotlinx.serialization.descriptors.SerialDescriptor
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.JsonDecoder
+import kotlinx.serialization.json.JsonPrimitive
+import kotlinx.serialization.json.boolean
+import kotlinx.serialization.json.booleanOrNull
+import kotlinx.serialization.json.intOrNull
+import kotlinx.serialization.json.jsonPrimitive
 import okhttp3.FormBody
 import okhttp3.OkHttpClient
 import okio.IOException
@@ -492,10 +498,10 @@ data class User(
     val isBanned: Boolean? = null,
     @SerialName("is_mod")
     @Serializable(with = NumericBooleanSerializer::class)
-    val isAdmin: Boolean? = null,
+    val isMod: Boolean? = null,
     @SerialName("is_admin")
     @Serializable(with = NumericBooleanSerializer::class)
-    val isMod: Boolean? = null,
+    val isAdmin: Boolean? = null,
     @SerialName("total_votes")
     val totalVotes: Int,
     @SerialName("warnings")
@@ -587,6 +593,15 @@ object NumericBooleanSerializer : KSerializer<Boolean> {
     }
 
     override fun deserialize(decoder: Decoder): Boolean {
+        if (decoder is JsonDecoder) {
+            val element = decoder.decodeJsonElement()
+            return when {
+                element is JsonPrimitive && element.isString ->
+                    element.content.equals("true", true) || element.content == "1"
+                element is JsonPrimitive && element.booleanOrNull != null -> element.boolean
+                else -> (element.jsonPrimitive.intOrNull ?: 0) != 0
+            }
+        }
         return decoder.decodeInt() != 0
     }
 }

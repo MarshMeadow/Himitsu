@@ -176,7 +176,7 @@ internal class ExtensionGithubApi {
             NovelExtension.Available(
                 name = extension.name,
                 pkgName = extension.pkg,
-                versionName = extension.apk,
+                versionName = extension.version,
                 versionCode = extension.code,
                 isNsfw = extension.nsfw == 1,
                 sources = sources?.toNovelSources() ?: emptyList(),

@@ -25,6 +25,8 @@ data class CurrentReaderSettings(
     var longClickImage: Boolean = PrefManager.getVal(PrefName.LongClickImage),
     var cropBorders: Boolean = PrefManager.getVal(PrefName.CropBorders),
     var cropBorderThreshold: Int = PrefManager.getVal(PrefName.CropBorderThreshold),
+    var autoScroll: Boolean = PrefManager.getVal(PrefName.AutoScroll),
+    var autoScrollSpeed: Float = PrefManager.getVal(PrefName.AutoScrollSpeed),
     var discordRPC: Boolean = Discord.token != null
 ) : Serializable {
 

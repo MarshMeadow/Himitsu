@@ -85,6 +85,7 @@ import kotlinx.coroutines.withContext
 import nl.joery.animatedbottombar.AnimatedBottomBar
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
+import ani.himitsu.util.customAlertDialog
 import java.io.Serializable
 
 
@@ -181,11 +182,20 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
                 } else if (name.endsWith(".ani")) {
-                    val decryptedJson = jsonString.toString(Charsets.UTF_8)
-                    if (PreferencePackager.unpack(decryptedJson)) {
-                        val intent = Intent(this, this.javaClass)
-                        this.finish()
-                        startActivity(intent)
+                    // .ani is unencrypted — confirm before replacing all settings
+                    customAlertDialog().apply {
+                        setTitle(R.string.import_settings_title)
+                        setMessage(R.string.import_settings_confirm)
+                        setPosButton(R.string.import_text) {
+                            val decryptedJson = jsonString.toString(Charsets.UTF_8)
+                            if (PreferencePackager.unpack(decryptedJson)) {
+                                val intent = Intent(this@MainActivity, this@MainActivity.javaClass)
+                                this@MainActivity.finish()
+                                startActivity(intent)
+                            }
+                        }
+                        setNegButton(R.string.cancel)
+                        show()
                     }
                 } else {
                     toast(getString(R.string.invalid_file_type))

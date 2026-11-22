@@ -117,7 +117,7 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
             requireContext(),
             downloadStatusReceiver,
             intentFilter,
-            ContextCompat.RECEIVER_EXPORTED
+            ContextCompat.RECEIVER_NOT_EXPORTED
         )
 
         var maxGridSize = 100.dpToColumns
@@ -590,6 +590,7 @@ open class MangaReadFragment : Fragment(), ScanlatorSelectionListener {
 
     fun onMangaChapterStopDownloadClick(i: String) {
         val cancelIntent = Intent().apply {
+            setPackage(requireContext().packageName)
             action = MangaDownloaderService.ACTION_CANCEL_DOWNLOAD
             putExtra(MangaDownloaderService.EXTRA_CHAPTER, i)
         }
