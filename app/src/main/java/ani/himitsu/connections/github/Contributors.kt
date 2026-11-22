@@ -17,53 +17,64 @@ class Contributors {
 
     fun getContributors(): Array<Developer> {
         val contributors = arrayListOf<Developer>()
-        runBlocking(Dispatchers.IO) {
-            val res = client.get("https://api.github.com/repos/rebelonion/Dantotsu/contributors")
-                .parsed<JsonArray>().map {
-                    Mapper.json.decodeFromJsonElement<GithubResponse>(it)
-                }
-            Collections.swap(res, res.indexOf(res.first { it.login == "AbandonedCart" }), 0)
-            Collections.swap(res, res.indexOf(res.first { it.login == "rebelonion" }), 1)
-            res.filter { it.login != "SunglassJerry" }.forEach {
-                contributors.add(
-                    Developer(
-                        it.login,
-                        it.avatarUrl,
-                        when (it.login) {
-                            "rebelonion" -> getString(R.string.dev_maintainer, "Dantotsu")
-                            "AbandonedCart" ->  "${getString(R.string.himitsu)} ${getString(R.string.dev_maintainer, "Himitsu")}"
-                            "WaiWhat" -> "Icon Designer"
-                            else -> getString(R.string.contributor)
-                        },
-                        it.htmlUrl
-                    )
+        contributors.addAll(
+            arrayOf(
+                Developer(
+                    "Nekosphere",
+                    "https://avatars.githubusercontent.com/u/213000000?v=4",
+                    "Developed & maintained by Nekosphere - founded & led by N3K0",
+                    "https://github.com/Nekomo-App"
+                ),
+                Developer(
+                    "MoonPic",
+                    "https://gitlab.com/uploads/-/system/user/avatar/21385212/avatar.png",
+                    "${getString(R.string.himitsu)} Website Maintainer",
+                    "https://github.com/moonpic"
                 )
+            ).toList()
+        )
+        runBlocking(Dispatchers.IO) {
+            try {
+                val res = mutableListOf<GithubResponse>()
+                listOf("Nekomo-App/HimitsuX", "itsmechinmoy/Dantotsu").forEach { repo ->
+                    try {
+                        client.get("https://api.github.com/repos/$repo/contributors")
+                            .parsed<JsonArray>().map {
+                                Mapper.json.decodeFromJsonElement<GithubResponse>(it)
+                            }.forEach { entry ->
+                                if (res.none { it.login == entry.login }) res.add(entry)
+                            }
+                    } catch (e: Exception) {
+                        ani.himitsu.util.Logger.log(e)
+                    }
+                }
+                res.indexOfFirst { it.login == "AbandonedCart" }
+                    .takeIf { it > 0 }?.let { Collections.swap(res, it, 0) }
+                res.indexOfFirst { it.login == "rebelonion" }
+                    .takeIf { it > 0 }?.let { Collections.swap(res, it, 1) }
+                res.filter { it.login != "SunglassJerry" }.forEach {
+                    contributors.add(
+                        Developer(
+                            it.login,
+                            it.avatarUrl,
+                            when (it.login) {
+                                "rebelonion" -> getString(R.string.dev_maintainer, "Dantotsu")
+                                "AbandonedCart" -> "${getString(R.string.himitsu)} ${getString(R.string.dev_maintainer, "Himitsu")}"
+                                "WaiWhat" -> "Icon Designer"
+                                else -> getString(R.string.contributor)
+                            },
+                            it.htmlUrl
+                        )
+                    )
+                }
+            } catch (e: Exception) {
+                ani.himitsu.util.Logger.log(e)
             }
-            contributors.addAll(0,
-                arrayOf(
-                    Developer(
-                        "Nekosphere",
-                        "https://avatars.githubusercontent.com/u/213000000?v=4",
-                        "Developed & maintained by Nekosphere - founded & led by N3K0",
-                        "https://github.com/Nekomo-App"
-                    )
-                ).toList()
-            )
-            contributors.addAll(1,
-                arrayOf(
-                    Developer(
-                        "MoonPic",
-                        "https://gitlab.com/uploads/-/system/user/avatar/21385212/avatar.png",
-                        "${getString(R.string.himitsu)} Website Maintainer",
-                        "https://github.com/moonpic"
-                    )
-                ).toList()
-            )
-
-            contributors.addAll(
-                arrayOf(
-                    Developer(
-                        "MarshMeadow",
+        }
+        contributors.addAll(
+            arrayOf(
+                Developer(
+                    "MarshMeadow",
                         "https://avatars.githubusercontent.com/u/88599122?v=4",
                         "Beta Icon Designer & Website Maintainer",
                         "https://github.com/MarshMeadow?tab=repositories"
@@ -116,9 +127,8 @@ class Contributors {
                         "${getString(R.string.comment_mod)} & Arabic Translator",
                         "https://anilist.co/user/6183359"
                     ),
-                )
+                ).toList()
             )
-        }
         return contributors.toTypedArray()
     }
 

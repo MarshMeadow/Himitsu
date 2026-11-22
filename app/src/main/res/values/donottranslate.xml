@@ -15,7 +15,7 @@
     <string name="discord_url">https://discord.com/invite/E4Ezmgg7Ka</string>
     <string name="github">https://github.com/%1$s</string>
     <string name="gitlab">https://gitlab.com/%1$s</string>
-    <string name="coffee">https://www.buymeacoffee.com/abandonedcart</string>
+    <string name="coffee">https://ko-fi.com/nekomoapp</string>
 
     <string name="rpc_intent">intent://%1$s#Intent;scheme=himitsu;package=%2$s;S.browser_fallback_url=https%%3A%%2F%%2Fgithub.com%%2FNekomo-App%%2FHimitsuX;end</string>
 

@@ -15,19 +15,23 @@ class Forks {
     fun getForks(): Array<Developer> {
         val forks = arrayListOf<Developer>()
         runBlocking(Dispatchers.IO) {
-            client.get("https://api.github.com/repos/rebelonion/Dantotsu/forks?sort=stargazers")
-                .parsed<JsonArray>().map {
-                    Mapper.json.decodeFromJsonElement<GithubResponse>(it)
-                }.forEach {
-                    forks.add(
-                        Developer(
-                            it.name,
-                            it.owner.avatarUrl,
-                            it.owner.login,
-                            it.htmlUrl
+            try {
+                client.get("https://api.github.com/repos/itsmechinmoy/Dantotsu/forks?sort=stargazers")
+                    .parsed<JsonArray>().map {
+                        Mapper.json.decodeFromJsonElement<GithubResponse>(it)
+                    }.forEach {
+                        forks.add(
+                            Developer(
+                                it.name,
+                                it.owner.avatarUrl,
+                                it.owner.login,
+                                it.htmlUrl
+                            )
                         )
-                    )
-                }
+                    }
+            } catch (e: Exception) {
+                ani.himitsu.util.Logger.log(e)
+            }
         }
         return forks.toTypedArray()
     }

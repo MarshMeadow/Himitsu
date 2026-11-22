@@ -220,7 +220,7 @@
         \n\n - Furthermore, all of the anime/manga links found in HimitsuX are provided by various 3rd party plugins supplied by the user and have no affiliation with HimitsuX or its staff.
         \n\n - HimitsuX and it\'s contributors aren\'t liable for any misuse of any of the contents found inside or outside of the app and cannot be held accountable for the distribution of any of the contents found inside the app.
         \n\n - By using HimitsuX, you confirm that the developer of HimitsuX is not responsible for any of the contents found in the app or Dantotsu. You also agree to not use HimitsuX to download or stream any copyrighted content.
-        \n\n - If any internet infringement issues are involved, please contact the Dantotsu website. HimitsuX and its contributors do not assume any legal responsibility.
+        \n\n - If any internet infringement issues are involved, please open an issue on the HimitsuX GitHub repository or contact Nekosphere. HimitsuX and its contributors do not assume any legal responsibility.
     </string>
     <string name="version_current">Version %1$s</string>
     <string-array name="tips">
@@ -1169,7 +1169,7 @@
     <string name="comment_mod">Comment Moderator</string>
 
     <string name="biometric_title">Biometric Verification</string>
-    <string name="biometric_summary">Require authentication to access HImitsu</string>
+    <string name="biometric_summary">Require authentication to access HimitsuX</string>
     <string name="biometric_details">Biometric authentication is required</string>
     <string name="biometric_error">Biometric Error: %1$s</string>
     <string name="biometric_success">Welcome back!</string>
