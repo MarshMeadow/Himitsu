@@ -14,7 +14,7 @@ import ani.himitsu.util.Logger
 import eu.kanade.tachiyomi.animesource.model.SAnime
 import eu.kanade.tachiyomi.animesource.model.SEpisode
 import eu.kanade.tachiyomi.animesource.model.SEpisodeImpl
-import me.xdrop.fuzzywuzzy.FuzzySearch
+import ani.himitsu.util.FuzzyMatch
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 
@@ -83,7 +83,7 @@ class OfflineAnimeParser : AnimeParser() {
         val returnTitlesPair: MutableList<Pair<String, Int>> = mutableListOf()
         for (title in titles) {
             Logger.log("Comparing $title to $query")
-            val score = FuzzySearch.ratio(title.lowercase(), query.lowercase())
+            val score = FuzzyMatch.ratio(title.lowercase(), query.lowercase())
             if (score > 80) {
                 returnTitlesPair.add(Pair(title, score))
             }

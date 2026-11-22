@@ -22,7 +22,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import me.xdrop.fuzzywuzzy.FuzzySearch
+import ani.himitsu.util.FuzzyMatch
 import java.io.Serializable
 
 class DownloadsManager(private val context: Context) {
@@ -364,14 +364,14 @@ class DownloadsManager(private val context: Context) {
         private const val RATIO_THRESHOLD = 95
         fun Media.compareName(name: String): Boolean {
             val mainName = mainName().findValidName().lowercase()
-            val ratio = FuzzySearch.ratio(mainName, name.lowercase())
+            val ratio = FuzzyMatch.ratio(mainName, name.lowercase())
             return ratio > RATIO_THRESHOLD
         }
 
         fun String.compareName(name: String): Boolean {
             val mainName = findValidName().lowercase()
             val compareName = name.findValidName().lowercase()
-            val ratio = FuzzySearch.ratio(mainName, compareName)
+            val ratio = FuzzyMatch.ratio(mainName, compareName)
             return ratio > RATIO_THRESHOLD
         }
     }

@@ -14,7 +14,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.withContext
-import me.xdrop.fuzzywuzzy.FuzzySearch
+import ani.himitsu.util.FuzzyMatch
 import okhttp3.Request
 import java.io.Serializable
 import java.net.URLDecoder
@@ -75,7 +75,7 @@ abstract class BaseParser {
         }
         val sortedResults = if (results.isNotEmpty()) {
             results.sortedByDescending {
-                FuzzySearch.ratio(
+                FuzzyMatch.ratio(
                     it.name.lowercase(),
                     query.lowercase()
                 )
@@ -112,7 +112,7 @@ abstract class BaseParser {
         } else {
             response = closestMatch(mediaObj.mainName())
 
-            if (response == null || FuzzySearch.ratio(
+            if (response == null || FuzzyMatch.ratio(
                     response.name.lowercase(),
                     mediaObj.mainName().lowercase()
                 ) < 100
@@ -124,17 +124,17 @@ abstract class BaseParser {
                     Logger.log("No exact match found in results. Defaulting to RomajiResults.")
                     closestRomaji
                 } else {
-                    val romajiRatio = FuzzySearch.ratio(
+                    val romajiRatio = FuzzyMatch.ratio(
                         closestRomaji?.name?.lowercase() ?: "",
                         mediaObj.nameRomaji.lowercase()
                     )
-                    var mainNameRatio = FuzzySearch.ratio(
+                    var mainNameRatio = FuzzyMatch.ratio(
                         response.name.lowercase(),
                         mediaObj.mainName().lowercase()
                     )
                     if (mediaObj.nameMAL != null && mediaObj.mainName() != mediaObj.nameMAL) {
                         val closestMal = closestMatch(mediaObj.nameMAL)
-                        val malRatio = FuzzySearch.ratio(
+                        val malRatio = FuzzyMatch.ratio(
                             closestMal?.name?.lowercase() ?: "",
                             mediaObj.nameMAL!!.lowercase()
                         )

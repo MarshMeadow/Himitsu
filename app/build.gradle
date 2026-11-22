@@ -229,7 +229,7 @@ dependencies {
     implementation "com.github.chimbori:viewgenesis:3.1.1"
 
     /* String Matching */
-    implementation 'me.xdrop:fuzzywuzzy:1.4.0'
+
 
     /* Download */
     // implementation group: 'com.arthenica', name: 'ffmpeg-kit-full-gpl', version: '6.0-2.LTS'

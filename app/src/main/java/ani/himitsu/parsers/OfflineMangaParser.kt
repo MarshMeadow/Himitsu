@@ -10,7 +10,7 @@ import ani.himitsu.media.MediaType
 import ani.himitsu.util.Logger
 import eu.kanade.tachiyomi.source.model.SChapter
 import eu.kanade.tachiyomi.source.model.SManga
-import me.xdrop.fuzzywuzzy.FuzzySearch
+import ani.himitsu.util.FuzzyMatch
 import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.get
 
@@ -83,7 +83,7 @@ class OfflineMangaParser : MangaParser() {
         val titles = downloadManager.mangaDownloadedTypes.map { it.titleName }.distinct()
         val returnTitlesPair: MutableList<Pair<String, Int>> = mutableListOf()
         for (title in titles) {
-            val score = FuzzySearch.ratio(title.lowercase(), query.lowercase())
+            val score = FuzzyMatch.ratio(title.lowercase(), query.lowercase())
             if (score > 80) {
                 returnTitlesPair.add(Pair(title, score))
             }
