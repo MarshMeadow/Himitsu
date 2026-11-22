@@ -28,6 +28,17 @@ Classes provided by source instead (removed from / never present in the jar):
 | `bit.himitsu.net.Bandwidth` | `bit/himitsu/net/Bandwidth.kt` | absent from the 1.0.0 jar. |
 | `bit.himitsu.viewpager.FidgetSpinTransformer` | `bit/himitsu/viewpager/FidgetSpinTransformer.kt` | absent from the 1.0.0 jar. |
 | `openStreamTab` / `openPluginTab` | `bit/himitsu/webkit/ChromeTabs.kt` | added to `ChromeIntegration` after 1.0.0; reimplemented as extension functions. |
+| `bit.himitsu.io.Debug` | `bit/himitsu/io/Debug.kt` | ported to source; the jar must NOT re-ship it (duplicate-class dex failure). |
+
+### Binary patch applied to the jar
+
+`bit/himitsu/update/MatagiUpdater.class` bakes `RepoDevil/Himitsu` (the old,
+dead repo) into its `getRepo()` constant. The UTF-8 constant-pool entry was
+rewritten to `Nekomo-App/HimitsuX`, so the Matagi updater now polls
+`api.github.com/repos/Nekomo-App/HimitsuX/releases` and matches the
+commit-hash tags / `Himitsu-<tag>-google-<abi>-matagi.apk` assets this repo
+publishes. No other jar entry references the old repo; `bit.himitsu.io.Debug`
+(source) builds the issue-report URL and was already updated.
 
 ## `app/stubs/app-stubs.jar` (compileOnly, never packaged)
 
