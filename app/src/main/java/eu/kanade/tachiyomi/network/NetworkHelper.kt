@@ -21,6 +21,41 @@ class NetworkHelper(
     context: Context
 ) {
 
+    init {
+        setupSocks5Proxy()
+    }
+
+    private fun setupSocks5Proxy() {
+        val proxyEnabled = PrefManager.getVal<Boolean>(PrefName.EnableSocks5Proxy)
+        if (proxyEnabled) {
+            val proxyHost = PrefManager.getVal<String>(PrefName.Socks5ProxyHost)
+            val proxyPort = PrefManager.getVal<String>(PrefName.Socks5ProxyPort)
+
+            if (proxyHost.isNotEmpty() && proxyPort.isNotEmpty()) {
+                System.setProperty("socksProxyHost", proxyHost)
+                System.setProperty("socksProxyPort", proxyPort)
+            }
+
+            if (PrefManager.getVal<Boolean>(PrefName.ProxyAuthEnabled)) {
+                val proxyUsername = PrefManager.getVal<String>(PrefName.Socks5ProxyUsername)
+                val proxyPassword = PrefManager.getVal<String>(PrefName.Socks5ProxyPassword)
+
+                java.net.Authenticator.setDefault(object : java.net.Authenticator() {
+                    override fun getPasswordAuthentication(): java.net.PasswordAuthentication {
+                        return java.net.PasswordAuthentication(
+                            proxyUsername,
+                            proxyPassword.toCharArray()
+                        )
+                    }
+                })
+            }
+        } else {
+            System.clearProperty("socksProxyHost")
+            System.clearProperty("socksProxyPort")
+            java.net.Authenticator.setDefault(null)
+        }
+    }
+
     val cookieJar = AndroidCookieJar()
 
     val client: OkHttpClient = run {

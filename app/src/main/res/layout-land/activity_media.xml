@@ -453,6 +453,21 @@
                     tools:visibility="visible" />
 
                 <ImageButton
+                    android:id="@+id/commentGif"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="8dp"
+                    android:alpha="0.5"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/gifs"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_round_gif_24"
+                    android:visibility="gone"
+                    app:tint="?attr/colorOnBackground"
+                    tools:visibility="visible" />
+
+                <ImageButton
                     android:id="@+id/commentSend"
                     android:layout_width="32dp"
                     android:layout_height="32dp"

@@ -276,6 +276,7 @@ class CommentsFragment : Fragment() {
             if (hasFocus) {
                 val targetWidth = activity.binding.commentInputLayout.width -
                         activity.binding.commentLabel.width -
+                        activity.binding.commentGif.width -
                         activity.binding.commentSend.width -
                         activity.binding.commentUserAvatar.width - 12 + 16
                 val anim = ValueAnimator.ofInt(activity.binding.commentInput.width, targetWidth)
@@ -289,9 +290,11 @@ class CommentsFragment : Fragment() {
                 anim.start()
                 anim.doOnEnd {
                     activity.binding.commentLabel.visibility = View.VISIBLE
+                    activity.binding.commentGif.visibility = View.VISIBLE
                     activity.binding.commentSend.visibility = View.VISIBLE
                     activity.binding.commentLabel.animate().translationX(0f).setDuration(300)
                         .start()
+                    activity.binding.commentGif.animate().translationX(0f).setDuration(300).start()
                     activity.binding.commentSend.animate().translationX(0f).setDuration(300).start()
 
                 }
@@ -343,6 +346,19 @@ class CommentsFragment : Fragment() {
                 val dialog = alertDialog.show()
                 dialog?.window?.setDimAmount(0.8f)
             }
+        }
+
+        activity.binding.commentGif.setOnClickListener {
+            val gifPicker = GifPickerBottomDialog.newInstance()
+            gifPicker.setOnGifSelectedListener { gifUrl ->
+                val currentText = activity.binding.commentInput.text.toString()
+                val gifMarkdown = "![gif]($gifUrl)"
+                val newText =
+                    if (currentText.isEmpty()) gifMarkdown else "$currentText\n$gifMarkdown"
+                activity.binding.commentInput.setText(newText)
+                activity.binding.commentInput.setSelection(newText.length)
+            }
+            gifPicker.show(childFragmentManager, "gifPicker")
         }
 
         activity.binding.commentSend.setOnClickListener {

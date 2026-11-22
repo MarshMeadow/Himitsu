@@ -16,6 +16,8 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     DownloadManager(Pref(Location.General, Int::class, 0)),
     MaxParallelDownloads(Pref(Location.General, Int::class, 0)),
     DownloadWifiOnly(Pref(Location.General, Boolean::class, false)),
+    EnableSocks5Proxy(Pref(Location.General, Boolean::class, false)),
+    ProxyAuthEnabled(Pref(Location.General, Boolean::class, false)),
     NSFWExtension(Pref(Location.General, Boolean::class, false)),
     ContinueMedia(Pref(Location.General, Boolean::class, true)),
     SearchSources(Pref(Location.General, Boolean::class, false)),
@@ -231,4 +233,8 @@ enum class PrefName(val data: Pref) {  //TODO: Split this into multiple files
     AnilistUserId(Pref(Location.Protected, String::class, "")),
     MALCodeChallenge(Pref(Location.Protected, String::class, "")),
     MALToken(Pref(Location.Protected, MAL.ResponseToken::class, "")),
+    Socks5ProxyHost(Pref(Location.Protected, String::class, "")),
+    Socks5ProxyPort(Pref(Location.Protected, String::class, "")),
+    Socks5ProxyUsername(Pref(Location.Protected, String::class, "")),
+    Socks5ProxyPassword(Pref(Location.Protected, String::class, "")),
 }

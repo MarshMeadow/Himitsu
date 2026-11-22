@@ -1158,3 +1158,18 @@ fun snackString(s: String?, activity: Activity? = null, clipboard: String? = nul
 fun snackString(r: Int, activity: Activity? = null, clipboard: String? = null): Snackbar? {
     return snackString(getString(r), activity, clipboard)
 }
+
+fun Activity.restartApp() {
+    val mainIntent = Intent.makeRestartActivityTask(
+        packageManager.getLaunchIntentForPackage(this.packageName)!!.component
+    )
+    val component =
+        ComponentName(this@restartApp.packageName, this@restartApp::class.qualifiedName!!)
+    try {
+        startActivity(Intent().setComponent(component))
+    } catch (_: Exception) {
+        startActivity(mainIntent)
+    }
+    finishAndRemoveTask()
+    PrefManager.setCustomVal("reload", true)
+}

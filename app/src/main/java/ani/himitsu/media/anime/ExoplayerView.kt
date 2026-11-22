@@ -4,12 +4,17 @@ import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.app.Dialog
+import android.app.PendingIntent
 import android.app.PictureInPictureParams
+import android.app.RemoteAction
 import android.app.PictureInPictureUiState
 import android.content.ActivityNotFoundException
+import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.content.pm.ActivityInfo
+import android.graphics.drawable.Icon
 import android.content.pm.PackageManager
 import android.content.res.ColorStateList
 import android.content.res.Configuration
@@ -57,6 +62,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.scale
 import androidx.core.math.MathUtils.clamp
@@ -249,6 +255,7 @@ open class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabi
 
     private var downloadId: String? = null
     private var hasExtSubtitles = false
+    private var pipReceiver: BroadcastReceiver? = null
 
     companion object {
         var initialized = false
@@ -260,6 +267,12 @@ open class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabi
         private const val DEFAULT_MAX_BUFFER_MS = 600000
         private const val BUFFER_FOR_PLAYBACK_MS = 2500
         private const val BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS = 5000
+
+        const val ACTION_PIP_PREV_EP = "ani.himitsu.PIP_PREV_EP"
+        const val ACTION_PIP_REWIND = "ani.himitsu.PIP_REWIND"
+        const val ACTION_PIP_PLAY_PAUSE = "ani.himitsu.PIP_PLAY_PAUSE"
+        const val ACTION_PIP_SKIP = "ani.himitsu.PIP_SKIP"
+        const val ACTION_PIP_NEXT_EP = "ani.himitsu.PIP_NEXT_EP"
     }
 
     private lateinit var episode: Episode
@@ -1930,6 +1943,7 @@ open class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabi
     override fun onIsPlayingChanged(isPlaying: Boolean) {
         if (!isBuffering) {
             isPlayerPlaying = isPlaying
+            updatePipActions(isPlaying)
             playerView.keepScreenOn = isPlaying
             (exoPlay.drawable as Animatable?)?.start()
             if (!this.isDestroyed) Glide.with(this)
@@ -2471,18 +2485,136 @@ open class ExoplayerView : AppCompatActivity(), Player.Listener, SessionAvailabi
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
+    private fun buildPipActions(isPlaying: Boolean): List<RemoteAction> {
+        val prevEpAction = RemoteAction(
+            Icon.createWithResource(this, R.drawable.ic_round_skip_previous_24),
+            "Previous Episode",
+            "Previous Episode",
+            PendingIntent.getBroadcast(
+                this, 10,
+                Intent(ACTION_PIP_PREV_EP).setPackage(packageName),
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            )
+        )
+        val rewindAction = RemoteAction(
+            Icon.createWithResource(this, R.drawable.ic_pip_rewind_10),
+            "Rewind 10s",
+            "Rewind 10s",
+            PendingIntent.getBroadcast(
+                this, 1,
+                Intent(ACTION_PIP_REWIND).setPackage(packageName),
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            )
+        )
+        val playPauseIcon =
+            if (isPlaying) R.drawable.ic_round_pause_24 else R.drawable.ic_round_play_arrow_24
+        val playPauseTitle = if (isPlaying) "Pause" else "Play"
+        val playPauseAction = RemoteAction(
+            Icon.createWithResource(this, playPauseIcon),
+            playPauseTitle,
+            playPauseTitle,
+            PendingIntent.getBroadcast(
+                this, 2,
+                Intent(ACTION_PIP_PLAY_PAUSE).setPackage(packageName),
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            )
+        )
+        val skipAction = RemoteAction(
+            Icon.createWithResource(this, R.drawable.ic_pip_skip_10),
+            "Skip 10s",
+            "Skip 10s",
+            PendingIntent.getBroadcast(
+                this, 3,
+                Intent(ACTION_PIP_SKIP).setPackage(packageName),
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            )
+        )
+        val nextEpAction = RemoteAction(
+            Icon.createWithResource(this, R.drawable.ic_round_skip_next_24),
+            "Next Episode",
+            "Next Episode",
+            PendingIntent.getBroadcast(
+                this, 20,
+                Intent(ACTION_PIP_NEXT_EP).setPackage(packageName),
+                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+            )
+        )
+
+        val maxActions = maxNumPictureInPictureActions
+        // Phones enforce a hard limit of 3 PiP actions; devices supporting 5+
+        // (tablets/foldables/TV) get prev/next episode controls too.
+        return if (maxActions >= 5) {
+            listOf(prevEpAction, rewindAction, playPauseAction, skipAction, nextEpAction)
+        } else {
+            listOf(rewindAction, playPauseAction, skipAction)
+        }
+    }
+
+    private fun updatePipActions(isPlaying: Boolean = isPlayerPlaying) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && isInPictureInPictureMode) {
+            val params = PictureInPictureParams.Builder()
+                .setAspectRatio(aspectRatio)
+                .setActions(buildPipActions(isPlaying))
+                .build()
+            setPictureInPictureParams(params)
+        }
+    }
+
+    private fun registerPipReceiver() {
+        if (pipReceiver != null) return
+        pipReceiver = object : BroadcastReceiver() {
+            override fun onReceive(context: Context?, intent: Intent?) {
+                val seekMs =
+                    (PrefManager.getVal<Int>(PrefName.SeekTime) * 1000L).takeIf { it > 0 }
+                        ?: 10_000L
+                when (intent?.action) {
+                    ACTION_PIP_PREV_EP -> exoPrev.performClick()
+                    ACTION_PIP_NEXT_EP -> exoNext.performClick()
+                    ACTION_PIP_REWIND ->
+                        exoPlayer.seekTo(maxOf(0L, exoPlayer.currentPosition - seekMs))
+                    ACTION_PIP_PLAY_PAUSE ->
+                        if (exoPlayer.isPlaying) exoPlayer.pause() else exoPlayer.play()
+                    ACTION_PIP_SKIP -> {
+                        val target = exoPlayer.currentPosition + seekMs
+                        exoPlayer.seekTo(
+                            if (exoPlayer.duration > 0) minOf(exoPlayer.duration, target) else target
+                        )
+                    }
+                }
+            }
+        }
+        val filter = IntentFilter().apply {
+            addAction(ACTION_PIP_PREV_EP)
+            addAction(ACTION_PIP_REWIND)
+            addAction(ACTION_PIP_PLAY_PAUSE)
+            addAction(ACTION_PIP_SKIP)
+            addAction(ACTION_PIP_NEXT_EP)
+        }
+        ContextCompat.registerReceiver(
+            this, pipReceiver, filter, ContextCompat.RECEIVER_NOT_EXPORTED
+        )
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
     private fun getPictureInPictureBuilder(): PictureInPictureParams.Builder {
         return PictureInPictureParams.Builder().also {
-            setPictureInPictureParams(it.setAspectRatio(aspectRatio).build())
+            setPictureInPictureParams(
+                it.setAspectRatio(aspectRatio)
+                    .setActions(buildPipActions(isPlayerPlaying))
+                    .build()
+            )
         }
     }
 
     private fun onPiPChanged(isInPictureInPictureMode: Boolean) {
         playerView.useController = !isInPictureInPictureMode
         if (isInPictureInPictureMode) {
+            registerPipReceiver()
             requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
             orientationListener?.disable()
         } else {
+            pipReceiver?.let { unregisterReceiver(it) }
+            pipReceiver = null
             orientationListener?.enable()
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {

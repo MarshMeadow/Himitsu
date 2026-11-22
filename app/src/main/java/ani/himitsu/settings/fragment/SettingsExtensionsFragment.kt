@@ -20,6 +20,7 @@ import ani.himitsu.databinding.DialogUserAgentBinding
 import ani.himitsu.databinding.ItemRepositoryBinding
 import ani.himitsu.media.MediaType
 import ani.himitsu.parsers.ParserTestActivity
+import ani.himitsu.restartApp
 import ani.himitsu.parsers.novel.NovelExtensionManager
 import ani.himitsu.settings.Settings
 import ani.himitsu.settings.SettingsActivity
@@ -290,6 +291,29 @@ class SettingsExtensionsFragment : Fragment() {
                         desc = getString(R.string.skip_loading_extension_icons_desc),
                         icon = R.drawable.ic_round_no_icon_24,
                         pref = PrefName.SkipExtensionIcons
+                    ),
+                    Settings(
+                        type = ViewType.SWITCH,
+                        name = getString(R.string.proxy),
+                        desc = getString(R.string.proxy_desc),
+                        icon = R.drawable.swap_horizontal_circle_24,
+                        isChecked = PrefManager.getVal(PrefName.EnableSocks5Proxy),
+                        switch = { isChecked, _ ->
+                            PrefManager.setVal(PrefName.EnableSocks5Proxy, isChecked)
+                            activity?.restartApp()
+                        }
+                    ),
+                    Settings(
+                        type = ViewType.BUTTON,
+                        name = getString(R.string.proxy_setup),
+                        desc = getString(R.string.proxy_setup_desc),
+                        icon = R.drawable.lan_24,
+                        onClick = {
+                            ProxyDialogFragment().show(
+                                childFragmentManager,
+                                "dialog"
+                            )
+                        }
                     ),
                     Settings(
                         type = ViewType.SWITCH,
