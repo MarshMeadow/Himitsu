@@ -5,6 +5,7 @@ import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.NotificationManager
+import android.app.UiModeManager
 import android.app.PendingIntent
 import android.content.ActivityNotFoundException
 import android.content.ClipData
@@ -192,6 +193,19 @@ fun currActivity(): Activity? {
 
 var loadMedia: Int? = null
 var loadIsMAL = false
+
+fun isTv(context: Context = currContext()): Boolean {
+    val uiModeManager = context.getSystemService(Context.UI_MODE_SERVICE) as UiModeManager
+    return uiModeManager.currentModeType == Configuration.UI_MODE_TYPE_TELEVISION
+}
+
+fun View.tvFocusScale(focused: Float = 1.04f, duration: Long = 150) {
+    if (!isTv(context)) return
+    setOnFocusChangeListener { v, hasFocus ->
+        val target = if (hasFocus) focused else 1f
+        v.animate().scaleX(target).scaleY(target).setDuration(duration).start()
+    }
+}
 
 fun initActivity(a: Activity) {
     val window = a.window

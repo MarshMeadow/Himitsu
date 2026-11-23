@@ -25,6 +25,7 @@ import ani.himitsu.databinding.ItemMediaCompactBinding
 import ani.himitsu.databinding.ItemMediaLargeBinding
 import ani.himitsu.databinding.ItemMediaPageBinding
 import ani.himitsu.databinding.ItemMediaPageSmallBinding
+import ani.himitsu.isTv
 import ani.himitsu.loadImage
 import ani.himitsu.media.cereal.Media
 import ani.himitsu.media.cereal.MediaSingleton
@@ -32,6 +33,7 @@ import ani.himitsu.setAnimation
 import ani.himitsu.setSafeOnClickListener
 import ani.himitsu.settings.saving.PrefManager
 import ani.himitsu.settings.saving.PrefName
+import ani.himitsu.tvFocusScale
 import bit.himitsu.nio.Strings.getString
 import com.flaviofaria.kenburnsview.RandomTransitionGenerator
 import java.io.Serializable
@@ -324,6 +326,19 @@ class MediaAdaptor(
                     resizeBitmap(getBitmapFromImageView(binding.itemCompactImage), 100)
                 )
             }
+            if (isTv(itemView.context)) {
+                itemView.isFocusable = true
+                itemView.setSafeOnClickListener {
+                    clicked(
+                        bindingAdapterPosition,
+                        binding.itemCompactImage,
+                        resizeBitmap(getBitmapFromImageView(binding.itemCompactImage), 100)
+                    )
+                }
+                itemView.setOnLongClickListener { longClicked(bindingAdapterPosition) }
+                binding.itemCompactImage.isFocusable = false
+                itemView.tvFocusScale()
+            }
             itemView.setOnTouchListener { _, _ -> true }
             binding.itemCompactImage.setOnLongClickListener { longClicked(bindingAdapterPosition) }
         }
@@ -346,6 +361,20 @@ class MediaAdaptor(
                     binding.itemCompactImage,
                     resizeBitmap(getBitmapFromImageView(binding.itemCompactImage), 100)
                 )
+            }
+            if (isTv(itemView.context)) {
+                itemView.isFocusable = true
+                itemView.setSafeOnClickListener {
+                    clicked(
+                        bindingAdapterPosition,
+                        binding.itemCompactImage,
+                        resizeBitmap(getBitmapFromImageView(binding.itemCompactImage), 100)
+                    )
+                }
+                itemView.setOnLongClickListener { longClicked(bindingAdapterPosition) }
+                binding.itemCompactImage.isFocusable = false
+                binding.itemCompactTitleContainer.isFocusable = false
+                itemView.tvFocusScale()
             }
             itemView.setOnTouchListener { _, _ -> true }
             binding.itemCompactImage.setOnLongClickListener { longClicked(bindingAdapterPosition) }

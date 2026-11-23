@@ -20,6 +20,7 @@
             android:clipToPadding="false"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
+            android:paddingBottom="96dp"
             tools:itemCount="1"
             tools:listitem="@layout/item_anime_page" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
