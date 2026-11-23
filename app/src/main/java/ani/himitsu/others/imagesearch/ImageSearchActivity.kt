@@ -1,5 +1,6 @@
 package ani.himitsu.others.imagesearch
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -61,7 +62,11 @@ class ImageSearchActivity : AppCompatActivity() {
         }
         binding.uploadImage.setOnClickListener {
             viewModel.clearResults()
-            imageSelectionLauncher.launch("image/*")
+            try {
+                imageSelectionLauncher.launch("image/*")
+            } catch (e: ActivityNotFoundException) {
+                toast(R.string.file_manager_not_found)
+            }
         }
         binding.imageSearchTitle.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()

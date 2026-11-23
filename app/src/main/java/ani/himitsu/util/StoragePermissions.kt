@@ -1,6 +1,7 @@
 package ani.himitsu.util
 
 import android.Manifest
+import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -131,6 +132,11 @@ class LauncherWrapper(
     }
 
     fun launch() {
-        launcher.launch(null)
+        try {
+            launcher.launch(null)
+        } catch (e: ActivityNotFoundException) {
+            toast(R.string.file_manager_not_found)
+            complete(false)
+        }
     }
 }

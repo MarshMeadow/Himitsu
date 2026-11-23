@@ -2,6 +2,7 @@ package ani.himitsu.home
 
 import android.app.AlertDialog
 import android.app.UiModeManager
+import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.content.Context
 import android.content.DialogInterface
@@ -99,7 +100,11 @@ class LoginFragment : Fragment() {
             }
 
         binding.importSettingsButton.setOnClickListener {
-            openDocumentLauncher.launch(arrayOf("*/*"))
+            try {
+                openDocumentLauncher.launch(arrayOf("*/*"))
+            } catch (e: ActivityNotFoundException) {
+                toast(R.string.file_manager_not_found)
+            }
         }
 
         // On TV the ViewPager's internal RecyclerView grabs initial focus and

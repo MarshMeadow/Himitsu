@@ -2,6 +2,7 @@ package ani.himitsu.settings.fragment
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
+import android.content.ActivityNotFoundException
 import android.content.ComponentName
 import android.os.Build
 import android.os.Bundle
@@ -160,7 +161,11 @@ class SettingsSystemFragment : Fragment() {
                                         selectedArray[which] = isChecked
                                     }
                                     .setPositiveButton(R.string.button_restore) { dialog, _ ->
-                                        openDocumentLauncher.launch(arrayOf("*/*"))
+                                        try {
+                                            openDocumentLauncher.launch(arrayOf("*/*"))
+                                        } catch (e: ActivityNotFoundException) {
+                                            toast(R.string.file_manager_not_found)
+                                        }
                                         dialog.dismiss()
                                     }
                                     .setNegativeButton(R.string.button_backup) { dialog, _ ->

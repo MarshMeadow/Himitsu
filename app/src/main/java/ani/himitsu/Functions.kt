@@ -596,12 +596,7 @@ fun openInGooglePlay(packageName: String) {
             )
         )
     } catch (e: ActivityNotFoundException) {
-        currContext().startActivity(
-            Intent(
-                Intent.ACTION_VIEW,
-                Uri.parse("https://play.google.com/store/apps/details?id=$packageName")
-            )
-        )
+        openLinkInBrowser("https://play.google.com/store/apps/details?id=$packageName")
     }
 }
 
