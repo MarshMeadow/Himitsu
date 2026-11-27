@@ -142,7 +142,8 @@ class SettingsSystemFragment : Fragment() {
                         desc = getString(R.string.backup_restore_desc),
                         icon = R.drawable.backup_restore,
                         onClick = {
-                            StoragePermissions.downloadsPermission(settings as AppCompatActivity)
+                            if (!StoragePermissions.downloadsPermission(settings as AppCompatActivity))
+                                return@Settings
                             val selectedArray = mutableListOf(false)
                             var filteredLocations = Location.entries.filter { it.exportable }
                             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
@@ -460,7 +461,6 @@ class SettingsSystemFragment : Fragment() {
     }
 
     private fun passwordAlertDialog(isExporting: Boolean, callback: (CharArray?) -> Unit) {
-        val password = CharArray(16).apply { fill('0') }
 
         // Inflate the dialog layout
         val dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_user_agent, null)
@@ -473,7 +473,7 @@ class SettingsSystemFragment : Fragment() {
             .setView(dialogView)
             .setPositiveButton(R.string.ok, null)
             .setNegativeButton(R.string.cancel) { dialog, _ ->
-                password.fill('0')
+                box?.text?.clear()
                 dialog.dismiss()
                 callback(null)
             }
@@ -482,7 +482,7 @@ class SettingsSystemFragment : Fragment() {
         fun handleOkAction() {
             val editText = dialog.findViewById<TextInputEditText>(R.id.userAgentTextBox)
             if (editText?.text?.isNotBlank() == true) {
-                editText.text?.toString()?.trim()?.toCharArray(password)
+                val password = editText.text?.toString()?.trim()?.toCharArray()
                 dialog.dismiss()
                 callback(password)
             } else {

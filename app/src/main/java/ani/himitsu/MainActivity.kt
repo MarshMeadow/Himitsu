@@ -616,7 +616,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun passwordAlertDialog(callback: (CharArray?) -> Unit) {
-        val password = CharArray(16).apply { fill('0') }
 
         // Inflate the dialog layout
         val dialogView = DialogUserAgentBinding.inflate(layoutInflater)
@@ -629,7 +628,7 @@ class MainActivity : AppCompatActivity() {
             .setView(dialogView.root)
             .setPositiveButton(R.string.ok, null)
             .setNegativeButton(R.string.cancel) { dialog, _ ->
-                password.fill('0')
+                dialogView.userAgentTextBox.text?.clear()
                 dialog.dismiss()
                 callback(null)
             }
@@ -642,7 +641,7 @@ class MainActivity : AppCompatActivity() {
         dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener {
             val editText = dialog.findViewById<TextInputEditText>(R.id.userAgentTextBox)
             if (editText?.text?.isNotBlank() == true) {
-                editText.text?.toString()?.trim()?.toCharArray(password)
+                val password = editText.text?.toString()?.trim()?.toCharArray()
                 dialog.dismiss()
                 callback(password)
             } else {

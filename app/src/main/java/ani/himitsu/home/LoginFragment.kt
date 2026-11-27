@@ -36,7 +36,7 @@ import com.google.android.material.textfield.TextInputEditText
 class LoginFragment : Fragment() {
 
     private var _binding: FragmentLoginBinding? = null
-    private val binding by lazy { _binding!! }
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -45,6 +45,10 @@ class LoginFragment : Fragment() {
     ): View {
         _binding = FragmentLoginBinding.inflate(layoutInflater, container, false)
         return binding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView();_binding = null
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -142,7 +146,6 @@ class LoginFragment : Fragment() {
     }
 
     private fun passwordAlertDialog(isExporting: Boolean, callback: (CharArray?) -> Unit) {
-        val password = CharArray(16).apply { fill('0') }
 
         // Inflate the dialog layout
         val dialogView =
@@ -156,7 +159,7 @@ class LoginFragment : Fragment() {
             .setView(dialogView)
             .setPositiveButton(R.string.ok, null)
             .setNegativeButton(R.string.cancel) { dialog, _ ->
-                password.fill('0')
+                box?.text?.clear()
                 dialog.dismiss()
                 callback(null)
             }
@@ -165,7 +168,7 @@ class LoginFragment : Fragment() {
         fun handleOkAction() {
             val editText = dialog.findViewById<TextInputEditText>(R.id.userAgentTextBox)
             if (editText?.text?.isNotBlank() == true) {
-                editText.text?.toString()?.trim()?.toCharArray(password)
+                val password = editText.text?.toString()?.trim()?.toCharArray()
                 dialog.dismiss()
                 callback(password)
             } else {

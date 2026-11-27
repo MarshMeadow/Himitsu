@@ -163,7 +163,9 @@ class Himitsu : MultiDexApplication() {
         override fun onActivityPaused(p0: Activity) {}
         override fun onActivityStopped(p0: Activity) {}
         override fun onActivitySaveInstanceState(p0: Activity, p1: Bundle) {}
-        override fun onActivityDestroyed(p0: Activity) {}
+        override fun onActivityDestroyed(p0: Activity) {
+            if (currentActivity === p0) currentActivity = null
+        }
     }
 
     companion object {

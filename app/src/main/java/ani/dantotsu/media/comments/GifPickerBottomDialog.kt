@@ -33,7 +33,9 @@ class GifPickerBottomDialog : BottomSheetDialogFragment() {
     private var onGifSelected: ((String) -> Unit)? = null
     private var searchJob: Job? = null
 
-    private val apiKey = "29Hflu9yLfJoQy9uVbrSg5pPkaGgIr7CDDpx0bCtVxQFBTnNWXb4moqYsR70Yzzv"
+    // No key is bundled; devs/users must supply their own api.klipy.com key.
+    // A blank key makes the GIF picker simply show no results.
+    private val apiKey = ""
     private val baseUrl = "https://api.klipy.com"
 
     fun setOnGifSelectedListener(listener: (String) -> Unit) {
@@ -79,11 +81,15 @@ class GifPickerBottomDialog : BottomSheetDialogFragment() {
 
         viewLifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
             val gifs = try {
-                val response = client.get(
-                    "$baseUrl/v2/featured?key=$apiKey&media_filter=tinygif&limit=20&contentfilter=high",
-                    headers = mapOf("Content-Type" to "application/json")
-                )
-                parseGifs(response.text)
+                if (apiKey.isBlank()) {
+                    emptyList()
+                } else {
+                    val response = client.get(
+                        "$baseUrl/v2/featured?key=$apiKey&media_filter=tinygif&limit=20&contentfilter=high",
+                        headers = mapOf("Content-Type" to "application/json")
+                    )
+                    parseGifs(response.text)
+                }
             } catch (_: Exception) {
                 emptyList()
             }
@@ -108,12 +114,16 @@ class GifPickerBottomDialog : BottomSheetDialogFragment() {
 
         viewLifecycleOwner.lifecycleScope.launch(Dispatchers.IO) {
             val gifs = try {
-                val encodedQuery = java.net.URLEncoder.encode(query, "UTF-8")
-                val response = client.get(
-                    "$baseUrl/v2/search?key=$apiKey&q=$encodedQuery&media_filter=tinygif&limit=20&contentfilter=high",
-                    headers = mapOf("Content-Type" to "application/json")
-                )
-                parseGifs(response.text)
+                if (apiKey.isBlank()) {
+                    emptyList()
+                } else {
+                    val encodedQuery = java.net.URLEncoder.encode(query, "UTF-8")
+                    val response = client.get(
+                        "$baseUrl/v2/search?key=$apiKey&q=$encodedQuery&media_filter=tinygif&limit=20&contentfilter=high",
+                        headers = mapOf("Content-Type" to "application/json")
+                    )
+                    parseGifs(response.text)
+                }
             } catch (_: Exception) {
                 emptyList()
             }

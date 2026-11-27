@@ -189,9 +189,14 @@ class MediaAdaptor(
                     b.itemCompactTotal.text = getItemTotal(media, '/', "??")
                     b.itemTotalLabel.text = getItemTotalLabel(media)
                     if (position == mediaList!!.size - 2 && viewPager != null) viewPager.post {
-                        val size = mediaList.size
-                        mediaList.addAll(mediaList)
-                        notifyItemRangeInserted(size - 1, mediaList.size)
+                        val start = mediaList.size
+                        // Re-append the list so the pager keeps scrolling, but cap
+                        // the growth so it cannot leak memory without limit.
+                        if (start < TRENDING_PAGE_LIMIT) {
+                            mediaList.addAll(mediaList)
+                            val end = mediaList.size - start
+                            notifyItemRangeInserted(start, end)
+                        }
                     }
                 }
 
@@ -230,9 +235,14 @@ class MediaAdaptor(
                     b.itemCompactTotal.text = getItemTotal(media, '/', "??")
                     b.itemTotalLabel.text = getItemTotalLabel(media)
                     if (position == mediaList!!.size - 2 && viewPager != null) viewPager.post {
-                        val size = mediaList.size
-                        mediaList.addAll(mediaList)
-                        notifyItemRangeInserted(size - 1, mediaList.size)
+                        val start = mediaList.size
+                        // Re-append the list so the pager keeps scrolling, but cap
+                        // the growth so it cannot leak memory without limit.
+                        if (start < TRENDING_PAGE_LIMIT) {
+                            mediaList.addAll(mediaList)
+                            val end = mediaList.size - start
+                            notifyItemRangeInserted(start, end)
+                        }
                     }
                 }
             }
@@ -268,7 +278,7 @@ class MediaAdaptor(
         }
     }
 
-    override fun getItemCount() = mediaList!!.size
+    override fun getItemCount() = mediaList?.size ?: 0
 
     override fun getItemViewType(position: Int): Int {
         return viewType.ordinal
@@ -426,9 +436,12 @@ class MediaAdaptor(
         }
 
         // Create a bitmap with the same dimensions as the drawable
+        val width = drawable.intrinsicWidth
+        val height = drawable.intrinsicHeight
+        if (width <= 0 || height <= 0) return null
         val bitmap = Bitmap.createBitmap(
-            drawable.intrinsicWidth,
-            drawable.intrinsicHeight,
+            width,
+            height,
             Bitmap.Config.ARGB_8888
         )
 
@@ -456,6 +469,11 @@ class MediaAdaptor(
         }
 
         return Bitmap.createScaledBitmap(source, newWidth, newHeight, true)
+    }
+
+    companion object {
+        // Upper bound for the self-extending trending ViewPager list.
+        private const val TRENDING_PAGE_LIMIT = 100
     }
 }
 

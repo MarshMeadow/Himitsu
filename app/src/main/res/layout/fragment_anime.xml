@@ -31,6 +31,7 @@
         android:layout_height="48dp"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="16dp"
+        android:visibility="gone"
         app:cardBackgroundColor="?android:colorBackground"
         app:cardCornerRadius="24dp"
         app:contentPadding="12dp">

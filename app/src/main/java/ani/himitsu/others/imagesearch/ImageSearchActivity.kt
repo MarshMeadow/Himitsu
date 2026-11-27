@@ -40,7 +40,7 @@ class ImageSearchActivity : AppCompatActivity() {
                     }
                     val inputStream = contentResolver.openInputStream(imageUri)
 
-                    if (inputStream != null) viewModel.analyzeImage(inputStream)
+                    if (inputStream != null) inputStream.use { viewModel.analyzeImage(it) }
                     else toast(getString(R.string.error_loading_image))
 
                     withContext(Dispatchers.Main) {
