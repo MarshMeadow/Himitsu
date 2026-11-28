@@ -89,3 +89,17 @@ If you have any questions or feel this project is in violation of your license, 
 <div align="center">
   <img src="https://count.getloli.com/get/@:himitsux" alt=":himitsux" />
 </div>
+
+## Verify your downloads
+
+Before installing, you can confirm and scan any APK or file from this repository free:
+
+- **SHA-256** &mdash; compare the file's checksum with the one published alongside the download (`certutil -hashfile app.apk SHA256` on Windows, `sha256sum app.apk` on macOS/Linux).
+- **[VirusTotal](https://www.virustotal.com/)** &mdash; ~70-engine multi-scanner; paste the SHA-256 or upload the file.
+- **[Hybrid Analysis](https://www.hybrid-analysis.com/)** &mdash; sandboxed behavior report (hash search or upload).
+- **[MetaDefender Cloud](https://metadefender.opswat.com/)** &mdash; ~30-engine scan incl. Avira/ESET/Bitdefender.
+- **[Jotti's malware scan](https://virusscan.jotti.org/)** &mdash; ~15 engines incl. Avast and ClamAV.
+- **[Malwarebytes](https://www.malwarebytes.com/mwb-download)** / **[Avast One](https://www.avast.com/free-antivirus-download)** &mdash; free on-device antivirus; scan the APK directly before installing.
+
+Official download pages: <https://nekomoapp.netlify.app> &middot; per-file SHA-256 + one-tap scan links on the [beta page](https://nekomoapp.netlify.app/beta#verify). Only install builds linked from this repository or the official site.
+
